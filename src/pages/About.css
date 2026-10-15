@@ -1,0 +1,86 @@
+.about-page {
+  padding-bottom: 4rem;
+}
+
+.about-header {
+  padding: 2rem 0 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.about-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+}
+
+.about-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .principles-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.principle-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.principle-icon {
+  color: var(--brand-primary);
+  margin-bottom: 0.75rem;
+}
+
+.principle-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.principle-card p {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.inline-link {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  font-weight: 600;
+}

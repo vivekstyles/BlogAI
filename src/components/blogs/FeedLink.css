@@ -1,0 +1,65 @@
+.feed-link-wrapper {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-rss-bg);
+  border: 1px solid var(--accent-rss-border);
+  color: var(--accent-rss-text);
+  overflow: hidden;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.feed-link-wrapper:hover {
+  border-color: var(--accent-rss);
+}
+
+.feed-direct-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--accent-rss-text);
+  text-decoration: none;
+}
+
+.feed-direct-link:hover {
+  background-color: var(--accent-rss);
+  color: #ffffff;
+}
+
+.feed-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.4rem;
+  border-left: 1px solid var(--accent-rss-border);
+  background-color: transparent;
+  color: var(--accent-rss-text);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.feed-copy-btn:hover {
+  background-color: var(--accent-rss);
+  color: #ffffff;
+}
+
+.copy-check {
+  color: #10b981;
+}
+
+.feed-link-wrapper.large {
+  font-size: 0.875rem;
+  padding: 0.1rem;
+}
+
+.feed-link-wrapper.large .feed-direct-link {
+  padding: 0.5rem 0.85rem;
+  gap: 0.5rem;
+}
+
+.feed-link-wrapper.large .feed-copy-btn {
+  padding: 0.5rem 0.65rem;
+}

@@ -1,0 +1,9 @@
+# robots.txt for BlogAI Community Directory
+User-agent: *
+Allow: /
+Disallow: /submit?*
+Disallow: /*?*search=*
+Disallow: /*?*page=*
+
+# Sitemaps
+Sitemap: https://blogai.directory/sitemap.xml

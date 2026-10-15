@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Automobile",
+    "slug": "automobile",
+    "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
+    "count": 8,
+    "popularTags": [
+      "auto shows",
+      "automotive",
+      "autonomous vehicles",
+      "batteries",
+      "car culture",
+      "car reviews",
+      "charging infrastructure",
+      "clean tech"
+    ]
+  },
+  {
+    "name": "Engineering",
+    "slug": "engineering",
+    "description": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
+    "count": 10,
+    "popularTags": [
+      "agile",
+      "ai",
+      "api",
+      "architecture",
+      "backend",
+      "big data",
+      "cloud",
+      "computer science"
+    ]
+  },
+  {
+    "name": "Mathematics",
+    "slug": "mathematics",
+    "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
+    "count": 10,
+    "popularTags": [
+      "algorithms",
+      "analysis",
+      "calculus",
+      "category theory",
+      "collaborative research",
+      "combinatorics",
+      "complexity",
+      "deep learning"
+    ]
+  },
+  {
+    "name": "Physics",
+    "slug": "physics",
+    "description": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
+    "count": 8,
+    "popularTags": [
+      "acoustics",
+      "astronomy",
+      "astrophysics",
+      "cern",
+      "complexity",
+      "condensed matter",
+      "cosmology",
+      "culture"
+    ]
+  },
+  {
+    "name": "Science",
+    "slug": "science",
+    "description": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
+    "count": 8,
+    "popularTags": [
+      "biology",
+      "biomedicine",
+      "biotechnology",
+      "climate",
+      "cognitive science",
+      "drug discovery",
+      "earth science",
+      "fundamental research"
+    ]
+  }
+]

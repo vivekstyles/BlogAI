@@ -1,0 +1,9 @@
+Title,Address,RSS feed,Tags
+The Drive,https://www.thedrive.com/,https://www.thedrive.com/feed,"automotive;car reviews;motorsport;technology"
+Jalopnik,https://jalopnik.com/,https://jalopnik.com/rss,"car culture;transportation;reviews;electric vehicles"
+Autoblog,https://www.autoblog.com/,https://www.autoblog.com/rss.xml,"news;reviews;industry;hybrid"
+Green Car Reports,https://www.greencarreports.com/,https://www.greencarreports.com/rss/news,"electric vehicles;clean tech;sustainability;batteries"
+CleanTechnica Automotive,https://cleantechnica.com/category/clean-transportation/,https://cleantechnica.com/feed/,"ev;energy transition;charging infrastructure;tesla"
+Speedhunters,https://www.speedhunters.com/,http://www.speedhunters.com/feed/,"tuning;drifting;motorsport;photography"
+Ars Technica Cars,https://arstechnica.com/cars/,https://feeds.arstechnica.com/arstechnica/cars,"autonomous vehicles;infotainment;ev technology;safety"
+Motor1,https://www.motor1.com/,https://www.motor1.com/rss/news/all/,"supercars;spy photos;auto shows;concept cars"

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<opml version="2.0">
+  <head>
+    <title>BlogAI Community Directory Feed Collection</title>
+    <dateCreated>2026-01-01T00:00:00Z</dateCreated>
+    <ownerName>BlogAI Community</ownerName>
+  </head>
+  <body>
+    <outline text="Automobile" title="Automobile">
+      <outline type="rss" text="Ars Technica Cars" title="Ars Technica Cars" xmlUrl="https://feeds.arstechnica.com/arstechnica/cars" htmlUrl="https://arstechnica.com/cars/" category="Automobile" />
+      <outline type="rss" text="Autoblog" title="Autoblog" xmlUrl="https://www.autoblog.com/rss.xml" htmlUrl="https://www.autoblog.com/" category="Automobile" />
+      <outline type="rss" text="CleanTechnica Automotive" title="CleanTechnica Automotive" xmlUrl="https://cleantechnica.com/feed/" htmlUrl="https://cleantechnica.com/category/clean-transportation/" category="Automobile" />
+      <outline type="rss" text="Green Car Reports" title="Green Car Reports" xmlUrl="https://www.greencarreports.com/rss/news" htmlUrl="https://www.greencarreports.com/" category="Automobile" />
+      <outline type="rss" text="Jalopnik" title="Jalopnik" xmlUrl="https://jalopnik.com/rss" htmlUrl="https://jalopnik.com/" category="Automobile" />
+      <outline type="rss" text="Motor1" title="Motor1" xmlUrl="https://www.motor1.com/rss/news/all/" htmlUrl="https://www.motor1.com/" category="Automobile" />
+      <outline type="rss" text="Speedhunters" title="Speedhunters" xmlUrl="http://www.speedhunters.com/feed/" htmlUrl="https://www.speedhunters.com/" category="Automobile" />
+      <outline type="rss" text="The Drive" title="The Drive" xmlUrl="https://www.thedrive.com/feed" htmlUrl="https://www.thedrive.com/" category="Automobile" />
+    </outline>
+    <outline text="Engineering" title="Engineering">
+      <outline type="rss" text="ACM Queue" title="ACM Queue" xmlUrl="https://queue.acm.org/rss/feeds/queuecontent.xml" htmlUrl="https://queue.acm.org/" category="Engineering" />
+      <outline type="rss" text="Cloudflare Blog" title="Cloudflare Blog" xmlUrl="https://blog.cloudflare.com/rss/" htmlUrl="https://blog.cloudflare.com/" category="Engineering" />
+      <outline type="rss" text="Dan Abramov (Overreacted)" title="Dan Abramov (Overreacted)" xmlUrl="https://overreacted.io/rss.xml" htmlUrl="https://overreacted.io/" category="Engineering" />
+      <outline type="rss" text="GitHub Engineering" title="GitHub Engineering" xmlUrl="https://github.blog/category/engineering/feed/" htmlUrl="https://github.blog/category/engineering/" category="Engineering" />
+      <outline type="rss" text="High Scalability" title="High Scalability" xmlUrl="http://feeds.feedburner.com/HighScalability" htmlUrl="https://highscalability.com/" category="Engineering" />
+      <outline type="rss" text="Julia Evans" title="Julia Evans" xmlUrl="https://jvns.ca/atom.xml" htmlUrl="https://jvns.ca/" category="Engineering" />
+      <outline type="rss" text="Martin Fowler" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" htmlUrl="https://martinfowler.com/" category="Engineering" />
+      <outline type="rss" text="Netflix TechBlog" title="Netflix TechBlog" xmlUrl="https://netflixtechblog.com/feed" htmlUrl="https://netflixtechblog.com/" category="Engineering" />
+      <outline type="rss" text="Stripe Engineering" title="Stripe Engineering" xmlUrl="https://stripe.com/blog/feed.xml" htmlUrl="https://stripe.com/blog/engineering" category="Engineering" />
+      <outline type="rss" text="Uber Engineering" title="Uber Engineering" xmlUrl="https://www.uber.com/blog/engineering/rss/" htmlUrl="https://www.uber.com/blog/engineering/" category="Engineering" />
+    </outline>
+    <outline text="Mathematics" title="Mathematics">
+      <outline type="rss" text="3Blue1Brown Blog" title="3Blue1Brown Blog" xmlUrl="https://3blue1brown.substack.com/feed" htmlUrl="https://3blue1brown.substack.com/" category="Mathematics" />
+      <outline type="rss" text="Azimuth (John Baez)" title="Azimuth (John Baez)" xmlUrl="https://johncbaez.wordpress.com/feed/" htmlUrl="https://johncbaez.wordpress.com/" category="Mathematics" />
+      <outline type="rss" text="BetterExplained" title="BetterExplained" xmlUrl="https://betterexplained.com/feed/" htmlUrl="https://betterexplained.com/" category="Mathematics" />
+      <outline type="rss" text="Gowers's Weblog" title="Gowers's Weblog" xmlUrl="https://gowers.wordpress.com/feed/" htmlUrl="https://gowers.wordpress.com/" category="Mathematics" />
+      <outline type="rss" text="Gödel's Lost Letter and P=NP" title="Gödel's Lost Letter and P=NP" xmlUrl="https://rjlipton.wordpress.com/feed/" htmlUrl="https://rjlipton.wordpress.com/" category="Mathematics" />
+      <outline type="rss" text="Math with Bad Drawings" title="Math with Bad Drawings" xmlUrl="https://mathwithbaddrawings.com/feed/" htmlUrl="https://mathwithbaddrawings.com/" category="Mathematics" />
+      <outline type="rss" text="Quanta Magazine Mathematics" title="Quanta Magazine Mathematics" xmlUrl="https://api.quantamagazine.org/feed/" htmlUrl="https://www.quantamagazine.org/mathematics/" category="Mathematics" />
+      <outline type="rss" text="Tanya Khovanova's Math Blog" title="Tanya Khovanova's Math Blog" xmlUrl="https://blog.tanyakhovanova.com/feed/" htmlUrl="https://blog.tanyakhovanova.com/" category="Mathematics" />
+      <outline type="rss" text="The polymath blog" title="The polymath blog" xmlUrl="https://polymathprojects.org/feed/" htmlUrl="https://polymathprojects.org/" category="Mathematics" />
+      <outline type="rss" text="What's New (Terence Tao)" title="What's New (Terence Tao)" xmlUrl="https://terrytao.wordpress.com/feed/" htmlUrl="https://terrytao.wordpress.com/" category="Mathematics" />
+    </outline>
+    <outline text="Physics" title="Physics">
+      <outline type="rss" text="Backreaction" title="Backreaction" xmlUrl="https://backreaction.blogspot.com/feeds/posts/default" htmlUrl="https://backreaction.blogspot.com/" category="Physics" />
+      <outline type="rss" text="Cocktail Party Physics" title="Cocktail Party Physics" xmlUrl="https://www.jenniferouellette-writes.com/feed" htmlUrl="https://www.jenniferouellette-writes.com/" category="Physics" />
+      <outline type="rss" text="Not Even Wrong" title="Not Even Wrong" xmlUrl="https://www.math.columbia.edu/~woit/wordpress/?feed=rss2" htmlUrl="https://www.math.columbia.edu/~woit/wordpress/" category="Physics" />
+      <outline type="rss" text="Of Particular Significance" title="Of Particular Significance" xmlUrl="https://profmattstrassler.com/feed/" htmlUrl="https://profmattstrassler.com/" category="Physics" />
+      <outline type="rss" text="Physics World" title="Physics World" xmlUrl="https://physicsworld.com/feed/" htmlUrl="https://physicsworld.com/" category="Physics" />
+      <outline type="rss" text="Preposterous Universe" title="Preposterous Universe" xmlUrl="https://www.preposterousuniverse.com/blog/feed/" htmlUrl="https://www.preposterousuniverse.com/blog/" category="Physics" />
+      <outline type="rss" text="Shtetl-Optimized" title="Shtetl-Optimized" xmlUrl="https://scottaaronson.blog/?feed=rss2" htmlUrl="https://scottaaronson.blog/" category="Physics" />
+      <outline type="rss" text="Starts With A Bang" title="Starts With A Bang" xmlUrl="https://bigthink.com/category/starts-with-a-bang/feed/" htmlUrl="https://bigthink.com/starts-with-a-bang/" category="Physics" />
+    </outline>
+    <outline text="Science" title="Science">
+      <outline type="rss" text="Ars Technica Science" title="Ars Technica Science" xmlUrl="https://feeds.arstechnica.com/arstechnica/science" htmlUrl="https://arstechnica.com/science/" category="Science" />
+      <outline type="rss" text="In the Pipeline (Derek Lowe)" title="In the Pipeline (Derek Lowe)" xmlUrl="https://www.science.org/rss/blogs/pipeline.xml" htmlUrl="https://www.science.org/blogs/pipeline" category="Science" />
+      <outline type="rss" text="Mind the Brain" title="Mind the Brain" xmlUrl="https://mindthebrain.blog/feed/" htmlUrl="https://mindthebrain.blog/" category="Science" />
+      <outline type="rss" text="Nature News &amp; Comment" title="Nature News &amp; Comment" xmlUrl="https://www.nature.com/nature.rss" htmlUrl="https://www.nature.com/nature/articles?type=news" category="Science" />
+      <outline type="rss" text="Neuroskeptic" title="Neuroskeptic" xmlUrl="https://www.discovermagazine.com/feed" htmlUrl="https://www.discovermagazine.com/mind" category="Science" />
+      <outline type="rss" text="Phys.org Spotlight" title="Phys.org Spotlight" xmlUrl="https://phys.org/rss-feed/" htmlUrl="https://phys.org/" category="Science" />
+      <outline type="rss" text="Quanta Magazine" title="Quanta Magazine" xmlUrl="https://api.quantamagazine.org/feed/" htmlUrl="https://www.quantamagazine.org/" category="Science" />
+      <outline type="rss" text="Retraction Watch" title="Retraction Watch" xmlUrl="https://retractionwatch.com/feed/" htmlUrl="https://retractionwatch.com/" category="Science" />
+    </outline>
+  </body>
+</opml>
