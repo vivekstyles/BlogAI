@@ -1,5 +1,5 @@
-import { describe, it, expect, beforeEach } from 'vitest';
-import { blogService } from '../services/blogService';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
+import { blogService, SUBMISSION_ENDPOINT } from '../services/blogService';
 import { searchService } from '../services/searchService';
 
 describe('Service: blogService', () => {
@@ -40,6 +40,65 @@ describe('Service: blogService', () => {
     const reactBlogs = blogService.getBlogsByTag('react');
     expect(reactBlogs.length).toBeGreaterThan(0);
     expect(reactBlogs.some((b) => b.slug === 'dan-abramov-overreacted')).toBe(true);
+  });
+});
+
+describe('Service: blogService.submitCommunityBlog', () => {
+  const validForm = {
+    title: 'Example Systems Notes',
+    address: 'https://systems-notes.example.com',
+    feed: 'https://systems-notes.example.com/feed.xml',
+    category: 'Engineering',
+    tags: 'Distributed Systems; linux',
+    description: 'Notes on systems.',
+    author: 'Jane Doe',
+    email: 'jane@example.com',
+  };
+
+  it('POSTs the submission as a CORS-simple request', async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ type: 'opaque' });
+    vi.stubGlobal('fetch', fetchMock);
+
+    const result = await blogService.submitCommunityBlog(validForm);
+
+    expect(result.success).toBe(true);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    const [url, options] = fetchMock.mock.calls[0];
+    expect(url).toBe(SUBMISSION_ENDPOINT);
+    expect(options.method).toBe('POST');
+    expect(options.mode).toBe('no-cors');
+    expect(options.headers['Content-Type']).toMatch(/^text\/plain/);
+
+    const body = JSON.parse(options.body);
+    expect(body).toMatchObject({
+      title: 'Example Systems Notes',
+      category: 'Engineering',
+      categorySlug: 'engineering',
+      tags: ['distributed systems', 'linux'],
+      email: 'jane@example.com',
+      status: 'pending_review',
+      source: 'blogai-web',
+    });
+  });
+
+  it('does not send invalid submissions', async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal('fetch', fetchMock);
+
+    const result = await blogService.submitCommunityBlog({ ...validForm, title: '', address: 'nope' });
+
+    expect(result.success).toBe(false);
+    expect(result.errors.title).toBeTruthy();
+    expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  it('reports a general error when the network request fails', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new TypeError('Failed to fetch')));
+
+    const result = await blogService.submitCommunityBlog(validForm);
+
+    expect(result.success).toBe(false);
+    expect(result.errors._general).toMatch(/could not send/i);
   });
 });
 

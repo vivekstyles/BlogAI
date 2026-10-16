@@ -74,7 +74,7 @@ BlogAI/
 │   │   ├── useDebounce.js         # Generic debounce hook
 │   │   └── usePagination.js       # Dynamic page windowing with auto-reset
 │   ├── services/
-│   │   ├── blogService.js         # Central data query provider & mock moderation queue
+│   │   ├── blogService.js         # Central data query provider & submission POST
 │   │   └── searchService.js       # Fast inverted token index engine
 │   ├── utils/
 │   │   ├── slugify.js             # NFKD diacritic-safe URL slug generator
@@ -272,7 +272,7 @@ For smaller datasets, linear string matching is sufficient. As directories grow 
 
 1. Users visit `/submit` and enter blog details (Title, URL, RSS, Category, Tags, Description).
 2. The form validates URL schemes, checks against the existing dataset for duplicate domains, and enforces length limits.
-3. When submitted in client mode, the item is safely validated and queued into local moderation storage (`blogai_moderation_queue`) with a clear message explaining that submissions are reviewed before publishing.
+3. Valid submissions are POSTed as JSON to the submission endpoint (`https://logs.promptnote.app/subscription` by default, overridable with the `VITE_SUBMISSION_ENDPOINT` build variable) for editorial review. The endpoint does not send CORS headers, so the request is sent as `text/plain` with `mode: 'no-cors'`: the site can detect network failures but cannot read the server's response.
 4. Contributors are also prompted to submit via GitHub Pull Request directly to `Categories/<Category>/blogs.csv`.
 
 ---

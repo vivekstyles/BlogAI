@@ -42,17 +42,17 @@ export function Privacy() {
             <h2>Local Client Storage</h2>
             <p>
               Your browser&rsquo;s <code>localStorage</code> is used strictly for saving your UI theme
-              preference (light or dark mode) and temporary local moderation queues if you submit a
-              blog during testing. No personal data is transmitted.
+              preference (light or dark mode). It holds no personal data.
             </p>
           </section>
 
           <section className="privacy-section">
             <h2>Community Blog Submissions</h2>
             <p>
-              When suggesting a publication via the community form, submitter email addresses are
-              optional. Any provided contact information is only used by maintainers for clarifying
-              questions regarding the submission and is never published or shared with third parties.
+              When you suggest a publication via the community form, the details you enter (including
+              the optional submitter email) are sent to our submission storage service for editorial
+              review. Contact information is only used by maintainers for clarifying questions
+              regarding the submission and is never published or shared with third parties.
             </p>
           </section>
 

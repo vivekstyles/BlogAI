@@ -1,4 +1,15 @@
 import '@testing-library/jest-dom';
+import { beforeEach, afterEach, vi } from 'vitest';
+
+// Never let tests reach real network endpoints (e.g. the submission POST).
+// Tests that need fetch stub it with vi.stubGlobal('fetch', ...).
+beforeEach(() => {
+  vi.stubGlobal('fetch', vi.fn().mockRejectedValue(new Error('Unexpected network call in test')));
+});
+
+afterEach(() => {
+  vi.unstubAllGlobals();
+});
 
 // Polyfill window.matchMedia for responsive tests
 Object.defineProperty(window, 'matchMedia', {

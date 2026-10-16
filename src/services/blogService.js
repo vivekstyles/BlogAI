@@ -4,6 +4,10 @@ import tagsData from '../data/tags';
 import { slugify } from '../utils/slugify';
 import { validateBlogSubmission } from '../utils/validation';
 
+export const SUBMISSION_ENDPOINT =
+  import.meta.env.VITE_SUBMISSION_ENDPOINT || 'https://logs.promptnote.app/subscription';
+const SUBMISSION_TIMEOUT_MS = 15000;
+
 export const blogService = {
   getAllBlogs() {
     return blogsData;
@@ -67,14 +71,13 @@ export const blogService = {
     return featured;
   },
 
-  submitCommunityBlog(formData) {
+  async submitCommunityBlog(formData) {
     const validation = validateBlogSubmission(formData, blogsData);
     if (!validation.isValid) {
       return { success: false, errors: validation.errors };
     }
 
     const submissionRecord = {
-      id: `pending-${Date.now()}`,
       title: formData.title.trim(),
       slug: slugify(formData.title.trim()),
       address: formData.address.trim(),
@@ -84,19 +87,35 @@ export const blogService = {
       tags: formData.tags.split(/[;,]+/).map((t) => t.trim().toLowerCase()).filter(Boolean),
       description: formData.description ? formData.description.trim() : '',
       author: formData.author ? formData.author.trim() : '',
+      email: formData.email ? formData.email.trim() : '',
       submittedAt: new Date().toISOString(),
       status: 'pending_review',
+      source: 'blogai-web',
     };
 
-    // Store in localStorage for demonstration/testing workflow without exposing backend fake claims
+    // The endpoint sends no CORS headers, so this must stay a "simple" request:
+    // a text/plain JSON body with mode 'no-cors'. The response is opaque, so a
+    // resolved fetch means the request was delivered; only network failures are detectable.
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), SUBMISSION_TIMEOUT_MS);
     try {
-      if (typeof window !== 'undefined' && window.localStorage) {
-        const queue = JSON.parse(window.localStorage.getItem('blogai_moderation_queue') || '[]');
-        queue.push(submissionRecord);
-        window.localStorage.setItem('blogai_moderation_queue', JSON.stringify(queue));
-      }
+      await fetch(SUBMISSION_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify(submissionRecord),
+        signal: controller.signal,
+      });
     } catch {
-      // Ignore storage errors in restricted contexts
+      return {
+        success: false,
+        errors: {
+          _general:
+            'We could not send your submission. Check your connection and try again.',
+        },
+      };
+    } finally {
+      clearTimeout(timeoutId);
     }
 
     return {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
@@ -81,7 +81,10 @@ describe('Routing & Page Integrations', () => {
     expect(screen.getAllByText(/Dan Abramov/i)[0]).toBeInTheDocument();
   });
 
-  it('validates submission form required fields and handles submit', () => {
+  it('validates submission form required fields and handles submit', async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ type: 'opaque' });
+    vi.stubGlobal('fetch', fetchMock);
+
     render(
       <MemoryRouter initialEntries={['/submit']}>
         <Routes>
@@ -94,7 +97,8 @@ describe('Routing & Page Integrations', () => {
     fireEvent.click(submitBtn);
 
     // Errors should appear for required fields
-    expect(screen.getByText(/blog title is required/i)).toBeInTheDocument();
+    expect(await screen.findByText(/blog title is required/i)).toBeInTheDocument();
+    expect(fetchMock).not.toHaveBeenCalled();
     expect(screen.getByText(/website url is required/i)).toBeInTheDocument();
 
     // Fill valid data
@@ -106,7 +110,8 @@ describe('Routing & Page Integrations', () => {
     fireEvent.click(submitBtn);
 
     // Success banner should appear
-    expect(screen.getByText(/submission received/i)).toBeInTheDocument();
+    expect(await screen.findByText(/submission received/i)).toBeInTheDocument();
+    expect(fetchMock).toHaveBeenCalledTimes(1);
     expect(screen.getByText(/Quantum Computing Blog/i)).toBeInTheDocument();
   });
 

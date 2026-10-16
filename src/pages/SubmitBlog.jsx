@@ -38,12 +38,13 @@ export function SubmitBlog() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
     setIsSubmitting(true);
     setErrors({});
 
-    const result = blogService.submitCommunityBlog(formData);
+    const result = await blogService.submitCommunityBlog(formData);
 
     if (result.success) {
       setSubmissionSuccess(result.submission);
@@ -316,6 +317,7 @@ export function SubmitBlog() {
                     type="submit"
                     className="btn btn-primary submit-submit-btn"
                     disabled={isSubmitting}
+                    aria-busy={isSubmitting}
                   >
                     <Send size={16} />
                     <span>{isSubmitting ? 'Submitting...' : 'Submit Publication'}</span>
