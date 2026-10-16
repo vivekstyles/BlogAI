@@ -2,6 +2,7 @@
 title: 101 Best Linear Algebra Concepts for Machine Learning and AI
 description: 101 linear algebra concepts behind machine learning and AI, from vectors and dot products to SVD, PCA, gradients, attention and LoRA, with NumPy examples.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

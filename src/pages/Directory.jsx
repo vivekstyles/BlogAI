@@ -4,6 +4,7 @@ import { Compass, Rss, PlusCircle } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import CategoryNav from '../components/categories/CategoryNav';
@@ -12,7 +13,6 @@ import BlogList from '../components/blogs/BlogList';
 import './Home.css';
 import './Directory.css';
 
-const SITE_URL = 'https://blogai.directory';
 
 export function Directory() {
   const [searchParams, setSearchParams] = useSearchParams();

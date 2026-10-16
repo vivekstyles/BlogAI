@@ -2,6 +2,7 @@
 title: 150 Best Algebra Problems With Solutions for Beginners
 description: Practice beginner algebra with 150 original problems, from expressions and equations to quadratics and functions, each with a step-by-step solution.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

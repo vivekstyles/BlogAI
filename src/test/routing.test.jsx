@@ -175,12 +175,15 @@ describe('Articles and directory routing', () => {
     expect(screen.queryByText(/starter reading list/i)).not.toBeInTheDocument();
   });
 
-  it('renders the full article with metadata, table of contents, and related content', () => {
+  it('renders the full article with metadata, table of contents, and related content', async () => {
     renderAt('/articles/follow-technical-blogs-with-rss');
+    // The body is loaded as its own chunk after the page shell renders
+    expect(
+      await screen.findByRole('heading', { level: 2, name: 'What RSS and OPML actually are' })
+    ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { level: 1, name: 'How to Follow Technical Blogs with RSS and OPML' })
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: 'What RSS and OPML actually are' })).toBeInTheDocument();
     expect(screen.getByText('BlogAI Editors')).toBeInTheDocument();
     expect(screen.getAllByRole('link', { name: 'Step 1: Choose a feed reader' })[0]).toHaveAttribute(
       'href',

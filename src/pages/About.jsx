@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Compass, ShieldCheck, Rss, Layers, Users } from 'lucide-react';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import './About.css';
 
@@ -13,7 +14,7 @@ export function About() {
     '@type': 'AboutPage',
     name: 'About BlogAI Directory',
     description: 'Learn about the mission, architecture, and curation philosophy behind BlogAI Directory.',
-    url: 'https://blogai.directory/about',
+    url: `${SITE_URL}/about`,
   };
 
   return (

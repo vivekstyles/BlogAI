@@ -2,6 +2,7 @@
 title: A Starter Reading List for Mathematics Blogs
 description: Draft. A guided path through the mathematics blogs in the directory, from visual intuition to research-level writing.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-20
 status: draft
 categories:

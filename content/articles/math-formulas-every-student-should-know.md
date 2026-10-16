@@ -2,6 +2,7 @@
 title: 100 Best Mathematics Formulas Every Student Should Know
 description: The 100 formulas students use most, from algebra and geometry to calculus, statistics and vectors, each with symbols explained and a worked example.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

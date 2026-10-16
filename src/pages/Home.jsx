@@ -4,6 +4,7 @@ import { Compass, Sparkles, PlusCircle, FileText, ArrowRight } from 'lucide-reac
 import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL } from '../utils/seo';
 import CategoryCard from '../components/categories/CategoryCard';
 import BlogCard from '../components/blogs/BlogCard';
 import ArticleCard from '../components/articles/ArticleCard';
@@ -28,12 +29,12 @@ export function Home() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'BlogAI',
-    url: 'https://blogai.directory',
+    url: SITE_URL,
     description:
       'Original articles and a community-curated directory of high-quality blogs in engineering, mathematics, physics, science, and automotive technology.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://blogai.directory/directory?q={search_term_string}',
+      target: `${SITE_URL}/directory?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
@@ -42,7 +43,7 @@ export function Home() {
     <div className="home-page">
       <SEOHead
         title="Technical Articles & Curated Blog Directory"
-        description={`Read original articles and discover ${totalBlogs}+ community-curated independent blogs across software engineering, mathematics, physics, science, and automotive technology.`}
+        description={`Read original articles and discover ${totalBlogs}+ community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`}
         canonicalPath="/"
         jsonLd={homeSchema}
       />

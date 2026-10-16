@@ -2,6 +2,7 @@
 title: 101 Best Math Tricks to Solve Problems Faster
 description: 101 math tricks for mental multiplication, squares, divisibility, percents, algebra and geometry, each with a proof, a worked example and its limits.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

@@ -2,7 +2,9 @@
  * Structured data for first-party articles. Shared by the ArticleDetails page
  * and scripts/prerender.js so the client and the static HTML emit identical JSON-LD.
  */
-export const SITE_URL = 'https://blogai.directory';
+import { SITE_URL, SITE_NAME, buildAuthorSchema } from './seo.js';
+
+export { SITE_URL };
 
 function absoluteUrl(pathOrUrl) {
   if (!pathOrUrl) return undefined;
@@ -20,8 +22,8 @@ export function buildArticleSchema(article) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': article.canonicalUrl || url },
     datePublished: article.publishedAt,
     dateModified: article.updatedAt || article.publishedAt,
-    author: { '@type': 'Person', name: article.author },
-    publisher: { '@type': 'Organization', name: 'BlogAI', url: SITE_URL },
+    author: buildAuthorSchema(article.author, article.authorType),
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     image: absoluteUrl(article.image),
     articleSection: article.categories.map((c) => c.name),
     keywords: article.tags.map((t) => t.name).join(', '),

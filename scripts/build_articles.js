@@ -5,7 +5,9 @@
  * validates their metadata, renders the body to HTML (heading anchors,
  * table of contents, KaTeX math, safe external links, lazy images, scrollable tables),
  * links each article to related articles and related directory blogs, and
- * writes src/data/articles.json.
+ * writes the article index to src/data/articles.json and each article body to
+ * src/data/article-content/<slug>.json. Bodies are kept out of the index so the
+ * main client bundle does not download every article on every page.
  *
  * Drafts are validated but never written to the output, so they cannot
  * reach the client bundle, prerendered pages, or the sitemap.
@@ -20,15 +22,18 @@ import { Marked } from 'marked';
 import { parse as parseYaml } from 'yaml';
 import katex from 'katex';
 import { slugify } from '../src/utils/slugify.js';
+import { SITE_URL, TITLE_MAX_LENGTH } from '../src/utils/seo.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const ROOT_DIR = path.resolve(path.dirname(__filename), '..');
 const ARTICLES_DIR = path.join(ROOT_DIR, 'content', 'articles');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'src', 'data', 'articles.json');
+const CONTENT_DIR = path.join(ROOT_DIR, 'src', 'data', 'article-content');
 const CATEGORIES_PATH = path.join(ROOT_DIR, 'src', 'data', 'categories.json');
 const BLOGS_PATH = path.join(ROOT_DIR, 'src', 'data', 'blogs.json');
 
-export const SITE_URL = 'https://blogai.directory';
+export { SITE_URL };
+const AUTHOR_TYPES = ['Person', 'Organization'];
 const STATUSES = ['draft', 'published'];
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const WORDS_PER_MINUTE = 220;
@@ -224,6 +229,9 @@ export function compileArticle({ fileName, source, categories }) {
   const title = String(data.title || '').trim();
   if (!title) fail('title is required');
 
+  const seoTitle = String(data.seoTitle || '').trim();
+  if (seoTitle.length > TITLE_MAX_LENGTH) fail(`seoTitle must be ${TITLE_MAX_LENGTH} characters or fewer`);
+
   const slug = slugify(String(data.slug || path.basename(fileName, path.extname(fileName))));
   if (!slug) fail('could not derive a slug from the slug field or file name');
 
@@ -232,6 +240,9 @@ export function compileArticle({ fileName, source, categories }) {
 
   const author = String(data.author || '').trim();
   if (!author) fail('author is required');
+
+  const authorType = String(data.authorType || 'Person').trim();
+  if (!AUTHOR_TYPES.includes(authorType)) fail(`authorType must be one of ${AUTHOR_TYPES.join(', ')}`);
 
   const publishedAt = toDateString(data.publishedAt);
   if (!DATE_RE.test(publishedAt)) fail('publishedAt is required as YYYY-MM-DD');
@@ -293,8 +304,10 @@ export function compileArticle({ fileName, source, categories }) {
     article: {
       slug,
       title,
+      seoTitle,
       description,
       author,
+      authorType,
       publishedAt,
       updatedAt,
       status,
@@ -403,7 +416,19 @@ function main() {
     process.exit(1);
   }
 
-  fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(published, null, 2)}\n`, 'utf-8');
+  const index = published.map(({ html, ...meta }) => meta);
+  fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(index, null, 2)}\n`, 'utf-8');
+
+  // Rewrite the body files from scratch so unpublished or renamed articles leave nothing behind
+  fs.rmSync(CONTENT_DIR, { recursive: true, force: true });
+  fs.mkdirSync(CONTENT_DIR, { recursive: true });
+  for (const article of published) {
+    fs.writeFileSync(
+      path.join(CONTENT_DIR, `${article.slug}.json`),
+      `${JSON.stringify({ html: article.html })}\n`,
+      'utf-8'
+    );
+  }
   console.log(
     `[Articles] Compiled ${published.length} published article(s) to src/data/articles.json` +
       (drafts.length ? `; skipped ${drafts.length} draft(s): ${drafts.join(', ')}` : '')

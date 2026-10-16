@@ -3,6 +3,9 @@ import blogsData from '../data/blogs';
 import { slugify } from '../utils/slugify';
 import { normalizeText } from '../utils/normalizeText';
 
+// Article bodies are split into one chunk per article so listing pages never download them
+const articleContentLoaders = import.meta.glob('../data/article-content/*.json', { import: 'html' });
+
 export const articleService = {
   getAllArticles() {
     return articlesData;
@@ -12,6 +15,15 @@ export const articleService = {
     if (!slug) return null;
     const targetSlug = slug.toLowerCase();
     return articlesData.find((a) => a.slug === targetSlug) || null;
+  },
+
+  /**
+   * Loads the compiled HTML body of a published article.
+   * @returns {Promise<string|null>} null when the slug has no published body
+   */
+  async getArticleContent(slug) {
+    const load = articleContentLoaders[`../data/article-content/${slug}.json`];
+    return load ? load() : null;
   },
 
   getLatestArticles(limit = 3) {

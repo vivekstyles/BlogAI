@@ -5,6 +5,7 @@ import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL, buildTagMeta } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import BlogList from '../components/blogs/BlogList';
@@ -67,27 +68,17 @@ export function TagPage() {
     '@type': 'CollectionPage',
     name: `Articles and Blogs Tagged with #${tagObj.name}`,
     description: `Articles and curated technical and scientific blogs tagged with #${tagObj.name}.`,
-    url: `https://blogai.directory/tag/${tagObj.slug}`,
+    url: `${SITE_URL}/tag/${tagObj.slug}`,
     isPartOf: {
       '@type': 'WebSite',
       name: 'BlogAI Directory',
-      url: 'https://blogai.directory',
+      url: SITE_URL,
     },
     numberOfItems: matchingBlogs.length + matchingArticles.length,
   };
 
-  const blogPart = `${matchingBlogs.length} curated blog${matchingBlogs.length === 1 ? '' : 's'}`;
-  const articlePart = `${matchingArticles.length} article${matchingArticles.length === 1 ? '' : 's'}`;
-  const tagSummary =
-    matchingArticles.length > 0 && matchingBlogs.length > 0
-      ? `Explore ${articlePart} and ${blogPart} discussing #${tagObj.name}.`
-      : matchingArticles.length > 0
-        ? `Explore ${articlePart} discussing #${tagObj.name}.`
-        : `Explore ${matchingBlogs.length} high-signal publication${matchingBlogs.length === 1 ? '' : 's'} discussing #${tagObj.name}.`;
-  const tagDescription =
-    matchingArticles.length > 0
-      ? `${tagSummary} Original articles and independent blogs on BlogAI.`
-      : `Explore ${matchingBlogs.length} curated independent blogs tagged with #${tagObj.name} in the BlogAI directory.`;
+  const tagMeta = buildTagMeta(tagObj, matchingArticles.length, matchingBlogs.length);
+  const tagSummary = tagMeta.summary;
 
   const breadcrumbs = [
     { label: 'Tags' },
@@ -97,9 +88,10 @@ export function TagPage() {
   return (
     <div className="tag-page">
       <SEOHead
-        title={`#${tagObj.name} Blogs - Topic Directory`}
-        description={tagDescription}
+        title={tagMeta.title}
+        description={tagMeta.description}
         canonicalPath={`/tag/${tagObj.slug}`}
+        robots={tagMeta.robots}
         jsonLd={tagSchema}
       />
 

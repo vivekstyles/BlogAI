@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import JsonLd from './JsonLd';
+import { SITE_URL, formatPageTitle } from '../../utils/seo';
 
-const SITE_URL = 'https://blogai.directory';
-const DEFAULT_TITLE = 'BlogAI - Curated Community Blog Directory';
 const DEFAULT_DESC =
   'Discover, search, filter, and subscribe to high-quality blogs across engineering, math, physics, science, and automotive technology.';
 
@@ -17,7 +16,7 @@ export function SEOHead({
   image = '',
   article = null,
 }) {
-  const fullTitle = title ? `${title} | BlogAI Directory` : DEFAULT_TITLE;
+  const fullTitle = formatPageTitle(title);
   const canonicalUrl =
     canonicalUrlOverride ||
     `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
@@ -51,7 +50,8 @@ export function SEOHead({
     setMeta('og:url', canonicalUrl, true);
     setMeta('og:type', type, true);
 
-    // Twitter
+    // Twitter: the large card needs an image to show anything useful
+    setMeta('twitter:card', imageUrl ? 'summary_large_image' : 'summary');
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
 

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AlertCircle, ArrowLeft, Compass } from 'lucide-react';
 import { articleService } from '../services/articleService';
@@ -18,6 +18,23 @@ export function ArticleDetails() {
   const article = useMemo(() => articleService.getArticleBySlug(articleSlug), [articleSlug]);
   const relatedArticles = useMemo(() => articleService.getRelatedArticles(article), [article]);
   const relatedBlogs = useMemo(() => articleService.getRelatedBlogs(article), [article]);
+  const [content, setContent] = useState({ slug: null, html: null, failed: false });
+
+  useEffect(() => {
+    if (!article) return undefined;
+    let cancelled = false;
+    articleService
+      .getArticleContent(article.slug)
+      .then((html) => {
+        if (!cancelled) setContent({ slug: article.slug, html, failed: html == null });
+      })
+      .catch(() => {
+        if (!cancelled) setContent({ slug: article.slug, html: null, failed: true });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [article]);
 
   if (!article) {
     return (
@@ -46,7 +63,7 @@ export function ArticleDetails() {
   return (
     <div className="article-page">
       <SEOHead
-        title={article.title}
+        title={article.seoTitle || article.title}
         description={article.description}
         canonicalUrl={article.canonicalUrl}
         type="article"
@@ -98,7 +115,15 @@ export function ArticleDetails() {
           )}
 
           <div className="article-main">
-            <ArticleContent html={article.html} />
+            {content.slug !== article.slug ? (
+              <div className="article-content-loading" role="status" aria-label="Loading article" />
+            ) : content.failed ? (
+              <p className="article-content-error" role="alert">
+                This article could not be loaded. Please check your connection and reload the page.
+              </p>
+            ) : (
+              <ArticleContent html={content.html} />
+            )}
 
             {article.tags.length > 0 && (
               <footer className="article-footer">

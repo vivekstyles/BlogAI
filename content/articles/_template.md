@@ -3,11 +3,15 @@
 # Files starting with "_" are ignored by the build.
 
 title: Your Article Title
+# Optional. Shorter title for search results and browser tabs (60 characters max); the page heading keeps title.
+# seoTitle: Your Shorter Search Title
 # Optional. Defaults to the file name. Changing it later breaks existing links.
 slug: your-article-slug
 # 120-160 characters. Used for the meta description and article cards.
 description: One or two sentences that summarize what the reader will learn.
 author: BlogAI Editors
+# Person for a named writer; Organization for an editorial team such as "BlogAI Editors".
+authorType: Organization
 # YYYY-MM-DD. Keep publishedAt fixed; bump updatedAt when you make meaningful edits.
 publishedAt: 2026-01-01
 updatedAt: 2026-01-01

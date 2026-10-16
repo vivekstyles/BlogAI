@@ -15,6 +15,7 @@ import {
 import { blogService } from '../services/blogService';
 import { extractDomain } from '../utils/normalizeText';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL, buildBlogMeta } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import TagChip from '../components/tags/TagChip';
 import FeedLink from '../components/blogs/FeedLink';
@@ -76,7 +77,7 @@ export function BlogDetails() {
     isPartOf: {
       '@type': 'CollectionPage',
       name: `${blog.category} Blogs`,
-      url: `https://blogai.directory/category/${blog.categorySlug}`,
+      url: `${SITE_URL}/category/${blog.categorySlug}`,
     },
   };
 
@@ -88,11 +89,8 @@ export function BlogDetails() {
   return (
     <div className="blog-details-page">
       <SEOHead
-        title={`${blog.title} - ${blog.category} Blog`}
-        description={
-          blog.description ||
-          `Explore ${blog.title}, a curated independent blog in ${blog.category} covering ${(blog.tags || []).join(', ')}.`
-        }
+        title={buildBlogMeta(blog).title}
+        description={buildBlogMeta(blog).description}
         canonicalPath={`/blog/${blog.slug}`}
         jsonLd={blogSchema}
       />

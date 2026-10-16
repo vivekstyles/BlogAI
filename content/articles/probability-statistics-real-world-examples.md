@@ -1,7 +1,9 @@
 ---
 title: 100 Best Probability and Statistics Examples for Real-World Applications
+seoTitle: 100 Probability and Statistics Examples From Real Life
 description: 100 worked probability and statistics examples, from medical tests and A/B tests to polls and quality control, each solved step by step.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

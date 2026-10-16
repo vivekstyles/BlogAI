@@ -5,6 +5,7 @@ import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL, buildCategoryTitle } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import TagChip from '../components/tags/TagChip';
@@ -78,11 +79,11 @@ export function Category() {
     '@type': 'CollectionPage',
     name: `${category.name} Blogs Directory`,
     description: category.description,
-    url: `https://blogai.directory/category/${category.slug}`,
+    url: `${SITE_URL}/category/${category.slug}`,
     isPartOf: {
       '@type': 'WebSite',
       name: 'BlogAI Directory',
-      url: 'https://blogai.directory',
+      url: SITE_URL,
     },
     about: {
       '@type': 'Thing',
@@ -96,7 +97,7 @@ export function Category() {
   return (
     <div className="category-page">
       <SEOHead
-        title={`${category.name} Blogs - Curated Directory`}
+        title={buildCategoryTitle(category, categoryArticles.length)}
         description={category.description}
         canonicalPath={`/category/${category.slug}`}
         jsonLd={categorySchema}

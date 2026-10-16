@@ -11,14 +11,20 @@ import { fileURLToPath } from 'url';
 import { buildArticleSchema, buildArticleBreadcrumbSchema } from '../src/utils/articleSchema.js';
 import { formatDate } from '../src/utils/formatDate.js';
 import { slugify } from '../src/utils/slugify.js';
+import {
+  SITE_URL,
+  formatPageTitle,
+  buildTagMeta,
+  buildCategoryTitle,
+  buildBlogMeta,
+  buildAuthorSchema,
+} from '../src/utils/seo.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const TEMPLATE_PATH = path.join(DIST_DIR, 'index.html');
-
-const SITE_URL = 'https://blogai.directory';
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -50,6 +56,7 @@ function buildHtml({
   extraMeta = [],
 }) {
   let html = template;
+  title = formatPageTitle(title);
 
   // Replace Title
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)}</title>`);
@@ -102,7 +109,11 @@ function buildHtml({
     html = html.replace('</head>', `${metaTags.join('\n')}\n</head>`);
   }
 
-  // Replace Twitter tags
+  // Replace Twitter tags; the large card needs an image to show anything useful
+  html = html.replace(
+    /<meta\s+name=["']twitter:card["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
+    `<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}" />`
+  );
   html = html.replace(
     /<meta\s+name=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
     `<meta name="twitter:title" content="${escapeHtml(title)}" />`
@@ -156,6 +167,8 @@ async function runPrerender() {
   // Published articles only: drafts are never written to articles.json
   const articlesPath = path.join(ROOT_DIR, 'src', 'data', 'articles.json');
   const articles = fs.existsSync(articlesPath) ? JSON.parse(fs.readFileSync(articlesPath, 'utf-8')) : [];
+  const articleHtml = (slug) =>
+    JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'article-content', `${slug}.json`), 'utf-8')).html;
 
   const articleCardHtml = (a) => `
               <article class="article-card">
@@ -165,8 +178,9 @@ async function runPrerender() {
                 <p><time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time> · ${a.readingTimeMinutes} min read</p>
               </article>`;
 
+  // lastmod is only emitted where a real content date exists; build dates would make it meaningless
   const sitemapUrls = [];
-  const currentDate = new Date().toISOString().split('T')[0];
+  const latestArticleDate = articles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
 
   function writeRouteFile(routePath, htmlContent) {
     let targetDir;
@@ -242,8 +256,8 @@ async function runPrerender() {
 
   const homeHtml = buildHtml({
     template,
-    title: 'Technical Articles & Curated Blog Directory | BlogAI Directory',
-    description: `Read original articles and discover ${blogs.length}+ community-curated independent blogs across software engineering, mathematics, physics, science, and automotive technology.`,
+    title: 'Technical Articles & Curated Blog Directory',
+    description: `Read original articles and discover ${blogs.length}+ community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`,
     canonicalUrl: `${SITE_URL}/`,
     jsonLd: {
       '@context': 'https://schema.org',
@@ -260,7 +274,7 @@ async function runPrerender() {
     bodyContent: homeBody,
   });
   writeRouteFile('/', homeHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/`, changefreq: 'daily', priority: '1.0' });
+  sitemapUrls.push({ loc: `${SITE_URL}/`, lastmod: latestArticleDate });
 
   // 1b. Community blog directory (/directory)
   const directoryBody = `
@@ -285,7 +299,7 @@ async function runPrerender() {
   `;
   writeRouteFile('/directory', buildHtml({
     template,
-    title: 'Community Blog Directory | BlogAI Directory',
+    title: 'Community Blog Directory',
     description: `Search and filter ${blogs.length} community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`,
     canonicalUrl: `${SITE_URL}/directory`,
     jsonLd: {
@@ -297,10 +311,9 @@ async function runPrerender() {
     },
     bodyContent: directoryBody,
   }));
-  sitemapUrls.push({ loc: `${SITE_URL}/directory`, changefreq: 'weekly', priority: '0.9' });
+  sitemapUrls.push({ loc: `${SITE_URL}/directory` });
 
   // 1c. Articles listing (/articles)
-  const latestArticleDate = articles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
   const articlesBody = `
     <main id="main-content">
       <div class="container">
@@ -314,7 +327,7 @@ async function runPrerender() {
   `;
   writeRouteFile('/articles', buildHtml({
     template,
-    title: 'Articles | BlogAI Directory',
+    title: 'Articles',
     description: 'Original articles from BlogAI on reading, following, and learning from technical and scientific writing.',
     canonicalUrl: `${SITE_URL}/articles`,
     jsonLd: {
@@ -329,12 +342,12 @@ async function runPrerender() {
         url: `${SITE_URL}/articles/${a.slug}`,
         datePublished: a.publishedAt,
         dateModified: a.updatedAt,
-        author: { '@type': 'Person', name: a.author },
+        author: buildAuthorSchema(a.author, a.authorType),
       })),
     },
     bodyContent: articlesBody,
   }));
-  sitemapUrls.push({ loc: `${SITE_URL}/articles`, changefreq: 'weekly', priority: '0.9', lastmod: latestArticleDate || undefined });
+  sitemapUrls.push({ loc: `${SITE_URL}/articles`, lastmod: latestArticleDate });
 
   // 1d. Individual articles (/articles/:articleSlug) with the full content in the HTML
   for (const a of articles) {
@@ -360,7 +373,7 @@ async function runPrerender() {
           </header>
           ${a.image ? `<figure class="article-featured-image"><img src="${escapeHtml(a.image)}" alt="${escapeHtml(a.imageAlt)}" /></figure>` : ''}
           ${tocHtml}
-          <div class="article-content">${a.html}</div>
+          <div class="article-content">${articleHtml(a.slug)}</div>
           ${a.tags.length ? `<footer class="article-footer"><h2>Tags</h2>${a.tags.map(t => `<a href="/tag/${t.slug}">#${escapeHtml(t.name)}</a>`).join(' ')}</footer>` : ''}
         </article>
         <div class="container">
@@ -372,7 +385,7 @@ async function runPrerender() {
 
     writeRouteFile(`/articles/${a.slug}`, buildHtml({
       template,
-      title: `${a.title} | BlogAI Directory`,
+      title: a.seoTitle || a.title,
       description: a.description,
       canonicalUrl: a.canonicalUrl,
       ogType: 'article',
@@ -389,7 +402,7 @@ async function runPrerender() {
     }));
     // Articles first published elsewhere keep their external canonical and stay out of the sitemap
     if (a.isCanonicalLocal) {
-      sitemapUrls.push({ loc: `${SITE_URL}/articles/${a.slug}`, changefreq: 'monthly', priority: '0.8', lastmod: a.updatedAt });
+      sitemapUrls.push({ loc: `${SITE_URL}/articles/${a.slug}`, lastmod: a.updatedAt });
     }
   }
 
@@ -423,7 +436,7 @@ async function runPrerender() {
 
     const catHtml = buildHtml({
       template,
-      title: `${cat.name} Blogs - Curated Directory | BlogAI`,
+      title: buildCategoryTitle(cat, catArticles.length),
       description: cat.description,
       canonicalUrl: `${SITE_URL}/category/${cat.slug}`,
       jsonLd: {
@@ -437,7 +450,8 @@ async function runPrerender() {
       bodyContent: catBody,
     });
     writeRouteFile(`/category/${cat.slug}`, catHtml);
-    sitemapUrls.push({ loc: `${SITE_URL}/category/${cat.slug}`, changefreq: 'weekly', priority: '0.8' });
+    const catLastmod = catArticles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
+    sitemapUrls.push({ loc: `${SITE_URL}/category/${cat.slug}`, lastmod: catLastmod });
   }
 
   // 3. Tags (/tag/:tagSlug) - directory tags plus tags used only by articles
@@ -450,11 +464,7 @@ async function runPrerender() {
   for (const t of allTags) {
     const tagBlogs = blogs.filter(b => b.tags.some(tagText => slugify(tagText) === t.slug));
     const tagArticles = articles.filter(a => a.tags.some(x => x.slug === t.slug));
-    const articlePart = `${tagArticles.length} article${tagArticles.length === 1 ? '' : 's'}`;
-    const blogPart = `${tagBlogs.length} curated blog${tagBlogs.length === 1 ? '' : 's'}`;
-    const tagIntro = tagArticles.length
-      ? `Explore ${articlePart}${tagBlogs.length ? ` and ${blogPart}` : ''} discussing #${t.name}.`
-      : `Explore ${tagBlogs.length} curated independent publications discussing #${t.name}.`;
+    const tagMeta = buildTagMeta(t, tagArticles.length, tagBlogs.length);
     const tagBody = `
       <header class="site-header">
         <div class="container"><a href="/" class="site-logo"><span class="logo-title">BlogAI</span></a></div>
@@ -463,7 +473,7 @@ async function runPrerender() {
         <div class="container">
           <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>Tags</li><li>#${escapeHtml(t.name)}</li></ol></nav>
           <h1>#${escapeHtml(t.name)}</h1>
-          <p>${escapeHtml(tagIntro)}</p>
+          <p>${escapeHtml(tagMeta.summary)}</p>
           ${tagArticles.length ? `<section><h2>Articles</h2><div class="article-grid">${tagArticles.map(articleCardHtml).join('')}</div></section>` : ''}
           <div class="blog-grid">
             ${tagBlogs.map(b => `
@@ -480,13 +490,10 @@ async function runPrerender() {
 
     const tagHtml = buildHtml({
       template,
-      title: tagBlogs.length
-        ? `#${t.name} Blogs - Topic Directory | BlogAI`
-        : `#${t.name} Articles - Topic | BlogAI`,
-      description: tagArticles.length
-        ? `Explore ${articlePart}${tagBlogs.length ? ` and ${blogPart}` : ''} tagged with #${t.name} on BlogAI.`
-        : `Explore ${tagBlogs.length} curated independent publications tagged with #${t.name} in the BlogAI directory.`,
+      title: tagMeta.title,
+      description: tagMeta.description,
       canonicalUrl: `${SITE_URL}/tag/${t.slug}`,
+      robots: tagMeta.robots,
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
@@ -497,7 +504,8 @@ async function runPrerender() {
       bodyContent: tagBody,
     });
     writeRouteFile(`/tag/${t.slug}`, tagHtml);
-    sitemapUrls.push({ loc: `${SITE_URL}/tag/${t.slug}`, changefreq: 'weekly', priority: '0.6' });
+    // Single-item tag pages are noindexed, so they stay out of the sitemap
+    if (tagMeta.robots.startsWith('index')) sitemapUrls.push({ loc: `${SITE_URL}/tag/${t.slug}` });
   }
 
   // 4. Individual Blog Details (/blog/:blogSlug)
@@ -530,8 +538,8 @@ async function runPrerender() {
 
     const blogHtml = buildHtml({
       template,
-      title: `${b.title} - ${b.category} Blog | BlogAI Directory`,
-      description: b.description || `Explore ${b.title}, a curated independent blog in ${b.category} covering ${(b.tags || []).join(', ')}.`,
+      title: buildBlogMeta(b).title,
+      description: buildBlogMeta(b).description,
       canonicalUrl: `${SITE_URL}/blog/${b.slug}`,
       jsonLd: {
         '@context': 'https://schema.org',
@@ -545,24 +553,24 @@ async function runPrerender() {
       bodyContent: blogBody,
     });
     writeRouteFile(`/blog/${b.slug}`, blogHtml);
-    sitemapUrls.push({ loc: `${SITE_URL}/blog/${b.slug}`, changefreq: 'monthly', priority: '0.7' });
+    sitemapUrls.push({ loc: `${SITE_URL}/blog/${b.slug}` });
   }
 
   // 5. Submit (/submit)
   const submitHtml = buildHtml({
     template,
-    title: 'Submit a Publication | BlogAI Directory',
+    title: 'Submit a Publication',
     description: 'Recommend a high-quality independent blog in engineering, mathematics, physics, science, or automotive tech for inclusion in BlogAI Directory.',
     canonicalUrl: `${SITE_URL}/submit`,
     bodyContent: `<main id="main-content"><div class="container"><h1>Submit a Blog for Review</h1><p>Suggest high-signal publications for inclusion in the directory.</p></div></main>`,
   });
   writeRouteFile('/submit', submitHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/submit`, changefreq: 'monthly', priority: '0.5' });
+  sitemapUrls.push({ loc: `${SITE_URL}/submit` });
 
   // 6. About (/about)
   const aboutHtml = buildHtml({
     template,
-    title: 'About the Directory | BlogAI Directory',
+    title: 'About the Directory',
     description: 'Learn about the mission, open architecture, and curation standards behind the BlogAI community blog directory.',
     canonicalUrl: `${SITE_URL}/about`,
     jsonLd: {
@@ -574,34 +582,34 @@ async function runPrerender() {
     bodyContent: `<main id="main-content"><div class="container"><h1>About BlogAI Directory</h1><p>An open directory connecting curious minds with independent technical blogs.</p></div></main>`,
   });
   writeRouteFile('/about', aboutHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/about`, changefreq: 'monthly', priority: '0.5' });
+  sitemapUrls.push({ loc: `${SITE_URL}/about` });
 
   // 7. Guidelines (/guidelines)
   const guidelinesHtml = buildHtml({
     template,
-    title: 'Submission Guidelines | BlogAI Directory',
+    title: 'Submission Guidelines',
     description: 'Review the editorial and technical quality guidelines for listing blogs in the BlogAI directory.',
     canonicalUrl: `${SITE_URL}/guidelines`,
     bodyContent: `<main id="main-content"><div class="container"><h1>Submission &amp; Quality Guidelines</h1></div></main>`,
   });
   writeRouteFile('/guidelines', guidelinesHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/guidelines`, changefreq: 'monthly', priority: '0.4' });
+  sitemapUrls.push({ loc: `${SITE_URL}/guidelines` });
 
   // 8. Privacy (/privacy)
   const privacyHtml = buildHtml({
     template,
-    title: 'Privacy Policy | BlogAI Directory',
+    title: 'Privacy Policy',
     description: 'Privacy policy for BlogAI Directory: zero tracking, no cookies, and no personal data collection.',
     canonicalUrl: `${SITE_URL}/privacy`,
     bodyContent: `<main id="main-content"><div class="container"><h1>Privacy Policy</h1><p>Zero tracking, no analytics cookies, no personal data resale.</p></div></main>`,
   });
   writeRouteFile('/privacy', privacyHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/privacy`, changefreq: 'yearly', priority: '0.3' });
+  sitemapUrls.push({ loc: `${SITE_URL}/privacy` });
 
   // 9. 404 (404.html)
   const notFoundHtml = buildHtml({
     template,
-    title: '404 - Page Not Found | BlogAI Directory',
+    title: '404 - Page Not Found',
     description: 'The requested page could not be found.',
     canonicalUrl: `${SITE_URL}/404`,
     robots: 'noindex, nofollow',
@@ -613,10 +621,8 @@ async function runPrerender() {
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls.map(u => `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>${u.lastmod || currentDate}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
+    <loc>${u.loc}</loc>${u.lastmod ? `
+    <lastmod>${u.lastmod}</lastmod>` : ''}
   </url>`).join('\n')}
 </urlset>
 `;
@@ -628,7 +634,8 @@ ${sitemapUrls.map(u => `  <url>
     fs.copyFileSync(rootOpml, path.join(DIST_DIR, 'feed.opml'));
   }
 
-  console.log(`[SUCCESS] Pre-rendered ${sitemapUrls.length + 1} static pages and generated sitemap.xml with ${sitemapUrls.length} canonical URLs.`);
+  const pageCount = 8 + articles.length + categories.length + allTags.length + blogs.length;
+  console.log(`[SUCCESS] Pre-rendered ${pageCount} static pages and generated sitemap.xml with ${sitemapUrls.length} canonical URLs.`);
 }
 
 runPrerender().catch(err => {

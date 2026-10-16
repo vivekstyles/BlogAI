@@ -4,6 +4,7 @@ import { FileText, Compass } from 'lucide-react';
 import { articleService } from '../services/articleService';
 import { blogService } from '../services/blogService';
 import SEOHead from '../components/seo/SEOHead';
+import { SITE_URL, buildAuthorSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchBar from '../components/search/SearchBar';
 import CategoryNav from '../components/categories/CategoryNav';
@@ -11,7 +12,6 @@ import ArticleCard from '../components/articles/ArticleCard';
 import EmptyState from '../components/search/EmptyState';
 import './Articles.css';
 
-const SITE_URL = 'https://blogai.directory';
 
 export function Articles() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -56,7 +56,7 @@ export function Articles() {
       url: `${SITE_URL}/articles/${a.slug}`,
       datePublished: a.publishedAt,
       dateModified: a.updatedAt,
-      author: { '@type': 'Person', name: a.author },
+      author: buildAuthorSchema(a.author, a.authorType),
     })),
   };
 

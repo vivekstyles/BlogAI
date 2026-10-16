@@ -1,0 +1,116 @@
+# 2. Keywords, clusters, competitors and per-article plan
+
+**Data limits.** No keyword tool (Search Console, Ahrefs, Semrush, Keyword Planner) is connected, so this document contains **no search volumes, difficulty scores or rankings**. Keyword choices come from each article's actual content, its title, and the phrasing searchers use in the sampled results in §3. Once Search Console has 4–8 weeks of data after launch, replace the "secondary / long-tail" columns with real queries from the Performance report.
+
+## 1. Keyword-to-URL map
+
+| URL | Primary keyword | Secondary and close variants | Long-tail and question queries | Intent | Audience |
+|---|---|---|---|---|---|
+| `/articles/algebra-problems-with-solutions-for-beginners` | algebra problems with solutions | algebra practice problems, beginner algebra problems, algebra worksheet with answers | how to solve two-step equations; extraneous solution example; systems of equations word problems with answers | Informational (practice) | Students in pre-algebra / Algebra 1, adult learners |
+| `/articles/math-tricks-to-solve-problems-faster` | math tricks | mental math tricks, fast calculation tricks, divisibility rules | how to multiply by 11 in your head; why does casting out nines work; how to square numbers ending in 5 | Informational | Students, competitive-exam takers, curious adults |
+| `/articles/math-formulas-every-student-should-know` | math formulas | important math formulas, math formula sheet, basic math formulas | when to use the law of cosines; formula for the sum of a geometric series; derivative rules list | Informational (reference) | High school and first-year university students |
+| `/articles/probability-statistics-real-world-examples` | probability and statistics examples | real-life probability examples, statistics in everyday life | Bayes' theorem medical test example; how is margin of error calculated; Simpson's paradox example | Informational | Students, analysts, data-science learners |
+| `/articles/linear-algebra-concepts-for-machine-learning` | linear algebra for machine learning | linear algebra concepts for AI, math for deep learning | why PCA uses SVD; attention as matrix multiplication; what is LoRA in linear algebra terms | Informational | ML practitioners and students with some programming |
+| `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
+| `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
+| `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
+| `/category/mathematics` | mathematics blogs | math articles and blogs | best math blogs to follow | Commercial-investigation | Math learners |
+| `/category/engineering` etc. | `<category> blogs` | — | best `<category>` blogs | Commercial-investigation | — |
+| `/blog/:slug` | the blog's name | `<name> RSS feed` | — | Navigational | — |
+
+### Cannibalization check
+
+| Pair | Overlap | Decision |
+|---|---|---|
+| Algebra problems ↔ Math formulas | Both cover the quadratic formula, exponents and slope | **Keep separate.** Different intents: practice with worked solutions versus a reference sheet. Each already links to the other. Keep the formulas page as a reference with short examples, not drills. |
+| Math tricks ↔ Math formulas | Difference of squares, Pythagorean triples, sum of arithmetic series | **Keep separate.** "Tricks" targets speed and mental math; "formulas" targets lookup. Watch GSC for one URL ranking for the other's primary term. |
+| Probability examples ↔ Math formulas (probability section) | 11 formulas overlap | **Keep separate.** Formulas are definitions; the examples article is applications. |
+| Linear algebra for ML ↔ Math formulas (vectors and matrices) | 7 formulas | **Keep separate.** Different audiences. |
+
+No consolidation, redirect or unpublishing is recommended.
+
+## 2. Topic clusters and content gaps
+
+### Cluster A — School and early-university mathematics (strongest cluster)
+
+- **Pillar (proposed):** none exists yet. Recommended: a short hub page, "Math study guide: formulas, practice problems and tricks" at `/articles/math-study-guide`, that routes readers to each article by goal. It should be written only if it adds real guidance, such as a study order and which article to use when. The existing `/category/mathematics` page partly does this job already.
+- **Supporting:** algebra problems, math formulas, math tricks, probability examples.
+- **Gaps worth considering** (each needs demand confirmed in GSC or a keyword tool first):
+  - Geometry problems with solutions (mirrors the algebra format; the formulas page already covers the theory).
+  - Calculus practice problems with solutions (derivatives, integrals).
+  - Trigonometry identities with proofs (the formulas page lists them but does not prove them).
+  - A printable one-page formula sheet as a downloadable PDF, which is a natural link-earning asset.
+
+### Cluster B — Math for machine learning
+
+- **Pillar:** linear algebra concepts for ML.
+- **Gaps:** probability for machine learning (could reuse the probability article's Bayes and distribution material, with a different audience and examples), calculus for ML (gradients and backprop in depth), statistics for A/B testing (deeper version of examples 79–88).
+
+### Cluster C — Reading technical writing (directory-aligned)
+
+- **Articles:** RSS/OPML, reading engineering posts critically.
+- **Gaps:** the unpublished draft `mathematics-reading-list` (finish or delete); "best engineering blogs to follow, by topic", written from the directory data with real reasons per blog. That page should not be a thin list.
+
+### Cluster D — Physics, Science, Automobile
+
+There is directory content only. Do not write articles just to fill these categories; write them only if the owner has expertise and an angle.
+
+### About the "100 Best…" series
+
+The five math list articles are **not** padded lists. Each entry has a definition or problem, a worked example and, in most cases, a "why it works" or "check" step. They also include references and common-mistakes sections. Two concerns remain:
+
+1. **"Best" in the title is unsupported.** Nothing ranks the items against alternatives. "150 Algebra Problems With Step-by-Step Solutions" is more accurate and still specific. This is an owner decision, because the H1 is editorial. If you keep the H1, set a different `seoTitle`.
+2. **The number is the hook, not the value.** Lead the description with what makes the page different (worked solutions with checks; proofs for every trick; recomputed in Python) rather than the count.
+
+## 3. SERP and competitor snapshot
+
+Method: one query per primary keyword on 2026-10-16 using the agent's web search tool, which **is not Google** and is US-only. Treat this as a qualitative sample. Repeat on Google (logged out, incognito, target country) before acting on it.
+
+| Query | What appeared | Observed weakness | Our angle |
+|---|---|---|---|
+| algebra problems with solutions for beginners | A paid workbook listing ([AbeBooks](https://www.abebooks.com/9798315845409/100-Algebra-Problems-Beginners-Solutions/plp)) and many mirrored PDF pages | Spammy mirrors and few free, fully worked sets | 150 free problems with full solutions **and a self-check** per problem, all on one crawlable page |
+| linear algebra for machine learning concepts | [IBM Think](https://www.ibm.com/think/topics/linear-algebra-for-machine-learning), [Machine Learning Mastery](https://machinelearningmastery.com/linear_algebra_for_machine_learning/single-faq/what-about-delivery/) book pages, low-quality aggregators | Overviews that stop at concepts; few runnable examples; little on attention or LoRA | 101 concepts, NumPy snippets with real output, modern-model coverage (attention, LoRA) |
+| math formulas every student should know | [Vedantu](https://www.vedantu.com/formula/basic-math-formulas), [iD Tech (23 formulas)](https://www.idtech.com/blog/important-math-formulas-for-school-students), PDF mirrors | Shorter lists; formulas without symbols explained or worked examples; one sampled source had a formula with a missing bracket | Every symbol defined, a worked example per formula, recomputed numerically |
+| math tricks to solve problems faster | [Prodigy (5 tricks)](https://prodigygame.com/main-en/blog/5-tricks-that-can-help-your-students-solve-math-problems-faster), spam PDFs (one with a wrong worked example) | Few tricks, no proofs, some errors | Proof of why each trick works and where it breaks |
+| probability and statistics real world examples | Generic overviews ([Creta Class](https://www.cretaclass.com/en-in/blogs/Probability-and-statistics-740)), spam PDFs | Applications listed, not worked | 100 fully worked scenarios, with illustrative numbers clearly labeled |
+
+**Takeaways.** The sampled results for these queries are full of thin and mirrored pages, and the BlogAI articles are more complete than what was sampled. Completeness is not the bottleneck. The constraints are: (1) the site is not live (P0-1), (2) it is a new domain with no links, and (3) there is no named expert author. Real Google results for these head terms will likely include Khan Academy, Math is Fun, university notes and textbook publishers, which this sample did not show. Expect long-tail and question queries (§1) to produce the first impressions, not the head terms.
+
+## 4. Per-article recommendations
+
+The checklist in [04-publishing-checklist.md](04-publishing-checklist.md) applies to every article. Article-specific items:
+
+| Article | Done in this pass | Recommended (owner) |
+|---|---|---|
+| Algebra problems | SEO title fits in 60 chars (suffix dropped) | Consider "150 Algebra Problems With Step-by-Step Solutions" (drop "Best"). The page is about 1.9 MB of HTML: consider splitting into "Part 1: expressions to inequalities" and "Part 2: systems to functions" with prev/next links, **only** if live Core Web Vitals are poor. Add a named reviewer for math accuracy. |
+| Math tricks | — | Drop "Best" (same reason). Description could lead with "with a proof for each". |
+| Math formulas | — | Drop "Best". Offer a printable formula sheet (P3 link asset). |
+| Probability examples | `seoTitle: 100 Probability and Statistics Examples From Real Life` (H1 unchanged) | Already labels illustrative numbers and cites its one real data set (Bickel et al., 1975). No content change needed. |
+| Linear algebra for ML | — | Description is 154 chars and fine. The NumPy version note is good; re-run snippets on major NumPy releases and bump `updatedAt` only when output changes. |
+| Read engineering posts | Description trimmed to 154 chars | 474 words is short against the topic. Add 2 or 3 real, linked worked examples of public engineering posts. |
+| RSS and OPML | Contextual link to the engineering-reading article | Add screenshots with alt text for one feed reader import flow. |
+
+### Content accuracy review (not done in this pass)
+
+The prompt asks to verify formulas and worked solutions. The articles state they were recomputed in Python before publication, and KaTeX validates syntax at build time, but **this pass did not independently re-verify the roughly 550 worked examples**. A scripted re-check, extracting each numeric answer and recomputing it with SymPy, is a good dedicated follow-up task.
+
+## 5. Internal-linking map
+
+Contextual links inside article bodies (from Markdown; counts are links to that target):
+
+```
+algebra-problems ─┬─> math-formulas, math-tricks, probability, linear-algebra, /category/mathematics
+math-formulas ────┼─> algebra-problems, math-tricks, probability, linear-algebra, /category/mathematics
+math-tricks ──────┼─> algebra-problems, math-formulas, probability, linear-algebra, /category/mathematics
+probability ──────┼─> algebra-problems, math-formulas, math-tricks, linear-algebra, /category/mathematics
+linear-algebra ───┴─> algebra-problems, math-formulas, math-tricks, probability, /category/mathematics, /category/engineering, /directory
+read-engineering ───> follow-rss, /category/engineering
+follow-rss ─────────> read-engineering (added), /directory, /category/engineering, /submit, /feed.opml
+```
+
+Template links on every article page: breadcrumbs (Home → Articles), category links, tag links, up to 3 related articles (`linkRelated` in `build_articles.js`), and up to 3 related directory blogs.
+
+- **Orphans:** none. Every article is linked from `/articles`, its category page, and at least one other article.
+- **Weakest pages:** the two engineering articles get links only from each other, the listing pages, and the template. When the ML cluster grows, link `linear-algebra-concepts-for-machine-learning` → `read-engineering-blog-posts-critically` only if a genuinely related passage exists.
+- **Anchor text:** descriptive article titles. No exact-match keyword anchors were added.
+- **Change log:** one link added (RSS → engineering-reading); none removed.

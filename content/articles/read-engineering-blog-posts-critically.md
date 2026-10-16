@@ -1,7 +1,8 @@
 ---
 title: How to Read an Engineering Blog Post Critically
-description: A practical checklist for separating transferable lessons from context-specific stories when reading architecture and scalability write-ups from large tech companies.
+description: A practical checklist for separating transferable lessons from context-specific stories in architecture and scalability write-ups from big tech companies.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-16
 updatedAt: 2026-10-16
 status: published

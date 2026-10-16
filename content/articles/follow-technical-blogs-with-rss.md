@@ -2,6 +2,7 @@
 title: How to Follow Technical Blogs with RSS and OPML
 description: Set up a feed reader, import the BlogAI OPML file, and build a reading routine that keeps you current without endless tabs or algorithmic timelines.
 author: BlogAI Editors
+authorType: Organization
 publishedAt: 2026-10-14
 updatedAt: 2026-10-14
 status: published
@@ -77,4 +78,4 @@ Feeds only help if you have a habit for clearing them:
 
 ## Where to go next
 
-Browse the [Engineering category](/category/engineering) for systems and infrastructure writing, or explore the full [blog directory](/directory) by topic.
+Browse the [Engineering category](/category/engineering) for systems and infrastructure writing, or explore the full [blog directory](/directory) by topic. Once the posts start arriving, [How to Read an Engineering Blog Post Critically](/articles/read-engineering-blog-posts-critically) shows how to separate the lessons that transfer to your own systems from the ones that only made sense at the author's scale.
