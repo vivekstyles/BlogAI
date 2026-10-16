@@ -172,3 +172,21 @@
 .cta-btn {
   white-space: nowrap;
 }
+
+.home-articles-section {
+  padding: 4rem 0 0;
+}
+
+.section-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+}
+
+.section-more-link:hover {
+  color: var(--brand-primary-hover);
+}

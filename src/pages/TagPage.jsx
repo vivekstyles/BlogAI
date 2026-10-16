@@ -2,24 +2,30 @@ import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Tag as TagIcon, AlertCircle } from 'lucide-react';
 import { blogService } from '../services/blogService';
+import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import BlogList from '../components/blogs/BlogList';
+import ArticleCard from '../components/articles/ArticleCard';
 import './TagPage.css';
 
 export function TagPage() {
   const { tagSlug } = useParams();
 
-  const tagObj = useMemo(
-    () => blogService.getTagBySlug(tagSlug),
-    [tagSlug]
-  );
+  const directoryTag = useMemo(() => blogService.getTagBySlug(tagSlug), [tagSlug]);
+  const matchingArticles = useMemo(() => articleService.getArticlesByTag(tagSlug || ''), [tagSlug]);
+
+  // A tag page exists when either directory blogs or articles use the tag
+  const tagObj =
+    directoryTag ||
+    matchingArticles[0]?.tags.find((t) => t.slug === (tagSlug || '').toLowerCase()) ||
+    null;
 
   const matchingBlogs = useMemo(
-    () => (tagObj ? blogService.getBlogsByTag(tagSlug) : []),
-    [tagObj, tagSlug]
+    () => (directoryTag ? blogService.getBlogsByTag(tagSlug) : []),
+    [directoryTag, tagSlug]
   );
 
   const {
@@ -47,7 +53,7 @@ export function TagPage() {
         <div className="empty-tag-card">
           <AlertCircle size={40} className="not-found-icon" />
           <h2>Tag Not Found</h2>
-          <p>We could not find any blogs associated with &ldquo;#{tagSlug}&rdquo;.</p>
+          <p>We could not find any articles or blogs associated with &ldquo;#{tagSlug}&rdquo;.</p>
           <Link to="/" className="btn btn-primary">
             Back to Directory Home
           </Link>
@@ -59,16 +65,29 @@ export function TagPage() {
   const tagSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: `Blogs Tagged with #${tagObj.name}`,
-    description: `Curated collection of technical and scientific blogs tagged with #${tagObj.name}.`,
+    name: `Articles and Blogs Tagged with #${tagObj.name}`,
+    description: `Articles and curated technical and scientific blogs tagged with #${tagObj.name}.`,
     url: `https://blogai.directory/tag/${tagObj.slug}`,
     isPartOf: {
       '@type': 'WebSite',
       name: 'BlogAI Directory',
       url: 'https://blogai.directory',
     },
-    numberOfItems: matchingBlogs.length,
+    numberOfItems: matchingBlogs.length + matchingArticles.length,
   };
+
+  const blogPart = `${matchingBlogs.length} curated blog${matchingBlogs.length === 1 ? '' : 's'}`;
+  const articlePart = `${matchingArticles.length} article${matchingArticles.length === 1 ? '' : 's'}`;
+  const tagSummary =
+    matchingArticles.length > 0 && matchingBlogs.length > 0
+      ? `Explore ${articlePart} and ${blogPart} discussing #${tagObj.name}.`
+      : matchingArticles.length > 0
+        ? `Explore ${articlePart} discussing #${tagObj.name}.`
+        : `Explore ${matchingBlogs.length} high-signal publication${matchingBlogs.length === 1 ? '' : 's'} discussing #${tagObj.name}.`;
+  const tagDescription =
+    matchingArticles.length > 0
+      ? `${tagSummary} Original articles and independent blogs on BlogAI.`
+      : `Explore ${matchingBlogs.length} curated independent blogs tagged with #${tagObj.name} in the BlogAI directory.`;
 
   const breadcrumbs = [
     { label: 'Tags' },
@@ -79,7 +98,7 @@ export function TagPage() {
     <div className="tag-page">
       <SEOHead
         title={`#${tagObj.name} Blogs - Topic Directory`}
-        description={`Explore ${matchingBlogs.length} curated independent blogs tagged with #${tagObj.name} in the BlogAI directory.`}
+        description={tagDescription}
         canonicalPath={`/tag/${tagObj.slug}`}
         jsonLd={tagSchema}
       />
@@ -94,32 +113,48 @@ export function TagPage() {
           </div>
 
           <h1 className="tag-title">#{tagObj.name}</h1>
-          <p className="tag-desc">
-            Explore {matchingBlogs.length} high-signal publication{matchingBlogs.length === 1 ? '' : 's'}{' '}
-            discussing #{tagObj.name}.
-          </p>
+          <p className="tag-desc">{tagSummary}</p>
         </header>
 
-        <SearchFilters
-          query={query}
-          onQueryChange={setQuery}
-          category=""
-          onCategoryChange={() => {}}
-          tag=""
-          onTagChange={() => {}}
-          sortBy={sortBy}
-          onSortChange={setSortBy}
-          totalResults={totalCount}
-          totalBlogs={matchingBlogs.length}
-          onClearAll={clearFilters}
-          hasActiveFilters={hasActiveFilters}
-        />
+        {matchingArticles.length > 0 && (
+          <section className="tag-articles" aria-labelledby="tag-articles-heading">
+            <h2 id="tag-articles-heading" className="tag-section-title">
+              Articles
+            </h2>
+            <div className="article-grid">
+              {matchingArticles.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
+          </section>
+        )}
 
-        <BlogList
-          blogs={results}
-          onResetFilters={clearFilters}
-          resetDeps={[query, sortBy, tagSlug]}
-        />
+        {matchingBlogs.length > 0 && (
+          <>
+            <h2 className="tag-section-title">Blogs in the directory</h2>
+
+            <SearchFilters
+              query={query}
+              onQueryChange={setQuery}
+              category=""
+              onCategoryChange={() => {}}
+              tag=""
+              onTagChange={() => {}}
+              sortBy={sortBy}
+              onSortChange={setSortBy}
+              totalResults={totalCount}
+              totalBlogs={matchingBlogs.length}
+              onClearAll={clearFilters}
+              hasActiveFilters={hasActiveFilters}
+            />
+
+            <BlogList
+              blogs={results}
+              onResetFilters={clearFilters}
+              resetDeps={[query, sortBy, tagSlug]}
+            />
+          </>
+        )}
       </div>
     </div>
   );

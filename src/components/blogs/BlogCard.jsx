@@ -7,7 +7,9 @@ import TagChip from '../tags/TagChip';
 import './BlogCard.css';
 
 /**
- * Reusable BlogCard component.
+ * Card for an external blog in the community directory. The title opens the
+ * original website; "Details" opens the blog's directory page. Visually distinct
+ * from first-party ArticleCards (neutral frame, "External blog" label).
  */
 export function BlogCard({
   blog,
@@ -19,6 +21,10 @@ export function BlogCard({
 
   return (
     <article className={`blog-card ${className}`}>
+      <span className="blog-kind-label">
+        <ExternalLink size={12} aria-hidden="true" />
+        <span>External blog</span>
+      </span>
       <div className="blog-card-top">
         <BlogMetadata
           category={blog.category}
@@ -34,9 +40,15 @@ export function BlogCard({
 
       <div className="blog-card-main">
         <h3 className="blog-card-title">
-          <Link to={`/blog/${blog.slug}`} className="blog-internal-link">
-            {blog.title}
-          </Link>
+          <a
+            href={blog.address}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="blog-internal-link blog-external-title"
+          >
+            <span>{blog.title}</span>
+            <span className="sr-only"> (external website, opens in a new tab)</span>
+          </a>
         </h3>
 
         {blog.description ? (
@@ -62,7 +74,11 @@ export function BlogCard({
       )}
 
       <div className="blog-card-footer">
-        <Link to={`/blog/${blog.slug}`} className="card-details-link">
+        <Link
+          to={`/blog/${blog.slug}`}
+          className="card-details-link"
+          aria-label={`Directory details for ${blog.title}`}
+        >
           <span>Details</span>
           <ArrowRight size={14} />
         </Link>

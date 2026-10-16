@@ -87,3 +87,13 @@
 .not-found-icon {
   color: var(--color-error);
 }
+
+.category-articles {
+  margin-bottom: 3rem;
+}
+
+.category-section-title {
+  font-size: 1.375rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.25rem;
+}

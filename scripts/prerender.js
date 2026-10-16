@@ -8,6 +8,9 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { buildArticleSchema, buildArticleBreadcrumbSchema } from '../src/utils/articleSchema.js';
+import { formatDate } from '../src/utils/formatDate.js';
+import { slugify } from '../src/utils/slugify.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -34,7 +37,18 @@ function escapeJsonLd(obj) {
     .replace(/&/g, '\\u0026');
 }
 
-function buildHtml({ template, title, description, canonicalUrl, robots = 'index, follow', jsonLd = null, bodyContent = '' }) {
+function buildHtml({
+  template,
+  title,
+  description,
+  canonicalUrl,
+  robots = 'index, follow',
+  jsonLd = null,
+  bodyContent = '',
+  ogType = 'website',
+  image = '',
+  extraMeta = [],
+}) {
   let html = template;
 
   // Replace Title
@@ -66,6 +80,28 @@ function buildHtml({ template, title, description, canonicalUrl, robots = 'index
     `<meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`
   );
 
+  html = html.replace(
+    /<meta\s+property=["']og:type["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
+    `<meta property="og:type" content="${escapeHtml(ogType)}" />`
+  );
+
+  // Optional image and article metadata
+  const headMeta = [...extraMeta];
+  if (image) {
+    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+    headMeta.push({ property: 'og:image', content: imageUrl }, { name: 'twitter:image', content: imageUrl });
+  }
+  const metaTags = headMeta
+    .filter((m) => m.content)
+    .map((m) =>
+      m.property
+        ? `  <meta property="${escapeHtml(m.property)}" content="${escapeHtml(m.content)}" />`
+        : `  <meta name="${escapeHtml(m.name)}" content="${escapeHtml(m.content)}" />`
+    );
+  if (metaTags.length > 0) {
+    html = html.replace('</head>', `${metaTags.join('\n')}\n</head>`);
+  }
+
   // Replace Twitter tags
   html = html.replace(
     /<meta\s+name=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
@@ -90,8 +126,11 @@ function buildHtml({ template, title, description, canonicalUrl, robots = 'index
 
   // Inject JSON-LD structured data
   if (jsonLd) {
-    const jsonLdScript = `  <script type="application/ld+json">\n${escapeJsonLd(jsonLd)}\n  </script>\n`;
-    html = html.replace('</head>', `${jsonLdScript}</head>`);
+    const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+    const jsonLdScripts = schemas
+      .map((schema) => `  <script type="application/ld+json">\n${escapeJsonLd(schema)}\n  </script>\n`)
+      .join('');
+    html = html.replace('</head>', `${jsonLdScripts}</head>`);
   }
 
   // Inject Pre-rendered semantic HTML body inside #root
@@ -114,6 +153,17 @@ async function runPrerender() {
   const blogs = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'blogs.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'categories.json'), 'utf-8'));
   const tags = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'tags.json'), 'utf-8'));
+  // Published articles only: drafts are never written to articles.json
+  const articlesPath = path.join(ROOT_DIR, 'src', 'data', 'articles.json');
+  const articles = fs.existsSync(articlesPath) ? JSON.parse(fs.readFileSync(articlesPath, 'utf-8')) : [];
+
+  const articleCardHtml = (a) => `
+              <article class="article-card">
+                <span class="article-kind-label">Original article</span>
+                <h3><a href="/articles/${a.slug}">${escapeHtml(a.title)}</a></h3>
+                <p>${escapeHtml(a.description)}</p>
+                <p><time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time> · ${a.readingTimeMinutes} min read</p>
+              </article>`;
 
   const sitemapUrls = [];
   const currentDate = new Date().toISOString().split('T')[0];
@@ -148,18 +198,34 @@ async function runPrerender() {
           <span class="logo-title">BlogAI</span>
           <span class="logo-tag">Directory</span>
         </a>
+        <nav aria-label="Main navigation">
+          <a href="/articles">Articles</a>
+          <a href="/directory">Blog Directory</a>
+          <a href="/submit">Submit a Blog</a>
+        </nav>
       </div>
     </header>
     <main id="main-content">
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Discover Great Technical &amp; Scientific Blogs</h1>
-          <p class="hero-subtitle">An independent directory of ${blogs.length} high-signal publications across engineering, mathematics, physics, science, and automotive technology.</p>
+          <p class="hero-subtitle">Read original articles published here, and explore a community-curated directory of ${blogs.length} independent blogs across engineering, mathematics, physics, science, and automotive technology.</p>
+          <a href="/articles">Read Articles</a>
+          <a href="/directory">Browse Blog Directory</a>
         </div>
       </section>
+      ${articles.length > 0 ? `
+      <section class="home-articles-section">
+        <div class="container">
+          <h2 class="section-title">Latest Articles</h2>
+          <div class="article-grid">${articles.slice(0, 3).map(articleCardHtml).join('')}
+          </div>
+          <a href="/articles">All articles</a>
+        </div>
+      </section>` : ''}
       <section class="categories-section">
         <div class="container">
-          <h2 class="section-title">Browse Categories</h2>
+          <h2 class="section-title">Browse by Category</h2>
           <div class="category-grid">
             ${categories.map(c => `
               <div class="category-card">
@@ -171,44 +237,166 @@ async function runPrerender() {
           </div>
         </div>
       </section>
-      <section class="directory-section">
-        <div class="container">
-          <h2 class="section-title">All Publications</h2>
-          <div class="blog-grid">
-            ${blogs.map(b => `
-              <article class="blog-card">
-                <h3><a href="/blog/${b.slug}">${escapeHtml(b.title)}</a></h3>
-                <p>${escapeHtml(b.description || `Curated ${b.category} publication.`)}</p>
-                <a href="${escapeHtml(b.address)}" target="_blank" rel="noopener noreferrer">Visit Website</a>
-                <a href="/category/${b.categorySlug}">${escapeHtml(b.category)}</a>
-              </article>
-            `).join('')}
-          </div>
-        </div>
-      </section>
     </main>
   `;
 
   const homeHtml = buildHtml({
     template,
-    title: 'BlogAI - Curated Community Blog Directory',
-    description: `Discover, search, filter, and subscribe to over ${blogs.length} high-quality independent blogs across engineering, math, physics, science, and automotive technology.`,
+    title: 'Technical Articles & Curated Blog Directory | BlogAI Directory',
+    description: `Read original articles and discover ${blogs.length}+ community-curated independent blogs across software engineering, mathematics, physics, science, and automotive technology.`,
     canonicalUrl: `${SITE_URL}/`,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'BlogAI Directory',
+      name: 'BlogAI',
       url: SITE_URL,
-      description: 'Curated community directory of high-quality blogs in engineering, mathematics, physics, science, and automotive technology.',
+      description: 'Original articles and a community-curated directory of high-quality blogs in engineering, mathematics, physics, science, and automotive technology.',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${SITE_URL}/directory?q={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
     },
     bodyContent: homeBody,
   });
   writeRouteFile('/', homeHtml);
   sitemapUrls.push({ loc: `${SITE_URL}/`, changefreq: 'daily', priority: '1.0' });
 
+  // 1b. Community blog directory (/directory)
+  const directoryBody = `
+    <main id="main-content">
+      <div class="container">
+        <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>Blog Directory</li></ol></nav>
+        <h1>Community Blog Directory</h1>
+        <p>Independent blogs curated by the community. Every listing links to the original website. For writing published here, see our <a href="/articles">articles</a>.</p>
+        <div class="blog-grid">
+          ${blogs.map(b => `
+            <article class="blog-card">
+              <span class="blog-kind-label">External blog</span>
+              <h3><a href="${escapeHtml(b.address)}" target="_blank" rel="noopener noreferrer">${escapeHtml(b.title)}</a></h3>
+              <p>${escapeHtml(b.description || `Curated ${b.category} publication.`)}</p>
+              <a href="/blog/${b.slug}">Details</a>
+              <a href="/category/${b.categorySlug}">${escapeHtml(b.category)}</a>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    </main>
+  `;
+  writeRouteFile('/directory', buildHtml({
+    template,
+    title: 'Community Blog Directory | BlogAI Directory',
+    description: `Search and filter ${blogs.length} community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`,
+    canonicalUrl: `${SITE_URL}/directory`,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Community Blog Directory',
+      url: `${SITE_URL}/directory`,
+      numberOfItems: blogs.length,
+    },
+    bodyContent: directoryBody,
+  }));
+  sitemapUrls.push({ loc: `${SITE_URL}/directory`, changefreq: 'weekly', priority: '0.9' });
+
+  // 1c. Articles listing (/articles)
+  const latestArticleDate = articles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
+  const articlesBody = `
+    <main id="main-content">
+      <div class="container">
+        <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>Articles</li></ol></nav>
+        <h1>Articles</h1>
+        <p>Original writing published here on BlogAI. Looking for external blogs instead? Browse the <a href="/directory">community blog directory</a>.</p>
+        <div class="article-grid">${articles.map(articleCardHtml).join('')}
+        </div>
+      </div>
+    </main>
+  `;
+  writeRouteFile('/articles', buildHtml({
+    template,
+    title: 'Articles | BlogAI Directory',
+    description: 'Original articles from BlogAI on reading, following, and learning from technical and scientific writing.',
+    canonicalUrl: `${SITE_URL}/articles`,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'Blog',
+      name: 'BlogAI Articles',
+      description: 'Original articles published by BlogAI.',
+      url: `${SITE_URL}/articles`,
+      blogPost: articles.map(a => ({
+        '@type': 'BlogPosting',
+        headline: a.title,
+        url: `${SITE_URL}/articles/${a.slug}`,
+        datePublished: a.publishedAt,
+        dateModified: a.updatedAt,
+        author: { '@type': 'Person', name: a.author },
+      })),
+    },
+    bodyContent: articlesBody,
+  }));
+  sitemapUrls.push({ loc: `${SITE_URL}/articles`, changefreq: 'weekly', priority: '0.9', lastmod: latestArticleDate || undefined });
+
+  // 1d. Individual articles (/articles/:articleSlug) with the full content in the HTML
+  for (const a of articles) {
+    const relatedArticles = a.relatedArticles.map(slug => articles.find(x => x.slug === slug)).filter(Boolean);
+    const relatedBlogs = a.relatedBlogs.map(slug => blogs.find(b => b.slug === slug)).filter(Boolean);
+    const tocHtml = a.showToc && a.toc.length > 0
+      ? `<nav class="article-toc" aria-label="Table of contents"><p class="article-toc-title">On this page</p><ol class="article-toc-list">${a.toc.map(t => `<li class="article-toc-item level-${t.level}"><a href="#${t.id}">${escapeHtml(t.text)}</a></li>`).join('')}</ol></nav>`
+      : '';
+    const updatedHtml = a.updatedAt !== a.publishedAt
+      ? ` · Updated <time datetime="${a.updatedAt}">${formatDate(a.updatedAt)}</time>`
+      : '';
+    const articleBody = `
+      <main id="main-content">
+        <div class="container">
+          <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/articles">Articles</a></li><li>${escapeHtml(a.title)}</li></ol></nav>
+        </div>
+        <article class="container article-layout">
+          <header class="article-header">
+            <p>${a.categories.map(c => `<a href="/category/${c.slug}">${escapeHtml(c.name)}</a>`).join(' ')}</p>
+            <h1 class="article-title">${escapeHtml(a.title)}</h1>
+            <p class="article-lead">${escapeHtml(a.description)}</p>
+            <p class="article-meta">By ${escapeHtml(a.author)} · <time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time>${updatedHtml} · ${a.readingTimeMinutes} min read</p>
+          </header>
+          ${a.image ? `<figure class="article-featured-image"><img src="${escapeHtml(a.image)}" alt="${escapeHtml(a.imageAlt)}" /></figure>` : ''}
+          ${tocHtml}
+          <div class="article-content">${a.html}</div>
+          ${a.tags.length ? `<footer class="article-footer"><h2>Tags</h2>${a.tags.map(t => `<a href="/tag/${t.slug}">#${escapeHtml(t.name)}</a>`).join(' ')}</footer>` : ''}
+        </article>
+        <div class="container">
+          ${relatedArticles.length ? `<section><h2>Related articles</h2><ul>${relatedArticles.map(r => `<li><a href="/articles/${r.slug}">${escapeHtml(r.title)}</a></li>`).join('')}</ul></section>` : ''}
+          ${relatedBlogs.length ? `<section><h2>From the blog directory</h2><ul>${relatedBlogs.map(b => `<li><a href="${escapeHtml(b.address)}" target="_blank" rel="noopener noreferrer">${escapeHtml(b.title)}</a> (<a href="/blog/${b.slug}">details</a>)</li>`).join('')}</ul></section>` : ''}
+        </div>
+      </main>
+    `;
+
+    writeRouteFile(`/articles/${a.slug}`, buildHtml({
+      template,
+      title: `${a.title} | BlogAI Directory`,
+      description: a.description,
+      canonicalUrl: a.canonicalUrl,
+      ogType: 'article',
+      image: a.image,
+      extraMeta: [
+        { property: 'article:published_time', content: a.publishedAt },
+        { property: 'article:modified_time', content: a.updatedAt },
+        { property: 'article:author', content: a.author },
+        { property: 'article:section', content: a.categories[0]?.name },
+        ...a.tags.map(t => ({ property: 'article:tag', content: t.name })),
+      ],
+      jsonLd: [buildArticleSchema(a), buildArticleBreadcrumbSchema(a)],
+      bodyContent: articleBody,
+    }));
+    // Articles first published elsewhere keep their external canonical and stay out of the sitemap
+    if (a.isCanonicalLocal) {
+      sitemapUrls.push({ loc: `${SITE_URL}/articles/${a.slug}`, changefreq: 'monthly', priority: '0.8', lastmod: a.updatedAt });
+    }
+  }
+
   // 2. Categories (/category/:categorySlug)
   for (const cat of categories) {
     const catBlogs = blogs.filter(b => b.categorySlug === cat.slug);
+    const catArticles = articles.filter(a => a.categories.some(c => c.slug === cat.slug));
     const catBody = `
       <header class="site-header">
         <div class="container"><a href="/" class="site-logo"><span class="logo-title">BlogAI</span></a></div>
@@ -218,6 +406,8 @@ async function runPrerender() {
           <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>${escapeHtml(cat.name)}</li></ol></nav>
           <h1>${escapeHtml(cat.name)} Blogs</h1>
           <p>${escapeHtml(cat.description)}</p>
+          ${catArticles.length ? `<section><h2>Articles in ${escapeHtml(cat.name)}</h2><div class="article-grid">${catArticles.map(articleCardHtml).join('')}</div></section>` : ''}
+          <h2>${escapeHtml(cat.name)} blogs in the directory</h2>
           <div class="blog-grid">
             ${catBlogs.map(b => `
               <article class="blog-card">
@@ -250,9 +440,21 @@ async function runPrerender() {
     sitemapUrls.push({ loc: `${SITE_URL}/category/${cat.slug}`, changefreq: 'weekly', priority: '0.8' });
   }
 
-  // 3. Tags (/tag/:tagSlug)
-  for (const t of tags) {
-    const tagBlogs = blogs.filter(b => b.tags.some(tagText => tagText.toLowerCase() === t.name.toLowerCase()));
+  // 3. Tags (/tag/:tagSlug) - directory tags plus tags used only by articles
+  const allTags = [...tags];
+  for (const a of articles) {
+    for (const t of a.tags) {
+      if (!allTags.some(x => x.slug === t.slug)) allTags.push({ name: t.name, slug: t.slug });
+    }
+  }
+  for (const t of allTags) {
+    const tagBlogs = blogs.filter(b => b.tags.some(tagText => slugify(tagText) === t.slug));
+    const tagArticles = articles.filter(a => a.tags.some(x => x.slug === t.slug));
+    const articlePart = `${tagArticles.length} article${tagArticles.length === 1 ? '' : 's'}`;
+    const blogPart = `${tagBlogs.length} curated blog${tagBlogs.length === 1 ? '' : 's'}`;
+    const tagIntro = tagArticles.length
+      ? `Explore ${articlePart}${tagBlogs.length ? ` and ${blogPart}` : ''} discussing #${t.name}.`
+      : `Explore ${tagBlogs.length} curated independent publications discussing #${t.name}.`;
     const tagBody = `
       <header class="site-header">
         <div class="container"><a href="/" class="site-logo"><span class="logo-title">BlogAI</span></a></div>
@@ -260,8 +462,9 @@ async function runPrerender() {
       <main id="main-content">
         <div class="container">
           <nav aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li>Tags</li><li>#${escapeHtml(t.name)}</li></ol></nav>
-          <h1>#${escapeHtml(t.name)} Blogs</h1>
-          <p>Explore ${tagBlogs.length} curated independent publications discussing #${escapeHtml(t.name)}.</p>
+          <h1>#${escapeHtml(t.name)}</h1>
+          <p>${escapeHtml(tagIntro)}</p>
+          ${tagArticles.length ? `<section><h2>Articles</h2><div class="article-grid">${tagArticles.map(articleCardHtml).join('')}</div></section>` : ''}
           <div class="blog-grid">
             ${tagBlogs.map(b => `
               <article class="blog-card">
@@ -277,15 +480,19 @@ async function runPrerender() {
 
     const tagHtml = buildHtml({
       template,
-      title: `#${t.name} Blogs - Topic Directory | BlogAI`,
-      description: `Explore ${tagBlogs.length} curated independent publications tagged with #${t.name} in the BlogAI directory.`,
+      title: tagBlogs.length
+        ? `#${t.name} Blogs - Topic Directory | BlogAI`
+        : `#${t.name} Articles - Topic | BlogAI`,
+      description: tagArticles.length
+        ? `Explore ${articlePart}${tagBlogs.length ? ` and ${blogPart}` : ''} tagged with #${t.name} on BlogAI.`
+        : `Explore ${tagBlogs.length} curated independent publications tagged with #${t.name} in the BlogAI directory.`,
       canonicalUrl: `${SITE_URL}/tag/${t.slug}`,
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: `Blogs Tagged with #${t.name}`,
+        name: `Articles and Blogs Tagged with #${t.name}`,
         url: `${SITE_URL}/tag/${t.slug}`,
-        numberOfItems: tagBlogs.length,
+        numberOfItems: tagBlogs.length + tagArticles.length,
       },
       bodyContent: tagBody,
     });
@@ -407,7 +614,7 @@ async function runPrerender() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls.map(u => `  <url>
     <loc>${u.loc}</loc>
-    <lastmod>${currentDate}</lastmod>
+    <lastmod>${u.lastmod || currentDate}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`).join('\n')}

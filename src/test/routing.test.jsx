@@ -10,6 +10,9 @@ import SubmitBlog from '../pages/SubmitBlog';
 import About from '../pages/About';
 import Guidelines from '../pages/Guidelines';
 import Privacy from '../pages/Privacy';
+import Articles from '../pages/Articles';
+import ArticleDetails from '../pages/ArticleDetails';
+import Directory from '../pages/Directory';
 import NotFound from '../pages/NotFound';
 
 describe('Routing & Page Integrations', () => {
@@ -146,5 +149,81 @@ describe('Routing & Page Integrations', () => {
     );
 
     expect(screen.getByRole('heading', { level: 1, name: /page not found/i })).toBeInTheDocument();
+  });
+});
+
+describe('Articles and directory routing', () => {
+  const renderAt = (path) =>
+    render(
+      <MemoryRouter initialEntries={[path]}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/articles/:articleSlug" element={<ArticleDetails />} />
+          <Route path="/directory" element={<Directory />} />
+          <Route path="/category/:categorySlug" element={<Category />} />
+          <Route path="/tag/:tagSlug" element={<TagPage />} />
+        </Routes>
+      </MemoryRouter>
+    );
+
+  it('lists published articles on /articles and links to their pages', () => {
+    renderAt('/articles');
+    expect(screen.getByRole('heading', { level: 1, name: 'Articles' })).toBeInTheDocument();
+    const link = screen.getByRole('link', { name: 'How to Follow Technical Blogs with RSS and OPML' });
+    expect(link).toHaveAttribute('href', '/articles/follow-technical-blogs-with-rss');
+    expect(screen.queryByText(/starter reading list/i)).not.toBeInTheDocument();
+  });
+
+  it('renders the full article with metadata, table of contents, and related content', () => {
+    renderAt('/articles/follow-technical-blogs-with-rss');
+    expect(
+      screen.getByRole('heading', { level: 1, name: 'How to Follow Technical Blogs with RSS and OPML' })
+    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: 'What RSS and OPML actually are' })).toBeInTheDocument();
+    expect(screen.getByText('BlogAI Editors')).toBeInTheDocument();
+    expect(screen.getAllByRole('link', { name: 'Step 1: Choose a feed reader' })[0]).toHaveAttribute(
+      'href',
+      '#step-1-choose-a-feed-reader'
+    );
+    expect(screen.getByRole('heading', { name: 'Related articles' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'From the blog directory' })).toBeInTheDocument();
+  });
+
+  it('shows a noindex not-found state for drafts and unknown article slugs', () => {
+    renderAt('/articles/mathematics-reading-list');
+    expect(screen.getByRole('heading', { level: 1, name: /article not found/i })).toBeInTheDocument();
+    expect(document.querySelector('meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
+  });
+
+  it('renders the searchable community directory on /directory', () => {
+    renderAt('/directory?q=fowler');
+    expect(screen.getByRole('heading', { level: 1, name: 'Community Blog Directory' })).toBeInTheDocument();
+    expect(screen.getByRole('searchbox', { name: /search blogs directory/i })).toHaveValue('fowler');
+    expect(screen.getAllByText('Martin Fowler')[0]).toBeInTheDocument();
+  });
+
+  it('redirects legacy home search URLs to the directory', () => {
+    renderAt('/?q=fowler');
+    expect(screen.getByRole('heading', { level: 1, name: 'Community Blog Directory' })).toBeInTheDocument();
+  });
+
+  it('opens directory listings on the original external website', () => {
+    renderAt('/directory?q=fowler');
+    const titleLink = screen.getAllByRole('link', { name: /martin fowler \(external website/i })[0];
+    expect(titleLink).toHaveAttribute('href', 'https://martinfowler.com/');
+    expect(titleLink).toHaveAttribute('target', '_blank');
+  });
+
+  it('shows both articles and directory blogs on category pages', () => {
+    renderAt('/category/engineering');
+    expect(screen.getByRole('heading', { name: 'Articles in Engineering' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Engineering blogs in the directory' })).toBeInTheDocument();
+  });
+
+  it('renders tag pages for tags used only by articles', () => {
+    renderAt('/tag/rss');
+    expect(screen.getByRole('heading', { level: 1, name: '#rss' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'How to Follow Technical Blogs with RSS and OPML' })).toBeInTheDocument();
   });
 });

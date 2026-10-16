@@ -13,9 +13,16 @@ export function SEOHead({
   type = 'website',
   robots = 'index, follow',
   jsonLd = null,
+  canonicalUrl: canonicalUrlOverride = '',
+  image = '',
+  article = null,
 }) {
   const fullTitle = title ? `${title} | BlogAI Directory` : DEFAULT_TITLE;
-  const canonicalUrl = `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
+  const canonicalUrl =
+    canonicalUrlOverride ||
+    `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
+  const imageUrl = image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : '';
+  const articleKey = article ? JSON.stringify(article) : '';
 
   useEffect(() => {
     // Only runs in browser environment
@@ -48,6 +55,35 @@ export function SEOHead({
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
 
+    const removeMeta = (selector) => {
+      document.querySelectorAll(selector).forEach((el) => el.remove());
+    };
+
+    // Featured image
+    if (imageUrl) {
+      setMeta('og:image', imageUrl, true);
+      setMeta('twitter:image', imageUrl);
+    } else {
+      removeMeta('meta[property="og:image"], meta[name="twitter:image"]');
+    }
+
+    // Article metadata (removed again when navigating to non-article pages)
+    removeMeta('meta[property^="article:"]');
+    if (article) {
+      const addProperty = (name, content) => {
+        if (!content) return;
+        const el = document.createElement('meta');
+        el.setAttribute('property', name);
+        el.setAttribute('content', content);
+        document.head.appendChild(el);
+      };
+      addProperty('article:published_time', article.publishedTime);
+      addProperty('article:modified_time', article.modifiedTime);
+      addProperty('article:author', article.author);
+      addProperty('article:section', article.section);
+      (article.tags || []).forEach((t) => addProperty('article:tag', t));
+    }
+
     // Canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
@@ -56,9 +92,11 @@ export function SEOHead({
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', canonicalUrl);
-  }, [fullTitle, description, canonicalUrl, type, robots]);
+  }, [fullTitle, description, canonicalUrl, type, robots, imageUrl, articleKey]);
 
-  return jsonLd ? <JsonLd schema={jsonLd} /> : null;
+  if (!jsonLd) return null;
+  const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+  return schemas.map((schema, i) => <JsonLd key={i} schema={schema} />);
 }
 
 export default SEOHead;

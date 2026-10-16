@@ -20,7 +20,7 @@ export function Footer() {
               <span className="logo-title">BlogAI Directory</span>
             </div>
             <p className="footer-desc">
-              A community-curated, open-access directory connecting engineers,
+              Original articles plus a community-curated directory connecting engineers,
               mathematicians, physicists, and curious minds with exceptional independent blogs.
             </p>
             <div className="footer-opml-cta">
@@ -47,8 +47,18 @@ export function Footer() {
 
           {/* Col 3: Resources & Guidelines */}
           <div className="footer-col">
-            <h4 className="footer-heading">Community</h4>
+            <h4 className="footer-heading">Explore</h4>
             <ul className="footer-links">
+              <li>
+                <Link to="/articles" className="footer-link">
+                  Articles
+                </Link>
+              </li>
+              <li>
+                <Link to="/directory" className="footer-link">
+                  Blog Directory
+                </Link>
+              </li>
               <li>
                 <Link to="/submit" className="footer-link">
                   Submit a Blog

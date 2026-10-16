@@ -18,13 +18,14 @@ BlogAI is a production-ready, accessible, mobile-responsive, and SEO-optimized c
 4. [Quick Start & Development](#quick-start--development)
 5. [CSV Schema & Data Model](#csv-schema--data-model)
 6. [How to Add a Category or Blog](#how-to-add-a-category-or-blog)
-7. [Data Ingestion & OPML Generation](#data-ingestion--opml-generation)
-8. [Testing & Quality Assurance](#testing--quality-assurance)
-9. [SEO Architecture & Static Pre-Rendering](#seo-architecture--static-pre-rendering)
-10. [Search Architecture & Scaling to 10,000+ Blogs](#search-architecture--scaling-to-10000-blogs)
-11. [Community Submission Workflow](#community-submission-workflow)
-12. [CI/CD & Deployment Instructions](#cicd--deployment-instructions)
-13. [Troubleshooting & FAQ](#troubleshooting--faq)
+7. [Publishing First-Party Articles](#publishing-first-party-articles)
+8. [Data Ingestion & OPML Generation](#data-ingestion--opml-generation)
+9. [Testing & Quality Assurance](#testing--quality-assurance)
+10. [SEO Architecture & Static Pre-Rendering](#seo-architecture--static-pre-rendering)
+11. [Search Architecture & Scaling to 10,000+ Blogs](#search-architecture--scaling-to-10000-blogs)
+12. [Community Submission Workflow](#community-submission-workflow)
+13. [CI/CD & Deployment Instructions](#cicd--deployment-instructions)
+14. [Troubleshooting & FAQ](#troubleshooting--faq)
 
 ---
 
@@ -58,9 +59,13 @@ BlogAI/
 │   │   ├── search/                # SearchBar, SearchFilters, SortSelector, EmptyState
 │   │   ├── categories/            # CategoryNav, CategoryCard
 │   │   ├── tags/                  # TagChip
+│   │   ├── articles/              # ArticleCard, ArticleMeta, ArticleContent, TableOfContents, RelatedArticles
 │   │   └── seo/                   # SEOHead, JsonLd
 │   ├── pages/
-│   │   ├── Home.jsx               # Discovery home, showcase cards, directory grid
+│   │   ├── Home.jsx               # Landing page: latest articles, categories, featured directory blogs
+│   │   ├── Articles.jsx           # /articles - searchable list of published first-party articles
+│   │   ├── ArticleDetails.jsx     # /articles/:slug - full article, TOC, related articles and blogs
+│   │   ├── Directory.jsx          # /directory - searchable community blog directory
 │   │   ├── Category.jsx           # Category-specific directory with unique introduction
 │   │   ├── BlogDetails.jsx        # Publication details, RSS actions, related publications
 │   │   ├── TagPage.jsx            # Tag-specific topic directory
@@ -75,6 +80,7 @@ BlogAI/
 │   │   └── usePagination.js       # Dynamic page windowing with auto-reset
 │   ├── services/
 │   │   ├── blogService.js         # Central data query provider & submission POST
+│   │   ├── articleService.js      # Published-article queries (by slug, category, tag, search)
 │   │   └── searchService.js       # Fast inverted token index engine
 │   ├── utils/
 │   │   ├── slugify.js             # NFKD diacritic-safe URL slug generator
@@ -83,12 +89,15 @@ BlogAI/
 │   ├── data/
 │   │   ├── blogs.js / blogs.json
 │   │   ├── categories.js / categories.json
-│   │   └── tags.js / tags.json
+│   │   ├── tags.js / tags.json
+│   │   └── articles.js / articles.json  # Generated from content/articles (published only)
 │   ├── styles/
 │   │   ├── variables.css          # Design tokens & dark theme palette
 │   │   ├── global.css             # Base reset, typography, accessible buttons
 │   │   └── responsive.css         # Media queries and grid breakpoints
 │   └── main.jsx
+├── content/
+│   └── articles/                  # First-party articles: Markdown + YAML frontmatter
 ├── Categories/
 │   ├── Engineering/blogs.csv
 │   ├── Mathematics/blogs.csv
@@ -98,6 +107,7 @@ BlogAI/
 ├── scripts/
 │   ├── linter.py                  # Strict CSV validator
 │   ├── build_data.py              # Ingestion pipeline & OPML generator
+│   ├── build_articles.js          # Article compiler: validation, Markdown to HTML, drafts, related links
 │   ├── prerender.js               # Post-build static route prerenderer
 │   └── validate_seo.py            # Automated production SEO & metadata validator
 ├── tests/
@@ -202,6 +212,53 @@ Older CSV files containing only `Title,Address,RSS feed,Tags` are fully supporte
 2. Create `Categories/Biology/blogs.csv` with the header row and initial publications.
 3. Optionally add a description mapping in `CATEGORY_DESCRIPTIONS` in `scripts/build_data.py`.
 4. Run `npm run build:data`. The pipeline automatically discovers new category folders and builds corresponding category pages, tags, and OPML outlines!
+
+---
+
+## Publishing First-Party Articles
+
+BlogAI hosts two separate content types:
+
+| | First-party articles | Community blog directory |
+| --- | --- | --- |
+| Source | `content/articles/*.md` | `Categories/<Category>/blogs.csv` |
+| Generated data | `src/data/articles.json` | `src/data/blogs.json`, `tags.json`, `categories.json` |
+| Pages | `/articles`, `/articles/:slug` | `/directory`, `/blog/:slug` |
+| Clicking a card | Opens the full article on this site | Opens the original external website |
+
+Both share the same categories, and tags from either appear on `/category/:slug` and `/tag/:slug`.
+
+### Writing an article
+
+1. Copy `content/articles/_template.md` to `content/articles/<your-slug>.md`.
+2. Fill in the frontmatter:
+
+   | Field | Required | Notes |
+   | --- | --- | --- |
+   | `title` | yes | Page `<h1>` and `<title>` |
+   | `description` | yes | Meta description and card summary (120-160 characters works best) |
+   | `author` | yes | Shown on the page and in `BlogPosting` JSON-LD |
+   | `publishedAt` | yes | `YYYY-MM-DD`; keep it fixed after publishing |
+   | `updatedAt` | no | `YYYY-MM-DD`; defaults to `publishedAt`; drives sitemap `<lastmod>` |
+   | `status` | yes | `draft` or `published` |
+   | `categories` | yes | One or more existing category names |
+   | `tags` | no | Free-form; each gets a `/tag/:slug` page |
+   | `slug` | no | Defaults to the file name; changing it breaks existing links |
+   | `image`, `imageAlt` | no | Featured image under `public/images/articles/`; `imageAlt` is required with `image` |
+   | `canonical` | no | Only for articles first published elsewhere; such articles are left out of the sitemap |
+   | `toc` | no | Defaults to `true` when the article has 3+ `##`/`###` headings |
+
+3. Write the body in Markdown. Use `##` and `###` for sections (the title is the page's only `#` heading). Paragraphs, lists, links, images, tables, and fenced code blocks are supported.
+4. Run `npm run build:articles` (also run automatically by `npm run dev` and `npm run build`). The build fails with a clear message if required fields are missing or a category is unknown.
+5. Commit both the Markdown file and the regenerated `src/data/articles.json`.
+
+### Drafts
+
+Articles with `status: draft` are validated but never written to `articles.json`, so they are not bundled, prerendered, listed, or added to the sitemap, and `/articles/<draft-slug>` shows a `noindex` not-found page. Note that the Markdown source of a draft is still visible to anyone who can read this repository.
+
+### SEO for articles
+
+Each published article is prerendered at `dist/articles/<slug>/index.html` with its full content in the HTML, a unique title and description, a canonical URL, `og:type=article` with `article:*` tags, `BlogPosting` and `BreadcrumbList` JSON-LD, and a sitemap entry whose `<lastmod>` is the article's `updatedAt`.
 
 ---
 

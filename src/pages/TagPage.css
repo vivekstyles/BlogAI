@@ -52,3 +52,13 @@
   margin: 0 auto;
   gap: 1rem;
 }
+
+.tag-articles {
+  margin-bottom: 3rem;
+}
+
+.tag-section-title {
+  font-size: 1.375rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.25rem;
+}

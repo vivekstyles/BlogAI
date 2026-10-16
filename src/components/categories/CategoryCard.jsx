@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 import TagChip from '../tags/TagChip';
 import './CategoryCard.css';
 
-export function CategoryCard({ category }) {
+export function CategoryCard({ category, articleCount = 0 }) {
   if (!category) return null;
 
   return (
@@ -14,6 +14,7 @@ export function CategoryCard({ category }) {
           <BookOpen size={20} />
         </div>
         <span className="category-card-count">
+          {articleCount > 0 && `${articleCount} ${articleCount === 1 ? 'Article' : 'Articles'} · `}
           {category.count} {category.count === 1 ? 'Blog' : 'Blogs'}
         </span>
       </div>

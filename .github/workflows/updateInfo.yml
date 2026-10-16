@@ -44,6 +44,9 @@ jobs:
       - name: Rebuild data and OPML
         run: python scripts/build_data.py
 
+      - name: Compile first-party articles
+        run: node scripts/build_articles.js
+
       - name: Check deterministic data generation
         run: |
           git status --porcelain

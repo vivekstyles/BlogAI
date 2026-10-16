@@ -5,12 +5,19 @@ export function Navigation({ onNavClick, categories = [] }) {
   return (
     <nav className="nav-links" aria-label="Main navigation">
       <NavLink
-        to="/"
-        end
+        to="/articles"
         className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
         onClick={onNavClick}
       >
-        Discover
+        Articles
+      </NavLink>
+
+      <NavLink
+        to="/directory"
+        className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+        onClick={onNavClick}
+      >
+        Blog Directory
       </NavLink>
 
       <div className="nav-dropdown-wrapper">

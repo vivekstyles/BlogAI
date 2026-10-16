@@ -142,3 +142,16 @@ npm run build
 ```
 
 Finally, open `npm run preview` and check the changed pages in both themes, including hover, focus (Tab key), selected, error, and disabled states.
+
+## Articles vs. directory listings
+
+Visitors must always be able to tell original writing from external links.
+
+| | `ArticleCard` (first-party) | `BlogCard` (external directory blog) |
+| --- | --- | --- |
+| Frame | 4px `--brand-primary` left rail | Neutral border only |
+| Label | Green "Original article" | Gray "External blog" with external-link icon |
+| Title link | `/articles/:slug` on this site | The blog's own website, new tab |
+| Footer | Date, reading time, "Read article" | "Details" (`/blog/:slug`) and "Visit Website" |
+
+Long-form article bodies use `ArticleContent` (`.article-content` typography, max width 720px). Do not reuse its styles for directory pages.

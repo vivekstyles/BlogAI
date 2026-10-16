@@ -2,12 +2,14 @@ import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Compass, BookOpen, AlertCircle } from 'lucide-react';
 import { blogService } from '../services/blogService';
+import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import TagChip from '../components/tags/TagChip';
 import BlogList from '../components/blogs/BlogList';
+import ArticleCard from '../components/articles/ArticleCard';
 import './Category.css';
 
 export function Category() {
@@ -20,6 +22,11 @@ export function Category() {
 
   const categoryBlogs = useMemo(
     () => (category ? blogService.getBlogsByCategory(categorySlug) : []),
+    [category, categorySlug]
+  );
+
+  const categoryArticles = useMemo(
+    () => (category ? articleService.getArticlesByCategory(categorySlug) : []),
     [category, categorySlug]
   );
 
@@ -131,6 +138,21 @@ export function Category() {
             </div>
           )}
         </header>
+
+        {categoryArticles.length > 0 && (
+          <section className="category-articles" aria-labelledby="category-articles-heading">
+            <h2 id="category-articles-heading" className="category-section-title">
+              Articles in {category.name}
+            </h2>
+            <div className="article-grid">
+              {categoryArticles.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <h2 className="category-section-title">{category.name} blogs in the directory</h2>
 
         {/* Filter Controls within Category */}
         <SearchFilters
