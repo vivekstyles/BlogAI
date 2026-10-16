@@ -66,6 +66,76 @@ describe('Article build: frontmatter and markdown', () => {
   });
 });
 
+describe('Article build: math and table of contents depth', () => {
+  it('renders inline and display math with KaTeX, including MathML', () => {
+    const { html } = renderMarkdown('Area is $\\pi r^2$.\n\n$$\n\\frac{a}{b}\n$$\n');
+    expect(html).toContain('class="katex"');
+    expect(html).toContain('class="katex-display"');
+    expect(html).toContain('<math');
+    expect(html).toContain('<annotation encoding="application/x-tex">\\pi r^2</annotation>');
+  });
+
+  it('keeps escaped and currency dollar signs as text', () => {
+    const { html } = renderMarkdown('It costs \\$5, or between $5 and $10.');
+    expect(html).not.toContain('katex');
+    expect(html).toContain('It costs $5, or between $5 and $10.');
+  });
+
+  it('does not treat underscores inside math as emphasis', () => {
+    const { html } = renderMarkdown('Sum $a_1 + a_2$ and *real emphasis*.');
+    expect(html).toContain('<em>real emphasis</em>');
+    expect(html).toContain('<annotation encoding="application/x-tex">a_1 + a_2</annotation>');
+  });
+
+  it('renders math inside collapsible solution blocks', () => {
+    const { html } = renderMarkdown(
+      '<details>\n<summary>Show solution</summary>\n\nAnswer: $x = 3$.\n\n</details>\n'
+    );
+    expect(html).toMatch(/<details>[\s\S]*class="katex"[\s\S]*<\/details>/);
+  });
+
+  it('fails the build on invalid LaTeX', () => {
+    const { article, errors } = compileArticle({
+      fileName: 'bad-math.md',
+      source: validFrontmatter().replace('Body text.', 'Broken $\\frac{1}{$ math.'),
+      categories,
+    });
+    expect(article).toBeNull();
+    expect(errors[0]).toMatch(/^bad-math\.md: could not render content: KaTeX parse error/);
+  });
+
+  it('limits the table of contents with tocDepth and validates it', () => {
+    const body = '\n\n### 1. Item\n\n## Second\n\n### 2. Item\n';
+    const { article } = compileArticle({
+      fileName: 'toc.md',
+      source: validFrontmatter('tocDepth: 2\n') + body,
+      categories,
+    });
+    expect(article.toc.map((h) => h.text)).toEqual(['First Section', 'Second']);
+    expect(article.html).toContain('<h3 id="1-item">1. Item</h3>');
+
+    const { errors } = compileArticle({
+      fileName: 'toc.md',
+      source: validFrontmatter('tocDepth: 5\n'),
+      categories,
+    });
+    expect(errors.join('\n')).toMatch(/tocDepth must be 2 or 3/);
+  });
+
+  it('keeps spaces around math in table-of-contents text and excludes LaTeX from word counts', () => {
+    const { headings } = renderMarkdown('## Area of $\\pi r^2$ circles');
+    expect(headings[0].text).toBe('Area of \\pi r^2 circles');
+
+    const withMath = compileArticle({
+      fileName: 'wc.md',
+      source: validFrontmatter().replace('Body text.', 'Body text. $\\sum_{i=1}^{n} x_i y_i z_i w_i$'),
+      categories,
+    }).article;
+    const without = compileArticle({ fileName: 'wc.md', source: validFrontmatter(), categories }).article;
+    expect(withMath.wordCount).toBe(without.wordCount);
+  });
+});
+
 describe('Article build: validation', () => {
   it('compiles a valid article with normalized metadata', () => {
     const { article, errors } = compileArticle({

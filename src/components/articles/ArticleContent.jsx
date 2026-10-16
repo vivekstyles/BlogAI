@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+// Math is rendered to HTML at build time; only KaTeX's stylesheet and fonts load in the browser
+import 'katex/dist/katex.min.css';
 import './ArticleContent.css';
 
 /**

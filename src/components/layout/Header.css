@@ -192,6 +192,13 @@
   white-space: nowrap;
 }
 
+/* Smallest phones: the decorative "Directory" tag pushes the menu button past the edge */
+@media (max-width: 359px) {
+  .logo-tag {
+    display: none;
+  }
+}
+
 /* Tablet: the full nav does not fit beside the logo and actions, keep the drawer */
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-nav-desktop.desktop-only,

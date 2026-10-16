@@ -247,8 +247,10 @@ Both share the same categories, and tags from either appear on `/category/:slug`
    | `image`, `imageAlt` | no | Featured image under `public/images/articles/`; `imageAlt` is required with `image` |
    | `canonical` | no | Only for articles first published elsewhere; such articles are left out of the sitemap |
    | `toc` | no | Defaults to `true` when the article has 3+ `##`/`###` headings |
+   | `tocDepth` | no | `3` (default) lists `##` and `###` headings in the table of contents; `2` lists only `##` (use for long numbered lists) |
 
-3. Write the body in Markdown. Use `##` and `###` for sections (the title is the page's only `#` heading). Paragraphs, lists, links, images, tables, and fenced code blocks are supported.
+3. Write the body in Markdown. Use `##` and `###` for sections (the title is the page's only `#` heading). Paragraphs, lists, links, images, tables, fenced code blocks, and `<details><summary>` blocks are supported.
+   - **Math:** KaTeX renders `$...$` inline and `$$...$$` (on its own lines) as display math at build time, with MathML for screen readers. Write a literal dollar sign as `\$`. Invalid LaTeX fails the build.
 4. Run `npm run build:articles` (also run automatically by `npm run dev` and `npm run build`). The build fails with a clear message if required fields are missing or a category is unknown.
 5. Commit both the Markdown file and the regenerated `src/data/articles.json`.
 

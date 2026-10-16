@@ -3,7 +3,7 @@
  *
  * Reads Markdown articles with YAML frontmatter from content/articles/,
  * validates their metadata, renders the body to HTML (heading anchors,
- * table of contents, safe external links, lazy images, scrollable tables),
+ * table of contents, KaTeX math, safe external links, lazy images, scrollable tables),
  * links each article to related articles and related directory blogs, and
  * writes src/data/articles.json.
  *
@@ -18,6 +18,7 @@ import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { Marked } from 'marked';
 import { parse as parseYaml } from 'yaml';
+import katex from 'katex';
 import { slugify } from '../src/utils/slugify.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -75,32 +76,97 @@ function stripTags(html) {
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+    .replace(/&#39;/g, "'");
+}
+
+function renderMath(tex, displayMode) {
+  // throwOnError makes invalid LaTeX fail the build instead of shipping broken math
+  return katex.renderToString(tex, { displayMode, throwOnError: true, output: 'htmlAndMathml' });
+}
+
+/**
+ * Marked extension for KaTeX math: `$$...$$` on its own lines (display) and
+ * `$...$` inline. Write a literal dollar sign as `\$`.
+ */
+const mathExtension = {
+  extensions: [
+    {
+      name: 'blockMath',
+      level: 'block',
+      start(src) {
+        const match = /(^|\n)\$\$/.exec(src);
+        return match ? match.index + match[1].length : undefined;
+      },
+      tokenizer(src) {
+        const match = /^\$\$([\s\S]+?)\$\$[ \t]*(?:\n+|$)/.exec(src);
+        if (match) return { type: 'blockMath', raw: match[0], text: match[1].trim() };
+        return undefined;
+      },
+      renderer(token) {
+        return `${renderMath(token.text, true)}\n`;
+      },
+    },
+    {
+      name: 'inlineMath',
+      level: 'inline',
+      start(src) {
+        const match = /(?<!\\)\$/.exec(src);
+        return match ? match.index : undefined;
+      },
+      tokenizer(src) {
+        // Display math written inside a paragraph
+        const display = /^\$\$([\s\S]+?)\$\$/.exec(src);
+        if (display) {
+          return { type: 'inlineMath', raw: display[0], text: display[1].trim(), displayMode: true };
+        }
+        // No space just inside the delimiters, and not followed by a digit (so "$5 and $10" is not math)
+        const inline = /^\$(?![\s$])((?:\\.|[^\\$\n])+?)(?<!\s)\$(?!\d)/.exec(src);
+        if (inline) return { type: 'inlineMath', raw: inline[0], text: inline[1], displayMode: false };
+        return undefined;
+      },
+      renderer(token) {
+        return renderMath(token.text, token.displayMode);
+      },
+    },
+  ],
+};
+
+// Heading text for the table of contents: LaTeX source for math, tags stripped otherwise
+function plainText(tokens) {
+  return tokens
+    .map((t) => {
+      if (t.type === 'inlineMath') return t.text;
+      if (t.tokens) return plainText(t.tokens);
+      return stripTags(t.text ?? t.raw ?? '');
+    })
+    .join('')
     .trim();
 }
 
 /**
  * Renders article Markdown to HTML and collects its headings.
  * @param {string} markdown
+ * @param {{ tocDepth?: number }} [options] deepest heading level listed in the table of contents
  * @returns {{ html: string, headings: Array<{ id: string, text: string, level: number }> }}
  */
-export function renderMarkdown(markdown) {
+export function renderMarkdown(markdown, { tocDepth = 3 } = {}) {
   const headings = [];
   const usedIds = new Map();
   const marked = new Marked({ gfm: true });
 
+  marked.use(mathExtension);
   marked.use({
     renderer: {
       heading({ tokens, depth }) {
         const inner = this.parser.parseInline(tokens);
-        const text = stripTags(inner);
+        const text = plainText(tokens);
         const base = slugify(text) || 'section';
         const seen = usedIds.get(base) || 0;
         usedIds.set(base, seen + 1);
         const id = seen === 0 ? base : `${base}-${seen}`;
         // The page title is the only h1; shift body headings down one level if authors use "#"
         const level = Math.min(Math.max(depth, 2), 6);
-        if (level <= 3) headings.push({ id, text, level });
+        if (level <= tocDepth) headings.push({ id, text, level });
         return `<h${level} id="${id}">${inner}</h${level}>\n`;
       },
       link({ href, title, tokens }) {
@@ -129,6 +195,8 @@ export function renderMarkdown(markdown) {
 function countWords(markdown) {
   const text = markdown
     .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/\$\$[\s\S]+?\$\$/g, ' ')
+    .replace(/(?<!\\)\$[^$\n]+?\$/g, ' ')
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
     .replace(/[#>*_`|~-]/g, ' ');
@@ -205,9 +273,18 @@ export function compileArticle({ fileName, source, categories }) {
 
   if (!body.trim()) fail('article body is empty');
 
+  const tocDepth = data.tocDepth == null ? 3 : Number(data.tocDepth);
+  if (![2, 3].includes(tocDepth)) fail('tocDepth must be 2 or 3');
+
   if (errors.length > 0) return { article: null, errors };
 
-  const { html, headings } = renderMarkdown(body);
+  let rendered;
+  try {
+    rendered = renderMarkdown(body, { tocDepth });
+  } catch (err) {
+    return { article: null, errors: [`${fileName}: could not render content: ${err.message}`] };
+  }
+  const { html, headings } = rendered;
   const wordCount = countWords(body);
   const showToc = typeof data.toc === 'boolean' ? data.toc : headings.length >= 3;
 

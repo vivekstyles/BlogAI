@@ -120,6 +120,50 @@
   margin: 2.5rem 0;
 }
 
+/* KaTeX math (rendered at build time); colors inherit from the text */
+.article-content .katex {
+  font-size: 1.1em;
+}
+
+.article-content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35rem 0;
+  margin: 1.25rem 0;
+}
+
+.article-content .katex-display > .katex {
+  white-space: nowrap;
+}
+
+/* Collapsible blocks, e.g. "Show solution" */
+.article-content details {
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.article-content details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--brand-primary);
+  min-height: 32px;
+  display: list-item;
+}
+
+.article-content details > summary:hover {
+  color: var(--brand-primary-hover);
+}
+
+.article-content details[open] > summary {
+  margin-bottom: 0.75rem;
+}
+
+.article-content details > * + * {
+  margin-top: 1rem;
+}
+
 .article-table-wrap {
   overflow-x: auto;
   border: 1px solid var(--border-subtle);

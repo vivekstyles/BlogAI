@@ -25,6 +25,9 @@ tags:
 # canonical: https://example.com/original-post
 # Optional. Defaults to true when the article has 3 or more ## / ### headings.
 # toc: true
+# Optional. 3 (default) lists ## and ### headings in the table of contents; 2 lists only ##.
+# Use 2 for long numbered lists where every item is a ### heading.
+# tocDepth: 3
 ---
 
 Write the introduction here. Use `##` and `###` for section headings; the article title is already the page's only `#` heading.
@@ -32,3 +35,20 @@ Write the introduction here. Use `##` and `###` for section headings; the articl
 ## A section heading
 
 Paragraphs, **bold**, *italic*, [links](/directory), lists, tables, images, and fenced code blocks are supported.
+
+Math uses KaTeX: inline $a^2 + b^2 = c^2$, or display math on its own lines:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+Write a literal dollar sign as \$5. Invalid LaTeX fails the build with the file name.
+
+Collapsible blocks (keep the blank lines so the Markdown inside is parsed):
+
+<details>
+<summary>Show solution</summary>
+
+The answer, with math if needed: $x = 3$.
+
+</details>
