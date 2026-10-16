@@ -54,6 +54,21 @@ Five new published articles, forming a "Python for data science" cluster (Engine
 - External links checked by script on 2026-10-17. Three were fixed (a wrong KDnuggets path, Feature-engine and Eurostat URLs). arXiv and some publisher DOIs refused automated requests; those identifiers were checked by hand.
 - The ML article uses only scikit-learn's bundled real datasets or clearly labeled synthetic data, and states that its scores are not benchmarks.
 
+### Canonical domain switched to blogai.space (2026-10-17)
+
+The site is served by Vercel at `https://blogai.space`, but canonicals, the sitemap, robots.txt, JSON-LD and Open Graph URLs used `https://blogai.directory`, which does not resolve (P0-1).
+
+| Change | Files |
+|---|---|
+| `SITE_URL` set to `https://blogai.space` (client, prerender and article build) | `src/utils/seo.js` |
+| `SITE_URL` for the build validator and live checker | `scripts/sitemap_utils.py`, `scripts/check_live_seo.py` |
+| `Sitemap:` line | `public/robots.txt` |
+| Default canonical and `og:url` in the HTML shell | `index.html` |
+| Expected canonical in a unit test | `src/test/articles.test.js` |
+| Regenerated article data | `src/data/articles.json` |
+
+No URL paths changed, so no redirects are needed. The old domain never resolved, so no search engine indexed it. `npm test` (73 passed), `npm run build` and `npm run validate:seo` pass, and no file in `dist/` or `src/data/` mentions the old domain. The live site keeps the old canonicals until the next Vercel production deploy.
+
 ## 2. Validation
 
 Run locally on 2026-10-16:

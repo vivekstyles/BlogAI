@@ -148,7 +148,7 @@ describe('Article build: validation', () => {
     expect(article.updatedAt).toBe('2026-01-10');
     expect(article.categories).toEqual([{ name: 'Engineering', slug: 'engineering' }]);
     expect(article.tags.map((t) => t.slug)).toEqual(['scalability', 'systems']);
-    expect(article.canonicalUrl).toBe('https://blogai.directory/articles/test-article');
+    expect(article.canonicalUrl).toBe('https://blogai.space/articles/test-article');
     expect(article.isCanonicalLocal).toBe(true);
     expect(article.readingTimeMinutes).toBeGreaterThanOrEqual(1);
   });

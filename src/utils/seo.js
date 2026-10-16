@@ -3,7 +3,7 @@
  * (scripts/prerender.js, scripts/build_articles.js) so the static HTML crawlers see
  * first and the client-rendered page always carry the same metadata.
  */
-export const SITE_URL = 'https://blogai.directory';
+export const SITE_URL = 'https://blogai.space';
 export const SITE_NAME = 'BlogAI';
 
 const TITLE_SUFFIX = ` | ${SITE_NAME}`;

@@ -5,8 +5,8 @@
 The sitemaps are generated on every `npm run build` by `scripts/prerender.js`, from the same data that builds the pages (`src/data/articles.json`, `blogs.json`, `categories.json`, `tags.json`). Publishing an article (`status: published`) adds it on the next build; switching it back to `draft` removes it. Nothing is maintained by hand.
 
 ```
-https://blogai.directory/robots.txt
-  └─ Sitemap: https://blogai.directory/sitemap.xml          ← sitemap index
+https://blogai.space/robots.txt
+  └─ Sitemap: https://blogai.space/sitemap.xml          ← sitemap index
        ├─ sitemap-pages.xml       home, /articles, /directory, /submit, /about, /guidelines, /privacy
        ├─ sitemap-articles.xml    first-party articles
        ├─ sitemap-categories.xml  category pages
@@ -28,7 +28,7 @@ A URL is listed only if it is meant to be found in search. The build applies the
 | Category, static pages, home, listings | Always | — |
 | 404, unknown routes, `?q=` / `?page=` URLs | Never | Error page; parameter URLs are blocked in robots.txt and canonicalize to the clean URL |
 
-Every listed URL is absolute HTTPS on `https://blogai.directory`, has no trailing slash, and matches the page's own `<link rel="canonical">`.
+Every listed URL is absolute HTTPS on `https://blogai.space`, has no trailing slash, and matches the page's own `<link rel="canonical">`.
 
 ## `lastmod` policy
 
@@ -64,13 +64,13 @@ GitHub Pages' exact precedence for `/articles`, where both `articles.html` and `
 
 ## robots.txt
 
-`public/robots.txt` allows all crawling except search and pagination parameter URLs, and declares `Sitemap: https://blogai.directory/sitemap.xml`. No change was needed. Do not list the child sitemaps there; the index covers them.
+`public/robots.txt` allows all crawling except search and pagination parameter URLs, and declares `Sitemap: https://blogai.space/sitemap.xml`. No change was needed. Do not list the child sitemaps there; the index covers them.
 
 ## Submitting and monitoring in Google Search Console
 
 Prerequisite: the domain resolves and `npm run check:live` passes (P0-1 in [01-audit.md](01-audit.md)).
 
-1. **Add the property.** In Search Console → Add property → **Domain** → `blogai.directory`, then add the TXT record it gives you at your DNS provider and click Verify. A Domain property covers http/https and all subdomains.
+1. **Add the property.** In Search Console → Add property → **Domain** → `blogai.space`, then add the TXT record it gives you at your DNS provider and click Verify. A Domain property covers http/https and all subdomains.
 2. **Submit the index.** Go to Indexing → Sitemaps → enter `sitemap.xml` → Submit. Submit only the index; Search Console discovers the five child sitemaps from it and lists each one.
 3. **Confirm it was read.** Within a day, the status should be **Success**, with the discovered URL count matching the build log (`… and 92 canonical URLs` today). "Couldn't fetch" means the file is not reachable at that URL; check it with `curl -I`.
 4. **Bing.** In Bing Webmaster Tools, choose Import from Google Search Console, or submit the same `sitemap.xml`.

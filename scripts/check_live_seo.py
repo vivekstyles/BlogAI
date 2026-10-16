@@ -12,7 +12,7 @@ requests every listed URL WITHOUT following redirects and checks that it:
 Also checks that a few unknown URLs answer 404 rather than a soft 200.
 
 Usage:
-  python scripts/check_live_seo.py                       # checks https://blogai.directory
+  python scripts/check_live_seo.py                       # checks https://blogai.space
   python scripts/check_live_seo.py --base http://localhost:4173
       Fetches from another host (a preview server or staging) while still expecting the
       production URLs in sitemaps and canonicals.
@@ -30,7 +30,7 @@ from typing import List, Optional, Tuple
 
 from sitemap_utils import SITE_URL, RobotsRules, parse_sitemap, url_path
 
-USER_AGENT = "BlogAI-SEO-Check/1.0 (+https://blogai.directory/about)"
+USER_AGENT = "BlogAI-SEO-Check/1.0 (+https://blogai.space/about)"
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):

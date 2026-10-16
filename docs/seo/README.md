@@ -4,7 +4,7 @@ Started 2026-10-16. Every finding here was checked against the repository, the p
 
 ## Read this first
 
-**The site is not live at its canonical domain.** `blogai.directory` returns NXDOMAIN (checked 2026-10-16), and `https://vivekstyles.github.io/BlogAI/` returns 404. Every canonical tag, sitemap URL and structured-data URL points at `blogai.directory`. Until that domain resolves and serves `dist/`, no on-page work can produce search traffic. See P0-1 in [01-audit.md](01-audit.md).
+**Canonical domain: `https://blogai.space`.** The site is served by Vercel at `blogai.space` (verified 2026-10-17: DNS on Vercel nameservers, HTTPS 200). Until 2026-10-17 the code used `blogai.directory`, a domain that does not resolve, for canonicals, the sitemap, robots.txt and JSON-LD. All of them now use `SITE_URL` in `src/utils/seo.js` and `scripts/sitemap_utils.py`. See P0-1 in [01-audit.md](01-audit.md).
 
 ## Documents
 

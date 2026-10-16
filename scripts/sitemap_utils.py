@@ -8,7 +8,7 @@ import re
 import xml.etree.ElementTree as ET
 from typing import List, Optional, Tuple
 
-SITE_URL = "https://blogai.directory"
+SITE_URL = "https://blogai.space"
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 # Protocol limits: https://www.sitemaps.org/protocol.html
 MAX_URLS_PER_SITEMAP = 50_000

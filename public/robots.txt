@@ -6,4 +6,4 @@ Disallow: /*?*search=*
 Disallow: /*?*page=*
 
 # Sitemaps
-Sitemap: https://blogai.directory/sitemap.xml
+Sitemap: https://blogai.space/sitemap.xml
