@@ -60,7 +60,7 @@ GitHub Pages' exact precedence for `/articles`, where both `articles.html` and `
 |---|---|---|
 | Every build (CI) | `npm run validate:seo` | Valid XML and namespace; index → child files exist; no nested indexes; protocol limits (50k URLs, 50 MB); absolute production URLs; no duplicates within or across sitemaps; valid, non-future `lastmod`; index `lastmod` equals the newest child URL; every URL has a generated page that is indexable, self-canonical and allowed by robots.txt; robots.txt declares the index; warns about indexable pages missing from the sitemaps |
 | After deploy | `npm run check:live` (or `python scripts/check_live_seo.py --base <origin>`) | Fetches robots.txt and all sitemaps from the live site; every URL must return **200 without a redirect**, be HTML, carry no `noindex` meta or `X-Robots-Tag`, and declare itself canonical; unknown URLs must return a real 404 |
-| CI after deploy | `verify-live` job | Runs `check_live_seo.py` after each deploy to `main`. **Disabled until the domain is live:** set the repository variable `SITE_LIVE=true` (Settings → Secrets and variables → Actions → Variables) |
+| CI, live site | `verify-live` job | Runs `check_live_seo.py` against `https://blogai.space` daily at 06:00 UTC and on manual runs (Vercel deploys outside GitHub Actions). **Off until** the repository variable `SITE_LIVE=true` is set (Settings → Secrets and variables → Actions → Variables) |
 
 ## robots.txt
 

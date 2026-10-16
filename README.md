@@ -114,7 +114,7 @@ BlogAI/
 │   └── e2e/
 │       └── directory.spec.js      # Playwright end-to-end tests
 ├── .github/workflows/
-│   └── updateInfo.yml             # Automated CI validation & GitHub Pages deployment
+│   └── updateInfo.yml             # CI validation and daily live SEO check (hosting is on Vercel)
 ├── feed.opml                      # Validated OPML 2.0 RSS subscription outline
 ├── package.json
 └── README.md
@@ -347,7 +347,8 @@ The repository includes a GitHub Actions workflow (`.github/workflows/updateInfo
 5. Runs Vitest unit & integration test suite (`npm test`).
 6. Builds Vite bundle and executes pre-rendering (`npm run build`).
 7. Executes production SEO validation (`python scripts/validate_seo.py`).
-8. Deploys artifact to **GitHub Pages**.
+
+The workflow does not deploy. The site is hosted on **Vercel** at https://blogai.space, which builds with `npm run build` and serves `dist/`. A separate `verify-live` job checks the live sitemaps daily (and on manual runs) once the repository variable `SITE_LIVE` is `true`.
 
 ### Deploying to Other Platforms
 

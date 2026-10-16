@@ -69,6 +69,10 @@ The site is served by Vercel at `https://blogai.space`, but canonicals, the site
 
 No URL paths changed, so no redirects are needed. The old domain never resolved, so no search engine indexed it. `npm test` (73 passed), `npm run build` and `npm run validate:seo` pass, and no file in `dist/` or `src/data/` mentions the old domain. The live site keeps the old canonicals until the next Vercel production deploy.
 
+### GitHub Pages deploy removed (2026-10-17)
+
+Hosting is on Vercel, so `.github/workflows/updateInfo.yml` no longer uploads to or deploys GitHub Pages. The `deploy` job, the Pages artifact upload, the `pages: write` and `id-token: write` permissions, and the `pages` concurrency group were removed. `validate-and-test` still runs on pushes and pull requests to `main`. `verify-live` now runs daily (06:00 UTC) and on manual runs instead of after a Pages deploy, still gated by `SITE_LIVE=true`. Pages itself still has to be unpublished by the owner in repo Settings → Pages.
+
 ## 2. Validation
 
 Run locally on 2026-10-16:

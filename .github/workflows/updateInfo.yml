@@ -1,4 +1,7 @@
-name: Validate, Build, and Deploy BlogAI Directory
+name: Validate and Build BlogAI Directory
+
+# Hosting and deployment are handled by Vercel (https://blogai.space).
+# This workflow only validates and builds; it does not deploy.
 
 on:
   push:
@@ -6,18 +9,16 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+  # Daily live SEO check (verify-live job), 06:00 UTC
+  schedule:
+    - cron: '0 6 * * *'
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
   validate-and-test:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -61,30 +62,12 @@ jobs:
       - name: Validate SEO metadata, canonicals, and sitemap
         run: python scripts/validate_seo.py
 
-      - name: Upload production artifact for deployment
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/
-
-  deploy:
-    needs: validate-and-test
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-  # Post-deploy check of the live sitemaps: every listed URL must answer 200 without a redirect,
-  # be indexable and self-canonical. Enable it once the domain resolves by setting the repository
-  # variable SITE_LIVE to "true" (Settings -> Secrets and variables -> Actions -> Variables).
+  # Check of the live site on blogai.space: every sitemap URL must answer 200 without a redirect,
+  # be indexable and self-canonical. Runs daily and on manual runs, because Vercel deploys outside
+  # this workflow. Enable it by setting the repository variable SITE_LIVE to "true"
+  # (Settings -> Secrets and variables -> Actions -> Variables).
   verify-live:
-    needs: deploy
-    if: vars.SITE_LIVE == 'true'
+    if: vars.SITE_LIVE == 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

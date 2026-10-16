@@ -6,7 +6,7 @@ Audit date: 2026-10-16. Sources: repository at commit `480d3e2`, `npm run build`
 
 | Area | Finding | Evidence |
 |---|---|---|
-| Stack | React 19 + Vite 6 single-page app, React Router 7, deployed to GitHub Pages by `.github/workflows/updateInfo.yml` | `package.json`, workflow |
+| Stack | React 19 + Vite 6 single-page app, React Router 7, hosted on Vercel at `blogai.space`; `.github/workflows/updateInfo.yml` validates and builds only (GitHub Pages deploy removed 2026-10-17) | `package.json`, workflow |
 | Rendering | Client-rendered, plus **static prerendering**: `scripts/prerender.js` writes one HTML file per route with title, description, canonical, Open Graph, JSON-LD, and crawlable body HTML (full article text included) | `dist/articles/*/index.html` contains the whole article |
 | Hydration | `createRoot` replaces the prerendered body; nothing is hidden from crawlers that do not run JS | `src/main.jsx` |
 | Articles | Markdown + YAML frontmatter in `content/articles/`, compiled by `scripts/build_articles.js` (KaTeX at build time, heading anchors, TOC, related articles and blogs). Drafts never reach the output | `scripts/build_articles.js` |
@@ -60,7 +60,7 @@ Status key: **Fixed** = implemented and validated locally in this pass. **Open**
 | ID | Issue | Evidence | Fix | Status | Validation |
 |---|---|---|---|---|---|
 | P0-1 | **Canonical domain did not resolve.** All canonicals, the sitemap, robots.txt and JSON-LD pointed at `https://blogai.directory`, which has no DNS record, while the site is actually served at `https://blogai.space` (Vercel). | `nslookup blogai.directory` → non-existent domain; `curl -I https://blogai.space/` → 200, `Server: Vercel` (2026-10-17) | Domain switched to `https://blogai.space` in `src/utils/seo.js`, `scripts/sitemap_utils.py`, `public/robots.txt`, `index.html` and tests. | **Fixed (2026-10-17)**; live site updates on the next production deploy | After deploy: `npm run check:live`; robots.txt and every canonical show `blogai.space` |
-| P0-2 | Hosting is Vercel, not GitHub Pages. The GitHub Actions workflow still builds and uploads to Pages, and `vivekstyles.github.io/BlogAI/` returns 404. The live Vercel build is older than `seo/sitemap-index` (new articles 404 there). `www.blogai.space` redirects with a temporary 307 rather than a permanent redirect. | `curl` checks on 2026-10-17 | Owner: confirm Vercel builds `main` with `npm run build` and output `dist`; merge this branch; in Vercel → Domains, make `www` a permanent (308) redirect to the apex; optionally disable the unused Pages deploy job. | **Open: owner** | New article URLs return 200 on `blogai.space`; `curl -I https://www.blogai.space/` returns 308 |
+| P0-2 | Hosting is Vercel, not GitHub Pages. The GitHub Actions workflow built and uploaded to Pages, and `vivekstyles.github.io/BlogAI/` returns 404; the Pages deploy job was removed on 2026-10-17. The live Vercel build is older than `seo/sitemap-index` (new articles 404 there). `www.blogai.space` redirects with a temporary 307 rather than a permanent redirect. | `curl` checks on 2026-10-17 | Owner: confirm Vercel builds `main` with `npm run build` and output `dist`; merge this branch; in Vercel → Domains, make `www` a permanent (308) redirect to the apex; unpublish GitHub Pages in repo Settings → Pages. | **Open: owner** | New article URLs return 200 on `blogai.space`; `curl -I https://www.blogai.space/` returns 308 |
 
 ### P1 — High
 
