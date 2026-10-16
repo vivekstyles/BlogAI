@@ -1,52 +1,86 @@
 :root {
-  /* Color Palette - Modern Indigo / Slate */
+  /* Color Palette - Green & Dark Minimalist (single source of truth) */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Light Theme */
-  --bg-primary: #f8fafc;
-  --bg-surface: #ffffff;
-  --bg-surface-elevated: #ffffff;
-  --bg-subtle: #f1f5f9;
-  --bg-muted: #e2e8f0;
+  color-scheme: dark;
 
-  --border-subtle: #e2e8f0;
-  --border-strong: #cbd5e1;
-  --border-focus: #3b82f6;
+  /* Core palette (dark, default) */
+  --color-fg-accent-primary: #6ab668;
+  --color-bg-neutral-primary: #171717;
+  --color-fg-neutral-primary: #e5e5e5;
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-tertiary: #64748b;
-  --text-inverse: #ffffff;
+  --color-bg-neutral-secondary: #202020;
+  --color-bg-neutral-tertiary: #292929;
+  --color-fg-neutral-secondary: #b3b3b3;
+  --color-fg-neutral-tertiary: #949494;
+  --color-border-neutral: #383838;
+  --color-border-neutral-strong: #4a4a4a;
 
-  --brand-primary: #2563eb;
-  --brand-primary-hover: #1d4ed8;
-  --brand-surface: #eff6ff;
-  --brand-border: #bfdbfe;
-  --brand-text: #1d4ed8;
+  --color-accent-hover: #7bc879;
+  --color-accent-muted: #294329;
+  --color-fg-on-accent: #171717;
+  --color-focus-ring: #6ab668;
+  --color-focus-ring-soft: rgb(106 182 104 / 0.25);
 
-  --accent-rss: #f97316;
-  --accent-rss-bg: #fff7ed;
-  --accent-rss-border: #ffedd5;
-  --accent-rss-text: #c2410c;
+  --color-success: #6ab668;
+  --color-success-muted: #294329;
+  --color-error: #f87171;
+  --color-error-muted: #3a1f1f;
+  --color-error-border: #6b2f2f;
+  --color-warning: #fbbf24;
 
-  --success-bg: #ecfdf5;
-  --success-text: #065f46;
-  --success-border: #a7f3d0;
+  /* RSS keeps its conventional orange so feed actions stay recognizable */
+  --color-rss: #fb923c;
+  --color-rss-muted: #2e2119;
+  --color-rss-border: #4d3423;
+  --color-rss-text: #fdba74;
+  --color-fg-on-rss: #171717;
 
-  --danger-bg: #fef2f2;
-  --danger-text: #991b1b;
-  --danger-border: #fecaca;
+  /* Semantic aliases used by components (mapped onto the palette above) */
+  --bg-primary: var(--color-bg-neutral-primary);
+  --bg-surface: var(--color-bg-neutral-secondary);
+  --bg-surface-elevated: var(--color-bg-neutral-tertiary);
+  --bg-subtle: var(--color-bg-neutral-tertiary);
+  --bg-muted: var(--color-border-neutral);
 
-  --badge-bg: #f1f5f9;
-  --badge-text: #334155;
-  --badge-border: #e2e8f0;
+  --border-subtle: var(--color-border-neutral);
+  --border-strong: var(--color-border-neutral-strong);
+  --border-focus: var(--color-focus-ring);
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  --text-primary: var(--color-fg-neutral-primary);
+  --text-secondary: var(--color-fg-neutral-secondary);
+  --text-tertiary: var(--color-fg-neutral-tertiary);
+  --text-inverse: var(--color-fg-on-accent);
+
+  --brand-primary: var(--color-fg-accent-primary);
+  --brand-primary-hover: var(--color-accent-hover);
+  --brand-surface: var(--color-accent-muted);
+  --brand-border: var(--color-fg-accent-primary);
+  --brand-text: var(--color-accent-hover);
+
+  --accent-rss: var(--color-rss);
+  --accent-rss-bg: var(--color-rss-muted);
+  --accent-rss-border: var(--color-rss-border);
+  --accent-rss-text: var(--color-rss-text);
+
+  --success-bg: var(--color-success-muted);
+  --success-text: var(--color-accent-hover);
+  --success-border: var(--color-fg-accent-primary);
+
+  --danger-bg: var(--color-error-muted);
+  --danger-text: var(--color-error);
+  --danger-border: var(--color-error-border);
+
+  --badge-bg: var(--color-bg-neutral-tertiary);
+  --badge-text: var(--color-fg-neutral-secondary);
+  --badge-border: var(--color-border-neutral);
+
+  /* Shadows (simple, neutral) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 8px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 10px 20px -4px rgb(0 0 0 / 0.6);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7);
 
   /* Radii */
   --radius-sm: 6px;
@@ -63,47 +97,43 @@
   --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-[data-theme='dark'] {
-  --bg-primary: #090d16;
-  --bg-surface: #111827;
-  --bg-surface-elevated: #1a2234;
-  --bg-subtle: #1f293d;
-  --bg-muted: #29354d;
+/* Optional light variant (theme toggle). Neutral grays with a darker green
+   so accent text keeps >= 4.5:1 contrast on white. */
+[data-theme='light'] {
+  color-scheme: light;
 
-  --border-subtle: #202b3f;
-  --border-strong: #334155;
-  --border-focus: #60a5fa;
+  --color-fg-accent-primary: #3d7a3b;
+  --color-bg-neutral-primary: #f5f5f5;
+  --color-fg-neutral-primary: #171717;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-tertiary: #64748b;
-  --text-inverse: #0f172a;
+  --color-bg-neutral-secondary: #ffffff;
+  --color-bg-neutral-tertiary: #ededed;
+  --color-fg-neutral-secondary: #4a4a4a;
+  --color-fg-neutral-tertiary: #636363;
+  --color-border-neutral: #dcdcdc;
+  --color-border-neutral-strong: #c4c4c4;
 
-  --brand-primary: #3b82f6;
-  --brand-primary-hover: #60a5fa;
-  --brand-surface: #1e293b;
-  --brand-border: #2563eb;
-  --brand-text: #93c5fd;
+  --color-accent-hover: #33662f;
+  --color-accent-muted: #e6f2e5;
+  --color-fg-on-accent: #ffffff;
+  --color-focus-ring: #3d7a3b;
+  --color-focus-ring-soft: rgb(61 122 59 / 0.2);
 
-  --accent-rss: #fb923c;
-  --accent-rss-bg: #2b1810;
-  --accent-rss-border: #5a2c14;
-  --accent-rss-text: #fdba74;
+  --color-success: #3d7a3b;
+  --color-success-muted: #e6f2e5;
+  --color-error: #b91c1c;
+  --color-error-muted: #fdecec;
+  --color-error-border: #f3c2c2;
+  --color-warning: #a16207;
 
-  --success-bg: #064e3b;
-  --success-text: #6ee7b7;
-  --success-border: #047857;
+  --color-rss: #c2410c;
+  --color-rss-muted: #fdf1e8;
+  --color-rss-border: #f6d4bd;
+  --color-rss-text: #9a3412;
+  --color-fg-on-rss: #ffffff;
 
-  --danger-bg: #450a0a;
-  --danger-text: #fca5a5;
-  --danger-border: #7f1d1d;
-
-  --badge-bg: #1e293b;
-  --badge-text: #cbd5e1;
-  --badge-border: #334155;
-
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.6);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.7);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.8);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }

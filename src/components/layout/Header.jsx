@@ -6,18 +6,17 @@ import categoriesData from '../../data/categories';
 import './Header.css';
 
 export function Header() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check initial preference from localStorage or system theme
+    // Dark is the default theme; light is applied only when explicitly saved
     const savedTheme = localStorage.getItem('blogai_theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-      setIsDark(true);
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
+    if (savedTheme === 'light') {
       setIsDark(false);
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      setIsDark(true);
       document.documentElement.removeAttribute('data-theme');
     }
   }, []);
@@ -26,10 +25,10 @@ export function Header() {
     const nextTheme = !isDark;
     setIsDark(nextTheme);
     if (nextTheme) {
-      document.documentElement.setAttribute('data-theme', 'dark');
+      document.documentElement.removeAttribute('data-theme');
       localStorage.setItem('blogai_theme', 'dark');
     } else {
-      document.documentElement.removeAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('blogai_theme', 'light');
     }
   };

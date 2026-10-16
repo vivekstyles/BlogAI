@@ -52,21 +52,21 @@
 }
 
 .criterion-item.pass {
-  border-left: 4px solid #10b981;
+  border-left: 4px solid var(--color-success);
 }
 
 .criterion-item.fail {
-  border-left: 4px solid #ef4444;
+  border-left: 4px solid var(--color-error);
 }
 
 .crit-icon.success {
-  color: #10b981;
+  color: var(--color-success);
   flex-shrink: 0;
   margin-top: 0.15rem;
 }
 
 .crit-icon.danger {
-  color: #ef4444;
+  color: var(--color-error);
   flex-shrink: 0;
   margin-top: 0.15rem;
 }

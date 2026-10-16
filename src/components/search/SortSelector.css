@@ -21,7 +21,7 @@
   padding: 0.45rem 2rem 0.45rem 0.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
-  background-color: var(--bg-surface);
+  background-color: var(--bg-surface-elevated);
   color: var(--text-primary);
   font-size: 0.875rem;
   font-weight: 500;

@@ -4,8 +4,8 @@
   "description": "Discover, search, filter, and subscribe to high-quality blogs across engineering, math, physics, science, and automotive technology.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#2563eb",
+  "background_color": "#171717",
+  "theme_color": "#171717",
   "icons": [
     {
       "src": "/favicon.svg",

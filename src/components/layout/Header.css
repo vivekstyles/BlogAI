@@ -4,7 +4,6 @@
   z-index: 100;
   background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-subtle);
-  backdrop-filter: blur(8px);
   height: var(--header-height);
   display: flex;
   align-items: center;
@@ -31,8 +30,8 @@
   width: 38px;
   height: 38px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-  color: #ffffff;
+  background-color: var(--brand-primary);
+  color: var(--color-fg-on-accent);
 }
 
 .logo-title {
@@ -187,4 +186,20 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+/* Tablet: the full nav does not fit beside the logo and actions, keep the drawer */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-nav-desktop.desktop-only,
+  .submit-btn.desktop-only {
+    display: none;
+  }
+
+  .mobile-menu-btn.mobile-only {
+    display: inline-flex;
+  }
 }

@@ -49,6 +49,6 @@
 }
 
 .tag-chip.active .tag-count {
-  background-color: var(--brand-border);
-  color: var(--brand-text);
+  background-color: var(--brand-primary);
+  color: var(--color-fg-on-accent);
 }

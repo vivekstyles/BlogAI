@@ -60,7 +60,7 @@
 
 .pagination-number-btn.active {
   background-color: var(--brand-primary);
-  color: #ffffff;
+  color: var(--color-fg-on-accent);
   border-color: var(--brand-primary);
   box-shadow: var(--shadow-sm);
 }

@@ -23,7 +23,7 @@
 
 .meta-category-badge:hover {
   background-color: var(--brand-primary);
-  color: #ffffff;
+  color: var(--color-fg-on-accent);
 }
 
 .meta-item {
@@ -39,10 +39,10 @@
 }
 
 .meta-status {
-  color: #059669;
+  color: var(--color-success);
   font-weight: 600;
 }
 
 .status-icon {
-  color: #10b981;
+  color: var(--color-success);
 }

@@ -26,7 +26,7 @@
 
 .feed-direct-link:hover {
   background-color: var(--accent-rss);
-  color: #ffffff;
+  color: var(--color-fg-on-rss);
 }
 
 .feed-copy-btn {
@@ -43,11 +43,11 @@
 
 .feed-copy-btn:hover {
   background-color: var(--accent-rss);
-  color: #ffffff;
+  color: var(--color-fg-on-rss);
 }
 
 .copy-check {
-  color: #10b981;
+  color: var(--color-success);
 }
 
 .feed-link-wrapper.large {

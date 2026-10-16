@@ -41,7 +41,7 @@
 .cat-pill.active {
   background-color: var(--brand-primary);
   border-color: var(--brand-primary);
-  color: #ffffff;
+  color: var(--color-fg-on-accent);
   box-shadow: var(--shadow-sm);
 }
 
@@ -55,6 +55,6 @@
 }
 
 .cat-pill.active .cat-pill-count {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
+  background-color: var(--color-fg-on-accent);
+  color: var(--brand-primary);
 }
