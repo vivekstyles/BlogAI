@@ -78,3 +78,22 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Post-deploy check of the live sitemaps: every listed URL must answer 200 without a redirect,
+  # be indexable and self-canonical. Enable it once the domain resolves by setting the repository
+  # variable SITE_LIVE to "true" (Settings -> Secrets and variables -> Actions -> Variables).
+  verify-live:
+    needs: deploy
+    if: vars.SITE_LIVE == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check live sitemaps, status codes, canonicals and indexability
+        run: python scripts/check_live_seo.py

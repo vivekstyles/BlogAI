@@ -11,8 +11,10 @@ Errors (exit code 1):
 - Accidental noindex on indexable pages; missing noindex on the 404 page
 - Prerendered pages without exactly one <h1>
 - Internal links in prerendered HTML that do not resolve to a generated page or file
-- sitemap.xml that is invalid, lists URLs with no generated page, lists noindexed pages,
-  lists URLs whose page canonicalizes elsewhere, or has malformed or future lastmod dates
+- Slashless (route.html) and trailing-slash (route/index.html) copies of a route that differ
+- sitemap.xml (a sitemap index) or a child sitemap that is invalid, over protocol limits, lists
+  URLs with no generated page, noindexed pages, URLs that canonicalize elsewhere, URLs blocked by
+  robots.txt, duplicates, or malformed or future lastmod dates
 - robots.txt without the sitemap directive; invalid feed.opml
 
 Warnings (reported, do not fail the build):
@@ -21,7 +23,6 @@ Warnings (reported, do not fail the build):
 - Article pages without any contextual link to another article
 """
 
-import datetime
 import json
 import re
 import sys
@@ -30,7 +31,7 @@ from html import unescape
 from pathlib import Path
 from typing import Dict, List, Optional
 
-SITE_URL = "https://blogai.directory"
+from sitemap_utils import SITE_URL, RobotsRules, parse_sitemap, url_path
 TITLE_MAX = 60
 DESC_MIN, DESC_MAX = 70, 160
 
@@ -43,12 +44,12 @@ def meta_content(content: str, attr: str, name: str) -> Optional[str]:
 
 
 def route_for(rel_path: str) -> str:
-    """dist-relative file path -> site path ('articles/x/index.html' -> '/articles/x')."""
+    """dist-relative file -> site path ('articles/x/index.html' and 'articles/x.html' -> '/articles/x')."""
     if rel_path == "index.html":
         return "/"
     if rel_path.endswith("/index.html"):
         return "/" + rel_path[: -len("/index.html")]
-    return "/" + rel_path
+    return "/" + rel_path[: -len(".html")]
 
 
 def resolve_internal(dist_dir: Path, href: str) -> bool:
@@ -56,7 +57,7 @@ def resolve_internal(dist_dir: Path, href: str) -> bool:
     if path in ("", "/"):
         return (dist_dir / "index.html").exists()
     target = dist_dir / path.lstrip("/")
-    return target.is_file() or (target / "index.html").is_file()
+    return target.is_file() or target.with_name(target.name + ".html").is_file() or (target / "index.html").is_file()
 
 
 def main():
@@ -81,6 +82,7 @@ def main():
     seen_canonicals: Dict[str, str] = {}
     # site path -> {"indexable": bool, "canonical": str}
     pages: Dict[str, Dict] = {}
+    page_html: Dict[str, str] = {}
     total_pages = 0
 
     html_files = sorted(dist_dir.glob("**/*.html"))
@@ -95,6 +97,15 @@ def main():
         except Exception as e:
             errors.append(f"[{rel_path}] Could not read file: {e}")
             continue
+
+        # route.html and route/index.html are two copies of one page; check the pair once
+        route = route_for(rel_path)
+        if route in page_html:
+            if page_html[route] != content:
+                errors.append(f"[{rel_path}] Differs from {pages[route]['file']}, the other file for {route}.")
+            total_pages -= 1
+            continue
+        page_html[route] = content
 
         is_404 = rel_path == "404.html"
         robots = meta_content(content, "name", "robots") or ""
@@ -151,7 +162,7 @@ def main():
         if is_404:
             if not is_noindex:
                 errors.append(f"[{rel_path}] 404 page must specify 'noindex' in robots meta directive.")
-        elif is_noindex and not rel_path.startswith("tag/"):
+        elif is_noindex and not rel_path.startswith(("tag/", "blog/")):
             errors.append(f"[{rel_path}] Indexable page has accidental 'noindex' directive.")
 
         # 6. JSON-LD syntax and required BlogPosting properties
@@ -186,71 +197,68 @@ def main():
                 errors.append(f"[{rel_path}] Broken internal link: {href}")
 
         # 9. Articles should link to at least one other article in their body
-        if rel_path.startswith("articles/") and rel_path != "articles/index.html":
+        if route.startswith("/articles/"):
             article_body = re.search(r'<div class="article-content">(.*?)</article>', body, re.DOTALL)
             if article_body and "href=\"/articles/" not in article_body.group(1):
                 warnings.append(f"[{rel_path}] Article body has no contextual link to another article.")
 
-        pages[route_for(rel_path)] = {"indexable": not is_noindex, "canonical": canon, "file": rel_path}
+        pages[route] = {"indexable": not is_noindex, "canonical": canon, "file": rel_path}
 
-    # 10. Sitemap.xml validation and consistency with the generated pages
-    sitemap_file = dist_dir / "sitemap.xml"
-    sitemap_locs: List[str] = []
-    if not sitemap_file.exists():
-        errors.append("sitemap.xml missing in dist directory.")
-    else:
-        try:
-            root = ET.parse(sitemap_file).getroot()
-            ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
-            url_elements = root.findall("ns:url", ns)
-            if not url_elements:
-                errors.append("sitemap.xml contains no <url> elements.")
-            today = datetime.date.today().isoformat()
-            for url_el in url_elements:
-                loc_el = url_el.find("ns:loc", ns)
-                loc = loc_el.text.strip() if loc_el is not None and loc_el.text else ""
-                if not loc:
-                    errors.append("sitemap.xml has a <url> without <loc>.")
-                    continue
-                sitemap_locs.append(loc)
-                lastmod_el = url_el.find("ns:lastmod", ns)
-                if lastmod_el is not None:
-                    lastmod = (lastmod_el.text or "").strip()
-                    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", lastmod):
-                        errors.append(f"sitemap.xml: {loc} has malformed lastmod '{lastmod}'.")
-                    elif lastmod > today:
-                        errors.append(f"sitemap.xml: {loc} has a future lastmod '{lastmod}'.")
-                if not loc.startswith(SITE_URL):
-                    errors.append(f"sitemap.xml: {loc} is not on {SITE_URL}.")
-                    continue
-                path = loc[len(SITE_URL):] or "/"
-                page = pages.get(path)
-                if page is None:
-                    errors.append(f"sitemap.xml: {loc} has no generated page in dist/.")
-                elif not page["indexable"]:
-                    errors.append(f"sitemap.xml: {loc} is noindexed ({page['file']}) and must not be listed.")
-                elif page["canonical"] != loc:
-                    errors.append(f"sitemap.xml: {loc} canonicalizes to {page['canonical']}.")
-            if len(set(sitemap_locs)) != len(sitemap_locs):
-                errors.append("sitemap.xml lists duplicate URLs.")
-            print(f"[SEO] sitemap.xml contains {len(sitemap_locs)} canonical URLs.")
-        except Exception as e:
-            errors.append(f"sitemap.xml is not valid XML: {e}")
-
-    listed = set(sitemap_locs)
-    for path, page in sorted(pages.items()):
-        expected = SITE_URL + (path if path != "/" else "/")
-        if page["indexable"] and page["canonical"] == expected and expected not in listed and path != "/404.html":
-            warnings.append(f"[{page['file']}] Indexable, self-canonical page is missing from sitemap.xml.")
-
-    # 11. Robots.txt validation
+    # 10. robots.txt
+    robots_rules = RobotsRules("")
     robots_file = dist_dir / "robots.txt"
     if not robots_file.exists():
         errors.append("robots.txt missing in dist directory.")
     else:
-        content = robots_file.read_text(encoding="utf-8")
-        if f"sitemap: {SITE_URL}/sitemap.xml" not in content.lower():
+        robots_rules = RobotsRules(robots_file.read_text(encoding="utf-8"))
+        if f"{SITE_URL}/sitemap.xml" not in robots_rules.sitemaps:
             errors.append(f"robots.txt does not declare Sitemap: {SITE_URL}/sitemap.xml")
+
+    # 11. Sitemap index, child sitemaps, and consistency with the generated pages
+    sitemap_locs: List[str] = []
+    sitemap_file = dist_dir / "sitemap.xml"
+    if not sitemap_file.exists():
+        errors.append("sitemap.xml missing in dist directory.")
+    else:
+        kind, entries = parse_sitemap(sitemap_file.read_bytes(), "sitemap.xml", errors)
+        url_sets = [("sitemap.xml", entries)] if kind == "urlset" else []
+        if kind == "index":
+            for child_loc, child_lastmod in entries:
+                child_file = dist_dir / url_path(child_loc).lstrip("/")
+                if not child_file.is_file():
+                    errors.append(f"sitemap.xml references {child_loc}, which is not in dist/.")
+                    continue
+                child_kind, child_entries = parse_sitemap(child_file.read_bytes(), child_file.name, errors)
+                if child_kind == "index":
+                    errors.append(f"{child_file.name}: sitemap indexes must not be nested.")
+                    continue
+                newest = max((lm for _, lm in child_entries if lm), default=None)
+                if child_lastmod != newest:
+                    errors.append(f"sitemap.xml: lastmod for {child_file.name} is {child_lastmod}, newest URL is {newest}.")
+                url_sets.append((child_file.name, child_entries))
+
+        for name, url_entries in url_sets:
+            for loc, _ in url_entries:
+                sitemap_locs.append(loc)
+                path = url_path(loc)
+                page = pages.get(path)
+                if page is None:
+                    errors.append(f"{name}: {loc} has no generated page in dist/.")
+                elif not page["indexable"]:
+                    errors.append(f"{name}: {loc} is noindexed ({page['file']}) and must not be listed.")
+                elif page["canonical"] != loc:
+                    errors.append(f"{name}: {loc} canonicalizes to {page['canonical']}.")
+                if not robots_rules.is_allowed(path):
+                    errors.append(f"{name}: {loc} is blocked by robots.txt.")
+        if len(set(sitemap_locs)) != len(sitemap_locs):
+            errors.append("The same URL is listed in more than one sitemap.")
+        print(f"[SEO] Sitemaps list {len(sitemap_locs)} canonical URLs across {len(url_sets)} file(s).")
+
+    listed = set(sitemap_locs)
+    for path, page in sorted(pages.items()):
+        expected = SITE_URL + path
+        if page["indexable"] and page["canonical"] == expected and expected not in listed:
+            warnings.append(f"[{page['file']}] Indexable, self-canonical page is missing from the sitemaps.")
 
     # 12. Feed OPML validation
     opml_file = dist_dir / "feed.opml"
@@ -280,7 +288,7 @@ def main():
             print(f"  ... and {len(errors) - 25} more errors.")
         sys.exit(1)
 
-    print(f"\n[SUCCESS] Production SEO audit passed for all {total_pages} pages, sitemap.xml, robots.txt, and feed.opml.")
+    print(f"\n[SUCCESS] Production SEO audit passed for all {total_pages} pages, sitemaps, robots.txt, and feed.opml.")
     sys.exit(0)
 
 

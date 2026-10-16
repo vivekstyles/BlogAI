@@ -65,8 +65,17 @@ export function buildCategoryTitle(category, articleCount) {
   return articleCount > 0 ? `${category.name} Articles & Blogs` : `${category.name} Blogs - Curated Directory`;
 }
 
+// Sections of the sitemap index, one sitemap-<section>.xml each
+export const SITEMAP_SECTIONS = ['pages', 'articles', 'categories', 'tags', 'blogs'];
+
+// A directory listing without a real description is a generated stub, not worth indexing
+export function isBlogIndexable(blog) {
+  return Boolean(blog.description && blog.description.trim());
+}
+
 export function buildBlogMeta(blog) {
   return {
+    robots: isBlogIndexable(blog) ? 'index, follow' : 'noindex, follow',
     title: `${blog.title} - ${blog.category} Blog`,
     description:
       blog.description ||

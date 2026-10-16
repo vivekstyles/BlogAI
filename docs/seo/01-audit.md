@@ -11,7 +11,7 @@ Audit date: 2026-10-16. Sources: repository at commit `480d3e2`, `npm run build`
 | Hydration | `createRoot` replaces the prerendered body; nothing is hidden from crawlers that do not run JS | `src/main.jsx` |
 | Articles | Markdown + YAML frontmatter in `content/articles/`, compiled by `scripts/build_articles.js` (KaTeX at build time, heading anchors, TOC, related articles and blogs). Drafts never reach the output | `scripts/build_articles.js` |
 | Directory | 44 external blogs from `Categories/*/blogs.csv` → `src/data/blogs.json` | `scripts/build_data.py` |
-| Sitemap / robots | Generated `dist/sitemap.xml`; static `public/robots.txt` with `Sitemap:` line | `dist/` |
+| Sitemap / robots | Generated sitemap index `dist/sitemap.xml` with 5 section sitemaps; static `public/robots.txt` with `Sitemap:` line | `dist/`, [06-sitemap.md](06-sitemap.md) |
 | Validation | `scripts/validate_seo.py` already ran in CI before this work | workflow step "Validate SEO metadata" |
 
 Verdict on rendering: **no SSR migration is needed.** Prerendering already ships complete, crawlable HTML for every route. The remaining rendering risk is the host's URL handling (P1-1), not React.
@@ -29,10 +29,13 @@ Counts from the build on 2026-10-16, after the changes in [05-implementation-log
 | Category | `/category/:slug` | 5 | yes | yes |
 | Tag, 2+ items | `/tag/:slug` | 37 | yes | yes |
 | Tag, 1 item | `/tag/:slug` | 125 | **noindex, follow** | no |
-| Blog listing detail | `/blog/:slug` | 44 | yes | yes |
+| Blog listing detail, with description | `/blog/:slug` | 36 | yes | yes |
+| Blog listing detail, no description | `/blog/:slug` | 8 | **noindex, follow** | no |
 | Static | `/submit`, `/about`, `/guidelines`, `/privacy` | 4 | yes | yes |
 | 404 | `404.html` | 1 | noindex | no |
-| **Total** | | **226** | **100** | **100** |
+| **Total** | | **226** | **92** | **92** |
+
+Each route except `/` and the 404 page is written twice (`route.html` and `route/index.html`) so the slashless canonical URL answers 200; see [06-sitemap.md](06-sitemap.md).
 
 ### Published articles
 
@@ -63,7 +66,7 @@ Status key: **Fixed** = implemented and validated locally in this pass. **Open**
 
 | ID | Issue | Evidence | Fix | Status |
 |---|---|---|---|---|
-| P1-1 | **Trailing-slash redirects on GitHub Pages.** Routes are written as `route/index.html`. GitHub Pages answers `/articles` with a 301 to `/articles/`, but every canonical, sitemap URL and internal link uses the version without the slash, so every indexable URL would redirect. | Prerender output layout; local `vite preview` serves the home page for slashless URLs | Verify on the live host first. If the redirect happens, either switch canonicals, sitemap and internal links to trailing-slash URLs everywhere, or emit `route.html` files for slashless URLs (GitHub Pages serves `/x` from `x.html`) | **Open: verify after P0-1** |
+| P1-1 | **Trailing-slash redirects on GitHub Pages.** Routes are written as `route/index.html`. GitHub Pages answers `/articles` with a 301 to `/articles/`, but every canonical, sitemap URL and internal link uses the version without the slash, so every indexable URL would redirect. | Prerender output layout; local `vite preview` serves the home page for slashless URLs | Prerender now also writes `route.html`, so the slashless URL is served directly. Tested against a GitHub Pages-style server (92 of 92 URLs return 200). Confirm on the live host with `npm run check:live` | **Fixed in code; verify live** |
 | P1-2 | **5.4 MB of article bodies in the main JS bundle.** Every page, including home, downloaded all article HTML (5.98 MB JS, 441 KB gzipped). That hurts LCP and INP everywhere. | `dist/assets/index-*.js` 5,976,265 bytes | Article bodies are now split into `src/data/article-content/<slug>.json` and loaded per article | **Fixed**: main bundle 358 KB (105 KB transferred) |
 | P1-3 | **125 thin tag pages indexed.** 125 of 162 tag pages list exactly one item, so each is a near-duplicate of the blog or article it links to. | Count from `tags.json` + article tags | `noindex, follow` + sitemap exclusion below 2 items (`TAG_INDEX_MIN_ITEMS`); links stay crawlable | **Fixed** |
 | P1-4 | **Static and client metadata disagreed.** Category and tag titles and descriptions in the prerendered HTML differed from what React set after load, so Google's rendered view contradicted the HTML. | e.g. `Mathematics Blogs - Curated Directory \| BlogAI` (static) vs `… \| BlogAI Directory` (client) | Shared builders in `src/utils/seo.js` used by both | **Fixed** |
@@ -80,7 +83,7 @@ Status key: **Fixed** = implemented and validated locally in this pass. **Open**
 | P2-3 | `twitter:card` was `summary_large_image` on pages without an image. | `summary` unless an image exists | **Fixed** |
 | P2-4 | No Open Graph image anywhere, so social shares show no preview. | Owner: create a real 1200×630 site image and per-article images, then set `image` / `imageAlt` frontmatter | **Open** |
 | P2-5 | Heavy article pages: the algebra page is about 1.9 MB of HTML, because KaTeX `htmlAndMathml` output roughly doubles math markup. The client also re-downloads the body that the static HTML already contained. | Options: render MathML-only for repeated inline math, paginate the 150-problem page into 2 or 3 parts, or reuse the prerendered DOM. Measure LCP and INP on the live URL before choosing | **Open** |
-| P2-6 | 8 of 44 directory listings have no description, so `/blog/:slug` falls back to a generated sentence (thin page). | Owner: add real descriptions in the CSVs, or noindex listings without one | **Open** |
+| P2-6 | 8 of 44 directory listings have no description, so `/blog/:slug` falls back to a generated sentence (thin page). | These listings are now `noindex, follow` and left out of the sitemap; adding a description to the CSV re-includes them automatically. Owner: write the 8 Automobile descriptions | **Mitigated** |
 | P2-7 | `RSS` article had no link to another article. | Contextual link added to `read-engineering-blog-posts-critically` | **Fixed** |
 | P2-8 | Hardcoded domain in 10 files. | Centralized in `src/utils/seo.js` (JS); robots.txt and the validator still hold their own copy | **Fixed** (JS) |
 

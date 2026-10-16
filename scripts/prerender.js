@@ -2,7 +2,7 @@
  * scripts/prerender.js - Static Site Generation & Prerendering for Vite + React
  * Injects route-specific SEO titles, meta descriptions, canonical URLs,
  * Open Graph, Twitter cards, JSON-LD structured data, and crawlable semantic HTML into dist/.
- * Also generates sitemap.xml.
+ * Also generates the sitemap index (sitemap.xml) and one sitemap per site section.
  */
 
 import fs from 'fs';
@@ -18,6 +18,7 @@ import {
   buildCategoryTitle,
   buildBlogMeta,
   buildAuthorSchema,
+  SITEMAP_SECTIONS,
 } from '../src/utils/seo.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -196,6 +197,11 @@ async function runPrerender() {
       const cleanPath = routePath.replace(/^\/+|\/+$/g, '');
       targetDir = path.join(DIST_DIR, cleanPath);
       targetFile = path.join(targetDir, 'index.html');
+      // Static hosts such as GitHub Pages answer /route with a 301 to /route/ when only
+      // route/index.html exists. route.html lets the canonical slashless URL return 200 directly;
+      // route/index.html still serves the trailing-slash variant, which canonicalizes back.
+      fs.mkdirSync(path.dirname(path.join(DIST_DIR, `${cleanPath}.html`)), { recursive: true });
+      fs.writeFileSync(path.join(DIST_DIR, `${cleanPath}.html`), htmlContent, 'utf-8');
     }
 
     fs.mkdirSync(targetDir, { recursive: true });
@@ -274,7 +280,7 @@ async function runPrerender() {
     bodyContent: homeBody,
   });
   writeRouteFile('/', homeHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/`, lastmod: latestArticleDate });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/`, lastmod: latestArticleDate });
 
   // 1b. Community blog directory (/directory)
   const directoryBody = `
@@ -311,7 +317,7 @@ async function runPrerender() {
     },
     bodyContent: directoryBody,
   }));
-  sitemapUrls.push({ loc: `${SITE_URL}/directory` });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/directory` });
 
   // 1c. Articles listing (/articles)
   const articlesBody = `
@@ -347,7 +353,7 @@ async function runPrerender() {
     },
     bodyContent: articlesBody,
   }));
-  sitemapUrls.push({ loc: `${SITE_URL}/articles`, lastmod: latestArticleDate });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/articles`, lastmod: latestArticleDate });
 
   // 1d. Individual articles (/articles/:articleSlug) with the full content in the HTML
   for (const a of articles) {
@@ -402,7 +408,7 @@ async function runPrerender() {
     }));
     // Articles first published elsewhere keep their external canonical and stay out of the sitemap
     if (a.isCanonicalLocal) {
-      sitemapUrls.push({ loc: `${SITE_URL}/articles/${a.slug}`, lastmod: a.updatedAt });
+      sitemapUrls.push({ section: 'articles', loc: `${SITE_URL}/articles/${a.slug}`, lastmod: a.updatedAt });
     }
   }
 
@@ -451,7 +457,7 @@ async function runPrerender() {
     });
     writeRouteFile(`/category/${cat.slug}`, catHtml);
     const catLastmod = catArticles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
-    sitemapUrls.push({ loc: `${SITE_URL}/category/${cat.slug}`, lastmod: catLastmod });
+    sitemapUrls.push({ section: 'categories', loc: `${SITE_URL}/category/${cat.slug}`, lastmod: catLastmod });
   }
 
   // 3. Tags (/tag/:tagSlug) - directory tags plus tags used only by articles
@@ -504,12 +510,17 @@ async function runPrerender() {
       bodyContent: tagBody,
     });
     writeRouteFile(`/tag/${t.slug}`, tagHtml);
-    // Single-item tag pages are noindexed, so they stay out of the sitemap
-    if (tagMeta.robots.startsWith('index')) sitemapUrls.push({ loc: `${SITE_URL}/tag/${t.slug}` });
+    // Single-item tag pages are noindexed, so they stay out of the sitemap.
+    // lastmod comes from tagged articles; directory listings carry no modification dates.
+    if (tagMeta.robots.startsWith('index')) {
+      const tagLastmod = tagArticles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
+      sitemapUrls.push({ section: 'tags', loc: `${SITE_URL}/tag/${t.slug}`, lastmod: tagLastmod });
+    }
   }
 
   // 4. Individual Blog Details (/blog/:blogSlug)
   for (const b of blogs) {
+    const blogMeta = buildBlogMeta(b);
     const blogBody = `
       <header class="site-header">
         <div class="container"><a href="/" class="site-logo"><span class="logo-title">BlogAI</span></a></div>
@@ -538,8 +549,9 @@ async function runPrerender() {
 
     const blogHtml = buildHtml({
       template,
-      title: buildBlogMeta(b).title,
-      description: buildBlogMeta(b).description,
+      title: blogMeta.title,
+      description: blogMeta.description,
+      robots: blogMeta.robots,
       canonicalUrl: `${SITE_URL}/blog/${b.slug}`,
       jsonLd: {
         '@context': 'https://schema.org',
@@ -553,7 +565,8 @@ async function runPrerender() {
       bodyContent: blogBody,
     });
     writeRouteFile(`/blog/${b.slug}`, blogHtml);
-    sitemapUrls.push({ loc: `${SITE_URL}/blog/${b.slug}` });
+    // Listings without a real description are thin generated pages: noindexed and left out
+    if (blogMeta.robots.startsWith('index')) sitemapUrls.push({ section: 'blogs', loc: `${SITE_URL}/blog/${b.slug}` });
   }
 
   // 5. Submit (/submit)
@@ -565,7 +578,7 @@ async function runPrerender() {
     bodyContent: `<main id="main-content"><div class="container"><h1>Submit a Blog for Review</h1><p>Suggest high-signal publications for inclusion in the directory.</p></div></main>`,
   });
   writeRouteFile('/submit', submitHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/submit` });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/submit` });
 
   // 6. About (/about)
   const aboutHtml = buildHtml({
@@ -582,7 +595,7 @@ async function runPrerender() {
     bodyContent: `<main id="main-content"><div class="container"><h1>About BlogAI Directory</h1><p>An open directory connecting curious minds with independent technical blogs.</p></div></main>`,
   });
   writeRouteFile('/about', aboutHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/about` });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/about` });
 
   // 7. Guidelines (/guidelines)
   const guidelinesHtml = buildHtml({
@@ -593,7 +606,7 @@ async function runPrerender() {
     bodyContent: `<main id="main-content"><div class="container"><h1>Submission &amp; Quality Guidelines</h1></div></main>`,
   });
   writeRouteFile('/guidelines', guidelinesHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/guidelines` });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/guidelines` });
 
   // 8. Privacy (/privacy)
   const privacyHtml = buildHtml({
@@ -604,7 +617,7 @@ async function runPrerender() {
     bodyContent: `<main id="main-content"><div class="container"><h1>Privacy Policy</h1><p>Zero tracking, no analytics cookies, no personal data resale.</p></div></main>`,
   });
   writeRouteFile('/privacy', privacyHtml);
-  sitemapUrls.push({ loc: `${SITE_URL}/privacy` });
+  sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/privacy` });
 
   // 9. 404 (404.html)
   const notFoundHtml = buildHtml({
@@ -617,16 +630,38 @@ async function runPrerender() {
   });
   writeRouteFile('/404', notFoundHtml);
 
-  // 10. Generate sitemap.xml
-  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+  // 10. Sitemaps: one file per section (so Search Console reports coverage per section)
+  // plus sitemap.xml as the index referenced by robots.txt
+  const maxDate = (dates) => dates.reduce((max, d) => (d && d > max ? d : max), '');
+  const sitemapFiles = [];
+  for (const section of SITEMAP_SECTIONS) {
+    const urls = sitemapUrls.filter((u) => u.section === section);
+    if (urls.length === 0) continue;
+    const fileName = `sitemap-${section}.xml`;
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapUrls.map(u => `  <url>
-    <loc>${u.loc}</loc>${u.lastmod ? `
+${urls.map(u => `  <url>
+    <loc>${escapeHtml(u.loc)}</loc>${u.lastmod ? `
     <lastmod>${u.lastmod}</lastmod>` : ''}
   </url>`).join('\n')}
 </urlset>
 `;
-  fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf-8');
+    fs.writeFileSync(path.join(DIST_DIR, fileName), xml, 'utf-8');
+    sitemapFiles.push({ loc: `${SITE_URL}/${fileName}`, lastmod: maxDate(urls.map((u) => u.lastmod)) });
+  }
+  const unsectioned = sitemapUrls.filter((u) => !SITEMAP_SECTIONS.includes(u.section));
+  if (unsectioned.length > 0) {
+    throw new Error(`Sitemap URLs without a known section: ${unsectioned.map((u) => u.loc).join(', ')}`);
+  }
+  const sitemapIndexXml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapFiles.map(f => `  <sitemap>
+    <loc>${f.loc}</loc>${f.lastmod ? `
+    <lastmod>${f.lastmod}</lastmod>` : ''}
+  </sitemap>`).join('\n')}
+</sitemapindex>
+`;
+  fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapIndexXml, 'utf-8');
 
   // Copy feed.opml to dist/
   const rootOpml = path.join(ROOT_DIR, 'feed.opml');
@@ -635,7 +670,7 @@ ${sitemapUrls.map(u => `  <url>
   }
 
   const pageCount = 8 + articles.length + categories.length + allTags.length + blogs.length;
-  console.log(`[SUCCESS] Pre-rendered ${pageCount} static pages and generated sitemap.xml with ${sitemapUrls.length} canonical URLs.`);
+  console.log(`[SUCCESS] Pre-rendered ${pageCount} static pages and generated a sitemap index with ${sitemapFiles.length} sitemaps and ${sitemapUrls.length} canonical URLs.`);
 }
 
 runPrerender().catch(err => {

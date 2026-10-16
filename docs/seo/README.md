@@ -24,6 +24,7 @@ Started 2026-10-16. Every finding here was checked against the repository, the p
 | 12 | Automated checks | `scripts/validate_seo.py`, `scripts/build_articles.js`, `src/test/seo.test.js` | Done, already in CI |
 | 13 | Implementation log | [05-implementation-log.md](05-implementation-log.md) | Done |
 | 14 | Post-implementation validation | [05-implementation-log.md §2](05-implementation-log.md#2-validation) | Done (local build; live checks wait for launch) |
+| — | XML sitemaps, robots.txt, Search Console setup | [06-sitemap.md](06-sitemap.md) | Done; live check waits for launch |
 | 15 | 30/60/90-day roadmap | [05-implementation-log.md §3](05-implementation-log.md#3-306090-day-roadmap) | Done |
 
 ## Commands
@@ -33,3 +34,9 @@ npm run ci
 ```
 
 That runs the CSV linter, data and article builds, unit tests, the production build with prerendering, and `validate_seo.py`. The GitHub Actions workflow runs the same steps on every push and pull request.
+
+After each deploy (once the domain is live), check the live sitemap URLs:
+
+```bash
+npm run check:live
+```

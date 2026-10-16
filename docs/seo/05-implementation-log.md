@@ -21,6 +21,21 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 | Validator: one-H1 check, broken internal links, sitemap ↔ page consistency (exists, indexable, self-canonical, no duplicates, valid and non-future `lastmod`), required BlogPosting fields, title and description length warnings, missing-from-sitemap warnings, article-to-article link warning | `scripts/validate_seo.py` | §12 automation |
 | Tests: shared SEO rules, author schema, split article output, `seoTitle` limit; article routing test now waits for the async body | `src/test/seo.test.js` (new), `src/test/routing.test.jsx` | — |
 
+### Sitemap pass (2026-10-16, later the same day)
+
+| Change | Files |
+|---|---|
+| `sitemap.xml` is now a sitemap index over `sitemap-{pages,articles,categories,tags,blogs}.xml`; index `lastmod` is the newest child URL; tag `lastmod` comes from tagged articles | `scripts/prerender.js`, `src/utils/seo.js` (`SITEMAP_SECTIONS`) |
+| Slashless `route.html` written next to `route/index.html` so canonical URLs answer 200 without a redirect | `scripts/prerender.js` |
+| Directory listings without a description: `noindex, follow` and left out of the sitemap (8 pages) | `src/utils/seo.js` (`isBlogIndexable`), `prerender.js`, `src/pages/BlogDetails.jsx` |
+| Shared sitemap and robots.txt parser (sitemap namespace, limits, lastmod, robots wildcard matching) | `scripts/sitemap_utils.py` (new) |
+| Build validator: index and child sitemaps, cross-sitemap duplicates, robots.txt blocking, slashless and slash copies must match | `scripts/validate_seo.py` |
+| Live checker: 200-without-redirect, HTML, no noindex or `X-Robots-Tag`, self-canonical, real 404s | `scripts/check_live_seo.py` (new), `npm run check:live` |
+| CI `verify-live` job after deploy, enabled by repository variable `SITE_LIVE=true` | `.github/workflows/updateInfo.yml` |
+| Test for listing indexability | `src/test/seo.test.js` |
+
+Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
+
 ## 2. Validation
 
 Run locally on 2026-10-16:

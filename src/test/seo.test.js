@@ -6,6 +6,7 @@ import {
   buildTagMeta,
   buildAuthorSchema,
   buildCategoryTitle,
+  buildBlogMeta,
   isTagIndexable,
   TITLE_MAX_LENGTH,
 } from '../utils/seo';
@@ -28,6 +29,12 @@ describe('SEO rules shared by the client and prerendered HTML', () => {
     expect(meta.robots).toBe('index, follow');
     expect(meta.title).toBe('#mathematics Articles & Blogs');
     expect(meta.summary).toBe('Explore 5 articles and 2 curated blogs tagged #mathematics on BlogAI.');
+  });
+
+  it('noindexes directory listings without a real description', () => {
+    const base = { title: 'Example', category: 'Automobile', tags: ['cars'] };
+    expect(buildBlogMeta({ ...base, description: '' }).robots).toBe('noindex, follow');
+    expect(buildBlogMeta({ ...base, description: 'Long-form road tests.' }).robots).toBe('index, follow');
   });
 
   it('names categories with articles as articles and blogs', () => {

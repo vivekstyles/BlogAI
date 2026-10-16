@@ -91,6 +91,7 @@ export function BlogDetails() {
       <SEOHead
         title={buildBlogMeta(blog).title}
         description={buildBlogMeta(blog).description}
+        robots={buildBlogMeta(blog).robots}
         canonicalPath={`/blog/${blog.slug}`}
         jsonLd={blogSchema}
       />
