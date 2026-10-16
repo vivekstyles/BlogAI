@@ -11,6 +11,11 @@
 | `/articles/math-formulas-every-student-should-know` | math formulas | important math formulas, math formula sheet, basic math formulas | when to use the law of cosines; formula for the sum of a geometric series; derivative rules list | Informational (reference) | High school and first-year university students |
 | `/articles/probability-statistics-real-world-examples` | probability and statistics examples | real-life probability examples, statistics in everyday life | Bayes' theorem medical test example; how is margin of error calculated; Simpson's paradox example | Informational | Students, analysts, data-science learners |
 | `/articles/linear-algebra-concepts-for-machine-learning` | linear algebra for machine learning | linear algebra concepts for AI, math for deep learning | why PCA uses SVD; attention as matrix multiplication; what is LoRA in linear algebra terms | Informational | ML practitioners and students with some programming |
+| `/articles/python-libraries-for-data-science` | python libraries for data science | data science libraries python, python data analysis libraries | pandas vs polars; which python library for time series forecasting; best python library for data visualization | Informational / commercial-investigation | Data science learners and practitioners choosing tools |
+| `/articles/python-data-science-projects` | python data science projects | data science project ideas, data science portfolio projects | data science projects for beginners with datasets; advanced machine learning project ideas | Informational | Students and job seekers building a portfolio |
+| `/articles/pandas-tips-and-tricks-for-data-analysis` | pandas tips and tricks | pandas tutorial, pandas data cleaning | pandas 3.0 chained assignment; pandas groupby transform example; pandas merge validate | Informational (reference) | Analysts and data scientists using pandas |
+| `/articles/numpy-examples-for-numerical-computing` | numpy examples | numpy tutorial, numpy broadcasting examples | numpy view vs copy; numpy random default_rng; numpy argpartition top k | Informational (reference) | Python programmers learning numerical computing |
+| `/articles/python-machine-learning-examples` | python machine learning examples | scikit-learn examples, machine learning applications python | scikit-learn pipeline example; tuned threshold classifier example; isolation forest fraud example | Informational | ML learners with some Python |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
@@ -26,6 +31,10 @@
 | Math tricks ↔ Math formulas | Difference of squares, Pythagorean triples, sum of arithmetic series | **Keep separate.** "Tricks" targets speed and mental math; "formulas" targets lookup. Watch GSC for one URL ranking for the other's primary term. |
 | Probability examples ↔ Math formulas (probability section) | 11 formulas overlap | **Keep separate.** Formulas are definitions; the examples article is applications. |
 | Linear algebra for ML ↔ Math formulas (vectors and matrices) | 7 formulas | **Keep separate.** Different audiences. |
+
+| NumPy examples ↔ Linear algebra for ML | NumPy `linalg` usage (solve, eigh, norms, einsum) | **Keep separate.** The NumPy article keeps linear algebra to 8 short examples and links to the linear-algebra article for the theory. |
+| Libraries guide ↔ Pandas / NumPy / ML articles | Each library article is also an entry in the guide | **Keep separate.** The guide is a chooser across 100 tools; the others are deep how-to references. The guide links to each one from its entry. |
+| ML examples ↔ Data science projects | Both mention churn, fraud, forecasting, recommendations | **Keep separate.** Examples are short runnable techniques; projects are open-ended briefs with datasets. Each links to the other. |
 
 No consolidation, redirect or unpublishing is recommended.
 

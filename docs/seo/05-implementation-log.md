@@ -36,6 +36,24 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Python data science articles (2026-10-17)
+
+Five new published articles, forming a "Python for data science" cluster (Engineering category; NumPy also in Mathematics). No existing URLs changed.
+
+| URL | Format | Code verification |
+|---|---|---|
+| `/articles/python-libraries-for-data-science` | 100 libraries grouped by task, with a chooser table and starter stacks | 1 snippet run |
+| `/articles/python-data-science-projects` | 101 project briefs with public datasets, by level | 1 snippet run |
+| `/articles/pandas-tips-and-tricks-for-data-analysis` | 100 tips with code and output | 100 snippets run (pandas 3.0.3, no PyArrow) |
+| `/articles/numpy-examples-for-numerical-computing` | 101 examples with code and output | 101 snippets run (NumPy 2.3.5) |
+| `/articles/python-machine-learning-examples` | 100 applied examples with code and output | 100 snippets run (scikit-learn 1.9.0) |
+
+- Every code output was produced by executing the snippet (Python 3.13.12) and pasting stdout. No snippet raised an error or warning.
+- H1 titles keep "Best" as requested; each has a `seoTitle` without it (60 characters or fewer).
+- Each article links to 4–5 related articles with descriptive anchors.
+- External links checked by script on 2026-10-17. Three were fixed (a wrong KDnuggets path, Feature-engine and Eurostat URLs). arXiv and some publisher DOIs refused automated requests; those identifiers were checked by hand.
+- The ML article uses only scikit-learn's bundled real datasets or clearly labeled synthetic data, and states that its scores are not benchmarks.
+
 ## 2. Validation
 
 Run locally on 2026-10-16:

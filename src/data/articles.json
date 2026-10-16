@@ -1,5 +1,627 @@
 [
   {
+    "slug": "numpy-examples-for-numerical-computing",
+    "title": "101 Best NumPy Examples to Master Numerical Computing in Python",
+    "seoTitle": "101 NumPy Examples for Numerical Computing in Python",
+    "description": "101 runnable NumPy examples covering arrays, indexing, broadcasting, statistics, random numbers, floating point and speed, each with real output from NumPy 2.3.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "numpy",
+        "slug": "numpy"
+      },
+      {
+        "name": "numerical computing",
+        "slug": "numerical-computing"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "scientific computing",
+        "slug": "scientific-computing"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.directory/articles/numpy-examples-for-numerical-computing",
+    "isCanonicalLocal": true,
+    "wordCount": 2229,
+    "readingTimeMinutes": 10,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "creating-arrays",
+        "text": "Creating arrays",
+        "level": 2
+      },
+      {
+        "id": "data-types-and-memory",
+        "text": "Data types and memory",
+        "level": 2
+      },
+      {
+        "id": "indexing-and-slicing",
+        "text": "Indexing and slicing",
+        "level": 2
+      },
+      {
+        "id": "reshaping-and-combining-arrays",
+        "text": "Reshaping and combining arrays",
+        "level": 2
+      },
+      {
+        "id": "broadcasting-and-vectorization",
+        "text": "Broadcasting and vectorization",
+        "level": 2
+      },
+      {
+        "id": "math-aggregation-and-statistics",
+        "text": "Math, aggregation and statistics",
+        "level": 2
+      },
+      {
+        "id": "random-numbers",
+        "text": "Random numbers",
+        "level": 2
+      },
+      {
+        "id": "linear-algebra-essentials",
+        "text": "Linear algebra essentials",
+        "level": 2
+      },
+      {
+        "id": "floating-point-and-numerical-methods",
+        "text": "Floating point and numerical methods",
+        "level": 2
+      },
+      {
+        "id": "input-output-and-performance",
+        "text": "Input, output and performance",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-to-avoid",
+        "text": "Common mistakes to avoid",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-libraries-for-data-science",
+      "linear-algebra-concepts-for-machine-learning",
+      "pandas-tips-and-tricks-for-data-analysis"
+    ],
+    "relatedBlogs": [
+      "3blue1brown-blog",
+      "acm-queue",
+      "azimuth-john-baez"
+    ]
+  },
+  {
+    "slug": "pandas-tips-and-tricks-for-data-analysis",
+    "title": "100 Best Pandas Tips and Tricks for Data Analysis",
+    "seoTitle": "100 Pandas Tips and Tricks for Data Analysis",
+    "description": "100 practical pandas tips for loading, cleaning, filtering, grouping, reshaping and speeding up data analysis, each with code and real output from pandas 3.0.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "pandas",
+        "slug": "pandas"
+      },
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "data cleaning",
+        "slug": "data-cleaning"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.directory/articles/pandas-tips-and-tricks-for-data-analysis",
+    "isCanonicalLocal": true,
+    "wordCount": 3091,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "loading-data-the-right-way",
+        "text": "Loading data the right way",
+        "level": 2
+      },
+      {
+        "id": "inspecting-a-new-dataset",
+        "text": "Inspecting a new dataset",
+        "level": 2
+      },
+      {
+        "id": "selecting-and-filtering",
+        "text": "Selecting and filtering",
+        "level": 2
+      },
+      {
+        "id": "cleaning-data",
+        "text": "Cleaning data",
+        "level": 2
+      },
+      {
+        "id": "text-and-categorical-data",
+        "text": "Text and categorical data",
+        "level": 2
+      },
+      {
+        "id": "dates-and-time-series",
+        "text": "Dates and time series",
+        "level": 2
+      },
+      {
+        "id": "grouping-and-aggregation",
+        "text": "Grouping and aggregation",
+        "level": 2
+      },
+      {
+        "id": "reshaping-and-combining",
+        "text": "Reshaping and combining",
+        "level": 2
+      },
+      {
+        "id": "speed-safety-and-pandas-3-habits",
+        "text": "Speed, safety and pandas 3 habits",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-to-avoid",
+        "text": "Common mistakes to avoid",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-data-science-projects",
+      "python-libraries-for-data-science",
+      "numpy-examples-for-numerical-computing"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "python-data-science-projects",
+    "title": "101 Best Python Data Science Projects for Beginners to Advanced",
+    "seoTitle": "101 Python Data Science Projects, Beginner to Advanced",
+    "description": "101 Python data science project ideas from beginner to advanced, each with a public dataset, the skills it builds and a stretch goal for your portfolio.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "portfolio",
+        "slug": "portfolio"
+      },
+      {
+        "name": "pandas",
+        "slug": "pandas"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.directory/articles/python-data-science-projects",
+    "isCanonicalLocal": true,
+    "wordCount": 5548,
+    "readingTimeMinutes": 25,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "what-makes-a-project-portfolio-ready",
+        "text": "What makes a project portfolio-ready",
+        "level": 2
+      },
+      {
+        "id": "beginner-projects-135",
+        "text": "Beginner projects (1–35)",
+        "level": 2
+      },
+      {
+        "id": "intermediate-projects-3670",
+        "text": "Intermediate projects (36–70)",
+        "level": 2
+      },
+      {
+        "id": "advanced-projects-71101",
+        "text": "Advanced projects (71–101)",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-in-data-science-projects",
+        "text": "Common mistakes in data science projects",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-libraries-for-data-science",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-machine-learning-examples"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "python-libraries-for-data-science",
+    "title": "100 Best Python Libraries for Data Science: A Complete Guide",
+    "seoTitle": "100 Python Libraries for Data Science: A Complete Guide",
+    "description": "A guide to 100 Python data science libraries grouped by task, from pandas and Polars to PyTorch, spaCy and MLflow, with when to use each and how to choose.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "pandas",
+        "slug": "pandas"
+      },
+      {
+        "name": "numpy",
+        "slug": "numpy"
+      },
+      {
+        "name": "scikit-learn",
+        "slug": "scikit-learn"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.directory/articles/python-libraries-for-data-science",
+    "isCanonicalLocal": true,
+    "wordCount": 4435,
+    "readingTimeMinutes": 20,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-choose-a-library",
+        "text": "How to choose a library",
+        "level": 2
+      },
+      {
+        "id": "core-arrays-dataframes-and-sql",
+        "text": "Core arrays, dataframes and SQL",
+        "level": 2
+      },
+      {
+        "id": "scaling-and-speed",
+        "text": "Scaling and speed",
+        "level": 2
+      },
+      {
+        "id": "getting-data-in",
+        "text": "Getting data in",
+        "level": 2
+      },
+      {
+        "id": "cleaning-validation-and-profiling",
+        "text": "Cleaning, validation and profiling",
+        "level": 2
+      },
+      {
+        "id": "visualization",
+        "text": "Visualization",
+        "level": 2
+      },
+      {
+        "id": "statistics-and-probabilistic-modeling",
+        "text": "Statistics and probabilistic modeling",
+        "level": 2
+      },
+      {
+        "id": "classical-machine-learning",
+        "text": "Classical machine learning",
+        "level": 2
+      },
+      {
+        "id": "interpretability-fairness-and-uncertainty",
+        "text": "Interpretability, fairness and uncertainty",
+        "level": 2
+      },
+      {
+        "id": "deep-learning",
+        "text": "Deep learning",
+        "level": 2
+      },
+      {
+        "id": "natural-language-processing-and-large-language-models",
+        "text": "Natural language processing and large language models",
+        "level": 2
+      },
+      {
+        "id": "computer-vision-and-audio",
+        "text": "Computer vision and audio",
+        "level": 2
+      },
+      {
+        "id": "time-series-and-forecasting",
+        "text": "Time series and forecasting",
+        "level": 2
+      },
+      {
+        "id": "geospatial-data-and-graphs",
+        "text": "Geospatial data and graphs",
+        "level": 2
+      },
+      {
+        "id": "notebooks-mlops-and-apps",
+        "text": "Notebooks, MLOps and apps",
+        "level": 2
+      },
+      {
+        "id": "starter-stacks-by-role",
+        "text": "Starter stacks by role",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-when-choosing-libraries",
+        "text": "Common mistakes when choosing libraries",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-data-science-projects",
+      "python-machine-learning-examples",
+      "numpy-examples-for-numerical-computing"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "python-machine-learning-examples",
+    "title": "100 Best Python Machine Learning Examples With Real-World Applications",
+    "seoTitle": "100 Python Machine Learning Examples With Real Applications",
+    "description": "100 runnable scikit-learn examples for classification, regression, text, clustering, anomaly detection, forecasting and recommendations, with real output.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "scikit-learn",
+        "slug": "scikit-learn"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.directory/articles/python-machine-learning-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 3944,
+    "readingTimeMinutes": 18,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "workflow-foundations",
+        "text": "Workflow foundations",
+        "level": 2
+      },
+      {
+        "id": "classification-applications",
+        "text": "Classification applications",
+        "level": 2
+      },
+      {
+        "id": "regression-applications",
+        "text": "Regression applications",
+        "level": 2
+      },
+      {
+        "id": "text-and-language-applications",
+        "text": "Text and language applications",
+        "level": 2
+      },
+      {
+        "id": "clustering-and-segmentation",
+        "text": "Clustering and segmentation",
+        "level": 2
+      },
+      {
+        "id": "dimensionality-reduction-and-model-inspection",
+        "text": "Dimensionality reduction and model inspection",
+        "level": 2
+      },
+      {
+        "id": "anomaly-detection",
+        "text": "Anomaly detection",
+        "level": 2
+      },
+      {
+        "id": "time-series-and-forecasting",
+        "text": "Time series and forecasting",
+        "level": 2
+      },
+      {
+        "id": "recommendations-and-similarity-search",
+        "text": "Recommendations and similarity search",
+        "level": 2
+      },
+      {
+        "id": "neural-networks-streaming-and-production",
+        "text": "Neural networks, streaming and production",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-to-avoid",
+        "text": "Common mistakes to avoid",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-libraries-for-data-science",
+      "python-data-science-projects",
+      "numpy-examples-for-numerical-computing"
+    ],
+    "relatedBlogs": [
+      "uber-engineering",
+      "acm-queue",
+      "cloudflare-blog"
+    ]
+  },
+  {
     "slug": "algebra-problems-with-solutions-for-beginners",
     "title": "150 Best Algebra Problems With Solutions for Beginners",
     "seoTitle": "",
@@ -258,9 +880,9 @@
       }
     ],
     "relatedArticles": [
-      "algebra-problems-with-solutions-for-beginners",
-      "math-formulas-every-student-should-know",
-      "math-tricks-to-solve-problems-faster"
+      "numpy-examples-for-numerical-computing",
+      "python-libraries-for-data-science",
+      "python-machine-learning-examples"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
@@ -626,9 +1248,9 @@
       }
     ],
     "relatedArticles": [
+      "numpy-examples-for-numerical-computing",
       "algebra-problems-with-solutions-for-beginners",
-      "linear-algebra-concepts-for-machine-learning",
-      "math-formulas-every-student-should-know"
+      "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
       "netflix-techblog",
@@ -715,8 +1337,9 @@
       }
     ],
     "relatedArticles": [
-      "linear-algebra-concepts-for-machine-learning",
-      "follow-technical-blogs-with-rss"
+      "numpy-examples-for-numerical-computing",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-data-science-projects"
     ],
     "relatedBlogs": [
       "high-scalability",
@@ -798,8 +1421,9 @@
       }
     ],
     "relatedArticles": [
-      "linear-algebra-concepts-for-machine-learning",
-      "read-engineering-blog-posts-critically"
+      "numpy-examples-for-numerical-computing",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-data-science-projects"
     ],
     "relatedBlogs": [
       "github-engineering",
