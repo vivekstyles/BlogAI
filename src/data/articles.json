@@ -126,6 +126,124 @@
     ]
   },
   {
+    "slug": "applications-of-science-in-everyday-life",
+    "title": "100 Best Applications of Science in Everyday Life: A Complete Guide",
+    "seoTitle": "100 Applications of Science in Everyday Life: A Guide",
+    "description": "How chemistry, biology and Earth science shape 100 everyday things, from bread, soap and vaccines to clean water, fertilisers, glue and weather forecasts.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "science in everyday life",
+        "slug": "science-in-everyday-life"
+      },
+      {
+        "name": "chemistry",
+        "slug": "chemistry"
+      },
+      {
+        "name": "biology",
+        "slug": "biology"
+      },
+      {
+        "name": "health",
+        "slug": "health"
+      },
+      {
+        "name": "environment",
+        "slug": "environment"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/applications-of-science-in-everyday-life",
+    "isCanonicalLocal": true,
+    "wordCount": 5458,
+    "readingTimeMinutes": 25,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "in-the-kitchen",
+        "text": "In the kitchen",
+        "level": 2
+      },
+      {
+        "id": "cleaning",
+        "text": "Cleaning",
+        "level": 2
+      },
+      {
+        "id": "health-and-medicine",
+        "text": "Health and medicine",
+        "level": 2
+      },
+      {
+        "id": "personal-care",
+        "text": "Personal care",
+        "level": 2
+      },
+      {
+        "id": "materials-around-the-home",
+        "text": "Materials around the home",
+        "level": 2
+      },
+      {
+        "id": "farming-and-food-supply",
+        "text": "Farming and food supply",
+        "level": 2
+      },
+      {
+        "id": "water-and-the-environment",
+        "text": "Water and the environment",
+        "level": 2
+      },
+      {
+        "id": "transport-and-energy",
+        "text": "Transport and energy",
+        "level": 2
+      },
+      {
+        "id": "safety-justice-and-society",
+        "text": "Safety, justice and society",
+        "level": 2
+      },
+      {
+        "id": "how-to-see-the-science-around-you",
+        "text": "How to see the science around you",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "science-facts-that-explain-how-the-world-works",
+      "science-projects-for-students",
+      "scientific-discoveries-that-changed-the-world"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "quanta-magazine",
+      "in-the-pipeline-derek-lowe"
+    ]
+  },
+  {
     "slug": "numpy-examples-for-numerical-computing",
     "title": "101 Best NumPy Examples to Master Numerical Computing in Python",
     "seoTitle": "101 NumPy Examples for Numerical Computing in Python",
@@ -1240,6 +1358,448 @@
       "uber-engineering",
       "acm-queue",
       "cloudflare-blog"
+    ]
+  },
+  {
+    "slug": "science-experiments-at-home",
+    "title": "101 Best Science Experiments You Can Do at Home",
+    "seoTitle": "101 Science Experiments You Can Do at Home",
+    "description": "101 safe science experiments with household items, covering kitchen chemistry, crystals, plants, microbes, the human body, Earth, weather and the night sky.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "science experiments",
+        "slug": "science-experiments"
+      },
+      {
+        "name": "kitchen chemistry",
+        "slug": "kitchen-chemistry"
+      },
+      {
+        "name": "biology",
+        "slug": "biology"
+      },
+      {
+        "name": "earth science",
+        "slug": "earth-science"
+      },
+      {
+        "name": "stem activities",
+        "slug": "stem-activities"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/science-experiments-at-home",
+    "isCanonicalLocal": true,
+    "wordCount": 11438,
+    "readingTimeMinutes": 52,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "safety-first",
+        "text": "Safety first",
+        "level": 2
+      },
+      {
+        "id": "how-to-turn-an-activity-into-an-experiment",
+        "text": "How to turn an activity into an experiment",
+        "level": 2
+      },
+      {
+        "id": "acids-bases-and-indicators",
+        "text": "Acids, bases and indicators",
+        "level": 2
+      },
+      {
+        "id": "chemical-reactions-and-energy",
+        "text": "Chemical reactions and energy",
+        "level": 2
+      },
+      {
+        "id": "food-chemistry",
+        "text": "Food chemistry",
+        "level": 2
+      },
+      {
+        "id": "crystals-mixtures-and-separations",
+        "text": "Crystals, mixtures and separations",
+        "level": 2
+      },
+      {
+        "id": "plants",
+        "text": "Plants",
+        "level": 2
+      },
+      {
+        "id": "microbes-yeast-and-decomposition",
+        "text": "Microbes, yeast and decomposition",
+        "level": 2
+      },
+      {
+        "id": "the-human-body",
+        "text": "The human body",
+        "level": 2
+      },
+      {
+        "id": "earth-science",
+        "text": "Earth science",
+        "level": 2
+      },
+      {
+        "id": "weather-and-climate",
+        "text": "Weather and climate",
+        "level": 2
+      },
+      {
+        "id": "environmental-science",
+        "text": "Environmental science",
+        "level": 2
+      },
+      {
+        "id": "the-sky",
+        "text": "The sky",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "science-facts-that-explain-how-the-world-works",
+      "applications-of-science-in-everyday-life",
+      "physics-experiments-at-home"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "physorg-spotlight",
+      "quanta-magazine"
+    ]
+  },
+  {
+    "slug": "science-facts-that-explain-how-the-world-works",
+    "title": "100 Best Science Facts That Explain How the World Works",
+    "seoTitle": "100 Science Facts That Explain How the World Works",
+    "description": "100 well-established science facts about atoms, chemistry, life, the human body, Earth, weather and space, each with a short explanation of why it is true.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "science facts",
+        "slug": "science-facts"
+      },
+      {
+        "name": "chemistry",
+        "slug": "chemistry"
+      },
+      {
+        "name": "biology",
+        "slug": "biology"
+      },
+      {
+        "name": "earth science",
+        "slug": "earth-science"
+      },
+      {
+        "name": "astronomy",
+        "slug": "astronomy"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/science-facts-that-explain-how-the-world-works",
+    "isCanonicalLocal": true,
+    "wordCount": 5680,
+    "readingTimeMinutes": 26,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "matter-and-atoms",
+        "text": "Matter and atoms",
+        "level": 2
+      },
+      {
+        "id": "chemistry-in-the-everyday-world",
+        "text": "Chemistry in the everyday world",
+        "level": 2
+      },
+      {
+        "id": "energy-and-forces",
+        "text": "Energy and forces",
+        "level": 2
+      },
+      {
+        "id": "life-and-living-things",
+        "text": "Life and living things",
+        "level": 2
+      },
+      {
+        "id": "the-human-body",
+        "text": "The human body",
+        "level": 2
+      },
+      {
+        "id": "earth",
+        "text": "Earth",
+        "level": 2
+      },
+      {
+        "id": "water-weather-and-climate",
+        "text": "Water, weather and climate",
+        "level": 2
+      },
+      {
+        "id": "space",
+        "text": "Space",
+        "level": 2
+      },
+      {
+        "id": "how-science-itself-works",
+        "text": "How science itself works",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "applications-of-science-in-everyday-life",
+      "science-experiments-at-home",
+      "science-projects-for-students"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "physorg-spotlight",
+      "quanta-magazine"
+    ]
+  },
+  {
+    "slug": "science-projects-for-students",
+    "title": "101 Best Science Projects for Students: From Beginner to Advanced",
+    "seoTitle": "101 Science Projects for Students: Beginner to Advanced",
+    "description": "101 science project ideas in chemistry, biology, environmental and Earth science and astronomy, each with a testable question, a method and a way to extend it.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "science projects",
+        "slug": "science-projects"
+      },
+      {
+        "name": "science fair",
+        "slug": "science-fair"
+      },
+      {
+        "name": "chemistry",
+        "slug": "chemistry"
+      },
+      {
+        "name": "biology",
+        "slug": "biology"
+      },
+      {
+        "name": "environmental science",
+        "slug": "environmental-science"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/science-projects-for-students",
+    "isCanonicalLocal": true,
+    "wordCount": 8409,
+    "readingTimeMinutes": 38,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-plan-a-science-project",
+        "text": "How to plan a science project",
+        "level": 2
+      },
+      {
+        "id": "beginner-projects-135",
+        "text": "Beginner projects (1–35)",
+        "level": 2
+      },
+      {
+        "id": "intermediate-projects-3670",
+        "text": "Intermediate projects (36–70)",
+        "level": 2
+      },
+      {
+        "id": "advanced-projects-71101",
+        "text": "Advanced projects (71–101)",
+        "level": 2
+      },
+      {
+        "id": "writing-up-and-presenting-your-project",
+        "text": "Writing up and presenting your project",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "applications-of-science-in-everyday-life",
+      "science-facts-that-explain-how-the-world-works",
+      "scientific-discoveries-that-changed-the-world"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "quanta-magazine",
+      "azimuth-john-baez"
+    ]
+  },
+  {
+    "slug": "scientific-discoveries-that-changed-the-world",
+    "title": "100 Best Scientific Discoveries That Changed the World",
+    "seoTitle": "100 Scientific Discoveries That Changed the World",
+    "description": "100 scientific discoveries in order, from Eratosthenes measuring Earth to CRISPR and gravitational waves, with who found each one, when, and why it mattered.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "scientific discoveries",
+        "slug": "scientific-discoveries"
+      },
+      {
+        "name": "history of science",
+        "slug": "history-of-science"
+      },
+      {
+        "name": "nobel prize",
+        "slug": "nobel-prize"
+      },
+      {
+        "name": "biology",
+        "slug": "biology"
+      },
+      {
+        "name": "chemistry",
+        "slug": "chemistry"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/scientific-discoveries-that-changed-the-world",
+    "isCanonicalLocal": true,
+    "wordCount": 6464,
+    "readingTimeMinutes": 29,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "ancient-and-early-modern-science-to-1760",
+        "text": "Ancient and early modern science (to 1760)",
+        "level": 2
+      },
+      {
+        "id": "the-chemical-and-industrial-revolutions-17701860",
+        "text": "The chemical and industrial revolutions (1770–1860)",
+        "level": 2
+      },
+      {
+        "id": "medicine-atoms-and-fields-18601900",
+        "text": "Medicine, atoms and fields (1860–1900)",
+        "level": 2
+      },
+      {
+        "id": "the-new-physics-and-the-new-biology-19001945",
+        "text": "The new physics and the new biology (1900–1945)",
+        "level": 2
+      },
+      {
+        "id": "the-postwar-boom-19451980",
+        "text": "The postwar boom (1945–1980)",
+        "level": 2
+      },
+      {
+        "id": "modern-science-1980present",
+        "text": "Modern science (1980–present)",
+        "level": 2
+      },
+      {
+        "id": "what-these-discoveries-have-in-common",
+        "text": "What these discoveries have in common",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "applications-of-science-in-everyday-life",
+      "science-facts-that-explain-how-the-world-works",
+      "science-projects-for-students"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "quanta-magazine",
+      "cocktail-party-physics"
     ]
   },
   {

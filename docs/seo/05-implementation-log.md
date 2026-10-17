@@ -54,6 +54,23 @@ Five new published articles, forming a "Python for data science" cluster (Engine
 - External links checked by script on 2026-10-17. Three were fixed (a wrong KDnuggets path, Feature-engine and Eurostat URLs). arXiv and some publisher DOIs refused automated requests; those identifiers were checked by hand.
 - The ML article uses only scikit-learn's bundled real datasets or clearly labeled synthetic data, and states that its scores are not benchmarks.
 
+### Science articles (2026-10-17)
+
+Five new published articles, forming a general-science cluster (Science category). No existing URLs changed.
+
+| URL | Format | Verification |
+|---|---|---|
+| `/articles/science-facts-that-explain-how-the-world-works` | 100 facts with short explanations, grouped by topic | Figures checked against USGS, NOAA, NASA, NHGRI, IUPAC and Sender et al. (2016, cell counts); estimates are labelled as estimates |
+| `/articles/science-experiments-at-home` | 101 household experiments (chemistry, biology, Earth science, weather, sky) with safety rules | Chemistry and biology explanations follow OpenStax; mould and microbe activities are sealed-only; no physics duplicates |
+| `/articles/scientific-discoveries-that-changed-the-world` | 100 discoveries in chronological order with who, when and why it mattered | Dates and Nobel years checked against nobelprize.org and agency pages (WHO, NOAA, NHGRI, CERN, LIGO, EHT) |
+| `/articles/science-projects-for-students` | 101 project briefs (question, method, skills, extension) in three levels | ISEF rules for human participants, vertebrates, biological agents and hazardous chemicals linked; data sources (NOAA, USGS, NASA, GBIF, USA-NPN, AlphaFold DB, Xeno-canto, HOT) checked |
+| `/articles/applications-of-science-in-everyday-life` | 100 applications grouped by setting | Health and safety claims link to CDC, FDA, USDA FSIS, EPA, EIA, UNEP, AirNow and USGS |
+
+- H1 titles keep "Best" as requested; each has a `seoTitle` without it (60 characters or fewer).
+- Each article links to the other four, to `/category/science` and to its physics counterpart. The experiments, projects and applications articles say in their introductions that physics topics are covered by the physics cluster, to avoid cannibalisation (see the cannibalisation table in `02-keywords-content.md`).
+- The experiments and projects articles state that the activities were not run for the article, and flag adult supervision, human participants, microbes and hazardous chemicals.
+- External links checked by script on 2026-10-17. Moved pages were replaced (USDA FSIS botulism page, CDC wastewater page, LIGO detection page); the American Cleaning Institute citation was dropped because it could not be verified. CDC, FSIS, Science Buddies, GBIF and the Exploratorium block automated requests; CDC and FSIS were checked in a browser, and the others are long-standing home or index pages.
+
 ### Physics articles (2026-10-17)
 
 Five new published articles, forming a physics cluster (Physics and Science categories; formulas also in Mathematics). No existing URLs changed.
