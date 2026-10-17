@@ -229,7 +229,7 @@ async function runPrerender() {
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Discover Great Technical &amp; Scientific Blogs</h1>
-          <p class="hero-subtitle">Read original articles published here, and explore a community-curated directory of ${blogs.length} independent blogs across engineering, mathematics, physics, science, and automotive technology.</p>
+          <p class="hero-subtitle">Read original articles published here, and explore a community-curated directory of ${blogs.length} independent blogs across engineering, mathematics, physics, science, automotive technology, and nutrition.</p>
           <a href="/articles">Read Articles</a>
           <a href="/directory">Browse Blog Directory</a>
         </div>
@@ -263,14 +263,14 @@ async function runPrerender() {
   const homeHtml = buildHtml({
     template,
     title: 'Technical Articles & Curated Blog Directory',
-    description: `Read original articles and discover ${blogs.length}+ community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`,
+    description: `Read original articles and discover ${blogs.length}+ community-curated blogs across engineering, mathematics, physics, science, automotive technology, and nutrition.`,
     canonicalUrl: `${SITE_URL}/`,
     jsonLd: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'BlogAI',
       url: SITE_URL,
-      description: 'Original articles and a community-curated directory of high-quality blogs in engineering, mathematics, physics, science, and automotive technology.',
+      description: 'Original articles and a community-curated directory of high-quality blogs in engineering, mathematics, physics, science, automotive technology, and nutrition.',
       potentialAction: {
         '@type': 'SearchAction',
         target: `${SITE_URL}/directory?q={search_term_string}`,
@@ -306,7 +306,7 @@ async function runPrerender() {
   writeRouteFile('/directory', buildHtml({
     template,
     title: 'Community Blog Directory',
-    description: `Search and filter ${blogs.length} community-curated independent blogs across engineering, mathematics, physics, science, and automotive technology.`,
+    description: `Search and filter ${blogs.length} community-curated independent blogs across engineering, mathematics, physics, science, automotive technology, and nutrition.`,
     canonicalUrl: `${SITE_URL}/directory`,
     jsonLd: {
       '@context': 'https://schema.org',
@@ -573,7 +573,7 @@ async function runPrerender() {
   const submitHtml = buildHtml({
     template,
     title: 'Submit a Publication',
-    description: 'Recommend a high-quality independent blog in engineering, mathematics, physics, science, or automotive tech for inclusion in BlogAI Directory.',
+    description: 'Recommend a high-quality independent blog in engineering, mathematics, physics, science, automotive tech, or nutrition for inclusion in BlogAI Directory.',
     canonicalUrl: `${SITE_URL}/submit`,
     bodyContent: `<main id="main-content"><div class="container"><h1>Submit a Blog for Review</h1><p>Suggest high-signal publications for inclusion in the directory.</p></div></main>`,
   });

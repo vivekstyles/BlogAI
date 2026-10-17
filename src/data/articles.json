@@ -1,5 +1,645 @@
 [
   {
+    "slug": "foods-rich-in-vitamins-and-minerals",
+    "title": "100 Best Foods Rich in Vitamins and Minerals: A Complete Nutrition Guide",
+    "seoTitle": "100 Foods Rich in Vitamins and Minerals, With Amounts",
+    "description": "100 foods rich in vitamins and minerals, with amounts per serving and % Daily Value from NIH fact sheets, plus upper limits and tips for better absorption.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Food and Nutrition",
+        "slug": "food-and-nutrition"
+      }
+    ],
+    "tags": [
+      {
+        "name": "vitamins",
+        "slug": "vitamins"
+      },
+      {
+        "name": "minerals",
+        "slug": "minerals"
+      },
+      {
+        "name": "micronutrients",
+        "slug": "micronutrients"
+      },
+      {
+        "name": "healthy eating",
+        "slug": "healthy-eating"
+      },
+      {
+        "name": "nutrition guide",
+        "slug": "nutrition-guide"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/foods-rich-in-vitamins-and-minerals",
+    "isCanonicalLocal": true,
+    "wordCount": 6097,
+    "readingTimeMinutes": 28,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-read-the-numbers",
+        "text": "How to read the numbers",
+        "level": 2
+      },
+      {
+        "id": "organ-meats-meat-and-poultry",
+        "text": "Organ meats, meat and poultry",
+        "level": 2
+      },
+      {
+        "id": "fish-and-seafood",
+        "text": "Fish and seafood",
+        "level": 2
+      },
+      {
+        "id": "eggs-and-dairy",
+        "text": "Eggs and dairy",
+        "level": 2
+      },
+      {
+        "id": "legumes-and-soy",
+        "text": "Legumes and soy",
+        "level": 2
+      },
+      {
+        "id": "nuts-and-seeds",
+        "text": "Nuts and seeds",
+        "level": 2
+      },
+      {
+        "id": "whole-and-enriched-grains",
+        "text": "Whole and enriched grains",
+        "level": 2
+      },
+      {
+        "id": "leafy-greens",
+        "text": "Leafy greens",
+        "level": 2
+      },
+      {
+        "id": "other-vegetables",
+        "text": "Other vegetables",
+        "level": 2
+      },
+      {
+        "id": "fruits",
+        "text": "Fruits",
+        "level": 2
+      },
+      {
+        "id": "fortified-foods-and-other-sources",
+        "text": "Fortified foods and other sources",
+        "level": 2
+      },
+      {
+        "id": "getting-the-most-from-these-foods",
+        "text": "Getting the most from these foods",
+        "level": 2
+      },
+      {
+        "id": "who-may-need-to-pay-extra-attention",
+        "text": "Who may need to pay extra attention",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "healthy-foods-to-eat-every-day",
+      "nutrition-tips-for-a-balanced-diet",
+      "healthy-meal-ideas"
+    ],
+    "relatedBlogs": [
+      "love-and-lemons",
+      "nutritionfactsorg",
+      "precision-nutrition"
+    ]
+  },
+  {
+    "slug": "healthy-foods-to-eat-every-day",
+    "title": "100 Best Healthy Foods to Eat Every Day for Better Health",
+    "seoTitle": "100 Healthy Foods to Eat Every Day for Better Health",
+    "description": "100 healthy foods to eat every day, from leafy greens and berries to beans, oily fish and whole grains, with why each one helps and easy ways to eat it.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Food and Nutrition",
+        "slug": "food-and-nutrition"
+      }
+    ],
+    "tags": [
+      {
+        "name": "healthy eating",
+        "slug": "healthy-eating"
+      },
+      {
+        "name": "healthy foods",
+        "slug": "healthy-foods"
+      },
+      {
+        "name": "whole foods",
+        "slug": "whole-foods"
+      },
+      {
+        "name": "balanced diet",
+        "slug": "balanced-diet"
+      },
+      {
+        "name": "nutrition guide",
+        "slug": "nutrition-guide"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/healthy-foods-to-eat-every-day",
+    "isCanonicalLocal": true,
+    "wordCount": 4373,
+    "readingTimeMinutes": 20,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "what-a-healthy-day-looks-like",
+        "text": "What a healthy day looks like",
+        "level": 2
+      },
+      {
+        "id": "vegetables",
+        "text": "Vegetables",
+        "level": 2
+      },
+      {
+        "id": "fruits",
+        "text": "Fruits",
+        "level": 2
+      },
+      {
+        "id": "whole-grains",
+        "text": "Whole grains",
+        "level": 2
+      },
+      {
+        "id": "beans-lentils-and-soy",
+        "text": "Beans, lentils and soy",
+        "level": 2
+      },
+      {
+        "id": "nuts-and-seeds",
+        "text": "Nuts and seeds",
+        "level": 2
+      },
+      {
+        "id": "fish-and-seafood",
+        "text": "Fish and seafood",
+        "level": 2
+      },
+      {
+        "id": "eggs-poultry-and-meat",
+        "text": "Eggs, poultry and meat",
+        "level": 2
+      },
+      {
+        "id": "dairy-and-alternatives",
+        "text": "Dairy and alternatives",
+        "level": 2
+      },
+      {
+        "id": "healthy-fats",
+        "text": "Healthy fats",
+        "level": 2
+      },
+      {
+        "id": "herbs-spices-and-flavourings",
+        "text": "Herbs, spices and flavourings",
+        "level": 2
+      },
+      {
+        "id": "fermented-foods",
+        "text": "Fermented foods",
+        "level": 2
+      },
+      {
+        "id": "drinks",
+        "text": "Drinks",
+        "level": 2
+      },
+      {
+        "id": "how-to-eat-more-of-these-foods",
+        "text": "How to eat more of these foods",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "foods-rich-in-vitamins-and-minerals",
+      "nutrition-tips-for-a-balanced-diet",
+      "healthy-meal-ideas"
+    ],
+    "relatedBlogs": [
+      "love-and-lemons",
+      "nutritionfactsorg",
+      "precision-nutrition"
+    ]
+  },
+  {
+    "slug": "healthy-meal-ideas",
+    "title": "101 Best Healthy Meal Ideas for Breakfast, Lunch, and Dinner",
+    "seoTitle": "101 Healthy Meal Ideas for Breakfast, Lunch and Dinner",
+    "description": "101 healthy meal ideas for breakfast, lunch and dinner, built on vegetables, protein and whole grains, with meal-prep tips and food safety basics.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Food and Nutrition",
+        "slug": "food-and-nutrition"
+      }
+    ],
+    "tags": [
+      {
+        "name": "healthy meals",
+        "slug": "healthy-meals"
+      },
+      {
+        "name": "meal ideas",
+        "slug": "meal-ideas"
+      },
+      {
+        "name": "meal prep",
+        "slug": "meal-prep"
+      },
+      {
+        "name": "healthy recipes",
+        "slug": "healthy-recipes"
+      },
+      {
+        "name": "balanced diet",
+        "slug": "balanced-diet"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/healthy-meal-ideas",
+    "isCanonicalLocal": true,
+    "wordCount": 3759,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-these-meals-were-put-together",
+        "text": "How these meals were put together",
+        "level": 2
+      },
+      {
+        "id": "breakfast-ideas",
+        "text": "Breakfast ideas",
+        "level": 2
+      },
+      {
+        "id": "lunch-ideas",
+        "text": "Lunch ideas",
+        "level": 2
+      },
+      {
+        "id": "dinner-ideas",
+        "text": "Dinner ideas",
+        "level": 2
+      },
+      {
+        "id": "meal-prep-tips",
+        "text": "Meal-prep tips",
+        "level": 2
+      },
+      {
+        "id": "food-safety-basics",
+        "text": "Food safety basics",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "healthy-foods-to-eat-every-day",
+      "nutrition-tips-for-a-balanced-diet",
+      "foods-rich-in-vitamins-and-minerals"
+    ],
+    "relatedBlogs": [
+      "food-politics",
+      "love-and-lemons",
+      "minimalist-baker"
+    ]
+  },
+  {
+    "slug": "high-protein-foods",
+    "title": "101 Best High-Protein Foods for Weight Management and Muscle Growth",
+    "seoTitle": "101 High-Protein Foods for Weight Loss and Muscle",
+    "description": "101 high-protein foods with grams of protein and calories per serving from Health Canada's nutrient database, plus evidence-based daily targets and sample days.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Food and Nutrition",
+        "slug": "food-and-nutrition"
+      }
+    ],
+    "tags": [
+      {
+        "name": "protein",
+        "slug": "protein"
+      },
+      {
+        "name": "high-protein foods",
+        "slug": "high-protein-foods"
+      },
+      {
+        "name": "weight management",
+        "slug": "weight-management"
+      },
+      {
+        "name": "muscle growth",
+        "slug": "muscle-growth"
+      },
+      {
+        "name": "sports nutrition",
+        "slug": "sports-nutrition"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/high-protein-foods",
+    "isCanonicalLocal": true,
+    "wordCount": 5872,
+    "readingTimeMinutes": 27,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-much-protein-do-you-need",
+        "text": "How much protein do you need?",
+        "level": 2
+      },
+      {
+        "id": "how-to-read-the-protein-density-figure",
+        "text": "How to read the protein density figure",
+        "level": 2
+      },
+      {
+        "id": "poultry",
+        "text": "Poultry",
+        "level": 2
+      },
+      {
+        "id": "red-meat",
+        "text": "Red meat",
+        "level": 2
+      },
+      {
+        "id": "fish",
+        "text": "Fish",
+        "level": 2
+      },
+      {
+        "id": "shellfish",
+        "text": "Shellfish",
+        "level": 2
+      },
+      {
+        "id": "eggs-and-dairy",
+        "text": "Eggs and dairy",
+        "level": 2
+      },
+      {
+        "id": "legumes",
+        "text": "Legumes",
+        "level": 2
+      },
+      {
+        "id": "soy-foods-and-other-plant-proteins",
+        "text": "Soy foods and other plant proteins",
+        "level": 2
+      },
+      {
+        "id": "protein-powders",
+        "text": "Protein powders",
+        "level": 2
+      },
+      {
+        "id": "nuts-and-seeds",
+        "text": "Nuts and seeds",
+        "level": 2
+      },
+      {
+        "id": "grains",
+        "text": "Grains",
+        "level": 2
+      },
+      {
+        "id": "vegetables",
+        "text": "Vegetables",
+        "level": 2
+      },
+      {
+        "id": "two-sample-high-protein-days",
+        "text": "Two sample high-protein days",
+        "level": 2
+      },
+      {
+        "id": "who-should-be-careful",
+        "text": "Who should be careful",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "foods-rich-in-vitamins-and-minerals",
+      "healthy-foods-to-eat-every-day",
+      "healthy-meal-ideas"
+    ],
+    "relatedBlogs": [
+      "stronger-by-science",
+      "food-politics",
+      "love-and-lemons"
+    ]
+  },
+  {
+    "slug": "nutrition-tips-for-a-balanced-diet",
+    "title": "100 Best Nutrition Tips for a Balanced Diet and Healthy Lifestyle",
+    "seoTitle": "100 Nutrition Tips for a Balanced Diet and Healthy Life",
+    "description": "100 practical nutrition tips for a balanced diet, based on WHO and US dietary guidelines, covering plates, protein, fibre, fats, sugar, salt, labels and habits.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-18",
+    "updatedAt": "2026-10-18",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Food and Nutrition",
+        "slug": "food-and-nutrition"
+      }
+    ],
+    "tags": [
+      {
+        "name": "nutrition tips",
+        "slug": "nutrition-tips"
+      },
+      {
+        "name": "balanced diet",
+        "slug": "balanced-diet"
+      },
+      {
+        "name": "healthy lifestyle",
+        "slug": "healthy-lifestyle"
+      },
+      {
+        "name": "healthy eating",
+        "slug": "healthy-eating"
+      },
+      {
+        "name": "dietary guidelines",
+        "slug": "dietary-guidelines"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/nutrition-tips-for-a-balanced-diet",
+    "isCanonicalLocal": true,
+    "wordCount": 3806,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "build-a-balanced-plate",
+        "text": "Build a balanced plate",
+        "level": 2
+      },
+      {
+        "id": "vegetables-and-fruit",
+        "text": "Vegetables and fruit",
+        "level": 2
+      },
+      {
+        "id": "grains-and-carbohydrates",
+        "text": "Grains and carbohydrates",
+        "level": 2
+      },
+      {
+        "id": "protein",
+        "text": "Protein",
+        "level": 2
+      },
+      {
+        "id": "fats",
+        "text": "Fats",
+        "level": 2
+      },
+      {
+        "id": "sugar",
+        "text": "Sugar",
+        "level": 2
+      },
+      {
+        "id": "salt",
+        "text": "Salt",
+        "level": 2
+      },
+      {
+        "id": "drinks-and-alcohol",
+        "text": "Drinks and alcohol",
+        "level": 2
+      },
+      {
+        "id": "shopping-and-labels",
+        "text": "Shopping and labels",
+        "level": 2
+      },
+      {
+        "id": "cooking-and-eating-at-home",
+        "text": "Cooking and eating at home",
+        "level": 2
+      },
+      {
+        "id": "eating-habits",
+        "text": "Eating habits",
+        "level": 2
+      },
+      {
+        "id": "special-needs-and-life-stages",
+        "text": "Special needs and life stages",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "healthy-foods-to-eat-every-day",
+      "foods-rich-in-vitamins-and-minerals",
+      "healthy-meal-ideas"
+    ],
+    "relatedBlogs": [
+      "the-nutrition-source",
+      "love-and-lemons",
+      "nutritionfactsorg"
+    ]
+  },
+  {
     "slug": "applications-of-physics-in-everyday-life",
     "title": "100 Best Applications of Physics in Everyday Life: A Complete Guide",
     "seoTitle": "100 Applications of Physics in Everyday Life: A Guide",

@@ -7,7 +7,7 @@ describe('Service: blogService', () => {
     const blogs = blogService.getAllBlogs();
     const categories = blogService.getCategories();
     expect(blogs.length).toBeGreaterThan(0);
-    expect(categories.length).toBe(5);
+    expect(categories.length).toBe(6);
   });
 
   it('retrieves blog by slug accurately', () => {

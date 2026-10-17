@@ -17,7 +17,7 @@ publishedAt: 2026-01-01
 updatedAt: 2026-01-01
 # draft = validated but never published, listed, or added to the sitemap.
 status: draft
-# One or more of: Automobile, Engineering, Mathematics, Physics, Science
+# One or more of: Automobile, Engineering, Food and Nutrition, Mathematics, Physics, Science
 categories:
   - Engineering
 tags:

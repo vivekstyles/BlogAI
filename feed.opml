@@ -28,6 +28,15 @@
       <outline type="rss" text="Stripe Engineering" title="Stripe Engineering" xmlUrl="https://stripe.com/blog/feed.xml" htmlUrl="https://stripe.com/blog/engineering" category="Engineering" />
       <outline type="rss" text="Uber Engineering" title="Uber Engineering" xmlUrl="https://www.uber.com/blog/engineering/rss/" htmlUrl="https://www.uber.com/blog/engineering/" category="Engineering" />
     </outline>
+    <outline text="Food and Nutrition" title="Food and Nutrition">
+      <outline type="rss" text="Food Politics" title="Food Politics" xmlUrl="https://www.foodpolitics.com/feed/" htmlUrl="https://www.foodpolitics.com/" category="Food and Nutrition" />
+      <outline type="rss" text="Love and Lemons" title="Love and Lemons" xmlUrl="https://www.loveandlemons.com/feed/" htmlUrl="https://www.loveandlemons.com/" category="Food and Nutrition" />
+      <outline type="rss" text="Minimalist Baker" title="Minimalist Baker" xmlUrl="https://minimalistbaker.com/feed/" htmlUrl="https://minimalistbaker.com/" category="Food and Nutrition" />
+      <outline type="rss" text="NutritionFacts.org" title="NutritionFacts.org" xmlUrl="https://nutritionfacts.org/feed/" htmlUrl="https://nutritionfacts.org/" category="Food and Nutrition" />
+      <outline type="rss" text="Precision Nutrition" title="Precision Nutrition" xmlUrl="https://www.precisionnutrition.com/feed" htmlUrl="https://www.precisionnutrition.com/" category="Food and Nutrition" />
+      <outline type="rss" text="Stronger by Science" title="Stronger by Science" xmlUrl="https://www.strongerbyscience.com/feed/" htmlUrl="https://www.strongerbyscience.com/" category="Food and Nutrition" />
+      <outline type="rss" text="The Nutrition Source" title="The Nutrition Source" xmlUrl="https://nutritionsource.hsph.harvard.edu/feed/" htmlUrl="https://nutritionsource.hsph.harvard.edu/" category="Food and Nutrition" />
+    </outline>
     <outline text="Mathematics" title="Mathematics">
       <outline type="rss" text="3Blue1Brown Blog" title="3Blue1Brown Blog" xmlUrl="https://3blue1brown.substack.com/feed" htmlUrl="https://3blue1brown.substack.com/" category="Mathematics" />
       <outline type="rss" text="Azimuth (John Baez)" title="Azimuth (John Baez)" xmlUrl="https://johncbaez.wordpress.com/feed/" htmlUrl="https://johncbaez.wordpress.com/" category="Mathematics" />

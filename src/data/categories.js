@@ -33,6 +33,22 @@ export const categories = [
     ]
   },
   {
+    "name": "Food and Nutrition",
+    "slug": "food-and-nutrition",
+    "description": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes.",
+    "count": 7,
+    "popularTags": [
+      "body composition",
+      "dietary guidelines",
+      "eating habits",
+      "food industry",
+      "food policy",
+      "gluten-free",
+      "healthy eating",
+      "nutrition coaching"
+    ]
+  },
+  {
     "name": "Mathematics",
     "slug": "mathematics",
     "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",

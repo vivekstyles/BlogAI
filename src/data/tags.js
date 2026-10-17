@@ -7,6 +7,12 @@ export const tags = [
     "blogCount": 4
   },
   {
+    "name": "healthy eating",
+    "slug": "healthy-eating",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
     "name": "infrastructure",
     "slug": "infrastructure",
     "count": 3,
@@ -115,6 +121,12 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "nutrition science",
+    "slug": "nutrition-science",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "open science",
     "slug": "open-science",
     "count": 2,
@@ -139,8 +151,26 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "plant-based diet",
+    "slug": "plant-based-diet",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "public health",
+    "slug": "public-health",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "pure mathematics",
     "slug": "pure-mathematics",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "recipes",
+    "slug": "recipes",
     "count": 2,
     "blogCount": 2
   },
@@ -271,6 +301,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "body composition",
+    "slug": "body-composition",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "car culture",
     "slug": "car-culture",
     "count": 1,
@@ -379,6 +415,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "dietary guidelines",
+    "slug": "dietary-guidelines",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "distributed systems",
     "slug": "distributed-systems",
     "count": 1,
@@ -409,6 +451,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "eating habits",
+    "slug": "eating-habits",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "edge computing",
     "slug": "edge-computing",
     "count": 1,
@@ -435,6 +483,18 @@ export const tags = [
   {
     "name": "ev technology",
     "slug": "ev-technology",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "food industry",
+    "slug": "food-industry",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "food policy",
+    "slug": "food-policy",
     "count": 1,
     "blogCount": 1
   },
@@ -471,6 +531,12 @@ export const tags = [
   {
     "name": "global research",
     "slug": "global-research",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "gluten-free",
+    "slug": "gluten-free",
     "count": 1,
     "blogCount": 1
   },
@@ -601,6 +667,18 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "nutrition coaching",
+    "slug": "nutrition-coaching",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "nutrition research",
+    "slug": "nutrition-research",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "optics",
     "slug": "optics",
     "count": 1,
@@ -667,6 +745,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "protein",
+    "slug": "protein",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "psychiatry",
     "slug": "psychiatry",
     "count": 1,
@@ -715,6 +799,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "quick meals",
+    "slug": "quick-meals",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "react",
     "slug": "react",
     "count": 1,
@@ -745,6 +835,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "research reviews",
+    "slug": "research-reviews",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "safety",
     "slug": "safety",
     "count": 1,
@@ -759,6 +855,12 @@ export const tags = [
   {
     "name": "scientific policy",
     "slug": "scientific-policy",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "seasonal cooking",
+    "slug": "seasonal-cooking",
     "count": 1,
     "blogCount": 1
   },
@@ -787,6 +889,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "sports nutrition",
+    "slug": "sports-nutrition",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "spy photos",
     "slug": "spy-photos",
     "count": 1,
@@ -795,6 +903,12 @@ export const tags = [
   {
     "name": "standard model",
     "slug": "standard-model",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "strength training",
+    "slug": "strength-training",
     "count": 1,
     "blogCount": 1
   },
@@ -861,6 +975,18 @@ export const tags = [
   {
     "name": "tuning",
     "slug": "tuning",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "vegetarian",
+    "slug": "vegetarian",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "videos",
+    "slug": "videos",
     "count": 1,
     "blogCount": 1
   },

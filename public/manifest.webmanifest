@@ -1,7 +1,7 @@
 {
   "name": "BlogAI - Curated Community Blog Directory",
   "short_name": "BlogAI",
-  "description": "Discover, search, filter, and subscribe to high-quality blogs across engineering, math, physics, science, and automotive technology.",
+  "description": "Discover, search, filter, and subscribe to high-quality blogs across engineering, math, physics, science, automotive technology, and nutrition.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#171717",

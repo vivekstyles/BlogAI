@@ -26,6 +26,11 @@
 | `/articles/scientific-discoveries-that-changed-the-world` | scientific discoveries that changed the world | greatest scientific discoveries, important scientific discoveries | who discovered penicillin; when was DNA discovered; history of vaccines | Informational | Students and general readers |
 | `/articles/science-projects-for-students` | science projects for students | science fair projects, science project ideas | biology science fair projects; chemistry project ideas for high school; science projects using real data | Informational | Students choosing a project, teachers |
 | `/articles/applications-of-science-in-everyday-life` | applications of science in everyday life | science in daily life, examples of science in everyday life | how does soap kill germs; how is drinking water treated; how do pregnancy tests work | Informational | General readers and students |
+| `/articles/healthy-foods-to-eat-every-day` | healthy foods to eat every day | healthiest foods, list of healthy foods, whole foods list | what should I eat every day to be healthy; healthiest vegetables to eat daily; is coffee healthy | Informational | General adults |
+| `/articles/high-protein-foods` | high-protein foods | high protein foods for weight loss, protein foods for muscle gain, high protein vegetarian foods | how much protein do I need per day; leanest protein per calorie; plant-based high protein foods | Informational | Gym-goers, people managing weight, vegetarians |
+| `/articles/foods-rich-in-vitamins-and-minerals` | foods rich in vitamins and minerals | vitamin rich foods, mineral rich foods, foods high in iron/zinc/vitamin D | which foods are high in vitamin D; best food sources of magnesium; foods with vitamin B12 for vegetarians | Informational (reference) | Students, general adults |
+| `/articles/healthy-meal-ideas` | healthy meal ideas | healthy breakfast ideas, healthy lunch ideas, healthy dinner ideas | easy healthy meals for the week; high protein breakfast ideas; healthy packed lunch ideas | Informational | Home cooks, families |
+| `/articles/nutrition-tips-for-a-balanced-diet` | nutrition tips | balanced diet tips, healthy eating tips | how much salt per day; how to read a nutrition label; how to cut sugar | Informational | General adults |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
@@ -52,6 +57,9 @@
 | Science applications ↔ Physics applications | Both explain everyday technology | **Keep separate.** The science guide covers chemistry, biology and Earth science (food, cleaning, medicine, materials, farming, water); devices that run on physics (microwaves, GPS, MRI, solar panels) stay in the physics guide, and each links to the other. |
 | Science projects ↔ Physics projects | Same three-level structure | **Keep separate.** No physics projects are repeated; the science list links to the physics list for those. |
 | Science facts ↔ Physics concepts | A short energy-and-forces section overlaps | **Keep separate.** Facts are one-line truths with a short explanation across all sciences; physics concepts are definitions with examples. The facts article keeps physics to six entries and links to the concepts article. |
+| Healthy foods ↔ Vitamins and minerals | Many of the same foods appear in both | **Keep separate.** The healthy-foods list answers "what should I eat" with short reasons; the vitamins article is a reference with amounts and %DV per food. Each links to the other. |
+| High-protein foods ↔ Healthy foods / meal ideas | Protein foods recur | **Keep separate.** Only the protein article gives protein amounts and targets; the others link to it for numbers. |
+| Nutrition tips ↔ Healthy foods | Overlapping advice on whole grains, fish, salt and sugar | **Keep separate.** Tips are behaviours and limits; the foods list is foods. Watch GSC for "healthy eating tips" landing on the foods page. |
 
 No consolidation, redirect or unpublishing is recommended.
 
@@ -81,6 +89,7 @@ No consolidation, redirect or unpublishing is recommended.
 
 - **Physics (added 2026-10-17):** five articles forming a physics-for-students cluster: concepts, home experiments, formulas, projects and everyday applications. All are in Physics and Science (formulas also in Mathematics) and cross-link to each other and to `/category/physics`. The formulas article links to the math formulas article.
 - **Science (added 2026-10-17):** five articles forming a general-science cluster: facts, home experiments, discoveries, student projects and everyday applications. All are in Science only, cross-link to each other and to `/category/science`, and link to their physics counterparts.
+- **Food and Nutrition (added 2026-10-18):** new category with seven directory blogs and five articles: everyday healthy foods, high-protein foods, vitamins and minerals by food, meal ideas and nutrition tips. All cross-link to each other and to `/category/food-and-nutrition`. This is a health topic (YMYL), so accuracy and sourcing matter more than usual: keep nutrient figures tied to NIH ODS, CNF or USDA data, recheck when the Dietary Guidelines or WHO fact sheet change, and consider a named, qualified reviewer (registered dietitian) before promoting these pages.
 - **Automobile:** directory content only. Do not write articles just to fill these categories; write them only if the owner has expertise and an angle.
 
 ### About the "100 Best…" series

@@ -36,6 +36,26 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Food and Nutrition category and articles (2026-10-18)
+
+New directory category **Food and Nutrition** (`/category/food-and-nutrition`) with seven blogs in `Categories/Food and Nutrition/blogs.csv` (The Nutrition Source, Food Politics, Stronger by Science, Precision Nutrition, NutritionFacts.org, Minimalist Baker, Love and Lemons). Each RSS feed was fetched on 2026-10-18 and returned a valid RSS 2.0 document with recent items. Site-wide descriptions (home, directory, submit page, `index.html`, manifest) now mention nutrition, and the category test expects 6 categories.
+
+Five new published articles, all in the Food and Nutrition category. No existing URLs changed.
+
+| URL | Format | Verification |
+|---|---|---|
+| `/articles/healthy-foods-to-eat-every-day` | 100 foods grouped by food type, with why and how to eat each | Nutrient figures from NIH ODS fact sheets; health claims link to WHO, DGA 2025–2030, Harvard Nutrition Source, NCCIH, FDA, IARC and peer-reviewed studies (Reynolds 2019, PREDIMED 2018, Wastyk 2021) |
+| `/articles/high-protein-foods` | 101 foods with protein, kcal and protein per 100 kcal per serving, plus targets and two sample days | Per-100 g values from Health Canada's Canadian Nutrient File API (fetched 2026-10-18), scaled to stated serving weights by script; targets from DGA 2025–2030, Leidy 2015, ISSN 2017, Morton 2018, Schoenfeld and Aragon 2018 |
+| `/articles/foods-rich-in-vitamins-and-minerals` | 100 foods with amounts and %DV per serving, grouped by food type | Every amount copied from the food-source tables of 25 NIH ODS fact sheets (extracted 2026-10-18); DV table checked against the FDA Daily Value page |
+| `/articles/healthy-meal-ideas` | 34 breakfasts, 34 lunches, 33 dinners, plus meal-prep and food-safety sections | Plate pattern from Harvard and WHO; cooking temperatures and storage times from FoodSafety.gov; no calorie or nutrient numbers per meal, to avoid unverified figures |
+| `/articles/nutrition-tips-for-a-balanced-diet` | 100 tips in 12 topic groups | Limits and advice from WHO (Jan 2026 fact sheet), DGA 2025–2030, FDA label, sodium, caffeine and supplement pages, CDC, NIH ODS and WHO Europe (alcohol) |
+
+- H1 titles keep "Best" as requested (the "Lifestylea" typo in the brief was corrected); each has a `seoTitle` without it (60 characters or fewer).
+- Each article links to the other four and to `/category/food-and-nutrition`. Each says it is general information, not medical advice, and flags groups who need care (pregnancy, kidney disease, warfarin, mercury, allergies).
+- Where guidelines disagree (the 2025–2030 DGA's protein target, full-fat dairy, butter and tallow) the articles state both positions and cite Harvard's critique.
+- USDA FoodData Central's API was rate-limited and its bulk download failed, which is why protein values come from the Canadian Nutrient File. Values differ slightly from USDA figures for some foods.
+- External links checked on 2026-10-18 with WebFetch or the in-app browser. Fixed: FDA arsenic page (moved), IARC red/processed meat release (old URL 404; now the PDF press release), FDA caffeine wording ("two to three 12-ounce cups", not "four or five"). The NIH ODS pages refuse automated requests and were read in a browser. The DGA PDF downloads but its text could not be extracted here; the figures cited from it are corroborated by realfood.gov, AAFP and Harvard.
+
 ### Python data science articles (2026-10-17)
 
 Five new published articles, forming a "Python for data science" cluster (Engineering category; NumPy also in Mathematics). No existing URLs changed.
