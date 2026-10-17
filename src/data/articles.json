@@ -1,5 +1,131 @@
 [
   {
+    "slug": "applications-of-physics-in-everyday-life",
+    "title": "100 Best Applications of Physics in Everyday Life: A Complete Guide",
+    "seoTitle": "100 Applications of Physics in Everyday Life: A Guide",
+    "description": "How physics makes 100 everyday things work, from microwaves, touchscreens and GPS to MRI scanners, golf balls and rainbows, explained room by room.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Physics",
+        "slug": "physics"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "physics",
+        "slug": "physics"
+      },
+      {
+        "name": "everyday physics",
+        "slug": "everyday-physics"
+      },
+      {
+        "name": "applied physics",
+        "slug": "applied-physics"
+      },
+      {
+        "name": "technology",
+        "slug": "technology"
+      },
+      {
+        "name": "medical physics",
+        "slug": "medical-physics"
+      },
+      {
+        "name": "energy",
+        "slug": "energy"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/applications-of-physics-in-everyday-life",
+    "isCanonicalLocal": true,
+    "wordCount": 5920,
+    "readingTimeMinutes": 27,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "in-the-kitchen",
+        "text": "In the kitchen",
+        "level": 2
+      },
+      {
+        "id": "around-the-home",
+        "text": "Around the home",
+        "level": 2
+      },
+      {
+        "id": "phones-computers-and-communication",
+        "text": "Phones, computers and communication",
+        "level": 2
+      },
+      {
+        "id": "getting-around",
+        "text": "Getting around",
+        "level": 2
+      },
+      {
+        "id": "health-and-medicine",
+        "text": "Health and medicine",
+        "level": 2
+      },
+      {
+        "id": "sport-and-play",
+        "text": "Sport and play",
+        "level": 2
+      },
+      {
+        "id": "energy-and-power",
+        "text": "Energy and power",
+        "level": 2
+      },
+      {
+        "id": "weather-and-the-natural-world",
+        "text": "Weather and the natural world",
+        "level": 2
+      },
+      {
+        "id": "buildings-and-structures",
+        "text": "Buildings and structures",
+        "level": 2
+      },
+      {
+        "id": "space-and-satellites",
+        "text": "Space and satellites",
+        "level": 2
+      },
+      {
+        "id": "how-to-spot-physics-around-you",
+        "text": "How to spot physics around you",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "physics-concepts-explained-with-examples",
+      "physics-experiments-at-home",
+      "physics-projects-for-students"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "shtetl-optimized",
+      "the-drive"
+    ]
+  },
+  {
     "slug": "numpy-examples-for-numerical-computing",
     "title": "101 Best NumPy Examples to Master Numerical Computing in Python",
     "seoTitle": "101 NumPy Examples for Numerical Computing in Python",
@@ -242,6 +368,501 @@
       "acm-queue",
       "cloudflare-blog",
       "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "physics-concepts-explained-with-examples",
+    "title": "100 Best Physics Concepts Explained With Real-World Examples",
+    "seoTitle": "100 Physics Concepts Explained With Real-World Examples",
+    "description": "100 core physics concepts, from inertia and energy to entropy, induction and relativity, each explained in plain language with an everyday example.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Physics",
+        "slug": "physics"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "physics",
+        "slug": "physics"
+      },
+      {
+        "name": "physics concepts",
+        "slug": "physics-concepts"
+      },
+      {
+        "name": "mechanics",
+        "slug": "mechanics"
+      },
+      {
+        "name": "thermodynamics",
+        "slug": "thermodynamics"
+      },
+      {
+        "name": "electromagnetism",
+        "slug": "electromagnetism"
+      },
+      {
+        "name": "modern physics",
+        "slug": "modern-physics"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/physics-concepts-explained-with-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 7450,
+    "readingTimeMinutes": 34,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "measurement-and-motion",
+        "text": "Measurement and motion",
+        "level": 2
+      },
+      {
+        "id": "forces-and-newtons-laws",
+        "text": "Forces and Newton's laws",
+        "level": 2
+      },
+      {
+        "id": "energy-work-and-momentum",
+        "text": "Energy, work and momentum",
+        "level": 2
+      },
+      {
+        "id": "rotation-and-gravity",
+        "text": "Rotation and gravity",
+        "level": 2
+      },
+      {
+        "id": "fluids",
+        "text": "Fluids",
+        "level": 2
+      },
+      {
+        "id": "oscillations-waves-and-sound",
+        "text": "Oscillations, waves and sound",
+        "level": 2
+      },
+      {
+        "id": "heat-and-thermodynamics",
+        "text": "Heat and thermodynamics",
+        "level": 2
+      },
+      {
+        "id": "electricity-and-magnetism",
+        "text": "Electricity and magnetism",
+        "level": 2
+      },
+      {
+        "id": "light-and-optics",
+        "text": "Light and optics",
+        "level": 2
+      },
+      {
+        "id": "modern-physics",
+        "text": "Modern physics",
+        "level": 2
+      },
+      {
+        "id": "how-to-learn-these-concepts-so-they-stick",
+        "text": "How to learn these concepts so they stick",
+        "level": 2
+      },
+      {
+        "id": "common-misconceptions",
+        "text": "Common misconceptions",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "applications-of-physics-in-everyday-life",
+      "physics-experiments-at-home",
+      "physics-projects-for-students"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "shtetl-optimized",
+      "ars-technica-science"
+    ]
+  },
+  {
+    "slug": "physics-experiments-at-home",
+    "title": "101 Best Physics Experiments You Can Do at Home",
+    "seoTitle": "101 Physics Experiments You Can Do at Home",
+    "description": "101 safe physics experiments with household items, covering forces, air pressure, heat, sound, light, electricity and magnetism, with the science explained.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Physics",
+        "slug": "physics"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "physics",
+        "slug": "physics"
+      },
+      {
+        "name": "experiments",
+        "slug": "experiments"
+      },
+      {
+        "name": "science at home",
+        "slug": "science-at-home"
+      },
+      {
+        "name": "stem activities",
+        "slug": "stem-activities"
+      },
+      {
+        "name": "hands-on learning",
+        "slug": "hands-on-learning"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/physics-experiments-at-home",
+    "isCanonicalLocal": true,
+    "wordCount": 9160,
+    "readingTimeMinutes": 42,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "safety-first",
+        "text": "Safety first",
+        "level": 2
+      },
+      {
+        "id": "how-to-get-more-out-of-each-experiment",
+        "text": "How to get more out of each experiment",
+        "level": 2
+      },
+      {
+        "id": "forces-and-motion",
+        "text": "Forces and motion",
+        "level": 2
+      },
+      {
+        "id": "air-pressure-and-fluids",
+        "text": "Air pressure and fluids",
+        "level": 2
+      },
+      {
+        "id": "heat-and-energy",
+        "text": "Heat and energy",
+        "level": 2
+      },
+      {
+        "id": "waves-and-sound",
+        "text": "Waves and sound",
+        "level": 2
+      },
+      {
+        "id": "light-and-colour",
+        "text": "Light and colour",
+        "level": 2
+      },
+      {
+        "id": "electricity-and-magnetism",
+        "text": "Electricity and magnetism",
+        "level": 2
+      },
+      {
+        "id": "earth-space-and-smartphone-physics",
+        "text": "Earth, space and smartphone physics",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "physics-projects-for-students",
+      "applications-of-physics-in-everyday-life",
+      "physics-concepts-explained-with-examples"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "shtetl-optimized",
+      "ars-technica-science"
+    ]
+  },
+  {
+    "slug": "physics-formulas-every-student-should-know",
+    "title": "100 Best Physics Formulas Every Student Should Know",
+    "seoTitle": "100 Physics Formulas Every Student Should Know",
+    "description": "The 100 physics formulas students use most, from kinematics and energy to circuits, optics and modern physics, each with symbols, units and a worked example.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Physics",
+        "slug": "physics"
+      },
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "physics",
+        "slug": "physics"
+      },
+      {
+        "name": "physics formulas",
+        "slug": "physics-formulas"
+      },
+      {
+        "name": "formula sheet",
+        "slug": "formula-sheet"
+      },
+      {
+        "name": "mechanics",
+        "slug": "mechanics"
+      },
+      {
+        "name": "electricity",
+        "slug": "electricity"
+      },
+      {
+        "name": "exam revision",
+        "slug": "exam-revision"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/physics-formulas-every-student-should-know",
+    "isCanonicalLocal": true,
+    "wordCount": 5188,
+    "readingTimeMinutes": 24,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "constants-used-in-this-article",
+        "text": "Constants used in this article",
+        "level": 2
+      },
+      {
+        "id": "kinematics",
+        "text": "Kinematics",
+        "level": 2
+      },
+      {
+        "id": "forces-and-momentum",
+        "text": "Forces and momentum",
+        "level": 2
+      },
+      {
+        "id": "work-energy-and-power",
+        "text": "Work, energy and power",
+        "level": 2
+      },
+      {
+        "id": "rotation",
+        "text": "Rotation",
+        "level": 2
+      },
+      {
+        "id": "gravitation-and-orbits",
+        "text": "Gravitation and orbits",
+        "level": 2
+      },
+      {
+        "id": "fluids",
+        "text": "Fluids",
+        "level": 2
+      },
+      {
+        "id": "oscillations-waves-and-sound",
+        "text": "Oscillations, waves and sound",
+        "level": 2
+      },
+      {
+        "id": "heat-and-thermodynamics",
+        "text": "Heat and thermodynamics",
+        "level": 2
+      },
+      {
+        "id": "electricity",
+        "text": "Electricity",
+        "level": 2
+      },
+      {
+        "id": "magnetism-and-induction",
+        "text": "Magnetism and induction",
+        "level": 2
+      },
+      {
+        "id": "optics",
+        "text": "Optics",
+        "level": 2
+      },
+      {
+        "id": "modern-physics",
+        "text": "Modern physics",
+        "level": 2
+      },
+      {
+        "id": "how-to-use-physics-formulas-well",
+        "text": "How to use physics formulas well",
+        "level": 2
+      },
+      {
+        "id": "next-steps",
+        "text": "Next steps",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "physics-concepts-explained-with-examples",
+      "applications-of-physics-in-everyday-life",
+      "physics-experiments-at-home"
+    ],
+    "relatedBlogs": [
+      "shtetl-optimized",
+      "quanta-magazine",
+      "3blue1brown-blog"
+    ]
+  },
+  {
+    "slug": "physics-projects-for-students",
+    "title": "101 Best Physics Projects for Students: From Beginner to Advanced",
+    "seoTitle": "101 Physics Projects for Students: Beginner to Advanced",
+    "description": "101 physics project ideas for students, from beginner to advanced, each with a testable question, a method, the skills it builds and a way to extend it.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Physics",
+        "slug": "physics"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "physics",
+        "slug": "physics"
+      },
+      {
+        "name": "physics projects",
+        "slug": "physics-projects"
+      },
+      {
+        "name": "science fair",
+        "slug": "science-fair"
+      },
+      {
+        "name": "stem projects",
+        "slug": "stem-projects"
+      },
+      {
+        "name": "experiments",
+        "slug": "experiments"
+      },
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/physics-projects-for-students",
+    "isCanonicalLocal": true,
+    "wordCount": 7988,
+    "readingTimeMinutes": 36,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-plan-a-physics-project",
+        "text": "How to plan a physics project",
+        "level": 2
+      },
+      {
+        "id": "beginner-projects-135",
+        "text": "Beginner projects (1–35)",
+        "level": 2
+      },
+      {
+        "id": "intermediate-projects-3670",
+        "text": "Intermediate projects (36–70)",
+        "level": 2
+      },
+      {
+        "id": "advanced-projects-71101",
+        "text": "Advanced projects (71–101)",
+        "level": 2
+      },
+      {
+        "id": "writing-up-and-presenting-your-project",
+        "text": "Writing up and presenting your project",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "physics-experiments-at-home",
+      "applications-of-physics-in-everyday-life",
+      "physics-concepts-explained-with-examples"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "shtetl-optimized",
+      "ars-technica-science"
     ]
   },
   {

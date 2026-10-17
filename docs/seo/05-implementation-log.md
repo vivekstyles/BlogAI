@@ -54,6 +54,23 @@ Five new published articles, forming a "Python for data science" cluster (Engine
 - External links checked by script on 2026-10-17. Three were fixed (a wrong KDnuggets path, Feature-engine and Eurostat URLs). arXiv and some publisher DOIs refused automated requests; those identifiers were checked by hand.
 - The ML article uses only scikit-learn's bundled real datasets or clearly labeled synthetic data, and states that its scores are not benchmarks.
 
+### Physics articles (2026-10-17)
+
+Five new published articles, forming a physics cluster (Physics and Science categories; formulas also in Mathematics). No existing URLs changed.
+
+| URL | Format | Verification |
+|---|---|---|
+| `/articles/physics-concepts-explained-with-examples` | 100 concepts, each with a real-world example, plus common misconceptions | Definitions checked against OpenStax; specific claims link to NASA, NOAA, BIPM, DOE, CDC, ENERGY STAR and Ashby (GPS) |
+| `/articles/physics-experiments-at-home` | 101 household experiments with materials, steps and explanation; safety rules up front | Numbers in examples (ruler drop, microwave speed of light, Sun diameter, solar-system scale) recomputed |
+| `/articles/physics-formulas-every-student-should-know` | 100 formulas with symbols, units, use conditions and worked examples | Every worked example recomputed in Python; constants from NIST CODATA 2022 |
+| `/articles/physics-projects-for-students` | 101 project briefs (question, method, skills, extension) in three levels | Tools and papers (phyphox, Tracker, CosmicWatch, TinyLev, GWOSC, ISEF rules) checked against their sources |
+| `/articles/applications-of-physics-in-everyday-life` | 100 applications grouped by setting | Claims about devices link to FDA, NRC, NIH NIBIB, NASA and NOAA pages |
+
+- H1 titles keep "Best" as requested; each has a `seoTitle` without it (60 characters or fewer). Descriptions are 147–157 characters.
+- Each article links to the other four, to `/category/physics`, and (formulas, projects) to the math formulas and NumPy articles.
+- The experiments and projects articles state that the activities were not run for the article, and mark adult-supervision and qualified-supervision items.
+- External links checked by script on 2026-10-17. Moved pages were replaced (DOE LED page, FDA pulse oximeter communication, NRC smoke detector fact sheet, NASA Glenn lift page). Exploratorium, IOP Spark, publisher DOIs and the CDC block automated requests; they were checked in a browser or by their identifiers. STScI/MAST was unreachable from the test network, so the TESS project links to NASA's mission page instead.
+
 ### Canonical domain switched to blogai.space (2026-10-17)
 
 The site is served by Vercel at `https://blogai.space`, but canonicals, the sitemap, robots.txt, JSON-LD and Open Graph URLs used `https://blogai.directory`, which does not resolve (P0-1).

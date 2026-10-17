@@ -16,6 +16,11 @@
 | `/articles/pandas-tips-and-tricks-for-data-analysis` | pandas tips and tricks | pandas tutorial, pandas data cleaning | pandas 3.0 chained assignment; pandas groupby transform example; pandas merge validate | Informational (reference) | Analysts and data scientists using pandas |
 | `/articles/numpy-examples-for-numerical-computing` | numpy examples | numpy tutorial, numpy broadcasting examples | numpy view vs copy; numpy random default_rng; numpy argpartition top k | Informational (reference) | Python programmers learning numerical computing |
 | `/articles/python-machine-learning-examples` | python machine learning examples | scikit-learn examples, machine learning applications python | scikit-learn pipeline example; tuned threshold classifier example; isolation forest fraud example | Informational | ML learners with some Python |
+| `/articles/physics-concepts-explained-with-examples` | physics concepts | basic physics concepts, physics concepts with examples | real-life example of Newton's third law; difference between heat and temperature; why do astronauts float | Informational | High school and early-university students, curious adults |
+| `/articles/physics-experiments-at-home` | physics experiments at home | easy physics experiments, home science experiments | physics experiments with household items; how to measure the speed of light with a microwave | Informational / how-to | Students, parents, home educators, teachers |
+| `/articles/physics-formulas-every-student-should-know` | physics formulas | physics formula sheet, important physics formulas | equations of motion list; formula for escape velocity; thin lens equation example | Informational (reference) | High school and first-year university students |
+| `/articles/physics-projects-for-students` | physics projects for students | physics science fair projects, physics project ideas | physics projects for high school; advanced physics project ideas; how to measure g with a pendulum | Informational | Students choosing a project, teachers |
+| `/articles/applications-of-physics-in-everyday-life` | applications of physics in everyday life | physics in daily life, examples of physics in real life | how does a microwave oven work; physics of MRI; why is the sky blue | Informational | General readers and students |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
@@ -35,6 +40,9 @@
 | NumPy examples ↔ Linear algebra for ML | NumPy `linalg` usage (solve, eigh, norms, einsum) | **Keep separate.** The NumPy article keeps linear algebra to 8 short examples and links to the linear-algebra article for the theory. |
 | Libraries guide ↔ Pandas / NumPy / ML articles | Each library article is also an entry in the guide | **Keep separate.** The guide is a chooser across 100 tools; the others are deep how-to references. The guide links to each one from its entry. |
 | ML examples ↔ Data science projects | Both mention churn, fraud, forecasting, recommendations | **Keep separate.** Examples are short runnable techniques; projects are open-ended briefs with datasets. Each links to the other. |
+| Physics concepts ↔ Everyday applications | Many shared examples (GPS, microwaves, heat pumps, lift, seatbelts) | **Keep separate.** Concepts starts from the principle and gives one example; applications starts from the device or setting and explains the physics. Each article says so in its introduction and links to the other. |
+| Physics experiments ↔ Physics projects | Several projects grow from home demonstrations (pendulum, electromagnet, microwave chocolate) | **Keep separate.** Experiments are 30-minute demonstrations; projects are multi-week investigations with a question, variables and uncertainty. Each links to the other. |
+| Physics formulas ↔ Math formulas | Both are reference sheets with worked examples | **Keep separate.** No formula overlaps; the physics sheet links to the math sheet for prerequisites. |
 
 No consolidation, redirect or unpublishing is recommended.
 
@@ -62,7 +70,8 @@ No consolidation, redirect or unpublishing is recommended.
 
 ### Cluster D — Physics, Science, Automobile
 
-There is directory content only. Do not write articles just to fill these categories; write them only if the owner has expertise and an angle.
+- **Physics (added 2026-10-17):** five articles forming a physics-for-students cluster: concepts, home experiments, formulas, projects and everyday applications. All are in Physics and Science (formulas also in Mathematics) and cross-link to each other and to `/category/physics`. The formulas article links to the math formulas article.
+- **Science, Automobile:** directory content only. Do not write articles just to fill these categories; write them only if the owner has expertise and an angle.
 
 ### About the "100 Best…" series
 
