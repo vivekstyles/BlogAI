@@ -1105,6 +1105,7 @@ Health care has some of the most rigorous evidence for machine learning and some
 - Build a smaller version of one with [101 machine learning projects](/articles/machine-learning-projects).
 - Find data for it in [100 machine learning datasets](/articles/machine-learning-datasets).
 - Learn the input design that most applications depend on in [101 feature engineering techniques](/articles/feature-engineering-techniques).
+- For newer generative AI and agent deployments, see [25 examples of how AI is transforming industries in 2026](/articles/ai-transforming-industries-examples), and for the effect on jobs, [75 examples of how AI is changing the future of work](/articles/ai-future-of-work-examples).
 - For applications of the underlying science, see [applications of science in everyday life](/articles/applications-of-science-in-everyday-life) and [applications of physics in everyday life](/articles/applications-of-physics-in-everyday-life).
 
 ## References

@@ -36,6 +36,26 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### AI in industry and work articles with diagrams (2026-10-20)
+
+Five new published articles. No existing URLs changed.
+
+| URL | Format | Verification |
+|---|---|---|
+| `/articles/ai-transforming-industries-examples` | 25 examples, one or two per industry (what changed, evidence, what to watch); 1 chart. Categories Engineering and Science | 2025-2026 figures checked by web search in October 2026 against company releases, regulators and papers; company figures labeled |
+| `/articles/ai-applications-healthcare-finance-education` | 30 applications, 10 per field (what AI does, evidence, limits); 1 chart. Categories Engineering and Science | Trial results taken from the papers' abstracts or institutional releases; DOIs confirmed |
+| `/articles/ai-in-business-operations-marketing-sales` | 40 changes in three functions (what changes, evidence, watch out for); 1 diagram | Randomized studies cited by DOI; legal items linked to the ruling or regulator |
+| `/articles/ai-use-cases-manufacturing-retail-logistics` | 50 use cases with example, metrics, editorial maturity rating and main risk; 1 diagram | Overlap with the ML applications article handled by pointing to its entry numbers |
+| `/articles/ai-future-of-work-examples` | 75 examples in eight groups, each labeled by evidence type (trial, survey, admin data, company figure, forecast, law); 1 chart; short FAQ | Labor-market claims taken from the studies' own pages; predictions labeled as predictions |
+
+- Diagrams: 5 SVG files from `scripts/diagrams/make_ai_diagrams.py`, which reuses the palette and helpers in `make_ml_diagrams.py`. Chart values are copied from the cited sources and printed by the script. Theme colors only, solid fills, no gradients or blue.
+- External links (161 unique) checked by script; all 14 DOIs confirmed through the doi.org handle API. Links answering 403 or not connecting (FDA, McKinsey, WEF, SEC, PwC, Axios and others) are bot-blocking responses to scripted requests; each URL came from a search result for that page. Fixed during checks: a Gallup syndication link that had moved, a WGA page that had moved, and a Retail Dive link replaced with another report of the same announcement.
+- Corrections made while fact-checking: rentosertib lung-function result described as exploratory; UPS ORION figure aligned with the cited source; Pactum result described as a share of invited suppliers; EU AI Act dates updated after the Digital Omnibus amendment was adopted in 2026.
+- Front matter: descriptions 152-158 characters; each H1 keeps the requested "Best" title and has a `seoTitle` without it.
+- `machine-learning-applications` now links to the industries and future-of-work articles.
+- Checks run: `npm run ci` (lint, data build, article build, 73 tests passed, production build and prerender of 383 pages with 177 sitemap URLs, `validate_seo.py` passed). Browser check with `vite preview` at desktop and 375 px: no horizontal page scroll, figures load, one H1, BlogPosting and BreadcrumbList present.
+- Not done: no keyword tool data; Rich Results Test and live checks wait for deployment. Several cited numbers (Waymo rides, FDA device counts, hallucination case counts) change monthly.
+
 ### Machine learning articles with diagrams (2026-10-19)
 
 Five new published articles. No existing URLs changed.

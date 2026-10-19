@@ -1,5 +1,576 @@
 [
   {
+    "slug": "ai-applications-healthcare-finance-education",
+    "title": "30 Best AI Applications Revolutionizing Healthcare, Finance, and Education",
+    "seoTitle": "30 AI Applications in Healthcare, Finance and Education",
+    "description": "30 AI applications in healthcare, finance and education, from AI scribes and fraud models to AI tutors, with trial results, company claims and known risks.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artificial intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "healthcare",
+        "slug": "healthcare"
+      },
+      {
+        "name": "finance",
+        "slug": "finance"
+      },
+      {
+        "name": "education",
+        "slug": "education"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "case studies",
+        "slug": "case-studies"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/ai-applications-healthcare-finance-education",
+    "isCanonicalLocal": true,
+    "wordCount": 4126,
+    "readingTimeMinutes": 19,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "healthcare",
+        "text": "Healthcare",
+        "level": 2
+      },
+      {
+        "id": "finance",
+        "text": "Finance",
+        "level": 2
+      },
+      {
+        "id": "education",
+        "text": "Education",
+        "level": 2
+      },
+      {
+        "id": "what-the-evidence-says-across-all-three-fields",
+        "text": "What the evidence says across all three fields",
+        "level": 2
+      },
+      {
+        "id": "questions-to-ask-before-adopting-ai-in-these-fields",
+        "text": "Questions to ask before adopting AI in these fields",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "ai-transforming-industries-examples",
+      "machine-learning-applications",
+      "ai-in-business-operations-marketing-sales"
+    ],
+    "relatedBlogs": [
+      "math-with-bad-drawings",
+      "tanya-khovanovas-math-blog",
+      "acm-queue"
+    ]
+  },
+  {
+    "slug": "ai-future-of-work-examples",
+    "title": "75 Best Examples of How AI Is Changing the Future of Work",
+    "seoTitle": "75 Examples of How AI Is Changing the Future of Work",
+    "description": "75 evidence-based examples of AI changing work: productivity trials, entry-level hiring, new roles and skills, AI in hiring, workplace rules and robots.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artificial intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "future of work",
+        "slug": "future-of-work"
+      },
+      {
+        "name": "jobs",
+        "slug": "jobs"
+      },
+      {
+        "name": "skills",
+        "slug": "skills"
+      },
+      {
+        "name": "productivity",
+        "slug": "productivity"
+      },
+      {
+        "name": "labor market",
+        "slug": "labor-market"
+      },
+      {
+        "name": "hiring",
+        "slug": "hiring"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/ai-future-of-work-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 5841,
+    "readingTimeMinutes": 27,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-ai-shows-up-in-daily-work",
+        "text": "How AI shows up in daily work",
+        "level": 2
+      },
+      {
+        "id": "what-controlled-studies-show-about-productivity",
+        "text": "What controlled studies show about productivity",
+        "level": 2
+      },
+      {
+        "id": "jobs-and-the-labor-market",
+        "text": "Jobs and the labor market",
+        "level": 2
+      },
+      {
+        "id": "hiring-careers-and-hr",
+        "text": "Hiring, careers and HR",
+        "level": 2
+      },
+      {
+        "id": "new-roles-and-skills",
+        "text": "New roles and skills",
+        "level": 2
+      },
+      {
+        "id": "management-monitoring-and-wellbeing",
+        "text": "Management, monitoring and wellbeing",
+        "level": 2
+      },
+      {
+        "id": "rights-contracts-and-bargaining",
+        "text": "Rights, contracts and bargaining",
+        "level": 2
+      },
+      {
+        "id": "physical-work-and-robots",
+        "text": "Physical work and robots",
+        "level": 2
+      },
+      {
+        "id": "what-the-75-examples-add-up-to",
+        "text": "What the 75 examples add up to",
+        "level": 2
+      },
+      {
+        "id": "what-workers-and-employers-can-do-now",
+        "text": "What workers and employers can do now",
+        "level": 2
+      },
+      {
+        "id": "frequently-asked-questions",
+        "text": "Frequently asked questions",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "ai-applications-healthcare-finance-education",
+      "ai-in-business-operations-marketing-sales",
+      "ai-transforming-industries-examples"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "ai-in-business-operations-marketing-sales",
+    "title": "40 Best Ways AI Is Changing Business Operations, Marketing, and Sales",
+    "seoTitle": "40 Ways AI Is Changing Operations, Marketing and Sales",
+    "description": "40 ways AI is changing business operations, marketing and sales, from support copilots and coding agents to AI search and sales bots, with evidence and risks.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artificial intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai agents",
+        "slug": "ai-agents"
+      },
+      {
+        "name": "business operations",
+        "slug": "business-operations"
+      },
+      {
+        "name": "marketing",
+        "slug": "marketing"
+      },
+      {
+        "name": "sales",
+        "slug": "sales"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/ai-in-business-operations-marketing-sales",
+    "isCanonicalLocal": true,
+    "wordCount": 4186,
+    "readingTimeMinutes": 19,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "business-operations",
+        "text": "Business operations",
+        "level": 2
+      },
+      {
+        "id": "marketing",
+        "text": "Marketing",
+        "level": 2
+      },
+      {
+        "id": "sales",
+        "text": "Sales",
+        "level": 2
+      },
+      {
+        "id": "patterns-across-the-40-changes",
+        "text": "Patterns across the 40 changes",
+        "level": 2
+      },
+      {
+        "id": "a-checklist-for-adopting-ai-in-a-business-function",
+        "text": "A checklist for adopting AI in a business function",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "ai-transforming-industries-examples",
+      "ai-applications-healthcare-finance-education",
+      "ai-future-of-work-examples"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
+    "slug": "ai-transforming-industries-examples",
+    "title": "25 Best Examples of How AI Is Transforming Industries in 2026",
+    "seoTitle": "25 Examples of How AI Is Transforming Industries in 2026",
+    "description": "25 sourced examples of AI changing healthcare, finance, retail, factories, transport, farming, software, law, media and science in 2026, with their limits.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artificial intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai agents",
+        "slug": "ai-agents"
+      },
+      {
+        "name": "industry",
+        "slug": "industry"
+      },
+      {
+        "name": "case studies",
+        "slug": "case-studies"
+      },
+      {
+        "name": "2026",
+        "slug": "2026"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/ai-transforming-industries-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 4102,
+    "readingTimeMinutes": 19,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "where-ai-adoption-stands-in-2026",
+        "text": "Where AI adoption stands in 2026",
+        "level": 2
+      },
+      {
+        "id": "healthcare-and-life-sciences",
+        "text": "Healthcare and life sciences",
+        "level": 2
+      },
+      {
+        "id": "finance-and-insurance",
+        "text": "Finance and insurance",
+        "level": 2
+      },
+      {
+        "id": "retail-and-commerce",
+        "text": "Retail and commerce",
+        "level": 2
+      },
+      {
+        "id": "manufacturing",
+        "text": "Manufacturing",
+        "level": 2
+      },
+      {
+        "id": "transportation-and-logistics",
+        "text": "Transportation and logistics",
+        "level": 2
+      },
+      {
+        "id": "agriculture-weather-and-energy",
+        "text": "Agriculture, weather and energy",
+        "level": 2
+      },
+      {
+        "id": "software-customer-service-and-security",
+        "text": "Software, customer service and security",
+        "level": 2
+      },
+      {
+        "id": "professional-services-education-and-media",
+        "text": "Professional services, education and media",
+        "level": 2
+      },
+      {
+        "id": "science-and-government",
+        "text": "Science and government",
+        "level": 2
+      },
+      {
+        "id": "what-the-25-examples-have-in-common",
+        "text": "What the 25 examples have in common",
+        "level": 2
+      },
+      {
+        "id": "how-to-evaluate-an-ai-transformed-our-industry-claim",
+        "text": "How to evaluate an \"AI transformed our industry\" claim",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "ai-applications-healthcare-finance-education",
+      "machine-learning-applications",
+      "ai-in-business-operations-marketing-sales"
+    ],
+    "relatedBlogs": [
+      "autoblog",
+      "acm-queue",
+      "ars-technica-science"
+    ]
+  },
+  {
+    "slug": "ai-use-cases-manufacturing-retail-logistics",
+    "title": "50 Best Real-World AI Use Cases Across Manufacturing, Retail, and Logistics",
+    "seoTitle": "50 AI Use Cases in Manufacturing, Retail and Logistics",
+    "description": "50 AI use cases in manufacturing, retail and logistics, each with a real deployment, the metrics to track, a maturity rating and the main risk to plan for.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artificial intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "manufacturing",
+        "slug": "manufacturing"
+      },
+      {
+        "name": "retail",
+        "slug": "retail"
+      },
+      {
+        "name": "logistics",
+        "slug": "logistics"
+      },
+      {
+        "name": "supply chain",
+        "slug": "supply-chain"
+      },
+      {
+        "name": "robotics",
+        "slug": "robotics"
+      },
+      {
+        "name": "use cases",
+        "slug": "use-cases"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/ai-use-cases-manufacturing-retail-logistics",
+    "isCanonicalLocal": true,
+    "wordCount": 5002,
+    "readingTimeMinutes": 23,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-choose-a-use-case",
+        "text": "How to choose a use case",
+        "level": 2
+      },
+      {
+        "id": "manufacturing",
+        "text": "Manufacturing",
+        "level": 2
+      },
+      {
+        "id": "retail",
+        "text": "Retail",
+        "level": 2
+      },
+      {
+        "id": "logistics",
+        "text": "Logistics",
+        "level": 2
+      },
+      {
+        "id": "what-the-50-use-cases-have-in-common",
+        "text": "What the 50 use cases have in common",
+        "level": 2
+      },
+      {
+        "id": "a-one-page-plan-for-your-first-ai-use-case",
+        "text": "A one-page plan for your first AI use case",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "ai-applications-healthcare-finance-education",
+      "ai-future-of-work-examples",
+      "ai-in-business-operations-marketing-sales"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
     "slug": "advanced-mathematics-concepts-with-applications",
     "title": "100 Best Advanced Mathematics Concepts Explained With Real-World Applications",
     "seoTitle": "100 Advanced Math Concepts With Real-World Applications",
@@ -722,7 +1293,7 @@
     "imageAlt": "",
     "canonicalUrl": "https://blogai.space/articles/machine-learning-applications",
     "isCanonicalLocal": true,
-    "wordCount": 9614,
+    "wordCount": 9649,
     "readingTimeMinutes": 44,
     "showToc": true,
     "toc": [
@@ -818,9 +1389,9 @@
       }
     ],
     "relatedArticles": [
+      "ai-transforming-industries-examples",
       "machine-learning-datasets",
-      "python-machine-learning-examples",
-      "feature-engineering-techniques"
+      "python-machine-learning-examples"
     ],
     "relatedBlogs": [
       "uber-engineering",
@@ -4480,9 +5051,9 @@
       }
     ],
     "relatedArticles": [
-      "feature-engineering-techniques",
-      "machine-learning-algorithms-explained",
-      "machine-learning-applications"
+      "ai-applications-healthcare-finance-education",
+      "ai-future-of-work-examples",
+      "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
       "high-scalability",
@@ -4564,9 +5135,9 @@
       }
     ],
     "relatedArticles": [
-      "feature-engineering-techniques",
-      "machine-learning-algorithms-explained",
-      "machine-learning-applications"
+      "ai-future-of-work-examples",
+      "ai-applications-healthcare-finance-education",
+      "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
       "github-engineering",
