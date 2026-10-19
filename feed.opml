@@ -6,6 +6,18 @@
     <ownerName>BlogAI Community</ownerName>
   </head>
   <body>
+    <outline text="Artificial Intelligence" title="Artificial Intelligence">
+      <outline type="rss" text="Ahead of AI" title="Ahead of AI" xmlUrl="https://magazine.sebastianraschka.com/feed" htmlUrl="https://magazine.sebastianraschka.com/" category="Artificial Intelligence" />
+      <outline type="rss" text="Andrej Karpathy Blog" title="Andrej Karpathy Blog" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/" category="Artificial Intelligence" />
+      <outline type="rss" text="BAIR Blog" title="BAIR Blog" xmlUrl="https://bair.berkeley.edu/blog/feed.xml" htmlUrl="https://bair.berkeley.edu/blog/" category="Artificial Intelligence" />
+      <outline type="rss" text="Eugene Yan" title="Eugene Yan" xmlUrl="https://eugeneyan.com/rss/" htmlUrl="https://eugeneyan.com/" category="Artificial Intelligence" />
+      <outline type="rss" text="Google Research Blog" title="Google Research Blog" xmlUrl="https://research.google/blog/rss/" htmlUrl="https://research.google/blog/" category="Artificial Intelligence" />
+      <outline type="rss" text="Hamel's Blog" title="Hamel's Blog" xmlUrl="https://hamel.dev/index.xml" htmlUrl="https://hamel.dev/" category="Artificial Intelligence" />
+      <outline type="rss" text="Import AI" title="Import AI" xmlUrl="https://importai.substack.com/feed" htmlUrl="https://importai.substack.com/" category="Artificial Intelligence" />
+      <outline type="rss" text="Interconnects" title="Interconnects" xmlUrl="https://www.interconnects.ai/feed" htmlUrl="https://www.interconnects.ai/" category="Artificial Intelligence" />
+      <outline type="rss" text="Lil'Log" title="Lil'Log" xmlUrl="https://lilianweng.github.io/index.xml" htmlUrl="https://lilianweng.github.io/" category="Artificial Intelligence" />
+      <outline type="rss" text="Simon Willison's Weblog" title="Simon Willison's Weblog" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/" category="Artificial Intelligence" />
+    </outline>
     <outline text="Automobile" title="Automobile">
       <outline type="rss" text="Ars Technica Cars" title="Ars Technica Cars" xmlUrl="https://feeds.arstechnica.com/arstechnica/cars" htmlUrl="https://arstechnica.com/cars/" category="Automobile" />
       <outline type="rss" text="Autoblog" title="Autoblog" xmlUrl="https://www.autoblog.com/rss.xml" htmlUrl="https://www.autoblog.com/" category="Automobile" />

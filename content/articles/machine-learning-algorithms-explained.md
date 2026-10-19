@@ -8,6 +8,7 @@ publishedAt: 2026-10-19
 updatedAt: 2026-10-19
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
   - Mathematics
 tags: [machine learning, algorithms, python, scikit-learn, pytorch, deep learning, ai]

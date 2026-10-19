@@ -8,6 +8,7 @@ publishedAt: 2026-10-19
 updatedAt: 2026-10-19
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
 tags: [machine learning, feature engineering, python, scikit-learn, pandas, data science]
 tocDepth: 2

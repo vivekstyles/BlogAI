@@ -8,6 +8,7 @@ publishedAt: 2026-10-20
 updatedAt: 2026-10-20
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
 tags: [artificial intelligence, future of work, jobs, skills, productivity, labor market, hiring]
 tocDepth: 2

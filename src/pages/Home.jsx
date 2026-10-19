@@ -31,7 +31,7 @@ export function Home() {
     name: 'BlogAI',
     url: SITE_URL,
     description:
-      'Original articles and a community-curated directory of high-quality blogs in engineering, mathematics, physics, science, automotive technology, and nutrition.',
+      'Original articles and a community-curated directory of high-quality blogs in AI, engineering, mathematics, physics, science, automotive technology, and nutrition.',
     potentialAction: {
       '@type': 'SearchAction',
       target: `${SITE_URL}/directory?q={search_term_string}`,
@@ -43,7 +43,7 @@ export function Home() {
     <div className="home-page">
       <SEOHead
         title="Technical Articles & Curated Blog Directory"
-        description={`Read original articles and discover ${totalBlogs}+ community-curated blogs across engineering, mathematics, physics, science, automotive technology, and nutrition.`}
+        description={`Read original articles and discover ${totalBlogs}+ community-curated blogs across AI, engineering, mathematics, physics, science, automotive technology, and nutrition.`}
         canonicalPath="/"
         jsonLd={homeSchema}
       />
@@ -62,7 +62,7 @@ export function Home() {
 
           <p className="hero-subtitle">
             Read original articles published here, and explore a community-curated directory of
-            independent blogs across software engineering, mathematics, physics, science,
+            independent blogs across AI, software engineering, mathematics, physics, science,
             automotive technology, and nutrition.
           </p>
 

@@ -8,6 +8,7 @@ publishedAt: 2026-10-19
 updatedAt: 2026-10-19
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
   - Science
 tags: [machine learning, ai, applications, industry, case studies, data science]

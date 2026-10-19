@@ -8,6 +8,7 @@ publishedAt: 2026-10-19
 updatedAt: 2026-10-19
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
 tags: [machine learning, datasets, ai, data science, deep learning, benchmarks]
 tocDepth: 2

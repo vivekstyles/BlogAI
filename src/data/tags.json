@@ -1,5 +1,29 @@
 [
   {
+    "name": "machine learning",
+    "slug": "machine-learning",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "ai research",
+    "slug": "ai-research",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "large language models",
+    "slug": "large-language-models",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "deep learning",
+    "slug": "deep-learning",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
     "name": "combinatorics",
     "slug": "combinatorics",
     "count": 4,
@@ -24,6 +48,18 @@
     "blogCount": 3
   },
   {
+    "name": "ai policy",
+    "slug": "ai-policy",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "ai tools",
+    "slug": "ai-tools",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "analysis",
     "slug": "analysis",
     "count": 2,
@@ -44,6 +80,12 @@
   {
     "name": "complexity",
     "slug": "complexity",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "computer vision",
+    "slug": "computer-vision",
     "count": 2,
     "blogCount": 2
   },
@@ -86,6 +128,18 @@
   {
     "name": "linear algebra",
     "slug": "linear-algebra",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "llm evaluation",
+    "slug": "llm-evaluation",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "ml engineering",
+    "slug": "ml-engineering",
     "count": 2,
     "blogCount": 2
   },
@@ -174,6 +228,12 @@
     "blogCount": 2
   },
   {
+    "name": "reinforcement learning",
+    "slug": "reinforcement-learning",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "reviews",
     "slug": "reviews",
     "count": 2,
@@ -222,6 +282,12 @@
     "blogCount": 1
   },
   {
+    "name": "ai safety",
+    "slug": "ai-safety",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "algorithms",
     "slug": "algorithms",
     "count": 1,
@@ -230,6 +296,12 @@
   {
     "name": "api",
     "slug": "api",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "applied ml",
+    "slug": "applied-ml",
     "count": 1,
     "blogCount": 1
   },
@@ -396,12 +468,6 @@
     "blogCount": 1
   },
   {
-    "name": "deep learning",
-    "slug": "deep-learning",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "design patterns",
     "slug": "design-patterns",
     "count": 1,
@@ -528,6 +594,12 @@
     "blogCount": 1
   },
   {
+    "name": "generative ai",
+    "slug": "generative-ai",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "global research",
     "slug": "global-research",
     "count": 1,
@@ -648,8 +720,26 @@
     "blogCount": 1
   },
   {
+    "name": "mlops",
+    "slug": "mlops",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "mobile",
     "slug": "mobile",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "natural language processing",
+    "slug": "natural-language-processing",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "neural networks",
+    "slug": "neural-networks",
     "count": 1,
     "blogCount": 1
   },
@@ -674,6 +764,12 @@
   {
     "name": "nutrition research",
     "slug": "nutrition-research",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "open models",
+    "slug": "open-models",
     "count": 1,
     "blogCount": 1
   },
@@ -744,6 +840,12 @@
     "blogCount": 1
   },
   {
+    "name": "prompt engineering",
+    "slug": "prompt-engineering",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "protein",
     "slug": "protein",
     "count": 1,
@@ -770,6 +872,18 @@
   {
     "name": "puzzles",
     "slug": "puzzles",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "python",
+    "slug": "python",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "pytorch",
+    "slug": "pytorch",
     "count": 1,
     "blogCount": 1
   },
@@ -810,6 +924,12 @@
     "blogCount": 1
   },
   {
+    "name": "recommender systems",
+    "slug": "recommender-systems",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "refactoring",
     "slug": "refactoring",
     "count": 1,
@@ -836,6 +956,12 @@
   {
     "name": "research reviews",
     "slug": "research-reviews",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "robotics",
+    "slug": "robotics",
     "count": 1,
     "blogCount": 1
   },

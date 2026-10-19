@@ -22,6 +22,7 @@ from typing import Dict, List, Any
 from linter import lint_categories, slugify
 
 CATEGORY_DESCRIPTIONS = {
+    "Artificial Intelligence": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
     "Engineering": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
     "Mathematics": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
     "Physics": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",

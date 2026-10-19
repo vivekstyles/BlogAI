@@ -1,5 +1,21 @@
 [
   {
+    "name": "Artificial Intelligence",
+    "slug": "artificial-intelligence",
+    "description": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
+    "count": 10,
+    "popularTags": [
+      "ai policy",
+      "ai research",
+      "ai safety",
+      "ai tools",
+      "applied ml",
+      "computer vision",
+      "deep learning",
+      "generative ai"
+    ]
+  },
+  {
     "name": "Automobile",
     "slug": "automobile",
     "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",

@@ -11,6 +11,10 @@
     "status": "published",
     "categories": [
       {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
         "name": "Engineering",
         "slug": "engineering"
       },
@@ -95,9 +99,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
+      "simon-willisons-weblog",
       "math-with-bad-drawings",
-      "tanya-khovanovas-math-blog",
-      "acm-queue"
+      "tanya-khovanovas-math-blog"
     ]
   },
   {
@@ -111,6 +115,10 @@
     "updatedAt": "2026-10-20",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -227,8 +235,8 @@
     ],
     "relatedBlogs": [
       "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -242,6 +250,10 @@
     "updatedAt": "2026-10-20",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -323,9 +335,9 @@
       "ai-future-of-work-examples"
     ],
     "relatedBlogs": [
+      "simon-willisons-weblog",
       "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai"
     ]
   },
   {
@@ -339,6 +351,10 @@
     "updatedAt": "2026-10-20",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -459,9 +475,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
+      "simon-willisons-weblog",
       "autoblog",
-      "acm-queue",
-      "ars-technica-science"
+      "acm-queue"
     ]
   },
   {
@@ -475,6 +491,10 @@
     "updatedAt": "2026-10-20",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -565,9 +585,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
+      "bair-blog",
       "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai"
     ]
   },
   {
@@ -835,6 +855,10 @@
     "status": "published",
     "categories": [
       {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
         "name": "Engineering",
         "slug": "engineering"
       }
@@ -955,14 +979,14 @@
       }
     ],
     "relatedArticles": [
+      "python-machine-learning-examples",
       "python-libraries-for-data-science",
-      "python-data-science-projects",
-      "python-machine-learning-examples"
+      "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
-      "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -1100,6 +1124,10 @@
     "status": "published",
     "categories": [
       {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
         "name": "Engineering",
         "slug": "engineering"
       },
@@ -1233,14 +1261,14 @@
       }
     ],
     "relatedArticles": [
-      "linear-algebra-concepts-for-machine-learning",
       "python-machine-learning-examples",
-      "mathematical-optimization-techniques"
+      "feature-engineering-techniques",
+      "machine-learning-datasets"
     ],
     "relatedBlogs": [
-      "3blue1brown-blog",
-      "godels-lost-letter-and-pnp",
-      "uber-engineering"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -1254,6 +1282,10 @@
     "updatedAt": "2026-10-19",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -1394,9 +1426,9 @@
       "python-machine-learning-examples"
     ],
     "relatedBlogs": [
-      "uber-engineering",
-      "autoblog",
-      "acm-queue"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -1410,6 +1442,10 @@
     "updatedAt": "2026-10-19",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -1531,9 +1567,9 @@
       "python-machine-learning-examples"
     ],
     "relatedBlogs": [
-      "uber-engineering",
-      "3blue1brown-blog",
-      "acm-queue"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -1547,6 +1583,10 @@
     "updatedAt": "2026-10-19",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -1633,14 +1673,14 @@
       }
     ],
     "relatedArticles": [
-      "python-data-science-projects",
       "machine-learning-algorithms-explained",
+      "python-data-science-projects",
       "feature-engineering-techniques"
     ],
     "relatedBlogs": [
-      "3blue1brown-blog",
-      "acm-queue",
-      "cloudflare-blog"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -1765,8 +1805,8 @@
     ],
     "relatedBlogs": [
       "uber-engineering",
-      "quanta-magazine",
-      "3blue1brown-blog"
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -1887,9 +1927,9 @@
       "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
-      "quanta-magazine",
-      "3blue1brown-blog",
-      "azimuth-john-baez"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -2898,9 +2938,9 @@
       "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
+      "simon-willisons-weblog",
       "3blue1brown-blog",
-      "acm-queue",
-      "azimuth-john-baez"
+      "acm-queue"
     ]
   },
   {
@@ -3016,9 +3056,9 @@
       "python-libraries-for-data-science"
     ],
     "relatedBlogs": [
+      "simon-willisons-weblog",
       "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "cloudflare-blog"
     ]
   },
   {
@@ -3608,9 +3648,9 @@
       "python-libraries-for-data-science"
     ],
     "relatedBlogs": [
-      "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -3765,9 +3805,9 @@
       "python-machine-learning-examples"
     ],
     "relatedBlogs": [
-      "acm-queue",
-      "cloudflare-blog",
-      "dan-abramov-overreacted"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -3781,6 +3821,10 @@
     "updatedAt": "2026-10-17",
     "status": "published",
     "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -3885,12 +3929,12 @@
     "relatedArticles": [
       "feature-engineering-techniques",
       "machine-learning-algorithms-explained",
-      "python-libraries-for-data-science"
+      "machine-learning-applications"
     ],
     "relatedBlogs": [
-      "uber-engineering",
-      "acm-queue",
-      "cloudflare-blog"
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "bair-blog"
     ]
   },
   {
@@ -4600,8 +4644,8 @@
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
-      "betterexplained",
-      "uber-engineering"
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
     ]
   },
   {

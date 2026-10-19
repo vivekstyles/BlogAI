@@ -165,6 +165,17 @@ Five new published articles, forming a physics cluster (Physics and Science cate
 - The experiments and projects articles state that the activities were not run for the article, and mark adult-supervision and qualified-supervision items.
 - External links checked by script on 2026-10-17. Moved pages were replaced (DOE LED page, FDA pulse oximeter communication, NRC smoke detector fact sheet, NASA Glenn lift page). Exploratorium, IOP Spark, publisher DOIs and the CDC block automated requests; they were checked in a browser or by their identifiers. STScI/MAST was unreachable from the test network, so the TESS project links to NASA's mission page instead.
 
+### Artificial Intelligence category (2026-10-20)
+
+New category `/category/artificial-intelligence` (in `sitemap-categories.xml`, lastmod 2026-10-20).
+
+- 11 articles now list Artificial Intelligence as their first category: the five AI-in-industry articles and six machine learning articles (`feature-engineering-techniques`, `machine-learning-algorithms-explained`, `machine-learning-applications`, `machine-learning-datasets`, `machine-learning-projects`, `python-machine-learning-examples`). Their earlier categories stay as secondary categories, so Engineering, Science and Mathematics pages keep listing them. Article URLs are `/articles/<slug>` and did not change, so no redirects are needed. `updatedAt` was not changed because the article text did not change.
+- 10 directory blogs added in `Categories/Artificial Intelligence/blogs.csv`: Lil'Log, Simon Willison's Weblog, BAIR Blog, Ahead of AI, Import AI, Andrej Karpathy Blog, Interconnects, Google Research Blog, Eugene Yan, Hamel's Blog. Each homepage and feed returned 200 with recent items on 2026-10-20.
+- Hardcoded category lists in meta descriptions and hero copy now include AI (`index.html`, `SEOHead.jsx`, `Home.jsx`, `Directory.jsx`, `prerender.js`).
+- `npm run dev` and `npm run build` now run `scripts/build_data.py` first (through `scripts/run_build_data.js`), so CSV changes reach the site and sitemap on every Vercel deploy. The header category menu counts articles plus blogs.
+
+`npm test` (73 passed), `npm run build` (409 pages, 199 sitemap URLs) and `validate_seo.py` pass.
+
 ### Canonical domain switched to blogai.space (2026-10-17)
 
 The site is served by Vercel at `https://blogai.space`, but canonicals, the sitemap, robots.txt, JSON-LD and Open Graph URLs used `https://blogai.directory`, which does not resolve (P0-1).

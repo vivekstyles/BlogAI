@@ -8,6 +8,7 @@ publishedAt: 2026-10-20
 updatedAt: 2026-10-20
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
   - Science
 tags: [artificial intelligence, healthcare, finance, education, generative ai, case studies]

@@ -8,6 +8,7 @@ publishedAt: 2026-10-20
 updatedAt: 2026-10-20
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
 tags: [artificial intelligence, generative ai, ai agents, business operations, marketing, sales]
 tocDepth: 2

@@ -8,6 +8,7 @@ publishedAt: 2026-10-20
 updatedAt: 2026-10-20
 status: published
 categories:
+  - Artificial Intelligence
   - Engineering
   - Science
 tags: [artificial intelligence, generative ai, ai agents, industry, case studies, 2026]
