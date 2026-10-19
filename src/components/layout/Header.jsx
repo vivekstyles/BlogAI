@@ -3,7 +3,14 @@ import { Link } from 'react-router-dom';
 import { Sun, Moon, Menu, X, PlusCircle, Compass } from 'lucide-react';
 import Navigation from './Navigation';
 import categoriesData from '../../data/categories';
+import { articleService } from '../../services/articleService';
 import './Header.css';
+
+// The Categories menu counts everything in a category: directory blogs plus original articles
+const navCategories = categoriesData.map((cat) => ({
+  ...cat,
+  count: cat.count + articleService.getArticlesByCategory(cat.slug).length,
+}));
 
 export function Header() {
   const [isDark, setIsDark] = useState(true);
@@ -52,7 +59,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="header-nav-desktop desktop-only">
-          <Navigation categories={categoriesData} />
+          <Navigation categories={navCategories} />
         </div>
 
         {/* Action Controls */}
@@ -90,7 +97,7 @@ export function Header() {
         <div className="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
           <div className="container mobile-drawer-content">
             <Navigation
-              categories={categoriesData}
+              categories={navCategories}
               onNavClick={() => setMobileMenuOpen(false)}
             />
             <div className="mobile-drawer-cta">

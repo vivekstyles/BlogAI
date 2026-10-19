@@ -37,6 +37,9 @@
 }
 
 .category-stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
   font-size: 0.875rem;
   color: var(--text-tertiary);
   margin-bottom: 1.25rem;

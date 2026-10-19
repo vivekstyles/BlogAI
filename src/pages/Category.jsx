@@ -117,8 +117,14 @@ export function Category() {
           <p className="category-desc">{category.description}</p>
 
           <div className="category-stats-bar">
+            {categoryArticles.length > 0 && (
+              <span>
+                <strong>{categoryArticles.length}</strong>{' '}
+                {categoryArticles.length === 1 ? 'original article' : 'original articles'}
+              </span>
+            )}
             <span>
-              <strong>{category.count}</strong> curated publications
+              <strong>{category.count}</strong> curated {category.count === 1 ? 'blog' : 'blogs'}
             </span>
           </div>
 
