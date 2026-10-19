@@ -253,6 +253,148 @@
     ]
   },
   {
+    "slug": "feature-engineering-techniques",
+    "title": "101 Best Feature Engineering Techniques to Improve Machine Learning Models",
+    "seoTitle": "101 Feature Engineering Techniques for Machine Learning",
+    "description": "101 feature engineering techniques with runnable Python: missing values, scaling, encoding, dates, text, location data and leakage-safe feature selection.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "feature engineering",
+        "slug": "feature-engineering"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "scikit-learn",
+        "slug": "scikit-learn"
+      },
+      {
+        "name": "pandas",
+        "slug": "pandas"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/feature-engineering-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 6203,
+    "readingTimeMinutes": 28,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-golden-rule-learn-transformations-from-training-data-only",
+        "text": "The golden rule: learn transformations from training data only",
+        "level": 2
+      },
+      {
+        "id": "missing-values",
+        "text": "Missing values",
+        "level": 2
+      },
+      {
+        "id": "scaling-and-numeric-transformations",
+        "text": "Scaling and numeric transformations",
+        "level": 2
+      },
+      {
+        "id": "binning-and-splines",
+        "text": "Binning and splines",
+        "level": 2
+      },
+      {
+        "id": "categorical-encoding",
+        "text": "Categorical encoding",
+        "level": 2
+      },
+      {
+        "id": "interactions-ratios-and-aggregates",
+        "text": "Interactions, ratios and aggregates",
+        "level": 2
+      },
+      {
+        "id": "dates-and-times",
+        "text": "Dates and times",
+        "level": 2
+      },
+      {
+        "id": "text-features",
+        "text": "Text features",
+        "level": 2
+      },
+      {
+        "id": "images-audio-and-sensor-signals",
+        "text": "Images, audio and sensor signals",
+        "level": 2
+      },
+      {
+        "id": "geospatial-features",
+        "text": "Geospatial features",
+        "level": 2
+      },
+      {
+        "id": "feature-selection",
+        "text": "Feature selection",
+        "level": 2
+      },
+      {
+        "id": "dimensionality-reduction-and-learned-features",
+        "text": "Dimensionality reduction and learned features",
+        "level": 2
+      },
+      {
+        "id": "relational-data-leakage-and-feature-management",
+        "text": "Relational data, leakage and feature management",
+        "level": 2
+      },
+      {
+        "id": "a-checklist-for-feature-engineering",
+        "text": "A checklist for feature engineering",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-libraries-for-data-science",
+      "python-data-science-projects",
+      "python-machine-learning-examples"
+    ],
+    "relatedBlogs": [
+      "acm-queue",
+      "cloudflare-blog",
+      "dan-abramov-overreacted"
+    ]
+  },
+  {
     "slug": "linear-algebra-problems-with-solutions",
     "title": "101 Best Linear Algebra Problems and Solutions: From Eigenvalues to Vector Spaces",
     "seoTitle": "101 Linear Algebra Problems With Step-by-Step Solutions",
@@ -376,6 +518,561 @@
     ]
   },
   {
+    "slug": "machine-learning-algorithms-explained",
+    "title": "100 Best Machine Learning Algorithms Explained With Real-World Examples",
+    "seoTitle": "100 Machine Learning Algorithms Explained With Examples",
+    "description": "100 machine learning algorithms explained with the core idea, the math, when to use each one, a runnable Python example and a real-world application.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "algorithms",
+        "slug": "algorithms"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "scikit-learn",
+        "slug": "scikit-learn"
+      },
+      {
+        "name": "pytorch",
+        "slug": "pytorch"
+      },
+      {
+        "name": "deep learning",
+        "slug": "deep-learning"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/machine-learning-algorithms-explained",
+    "isCanonicalLocal": true,
+    "wordCount": 15586,
+    "readingTimeMinutes": 71,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-choose-an-algorithm",
+        "text": "How to choose an algorithm",
+        "level": 2
+      },
+      {
+        "id": "linear-and-generalized-linear-models",
+        "text": "Linear and generalized linear models",
+        "level": 2
+      },
+      {
+        "id": "instance-based-probabilistic-and-kernel-methods",
+        "text": "Instance-based, probabilistic and kernel methods",
+        "level": 2
+      },
+      {
+        "id": "decision-trees-and-ensembles",
+        "text": "Decision trees and ensembles",
+        "level": 2
+      },
+      {
+        "id": "clustering",
+        "text": "Clustering",
+        "level": 2
+      },
+      {
+        "id": "dimensionality-reduction-and-representation-learning",
+        "text": "Dimensionality reduction and representation learning",
+        "level": 2
+      },
+      {
+        "id": "anomaly-detection",
+        "text": "Anomaly detection",
+        "level": 2
+      },
+      {
+        "id": "association-rules-and-recommender-systems",
+        "text": "Association rules and recommender systems",
+        "level": 2
+      },
+      {
+        "id": "time-series-and-sequential-models",
+        "text": "Time series and sequential models",
+        "level": 2
+      },
+      {
+        "id": "semi-supervised-learning",
+        "text": "Semi-supervised learning",
+        "level": 2
+      },
+      {
+        "id": "neural-networks-and-deep-learning",
+        "text": "Neural networks and deep learning",
+        "level": 2
+      },
+      {
+        "id": "reinforcement-learning-and-sequential-decision-making",
+        "text": "Reinforcement learning and sequential decision-making",
+        "level": 2
+      },
+      {
+        "id": "uncertainty-and-model-tuning",
+        "text": "Uncertainty and model tuning",
+        "level": 2
+      },
+      {
+        "id": "quick-reference-where-to-start",
+        "text": "Quick reference: where to start",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-when-applying-algorithms",
+        "text": "Common mistakes when applying algorithms",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "linear-algebra-concepts-for-machine-learning",
+      "python-machine-learning-examples",
+      "mathematical-optimization-techniques"
+    ],
+    "relatedBlogs": [
+      "3blue1brown-blog",
+      "godels-lost-letter-and-pnp",
+      "uber-engineering"
+    ]
+  },
+  {
+    "slug": "machine-learning-applications",
+    "title": "100 Best Machine Learning Applications Across Industries: A Complete Guide",
+    "seoTitle": "100 Machine Learning Applications Across Industries",
+    "description": "100 real machine learning applications in healthcare, finance, retail, transport, energy, farming and science, with the methods behind them and their limits.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      },
+      {
+        "name": "applications",
+        "slug": "applications"
+      },
+      {
+        "name": "industry",
+        "slug": "industry"
+      },
+      {
+        "name": "case studies",
+        "slug": "case-studies"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/machine-learning-applications",
+    "isCanonicalLocal": true,
+    "wordCount": 9614,
+    "readingTimeMinutes": 44,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "what-successful-applications-have-in-common",
+        "text": "What successful applications have in common",
+        "level": 2
+      },
+      {
+        "id": "healthcare-and-life-sciences",
+        "text": "Healthcare and life sciences",
+        "level": 2
+      },
+      {
+        "id": "finance-and-insurance",
+        "text": "Finance and insurance",
+        "level": 2
+      },
+      {
+        "id": "retail-and-e-commerce",
+        "text": "Retail and e-commerce",
+        "level": 2
+      },
+      {
+        "id": "media-and-entertainment",
+        "text": "Media and entertainment",
+        "level": 2
+      },
+      {
+        "id": "transportation-and-logistics",
+        "text": "Transportation and logistics",
+        "level": 2
+      },
+      {
+        "id": "manufacturing-and-industry",
+        "text": "Manufacturing and industry",
+        "level": 2
+      },
+      {
+        "id": "energy-and-utilities",
+        "text": "Energy and utilities",
+        "level": 2
+      },
+      {
+        "id": "agriculture-and-food",
+        "text": "Agriculture and food",
+        "level": 2
+      },
+      {
+        "id": "climate-environment-and-earth-science",
+        "text": "Climate, environment and Earth science",
+        "level": 2
+      },
+      {
+        "id": "science-and-research",
+        "text": "Science and research",
+        "level": 2
+      },
+      {
+        "id": "public-sector-legal-and-security",
+        "text": "Public sector, legal and security",
+        "level": 2
+      },
+      {
+        "id": "education-and-work",
+        "text": "Education and work",
+        "level": 2
+      },
+      {
+        "id": "technology-and-communication",
+        "text": "Technology and communication",
+        "level": 2
+      },
+      {
+        "id": "lessons-from-100-applications",
+        "text": "Lessons from 100 applications",
+        "level": 2
+      },
+      {
+        "id": "how-to-evaluate-a-machine-learning-claim",
+        "text": "How to evaluate a machine learning claim",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "machine-learning-datasets",
+      "python-machine-learning-examples",
+      "feature-engineering-techniques"
+    ],
+    "relatedBlogs": [
+      "uber-engineering",
+      "autoblog",
+      "acm-queue"
+    ]
+  },
+  {
+    "slug": "machine-learning-datasets",
+    "title": "100 Best Machine Learning Datasets for AI Projects, Research, and Practice",
+    "seoTitle": "100 Machine Learning Datasets for AI Projects and Research",
+    "description": "100 machine learning datasets for tabular, vision, text, audio, time series, recommender and LLM work, with size, uses, access terms and known pitfalls.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "datasets",
+        "slug": "datasets"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "deep learning",
+        "slug": "deep-learning"
+      },
+      {
+        "name": "benchmarks",
+        "slug": "benchmarks"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/machine-learning-datasets",
+    "isCanonicalLocal": true,
+    "wordCount": 9002,
+    "readingTimeMinutes": 41,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-choose-a-dataset",
+        "text": "How to choose a dataset",
+        "level": 2
+      },
+      {
+        "id": "where-to-find-datasets",
+        "text": "Where to find datasets",
+        "level": 2
+      },
+      {
+        "id": "tabular-datasets",
+        "text": "Tabular datasets",
+        "level": 2
+      },
+      {
+        "id": "computer-vision-datasets",
+        "text": "Computer vision datasets",
+        "level": 2
+      },
+      {
+        "id": "medical-and-health-datasets",
+        "text": "Medical and health datasets",
+        "level": 2
+      },
+      {
+        "id": "text-and-natural-language-processing-datasets",
+        "text": "Text and natural language processing datasets",
+        "level": 2
+      },
+      {
+        "id": "datasets-for-large-language-models",
+        "text": "Datasets for large language models",
+        "level": 2
+      },
+      {
+        "id": "speech-and-audio-datasets",
+        "text": "Speech and audio datasets",
+        "level": 2
+      },
+      {
+        "id": "time-series-and-forecasting-datasets",
+        "text": "Time series and forecasting datasets",
+        "level": 2
+      },
+      {
+        "id": "recommendation-and-ranking-datasets",
+        "text": "Recommendation and ranking datasets",
+        "level": 2
+      },
+      {
+        "id": "graph-chemistry-and-science-datasets",
+        "text": "Graph, chemistry and science datasets",
+        "level": 2
+      },
+      {
+        "id": "reinforcement-learning-environments-and-datasets",
+        "text": "Reinforcement learning environments and datasets",
+        "level": 2
+      },
+      {
+        "id": "responsible-use-checklist",
+        "text": "Responsible use checklist",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "machine-learning-algorithms-explained",
+      "machine-learning-applications",
+      "python-machine-learning-examples"
+    ],
+    "relatedBlogs": [
+      "uber-engineering",
+      "3blue1brown-blog",
+      "acm-queue"
+    ]
+  },
+  {
+    "slug": "machine-learning-projects",
+    "title": "101 Best Machine Learning Projects for Beginners to Advanced Learners",
+    "seoTitle": "101 Machine Learning Projects, Beginner to Advanced",
+    "description": "101 machine learning project ideas from beginner to advanced, each with a public dataset, a baseline to beat, an evaluation plan and a clear definition of done.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "deep learning",
+        "slug": "deep-learning"
+      },
+      {
+        "name": "portfolio",
+        "slug": "portfolio"
+      },
+      {
+        "name": "mlops",
+        "slug": "mlops"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/machine-learning-projects",
+    "isCanonicalLocal": true,
+    "wordCount": 10546,
+    "readingTimeMinutes": 48,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-choose-your-next-project",
+        "text": "How to choose your next project",
+        "level": 2
+      },
+      {
+        "id": "the-workflow-every-project-follows",
+        "text": "The workflow every project follows",
+        "level": 2
+      },
+      {
+        "id": "a-starter-template-you-can-reuse",
+        "text": "A starter template you can reuse",
+        "level": 2
+      },
+      {
+        "id": "beginner-projects-130",
+        "text": "Beginner projects (1–30)",
+        "level": 2
+      },
+      {
+        "id": "intermediate-projects-3165",
+        "text": "Intermediate projects (31–65)",
+        "level": 2
+      },
+      {
+        "id": "advanced-projects-66101",
+        "text": "Advanced projects (66–101)",
+        "level": 2
+      },
+      {
+        "id": "mistakes-that-weaken-ml-projects",
+        "text": "Mistakes that weaken ML projects",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-data-science-projects",
+      "machine-learning-algorithms-explained",
+      "feature-engineering-techniques"
+    ],
+    "relatedBlogs": [
+      "3blue1brown-blog",
+      "acm-queue",
+      "cloudflare-blog"
+    ]
+  },
+  {
     "slug": "mathematical-optimization-techniques",
     "title": "100 Best Mathematical Optimization Techniques Used in AI, Engineering, and Research",
     "seoTitle": "100 Optimization Techniques Used in AI and Engineering",
@@ -492,8 +1189,8 @@
     ],
     "relatedArticles": [
       "linear-algebra-concepts-for-machine-learning",
-      "probability-and-statistics-concepts-for-data-science",
-      "python-machine-learning-examples"
+      "machine-learning-algorithms-explained",
+      "machine-learning-applications"
     ],
     "relatedBlogs": [
       "uber-engineering",
@@ -1626,8 +2323,8 @@
     ],
     "relatedArticles": [
       "python-libraries-for-data-science",
-      "linear-algebra-concepts-for-machine-learning",
-      "pandas-tips-and-tricks-for-data-analysis"
+      "machine-learning-algorithms-explained",
+      "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
@@ -1743,9 +2440,9 @@
       }
     ],
     "relatedArticles": [
+      "feature-engineering-techniques",
       "python-data-science-projects",
-      "python-libraries-for-data-science",
-      "numpy-examples-for-numerical-computing"
+      "python-libraries-for-data-science"
     ],
     "relatedBlogs": [
       "acm-queue",
@@ -2294,7 +2991,7 @@
     "imageAlt": "",
     "canonicalUrl": "https://blogai.space/articles/python-data-science-projects",
     "isCanonicalLocal": true,
-    "wordCount": 5548,
+    "wordCount": 5570,
     "readingTimeMinutes": 25,
     "showToc": true,
     "toc": [
@@ -2335,9 +3032,9 @@
       }
     ],
     "relatedArticles": [
-      "python-libraries-for-data-science",
-      "pandas-tips-and-tricks-for-data-analysis",
-      "python-machine-learning-examples"
+      "feature-engineering-techniques",
+      "machine-learning-projects",
+      "python-libraries-for-data-science"
     ],
     "relatedBlogs": [
       "acm-queue",
@@ -2492,9 +3189,9 @@
       }
     ],
     "relatedArticles": [
+      "feature-engineering-techniques",
       "python-data-science-projects",
-      "python-machine-learning-examples",
-      "numpy-examples-for-numerical-computing"
+      "python-machine-learning-examples"
     ],
     "relatedBlogs": [
       "acm-queue",
@@ -2544,7 +3241,7 @@
     "imageAlt": "",
     "canonicalUrl": "https://blogai.space/articles/python-machine-learning-examples",
     "isCanonicalLocal": true,
-    "wordCount": 3944,
+    "wordCount": 3968,
     "readingTimeMinutes": 18,
     "showToc": true,
     "toc": [
@@ -2615,9 +3312,9 @@
       }
     ],
     "relatedArticles": [
-      "python-libraries-for-data-science",
-      "python-data-science-projects",
-      "mathematical-optimization-techniques"
+      "feature-engineering-techniques",
+      "machine-learning-algorithms-explained",
+      "python-libraries-for-data-science"
     ],
     "relatedBlogs": [
       "uber-engineering",
@@ -3326,9 +4023,9 @@
       }
     ],
     "relatedArticles": [
+      "machine-learning-algorithms-explained",
       "mathematical-optimization-techniques",
-      "numpy-examples-for-numerical-computing",
-      "linear-algebra-problems-with-solutions"
+      "machine-learning-datasets"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
@@ -3783,9 +4480,9 @@
       }
     ],
     "relatedArticles": [
-      "mathematical-optimization-techniques",
-      "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis"
+      "feature-engineering-techniques",
+      "machine-learning-algorithms-explained",
+      "machine-learning-applications"
     ],
     "relatedBlogs": [
       "high-scalability",
@@ -3867,9 +4564,9 @@
       }
     ],
     "relatedArticles": [
-      "mathematical-optimization-techniques",
-      "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis"
+      "feature-engineering-techniques",
+      "machine-learning-algorithms-explained",
+      "machine-learning-applications"
     ],
     "relatedBlogs": [
       "github-engineering",

@@ -803,6 +803,7 @@ These involve deep learning, large data, causal inference, production systems or
 - Learn the tools you will use most in [100 Python libraries for data science](/articles/python-libraries-for-data-science).
 - Speed up your data cleaning with [100 pandas tips and tricks](/articles/pandas-tips-and-tricks-for-data-analysis).
 - Borrow techniques from [100 Python machine learning examples](/articles/python-machine-learning-examples).
+- For projects focused on building, evaluating and deploying models, see [101 machine learning projects](/articles/machine-learning-projects), and find data in [100 machine learning datasets](/articles/machine-learning-datasets).
 - Strengthen your statistics with [100 probability and statistics examples](/articles/probability-statistics-real-world-examples).
 - Find practitioners writing about their own projects in the [community blog directory](/directory).
 

@@ -2268,6 +2268,8 @@ ValueError: missing features: ['petal length (cm)', 'petal width (cm)', 'sepal w
 - Understand the arrays underneath with [101 NumPy examples to master numerical computing](/articles/numpy-examples-for-numerical-computing).
 - Learn the math behind PCA, SVD and gradients in [101 linear algebra concepts for machine learning and AI](/articles/linear-algebra-concepts-for-machine-learning).
 - Choose the right tools with [100 Python libraries for data science](/articles/python-libraries-for-data-science).
+- Understand how each model works, and when to choose it, in [100 machine learning algorithms explained](/articles/machine-learning-algorithms-explained).
+- Build better inputs with [101 feature engineering techniques](/articles/feature-engineering-techniques).
 
 ## References
 
