@@ -1,5 +1,630 @@
 [
   {
+    "slug": "advanced-mathematics-concepts-with-applications",
+    "title": "100 Best Advanced Mathematics Concepts Explained With Real-World Applications",
+    "seoTitle": "100 Advanced Math Concepts With Real-World Applications",
+    "description": "100 advanced mathematics concepts, from number theory and group theory to Fourier analysis, chaos, topology and game theory, each tied to a real-world use.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "Science",
+        "slug": "science"
+      }
+    ],
+    "tags": [
+      {
+        "name": "mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "advanced mathematics",
+        "slug": "advanced-mathematics"
+      },
+      {
+        "name": "applied mathematics",
+        "slug": "applied-mathematics"
+      },
+      {
+        "name": "cryptography",
+        "slug": "cryptography"
+      },
+      {
+        "name": "differential equations",
+        "slug": "differential-equations"
+      },
+      {
+        "name": "topology",
+        "slug": "topology"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/advanced-mathematics-concepts-with-applications",
+    "isCanonicalLocal": true,
+    "wordCount": 5392,
+    "readingTimeMinutes": 25,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "number-theory-and-cryptography",
+        "text": "Number theory and cryptography",
+        "level": 2
+      },
+      {
+        "id": "abstract-algebra",
+        "text": "Abstract algebra",
+        "level": 2
+      },
+      {
+        "id": "advanced-linear-algebra",
+        "text": "Advanced linear algebra",
+        "level": 2
+      },
+      {
+        "id": "analysis-and-fourier-methods",
+        "text": "Analysis and Fourier methods",
+        "level": 2
+      },
+      {
+        "id": "complex-analysis",
+        "text": "Complex analysis",
+        "level": 2
+      },
+      {
+        "id": "differential-equations-and-dynamical-systems",
+        "text": "Differential equations and dynamical systems",
+        "level": 2
+      },
+      {
+        "id": "numerical-analysis",
+        "text": "Numerical analysis",
+        "level": 2
+      },
+      {
+        "id": "probability-and-stochastic-processes",
+        "text": "Probability and stochastic processes",
+        "level": 2
+      },
+      {
+        "id": "discrete-mathematics-and-graph-theory",
+        "text": "Discrete mathematics and graph theory",
+        "level": 2
+      },
+      {
+        "id": "logic-and-the-theory-of-computation",
+        "text": "Logic and the theory of computation",
+        "level": 2
+      },
+      {
+        "id": "geometry-and-topology",
+        "text": "Geometry and topology",
+        "level": 2
+      },
+      {
+        "id": "optimization-games-and-foundations",
+        "text": "Optimization, games and foundations",
+        "level": 2
+      },
+      {
+        "id": "how-to-go-further",
+        "text": "How to go further",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "calculus-formulas-theorems-and-examples",
+      "linear-algebra-problems-with-solutions",
+      "mathematical-optimization-techniques"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "quanta-magazine-mathematics",
+      "3blue1brown-blog"
+    ]
+  },
+  {
+    "slug": "calculus-formulas-theorems-and-examples",
+    "title": "100 Best Calculus Formulas, Theorems, and Examples Every Student Should Know",
+    "seoTitle": "100 Calculus Formulas and Theorems With Worked Examples",
+    "description": "100 calculus formulas and theorems, from limits and derivatives to series, multivariable and vector calculus and differential equations, each with an example.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "calculus",
+        "slug": "calculus"
+      },
+      {
+        "name": "mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "formulas",
+        "slug": "formulas"
+      },
+      {
+        "name": "derivatives",
+        "slug": "derivatives"
+      },
+      {
+        "name": "integrals",
+        "slug": "integrals"
+      },
+      {
+        "name": "differential equations",
+        "slug": "differential-equations"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/calculus-formulas-theorems-and-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 3126,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "limits-and-continuity",
+        "text": "Limits and continuity",
+        "level": 2
+      },
+      {
+        "id": "derivatives",
+        "text": "Derivatives",
+        "level": 2
+      },
+      {
+        "id": "applications-of-derivatives",
+        "text": "Applications of derivatives",
+        "level": 2
+      },
+      {
+        "id": "integrals",
+        "text": "Integrals",
+        "level": 2
+      },
+      {
+        "id": "sequences-and-series",
+        "text": "Sequences and series",
+        "level": 2
+      },
+      {
+        "id": "multivariable-calculus",
+        "text": "Multivariable calculus",
+        "level": 2
+      },
+      {
+        "id": "vector-calculus",
+        "text": "Vector calculus",
+        "level": 2
+      },
+      {
+        "id": "differential-equations",
+        "text": "Differential equations",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Common mistakes",
+        "level": 2
+      },
+      {
+        "id": "next-steps",
+        "text": "Next steps",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "math-formulas-every-student-should-know",
+      "advanced-mathematics-concepts-with-applications",
+      "linear-algebra-problems-with-solutions"
+    ],
+    "relatedBlogs": [
+      "3blue1brown-blog",
+      "betterexplained",
+      "quanta-magazine"
+    ]
+  },
+  {
+    "slug": "linear-algebra-problems-with-solutions",
+    "title": "101 Best Linear Algebra Problems and Solutions: From Eigenvalues to Vector Spaces",
+    "seoTitle": "101 Linear Algebra Problems With Step-by-Step Solutions",
+    "description": "101 linear algebra problems with full solutions and checks, from vectors and Gaussian elimination to determinants, eigenvalues, least squares and SVD.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "linear algebra",
+        "slug": "linear-algebra"
+      },
+      {
+        "name": "mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "matrices",
+        "slug": "matrices"
+      },
+      {
+        "name": "eigenvalues",
+        "slug": "eigenvalues"
+      },
+      {
+        "name": "practice problems",
+        "slug": "practice-problems"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/linear-algebra-problems-with-solutions",
+    "isCanonicalLocal": true,
+    "wordCount": 4640,
+    "readingTimeMinutes": 21,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "vectors",
+        "text": "Vectors",
+        "level": 2
+      },
+      {
+        "id": "linear-combinations-span-and-independence",
+        "text": "Linear combinations, span and independence",
+        "level": 2
+      },
+      {
+        "id": "matrix-operations",
+        "text": "Matrix operations",
+        "level": 2
+      },
+      {
+        "id": "systems-of-linear-equations",
+        "text": "Systems of linear equations",
+        "level": 2
+      },
+      {
+        "id": "determinants",
+        "text": "Determinants",
+        "level": 2
+      },
+      {
+        "id": "matrix-inverses",
+        "text": "Matrix inverses",
+        "level": 2
+      },
+      {
+        "id": "vector-spaces-and-subspaces",
+        "text": "Vector spaces and subspaces",
+        "level": 2
+      },
+      {
+        "id": "linear-transformations",
+        "text": "Linear transformations",
+        "level": 2
+      },
+      {
+        "id": "eigenvalues-and-eigenvectors",
+        "text": "Eigenvalues and eigenvectors",
+        "level": 2
+      },
+      {
+        "id": "orthogonality-least-squares-and-decompositions",
+        "text": "Orthogonality, least squares and decompositions",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Common mistakes",
+        "level": 2
+      },
+      {
+        "id": "next-steps",
+        "text": "Next steps",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "algebra-problems-with-solutions-for-beginners",
+      "linear-algebra-concepts-for-machine-learning",
+      "advanced-mathematics-concepts-with-applications"
+    ],
+    "relatedBlogs": [
+      "3blue1brown-blog",
+      "betterexplained",
+      "quanta-magazine"
+    ]
+  },
+  {
+    "slug": "mathematical-optimization-techniques",
+    "title": "100 Best Mathematical Optimization Techniques Used in AI, Engineering, and Research",
+    "seoTitle": "100 Optimization Techniques Used in AI and Engineering",
+    "description": "100 optimization techniques explained, from gradient descent, Newton and KKT to linear programming, simulated annealing, Adam, learning-rate schedules and LQR.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      }
+    ],
+    "tags": [
+      {
+        "name": "optimization",
+        "slug": "optimization"
+      },
+      {
+        "name": "mathematics",
+        "slug": "mathematics"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "gradient descent",
+        "slug": "gradient-descent"
+      },
+      {
+        "name": "linear programming",
+        "slug": "linear-programming"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/mathematical-optimization-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 5431,
+    "readingTimeMinutes": 25,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "foundations",
+        "text": "Foundations",
+        "level": 2
+      },
+      {
+        "id": "classical-methods-for-smooth-problems",
+        "text": "Classical methods for smooth problems",
+        "level": 2
+      },
+      {
+        "id": "constrained-optimization",
+        "text": "Constrained optimization",
+        "level": 2
+      },
+      {
+        "id": "linear-and-convex-programming",
+        "text": "Linear and convex programming",
+        "level": 2
+      },
+      {
+        "id": "combinatorial-and-discrete-optimization",
+        "text": "Combinatorial and discrete optimization",
+        "level": 2
+      },
+      {
+        "id": "global-and-derivative-free-optimization",
+        "text": "Global and derivative-free optimization",
+        "level": 2
+      },
+      {
+        "id": "optimization-for-machine-learning-and-ai",
+        "text": "Optimization for machine learning and AI",
+        "level": 2
+      },
+      {
+        "id": "optimization-in-engineering-and-research",
+        "text": "Optimization in engineering and research",
+        "level": 2
+      },
+      {
+        "id": "choosing-a-technique",
+        "text": "Choosing a technique",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Common mistakes",
+        "level": 2
+      },
+      {
+        "id": "next-steps",
+        "text": "Next steps",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "linear-algebra-concepts-for-machine-learning",
+      "probability-and-statistics-concepts-for-data-science",
+      "python-machine-learning-examples"
+    ],
+    "relatedBlogs": [
+      "uber-engineering",
+      "quanta-magazine",
+      "3blue1brown-blog"
+    ]
+  },
+  {
+    "slug": "probability-and-statistics-concepts-for-data-science",
+    "title": "101 Best Probability and Statistics Concepts for Data Science and Machine Learning",
+    "seoTitle": "101 Probability and Statistics Concepts for Data Science",
+    "description": "101 probability and statistics concepts behind data science and machine learning, from Bayes and distributions to MLE, A/B tests, cross-entropy and ROC curves.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "probability",
+        "slug": "probability"
+      },
+      {
+        "name": "statistics",
+        "slug": "statistics"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/probability-and-statistics-concepts-for-data-science",
+    "isCanonicalLocal": true,
+    "wordCount": 5144,
+    "readingTimeMinutes": 23,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "probability-foundations",
+        "text": "Probability foundations",
+        "level": 2
+      },
+      {
+        "id": "expectation-and-variance",
+        "text": "Expectation and variance",
+        "level": 2
+      },
+      {
+        "id": "probability-distributions",
+        "text": "Probability distributions",
+        "level": 2
+      },
+      {
+        "id": "limit-theorems-and-sampling",
+        "text": "Limit theorems and sampling",
+        "level": 2
+      },
+      {
+        "id": "estimation",
+        "text": "Estimation",
+        "level": 2
+      },
+      {
+        "id": "statistical-inference-and-experiments",
+        "text": "Statistical inference and experiments",
+        "level": 2
+      },
+      {
+        "id": "information-theory",
+        "text": "Information theory",
+        "level": 2
+      },
+      {
+        "id": "regression-and-modeling",
+        "text": "Regression and modeling",
+        "level": 2
+      },
+      {
+        "id": "evaluating-classifiers-and-predictions",
+        "text": "Evaluating classifiers and predictions",
+        "level": 2
+      },
+      {
+        "id": "probabilistic-machinery-in-modern-machine-learning",
+        "text": "Probabilistic machinery in modern machine learning",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Common mistakes",
+        "level": 2
+      },
+      {
+        "id": "next-steps",
+        "text": "Next steps",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "probability-statistics-real-world-examples",
+      "mathematical-optimization-techniques",
+      "linear-algebra-concepts-for-machine-learning"
+    ],
+    "relatedBlogs": [
+      "quanta-magazine",
+      "3blue1brown-blog",
+      "azimuth-john-baez"
+    ]
+  },
+  {
     "slug": "foods-rich-in-vitamins-and-minerals",
     "title": "100 Best Foods Rich in Vitamins and Minerals: A Complete Nutrition Guide",
     "seoTitle": "100 Foods Rich in Vitamins and Minerals, With Amounts",
@@ -1992,7 +2617,7 @@
     "relatedArticles": [
       "python-libraries-for-data-science",
       "python-data-science-projects",
-      "numpy-examples-for-numerical-computing"
+      "mathematical-optimization-techniques"
     ],
     "relatedBlogs": [
       "uber-engineering",
@@ -2555,9 +3180,9 @@
       }
     ],
     "relatedArticles": [
+      "linear-algebra-problems-with-solutions",
       "math-formulas-every-student-should-know",
-      "linear-algebra-concepts-for-machine-learning",
-      "math-tricks-to-solve-problems-faster"
+      "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
       "quanta-magazine",
@@ -2701,9 +3326,9 @@
       }
     ],
     "relatedArticles": [
+      "mathematical-optimization-techniques",
       "numpy-examples-for-numerical-computing",
-      "python-libraries-for-data-science",
-      "python-machine-learning-examples"
+      "linear-algebra-problems-with-solutions"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
@@ -2833,9 +3458,9 @@
       }
     ],
     "relatedArticles": [
+      "calculus-formulas-theorems-and-examples",
       "algebra-problems-with-solutions-for-beginners",
-      "linear-algebra-concepts-for-machine-learning",
-      "math-tricks-to-solve-problems-faster"
+      "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",
@@ -2946,9 +3571,9 @@
       }
     ],
     "relatedArticles": [
-      "algebra-problems-with-solutions-for-beginners",
-      "linear-algebra-concepts-for-machine-learning",
-      "math-formulas-every-student-should-know"
+      "advanced-mathematics-concepts-with-applications",
+      "calculus-formulas-theorems-and-examples",
+      "linear-algebra-problems-with-solutions"
     ],
     "relatedBlogs": [
       "betterexplained",
@@ -3069,9 +3694,9 @@
       }
     ],
     "relatedArticles": [
-      "numpy-examples-for-numerical-computing",
-      "algebra-problems-with-solutions-for-beginners",
-      "linear-algebra-concepts-for-machine-learning"
+      "probability-and-statistics-concepts-for-data-science",
+      "advanced-mathematics-concepts-with-applications",
+      "calculus-formulas-theorems-and-examples"
     ],
     "relatedBlogs": [
       "netflix-techblog",
@@ -3158,9 +3783,9 @@
       }
     ],
     "relatedArticles": [
+      "mathematical-optimization-techniques",
       "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis",
-      "python-data-science-projects"
+      "pandas-tips-and-tricks-for-data-analysis"
     ],
     "relatedBlogs": [
       "high-scalability",
@@ -3242,9 +3867,9 @@
       }
     ],
     "relatedArticles": [
+      "mathematical-optimization-techniques",
       "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis",
-      "python-data-science-projects"
+      "pandas-tips-and-tricks-for-data-analysis"
     ],
     "relatedBlogs": [
       "github-engineering",

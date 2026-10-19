@@ -196,6 +196,14 @@ def main():
             if not resolve_internal(dist_dir, href):
                 errors.append(f"[{rel_path}] Broken internal link: {href}")
 
+        # 8b. Images need alt text, and site-hosted images must exist
+        for img in re.findall(r"<img\s[^>]*>", body):
+            if not re.search(r'\salt="', img):
+                errors.append(f"[{rel_path}] Image without alt attribute: {img[:80]}")
+            src_match = re.search(r'\ssrc="(/[^"]*)"', img)
+            if src_match and not src_match.group(1).startswith("//") and not resolve_internal(dist_dir, src_match.group(1)):
+                errors.append(f"[{rel_path}] Missing image file: {src_match.group(1)}")
+
         # 9. Articles should link to at least one other article in their body
         if route.startswith("/articles/"):
             article_body = re.search(r'<div class="article-content">(.*?)</article>', body, re.DOTALL)

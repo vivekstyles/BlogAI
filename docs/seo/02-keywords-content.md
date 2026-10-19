@@ -31,6 +31,11 @@
 | `/articles/foods-rich-in-vitamins-and-minerals` | foods rich in vitamins and minerals | vitamin rich foods, mineral rich foods, foods high in iron/zinc/vitamin D | which foods are high in vitamin D; best food sources of magnesium; foods with vitamin B12 for vegetarians | Informational (reference) | Students, general adults |
 | `/articles/healthy-meal-ideas` | healthy meal ideas | healthy breakfast ideas, healthy lunch ideas, healthy dinner ideas | easy healthy meals for the week; high protein breakfast ideas; healthy packed lunch ideas | Informational | Home cooks, families |
 | `/articles/nutrition-tips-for-a-balanced-diet` | nutrition tips | balanced diet tips, healthy eating tips | how much salt per day; how to read a nutrition label; how to cut sugar | Informational | General adults |
+| `/articles/advanced-mathematics-concepts-with-applications` | advanced mathematics concepts | applications of advanced mathematics, higher math in real life | how is number theory used in cryptography; real-world uses of topology; what is the Fourier transform used for | Informational | University students, curious adults |
+| `/articles/linear-algebra-problems-with-solutions` | linear algebra problems with solutions | linear algebra practice problems, eigenvalue problems with solutions | how to find eigenvalues of a 2x2 matrix; least squares example problem; how to compute an SVD by hand | Informational (practice) | First- and second-year university students |
+| `/articles/calculus-formulas-theorems-and-examples` | calculus formulas and theorems | calculus theorems list, calculus formula sheet with examples | mean value theorem example; divergence theorem example; ratio test example | Informational (reference) | High school AP and university calculus students |
+| `/articles/probability-and-statistics-concepts-for-data-science` | probability and statistics for data science | statistics concepts for machine learning, probability for ML | cross-entropy vs KL divergence; MLE vs MAP; how to calculate A/B test sample size | Informational | Data scientists and ML learners |
+| `/articles/mathematical-optimization-techniques` | optimization techniques | mathematical optimization methods, optimization algorithms in machine learning | Adam vs SGD; what are KKT conditions; simplex method example | Informational | ML engineers, engineering and OR students |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
@@ -60,6 +65,11 @@
 | Healthy foods ↔ Vitamins and minerals | Many of the same foods appear in both | **Keep separate.** The healthy-foods list answers "what should I eat" with short reasons; the vitamins article is a reference with amounts and %DV per food. Each links to the other. |
 | High-protein foods ↔ Healthy foods / meal ideas | Protein foods recur | **Keep separate.** Only the protein article gives protein amounts and targets; the others link to it for numbers. |
 | Nutrition tips ↔ Healthy foods | Overlapping advice on whole grains, fish, salt and sugar | **Keep separate.** Tips are behaviours and limits; the foods list is foods. Watch GSC for "healthy eating tips" landing on the foods page. |
+| Linear algebra problems ↔ Linear algebra for ML | Same topics (eigenvalues, SVD, least squares) | **Keep separate.** Problems are practice with worked solutions; the ML article explains concepts and model usage with NumPy. Each links to the other. |
+| Calculus formulas ↔ Math formulas (limits, derivatives, integrals) | About 20 basic rules overlap | **Keep separate.** The math-formulas sheet keeps a short school-level calculus section; the calculus article adds theorems with hypotheses, series, multivariable and vector calculus and ODEs, and says so in its introduction. Watch GSC for "calculus formulas" landing on the math-formulas page. |
+| Probability concepts for DS ↔ Probability examples | Bayes, distributions, CLT, A/B tests | **Keep separate.** Examples are worked real-life scenarios; the concepts article targets data-science and ML intent (MLE, cross-entropy, ROC, calibration). Its Bayes example is a spam filter, not a medical test. Each links to the other. |
+| Optimization techniques ↔ Linear algebra for ML / ML examples | Gradient descent and least squares | **Keep separate.** The optimization article covers methods across operations research, engineering and ML; it links out for linear algebra and code. |
+| Advanced concepts ↔ other math articles | Short entries on SVD, Fourier, LP, Bayes, shortest paths | **Keep separate.** Breadth overview with applications; each overlapping entry is two or three sentences and links to the in-depth article. |
 
 No consolidation, redirect or unpublishing is recommended.
 
@@ -78,7 +88,8 @@ No consolidation, redirect or unpublishing is recommended.
 ### Cluster B — Math for machine learning
 
 - **Pillar:** linear algebra concepts for ML.
-- **Gaps:** probability for machine learning (could reuse the probability article's Bayes and distribution material, with a different audience and examples), calculus for ML (gradients and backprop in depth), statistics for A/B testing (deeper version of examples 79–88).
+- **Added 2026-10-19:** probability and statistics concepts for data science and ML, and mathematical optimization techniques (closing the first gap listed here before). Linear algebra problems, a calculus formulas and theorems reference, and an advanced-concepts overview extend Cluster A. All five use SVG diagrams generated by `scripts/diagrams/make_math_diagrams.py` and cross-link to each other and to the existing math articles.
+- **Gaps:** calculus for ML (gradients and backprop in depth), statistics for A/B testing (deeper version of examples 79–88 and concepts 61–66).
 
 ### Cluster C — Reading technical writing (directory-aligned)
 
