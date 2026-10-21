@@ -8,6 +8,7 @@ updatedAt: 2026-10-14
 status: published
 categories:
   - Engineering
+  - Programming and Technology
 tags:
   - rss
   - opml

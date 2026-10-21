@@ -97,6 +97,22 @@ export const categories = [
     ]
   },
   {
+    "name": "Programming and Technology",
+    "slug": "programming-and-technology",
+    "description": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
+    "count": 10,
+    "popularTags": [
+      "careers",
+      "community",
+      "computer hardware",
+      "coverage",
+      "cpython",
+      "css",
+      "data science",
+      "engineering management"
+    ]
+  },
+  {
     "name": "Science",
     "slug": "science",
     "description": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",

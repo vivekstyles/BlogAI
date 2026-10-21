@@ -8,6 +8,7 @@ updatedAt: 2026-10-16
 status: published
 categories:
   - Engineering
+  - Programming and Technology
 tags:
   - architecture
   - scalability

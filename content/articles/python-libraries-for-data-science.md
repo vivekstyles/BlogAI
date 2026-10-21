@@ -8,6 +8,7 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 status: published
 categories:
+  - Programming and Technology
   - Engineering
 tags:
   - python
@@ -526,6 +527,7 @@ This snippet was run with NumPy 2.3.5, pandas 3.0.3, scikit-learn 1.9.0 and Matp
 
 ## Where to go next
 
+- New to these tools? Start with the [20 best Python libraries for data science and machine learning](/articles/python-libraries-for-machine-learning), a learning path with a tested example for each.
 - Practice with the core stack in [101 Python data science projects for beginners to advanced](/articles/python-data-science-projects).
 - Get fluent in pandas with [100 pandas tips and tricks for data analysis](/articles/pandas-tips-and-tricks-for-data-analysis).
 - Master arrays with [101 NumPy examples to master numerical computing](/articles/numpy-examples-for-numerical-computing).

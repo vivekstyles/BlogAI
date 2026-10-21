@@ -8,6 +8,7 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 status: published
 categories:
+  - Programming and Technology
   - Engineering
 tags:
   - python

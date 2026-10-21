@@ -7,7 +7,10 @@ describe('Service: blogService', () => {
     const blogs = blogService.getAllBlogs();
     const categories = blogService.getCategories();
     expect(blogs.length).toBeGreaterThan(0);
-    expect(categories.length).toBe(6);
+    // One category per folder in Categories/, and every category has blogs
+    const blogCategories = new Set(blogs.map((b) => b.category));
+    expect(categories.map((c) => c.name).sort()).toEqual([...blogCategories].sort());
+    expect(categories.some((c) => c.name === 'Programming and Technology')).toBe(true);
   });
 
   it('retrieves blog by slug accurately', () => {

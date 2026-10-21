@@ -25,6 +25,7 @@ CATEGORY_DESCRIPTIONS = {
     "Artificial Intelligence": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
     "Engineering": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
     "Mathematics": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
+    "Programming and Technology": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
     "Physics": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
     "Science": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
     "Automobile": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",

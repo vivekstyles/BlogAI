@@ -83,7 +83,7 @@ export function Directory() {
     '@type': 'CollectionPage',
     name: 'Community Blog Directory',
     description:
-      'Community-curated directory of independent blogs in AI, engineering, mathematics, physics, science, automotive technology, and nutrition.',
+      'Community-curated directory of independent blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.',
     url: `${SITE_URL}/directory`,
     numberOfItems: allBlogs.length,
     isPartOf: { '@type': 'WebSite', name: 'BlogAI', url: SITE_URL },
@@ -93,7 +93,7 @@ export function Directory() {
     <div className="directory-page">
       <SEOHead
         title="Community Blog Directory"
-        description={`Search and filter ${allBlogs.length} community-curated independent blogs across AI, engineering, mathematics, physics, science, automotive technology, and nutrition.`}
+        description={`Search and filter ${allBlogs.length} community-curated independent blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.`}
         canonicalPath="/directory"
         jsonLd={directorySchema}
       />

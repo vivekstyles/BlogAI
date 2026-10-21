@@ -71,6 +71,18 @@
       <outline type="rss" text="Shtetl-Optimized" title="Shtetl-Optimized" xmlUrl="https://scottaaronson.blog/?feed=rss2" htmlUrl="https://scottaaronson.blog/" category="Physics" />
       <outline type="rss" text="Starts With A Bang" title="Starts With A Bang" xmlUrl="https://bigthink.com/category/starts-with-a-bang/feed/" htmlUrl="https://bigthink.com/starts-with-a-bang/" category="Physics" />
     </outline>
+    <outline text="Programming and Technology" title="Programming and Technology">
+      <outline type="rss" text="Coding Horror" title="Coding Horror" xmlUrl="https://blog.codinghorror.com/rss/" htmlUrl="https://blog.codinghorror.com/" category="Programming and Technology" />
+      <outline type="rss" text="Dan Luu" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" htmlUrl="https://danluu.com/" category="Programming and Technology" />
+      <outline type="rss" text="Josh W. Comeau" title="Josh W. Comeau" xmlUrl="https://www.joshwcomeau.com/rss.xml" htmlUrl="https://www.joshwcomeau.com/" category="Programming and Technology" />
+      <outline type="rss" text="Ned Batchelder" title="Ned Batchelder" xmlUrl="https://nedbatchelder.com/blog/rss.xml" htmlUrl="https://nedbatchelder.com/blog/" category="Programming and Technology" />
+      <outline type="rss" text="Python Insider" title="Python Insider" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/" category="Programming and Technology" />
+      <outline type="rss" text="Python Software Foundation News" title="Python Software Foundation News" xmlUrl="https://pyfound.blogspot.com/feeds/posts/default" htmlUrl="https://pyfound.blogspot.com/" category="Programming and Technology" />
+      <outline type="rss" text="Real Python" title="Real Python" xmlUrl="https://realpython.com/atom.xml" htmlUrl="https://realpython.com/" category="Programming and Technology" />
+      <outline type="rss" text="Tall Snarky Canadian" title="Tall Snarky Canadian" xmlUrl="https://snarky.ca/rss/" htmlUrl="https://snarky.ca/" category="Programming and Technology" />
+      <outline type="rss" text="The Pragmatic Engineer" title="The Pragmatic Engineer" xmlUrl="https://newsletter.pragmaticengineer.com/feed" htmlUrl="https://newsletter.pragmaticengineer.com/" category="Programming and Technology" />
+      <outline type="rss" text="Trey Hunner" title="Trey Hunner" xmlUrl="https://treyhunner.com/atom.xml" htmlUrl="https://treyhunner.com/" category="Programming and Technology" />
+    </outline>
     <outline text="Science" title="Science">
       <outline type="rss" text="Ars Technica Science" title="Ars Technica Science" xmlUrl="https://feeds.arstechnica.com/arstechnica/science" htmlUrl="https://arstechnica.com/science/" category="Science" />
       <outline type="rss" text="In the Pipeline (Derek Lowe)" title="In the Pipeline (Derek Lowe)" xmlUrl="https://www.science.org/rss/blogs/pipeline.xml" htmlUrl="https://www.science.org/blogs/pipeline" category="Science" />

@@ -10,6 +10,7 @@ status: published
 categories:
   - Artificial Intelligence
   - Engineering
+  - Programming and Technology
 tags:
   - python
   - machine learning

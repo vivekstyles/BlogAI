@@ -1,5 +1,554 @@
 [
   {
+    "slug": "python-automation-scripts",
+    "title": "15 Python Automation Scripts to Save Time at Work",
+    "seoTitle": "",
+    "description": "15 tested Python scripts for everyday office work, from sorting files and merging spreadsheets to PDFs, emails and API reports, with dry runs and safe defaults.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "automation",
+        "slug": "automation"
+      },
+      {
+        "name": "productivity",
+        "slug": "productivity"
+      },
+      {
+        "name": "scripting",
+        "slug": "scripting"
+      },
+      {
+        "name": "excel",
+        "slug": "excel"
+      },
+      {
+        "name": "pdf",
+        "slug": "pdf"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/python-automation-scripts",
+    "isCanonicalLocal": true,
+    "wordCount": 2533,
+    "readingTimeMinutes": 12,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "setting-up",
+        "text": "Setting up",
+        "level": 2
+      },
+      {
+        "id": "files-and-folders",
+        "text": "Files and folders",
+        "level": 2
+      },
+      {
+        "id": "spreadsheets-and-reports",
+        "text": "Spreadsheets and reports",
+        "level": 2
+      },
+      {
+        "id": "monitoring-and-data",
+        "text": "Monitoring and data",
+        "level": 2
+      },
+      {
+        "id": "run-scripts-on-a-schedule",
+        "text": "Run scripts on a schedule",
+        "level": 2
+      },
+      {
+        "id": "habits-that-keep-automation-safe-and-useful",
+        "text": "Habits that keep automation safe and useful",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-interview-questions",
+      "python-libraries-for-machine-learning",
+      "python-projects-for-beginners"
+    ],
+    "relatedBlogs": [
+      "ned-batchelder",
+      "python-insider",
+      "python-software-foundation-news"
+    ]
+  },
+  {
+    "slug": "python-interview-questions",
+    "title": "30 Python Interview Questions and Answers for Beginners and Experienced Developers",
+    "seoTitle": "30 Python Interview Questions and Answers (2026)",
+    "description": "30 Python interview questions with clear answers and code run on Python 3.14, from mutable defaults and scope to the GIL, asyncio, the MRO and Python 3.15.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "interview questions",
+        "slug": "interview-questions"
+      },
+      {
+        "name": "programming",
+        "slug": "programming"
+      },
+      {
+        "name": "career",
+        "slug": "career"
+      },
+      {
+        "name": "asyncio",
+        "slug": "asyncio"
+      },
+      {
+        "name": "concurrency",
+        "slug": "concurrency"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/python-interview-questions",
+    "isCanonicalLocal": true,
+    "wordCount": 3859,
+    "readingTimeMinutes": 18,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "python-fundamentals-questions-115",
+        "text": "Python fundamentals (questions 1–15)",
+        "level": 2
+      },
+      {
+        "id": "questions-for-experienced-developers-1630",
+        "text": "Questions for experienced developers (16–30)",
+        "level": 2
+      },
+      {
+        "id": "newer-python-features-worth-knowing-in-2026",
+        "text": "Newer Python features worth knowing in 2026",
+        "level": 2
+      },
+      {
+        "id": "how-to-prepare-in-the-last-week",
+        "text": "How to prepare in the last week",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-projects-for-beginners",
+      "python-automation-scripts",
+      "python-libraries-for-machine-learning"
+    ],
+    "relatedBlogs": [
+      "trey-hunner",
+      "coding-horror",
+      "dan-luu"
+    ]
+  },
+  {
+    "slug": "python-libraries-for-machine-learning",
+    "title": "20 Best Python Libraries for Data Science and Machine Learning",
+    "seoTitle": "20 Python Libraries for Data Science and Machine Learning",
+    "description": "The 20 Python libraries worth learning first for data science and machine learning, in learning order, each with a short example we ran on current versions.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "data science",
+        "slug": "data-science"
+      },
+      {
+        "name": "scikit-learn",
+        "slug": "scikit-learn"
+      },
+      {
+        "name": "pytorch",
+        "slug": "pytorch"
+      },
+      {
+        "name": "libraries",
+        "slug": "libraries"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/python-libraries-for-machine-learning",
+    "isCanonicalLocal": true,
+    "wordCount": 2795,
+    "readingTimeMinutes": 13,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "versions-used-and-how-to-install",
+        "text": "Versions used and how to install",
+        "level": 2
+      },
+      {
+        "id": "load-and-shape-data",
+        "text": "Load and shape data",
+        "level": 2
+      },
+      {
+        "id": "explore-visualize-and-test",
+        "text": "Explore, visualize and test",
+        "level": 2
+      },
+      {
+        "id": "classical-machine-learning",
+        "text": "Classical machine learning",
+        "level": 2
+      },
+      {
+        "id": "deep-learning",
+        "text": "Deep learning",
+        "level": 2
+      },
+      {
+        "id": "track-experiments-and-share-work",
+        "text": "Track experiments and share work",
+        "level": 2
+      },
+      {
+        "id": "which-libraries-to-learn-first",
+        "text": "Which libraries to learn first",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-when-choosing-libraries",
+        "text": "Common mistakes when choosing libraries",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-machine-learning-examples",
+      "feature-engineering-techniques",
+      "machine-learning-algorithms-explained"
+    ],
+    "relatedBlogs": [
+      "ahead-of-ai",
+      "real-python",
+      "andrej-karpathy-blog"
+    ]
+  },
+  {
+    "slug": "python-projects-for-beginners",
+    "title": "25 Best Python Projects for Beginners to Build in 2026",
+    "seoTitle": "25 Python Projects for Beginners to Build in 2026",
+    "description": "25 Python projects for beginners in three levels, from a guessing game to a Flask app, each with the skills it teaches, tested starter code and a stretch goal.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "beginners",
+        "slug": "beginners"
+      },
+      {
+        "name": "learn to code",
+        "slug": "learn-to-code"
+      },
+      {
+        "name": "portfolio",
+        "slug": "portfolio"
+      },
+      {
+        "name": "programming",
+        "slug": "programming"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/python-projects-for-beginners",
+    "isCanonicalLocal": true,
+    "wordCount": 3245,
+    "readingTimeMinutes": 15,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-use-this-list",
+        "text": "How to use this list",
+        "level": 2
+      },
+      {
+        "id": "level-1-first-programs-projects-18",
+        "text": "Level 1: first programs (projects 1–8)",
+        "level": 2
+      },
+      {
+        "id": "level-2-data-files-and-classes-projects-917",
+        "text": "Level 2: data, files and classes (projects 9–17)",
+        "level": 2
+      },
+      {
+        "id": "level-3-libraries-apis-and-apps-projects-1825",
+        "text": "Level 3: libraries, APIs and apps (projects 18–25)",
+        "level": 2
+      },
+      {
+        "id": "what-to-do-after-these-projects",
+        "text": "What to do after these projects",
+        "level": 2
+      },
+      {
+        "id": "common-beginner-mistakes",
+        "text": "Common beginner mistakes",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-data-science-projects",
+      "python-interview-questions",
+      "machine-learning-projects"
+    ],
+    "relatedBlogs": [
+      "trey-hunner",
+      "coding-horror",
+      "dan-luu"
+    ]
+  },
+  {
+    "slug": "python-web-scraping-techniques",
+    "title": "10 Best Python Web Scraping Techniques to Extract Data from Websites",
+    "seoTitle": "10 Python Web Scraping Techniques (With Working Code)",
+    "description": "10 Python web scraping techniques with code tested on practice sites, from robots.txt and Beautiful Soup to hidden JSON APIs, async, Playwright and Scrapy.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "web scraping",
+        "slug": "web-scraping"
+      },
+      {
+        "name": "beautiful soup",
+        "slug": "beautiful-soup"
+      },
+      {
+        "name": "scrapy",
+        "slug": "scrapy"
+      },
+      {
+        "name": "playwright",
+        "slug": "playwright"
+      },
+      {
+        "name": "data collection",
+        "slug": "data-collection"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "canonicalUrl": "https://blogai.space/articles/python-web-scraping-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 2620,
+    "readingTimeMinutes": 12,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "before-you-scrape-is-it-allowed",
+        "text": "Before you scrape: is it allowed?",
+        "level": 2
+      },
+      {
+        "id": "1-check-robotstxt-sitemaps-and-official-apis-first",
+        "text": "1. Check robots.txt, sitemaps and official APIs first",
+        "level": 2
+      },
+      {
+        "id": "2-parse-static-html-with-requests-and-beautiful-soup",
+        "text": "2. Parse static HTML with Requests and Beautiful Soup",
+        "level": 2
+      },
+      {
+        "id": "3-select-precisely-with-css-selectors-and-xpath",
+        "text": "3. Select precisely with CSS selectors and XPath",
+        "level": 2
+      },
+      {
+        "id": "4-read-html-tables-directly-with-pandas",
+        "text": "4. Read HTML tables directly with pandas",
+        "level": 2
+      },
+      {
+        "id": "5-follow-pagination-and-crawl-politely",
+        "text": "5. Follow pagination and crawl politely",
+        "level": 2
+      },
+      {
+        "id": "6-find-the-hidden-json-api-in-the-browsers-network-tab",
+        "text": "6. Find the hidden JSON API in the browser's Network tab",
+        "level": 2
+      },
+      {
+        "id": "7-extract-embedded-json-and-json-ld-from-the-page-source",
+        "text": "7. Extract embedded JSON and JSON-LD from the page source",
+        "level": 2
+      },
+      {
+        "id": "8-make-requests-robust-retries-rate-limits-and-identification",
+        "text": "8. Make requests robust: retries, rate limits and identification",
+        "level": 2
+      },
+      {
+        "id": "9-fetch-many-pages-concurrently-with-asyncio-and-httpx",
+        "text": "9. Fetch many pages concurrently with asyncio and HTTPX",
+        "level": 2
+      },
+      {
+        "id": "10-use-a-headless-browser-for-javascript-only-pages",
+        "text": "10. Use a headless browser for JavaScript-only pages",
+        "level": 2
+      },
+      {
+        "id": "scaling-up-when-to-use-scrapy",
+        "text": "Scaling up: when to use Scrapy",
+        "level": 2
+      },
+      {
+        "id": "clean-store-and-maintain-your-data",
+        "text": "Clean, store and maintain your data",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes",
+        "text": "Common mistakes",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "python-automation-scripts",
+      "python-interview-questions",
+      "python-libraries-for-machine-learning"
+    ],
+    "relatedBlogs": [
+      "ned-batchelder",
+      "python-insider",
+      "python-software-foundation-news"
+    ]
+  },
+  {
     "slug": "ai-applications-healthcare-finance-education",
     "title": "30 Best AI Applications Revolutionizing Healthcare, Finance, and Education",
     "seoTitle": "30 AI Applications in Healthcare, Finance and Education",
@@ -984,9 +1533,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "real-python",
       "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -2828,6 +3377,10 @@
     "status": "published",
     "categories": [
       {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
         "name": "Engineering",
         "slug": "engineering"
       },
@@ -2934,13 +3487,13 @@
     ],
     "relatedArticles": [
       "python-libraries-for-data-science",
-      "machine-learning-algorithms-explained",
-      "linear-algebra-concepts-for-machine-learning"
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-data-science-projects"
     ],
     "relatedBlogs": [
-      "simon-willisons-weblog",
-      "3blue1brown-blog",
-      "acm-queue"
+      "real-python",
+      "ned-batchelder",
+      "python-insider"
     ]
   },
   {
@@ -2954,6 +3507,10 @@
     "updatedAt": "2026-10-17",
     "status": "published",
     "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -3051,14 +3608,14 @@
       }
     ],
     "relatedArticles": [
-      "feature-engineering-techniques",
       "python-data-science-projects",
-      "python-libraries-for-data-science"
+      "python-libraries-for-data-science",
+      "numpy-examples-for-numerical-computing"
     ],
     "relatedBlogs": [
-      "simon-willisons-weblog",
-      "acm-queue",
-      "cloudflare-blog"
+      "real-python",
+      "ned-batchelder",
+      "python-insider"
     ]
   },
   {
@@ -3568,6 +4125,10 @@
     "status": "published",
     "categories": [
       {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
         "name": "Engineering",
         "slug": "engineering"
       }
@@ -3643,14 +4204,14 @@
       }
     ],
     "relatedArticles": [
-      "feature-engineering-techniques",
-      "machine-learning-projects",
-      "python-libraries-for-data-science"
+      "python-libraries-for-data-science",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-machine-learning-examples"
     ],
     "relatedBlogs": [
-      "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "real-python",
+      "ned-batchelder",
+      "python-insider"
     ]
   },
   {
@@ -3664,6 +4225,10 @@
     "updatedAt": "2026-10-17",
     "status": "published",
     "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
       {
         "name": "Engineering",
         "slug": "engineering"
@@ -3699,7 +4264,7 @@
     "imageAlt": "",
     "canonicalUrl": "https://blogai.space/articles/python-libraries-for-data-science",
     "isCanonicalLocal": true,
-    "wordCount": 4435,
+    "wordCount": 4461,
     "readingTimeMinutes": 20,
     "showToc": true,
     "toc": [
@@ -3800,14 +4365,14 @@
       }
     ],
     "relatedArticles": [
-      "feature-engineering-techniques",
       "python-data-science-projects",
-      "python-machine-learning-examples"
+      "python-machine-learning-examples",
+      "feature-engineering-techniques"
     ],
     "relatedBlogs": [
-      "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "real-python",
+      "ned-batchelder",
+      "python-insider"
     ]
   },
   {
@@ -3828,6 +4393,10 @@
       {
         "name": "Engineering",
         "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
       }
     ],
     "tags": [
@@ -3927,14 +4496,14 @@
       }
     ],
     "relatedArticles": [
+      "python-libraries-for-machine-learning",
       "feature-engineering-techniques",
-      "machine-learning-algorithms-explained",
-      "machine-learning-applications"
+      "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "real-python",
       "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -5013,7 +5582,7 @@
     "relatedBlogs": [
       "netflix-techblog",
       "quanta-magazine",
-      "3blue1brown-blog"
+      "real-python"
     ]
   },
   {
@@ -5030,6 +5599,10 @@
       {
         "name": "Engineering",
         "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
       }
     ],
     "tags": [
@@ -5095,9 +5668,9 @@
       }
     ],
     "relatedArticles": [
-      "ai-applications-healthcare-finance-education",
-      "ai-future-of-work-examples",
-      "ai-in-business-operations-marketing-sales"
+      "numpy-examples-for-numerical-computing",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-data-science-projects"
     ],
     "relatedBlogs": [
       "high-scalability",
@@ -5119,6 +5692,10 @@
       {
         "name": "Engineering",
         "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
       }
     ],
     "tags": [
@@ -5179,9 +5756,9 @@
       }
     ],
     "relatedArticles": [
-      "ai-future-of-work-examples",
-      "ai-applications-healthcare-finance-education",
-      "ai-in-business-operations-marketing-sales"
+      "numpy-examples-for-numerical-computing",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "python-data-science-projects"
     ],
     "relatedBlogs": [
       "github-engineering",

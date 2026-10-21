@@ -36,6 +36,29 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Programming and Technology category and Python articles (2026-10-21)
+
+New category `/category/programming-and-technology` (in `sitemap-categories.xml`) and five published Python articles, all with `publishedAt` 2026-10-21:
+
+- `/articles/python-projects-for-beginners` — 25 projects in three levels (1 figure)
+- `/articles/python-automation-scripts` — 15 complete office automation scripts, dry run by default (1 figure)
+- `/articles/python-libraries-for-machine-learning` — 20 libraries as a learning path, also in Artificial Intelligence (1 figure)
+- `/articles/python-interview-questions` — 30 questions with answers (2 figures)
+- `/articles/python-web-scraping-techniques` — 10 techniques plus Scrapy, with a legality and politeness section (1 figure)
+
+Details:
+
+- **Code was run before publication.** Every program and snippet was executed in October 2026 (Python 3.13 for libraries, automation, scraping and projects; Python 3.14.3 for the interview answers) and the outputs quoted are real. Scraping examples ran against the toscrape.com practice sites, python.org's `robots.txt` and one blogai.space page. Testing surfaced four version details now explained in the articles: books.toscrape.com sends no charset, so `response.text` mangles "£"; LightGBM 4.7 deprecates `eval_set` for `eval_X`/`eval_y`; MLflow 3.17 refuses the old `./mlruns` file store by default; the Frankfurter `/v1` API is deprecated in favor of `/v2`. urllib3's backoff sequence (0, 2, 4, 8 s) was checked rather than assumed.
+- **Facts checked against primary sources:** python.org downloads and PEP 790 (3.15.0 released 2026-10-09), What's New in 3.14 and 3.15, RFC 9309, PyPI release data for every library version quoted (accessed 2026-10-21), Open-Meteo and Frankfurter terms, Google's app-password help page, Project Gutenberg's robot policy. Reddit threads were not reachable directly; community advice is attributed as opinion only.
+- **Overlap:** the 20-library article overlaps the existing 100-library guide. It targets "python libraries for machine learning" with a learning-path format, and the 100 guide now links to it. See [02-keywords-content.md](02-keywords-content.md) for this and three smaller overlap decisions.
+- **Category membership:** pandas tips, NumPy examples, the 100-library guide and data science projects list Programming and Technology first; Python ML examples, reading engineering blogs and following blogs with RSS list it as a secondary category. Article URLs did not change; `updatedAt` was not bumped, because the text did not change apart from one added link in the 100-library guide.
+- **10 directory blogs** in `Categories/Programming and Technology/blogs.csv`: Real Python, Python Insider, Python Software Foundation News, Ned Batchelder, Trey Hunner, Tall Snarky Canadian (Brett Cannon), The Pragmatic Engineer, Dan Luu, Coding Horror, Josh W. Comeau. Each homepage and feed returned 200 with items from 2026 on 2026-10-21. Hynek Schlawack's blog was considered and left out because its newest post was from September 2025.
+- **Site copy:** category lists in meta descriptions and hero text now include programming (`index.html`, `SEOHead.jsx`, `Home.jsx`, `Directory.jsx`, `prerender.js`); "mathematics" became "math" and "automotive technology" became "automotive tech" in three descriptions to stay within 160 characters.
+- **Test fix:** `src/test/services.test.js` hard-coded 6 categories, which had been stale since the Artificial Intelligence category; it now checks that the category list matches the categories the blogs use.
+- **Figures:** 6 SVGs from the new `scripts/diagrams/make_python_diagrams.py`, which reuses the styling of `make_ml_diagrams.py`. The list-versus-set chart is measured with `timeit` on the machine that runs the script; its caption says so.
+
+`npm run ci` passed: CSV lint, 73 of 73 tests, production build (459 pages, 228 sitemap URLs) and `validate_seo.py`. One remaining warning: the directory page title "Python Software Foundation News - Programming and Technology Blog" is 65 characters; the blog's real name was kept.
+
 ### AI in industry and work articles with diagrams (2026-10-20)
 
 Five new published articles. No existing URLs changed.

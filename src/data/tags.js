@@ -7,6 +7,12 @@ export const tags = [
     "blogCount": 7
   },
   {
+    "name": "python",
+    "slug": "python",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
     "name": "ai research",
     "slug": "ai-research",
     "count": 6,
@@ -43,8 +49,26 @@ export const tags = [
     "blogCount": 3
   },
   {
+    "name": "programming",
+    "slug": "programming",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
     "name": "security",
     "slug": "security",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "software engineering",
+    "slug": "software-engineering",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "web development",
+    "slug": "web-development",
     "count": 3,
     "blogCount": 3
   },
@@ -97,6 +121,12 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "cpython",
+    "slug": "cpython",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "developer tools",
     "slug": "developer-tools",
     "count": 2,
@@ -115,6 +145,12 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "frontend",
+    "slug": "frontend",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "geometry",
     "slug": "geometry",
     "count": 2,
@@ -123,6 +159,12 @@ export const tags = [
   {
     "name": "git",
     "slug": "git",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "javascript",
+    "slug": "javascript",
     "count": 2,
     "blogCount": 2
   },
@@ -187,6 +229,18 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "open source",
+    "slug": "open-source",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "packaging",
+    "slug": "packaging",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "particle physics",
     "slug": "particle-physics",
     "count": 2,
@@ -195,6 +249,12 @@ export const tags = [
   {
     "name": "peer review",
     "slug": "peer-review",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "performance",
+    "slug": "performance",
     "count": 2,
     "blogCount": 2
   },
@@ -219,6 +279,12 @@ export const tags = [
   {
     "name": "pure mathematics",
     "slug": "pure-mathematics",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "react",
+    "slug": "react",
     "count": 2,
     "blogCount": 2
   },
@@ -253,8 +319,26 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "software development",
+    "slug": "software-development",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "systems",
     "slug": "systems",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "tech industry",
+    "slug": "tech-industry",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "testing",
+    "slug": "testing",
     "count": 2,
     "blogCount": 2
   },
@@ -391,6 +475,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "careers",
+    "slug": "careers",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "category theory",
     "slug": "category-theory",
     "count": 1,
@@ -439,6 +529,18 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "community",
+    "slug": "community",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "computer hardware",
+    "slug": "computer-hardware",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "computer science",
     "slug": "computer-science",
     "count": 1,
@@ -457,8 +559,26 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "coverage",
+    "slug": "coverage",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "css",
+    "slug": "css",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "culture",
     "slug": "culture",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "data science",
+    "slug": "data-science",
     "count": 1,
     "blogCount": 1
   },
@@ -535,6 +655,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "engineering management",
+    "slug": "engineering-management",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "environmental science",
     "slug": "environmental-science",
     "count": 1,
@@ -567,12 +693,6 @@ export const tags = [
   {
     "name": "foundations",
     "slug": "foundations",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "frontend",
-    "slug": "frontend",
     "count": 1,
     "blogCount": 1
   },
@@ -631,6 +751,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "idiomatic python",
+    "slug": "idiomatic-python",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "industry",
     "slug": "industry",
     "count": 1,
@@ -651,12 +777,6 @@ export const tags = [
   {
     "name": "intuitive math",
     "slug": "intuitive-math",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "javascript",
-    "slug": "javascript",
     "count": 1,
     "blogCount": 1
   },
@@ -799,12 +919,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "performance",
-    "slug": "performance",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "pharma",
     "slug": "pharma",
     "count": 1,
@@ -837,6 +951,12 @@ export const tags = [
   {
     "name": "popular physics",
     "slug": "popular-physics",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "programming languages",
+    "slug": "programming-languages",
     "count": 1,
     "blogCount": 1
   },
@@ -877,12 +997,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "python",
-    "slug": "python",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "pytorch",
     "slug": "pytorch",
     "count": 1,
@@ -919,12 +1033,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "react",
-    "slug": "react",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "recommender systems",
     "slug": "recommender-systems",
     "count": 1,
@@ -939,6 +1047,12 @@ export const tags = [
   {
     "name": "relativity",
     "slug": "relativity",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "release notes",
+    "slug": "release-notes",
     "count": 1,
     "blogCount": 1
   },
@@ -993,12 +1107,6 @@ export const tags = [
   {
     "name": "software architecture",
     "slug": "software-architecture",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "software engineering",
-    "slug": "software-engineering",
     "count": 1,
     "blogCount": 1
   },
@@ -1063,6 +1171,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "teaching",
+    "slug": "teaching",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "technology",
     "slug": "technology",
     "count": 1,
@@ -1105,6 +1219,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "tutorials",
+    "slug": "tutorials",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "vegetarian",
     "slug": "vegetarian",
     "count": 1,
@@ -1113,12 +1233,6 @@ export const tags = [
   {
     "name": "videos",
     "slug": "videos",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "web development",
-    "slug": "web-development",
     "count": 1,
     "blogCount": 1
   },
