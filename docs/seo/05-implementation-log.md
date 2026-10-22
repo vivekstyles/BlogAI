@@ -36,6 +36,31 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Google Search Central documentation audit (2026-10-23)
+
+Audited the site against the guides in [Google Search Central](https://developers.google.com/search/docs) that apply to a content site with a blog directory. Ecommerce, local business, jobs, recipes, video, AMP, Web Stories and international guides do not apply.
+
+| Guide | Finding | Change |
+|---|---|---|
+| Favicons | Only `favicon.svg`; SVG is not a supported favicon format | `favicon.ico` (16/32/48), `favicon-96x96.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` rendered from the SVG; linked in `index.html` and the manifest |
+| Site names | `og:site_name` "BlogAI Directory" vs WebSite `name` "BlogAI"; retired sitelinks search box `SearchAction` | `og:site_name` = BlogAI; WebSite gets `@id`, `alternateName` ["BlogAI Directory", "blogai.space"]; `SearchAction` removed (`buildHomeSchema` in `src/utils/seo.js`) |
+| Organization | No Organization markup or logo | Home page Organization with a 512x512 PNG logo; BlogPosting `publisher` references it by `@id` |
+| Article | Author had no `url`; `image` never set | Organization authors get `url` (home page, per the guide). `image` lists the featured image and the site-hosted figures in the body (`contentImages`, collected in `build_articles.js`). Articles without figures have no image |
+| Google Discover, robots meta tag | No `max-image-preview:large` | Indexable pages use `index, follow, max-image-preview:large` (`INDEXABLE_ROBOTS`); noindex pages are unchanged |
+| Byline dates | "Published" label was screen-reader only | Visible on the article page (React and prerendered HTML); cards are unchanged |
+| Image sitemaps | Article figures not listed | `<image:image>` entries in `sitemap-articles.xml` (59 images) |
+| Sitemaps (RSS) | No feed for first-party articles | `/feed.xml` (RSS 2.0, canonical-local articles only), linked with `rel="alternate"` |
+| Breadcrumb | Covered in the entry below | — |
+
+- Already compliant, verified live with `curl`: real 404 status codes for unknown URLs, HTTP→HTTPS 308, trailing-slash variants canonicalize to the slashless URL, crawlable `<a href>` links with History API routing, a single canonical, `noindex` on the client 404 view, `lang="en"`, viewport, and lazy-loaded figures with width and height.
+- Validator additions: `feed.xml` validity and sitemap consistency, image sitemap files exist, raster favicon and logo files exist.
+- Checks run: `npm run ci` (77 tests passed; 459 pages; validator passed with one existing title warning). In `vite preview`, the home page had WebSite and Organization; client navigation to an article had one robots tag, BlogPosting and BreadcrumbList, and a visible "Published" date.
+- Outside the code (owner action):
+  - `www.blogai.space` redirects with **307** (temporary). In Vercel → Settings → Domains, set the www redirect to 308 (permanent).
+  - The About and Privacy pages say "zero tracking" and "no analytics cookies", but `index.html` loads Google Analytics (gtag). Change either the copy or the tag so the pages stay accurate.
+  - Social `og:image`: the in-article figures are SVG, which social platforms do not render, so no `og:image` was added (see P2-4).
+  - After deploying: run the Rich Results Test on the home page and one article, then resubmit `sitemap.xml` in Search Console.
+
 ### Breadcrumb structured data on listing and detail pages (2026-10-23)
 
 - Evidence: the Search Console Breadcrumbs report listed only article URLs. Article markup already met [Google's breadcrumb requirements](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb), but `/articles`, `/directory`, category, tag and `/blog/` pages showed a visible breadcrumb with no `BreadcrumbList` JSON-LD.

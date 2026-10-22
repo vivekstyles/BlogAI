@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import JsonLd from './JsonLd';
-import { SITE_URL, formatPageTitle } from '../../utils/seo';
+import { SITE_URL, formatPageTitle, INDEXABLE_ROBOTS } from '../../utils/seo';
 
 const DEFAULT_DESC =
   'Discover, search, filter, and subscribe to high-quality blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.';
@@ -10,7 +10,7 @@ export function SEOHead({
   description = DEFAULT_DESC,
   canonicalPath = '',
   type = 'website',
-  robots = 'index, follow',
+  robots = INDEXABLE_ROBOTS,
   jsonLd = null,
   canonicalUrl: canonicalUrlOverride = '',
   image = '',

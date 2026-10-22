@@ -82,8 +82,8 @@ export function Category() {
     url: `${SITE_URL}/category/${category.slug}`,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'BlogAI Directory',
-      url: SITE_URL,
+      name: 'BlogAI',
+      url: `${SITE_URL}/`,
     },
     about: {
       '@type': 'Thing',

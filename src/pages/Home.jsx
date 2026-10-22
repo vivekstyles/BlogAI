@@ -4,7 +4,7 @@ import { Compass, Sparkles, PlusCircle, FileText, ArrowRight } from 'lucide-reac
 import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL } from '../utils/seo';
+import { buildHomeSchema } from '../utils/seo';
 import CategoryCard from '../components/categories/CategoryCard';
 import BlogCard from '../components/blogs/BlogCard';
 import ArticleCard from '../components/articles/ArticleCard';
@@ -25,27 +25,13 @@ export function Home() {
     return <Navigate to={`/directory?${searchParams.toString()}`} replace />;
   }
 
-  const homeSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'BlogAI',
-    url: SITE_URL,
-    description:
-      'Original articles and a community-curated directory of high-quality blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/directory?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
   return (
     <div className="home-page">
       <SEOHead
         title="Technical Articles & Curated Blog Directory"
         description={`Read original articles and discover ${totalBlogs}+ community-curated blogs across AI, programming, engineering, math, physics, science, automotive tech, and nutrition.`}
         canonicalPath="/"
-        jsonLd={homeSchema}
+        jsonLd={buildHomeSchema()}
       />
 
       {/* Hero Section */}

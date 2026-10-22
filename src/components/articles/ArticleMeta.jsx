@@ -5,8 +5,9 @@ import './ArticleMeta.css';
 
 /**
  * Author, publication/update dates, and reading time for a first-party article.
+ * labelDates shows the "Published" label (article pages); cards keep it for screen readers only.
  */
-export function ArticleMeta({ article, showAuthor = true, showUpdated = true, className = '' }) {
+export function ArticleMeta({ article, showAuthor = true, showUpdated = true, labelDates = false, className = '' }) {
   if (!article) return null;
   const wasUpdated = showUpdated && article.updatedAt && article.updatedAt !== article.publishedAt;
 
@@ -20,7 +21,7 @@ export function ArticleMeta({ article, showAuthor = true, showUpdated = true, cl
       )}
       <span className="article-meta-item">
         <CalendarDays size={14} aria-hidden="true" />
-        <span className="sr-only">Published </span>
+        <span className={labelDates ? undefined : 'sr-only'}>Published </span>
         <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
       </span>
       {wasUpdated && (

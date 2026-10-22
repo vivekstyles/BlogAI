@@ -297,6 +297,8 @@ export function compileArticle({ fileName, source, categories }) {
   }
   const { html, headings } = rendered;
   const wordCount = countWords(body);
+  // Site-hosted figures in the body: listed in BlogPosting.image and the image sitemap
+  const contentImages = [...new Set([...html.matchAll(/<img\s[^>]*src="(\/[^"]+)"/g)].map((m) => m[1]))];
   const showToc = typeof data.toc === 'boolean' ? data.toc : headings.length >= 3;
 
   return {
@@ -315,6 +317,7 @@ export function compileArticle({ fileName, source, categories }) {
       tags: articleTags,
       image,
       imageAlt,
+      contentImages,
       canonicalUrl,
       isCanonicalLocal: canonicalUrl === `${SITE_URL}/articles/${slug}`,
       wordCount,

@@ -71,8 +71,8 @@ export function TagPage() {
     url: `${SITE_URL}/tag/${tagObj.slug}`,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'BlogAI Directory',
-      url: SITE_URL,
+      name: 'BlogAI',
+      url: `${SITE_URL}/`,
     },
     numberOfItems: matchingBlogs.length + matchingArticles.length,
   };

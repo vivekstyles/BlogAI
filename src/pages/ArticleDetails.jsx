@@ -94,7 +94,7 @@ export function ArticleDetails() {
           </div>
           <h1 className="article-title">{article.title}</h1>
           <p className="article-lead">{article.description}</p>
-          <ArticleMeta article={article} className="article-header-meta" />
+          <ArticleMeta article={article} labelDates className="article-header-meta" />
         </header>
 
         {article.image && (

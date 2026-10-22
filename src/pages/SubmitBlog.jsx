@@ -73,7 +73,6 @@ export function SubmitBlog() {
         title="Submit a Publication"
         description="Recommend a high-quality independent blog in engineering, mathematics, physics, science, automotive tech, or nutrition for inclusion in BlogAI Directory."
         canonicalPath="/submit"
-        robots="index, follow"
       />
 
       <div className="container">

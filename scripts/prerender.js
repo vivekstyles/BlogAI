@@ -19,6 +19,8 @@ import {
   buildBlogMeta,
   buildAuthorSchema,
   buildBreadcrumbSchema,
+  buildHomeSchema,
+  INDEXABLE_ROBOTS,
   SITEMAP_SECTIONS,
 } from '../src/utils/seo.js';
 
@@ -50,7 +52,7 @@ function buildHtml({
   title,
   description,
   canonicalUrl,
-  robots = 'index, follow',
+  robots = INDEXABLE_ROBOTS,
   jsonLd = null,
   bodyContent = '',
   ogType = 'website',
@@ -266,18 +268,7 @@ async function runPrerender() {
     title: 'Technical Articles & Curated Blog Directory',
     description: `Read original articles and discover ${blogs.length}+ community-curated blogs across AI, programming, engineering, math, physics, science, automotive tech, and nutrition.`,
     canonicalUrl: `${SITE_URL}/`,
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'BlogAI',
-      url: SITE_URL,
-      description: 'Original articles and a community-curated directory of high-quality blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.',
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${SITE_URL}/directory?q={search_term_string}`,
-        'query-input': 'required name=search_term_string',
-      },
-    },
+    jsonLd: buildHomeSchema(),
     bodyContent: homeBody,
   });
   writeRouteFile('/', homeHtml);
@@ -376,7 +367,7 @@ async function runPrerender() {
             <p>${a.categories.map(c => `<a href="/category/${c.slug}">${escapeHtml(c.name)}</a>`).join(' ')}</p>
             <h1 class="article-title">${escapeHtml(a.title)}</h1>
             <p class="article-lead">${escapeHtml(a.description)}</p>
-            <p class="article-meta">By ${escapeHtml(a.author)} · <time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time>${updatedHtml} · ${a.readingTimeMinutes} min read</p>
+            <p class="article-meta">By ${escapeHtml(a.author)} · Published <time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time>${updatedHtml} · ${a.readingTimeMinutes} min read</p>
           </header>
           ${a.image ? `<figure class="article-featured-image"><img src="${escapeHtml(a.image)}" alt="${escapeHtml(a.imageAlt)}" /></figure>` : ''}
           ${tocHtml}
@@ -409,7 +400,8 @@ async function runPrerender() {
     }));
     // Articles first published elsewhere keep their external canonical and stay out of the sitemap
     if (a.isCanonicalLocal) {
-      sitemapUrls.push({ section: 'articles', loc: `${SITE_URL}/articles/${a.slug}`, lastmod: a.updatedAt });
+      const images = [a.image, ...(a.contentImages || [])].filter(Boolean).map(img => (img.startsWith('http') ? img : `${SITE_URL}${img}`));
+      sitemapUrls.push({ section: 'articles', loc: `${SITE_URL}/articles/${a.slug}`, lastmod: a.updatedAt, images: [...new Set(images)] });
     }
   }
 
@@ -643,10 +635,11 @@ async function runPrerender() {
     if (urls.length === 0) continue;
     const fileName = `sitemap-${section}.xml`;
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"${urls.some(u => u.images?.length) ? ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : ''}>
 ${urls.map(u => `  <url>
     <loc>${escapeHtml(u.loc)}</loc>${u.lastmod ? `
-    <lastmod>${u.lastmod}</lastmod>` : ''}
+    <lastmod>${u.lastmod}</lastmod>` : ''}${(u.images || []).map(img => `
+    <image:image><image:loc>${escapeHtml(img)}</image:loc></image:image>`).join('')}
   </url>`).join('\n')}
 </urlset>
 `;
@@ -666,6 +659,31 @@ ${sitemapFiles.map(f => `  <sitemap>
 </sitemapindex>
 `;
   fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapIndexXml, 'utf-8');
+
+  // RSS feed of first-party articles (linked from every page head; Google also accepts it as a sitemap)
+  const feedArticles = articles.filter(a => a.isCanonicalLocal);
+  const rfc822 = (date) => new Date(`${date}T00:00:00Z`).toUTCString();
+  const feedXml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlogAI Articles</title>
+    <link>${SITE_URL}/articles</link>
+    <description>Original articles published by BlogAI.</description>
+    <language>en</language>
+    <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />${feedArticles.length ? `
+    <lastBuildDate>${rfc822(latestArticleDate)}</lastBuildDate>` : ''}
+${feedArticles.map(a => `    <item>
+      <title>${escapeHtml(a.title)}</title>
+      <link>${SITE_URL}/articles/${a.slug}</link>
+      <guid isPermaLink="true">${SITE_URL}/articles/${a.slug}</guid>
+      <pubDate>${rfc822(a.publishedAt)}</pubDate>
+      <description>${escapeHtml(a.description)}</description>
+${a.categories.map(c => `      <category>${escapeHtml(c.name)}</category>`).join('\n')}
+    </item>`).join('\n')}
+  </channel>
+</rss>
+`;
+  fs.writeFileSync(path.join(DIST_DIR, 'feed.xml'), feedXml, 'utf-8');
 
   // Copy feed.opml to dist/
   const rootOpml = path.join(ROOT_DIR, 'feed.opml');

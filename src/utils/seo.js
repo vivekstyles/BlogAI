@@ -6,6 +6,48 @@
 export const SITE_URL = 'https://blogai.space';
 export const SITE_NAME = 'BlogAI';
 
+// Indexable pages opt in to large image previews (Google Discover and image-rich snippets)
+export const INDEXABLE_ROBOTS = 'index, follow, max-image-preview:large';
+export const NOINDEX_ROBOTS = 'noindex, follow';
+
+export const SITE_DESCRIPTION =
+  'Original articles and a community-curated directory of high-quality blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.';
+const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+// Square raster logo: Google needs at least 112x112 in a Google Images format (not SVG)
+export const LOGO_URL = `${SITE_URL}/icon-512.png`;
+
+/** Publisher node for article markup, pointing at the home page Organization. */
+export function buildPublisherSchema() {
+  return {
+    '@type': 'Organization',
+    '@id': ORGANIZATION_ID,
+    name: SITE_NAME,
+    url: `${SITE_URL}/`,
+    logo: { '@type': 'ImageObject', url: LOGO_URL, width: 512, height: 512 },
+  };
+}
+
+/**
+ * Home page JSON-LD: WebSite (site name in search results) and Organization (logo).
+ * Google reads both from the home page only.
+ */
+export function buildHomeSchema() {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      alternateName: ['BlogAI Directory', 'blogai.space'],
+      url: `${SITE_URL}/`,
+      description: SITE_DESCRIPTION,
+      inLanguage: 'en',
+      publisher: { '@id': ORGANIZATION_ID },
+    },
+    { '@context': 'https://schema.org', ...buildPublisherSchema(), description: SITE_DESCRIPTION },
+  ];
+}
+
 const TITLE_SUFFIX = ` | ${SITE_NAME}`;
 // Search results usually truncate titles beyond roughly 60 characters
 export const TITLE_MAX_LENGTH = 60;
@@ -75,15 +117,18 @@ export function buildTagMeta(tag, articleCount, blogCount) {
     description: articleCount
       ? `${summary} Original articles and independent blogs, organized by topic.`
       : `${summary} Every listing links to the original independent website.`,
-    robots: isTagIndexable(articleCount + blogCount) ? 'index, follow' : 'noindex, follow',
+    robots: isTagIndexable(articleCount + blogCount) ? INDEXABLE_ROBOTS : NOINDEX_ROBOTS,
   };
 }
 
 /**
  * JSON-LD author node. Editorial teams are Organizations, not People.
+ * Google asks for an author url, and for an Organization that is its home page.
+ * Person authors get no url until they have their own profile pages.
  */
 export function buildAuthorSchema(name, type = 'Person') {
-  return { '@type': type === 'Organization' ? 'Organization' : 'Person', name };
+  if (type === 'Organization') return { '@type': 'Organization', name, url: `${SITE_URL}/` };
+  return { '@type': 'Person', name };
 }
 
 export function buildCategoryTitle(category, articleCount) {
@@ -100,7 +145,7 @@ export function isBlogIndexable(blog) {
 
 export function buildBlogMeta(blog) {
   return {
-    robots: isBlogIndexable(blog) ? 'index, follow' : 'noindex, follow',
+    robots: isBlogIndexable(blog) ? INDEXABLE_ROBOTS : NOINDEX_ROBOTS,
     title: `${blog.title} - ${blog.category} Blog`,
     description:
       blog.description ||

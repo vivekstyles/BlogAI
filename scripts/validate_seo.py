@@ -16,6 +16,9 @@ Errors (exit code 1):
   URLs with no generated page, noindexed pages, URLs that canonicalize elsewhere, URLs blocked by
   robots.txt, duplicates, or malformed or future lastmod dates
 - robots.txt without the sitemap directive; invalid feed.opml
+- BreadcrumbList with fewer than two items, wrong positions, or non-absolute item URLs
+- feed.xml missing, invalid, or linking to articles outside the sitemaps
+- Image sitemap entries pointing at missing files; missing raster favicon or logo files
 
 Warnings (reported, do not fail the build):
 - Titles longer than 60 characters, descriptions outside 70-160 characters
@@ -287,6 +290,31 @@ def main():
             ET.parse(opml_file)
         except Exception as e:
             errors.append(f"feed.opml is not valid XML: {e}")
+
+    # 13. Article RSS feed: valid XML, and every item links to a page listed in the sitemaps
+    feed_file = dist_dir / "feed.xml"
+    if not feed_file.exists():
+        errors.append("feed.xml missing in dist directory.")
+    else:
+        try:
+            for link in ET.parse(feed_file).getroot().iter("link"):
+                if link.text and link.text.startswith(SITE_URL + "/articles/") and link.text not in listed:
+                    errors.append(f"feed.xml links to {link.text}, which is not in the sitemaps.")
+        except ET.ParseError as e:
+            errors.append(f"feed.xml is not valid XML: {e}")
+
+    # 14. Image sitemap entries must point at files that exist
+    image_ns = "{http://www.google.com/schemas/sitemap-image/1.1}"
+    for sitemap_file in sorted(dist_dir.glob("sitemap-*.xml")):
+        for image_loc in ET.parse(sitemap_file).getroot().iter(f"{image_ns}loc"):
+            src = (image_loc.text or "").strip()
+            if src.startswith(SITE_URL + "/") and not (dist_dir / unescape(src[len(SITE_URL) + 1:])).is_file():
+                errors.append(f"{sitemap_file.name}: image {src} does not exist in dist.")
+
+    # 15. Favicon and logo in raster formats Google Search accepts (SVG is not one of them)
+    for icon in ("favicon.ico", "favicon-96x96.png", "apple-touch-icon.png", "icon-512.png"):
+        if not (dist_dir / icon).is_file():
+            errors.append(f"{icon} missing in dist directory.")
 
     noindexed = sum(1 for p in pages.values() if not p["indexable"])
     print(f"[SEO] {total_pages} pages checked: {total_pages - noindexed} indexable, {noindexed} noindexed.")
