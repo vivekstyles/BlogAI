@@ -5,7 +5,7 @@ import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL, buildCategoryTitle } from '../utils/seo';
+import { SITE_URL, buildCategoryTitle, buildBreadcrumbSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import TagChip from '../components/tags/TagChip';
@@ -100,7 +100,7 @@ export function Category() {
         title={buildCategoryTitle(category, categoryArticles.length)}
         description={category.description}
         canonicalPath={`/category/${category.slug}`}
-        jsonLd={categorySchema}
+        jsonLd={[categorySchema, buildBreadcrumbSchema(breadcrumbItems, `/category/${category.slug}`)]}
       />
 
       <div className="container">

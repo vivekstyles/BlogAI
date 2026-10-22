@@ -4,7 +4,7 @@ import { FileText, Compass } from 'lucide-react';
 import { articleService } from '../services/articleService';
 import { blogService } from '../services/blogService';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL, buildAuthorSchema } from '../utils/seo';
+import { SITE_URL, buildAuthorSchema, buildBreadcrumbSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchBar from '../components/search/SearchBar';
 import CategoryNav from '../components/categories/CategoryNav';
@@ -66,7 +66,7 @@ export function Articles() {
         title="Articles"
         description="Original articles from BlogAI on reading, following, and learning from technical and scientific writing."
         canonicalPath="/articles"
-        jsonLd={listSchema}
+        jsonLd={[listSchema, buildBreadcrumbSchema([{ label: 'Articles' }], '/articles')]}
       />
 
       <div className="container">

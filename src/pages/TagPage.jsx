@@ -5,7 +5,7 @@ import { blogService } from '../services/blogService';
 import { articleService } from '../services/articleService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL, buildTagMeta } from '../utils/seo';
+import { SITE_URL, buildTagMeta, buildBreadcrumbSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import BlogList from '../components/blogs/BlogList';
@@ -92,7 +92,7 @@ export function TagPage() {
         description={tagMeta.description}
         canonicalPath={`/tag/${tagObj.slug}`}
         robots={tagMeta.robots}
-        jsonLd={tagSchema}
+        jsonLd={[tagSchema, buildBreadcrumbSchema(breadcrumbs, `/tag/${tagObj.slug}`)]}
       />
 
       <div className="container">

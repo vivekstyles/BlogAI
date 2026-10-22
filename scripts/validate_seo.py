@@ -181,6 +181,16 @@ def main():
                 for prop in ("headline", "datePublished", "author"):
                     if not json_data.get(prop):
                         errors.append(f"[{rel_path}] {json_data['@type']} JSON-LD missing '{prop}'.")
+            # Google breadcrumb rules: at least two ListItems, each with position, name and an absolute item URL
+            if json_data.get("@type") == "BreadcrumbList":
+                items = json_data.get("itemListElement") or []
+                if len(items) < 2:
+                    errors.append(f"[{rel_path}] BreadcrumbList needs at least two ListItems.")
+                for index, item in enumerate(items, start=1):
+                    if item.get("position") != index or not item.get("name"):
+                        errors.append(f"[{rel_path}] BreadcrumbList item {index} has a wrong position or no name.")
+                    if not str(item.get("item", "")).startswith(SITE_URL):
+                        errors.append(f"[{rel_path}] BreadcrumbList item {index} needs an absolute {SITE_URL} URL.")
 
         # 7. Exactly one h1 in the prerendered body
         root_match = re.search(r'<div id="root">(.*)</div>', content, re.DOTALL)

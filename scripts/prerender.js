@@ -18,6 +18,7 @@ import {
   buildCategoryTitle,
   buildBlogMeta,
   buildAuthorSchema,
+  buildBreadcrumbSchema,
   SITEMAP_SECTIONS,
 } from '../src/utils/seo.js';
 
@@ -308,13 +309,13 @@ async function runPrerender() {
     title: 'Community Blog Directory',
     description: `Search and filter ${blogs.length} community-curated independent blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.`,
     canonicalUrl: `${SITE_URL}/directory`,
-    jsonLd: {
+    jsonLd: [{
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: 'Community Blog Directory',
       url: `${SITE_URL}/directory`,
       numberOfItems: blogs.length,
-    },
+    }, buildBreadcrumbSchema([{ label: 'Blog Directory' }], '/directory')],
     bodyContent: directoryBody,
   }));
   sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/directory` });
@@ -336,7 +337,7 @@ async function runPrerender() {
     title: 'Articles',
     description: 'Original articles from BlogAI on reading, following, and learning from technical and scientific writing.',
     canonicalUrl: `${SITE_URL}/articles`,
-    jsonLd: {
+    jsonLd: [{
       '@context': 'https://schema.org',
       '@type': 'Blog',
       name: 'BlogAI Articles',
@@ -350,7 +351,7 @@ async function runPrerender() {
         dateModified: a.updatedAt,
         author: buildAuthorSchema(a.author, a.authorType),
       })),
-    },
+    }, buildBreadcrumbSchema([{ label: 'Articles' }], '/articles')],
     bodyContent: articlesBody,
   }));
   sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/articles`, lastmod: latestArticleDate });
@@ -445,14 +446,14 @@ async function runPrerender() {
       title: buildCategoryTitle(cat, catArticles.length),
       description: cat.description,
       canonicalUrl: `${SITE_URL}/category/${cat.slug}`,
-      jsonLd: {
+      jsonLd: [{
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: `${cat.name} Blogs Directory`,
         description: cat.description,
         url: `${SITE_URL}/category/${cat.slug}`,
         numberOfItems: cat.count,
-      },
+      }, buildBreadcrumbSchema([{ label: cat.name }], `/category/${cat.slug}`)],
       bodyContent: catBody,
     });
     writeRouteFile(`/category/${cat.slug}`, catHtml);
@@ -500,13 +501,13 @@ async function runPrerender() {
       description: tagMeta.description,
       canonicalUrl: `${SITE_URL}/tag/${t.slug}`,
       robots: tagMeta.robots,
-      jsonLd: {
+      jsonLd: [{
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: `Articles and Blogs Tagged with #${t.name}`,
         url: `${SITE_URL}/tag/${t.slug}`,
         numberOfItems: tagBlogs.length + tagArticles.length,
-      },
+      }, buildBreadcrumbSchema([{ label: 'Tags' }, { label: `#${t.name}` }], `/tag/${t.slug}`)],
       bodyContent: tagBody,
     });
     writeRouteFile(`/tag/${t.slug}`, tagHtml);
@@ -553,7 +554,7 @@ async function runPrerender() {
       description: blogMeta.description,
       robots: blogMeta.robots,
       canonicalUrl: `${SITE_URL}/blog/${b.slug}`,
-      jsonLd: {
+      jsonLd: [{
         '@context': 'https://schema.org',
         '@type': 'Blog',
         name: b.title,
@@ -561,7 +562,10 @@ async function runPrerender() {
         description: b.description || `Curated ${b.category} blog.`,
         inLanguage: b.language || 'en',
         author: b.author ? { '@type': 'Person', name: b.author } : undefined,
-      },
+      }, buildBreadcrumbSchema(
+        [{ label: b.category, path: `/category/${b.categorySlug}` }, { label: b.title }],
+        `/blog/${b.slug}`
+      )],
       bodyContent: blogBody,
     });
     writeRouteFile(`/blog/${b.slug}`, blogHtml);

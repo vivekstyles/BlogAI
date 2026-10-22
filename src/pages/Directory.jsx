@@ -4,7 +4,7 @@ import { Compass, Rss, PlusCircle } from 'lucide-react';
 import { blogService } from '../services/blogService';
 import { useSearch } from '../hooks/useSearch';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL } from '../utils/seo';
+import { SITE_URL, buildBreadcrumbSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import SearchFilters from '../components/search/SearchFilters';
 import CategoryNav from '../components/categories/CategoryNav';
@@ -95,7 +95,7 @@ export function Directory() {
         title="Community Blog Directory"
         description={`Search and filter ${allBlogs.length} community-curated independent blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.`}
         canonicalPath="/directory"
-        jsonLd={directorySchema}
+        jsonLd={[directorySchema, buildBreadcrumbSchema([{ label: 'Blog Directory' }], '/directory')]}
       />
 
       <div className="container">

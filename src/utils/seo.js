@@ -20,6 +20,31 @@ export function formatPageTitle(title) {
   return withSuffix.length <= TITLE_MAX_LENGTH ? withSuffix : title;
 }
 
+/**
+ * BreadcrumbList JSON-LD built from the same items the Breadcrumbs component renders.
+ * Home is prepended and the last item points at currentPath. Google requires `item` on
+ * every ListItem except the last, so intermediate items without a path are left out.
+ * @param {Array<{ label: string, path?: string }>} items
+ * @param {string} currentPath
+ */
+export function buildBreadcrumbSchema(items, currentPath) {
+  const trail = [
+    { label: 'Home', path: '/' },
+    ...items.slice(0, -1).filter((item) => item.path),
+    { label: items[items.length - 1].label, path: currentPath },
+  ];
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: trail.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.label,
+      item: `${SITE_URL}${item.path}`,
+    })),
+  };
+}
+
 // Tag pages listing fewer items than this are thin near-duplicates of the listing
 // they point to: they stay crawlable (follow) but are noindexed and left out of the sitemap.
 export const TAG_INDEX_MIN_ITEMS = 2;

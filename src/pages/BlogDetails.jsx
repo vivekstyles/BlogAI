@@ -15,7 +15,7 @@ import {
 import { blogService } from '../services/blogService';
 import { extractDomain } from '../utils/normalizeText';
 import SEOHead from '../components/seo/SEOHead';
-import { SITE_URL, buildBlogMeta } from '../utils/seo';
+import { SITE_URL, buildBlogMeta, buildBreadcrumbSchema } from '../utils/seo';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import TagChip from '../components/tags/TagChip';
 import FeedLink from '../components/blogs/FeedLink';
@@ -93,7 +93,7 @@ export function BlogDetails() {
         description={buildBlogMeta(blog).description}
         robots={buildBlogMeta(blog).robots}
         canonicalPath={`/blog/${blog.slug}`}
-        jsonLd={blogSchema}
+        jsonLd={[blogSchema, buildBreadcrumbSchema(breadcrumbs, `/blog/${blog.slug}`)]}
       />
 
       <div className="container">

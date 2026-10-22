@@ -2,7 +2,7 @@
  * Structured data for first-party articles. Shared by the ArticleDetails page
  * and scripts/prerender.js so the client and the static HTML emit identical JSON-LD.
  */
-import { SITE_URL, SITE_NAME, buildAuthorSchema } from './seo.js';
+import { SITE_URL, SITE_NAME, buildAuthorSchema, buildBreadcrumbSchema } from './seo.js';
 
 export { SITE_URL };
 
@@ -33,13 +33,8 @@ export function buildArticleSchema(article) {
 }
 
 export function buildArticleBreadcrumbSchema(article) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: 'Articles', item: `${SITE_URL}/articles` },
-      { '@type': 'ListItem', position: 3, name: article.title, item: `${SITE_URL}/articles/${article.slug}` },
-    ],
-  };
+  return buildBreadcrumbSchema(
+    [{ label: 'Articles', path: '/articles' }, { label: article.title }],
+    `/articles/${article.slug}`
+  );
 }

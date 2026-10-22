@@ -36,6 +36,14 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Breadcrumb structured data on listing and detail pages (2026-10-23)
+
+- Evidence: the Search Console Breadcrumbs report listed only article URLs. Article markup already met [Google's breadcrumb requirements](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb), but `/articles`, `/directory`, category, tag and `/blog/` pages showed a visible breadcrumb with no `BreadcrumbList` JSON-LD.
+- Change: shared `buildBreadcrumbSchema(items, currentPath)` in `src/utils/seo.js`, built from the same items as the visible `Breadcrumbs` component. It is used by the React pages and `scripts/prerender.js`, and article breadcrumbs now go through it too (output unchanged). The tag trail's unlinked "Tags" step is left out of the markup, because Google requires a URL on every item except the last.
+- Validator: `validate_seo.py` now fails a `BreadcrumbList` with fewer than two items, a wrong `position`, a missing `name`, or an `item` that isn't an absolute blogai.space URL.
+- Checks run: `npm run ci` (73 tests passed; 459 pages, 228 sitemap URLs; validator passed, with one existing title-length warning). In `vite preview`, `/directory` and a client-side navigation to a category page each had exactly one BreadcrumbList.
+- Not run: Rich Results Test on live URLs (run it after deploy). The Search Console count will grow as Google recrawls these pages.
+
 ### Programming and Technology category and Python articles (2026-10-21)
 
 New category `/category/programming-and-technology` (in `sitemap-categories.xml`) and five published Python articles, all with `publishedAt` 2026-10-21:
