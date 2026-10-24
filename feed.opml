@@ -74,6 +74,7 @@
     <outline text="Programming and Technology" title="Programming and Technology">
       <outline type="rss" text="Coding Horror" title="Coding Horror" xmlUrl="https://blog.codinghorror.com/rss/" htmlUrl="https://blog.codinghorror.com/" category="Programming and Technology" />
       <outline type="rss" text="Dan Luu" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" htmlUrl="https://danluu.com/" category="Programming and Technology" />
+      <outline type="rss" text="Joho no Todai (English)" title="Joho no Todai (English)" xmlUrl="https://joho-todai.com/en/rss/" htmlUrl="https://joho-todai.com/en/" category="Programming and Technology" />
       <outline type="rss" text="Josh W. Comeau" title="Josh W. Comeau" xmlUrl="https://www.joshwcomeau.com/rss.xml" htmlUrl="https://www.joshwcomeau.com/" category="Programming and Technology" />
       <outline type="rss" text="Ned Batchelder" title="Ned Batchelder" xmlUrl="https://nedbatchelder.com/blog/rss.xml" htmlUrl="https://nedbatchelder.com/blog/" category="Programming and Technology" />
       <outline type="rss" text="Python Insider" title="Python Insider" xmlUrl="https://blog.python.org/feeds/posts/default" htmlUrl="https://blog.python.org/" category="Programming and Technology" />

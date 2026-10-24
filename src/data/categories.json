@@ -99,16 +99,16 @@
     "name": "Programming and Technology",
     "slug": "programming-and-technology",
     "description": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
-    "count": 10,
+    "count": 11,
     "popularTags": [
+      "artificial intelligence",
       "careers",
       "community",
       "computer hardware",
       "coverage",
       "cpython",
       "css",
-      "data science",
-      "engineering management"
+      "data science"
     ]
   },
   {

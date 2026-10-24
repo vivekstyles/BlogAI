@@ -1219,6 +1219,29 @@
     "sourceRow": 9
   },
   {
+    "id": "programming-and-technology-joho-no-todai-english",
+    "title": "Joho no Todai (English)",
+    "slug": "joho-no-todai-english",
+    "address": "https://joho-todai.com/en/",
+    "normalizedUrl": "https://joho-todai.com/en/",
+    "feed": "https://joho-todai.com/en/rss/",
+    "tags": [
+      "tech news",
+      "linux",
+      "computer hardware",
+      "artificial intelligence",
+      "tech industry"
+    ],
+    "description": "English edition of the Japanese site Joho no Todai, with news and analysis on Linux, computer hardware, AI and the technology industry.",
+    "author": "Joho no Todai",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 12
+  },
+  {
     "id": "programming-and-technology-josh-w-comeau",
     "title": "Josh W. Comeau",
     "slug": "josh-w-comeau",

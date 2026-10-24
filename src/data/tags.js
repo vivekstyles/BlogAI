@@ -67,6 +67,12 @@ export const tags = [
     "blogCount": 3
   },
   {
+    "name": "tech industry",
+    "slug": "tech-industry",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
     "name": "web development",
     "slug": "web-development",
     "count": 3,
@@ -105,6 +111,12 @@ export const tags = [
   {
     "name": "complexity",
     "slug": "complexity",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "computer hardware",
+    "slug": "computer-hardware",
     "count": 2,
     "blogCount": 2
   },
@@ -171,6 +183,12 @@ export const tags = [
   {
     "name": "linear algebra",
     "slug": "linear-algebra",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "linux",
+    "slug": "linux",
     "count": 2,
     "blogCount": 2
   },
@@ -331,12 +349,6 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "tech industry",
-    "slug": "tech-industry",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
     "name": "testing",
     "slug": "testing",
     "count": 2,
@@ -393,6 +405,12 @@ export const tags = [
   {
     "name": "architecture",
     "slug": "architecture",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "artificial intelligence",
+    "slug": "artificial-intelligence",
     "count": 1,
     "blogCount": 1
   },
@@ -531,12 +549,6 @@ export const tags = [
   {
     "name": "community",
     "slug": "community",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "computer hardware",
-    "slug": "computer-hardware",
     "count": 1,
     "blogCount": 1
   },
@@ -789,12 +801,6 @@ export const tags = [
   {
     "name": "lhc",
     "slug": "lhc",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "linux",
-    "slug": "linux",
     "count": 1,
     "blogCount": 1
   },
@@ -1173,6 +1179,12 @@ export const tags = [
   {
     "name": "teaching",
     "slug": "teaching",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "tech news",
+    "slug": "tech-news",
     "count": 1,
     "blogCount": 1
   },
