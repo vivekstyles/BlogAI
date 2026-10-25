@@ -36,6 +36,23 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Earning-income articles (2026-10-25)
+
+Five published articles, all with `publishedAt` 2026-10-25, four in Personal Finance and one in Artificial Intelligence and Personal Finance. No existing URLs changed.
+
+- `/articles/make-money-online-for-beginners` — 25 ways with startup cost, skill and time to first payment (1 figure)
+- `/articles/side-hustle-ideas` — 15 side hustles rated for fit with a full-time job (1 figure)
+- `/articles/passive-income-ideas` — 20 ideas split into capital-based and build-once (1 figure)
+- `/articles/make-money-from-home` — 30 ideas grouped by startup cost (1 figure)
+- `/articles/ai-tools-to-make-money` — 10 AI tools with prices and platform rules (1 figure)
+
+Details:
+
+- **Sources read directly:** FTC (job scams, MLM, influencer disclosures, March 2026 JEC testimony), IRS (self-employment tax, estimated taxes, Fact Sheet 2025-08 on the \$20,000/200 Form 1099-K threshold, Announcement 2026-11 raising the business mileage rate to 76 cents from 1 July 2026), FDIC national rates (October 2026: savings 0.38%, 12-month CD 1.76%), TreasuryDirect (I bond 4.26% May-October 2026; \$10,000 limit, 12-month lock, 3-month penalty), Federal Reserve SHED 2025 (17% worked more due to prices; 58% of self-employed had variable income; 25% of workers used generative AI), YouTube Help (current YPP thresholds and the 1 February 2027 changes; synthetic-content disclosure), KDP (royalties; AI disclosure), Prolific, Gumroad, Substack, Patreon, Rover UK, Claude, Midjourney, ElevenLabs, Descript, GitHub Copilot and n8n pages.
+- **Not reachable or not verified:** Upwork's fee details (page body not readable; the article only says the fee is shown per contract), Fiverr and Etsy fee pages (403; the articles give no percentages), OpenAI, Canva and Google AI prices (pages did not load or showed no prices; articles say "check current pricing"), Amazon Associates rates (third-party tables conflict; no rates given), the YouTube inauthentic-content update (cited to Search Engine Journal's report). The SPIVA mid-year 2026 figure is reused from the money management tips article. No Reddit or X content is quoted.
+- **Worked examples** (capital needed per \$500 a month, true hourly pay for a delivery hour, AI tool break-even) are computed in `scripts/diagrams/make_income_diagrams.py`; the delivery pay and miles are labeled assumptions.
+- **No earnings promises:** each article says results vary and it is general education, not financial, tax or legal advice.
+
 ### Personal finance category and articles (2026-10-25)
 
 New category `/category/personal-finance` and five published articles, all with `publishedAt` 2026-10-25. No existing URLs changed.
