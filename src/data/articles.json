@@ -1,5 +1,589 @@
 [
   {
+    "slug": "data-analysis-projects-for-beginners",
+    "title": "25 Best Data Analysis Projects for Beginners to Build in 2026",
+    "seoTitle": "25 Data Analysis Projects for Beginners to Build in 2026",
+    "description": "25 beginner data analysis projects in spreadsheets, SQL, BI and Python, each with a public dataset, a business question, steps, a deliverable and a stretch.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "beginners",
+        "slug": "beginners"
+      },
+      {
+        "name": "portfolio",
+        "slug": "portfolio"
+      },
+      {
+        "name": "sql",
+        "slug": "sql"
+      },
+      {
+        "name": "data analyst",
+        "slug": "data-analyst"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/data-analysis-projects-for-beginners/analysis-workflow.svg",
+      "/images/articles/data-analysis-projects-for-beginners/project-roadmap.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/data-analysis-projects-for-beginners",
+    "isCanonicalLocal": true,
+    "wordCount": 3820,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "how-to-make-a-project-worth-showing",
+        "text": "How to make a project worth showing",
+        "level": 2
+      },
+      {
+        "id": "level-1-spreadsheet-projects-19",
+        "text": "Level 1: spreadsheet projects (1–9)",
+        "level": 2
+      },
+      {
+        "id": "level-2-sql-projects-1017",
+        "text": "Level 2: SQL projects (10–17)",
+        "level": 2
+      },
+      {
+        "id": "level-3-bi-and-python-projects-1825",
+        "text": "Level 3: BI and Python projects (18–25)",
+        "level": 2
+      },
+      {
+        "id": "which-projects-to-do-first",
+        "text": "Which projects to do first",
+        "level": 2
+      },
+      {
+        "id": "sources",
+        "text": "Sources",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "data-analysis-tools",
+      "sql-queries-for-data-analysts",
+      "python-projects-for-beginners"
+    ],
+    "relatedBlogs": [
+      "coding-horror",
+      "dan-luu",
+      "joho-no-todai-english"
+    ]
+  },
+  {
+    "slug": "data-analysis-techniques",
+    "title": "15 Essential Data Analysis Techniques Every Analyst Should Know",
+    "seoTitle": "15 Data Analysis Techniques With Python Examples",
+    "description": "15 data analysis techniques, from descriptive statistics and cleaning to A/B tests, cohorts, RFM and anomaly detection, each with tested Python code and output.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "statistics",
+        "slug": "statistics"
+      },
+      {
+        "name": "pandas",
+        "slug": "pandas"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "data analyst",
+        "slug": "data-analyst"
+      },
+      {
+        "name": "ab testing",
+        "slug": "ab-testing"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/data-analysis-techniques/technique-chooser.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/data-analysis-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 3681,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "set-up-the-example-data",
+        "text": "Set up the example data",
+        "level": 2
+      },
+      {
+        "id": "understand-the-data-13",
+        "text": "Understand the data (1–3)",
+        "level": 2
+      },
+      {
+        "id": "compare-and-relate-46",
+        "text": "Compare and relate (4–6)",
+        "level": 2
+      },
+      {
+        "id": "test-whether-differences-are-real-78",
+        "text": "Test whether differences are real (7–8)",
+        "level": 2
+      },
+      {
+        "id": "analyze-change-over-time-911",
+        "text": "Analyze change over time (9–11)",
+        "level": 2
+      },
+      {
+        "id": "segment-customers-1213",
+        "text": "Segment customers (12–13)",
+        "level": 2
+      },
+      {
+        "id": "find-the-unusual-and-the-important-1415",
+        "text": "Find the unusual and the important (14–15)",
+        "level": 2
+      },
+      {
+        "id": "how-to-choose-a-technique",
+        "text": "How to choose a technique",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "data-analysis-tools",
+      "pandas-tips-and-tricks-for-data-analysis",
+      "numpy-examples-for-numerical-computing"
+    ],
+    "relatedBlogs": [
+      "ned-batchelder",
+      "python-insider",
+      "python-software-foundation-news"
+    ]
+  },
+  {
+    "slug": "data-analysis-tools",
+    "title": "20 Best Data Analysis Tools for Beginners and Professionals in 2026",
+    "seoTitle": "20 Data Analysis Tools for Beginners and Pros in 2026",
+    "description": "20 data analysis tools compared, from Excel and SQL to pandas, Power BI and dbt, with what each is best for, what it costs to start and starter stacks.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "data analyst",
+        "slug": "data-analyst"
+      },
+      {
+        "name": "sql",
+        "slug": "sql"
+      },
+      {
+        "name": "business intelligence",
+        "slug": "business-intelligence"
+      },
+      {
+        "name": "excel",
+        "slug": "excel"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/data-analysis-tools/tool-stack.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/data-analysis-tools",
+    "isCanonicalLocal": true,
+    "wordCount": 2971,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-20-tools-at-a-glance",
+        "text": "The 20 tools at a glance",
+        "level": 2
+      },
+      {
+        "id": "spreadsheets",
+        "text": "Spreadsheets",
+        "level": 2
+      },
+      {
+        "id": "sql-databases-and-engines",
+        "text": "SQL databases and engines",
+        "level": 2
+      },
+      {
+        "id": "programming-languages-and-notebooks",
+        "text": "Programming languages and notebooks",
+        "level": 2
+      },
+      {
+        "id": "business-intelligence-and-dashboards",
+        "text": "Business intelligence and dashboards",
+        "level": 2
+      },
+      {
+        "id": "data-preparation-and-workflow",
+        "text": "Data preparation and workflow",
+        "level": 2
+      },
+      {
+        "id": "what-about-ai-assistants",
+        "text": "What about AI assistants?",
+        "level": 2
+      },
+      {
+        "id": "starter-stacks-by-goal",
+        "text": "Starter stacks by goal",
+        "level": 2
+      },
+      {
+        "id": "how-to-choose-and-what-to-learn-first",
+        "text": "How to choose (and what to learn first)",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "data-analysis-projects-for-beginners",
+      "data-analysis-techniques",
+      "sql-queries-for-data-analysts"
+    ],
+    "relatedBlogs": [
+      "ned-batchelder",
+      "python-insider",
+      "python-software-foundation-news"
+    ]
+  },
+  {
+    "slug": "data-visualization-techniques",
+    "title": "10 Best Data Visualization Techniques to Turn Data into Insights",
+    "seoTitle": "10 Data Visualization Techniques That Make Insights Clear",
+    "description": "10 data visualization techniques for analysts, from picking the right chart to highlighting, small multiples and accessible color, with before-and-after charts.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "data visualization",
+        "slug": "data-visualization"
+      },
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "charts",
+        "slug": "charts"
+      },
+      {
+        "name": "dashboards",
+        "slug": "dashboards"
+      },
+      {
+        "name": "matplotlib",
+        "slug": "matplotlib"
+      },
+      {
+        "name": "accessibility",
+        "slug": "accessibility"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/data-visualization-techniques/chart-chooser.svg",
+      "/images/articles/data-visualization-techniques/declutter-before-after.svg",
+      "/images/articles/data-visualization-techniques/same-mean-distributions.svg",
+      "/images/articles/data-visualization-techniques/highlight-one-line.svg",
+      "/images/articles/data-visualization-techniques/small-multiples.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/data-visualization-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 2563,
+    "readingTimeMinutes": 12,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "1-start-from-the-question-then-choose-the-chart",
+        "text": "1. Start from the question, then choose the chart",
+        "level": 2
+      },
+      {
+        "id": "2-prefer-position-and-length-bar-charts-for-comparisons",
+        "text": "2. Prefer position and length: bar charts for comparisons",
+        "level": 2
+      },
+      {
+        "id": "3-use-line-charts-for-change-over-time",
+        "text": "3. Use line charts for change over time",
+        "level": 2
+      },
+      {
+        "id": "4-show-the-distribution-not-just-the-average",
+        "text": "4. Show the distribution, not just the average",
+        "level": 2
+      },
+      {
+        "id": "5-use-scatter-plots-for-relationships",
+        "text": "5. Use scatter plots for relationships",
+        "level": 2
+      },
+      {
+        "id": "6-highlight-what-matters-with-color-and-annotation",
+        "text": "6. Highlight what matters with color and annotation",
+        "level": 2
+      },
+      {
+        "id": "7-remove-clutter-that-does-not-carry-information",
+        "text": "7. Remove clutter that does not carry information",
+        "level": 2
+      },
+      {
+        "id": "8-use-small-multiples-instead-of-one-crowded-chart",
+        "text": "8. Use small multiples instead of one crowded chart",
+        "level": 2
+      },
+      {
+        "id": "9-choose-colors-everyone-can-read",
+        "text": "9. Choose colors everyone can read",
+        "level": 2
+      },
+      {
+        "id": "10-design-dashboards-around-decisions",
+        "text": "10. Design dashboards around decisions",
+        "level": 2
+      },
+      {
+        "id": "a-checklist-before-you-share-a-chart",
+        "text": "A checklist before you share a chart",
+        "level": 2
+      },
+      {
+        "id": "where-to-go-next",
+        "text": "Where to go next",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "data-analysis-projects-for-beginners",
+      "data-analysis-techniques",
+      "data-analysis-tools"
+    ],
+    "relatedBlogs": [
+      "coding-horror",
+      "dan-luu",
+      "joho-no-todai-english"
+    ]
+  },
+  {
+    "slug": "sql-queries-for-data-analysts",
+    "title": "30 SQL Queries Every Data Analyst Should Know for Real-World Projects",
+    "seoTitle": "30 SQL Queries for Data Analysts, With Real Output",
+    "description": "30 SQL queries for data analysis, from filters and joins to window functions, cohorts and funnels, each run on PostgreSQL 18 and SQLite with real output.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "sql",
+        "slug": "sql"
+      },
+      {
+        "name": "data analysis",
+        "slug": "data-analysis"
+      },
+      {
+        "name": "postgresql",
+        "slug": "postgresql"
+      },
+      {
+        "name": "window functions",
+        "slug": "window-functions"
+      },
+      {
+        "name": "data analyst",
+        "slug": "data-analyst"
+      },
+      {
+        "name": "databases",
+        "slug": "databases"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/sql-queries-for-data-analysts/shop-schema.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/sql-queries-for-data-analysts",
+    "isCanonicalLocal": true,
+    "wordCount": 3411,
+    "readingTimeMinutes": 16,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "set-up-the-practice-database",
+        "text": "Set up the practice database",
+        "level": 2
+      },
+      {
+        "id": "select-filter-and-sort-16",
+        "text": "Select, filter and sort (1–6)",
+        "level": 2
+      },
+      {
+        "id": "group-and-summarize-78",
+        "text": "Group and summarize (7–8)",
+        "level": 2
+      },
+      {
+        "id": "join-tables-914",
+        "text": "Join tables (9–14)",
+        "level": 2
+      },
+      {
+        "id": "subqueries-and-ctes-1517",
+        "text": "Subqueries and CTEs (15–17)",
+        "level": 2
+      },
+      {
+        "id": "window-functions-1825",
+        "text": "Window functions (18–25)",
+        "level": 2
+      },
+      {
+        "id": "business-analysis-recipes-2628",
+        "text": "Business analysis recipes (26–28)",
+        "level": 2
+      },
+      {
+        "id": "data-quality-checks-2930",
+        "text": "Data-quality checks (29–30)",
+        "level": 2
+      },
+      {
+        "id": "mistakes-that-produce-wrong-numbers",
+        "text": "Mistakes that produce wrong numbers",
+        "level": 2
+      },
+      {
+        "id": "how-to-practice-after-these-30",
+        "text": "How to practice after these 30",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "data-analysis-projects-for-beginners",
+      "data-analysis-tools",
+      "data-analysis-techniques"
+    ],
+    "relatedBlogs": [
+      "coding-horror",
+      "dan-luu",
+      "joho-no-todai-english"
+    ]
+  },
+  {
     "slug": "python-automation-scripts",
     "title": "15 Python Automation Scripts to Save Time at Work",
     "seoTitle": "",
@@ -94,9 +678,9 @@
       }
     ],
     "relatedArticles": [
-      "python-interview-questions",
-      "python-libraries-for-machine-learning",
-      "python-projects-for-beginners"
+      "data-analysis-tools",
+      "data-analysis-techniques",
+      "python-interview-questions"
     ],
     "relatedBlogs": [
       "ned-batchelder",
@@ -191,8 +775,8 @@
     ],
     "relatedArticles": [
       "python-projects-for-beginners",
-      "python-automation-scripts",
-      "python-libraries-for-machine-learning"
+      "data-analysis-techniques",
+      "data-analysis-tools"
     ],
     "relatedBlogs": [
       "trey-hunner",
@@ -409,9 +993,9 @@
       }
     ],
     "relatedArticles": [
+      "data-analysis-projects-for-beginners",
       "python-data-science-projects",
-      "python-interview-questions",
-      "machine-learning-projects"
+      "python-interview-questions"
     ],
     "relatedBlogs": [
       "trey-hunner",
@@ -554,9 +1138,9 @@
       }
     ],
     "relatedArticles": [
-      "python-automation-scripts",
-      "python-interview-questions",
-      "python-libraries-for-machine-learning"
+      "data-analysis-techniques",
+      "data-analysis-tools",
+      "python-automation-scripts"
     ],
     "relatedBlogs": [
       "ned-batchelder",
@@ -4276,7 +4860,7 @@
     "contentImages": [],
     "canonicalUrl": "https://blogai.space/articles/python-data-science-projects",
     "isCanonicalLocal": true,
-    "wordCount": 5570,
+    "wordCount": 5602,
     "readingTimeMinutes": 25,
     "showToc": true,
     "toc": [
@@ -5700,8 +6284,8 @@
     ],
     "relatedArticles": [
       "probability-and-statistics-concepts-for-data-science",
-      "advanced-mathematics-concepts-with-applications",
-      "calculus-formulas-theorems-and-examples"
+      "data-analysis-techniques",
+      "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
       "netflix-techblog",

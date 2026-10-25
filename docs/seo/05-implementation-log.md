@@ -36,6 +36,25 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Data analysis articles (2026-10-25)
+
+Five published articles in Programming and Technology, all with `publishedAt` 2026-10-25. No existing URLs changed.
+
+- `/articles/data-analysis-projects-for-beginners` — 25 projects in three levels (spreadsheets, SQL, BI and Python), each with a public dataset (2 figures)
+- `/articles/data-analysis-techniques` — 15 techniques with Python code and output, also in Mathematics (1 figure)
+- `/articles/data-analysis-tools` — 20 tools across the analyst stack with starter stacks (1 figure)
+- `/articles/sql-queries-for-data-analysts` — 30 queries on a downloadable practice database (1 figure, plus `public/data/sql-practice-shop.sql`)
+- `/articles/data-visualization-techniques` — 10 techniques with before-and-after charts (5 figures)
+
+Details:
+
+- **Code was run before publication.** All 30 SQL queries ran on PostgreSQL 18.6 (PGlite 0.5.11) and SQLite 3.50.4, and the two engines returned the same rows after rounding; the article shows PostgreSQL output. Testing surfaced two dialect differences now explained in the article: NULLs sort first in SQLite and last in PostgreSQL (query 7 uses `NULLS LAST`), and SQLite returns `24.299999999999997` where PostgreSQL returns `24.30` (query 9). The techniques code ran with Python 3.13.12, pandas 3.0.3, NumPy 2.3.5, SciPy 1.18.1, statsmodels 0.15.0 and scikit-learn 1.9.0 with warnings as errors. The two matplotlib snippets ran with matplotlib 3.11.1. DuckDB could not be run locally (its DLL is blocked by Windows Application Control), so the SQL article says DuckDB was not tested.
+- **Data is labeled.** The SQL practice data, the techniques dataset and the visualization charts are invented or synthetic, and each article says so. The techniques article reports results that did not flatter the method: k-means' silhouette score preferred 2 clusters to the 3 used, the A/B example is inconclusive (p = 0.054), robust z-scores flag ordinary December days, and the first cohort is inflated by customers who predate the data.
+- **Facts checked against primary sources (25 October 2026):** Microsoft Power BI pricing page ($14 Pro, $24 PPU) and Python in Excel support page; Google Sheets limits, BigQuery sandbox limits and the Data Studio release notes (Looker Studio renamed Data Studio on 16 April 2026); DuckDB release calendar and 2.0.0 announcement (21 October 2026); PyPI release dates for pandas 3.0.0/3.1.0 and Polars 2.0.0; PostgreSQL release pages (18 released 25 September 2025, 19 RC1 15 October 2026); R project news (4.6.1); Positron licence; Metabase licence; Fivetran press release (merger with dbt Labs completed 1 June 2026); OpenRefine download page; Superset GitHub releases; NEI and WCAG pages for the color guidance. Journal DOIs were resolved through doi.org and Crossref. Each dataset page in the projects article was opened or fetched; Zillow's research page refused automated requests and was replaced with another project.
+- **Not reachable:** Reddit and X; community advice is attributed as common advice from guides, not measured fact. Some publisher pages (Taylor & Francis, Tableau, EIA) refused automated requests.
+- **Overlap:** the projects list overlaps the 101 data science projects; it targets the analyst path on mostly different datasets, and the data science list now links to it (one added paragraph; `updatedAt` not bumped). See [02-keywords-content.md](02-keywords-content.md).
+- **Figures:** 10 SVGs from the new `scripts/diagrams/make_data_analysis_diagrams.py`, which reuses `make_ml_diagrams.py` styling. The visualization charts use invented numbers fixed in the script.
+
 ### Google Search Central documentation audit (2026-10-23)
 
 Audited the site against the guides in [Google Search Central](https://developers.google.com/search/docs) that apply to a content site with a blog directory. Ecommerce, local business, jobs, recipes, video, AMP, Web Stories and international guides do not apply.

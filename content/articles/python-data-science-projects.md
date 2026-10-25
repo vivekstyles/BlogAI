@@ -24,6 +24,8 @@ The best data science project is one that answers a real question with real data
 
 **How to use this list.** Beginners should start with projects 1–35, which focus on loading, cleaning, exploring and visualizing data, plus simple models. Projects 36–70 add proper machine learning workflows, text, time series and APIs. Projects 71–101 involve deep learning, large or messy data, causal questions and deployment. You do not need to do them in order; pick a topic you care about, because curiosity is what carries a project through the messy middle. Classic teaching datasets such as Titanic, Iris and Digits appear in a few beginner projects because they are good for learning the mechanics; for a portfolio, lead with projects on messier, less familiar data.
 
+**Looking for analyst-style projects instead?** If you are aiming for a data analyst role, our [25 data analysis projects for beginners](/articles/data-analysis-projects-for-beginners) focus on spreadsheets, SQL and BI dashboards with business questions.
+
 **About the datasets.** Every dataset linked below was publicly listed by its provider at the time of writing (October 2026). Some require a free account (Kaggle) or agreeing to terms of use, and a few contain personal or sensitive data that you must handle responsibly. Always read the license before publishing results or derived data.
 
 ## What makes a project portfolio-ready
