@@ -37,8 +37,20 @@ export const tags = [
     "blogCount": 4
   },
   {
+    "name": "financial independence",
+    "slug": "financial-independence",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
     "name": "healthy eating",
     "slug": "healthy-eating",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "investing",
+    "slug": "investing",
     "count": 4,
     "blogCount": 4
   },
@@ -51,6 +63,18 @@ export const tags = [
   {
     "name": "programming",
     "slug": "programming",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "retirement planning",
+    "slug": "retirement-planning",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "saving money",
+    "slug": "saving-money",
     "count": 3,
     "blogCount": 3
   },
@@ -93,6 +117,12 @@ export const tags = [
   {
     "name": "analysis",
     "slug": "analysis",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "behavioral finance",
+    "slug": "behavioral-finance",
     "count": 2,
     "blogCount": 2
   },
@@ -145,6 +175,12 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "early retirement",
+    "slug": "early-retirement",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "education",
     "slug": "education",
     "count": 2,
@@ -153,6 +189,12 @@ export const tags = [
   {
     "name": "electric vehicles",
     "slug": "electric-vehicles",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "financial planning",
+    "slug": "financial-planning",
     "count": 2,
     "blogCount": 2
   },
@@ -481,6 +523,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "budgeting",
+    "slug": "budgeting",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "car culture",
     "slug": "car-culture",
     "count": 1,
@@ -585,6 +633,12 @@ export const tags = [
   {
     "name": "culture",
     "slug": "culture",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "data analysis",
+    "slug": "data-analysis",
     "count": 1,
     "blogCount": 1
   },
@@ -709,6 +763,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "frugality",
+    "slug": "frugality",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "fundamental physics",
     "slug": "fundamental-physics",
     "count": 1,
@@ -769,6 +829,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "index funds",
+    "slug": "index-funds",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "industry",
     "slug": "industry",
     "count": 1,
@@ -807,6 +873,12 @@ export const tags = [
   {
     "name": "logic",
     "slug": "logic",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "market history",
+    "slug": "market-history",
     "count": 1,
     "blogCount": 1
   },
@@ -919,8 +991,20 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "passive investing",
+    "slug": "passive-investing",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "payments",
     "slug": "payments",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "personal finance",
+    "slug": "personal-finance",
     "count": 1,
     "blogCount": 1
   },
@@ -1039,6 +1123,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "real estate investing",
+    "slug": "real-estate-investing",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "recommender systems",
     "slug": "recommender-systems",
     "count": 1,
@@ -1083,6 +1173,12 @@ export const tags = [
   {
     "name": "robotics",
     "slug": "robotics",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "safe withdrawal rates",
+    "slug": "safe-withdrawal-rates",
     "count": 1,
     "blogCount": 1
   },
@@ -1159,6 +1255,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "student loans",
+    "slug": "student-loans",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "supercars",
     "slug": "supercars",
     "count": 1,
@@ -1173,6 +1275,12 @@ export const tags = [
   {
     "name": "system design",
     "slug": "system-design",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "taxes",
+    "slug": "taxes",
     "count": 1,
     "blogCount": 1
   },
@@ -1233,6 +1341,12 @@ export const tags = [
   {
     "name": "tutorials",
     "slug": "tutorials",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "uk personal finance",
+    "slug": "uk-personal-finance",
     "count": 1,
     "blogCount": 1
   },

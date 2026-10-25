@@ -29,7 +29,7 @@ export function Home() {
     <div className="home-page">
       <SEOHead
         title="Technical Articles & Curated Blog Directory"
-        description={`Read original articles and discover ${totalBlogs}+ community-curated blogs across AI, programming, engineering, math, physics, science, automotive tech, and nutrition.`}
+        description={`Read original articles and discover ${totalBlogs}+ curated blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and finance.`}
         canonicalPath="/"
         jsonLd={buildHomeSchema()}
       />
@@ -49,7 +49,7 @@ export function Home() {
           <p className="hero-subtitle">
             Read original articles published here, and explore a community-curated directory of
             independent blogs across AI, programming, software engineering, mathematics, physics, science,
-            automotive technology, and nutrition.
+            automotive technology, nutrition, and personal finance.
           </p>
 
           <div className="hero-actions">

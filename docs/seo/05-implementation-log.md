@@ -36,6 +36,26 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Personal finance category and articles (2026-10-25)
+
+New category `/category/personal-finance` and five published articles, all with `publishedAt` 2026-10-25. No existing URLs changed.
+
+- `Categories/Personal Finance/blogs.csv`: 8 blogs (Mr. Money Mustache, The White Coat Investor, A Wealth of Common Sense, Afford Anything, HumbleDollar, Monevator, Of Dollars And Data, Early Retirement Now). Each RSS feed returned 200 with posts from 2025-2026 on 25 October 2026. Get Rich Slowly, Kitces and Mad Fientist were left out because their feeds refused automated requests; The Financial Diet was left out because its feed's newest item was from 2022.
+- `/articles/money-management-tips` — 25 tips with 2026 figures (1 figure)
+- `/articles/personal-finance-rules` — 15 rules of thumb with sources and "when it breaks" (1 figure)
+- `/articles/budgeting-methods` — 20 methods on one \$4,000 example (1 figure)
+- `/articles/smart-money-habits` — 30 habits by daily, weekly, monthly and yearly cadence (1 figure)
+- `/articles/money-management-skills-in-your-20s` — 10 skills for young adults (1 figure)
+- Site-wide copy and default meta descriptions now list personal finance; several descriptions were shortened to stay within 160 characters.
+
+Details:
+
+- **Sources.** 2026 contribution limits from IRS IR-2025-111 and Rev. Proc. 2025-19; card APR from Federal Reserve G.19 (7 October 2026, August data); CPI from the BLS September 2026 release; the \$400 emergency figure from the Fed's 2025 SHED (May 2026); fraud figures from the FTC's 25 March 2026 JEC testimony (PDF text read directly); Vanguard *How America Saves 2026* figures read from the PDF; SPIVA mid-year 2026 figures from S&P's release as reported by two secondary sources (the PDF refused automated requests).
+- **Changed since common advice:** Fidelity's budgeting page now describes a 60/30/10 + 15 guideline, not the older 50/15/5 rule; the articles cite the current page and mention the older rule only as history.
+- **Not reachable:** spglobal.com, journals.uchicago.edu, investor.gov (via WebFetch), hhs.gov and reddit.com refused automated requests. The Thaler-Benartzi figures were confirmed from the DOL CLEAR review and Wharton; the HHS under-26 rule from HHS search results and healthinsurance.org; Bengen's 33-year finding from the paper's text on robberger.com. No Reddit or X community content is quoted.
+- **Worked examples** (card payoff, compound growth, fee drag, Rule of 72, budgets) are computed in `scripts/diagrams/make_finance_diagrams.py` or stated as simple arithmetic; returns of 7% are labeled as assumptions.
+- **Not advice:** each article states it is general education and that U.S. rules differ elsewhere.
+
 ### Large language model articles (2026-10-25)
 
 Five published articles in Artificial Intelligence and Programming and Technology, all with `publishedAt` 2026-10-25. No existing URLs changed.

@@ -61,6 +61,16 @@
       <outline type="rss" text="The polymath blog" title="The polymath blog" xmlUrl="https://polymathprojects.org/feed/" htmlUrl="https://polymathprojects.org/" category="Mathematics" />
       <outline type="rss" text="What's New (Terence Tao)" title="What's New (Terence Tao)" xmlUrl="https://terrytao.wordpress.com/feed/" htmlUrl="https://terrytao.wordpress.com/" category="Mathematics" />
     </outline>
+    <outline text="Personal Finance" title="Personal Finance">
+      <outline type="rss" text="A Wealth of Common Sense" title="A Wealth of Common Sense" xmlUrl="https://awealthofcommonsense.com/feed/" htmlUrl="https://awealthofcommonsense.com/" category="Personal Finance" />
+      <outline type="rss" text="Afford Anything" title="Afford Anything" xmlUrl="https://affordanything.com/feed/" htmlUrl="https://affordanything.com/" category="Personal Finance" />
+      <outline type="rss" text="Early Retirement Now" title="Early Retirement Now" xmlUrl="https://earlyretirementnow.com/feed/" htmlUrl="https://earlyretirementnow.com/" category="Personal Finance" />
+      <outline type="rss" text="HumbleDollar" title="HumbleDollar" xmlUrl="https://humbledollar.com/feed/" htmlUrl="https://humbledollar.com/" category="Personal Finance" />
+      <outline type="rss" text="Monevator" title="Monevator" xmlUrl="https://monevator.com/feed/" htmlUrl="https://monevator.com/" category="Personal Finance" />
+      <outline type="rss" text="Mr. Money Mustache" title="Mr. Money Mustache" xmlUrl="https://www.mrmoneymustache.com/feed/" htmlUrl="https://www.mrmoneymustache.com/" category="Personal Finance" />
+      <outline type="rss" text="Of Dollars And Data" title="Of Dollars And Data" xmlUrl="https://ofdollarsanddata.com/feed/" htmlUrl="https://ofdollarsanddata.com/" category="Personal Finance" />
+      <outline type="rss" text="The White Coat Investor" title="The White Coat Investor" xmlUrl="https://www.whitecoatinvestor.com/feed/" htmlUrl="https://www.whitecoatinvestor.com/" category="Personal Finance" />
+    </outline>
     <outline text="Physics" title="Physics">
       <outline type="rss" text="Backreaction" title="Backreaction" xmlUrl="https://backreaction.blogspot.com/feeds/posts/default" htmlUrl="https://backreaction.blogspot.com/" category="Physics" />
       <outline type="rss" text="Cocktail Party Physics" title="Cocktail Party Physics" xmlUrl="https://www.jenniferouellette-writes.com/feed" htmlUrl="https://www.jenniferouellette-writes.com/" category="Physics" />

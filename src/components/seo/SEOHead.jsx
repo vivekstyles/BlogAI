@@ -3,7 +3,7 @@ import JsonLd from './JsonLd';
 import { SITE_URL, formatPageTitle, INDEXABLE_ROBOTS } from '../../utils/seo';
 
 const DEFAULT_DESC =
-  'Discover, search, filter, and subscribe to high-quality blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.';
+  'Discover, search, and subscribe to quality blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and personal finance.';
 
 export function SEOHead({
   title,

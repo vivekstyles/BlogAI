@@ -11,7 +11,7 @@ export const INDEXABLE_ROBOTS = 'index, follow, max-image-preview:large';
 export const NOINDEX_ROBOTS = 'noindex, follow';
 
 export const SITE_DESCRIPTION =
-  'Original articles and a community-curated directory of high-quality blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.';
+  'Original articles and a community-curated directory of high-quality blogs in AI, programming, engineering, mathematics, physics, science, automotive technology, nutrition, and personal finance.';
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 // Square raster logo: Google needs at least 112x112 in a Google Images format (not SVG)
 export const LOGO_URL = `${SITE_URL}/icon-512.png`;

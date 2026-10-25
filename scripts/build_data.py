@@ -29,7 +29,8 @@ CATEGORY_DESCRIPTIONS = {
     "Physics": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
     "Science": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
     "Automobile": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
-    "Food and Nutrition": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes."
+    "Food and Nutrition": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes.",
+    "Personal Finance": "Budgeting, saving, debt, investing, retirement planning, and the everyday habits that build financial stability."
 }
 
 def generate_opml(categories_data: List[Dict[str, Any]], blogs_data: List[Dict[str, Any]], output_path: Path):

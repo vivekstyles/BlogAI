@@ -232,7 +232,7 @@ async function runPrerender() {
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Discover Great Technical &amp; Scientific Blogs</h1>
-          <p class="hero-subtitle">Read original articles published here, and explore a community-curated directory of ${blogs.length} independent blogs across AI, programming, engineering, mathematics, physics, science, automotive technology, and nutrition.</p>
+          <p class="hero-subtitle">Read original articles published here, and explore a community-curated directory of ${blogs.length} independent blogs across AI, programming, engineering, mathematics, physics, science, automotive technology, nutrition, and personal finance.</p>
           <a href="/articles">Read Articles</a>
           <a href="/directory">Browse Blog Directory</a>
         </div>
@@ -266,7 +266,7 @@ async function runPrerender() {
   const homeHtml = buildHtml({
     template,
     title: 'Technical Articles & Curated Blog Directory',
-    description: `Read original articles and discover ${blogs.length}+ community-curated blogs across AI, programming, engineering, math, physics, science, automotive tech, and nutrition.`,
+    description: `Read original articles and discover ${blogs.length}+ curated blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and finance.`,
     canonicalUrl: `${SITE_URL}/`,
     jsonLd: buildHomeSchema(),
     bodyContent: homeBody,
@@ -298,7 +298,7 @@ async function runPrerender() {
   writeRouteFile('/directory', buildHtml({
     template,
     title: 'Community Blog Directory',
-    description: `Search and filter ${blogs.length} community-curated independent blogs across AI, programming, engineering, math, physics, science, automotive technology, and nutrition.`,
+    description: `Search and filter ${blogs.length} curated independent blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and finance.`,
     canonicalUrl: `${SITE_URL}/directory`,
     jsonLd: [{
       '@context': 'https://schema.org',
@@ -569,7 +569,7 @@ async function runPrerender() {
   const submitHtml = buildHtml({
     template,
     title: 'Submit a Publication',
-    description: 'Recommend a high-quality independent blog in AI, programming, engineering, math, physics, science, automotive tech, or nutrition for BlogAI Directory.',
+    description: 'Recommend an independent blog in AI, programming, engineering, math, physics, science, automotive tech, nutrition, or finance for BlogAI Directory.',
     canonicalUrl: `${SITE_URL}/submit`,
     bodyContent: `<main id="main-content"><div class="container"><h1>Submit a Blog for Review</h1><p>Suggest high-signal publications for inclusion in the directory.</p></div></main>`,
   });

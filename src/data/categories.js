@@ -81,6 +81,22 @@ export const categories = [
     ]
   },
   {
+    "name": "Personal Finance",
+    "slug": "personal-finance",
+    "description": "Budgeting, saving, debt, investing, retirement planning, and the everyday habits that build financial stability.",
+    "count": 8,
+    "popularTags": [
+      "behavioral finance",
+      "budgeting",
+      "data analysis",
+      "early retirement",
+      "financial independence",
+      "financial planning",
+      "frugality",
+      "index funds"
+    ]
+  },
+  {
     "name": "Physics",
     "slug": "physics",
     "description": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",

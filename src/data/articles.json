@@ -1,5 +1,106 @@
 [
   {
+    "slug": "budgeting-methods",
+    "title": "20 Best Budgeting Methods to Manage Your Monthly Income Effectively",
+    "seoTitle": "20 Budgeting Methods to Manage Your Monthly Income",
+    "description": "20 budgeting methods compared, from 50/30/20 and zero-based to envelopes, kakeibo and plans for irregular income, with examples and who each one suits.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "budgeting",
+        "slug": "budgeting"
+      },
+      {
+        "name": "money management",
+        "slug": "money-management"
+      },
+      {
+        "name": "saving money",
+        "slug": "saving-money"
+      },
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      },
+      {
+        "name": "debt",
+        "slug": "debt"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/budgeting-methods/budget-chooser.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/budgeting-methods",
+    "isCanonicalLocal": true,
+    "wordCount": 3069,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "comparison-table",
+        "text": "Comparison table",
+        "level": 2
+      },
+      {
+        "id": "percentage-based-methods",
+        "text": "Percentage-based methods",
+        "level": 2
+      },
+      {
+        "id": "detailed-every-dollar-methods",
+        "text": "Detailed, every-dollar methods",
+        "level": 2
+      },
+      {
+        "id": "save-first-methods",
+        "text": "Save-first methods",
+        "level": 2
+      },
+      {
+        "id": "methods-for-irregular-costs-and-irregular-income",
+        "text": "Methods for irregular costs and irregular income",
+        "level": 2
+      },
+      {
+        "id": "how-to-choose-and-start",
+        "text": "How to choose and start",
+        "level": 2
+      },
+      {
+        "id": "faq",
+        "text": "FAQ",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "money-management-tips",
+      "money-management-skills-in-your-20s",
+      "personal-finance-rules"
+    ],
+    "relatedBlogs": [
+      "afford-anything",
+      "humbledollar",
+      "mr-money-mustache"
+    ]
+  },
+  {
     "slug": "data-analysis-projects-for-beginners",
     "title": "25 Best Data Analysis Projects for Beginners to Build in 2026",
     "seoTitle": "25 Data Analysis Projects for Beginners to Build in 2026",
@@ -90,9 +191,9 @@
       "python-projects-for-beginners"
     ],
     "relatedBlogs": [
+      "of-dollars-and-data",
       "coding-horror",
-      "dan-luu",
-      "joho-no-todai-english"
+      "dan-luu"
     ]
   },
   {
@@ -458,9 +559,9 @@
       "data-analysis-tools"
     ],
     "relatedBlogs": [
+      "of-dollars-and-data",
       "coding-horror",
-      "dan-luu",
-      "joho-no-todai-english"
+      "dan-luu"
     ]
   },
   {
@@ -904,6 +1005,261 @@
     ]
   },
   {
+    "slug": "money-management-skills-in-your-20s",
+    "title": "10 Essential Money Management Skills Everyone Should Learn in Their 20s",
+    "seoTitle": "10 Money Management Skills to Learn in Your 20s",
+    "description": "10 money skills to learn in your 20s, from reading a paycheck and building credit to employer benefits, student loans, investing early and avoiding scams.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "money management",
+        "slug": "money-management"
+      },
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      },
+      {
+        "name": "credit score",
+        "slug": "credit-score"
+      },
+      {
+        "name": "investing",
+        "slug": "investing"
+      },
+      {
+        "name": "budgeting",
+        "slug": "budgeting"
+      },
+      {
+        "name": "student loans",
+        "slug": "student-loans"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/money-management-skills-in-your-20s/start-early.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/money-management-skills-in-your-20s",
+    "isCanonicalLocal": true,
+    "wordCount": 2524,
+    "readingTimeMinutes": 11,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "why-your-20s-matter-so-much",
+        "text": "Why your 20s matter so much",
+        "level": 2
+      },
+      {
+        "id": "1-reading-your-paycheck",
+        "text": "1. Reading your paycheck",
+        "level": 2
+      },
+      {
+        "id": "2-tracking-spending-and-making-a-budget",
+        "text": "2. Tracking spending and making a budget",
+        "level": 2
+      },
+      {
+        "id": "3-building-an-emergency-fund",
+        "text": "3. Building an emergency fund",
+        "level": 2
+      },
+      {
+        "id": "4-building-and-protecting-your-credit",
+        "text": "4. Building and protecting your credit",
+        "level": 2
+      },
+      {
+        "id": "5-managing-debt-including-student-loans",
+        "text": "5. Managing debt, including student loans",
+        "level": 2
+      },
+      {
+        "id": "6-using-your-employers-benefits",
+        "text": "6. Using your employer's benefits",
+        "level": 2
+      },
+      {
+        "id": "7-investing-early-and-simply",
+        "text": "7. Investing early and simply",
+        "level": 2
+      },
+      {
+        "id": "8-growing-your-income",
+        "text": "8. Growing your income",
+        "level": 2
+      },
+      {
+        "id": "9-protecting-yourself-from-big-losses",
+        "text": "9. Protecting yourself from big losses",
+        "level": 2
+      },
+      {
+        "id": "10-planning-big-goals-without-lifestyle-creep",
+        "text": "10. Planning big goals without lifestyle creep",
+        "level": 2
+      },
+      {
+        "id": "a-plan-for-your-20s-step-by-step",
+        "text": "A plan for your 20s, step by step",
+        "level": 2
+      },
+      {
+        "id": "faq",
+        "text": "FAQ",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "money-management-tips",
+      "budgeting-methods",
+      "smart-money-habits"
+    ],
+    "relatedBlogs": [
+      "humbledollar",
+      "the-white-coat-investor",
+      "a-wealth-of-common-sense"
+    ]
+  },
+  {
+    "slug": "money-management-tips",
+    "title": "25 Best Money Management Tips to Save More and Build Wealth in 2026",
+    "seoTitle": "25 Money Management Tips to Save More in 2026",
+    "description": "25 practical money management tips for 2026, from tracking cash flow and building an emergency fund to clearing card debt and investing at low cost.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "money management",
+        "slug": "money-management"
+      },
+      {
+        "name": "saving money",
+        "slug": "saving-money"
+      },
+      {
+        "name": "budgeting",
+        "slug": "budgeting"
+      },
+      {
+        "name": "debt",
+        "slug": "debt"
+      },
+      {
+        "name": "investing",
+        "slug": "investing"
+      },
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/money-management-tips/credit-card-payoff.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/money-management-tips",
+    "isCanonicalLocal": true,
+    "wordCount": 2968,
+    "readingTimeMinutes": 13,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "where-things-stand-in-2026",
+        "text": "Where things stand in 2026",
+        "level": 2
+      },
+      {
+        "id": "know-your-numbers",
+        "text": "Know your numbers",
+        "level": 2
+      },
+      {
+        "id": "build-a-safety-net",
+        "text": "Build a safety net",
+        "level": 2
+      },
+      {
+        "id": "spend-on-purpose",
+        "text": "Spend on purpose",
+        "level": 2
+      },
+      {
+        "id": "handle-debt-well",
+        "text": "Handle debt well",
+        "level": 2
+      },
+      {
+        "id": "save-and-invest-automatically",
+        "text": "Save and invest automatically",
+        "level": 2
+      },
+      {
+        "id": "protect-what-you-build",
+        "text": "Protect what you build",
+        "level": 2
+      },
+      {
+        "id": "common-mistakes-to-avoid",
+        "text": "Common mistakes to avoid",
+        "level": 2
+      },
+      {
+        "id": "a-30-day-starter-checklist",
+        "text": "A 30-day starter checklist",
+        "level": 2
+      },
+      {
+        "id": "faq",
+        "text": "FAQ",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "budgeting-methods",
+      "money-management-skills-in-your-20s",
+      "personal-finance-rules"
+    ],
+    "relatedBlogs": [
+      "afford-anything",
+      "humbledollar",
+      "of-dollars-and-data"
+    ]
+  },
+  {
     "slug": "open-source-llms",
     "title": "10 Best Open-Source LLMs to Know in 2026: From Early Models to Modern AI",
     "seoTitle": "10 Best Open-Source LLMs to Know in 2026",
@@ -1053,6 +1409,221 @@
     ]
   },
   {
+    "slug": "personal-finance-rules",
+    "title": "15 Personal Finance Rules Everyone Should Follow for Financial Stability",
+    "seoTitle": "15 Personal Finance Rules for Financial Stability",
+    "description": "15 personal finance rules of thumb, from the 50/30/20 split and emergency fund to the Rule of 72 and 4% rule, with the math and when each rule breaks.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      },
+      {
+        "name": "financial planning",
+        "slug": "financial-planning"
+      },
+      {
+        "name": "saving money",
+        "slug": "saving-money"
+      },
+      {
+        "name": "debt",
+        "slug": "debt"
+      },
+      {
+        "name": "retirement planning",
+        "slug": "retirement-planning"
+      },
+      {
+        "name": "investing",
+        "slug": "investing"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/personal-finance-rules/fee-drag.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/personal-finance-rules",
+    "isCanonicalLocal": true,
+    "wordCount": 3063,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "rules-at-a-glance",
+        "text": "Rules at a glance",
+        "level": 2
+      },
+      {
+        "id": "rules-for-cash-flow-and-safety",
+        "text": "Rules for cash flow and safety",
+        "level": 2
+      },
+      {
+        "id": "rules-for-retirement-saving",
+        "text": "Rules for retirement saving",
+        "level": 2
+      },
+      {
+        "id": "rules-for-debt",
+        "text": "Rules for debt",
+        "level": 2
+      },
+      {
+        "id": "rules-for-investing",
+        "text": "Rules for investing",
+        "level": 2
+      },
+      {
+        "id": "a-rule-for-protecting-yourself",
+        "text": "A rule for protecting yourself",
+        "level": 2
+      },
+      {
+        "id": "how-to-use-these-rules-together",
+        "text": "How to use these rules together",
+        "level": 2
+      },
+      {
+        "id": "faq",
+        "text": "FAQ",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "money-management-tips",
+      "budgeting-methods",
+      "smart-money-habits"
+    ],
+    "relatedBlogs": [
+      "humbledollar",
+      "a-wealth-of-common-sense",
+      "of-dollars-and-data"
+    ]
+  },
+  {
+    "slug": "smart-money-habits",
+    "title": "30 Smart Money Habits to Build Wealth and Achieve Financial Freedom",
+    "seoTitle": "30 Smart Money Habits to Build Wealth",
+    "description": "30 smart money habits grouped by daily, weekly, monthly and yearly routines, with the research on why automation and small repeated actions build wealth.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "money habits",
+        "slug": "money-habits"
+      },
+      {
+        "name": "saving money",
+        "slug": "saving-money"
+      },
+      {
+        "name": "financial independence",
+        "slug": "financial-independence"
+      },
+      {
+        "name": "budgeting",
+        "slug": "budgeting"
+      },
+      {
+        "name": "investing",
+        "slug": "investing"
+      },
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/smart-money-habits/habit-cadence.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/smart-money-habits",
+    "isCanonicalLocal": true,
+    "wordCount": 2495,
+    "readingTimeMinutes": 11,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "why-habits-beat-willpower",
+        "text": "Why habits beat willpower",
+        "level": 2
+      },
+      {
+        "id": "daily-habits-16",
+        "text": "Daily habits (1–6)",
+        "level": 2
+      },
+      {
+        "id": "weekly-habits-713",
+        "text": "Weekly habits (7–13)",
+        "level": 2
+      },
+      {
+        "id": "monthly-habits-1422",
+        "text": "Monthly habits (14–22)",
+        "level": 2
+      },
+      {
+        "id": "yearly-habits-2330",
+        "text": "Yearly habits (23–30)",
+        "level": 2
+      },
+      {
+        "id": "how-to-build-these-habits",
+        "text": "How to build these habits",
+        "level": 2
+      },
+      {
+        "id": "faq",
+        "text": "FAQ",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "money-management-tips",
+      "budgeting-methods",
+      "money-management-skills-in-your-20s"
+    ],
+    "relatedBlogs": [
+      "afford-anything",
+      "humbledollar",
+      "mr-money-mustache"
+    ]
+  },
+  {
     "slug": "sql-queries-for-data-analysts",
     "title": "30 SQL Queries Every Data Analyst Should Know for Real-World Projects",
     "seoTitle": "30 SQL Queries for Data Analysts, With Real Output",
@@ -1167,9 +1738,9 @@
       "data-analysis-techniques"
     ],
     "relatedBlogs": [
+      "of-dollars-and-data",
       "coding-horror",
-      "dan-luu",
-      "joho-no-todai-english"
+      "dan-luu"
     ]
   },
   {
@@ -5395,7 +5966,7 @@
     "relatedBlogs": [
       "quanta-magazine",
       "shtetl-optimized",
-      "ars-technica-science"
+      "of-dollars-and-data"
     ]
   },
   {

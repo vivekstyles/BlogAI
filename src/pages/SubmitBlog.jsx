@@ -78,7 +78,7 @@ export function SubmitBlog() {
     <div className="submit-page">
       <SEOHead
         title="Submit a Publication"
-        description="Recommend a high-quality independent blog in engineering, mathematics, physics, science, automotive tech, or nutrition for inclusion in BlogAI Directory."
+        description="Recommend an independent blog in AI, programming, engineering, math, physics, science, automotive tech, nutrition, or finance for BlogAI Directory."
         canonicalPath="/submit"
       />
 
