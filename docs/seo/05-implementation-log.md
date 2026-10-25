@@ -36,6 +36,14 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### PHP2Shell article (2026-10-26)
+
+One published article, `/articles/php2shell-php-vulnerabilities`, in Programming and Technology, `publishedAt` 2026-10-26. No existing URLs changed.
+
+- **Sources read directly:** PHP's 20, 21 and 23 October 2026 announcements, GitHub advisories GHSA-w8hw-w9fx-j79w and GHSA-6wmf-4rv5-p3rp (and GHSA-3qgc-jrrr-25jv for CVE-2024-4577), the PHP Foundation post, UK NCSC, AWS Security Blog (Amazon Threat Intelligence), Wiz, Akamai, watchTowr, Huntress, Tenable and CloudLinux.
+- **Not reachable or not verified:** the NSA advisory and the cPanel support article (403), CISA's own alert page and KEV JSON feed (could not be fetched; the CISA alert wording and "not in KEV as of 23 October" come from Tenable). Cloudflare's "early attacks" quote is from Tenable. The Hacker News thread is cited only as practitioner views. No exploit code or exploit steps are included.
+- **Recheck:** exploitation status and KEV listing, CVE-2026-115560, and distribution package versions.
+
 ### Earning-income articles (2026-10-25)
 
 Five published articles, all with `publishedAt` 2026-10-25, four in Personal Finance and one in Artificial Intelligence and Personal Finance. No existing URLs changed.

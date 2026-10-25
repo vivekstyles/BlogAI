@@ -73,6 +73,7 @@
 | `/articles/ai-tools-to-make-money` | AI tools to make money | best AI tools 2026, make money with AI, AI tools for freelancers | can you make money with AI; do I have to disclose AI use; can I copyright AI art | Commercial-investigation | Freelancers and creators adding AI to paid work |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
+| `/articles/php2shell-php-vulnerabilities` | PHP2Shell | CVE-2026-109618, CVE-2026-109619, PHP security vulnerability 2026, PHP RCE fix | which PHP versions are affected by PHP2Shell; is disabling session.upload_progress enough; does PHP2Shell affect WordPress | Informational / how-to (news-driven) | Server administrators, PHP developers, site owners |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
 | `/category/mathematics` | mathematics blogs | math articles and blogs | best math blogs to follow | Commercial-investigation | Math learners |
 | `/category/engineering` etc. | `<category> blogs` | — | best `<category>` blogs | Commercial-investigation | — |
@@ -175,6 +176,12 @@ No consolidation, redirect or unpublishing is recommended.
 - **Added 2026-10-25:** new Personal Finance category with eight directory blogs and five articles: 25 money management tips for 2026, 15 personal finance rules, 20 budgeting methods, 30 smart money habits and 10 money skills for your 20s. All cross-link to each other and to `/category/personal-finance`, with 5 SVG figures from `scripts/diagrams/make_finance_diagrams.py`.
 - **YMYL:** money is a "your money or your life" topic, so accuracy matters more than usual. U.S. figures (2026 IRS limits, card APR from G.19, CPI, SHED, SPIVA, FTC fraud data) are dated in the text; recheck them when the sources update (IRS limits each November, G.19 monthly, SHED each May, SPIVA twice a year) and bump `updatedAt` only when content changes. Consider a named, qualified reviewer (for example a CFP) before promoting these pages.
 - **Gaps:** country-specific guides (India: EPF, PPF, NPS; UK: ISAs and pensions) and a debt payoff calculator as a link asset. Confirm demand in GSC first.
+
+### Cluster K — Web security (Programming and Technology category)
+
+- **Added 2026-10-26:** one article, PHP2Shell explained (CVE-2026-109618 and CVE-2026-109619), with affected versions, SAPI risk, patch and restart steps, PHP's interim mitigations and compromise checks. No overlap with existing articles; links to the RSS article for following advisories.
+- **Freshness:** news-driven and fast-changing. Recheck exploitation status, CISA KEV listing and CVE-2026-115560 (advisory due with PHP's next regular release) weekly for the first month, then monthly. Bump `updatedAt` only when content changes.
+- **Gaps:** a general PHP hardening guide and a "how to read a CVE advisory" explainer. Confirm demand in GSC first.
 
 ### Cluster J — Earning extra income (Personal Finance category)
 

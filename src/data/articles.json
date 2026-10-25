@@ -1,5 +1,62 @@
 [
   {
+    "slug": "php2shell-php-vulnerabilities",
+    "title": "PHP2Shell Explained: Critical PHP Security Vulnerabilities, CVEs, and How to Fix Them (2026)",
+    "seoTitle": "PHP2Shell Explained: CVEs, Affected Versions and Fixes",
+    "description": "What PHP2Shell (CVE-2026-109618 and CVE-2026-109619) is, which PHP versions and setups are affected, and how to patch, mitigate and check for compromise.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-26",
+    "updatedAt": "2026-10-26",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "php",
+        "slug": "php"
+      },
+      {
+        "name": "cybersecurity",
+        "slug": "cybersecurity"
+      },
+      {
+        "name": "vulnerabilities",
+        "slug": "vulnerabilities"
+      },
+      {
+        "name": "web servers",
+        "slug": "web-servers"
+      },
+      {
+        "name": "patch management",
+        "slug": "patch-management"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/php2shell-php-vulnerabilities",
+    "isCanonicalLocal": true,
+    "wordCount": 3702,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "relatedArticles": [
+      "data-analysis-projects-for-beginners",
+      "data-analysis-techniques",
+      "data-analysis-tools"
+    ],
+    "relatedBlogs": [
+      "krebs-on-security",
+      "schneier-on-security",
+      "coding-horror"
+    ]
+  },
+  {
     "slug": "ai-tools-to-make-money",
     "title": "10 Best AI Tools to Make Money Online in 2026",
     "seoTitle": "10 Best AI Tools to Make Money Online in 2026",
