@@ -106,7 +106,7 @@
     "relatedBlogs": [
       "simon-willisons-weblog",
       "hamels-blog",
-      "a-wealth-of-common-sense"
+      "one-useful-thing"
     ]
   },
   {
@@ -206,8 +206,8 @@
     ],
     "relatedBlogs": [
       "afford-anything",
-      "humbledollar",
-      "mr-money-mustache"
+      "budgets-are-sexy",
+      "the-college-investor"
     ]
   },
   {
@@ -420,9 +420,9 @@
       "numpy-examples-for-numerical-computing"
     ],
     "relatedBlogs": [
+      "john-d-cook",
       "ned-batchelder",
-      "python-insider",
-      "python-software-foundation-news"
+      "python-insider"
     ]
   },
   {
@@ -1215,9 +1215,9 @@
       "money-management-skills-in-your-20s"
     ],
     "relatedBlogs": [
-      "humbledollar",
-      "a-wealth-of-common-sense",
-      "afford-anything"
+      "abnormal-returns",
+      "budgets-are-sexy",
+      "humbledollar"
     ]
   },
   {
@@ -1331,9 +1331,9 @@
       "side-hustle-ideas"
     ],
     "relatedBlogs": [
-      "humbledollar",
-      "a-wealth-of-common-sense",
-      "afford-anything"
+      "abnormal-returns",
+      "budgets-are-sexy",
+      "humbledollar"
     ]
   },
   {
@@ -1466,9 +1466,9 @@
       "smart-money-habits"
     ],
     "relatedBlogs": [
-      "humbledollar",
-      "the-white-coat-investor",
-      "a-wealth-of-common-sense"
+      "the-college-investor",
+      "abnormal-returns",
+      "budgets-are-sexy"
     ]
   },
   {
@@ -1586,9 +1586,9 @@
       "personal-finance-rules"
     ],
     "relatedBlogs": [
-      "afford-anything",
-      "humbledollar",
-      "of-dollars-and-data"
+      "the-college-investor",
+      "abnormal-returns",
+      "afford-anything"
     ]
   },
   {
@@ -1840,9 +1840,9 @@
       "personal-finance-rules"
     ],
     "relatedBlogs": [
-      "humbledollar",
-      "a-wealth-of-common-sense",
-      "of-dollars-and-data"
+      "abnormal-returns",
+      "financial-samurai",
+      "humbledollar"
     ]
   },
   {
@@ -1952,7 +1952,7 @@
     "relatedBlogs": [
       "humbledollar",
       "a-wealth-of-common-sense",
-      "of-dollars-and-data"
+      "abnormal-returns"
     ]
   },
   {
@@ -2056,9 +2056,9 @@
       "budgeting-methods"
     ],
     "relatedBlogs": [
-      "humbledollar",
-      "a-wealth-of-common-sense",
-      "afford-anything"
+      "abnormal-returns",
+      "budgets-are-sexy",
+      "humbledollar"
     ]
   },
   {
@@ -2162,8 +2162,8 @@
     ],
     "relatedBlogs": [
       "afford-anything",
-      "humbledollar",
-      "mr-money-mustache"
+      "the-college-investor",
+      "abnormal-returns"
     ]
   },
   {
@@ -2602,8 +2602,8 @@
     ],
     "relatedBlogs": [
       "ahead-of-ai",
-      "real-python",
-      "andrej-karpathy-blog"
+      "machine-learning-mastery",
+      "real-python"
     ]
   },
   {
@@ -2954,9 +2954,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
+      "one-useful-thing",
       "simon-willisons-weblog",
-      "joho-no-todai-english",
-      "math-with-bad-drawings"
+      "joho-no-todai-english"
     ]
   },
   {
@@ -3196,9 +3196,9 @@
       "ai-future-of-work-examples"
     ],
     "relatedBlogs": [
+      "one-useful-thing",
       "simon-willisons-weblog",
-      "joho-no-todai-english",
-      "acm-queue"
+      "joho-no-todai-english"
     ]
   },
   {
@@ -3339,9 +3339,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
+      "one-useful-thing",
       "simon-willisons-weblog",
-      "autoblog",
-      "joho-no-todai-english"
+      "autoblog"
     ]
   },
   {
@@ -3595,9 +3595,9 @@
       "mathematical-optimization-techniques"
     ],
     "relatedBlogs": [
-      "quanta-magazine",
-      "quanta-magazine-mathematics",
-      "3blue1brown-blog"
+      "john-d-cook",
+      "mathbabe",
+      "quanta-magazine"
     ]
   },
   {
@@ -3720,7 +3720,7 @@
     "relatedBlogs": [
       "3blue1brown-blog",
       "betterexplained",
-      "quanta-magazine"
+      "mathbabe"
     ]
   },
   {
@@ -3872,9 +3872,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "machine-learning-mastery",
       "real-python",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "ahead-of-ai"
     ]
   },
   {
@@ -4004,7 +4004,7 @@
     "relatedBlogs": [
       "3blue1brown-blog",
       "betterexplained",
-      "quanta-magazine"
+      "mathbabe"
     ]
   },
   {
@@ -4170,8 +4170,8 @@
     ],
     "relatedBlogs": [
       "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "machine-learning-mastery",
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -4336,8 +4336,8 @@
     ],
     "relatedBlogs": [
       "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "airbnb-tech-blog",
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -4599,9 +4599,9 @@
       "feature-engineering-techniques"
     ],
     "relatedBlogs": [
+      "machine-learning-mastery",
       "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "andrej-karpathy-blog"
     ]
   },
   {
@@ -4732,9 +4732,9 @@
       "llm-breakthroughs"
     ],
     "relatedBlogs": [
-      "uber-engineering",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "airbnb-tech-blog",
+      "mathbabe",
+      "spotify-engineering"
     ]
   },
   {
@@ -4862,9 +4862,9 @@
       "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
-      "ahead-of-ai",
-      "andrej-karpathy-blog",
-      "bair-blog"
+      "john-d-cook",
+      "mathbabe",
+      "ahead-of-ai"
     ]
   },
   {
@@ -5135,9 +5135,9 @@
       "healthy-meal-ideas"
     ],
     "relatedBlogs": [
+      "cookie-and-kate",
       "love-and-lemons",
-      "nutritionfactsorg",
-      "precision-nutrition"
+      "nutritionfactsorg"
     ]
   },
   {
@@ -5234,9 +5234,9 @@
       "foods-rich-in-vitamins-and-minerals"
     ],
     "relatedBlogs": [
-      "food-politics",
-      "love-and-lemons",
-      "minimalist-baker"
+      "budget-bytes",
+      "cookie-and-kate",
+      "food-politics"
     ]
   },
   {
@@ -5379,8 +5379,8 @@
     ],
     "relatedBlogs": [
       "stronger-by-science",
-      "food-politics",
-      "love-and-lemons"
+      "budget-bytes",
+      "cookie-and-kate"
     ]
   },
   {
@@ -5634,9 +5634,9 @@
       "physics-projects-for-students"
     ],
     "relatedBlogs": [
+      "new-scientist",
       "quanta-magazine",
-      "shtetl-optimized",
-      "the-drive"
+      "shtetl-optimized"
     ]
   },
   {
@@ -5753,9 +5753,9 @@
       "scientific-discoveries-that-changed-the-world"
     ],
     "relatedBlogs": [
-      "ars-technica-science",
-      "quanta-magazine",
-      "in-the-pipeline-derek-lowe"
+      "new-scientist",
+      "sciencealert",
+      "ars-technica-science"
     ]
   },
   {
@@ -5886,8 +5886,8 @@
     ],
     "relatedBlogs": [
       "real-python",
-      "ned-batchelder",
-      "python-insider"
+      "mathbabe",
+      "ned-batchelder"
     ]
   },
   {
@@ -6610,8 +6610,8 @@
     ],
     "relatedBlogs": [
       "real-python",
-      "ned-batchelder",
-      "python-insider"
+      "machine-learning-mastery",
+      "airbnb-tech-blog"
     ]
   },
   {
@@ -6772,8 +6772,8 @@
     ],
     "relatedBlogs": [
       "real-python",
-      "ned-batchelder",
-      "python-insider"
+      "machine-learning-mastery",
+      "airbnb-tech-blog"
     ]
   },
   {
@@ -6903,9 +6903,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "machine-learning-mastery",
       "real-python",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "ahead-of-ai"
     ]
   },
   {
@@ -7038,8 +7038,8 @@
     ],
     "relatedBlogs": [
       "ars-technica-science",
-      "physorg-spotlight",
-      "quanta-magazine"
+      "knowable-magazine",
+      "physorg-spotlight"
     ]
   },
   {
@@ -7152,8 +7152,8 @@
     ],
     "relatedBlogs": [
       "ars-technica-science",
-      "physorg-spotlight",
-      "quanta-magazine"
+      "knowable-magazine",
+      "physorg-spotlight"
     ]
   },
   {
@@ -7246,8 +7246,8 @@
     ],
     "relatedBlogs": [
       "ars-technica-science",
-      "quanta-magazine",
-      "azimuth-john-baez"
+      "knowable-magazine",
+      "quanta-magazine"
     ]
   },
   {
@@ -7350,8 +7350,8 @@
     ],
     "relatedBlogs": [
       "ars-technica-science",
-      "quanta-magazine",
-      "cocktail-party-physics"
+      "knowable-magazine",
+      "quanta-magazine"
     ]
   },
   {
@@ -7473,9 +7473,9 @@
       "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
+      "mathbabe",
       "quanta-magazine",
-      "3blue1brown-blog",
-      "azimuth-john-baez"
+      "3blue1brown-blog"
     ]
   },
   {
@@ -7868,8 +7868,8 @@
     ],
     "relatedBlogs": [
       "betterexplained",
-      "quanta-magazine-mathematics",
-      "whats-new-terence-tao"
+      "mathbabe",
+      "quanta-magazine-mathematics"
     ]
   },
   {
@@ -7991,9 +7991,9 @@
       "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
-      "netflix-techblog",
-      "quanta-magazine",
-      "real-python"
+      "john-d-cook",
+      "mathbabe",
+      "netflix-techblog"
     ]
   },
   {

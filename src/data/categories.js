@@ -4,144 +4,144 @@ export const categories = [
     "name": "Artificial Intelligence",
     "slug": "artificial-intelligence",
     "description": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
-    "count": 10,
+    "count": 16,
     "popularTags": [
+      "agents",
+      "ai criticism",
+      "ai engineering",
       "ai policy",
       "ai research",
       "ai safety",
       "ai tools",
-      "applied ml",
-      "computer vision",
-      "deep learning",
-      "generative ai"
+      "applied ml"
     ]
   },
   {
     "name": "Automobile",
     "slug": "automobile",
     "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
-    "count": 8,
+    "count": 13,
     "popularTags": [
       "auto shows",
       "automotive",
+      "automotive history",
+      "automotive news",
       "autonomous vehicles",
       "batteries",
       "car culture",
-      "car reviews",
-      "charging infrastructure",
-      "clean tech"
+      "car reviews"
     ]
   },
   {
     "name": "Engineering",
     "slug": "engineering",
     "description": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
-    "count": 10,
+    "count": 16,
     "popularTags": [
       "agile",
       "ai",
+      "ai infrastructure",
       "api",
       "architecture",
+      "aws",
       "backend",
-      "big data",
-      "cloud",
-      "computer science"
+      "big data"
     ]
   },
   {
     "name": "Food and Nutrition",
     "slug": "food-and-nutrition",
     "description": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes.",
-    "count": 7,
+    "count": 12,
     "popularTags": [
+      "baking",
       "body composition",
+      "bread",
+      "budget cooking",
+      "cooking",
+      "desserts",
       "dietary guidelines",
-      "eating habits",
-      "food industry",
-      "food policy",
-      "gluten-free",
-      "healthy eating",
-      "nutrition coaching"
+      "eating habits"
     ]
   },
   {
     "name": "Mathematics",
     "slug": "mathematics",
     "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
-    "count": 10,
+    "count": 15,
     "popularTags": [
+      "academia",
       "algorithms",
       "analysis",
+      "applied mathematics",
       "calculus",
       "category theory",
       "collaborative research",
-      "combinatorics",
-      "complexity",
-      "deep learning"
+      "combinatorics"
     ]
   },
   {
     "name": "Personal Finance",
     "slug": "personal-finance",
     "description": "Budgeting, saving, debt, investing, retirement planning, and the everyday habits that build financial stability.",
-    "count": 8,
+    "count": 14,
     "popularTags": [
       "behavioral finance",
+      "bogleheads",
       "budgeting",
       "data analysis",
       "early retirement",
+      "economics",
       "financial independence",
-      "financial planning",
-      "frugality",
-      "index funds"
+      "financial planning"
     ]
   },
   {
     "name": "Physics",
     "slug": "physics",
     "description": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
-    "count": 8,
+    "count": 13,
     "popularTags": [
+      "academia",
       "acoustics",
       "astronomy",
       "astrophysics",
+      "atomic physics",
       "cern",
-      "complexity",
-      "condensed matter",
-      "cosmology",
-      "culture"
+      "chemistry",
+      "complexity"
     ]
   },
   {
     "name": "Programming and Technology",
     "slug": "programming-and-technology",
     "description": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
-    "count": 11,
+    "count": 18,
     "popularTags": [
+      "ai",
+      "apple",
       "artificial intelligence",
       "careers",
+      "commentary",
       "community",
       "computer hardware",
-      "coverage",
-      "cpython",
-      "css",
-      "data science"
+      "coverage"
     ]
   },
   {
     "name": "Science",
     "slug": "science",
     "description": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
-    "count": 8,
+    "count": 13,
     "popularTags": [
       "biology",
       "biomedicine",
       "biotechnology",
       "climate",
       "cognitive science",
+      "data",
       "drug discovery",
-      "earth science",
-      "fundamental research"
+      "earth science"
     ]
   }
 ];

@@ -91,6 +91,28 @@
     "sourceRow": 10
   },
   {
+    "id": "artificial-intelligence-google-deepmind-blog",
+    "title": "Google DeepMind Blog",
+    "slug": "google-deepmind-blog",
+    "address": "https://deepmind.google/blog/",
+    "normalizedUrl": "https://deepmind.google/blog/",
+    "feed": "https://deepmind.google/blog/rss.xml",
+    "tags": [
+      "ai research",
+      "reinforcement learning",
+      "science",
+      "llms"
+    ],
+    "description": "Research announcements and explainers from Google DeepMind on AI models, science applications and safety.",
+    "author": "Google DeepMind",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 15
+  },
+  {
     "id": "artificial-intelligence-google-research-blog",
     "title": "Google Research Blog",
     "slug": "google-research-blog",
@@ -134,6 +156,28 @@
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 11
+  },
+  {
+    "id": "artificial-intelligence-hugging-face-blog",
+    "title": "Hugging Face Blog",
+    "slug": "hugging-face-blog",
+    "address": "https://huggingface.co/blog",
+    "normalizedUrl": "https://huggingface.co/blog",
+    "feed": "https://huggingface.co/blog/feed.xml",
+    "tags": [
+      "open source",
+      "transformers",
+      "llms",
+      "machine learning"
+    ],
+    "description": "Tutorials, model releases and research write-ups from Hugging Face and its community on open-source machine learning.",
+    "author": "Hugging Face",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 12
   },
   {
     "id": "artificial-intelligence-import-ai",
@@ -181,6 +225,28 @@
     "sourceRow": 8
   },
   {
+    "id": "artificial-intelligence-latent-space",
+    "title": "Latent Space",
+    "slug": "latent-space",
+    "address": "https://www.latent.space/",
+    "normalizedUrl": "https://www.latent.space",
+    "feed": "https://www.latent.space/feed",
+    "tags": [
+      "ai engineering",
+      "llms",
+      "podcast",
+      "agents"
+    ],
+    "description": "Newsletter and podcast for AI engineers covering models, agents, tooling and the AI industry.",
+    "author": "swyx and Alessio Fanelli",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "artificial-intelligence-lillog",
     "title": "Lil'Log",
     "slug": "lillog",
@@ -202,6 +268,72 @@
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 2
+  },
+  {
+    "id": "artificial-intelligence-machine-learning-mastery",
+    "title": "Machine Learning Mastery",
+    "slug": "machine-learning-mastery",
+    "address": "https://machinelearningmastery.com/",
+    "normalizedUrl": "https://machinelearningmastery.com",
+    "feed": "https://machinelearningmastery.com/feed/",
+    "tags": [
+      "machine learning",
+      "deep learning",
+      "python",
+      "tutorials"
+    ],
+    "description": "Practical, code-first tutorials on machine learning and deep learning, founded by Jason Brownlee.",
+    "author": "Machine Learning Mastery",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 16
+  },
+  {
+    "id": "artificial-intelligence-marcus-on-ai",
+    "title": "Marcus on AI",
+    "slug": "marcus-on-ai",
+    "address": "https://garymarcus.substack.com/",
+    "normalizedUrl": "https://garymarcus.substack.com",
+    "feed": "https://garymarcus.substack.com/feed",
+    "tags": [
+      "ai criticism",
+      "llms",
+      "ai policy",
+      "cognitive science"
+    ],
+    "description": "Gary Marcus's commentary on the limits of current AI systems, AI policy and the AI industry.",
+    "author": "Gary Marcus",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 17
+  },
+  {
+    "id": "artificial-intelligence-one-useful-thing",
+    "title": "One Useful Thing",
+    "slug": "one-useful-thing",
+    "address": "https://www.oneusefulthing.org/",
+    "normalizedUrl": "https://www.oneusefulthing.org",
+    "feed": "https://www.oneusefulthing.org/feed",
+    "tags": [
+      "generative ai",
+      "education",
+      "work",
+      "llms"
+    ],
+    "description": "Ethan Mollick's newsletter on what generative AI means for work, education and everyday practice.",
+    "author": "Ethan Mollick",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 13
   },
   {
     "id": "artificial-intelligence-simon-willisons-weblog",
@@ -271,6 +403,28 @@
     "sourceRow": 4
   },
   {
+    "id": "automobile-car-and-driver",
+    "title": "Car and Driver",
+    "slug": "car-and-driver",
+    "address": "https://www.caranddriver.com/",
+    "normalizedUrl": "https://www.caranddriver.com",
+    "feed": "https://www.caranddriver.com/rss/all.xml/",
+    "tags": [
+      "car reviews",
+      "new cars",
+      "automotive news",
+      "road tests"
+    ],
+    "description": "",
+    "author": "",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 10
+  },
+  {
     "id": "automobile-cleantechnica-automotive",
     "title": "CleanTechnica Automotive",
     "slug": "cleantechnica-automotive",
@@ -293,6 +447,28 @@
     "sourceRow": 6
   },
   {
+    "id": "automobile-electrek",
+    "title": "Electrek",
+    "slug": "electrek",
+    "address": "https://electrek.co/",
+    "normalizedUrl": "https://electrek.co",
+    "feed": "https://electrek.co/feed/",
+    "tags": [
+      "electric vehicles",
+      "tesla",
+      "clean energy",
+      "ev news"
+    ],
+    "description": "",
+    "author": "",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 11
+  },
+  {
     "id": "automobile-green-car-reports",
     "title": "Green Car Reports",
     "slug": "green-car-reports",
@@ -313,6 +489,50 @@
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "automobile-hagerty-media",
+    "title": "Hagerty Media",
+    "slug": "hagerty-media",
+    "address": "https://www.hagerty.com/media/",
+    "normalizedUrl": "https://www.hagerty.com/media/",
+    "feed": "https://www.hagerty.com/media/feed/",
+    "tags": [
+      "classic cars",
+      "car culture",
+      "collector cars",
+      "automotive history"
+    ],
+    "description": "",
+    "author": "",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 14
+  },
+  {
+    "id": "automobile-insideevs",
+    "title": "InsideEVs",
+    "slug": "insideevs",
+    "address": "https://insideevs.com/",
+    "normalizedUrl": "https://insideevs.com",
+    "feed": "https://insideevs.com/rss/news/all/",
+    "tags": [
+      "electric vehicles",
+      "ev reviews",
+      "charging",
+      "ev news"
+    ],
+    "description": "",
+    "author": "",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 12
   },
   {
     "id": "automobile-jalopnik",
@@ -357,6 +577,28 @@
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "automobile-road-track",
+    "title": "Road & Track",
+    "slug": "road-track",
+    "address": "https://www.roadandtrack.com/",
+    "normalizedUrl": "https://www.roadandtrack.com",
+    "feed": "https://www.roadandtrack.com/rss/all.xml/",
+    "tags": [
+      "car culture",
+      "motorsport",
+      "performance cars",
+      "car reviews"
+    ],
+    "description": "",
+    "author": "",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 13
   },
   {
     "id": "automobile-speedhunters",
@@ -425,6 +667,94 @@
     "sourceRow": 10
   },
   {
+    "id": "engineering-airbnb-tech-blog",
+    "title": "Airbnb Tech Blog",
+    "slug": "airbnb-tech-blog",
+    "address": "https://medium.com/airbnb-engineering",
+    "normalizedUrl": "https://medium.com/airbnb-engineering",
+    "feed": "https://medium.com/feed/airbnb-engineering",
+    "tags": [
+      "data engineering",
+      "infrastructure",
+      "machine learning",
+      "mobile"
+    ],
+    "description": "Airbnb engineers and data scientists write about infrastructure, data, machine learning and product development.",
+    "author": "Airbnb",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "engineering-aws-architecture-blog",
+    "title": "AWS Architecture Blog",
+    "slug": "aws-architecture-blog",
+    "address": "https://aws.amazon.com/blogs/architecture/",
+    "normalizedUrl": "https://aws.amazon.com/blogs/architecture/",
+    "feed": "https://aws.amazon.com/blogs/architecture/feed/",
+    "tags": [
+      "cloud architecture",
+      "aws",
+      "distributed systems",
+      "reference architectures"
+    ],
+    "description": "Reference architectures, best practices and design patterns for building systems on AWS.",
+    "author": "Amazon Web Services",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 17
+  },
+  {
+    "id": "engineering-brendan-gregg",
+    "title": "Brendan Gregg",
+    "slug": "brendan-gregg",
+    "address": "https://www.brendangregg.com/blog/",
+    "normalizedUrl": "https://www.brendangregg.com/blog/",
+    "feed": "https://www.brendangregg.com/blog/rss.xml",
+    "tags": [
+      "performance",
+      "linux",
+      "ebpf",
+      "observability"
+    ],
+    "description": "Brendan Gregg's blog on systems performance, Linux tracing, eBPF and observability.",
+    "author": "Brendan Gregg",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 15
+  },
+  {
+    "id": "engineering-charitywtf",
+    "title": "charity.wtf",
+    "slug": "charitywtf",
+    "address": "https://charity.wtf/",
+    "normalizedUrl": "https://charity.wtf",
+    "feed": "https://charity.wtf/feed",
+    "tags": [
+      "observability",
+      "engineering management",
+      "devops",
+      "sre"
+    ],
+    "description": "Charity Majors writes about observability, operations, engineering management and software teams.",
+    "author": "Charity Majors",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 16
+  },
+  {
     "id": "engineering-cloudflare-blog",
     "title": "Cloudflare Blog",
     "slug": "cloudflare-blog",
@@ -468,6 +798,28 @@
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 3
+  },
+  {
+    "id": "engineering-engineering-at-meta",
+    "title": "Engineering at Meta",
+    "slug": "engineering-at-meta",
+    "address": "https://engineering.fb.com/",
+    "normalizedUrl": "https://engineering.fb.com",
+    "feed": "https://engineering.fb.com/feed/",
+    "tags": [
+      "infrastructure",
+      "distributed systems",
+      "ai infrastructure",
+      "open source"
+    ],
+    "description": "Meta's engineering blog on infrastructure, data centers, AI systems and open-source projects.",
+    "author": "Meta",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 12
   },
   {
     "id": "engineering-github-engineering",
@@ -583,6 +935,28 @@
     "sourceRow": 4
   },
   {
+    "id": "engineering-spotify-engineering",
+    "title": "Spotify Engineering",
+    "slug": "spotify-engineering",
+    "address": "https://engineering.atspotify.com/",
+    "normalizedUrl": "https://engineering.atspotify.com",
+    "feed": "https://engineering.atspotify.com/feed",
+    "tags": [
+      "backend",
+      "data engineering",
+      "developer experience",
+      "machine learning"
+    ],
+    "description": "Engineering stories from Spotify on backend systems, data, machine learning and developer experience.",
+    "author": "Spotify",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "engineering-stripe-engineering",
     "title": "Stripe Engineering",
     "slug": "stripe-engineering",
@@ -626,6 +1000,50 @@
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "food-and-nutrition-budget-bytes",
+    "title": "Budget Bytes",
+    "slug": "budget-bytes",
+    "address": "https://www.budgetbytes.com/",
+    "normalizedUrl": "https://www.budgetbytes.com",
+    "feed": "https://www.budgetbytes.com/feed/",
+    "tags": [
+      "recipes",
+      "budget cooking",
+      "meal prep",
+      "cooking"
+    ],
+    "description": "Affordable recipes with per-serving cost breakdowns and meal-prep ideas.",
+    "author": "Beth Moncel",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 10
+  },
+  {
+    "id": "food-and-nutrition-cookie-and-kate",
+    "title": "Cookie and Kate",
+    "slug": "cookie-and-kate",
+    "address": "https://cookieandkate.com/",
+    "normalizedUrl": "https://cookieandkate.com",
+    "feed": "https://cookieandkate.com/feed/",
+    "tags": [
+      "vegetarian",
+      "recipes",
+      "whole foods",
+      "cooking"
+    ],
+    "description": "Whole-foods vegetarian recipes from Kathryne Taylor, with healthy, seasonal meals made from simple ingredients.",
+    "author": "Kathryne Taylor",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 11
   },
   {
     "id": "food-and-nutrition-food-politics",
@@ -738,6 +1156,72 @@
     "sourceRow": 5
   },
   {
+    "id": "food-and-nutrition-recipetin-eats",
+    "title": "RecipeTin Eats",
+    "slug": "recipetin-eats",
+    "address": "https://www.recipetineats.com/",
+    "normalizedUrl": "https://www.recipetineats.com",
+    "feed": "https://www.recipetineats.com/feed/",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "baking",
+      "cooking"
+    ],
+    "description": "Nagi Maehashi's tested recipes for home cooks, from weeknight dinners to baking.",
+    "author": "Nagi Maehashi",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 12
+  },
+  {
+    "id": "food-and-nutrition-sallys-baking-addiction",
+    "title": "Sally's Baking Addiction",
+    "slug": "sallys-baking-addiction",
+    "address": "https://sallysbakingaddiction.com/",
+    "normalizedUrl": "https://sallysbakingaddiction.com",
+    "feed": "https://sallysbakingaddiction.com/feed/",
+    "tags": [
+      "baking",
+      "desserts",
+      "bread",
+      "recipes"
+    ],
+    "description": "Sally McKenney's baking recipes and tutorials for cakes, cookies, breads and desserts.",
+    "author": "Sally McKenney",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "food-and-nutrition-smitten-kitchen",
+    "title": "Smitten Kitchen",
+    "slug": "smitten-kitchen",
+    "address": "https://smittenkitchen.com/",
+    "normalizedUrl": "https://smittenkitchen.com",
+    "feed": "https://smittenkitchen.com/feed/",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "baking",
+      "cooking"
+    ],
+    "description": "Deb Perelman's home cooking blog with tested recipes for everyday meals and baking.",
+    "author": "Deb Perelman",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 9
+  },
+  {
     "id": "food-and-nutrition-stronger-by-science",
     "title": "Stronger by Science",
     "slug": "stronger-by-science",
@@ -847,6 +1331,28 @@
     "sourceRow": 10
   },
   {
+    "id": "mathematics-computational-complexity",
+    "title": "Computational Complexity",
+    "slug": "computational-complexity",
+    "address": "https://blog.computationalcomplexity.org/",
+    "normalizedUrl": "https://blog.computationalcomplexity.org",
+    "feed": "https://blog.computationalcomplexity.org/feeds/posts/default",
+    "tags": [
+      "complexity theory",
+      "theoretical computer science",
+      "logic",
+      "academia"
+    ],
+    "description": "Lance Fortnow and Bill Gasarch on computational complexity, theoretical computer science and academia.",
+    "author": "Lance Fortnow and Bill Gasarch",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 13
+  },
+  {
     "id": "mathematics-gowerss-weblog",
     "title": "Gowers's Weblog",
     "slug": "gowerss-weblog",
@@ -890,6 +1396,50 @@
     "sourceRow": 8
   },
   {
+    "id": "mathematics-infinitely-more-joel-david-hamkins",
+    "title": "Infinitely More (Joel David Hamkins)",
+    "slug": "infinitely-more-joel-david-hamkins",
+    "address": "https://www.infinitelymore.xyz/",
+    "normalizedUrl": "https://www.infinitelymore.xyz",
+    "feed": "https://www.infinitelymore.xyz/feed",
+    "tags": [
+      "set theory",
+      "logic",
+      "philosophy of mathematics",
+      "infinity"
+    ],
+    "description": "Joel David Hamkins writes about set theory, mathematical logic and the philosophy of mathematics.",
+    "author": "Joel David Hamkins",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 16
+  },
+  {
+    "id": "mathematics-john-d-cook",
+    "title": "John D. Cook",
+    "slug": "john-d-cook",
+    "address": "https://www.johndcook.com/blog/",
+    "normalizedUrl": "https://www.johndcook.com/blog/",
+    "feed": "https://www.johndcook.com/blog/feed/",
+    "tags": [
+      "applied mathematics",
+      "probability",
+      "statistics",
+      "computing"
+    ],
+    "description": "John D. Cook's short posts on applied mathematics, probability, statistics and computing.",
+    "author": "John D. Cook",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 12
+  },
+  {
     "id": "mathematics-math-with-bad-drawings",
     "title": "Math with Bad Drawings",
     "slug": "math-with-bad-drawings",
@@ -910,6 +1460,28 @@
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "mathematics-mathbabe",
+    "title": "mathbabe",
+    "slug": "mathbabe",
+    "address": "https://mathbabe.org/",
+    "normalizedUrl": "https://mathbabe.org",
+    "feed": "https://mathbabe.org/feed/",
+    "tags": [
+      "data science",
+      "algorithms",
+      "ethics",
+      "mathematics"
+    ],
+    "description": "Cathy O'Neil writes about mathematics, data science and the social impact of algorithms.",
+    "author": "Cathy O'Neil",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 15
   },
   {
     "id": "mathematics-quanta-magazine-mathematics",
@@ -999,6 +1571,28 @@
     "sourceRow": 2
   },
   {
+    "id": "mathematics-xena-project",
+    "title": "Xena Project",
+    "slug": "xena-project",
+    "address": "https://xenaproject.wordpress.com/",
+    "normalizedUrl": "https://xenaproject.wordpress.com",
+    "feed": "https://xenaproject.wordpress.com/feed/",
+    "tags": [
+      "formalization",
+      "lean",
+      "proof assistants",
+      "number theory"
+    ],
+    "description": "Kevin Buzzard's blog on formalizing mathematics with the Lean proof assistant.",
+    "author": "Kevin Buzzard",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "personal-finance-a-wealth-of-common-sense",
     "title": "A Wealth of Common Sense",
     "slug": "a-wealth-of-common-sense",
@@ -1019,6 +1613,28 @@
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 4
+  },
+  {
+    "id": "personal-finance-abnormal-returns",
+    "title": "Abnormal Returns",
+    "slug": "abnormal-returns",
+    "address": "https://abnormalreturns.com/",
+    "normalizedUrl": "https://abnormalreturns.com",
+    "feed": "https://abnormalreturns.com/feed/",
+    "tags": [
+      "investing",
+      "markets",
+      "personal finance",
+      "link roundups"
+    ],
+    "description": "Tadas Viskanta's daily curated links on investing, markets and personal finance.",
+    "author": "Tadas Viskanta",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 12
   },
   {
     "id": "personal-finance-afford-anything",
@@ -1043,6 +1659,50 @@
     "sourceRow": 5
   },
   {
+    "id": "personal-finance-bogleheads-blog",
+    "title": "Bogleheads Blog",
+    "slug": "bogleheads-blog",
+    "address": "https://www.bogleheads.org/blog/",
+    "normalizedUrl": "https://www.bogleheads.org/blog/",
+    "feed": "https://www.bogleheads.org/blog/feed/",
+    "tags": [
+      "index investing",
+      "retirement",
+      "bogleheads",
+      "low-cost investing"
+    ],
+    "description": "Articles from the Bogleheads community on low-cost index investing, inspired by Vanguard founder Jack Bogle.",
+    "author": "Bogleheads",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 15
+  },
+  {
+    "id": "personal-finance-budgets-are-sexy",
+    "title": "Budgets Are Sexy",
+    "slug": "budgets-are-sexy",
+    "address": "https://www.budgetsaresexy.com/",
+    "normalizedUrl": "https://www.budgetsaresexy.com",
+    "feed": "https://www.budgetsaresexy.com/feed/",
+    "tags": [
+      "budgeting",
+      "net worth",
+      "saving",
+      "personal finance"
+    ],
+    "description": "J. Money's long-running blog on budgeting, saving and tracking net worth.",
+    "author": "J. Money",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "personal-finance-early-retirement-now",
     "title": "Early Retirement Now",
     "slug": "early-retirement-now",
@@ -1063,6 +1723,28 @@
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "personal-finance-financial-samurai",
+    "title": "Financial Samurai",
+    "slug": "financial-samurai",
+    "address": "https://www.financialsamurai.com/",
+    "normalizedUrl": "https://www.financialsamurai.com",
+    "feed": "https://www.financialsamurai.com/feed/",
+    "tags": [
+      "investing",
+      "real estate",
+      "financial independence",
+      "retirement"
+    ],
+    "description": "Sam Dogen writes about investing, real estate, early retirement and building passive income.",
+    "author": "Sam Dogen",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 10
   },
   {
     "id": "personal-finance-humbledollar",
@@ -1153,6 +1835,50 @@
     "sourceRow": 8
   },
   {
+    "id": "personal-finance-the-big-picture",
+    "title": "The Big Picture",
+    "slug": "the-big-picture",
+    "address": "https://ritholtz.com/",
+    "normalizedUrl": "https://ritholtz.com",
+    "feed": "https://ritholtz.com/feed/",
+    "tags": [
+      "investing",
+      "markets",
+      "economics",
+      "behavioral finance"
+    ],
+    "description": "Barry Ritholtz's blog on investing, markets, economics and behavioral finance.",
+    "author": "Barry Ritholtz",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "personal-finance-the-college-investor",
+    "title": "The College Investor",
+    "slug": "the-college-investor",
+    "address": "https://thecollegeinvestor.com/",
+    "normalizedUrl": "https://thecollegeinvestor.com",
+    "feed": "https://thecollegeinvestor.com/feed/",
+    "tags": [
+      "student loans",
+      "investing",
+      "budgeting",
+      "personal finance"
+    ],
+    "description": "Guides on student loans, investing and money management for students and young adults.",
+    "author": "Robert Farrington",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 11
+  },
+  {
     "id": "personal-finance-the-white-coat-investor",
     "title": "The White Coat Investor",
     "slug": "the-white-coat-investor",
@@ -1217,6 +1943,72 @@
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 8
+  },
+  {
+    "id": "physics-condensed-concepts",
+    "title": "Condensed Concepts",
+    "slug": "condensed-concepts",
+    "address": "https://condensedconcepts.blogspot.com/",
+    "normalizedUrl": "https://condensedconcepts.blogspot.com",
+    "feed": "https://condensedconcepts.blogspot.com/feeds/posts/default",
+    "tags": [
+      "condensed matter",
+      "theoretical physics",
+      "chemistry",
+      "emergence"
+    ],
+    "description": "Ross McKenzie's blog on condensed matter theory, emergence and the culture of science.",
+    "author": "Ross McKenzie",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 12
+  },
+  {
+    "id": "physics-counting-atoms-chad-orzel",
+    "title": "Counting Atoms (Chad Orzel)",
+    "slug": "counting-atoms-chad-orzel",
+    "address": "https://chadorzel.substack.com/",
+    "normalizedUrl": "https://chadorzel.substack.com",
+    "feed": "https://chadorzel.substack.com/feed",
+    "tags": [
+      "atomic physics",
+      "quantum physics",
+      "science communication",
+      "academia"
+    ],
+    "description": "Chad Orzel, author of How to Teach Quantum Physics to Your Dog, writes about physics, teaching and academic life.",
+    "author": "Chad Orzel",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 14
+  },
+  {
+    "id": "physics-nanoscale-views",
+    "title": "nanoscale views",
+    "slug": "nanoscale-views",
+    "address": "https://nanoscale.blogspot.com/",
+    "normalizedUrl": "https://nanoscale.blogspot.com",
+    "feed": "https://nanoscale.blogspot.com/feeds/posts/default",
+    "tags": [
+      "condensed matter",
+      "nanoscience",
+      "materials",
+      "academia"
+    ],
+    "description": "Doug Natelson's blog on condensed matter physics, nanoscience and life in academic research.",
+    "author": "Doug Natelson",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 11
   },
   {
     "id": "physics-not-even-wrong",
@@ -1352,6 +2144,50 @@
     "sourceRow": 5
   },
   {
+    "id": "physics-triton-station",
+    "title": "Triton Station",
+    "slug": "triton-station",
+    "address": "https://tritonstation.com/",
+    "normalizedUrl": "https://tritonstation.com",
+    "feed": "https://tritonstation.com/feed/",
+    "tags": [
+      "cosmology",
+      "dark matter",
+      "modified gravity",
+      "galaxies"
+    ],
+    "description": "Stacy McGaugh's blog on the science and sociology of cosmology, dark matter and MOND.",
+    "author": "Stacy McGaugh",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "physics-universe-today",
+    "title": "Universe Today",
+    "slug": "universe-today",
+    "address": "https://www.universetoday.com/",
+    "normalizedUrl": "https://www.universetoday.com",
+    "feed": "https://www.universetoday.com/rss.xml",
+    "tags": [
+      "astronomy",
+      "space exploration",
+      "astrophysics",
+      "cosmology"
+    ],
+    "description": "News on astronomy, space exploration and astrophysics, founded by Fraser Cain.",
+    "author": "Universe Today",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 10
+  },
+  {
     "id": "programming-and-technology-coding-horror",
     "title": "Coding Horror",
     "slug": "coding-horror",
@@ -1393,6 +2229,28 @@
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "programming-and-technology-daring-fireball",
+    "title": "Daring Fireball",
+    "slug": "daring-fireball",
+    "address": "https://daringfireball.net/",
+    "normalizedUrl": "https://daringfireball.net",
+    "feed": "https://daringfireball.net/feeds/main",
+    "tags": [
+      "apple",
+      "tech industry",
+      "design",
+      "commentary"
+    ],
+    "description": "John Gruber's commentary on Apple, technology, design and the tech industry.",
+    "author": "John Gruber",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 19
   },
   {
     "id": "programming-and-technology-joho-no-todai-english",
@@ -1439,6 +2297,28 @@
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 11
+  },
+  {
+    "id": "programming-and-technology-krebs-on-security",
+    "title": "Krebs on Security",
+    "slug": "krebs-on-security",
+    "address": "https://krebsonsecurity.com/",
+    "normalizedUrl": "https://krebsonsecurity.com",
+    "feed": "https://krebsonsecurity.com/feed/",
+    "tags": [
+      "cybersecurity",
+      "cybercrime",
+      "investigative journalism",
+      "privacy"
+    ],
+    "description": "Brian Krebs's investigative reporting on cybercrime, data breaches and computer security.",
+    "author": "Brian Krebs",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 17
   },
   {
     "id": "programming-and-technology-ned-batchelder",
@@ -1530,6 +2410,94 @@
     "sourceRow": 2
   },
   {
+    "id": "programming-and-technology-rust-blog",
+    "title": "Rust Blog",
+    "slug": "rust-blog",
+    "address": "https://blog.rust-lang.org/",
+    "normalizedUrl": "https://blog.rust-lang.org",
+    "feed": "https://blog.rust-lang.org/feed.xml",
+    "tags": [
+      "rust",
+      "programming languages",
+      "release notes",
+      "open source"
+    ],
+    "description": "Official Rust project blog with release announcements, surveys and updates from the Rust teams.",
+    "author": "The Rust Project",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 15
+  },
+  {
+    "id": "programming-and-technology-schneier-on-security",
+    "title": "Schneier on Security",
+    "slug": "schneier-on-security",
+    "address": "https://www.schneier.com/",
+    "normalizedUrl": "https://www.schneier.com",
+    "feed": "https://www.schneier.com/feed/atom/",
+    "tags": [
+      "cybersecurity",
+      "cryptography",
+      "privacy",
+      "security policy"
+    ],
+    "description": "Bruce Schneier's long-running blog on security, cryptography, privacy and technology policy.",
+    "author": "Bruce Schneier",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 18
+  },
+  {
+    "id": "programming-and-technology-smashing-magazine",
+    "title": "Smashing Magazine",
+    "slug": "smashing-magazine",
+    "address": "https://www.smashingmagazine.com/",
+    "normalizedUrl": "https://www.smashingmagazine.com",
+    "feed": "https://www.smashingmagazine.com/feed/",
+    "tags": [
+      "web design",
+      "web development",
+      "css",
+      "ux"
+    ],
+    "description": "Articles for web designers and developers on front-end development, CSS, accessibility and UX.",
+    "author": "Smashing Magazine",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "programming-and-technology-stack-overflow-blog",
+    "title": "Stack Overflow Blog",
+    "slug": "stack-overflow-blog",
+    "address": "https://stackoverflow.blog/",
+    "normalizedUrl": "https://stackoverflow.blog",
+    "feed": "https://stackoverflow.blog/feed/",
+    "tags": [
+      "software development",
+      "developer community",
+      "programming",
+      "ai"
+    ],
+    "description": "Articles and podcasts from Stack Overflow on software development, developer culture and the industry.",
+    "author": "Stack Overflow",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "programming-and-technology-tall-snarky-canadian",
     "title": "Tall Snarky Canadian",
     "slug": "tall-snarky-canadian",
@@ -1550,6 +2518,28 @@
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "programming-and-technology-the-go-blog",
+    "title": "The Go Blog",
+    "slug": "the-go-blog",
+    "address": "https://go.dev/blog/",
+    "normalizedUrl": "https://go.dev/blog/",
+    "feed": "https://go.dev/blog/feed.atom",
+    "tags": [
+      "go",
+      "programming languages",
+      "release notes",
+      "open source"
+    ],
+    "description": "Official blog of the Go programming language with release announcements and in-depth articles from the Go team.",
+    "author": "The Go Team",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 16
   },
   {
     "id": "programming-and-technology-the-pragmatic-engineer",
@@ -1640,6 +2630,28 @@
     "sourceRow": 3
   },
   {
+    "id": "science-knowable-magazine",
+    "title": "Knowable Magazine",
+    "slug": "knowable-magazine",
+    "address": "https://knowablemagazine.org/",
+    "normalizedUrl": "https://knowablemagazine.org",
+    "feed": "https://knowablemagazine.org/rss",
+    "tags": [
+      "science journalism",
+      "research",
+      "biology",
+      "society"
+    ],
+    "description": "Independent journalism from Annual Reviews explaining scientific research and its relevance to society.",
+    "author": "Annual Reviews",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 14
+  },
+  {
     "id": "science-mind-the-brain",
     "title": "Mind the Brain",
     "slug": "mind-the-brain",
@@ -1706,6 +2718,50 @@
     "sourceRow": 4
   },
   {
+    "id": "science-new-scientist",
+    "title": "New Scientist",
+    "slug": "new-scientist",
+    "address": "https://www.newscientist.com/",
+    "normalizedUrl": "https://www.newscientist.com",
+    "feed": "https://www.newscientist.com/feed/home/",
+    "tags": [
+      "science news",
+      "technology",
+      "health",
+      "environment"
+    ],
+    "description": "Science and technology news and features from the weekly magazine New Scientist.",
+    "author": "New Scientist",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 13
+  },
+  {
+    "id": "science-our-world-in-data",
+    "title": "Our World in Data",
+    "slug": "our-world-in-data",
+    "address": "https://ourworldindata.org/",
+    "normalizedUrl": "https://ourworldindata.org",
+    "feed": "https://ourworldindata.org/atom.xml",
+    "tags": [
+      "data",
+      "global development",
+      "health",
+      "climate"
+    ],
+    "description": "Research and data on the world's largest problems, including health, poverty, energy and climate.",
+    "author": "Our World in Data",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 10
+  },
+  {
     "id": "science-physorg-spotlight",
     "title": "Phys.org Spotlight",
     "slug": "physorg-spotlight",
@@ -1770,5 +2826,49 @@
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "science-science-based-medicine",
+    "title": "Science-Based Medicine",
+    "slug": "science-based-medicine",
+    "address": "https://sciencebasedmedicine.org/",
+    "normalizedUrl": "https://sciencebasedmedicine.org",
+    "feed": "https://sciencebasedmedicine.org/feed/",
+    "tags": [
+      "medicine",
+      "evidence-based medicine",
+      "health",
+      "skepticism"
+    ],
+    "description": "Physicians and scientists evaluate medical treatments and health claims using scientific evidence.",
+    "author": "Science-Based Medicine",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 11
+  },
+  {
+    "id": "science-sciencealert",
+    "title": "ScienceAlert",
+    "slug": "sciencealert",
+    "address": "https://www.sciencealert.com/",
+    "normalizedUrl": "https://www.sciencealert.com",
+    "feed": "https://www.sciencealert.com/feed",
+    "tags": [
+      "science news",
+      "space",
+      "health",
+      "biology"
+    ],
+    "description": "Daily science news covering space, health, biology, physics and the environment.",
+    "author": "ScienceAlert",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 12
   }
 ]
