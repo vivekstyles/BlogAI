@@ -464,6 +464,595 @@
     ]
   },
   {
+    "slug": "history-of-language-models",
+    "title": "25 Years of Language Models: From Statistical NLP to Modern LLMs",
+    "seoTitle": "History of Language Models: 25 Years From N-grams to LLMs",
+    "description": "History of language models from 2001 to 2026 in 25 dated steps, from n-gram counts and word embeddings to Transformers, ChatGPT, reasoning models and agents.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "llm history",
+        "slug": "llm-history"
+      },
+      {
+        "name": "natural language processing",
+        "slug": "natural-language-processing"
+      },
+      {
+        "name": "transformers",
+        "slug": "transformers"
+      },
+      {
+        "name": "deep learning",
+        "slug": "deep-learning"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/history-of-language-models/language-model-eras.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/history-of-language-models",
+    "isCanonicalLocal": true,
+    "wordCount": 4220,
+    "readingTimeMinutes": 19,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-25-steps-at-a-glance",
+        "text": "The 25 steps at a glance",
+        "level": 2
+      },
+      {
+        "id": "era-1-statistical-language-models-20012009",
+        "text": "Era 1: statistical language models (2001–2009)",
+        "level": 2
+      },
+      {
+        "id": "era-2-neural-language-models-and-embeddings-20102016",
+        "text": "Era 2: neural language models and embeddings (2010–2016)",
+        "level": 2
+      },
+      {
+        "id": "era-3-transformers-and-pretraining-20172021",
+        "text": "Era 3: Transformers and pretraining (2017–2021)",
+        "level": 2
+      },
+      {
+        "id": "era-4-assistants-reasoning-and-agents-20222026",
+        "text": "Era 4: assistants, reasoning and agents (2022–2026)",
+        "level": 2
+      },
+      {
+        "id": "what-25-years-of-language-models-teach",
+        "text": "What 25 years of language models teach",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "llm-breakthroughs",
+      "llm-milestones",
+      "important-llms-explained"
+    ],
+    "relatedBlogs": [
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "lillog"
+    ]
+  },
+  {
+    "slug": "important-llms-explained",
+    "title": "20 Most Important LLMs Explained: From GPT-1 to Today's AI Models",
+    "seoTitle": "20 Most Important LLMs Explained: GPT-1 to 2026 Models",
+    "description": "20 influential large language models from GPT-1 and BERT to GPT-4, Llama, DeepSeek-R1 and the 2026 frontier, each with its size, release, access and legacy.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "llm history",
+        "slug": "llm-history"
+      },
+      {
+        "name": "gpt",
+        "slug": "gpt"
+      },
+      {
+        "name": "llama",
+        "slug": "llama"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/important-llms-explained/parameter-counts.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/important-llms-explained",
+    "isCanonicalLocal": true,
+    "wordCount": 3658,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-20-models-at-a-glance",
+        "text": "The 20 models at a glance",
+        "level": 2
+      },
+      {
+        "id": "20182019-the-first-pretrained-transformers",
+        "text": "2018–2019: the first pretrained Transformers",
+        "level": 2
+      },
+      {
+        "id": "20202022-scale-code-and-compute-optimal-training",
+        "text": "2020–2022: scale, code and compute-optimal training",
+        "level": 2
+      },
+      {
+        "id": "2023-frontier-models-and-the-open-weight-boom",
+        "text": "2023: frontier models and the open-weight boom",
+        "level": 2
+      },
+      {
+        "id": "20242025-open-frontiers-and-reasoning",
+        "text": "2024–2025: open frontiers and reasoning",
+        "level": 2
+      },
+      {
+        "id": "2026-todays-models",
+        "text": "2026: today's models",
+        "level": 2
+      },
+      {
+        "id": "how-the-models-connect",
+        "text": "How the models connect",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "llm-milestones",
+      "open-source-llms",
+      "history-of-language-models"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
+    ]
+  },
+  {
+    "slug": "llm-breakthroughs",
+    "title": "30 Key Breakthroughs That Shaped Modern Large Language Models",
+    "seoTitle": "30 Key Breakthroughs That Shaped Modern LLMs",
+    "description": "30 technical breakthroughs behind modern LLMs, from word2vec and attention to scaling laws, RLHF, LoRA, FlashAttention and RL for reasoning, with key formulas.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
+        "name": "Mathematics",
+        "slug": "mathematics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "transformers",
+        "slug": "transformers"
+      },
+      {
+        "name": "deep learning",
+        "slug": "deep-learning"
+      },
+      {
+        "name": "natural language processing",
+        "slug": "natural-language-processing"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/llm-breakthroughs/transformer-block.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/llm-breakthroughs",
+    "isCanonicalLocal": true,
+    "wordCount": 4671,
+    "readingTimeMinutes": 21,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-30-breakthroughs-at-a-glance",
+        "text": "The 30 breakthroughs at a glance",
+        "level": 2
+      },
+      {
+        "id": "foundations-predicting-and-representing-words",
+        "text": "Foundations: predicting and representing words",
+        "level": 2
+      },
+      {
+        "id": "architecture-the-transformer-and-its-refinements",
+        "text": "Architecture: the Transformer and its refinements",
+        "level": 2
+      },
+      {
+        "id": "training-pretraining-scaling-and-data",
+        "text": "Training: pretraining, scaling and data",
+        "level": 2
+      },
+      {
+        "id": "using-and-aligning-the-model",
+        "text": "Using and aligning the model",
+        "level": 2
+      },
+      {
+        "id": "efficiency-training-and-running-models-cheaply",
+        "text": "Efficiency: training and running models cheaply",
+        "level": 2
+      },
+      {
+        "id": "capabilities-knowledge-tools-and-reasoning",
+        "text": "Capabilities: knowledge, tools and reasoning",
+        "level": 2
+      },
+      {
+        "id": "what-the-breakthroughs-have-in-common",
+        "text": "What the breakthroughs have in common",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "history-of-language-models",
+      "llm-milestones",
+      "machine-learning-algorithms-explained"
+    ],
+    "relatedBlogs": [
+      "ahead-of-ai",
+      "andrej-karpathy-blog",
+      "lillog"
+    ]
+  },
+  {
+    "slug": "llm-milestones",
+    "title": "15 Major Milestones in the Evolution of Large Language Models (LLMs)",
+    "seoTitle": "15 Major Milestones in the Evolution of LLMs",
+    "description": "15 turning points in large language models from the 2017 Transformer to 2026 agents, with what changed before and after each one and the lesson it left.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "llm history",
+        "slug": "llm-history"
+      },
+      {
+        "name": "chatgpt",
+        "slug": "chatgpt"
+      },
+      {
+        "name": "transformers",
+        "slug": "transformers"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/llm-milestones/llm-training-stack.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/llm-milestones",
+    "isCanonicalLocal": true,
+    "wordCount": 2964,
+    "readingTimeMinutes": 13,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "the-15-milestones-at-a-glance",
+        "text": "The 15 milestones at a glance",
+        "level": 2
+      },
+      {
+        "id": "20172019-the-foundations",
+        "text": "2017–2019: the foundations",
+        "level": 2
+      },
+      {
+        "id": "20202021-scale-and-prompting",
+        "text": "2020–2021: scale and prompting",
+        "level": 2
+      },
+      {
+        "id": "2022-from-text-predictor-to-assistant",
+        "text": "2022: from text predictor to assistant",
+        "level": 2
+      },
+      {
+        "id": "2023-the-frontier-and-the-open-alternative",
+        "text": "2023: the frontier and the open alternative",
+        "level": 2
+      },
+      {
+        "id": "20242026-context-reasoning-and-agents",
+        "text": "2024–2026: context, reasoning and agents",
+        "level": 2
+      },
+      {
+        "id": "patterns-across-the-milestones",
+        "text": "Patterns across the milestones",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "history-of-language-models",
+      "important-llms-explained",
+      "llm-breakthroughs"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
+    ]
+  },
+  {
+    "slug": "open-source-llms",
+    "title": "10 Best Open-Source LLMs to Know in 2026: From Early Models to Modern AI",
+    "seoTitle": "10 Best Open-Source LLMs to Know in 2026",
+    "description": "10 open-source and open-weight LLM families in 2026, from Llama and Mistral to Qwen, DeepSeek, Gemma, gpt-oss, OLMo and Kimi, with sizes, licenses and uses.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "open source",
+        "slug": "open-source"
+      },
+      {
+        "name": "open-weight models",
+        "slug": "open-weight-models"
+      },
+      {
+        "name": "llama",
+        "slug": "llama"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [
+      "/images/articles/open-source-llms/openness-spectrum.svg"
+    ],
+    "canonicalUrl": "https://blogai.space/articles/open-source-llms",
+    "isCanonicalLocal": true,
+    "wordCount": 3205,
+    "readingTimeMinutes": 15,
+    "showToc": true,
+    "toc": [
+      {
+        "id": "open-source-or-open-weight",
+        "text": "Open source or open weight?",
+        "level": 2
+      },
+      {
+        "id": "where-open-llms-came-from",
+        "text": "Where open LLMs came from",
+        "level": 2
+      },
+      {
+        "id": "the-10-families-at-a-glance",
+        "text": "The 10 families at a glance",
+        "level": 2
+      },
+      {
+        "id": "1-meta-llama-and-now-muse",
+        "text": "1. Meta: Llama, and now Muse",
+        "level": 2
+      },
+      {
+        "id": "2-mistral-ai-mistral-and-mixtral",
+        "text": "2. Mistral AI: Mistral and Mixtral",
+        "level": 2
+      },
+      {
+        "id": "3-alibaba-qwen",
+        "text": "3. Alibaba: Qwen",
+        "level": 2
+      },
+      {
+        "id": "4-deepseek",
+        "text": "4. DeepSeek",
+        "level": 2
+      },
+      {
+        "id": "5-google-deepmind-gemma",
+        "text": "5. Google DeepMind: Gemma",
+        "level": 2
+      },
+      {
+        "id": "6-openai-gpt-oss",
+        "text": "6. OpenAI: gpt-oss",
+        "level": 2
+      },
+      {
+        "id": "7-ai2-olmo-the-fully-open-option",
+        "text": "7. Ai2: OLMo, the fully open option",
+        "level": 2
+      },
+      {
+        "id": "8-moonshot-ai-kimi",
+        "text": "8. Moonshot AI: Kimi",
+        "level": 2
+      },
+      {
+        "id": "9-zai-glm",
+        "text": "9. Z.ai: GLM",
+        "level": 2
+      },
+      {
+        "id": "10-nvidia-nemotron",
+        "text": "10. NVIDIA: Nemotron",
+        "level": 2
+      },
+      {
+        "id": "also-worth-knowing",
+        "text": "Also worth knowing",
+        "level": 2
+      },
+      {
+        "id": "how-to-choose-an-open-model",
+        "text": "How to choose an open model",
+        "level": 2
+      },
+      {
+        "id": "references",
+        "text": "References",
+        "level": 2
+      }
+    ],
+    "relatedArticles": [
+      "important-llms-explained",
+      "llm-milestones",
+      "history-of-language-models"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "ahead-of-ai",
+      "andrej-karpathy-blog"
+    ]
+  },
+  {
     "slug": "sql-queries-for-data-analysts",
     "title": "30 SQL Queries Every Data Analyst Should Know for Real-World Projects",
     "seoTitle": "30 SQL Queries for Data Analysts, With Real Output",
@@ -2462,8 +3051,8 @@
     ],
     "relatedArticles": [
       "python-machine-learning-examples",
-      "feature-engineering-techniques",
-      "machine-learning-datasets"
+      "llm-breakthroughs",
+      "feature-engineering-techniques"
     ],
     "relatedBlogs": [
       "ahead-of-ai",
@@ -3026,7 +3615,7 @@
     "relatedArticles": [
       "linear-algebra-concepts-for-machine-learning",
       "machine-learning-algorithms-explained",
-      "machine-learning-applications"
+      "llm-breakthroughs"
     ],
     "relatedBlogs": [
       "uber-engineering",
@@ -5914,7 +6503,7 @@
     "relatedArticles": [
       "machine-learning-algorithms-explained",
       "mathematical-optimization-techniques",
-      "machine-learning-datasets"
+      "llm-breakthroughs"
     ],
     "relatedBlogs": [
       "3blue1brown-blog",

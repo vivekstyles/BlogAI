@@ -36,6 +36,25 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Large language model articles (2026-10-25)
+
+Five published articles in Artificial Intelligence and Programming and Technology, all with `publishedAt` 2026-10-25. No existing URLs changed.
+
+- `/articles/history-of-language-models` — 25 dated steps from 2001 n-grams to 2026 agents (1 figure)
+- `/articles/llm-milestones` — 15 turning points from 2017 with before/after and lasting lesson (1 figure)
+- `/articles/important-llms-explained` — 20 influential models with size, release and access (1 figure)
+- `/articles/llm-breakthroughs` — 30 techniques with formulas, also in Mathematics (1 figure)
+- `/articles/open-source-llms` — 10 open model families with lineage, sizes and licenses (1 figure)
+
+Details:
+
+- **Sources.** Historical facts come from the original papers (arXiv, ACL Anthology, JMLR, ISCA, DOIs) and developer announcements. Numbers quoted from abstracts were checked against the abstracts on 25 October 2026 (Goodman 2001, Mikolov 2010, Brants 2007 PDF, DeepSeek-V3). The open-source article's sizes, context lengths, licenses and dates were read from each model's Hugging Face model card, `config.json` and LICENSE file through the Hugging Face API on 25 October 2026. Current Claude models come from Anthropic's models overview; Gemini 4 Argon and Muse Spark Open from Google's and Meta's own posts.
+- **Not reachable:** openai.com and reuters.com refused automated requests. OpenAI facts are cited to OpenAI's arXiv papers, PDFs on cdn.openai.com or Hugging Face model cards where possible; the o1 AIME figures were confirmed from OpenAI's localized copies of the same page in search results; GPT-6 dates rely on CNBC and TechCrunch. The ChatGPT 100-million-user figure is labeled as a UBS/Similarweb estimate reported by Reuters.
+- **No rankings or benchmarks of our own.** The open-source guide does not rank families against each other because public leaderboards disagree; it says so. Benchmark numbers in all five articles are labeled as the developers' own.
+- **Undisclosed sizes are not estimated.** The parameter-count figure plots only published sizes; GPT-4, Claude, Gemini, GPT-4o, o1 and 2026 frontier models are listed as undisclosed.
+- **Overlap:** the history, milestones and important-LLMs articles share some models; their formats differ (chronology, turning points, reference). See [02-keywords-content.md](02-keywords-content.md).
+- **Figures:** 5 SVGs from the new `scripts/diagrams/make_llm_diagrams.py`, reusing `make_ml_diagrams.py` styling.
+
 ### Data analysis articles (2026-10-25)
 
 Five published articles in Programming and Technology, all with `publishedAt` 2026-10-25. No existing URLs changed.

@@ -56,6 +56,11 @@
 | `/articles/data-analysis-tools` | data analysis tools | best tools for data analysis, data analytics tools, tools for data analysts | excel vs power bi vs tableau; is duckdb good for data analysis; looker studio renamed data studio; free data analysis tools for beginners | Commercial-investigation / informational | Beginners choosing what to learn; working analysts |
 | `/articles/sql-queries-for-data-analysts` | sql queries for data analysts | sql for data analysis, sql queries examples, sql practice queries | sql window functions examples; month over month growth sql; cohort retention sql; find duplicates sql | Informational / how-to | Analysts learning or brushing up SQL |
 | `/articles/data-visualization-techniques` | data visualization techniques | data visualization best practices, how to choose a chart, chart design | bar chart start at zero; small multiples example; colorblind friendly charts; dashboard design best practices | Informational | Anyone making charts and dashboards |
+| `/articles/history-of-language-models` | history of language models | evolution of language models, n-gram to LLM, history of NLP | when was the first language model; what came before transformers; who coined large language model | Informational | Students, developers and general readers |
+| `/articles/llm-milestones` | LLM milestones | evolution of large language models, LLM timeline, key moments in AI language models | why was ChatGPT a breakthrough; what did InstructGPT change; why did DeepSeek-R1 matter | Informational | General and technical readers |
+| `/articles/important-llms-explained` | most important LLMs | list of large language models, LLM models explained, GPT-1 to GPT-4 | how many parameters does GPT-3 have; what is the difference between BERT and GPT; what is mixture of experts | Informational / reference | Learners comparing models |
+| `/articles/llm-breakthroughs` | LLM breakthroughs | how LLMs work, transformer innovations, techniques behind large language models | what is RLHF; LoRA vs full fine-tuning; what is FlashAttention; Chinchilla scaling law formula | Informational (technical) | Developers and ML students |
+| `/articles/open-source-llms` | open-source LLMs | best open-source LLM 2026, open-weight models, open LLM list | open source vs open weight; which open LLM runs on one GPU; is Llama open source; Kimi K3 license | Commercial-investigation / informational | Developers and teams choosing a model |
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
@@ -110,6 +115,9 @@
 | SQL queries ↔ data analysis techniques (cohorts, funnels, RFM) | Same methods, different tools | **Keep separate.** SQL article is query patterns with database output; techniques article explains the method in pandas. They cross-link at query 27/28 and techniques 10/11. |
 | Data analysis tools ↔ Python libraries guides | pandas, Polars and Jupyter appear in both | **Keep separate.** The tools article compares tool categories across the analyst stack and links to the Python library guides for depth. |
 | Visualization techniques ↔ data analysis techniques (EDA) | Both mention distributions and Anscombe's quartet | **Keep separate.** Visualization covers chart design; techniques covers analysis. Each links to the other. |
+| LLM history ↔ LLM milestones ↔ important LLMs | All three cover GPT-3, ChatGPT, LLaMA, o1 and DeepSeek-R1 | **Keep separate, watch closely.** History is a 25-step chronology from 2001 n-grams (informational, "history of"); milestones covers 15 turning points from 2017 with before/after analysis; important LLMs is a model-by-model reference with sizes and access. Each links to the others. If GSC shows the same queries landing on two of them, merge the weaker into the stronger with a 301. |
+| LLM breakthroughs ↔ LLM history / ML algorithms explained | Transformer, attention and word2vec appear in all | **Keep separate.** Breakthroughs explains techniques with formulas; history tells the story; the 100-algorithms article covers classic ML. |
+| Open-source LLMs ↔ important LLMs entry 20 | Both name 2026 open-weight models | **Keep separate.** The open-source guide is a selection guide with licenses and hardware advice; the important-LLMs entry is a one-paragraph status note that links to it. |
 
 No consolidation, redirect or unpublishing is recommended.
 
@@ -144,6 +152,12 @@ No consolidation, redirect or unpublishing is recommended.
 - **Added 2026-10-25:** five data analysis articles: beginner projects, techniques, tools, SQL queries and visualization techniques. All in Programming and Technology (techniques also in Mathematics), cross-linked to each other and to the pandas, statistics, Python library, automation and data science project articles, with 10 SVG figures from `scripts/diagrams/make_data_analysis_diagrams.py` and a downloadable practice database at `/data/sql-practice-shop.sql`.
 - **Freshness:** the tools article quotes versions, prices and product names that change often (Power BI pricing, the Looker Studio → Data Studio rename, DuckDB 2.0, pandas 3.1, PostgreSQL 19, Superset 7.0 release candidates). Recheck it every three to six months. Dataset links in the projects article should be checked at the same time.
 - **Gaps:** an Excel/pivot-table tutorial, a Power BI DAX introduction, statistics for A/B testing in more depth, and a "data analyst roadmap" pillar ordering these articles. Confirm demand in GSC first.
+
+### Cluster H — Large language models (Artificial Intelligence category)
+
+- **Added 2026-10-25:** five LLM articles: 25-year history, 15 milestones, 20 important models, 30 breakthroughs and 10 open-source LLM families. All in Artificial Intelligence and Programming and Technology (breakthroughs also in Mathematics), cross-linked to each other and to the ML, math-for-ML and engineering-reading articles, with 5 SVG figures from `scripts/diagrams/make_llm_diagrams.py`.
+- **Freshness:** the open-source guide and the 2026 sections (history step 25, milestone 15, important-LLMs entry 20) quote model versions, sizes and licenses that change every few weeks. Recheck them monthly for the first quarter, then every three months. The history and breakthroughs articles are mostly evergreen.
+- **Gaps:** a hands-on "run an open LLM locally" tutorial, a fine-tuning with LoRA walkthrough and an LLM evaluation guide. Confirm demand in GSC first.
 
 ### Cluster E — AI in industry and work
 
