@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Send,
@@ -30,8 +30,12 @@ export function SubmitBlog() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionSuccess, setSubmissionSuccess] = useState(null);
 
+  // Set on the first edit so the submission records how long the form took to fill.
+  const formStartedAt = useRef(null);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (formStartedAt.current === null) formStartedAt.current = Date.now();
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: null }));
@@ -44,9 +48,12 @@ export function SubmitBlog() {
     setIsSubmitting(true);
     setErrors({});
 
-    const result = await blogService.submitCommunityBlog(formData);
+    const result = await blogService.submitCommunityBlog(formData, {
+      formStartedAt: formStartedAt.current,
+    });
 
     if (result.success) {
+      formStartedAt.current = null;
       setSubmissionSuccess(result.submission);
       setFormData({
         title: '',
@@ -310,6 +317,12 @@ export function SubmitBlog() {
                     Only used if moderators have questions. Never published or shared.
                   </span>
                 </div>
+
+                <p className="field-hint">
+                  To help us review submissions and block spam, basic browser details (such as
+                  browser, language, time zone, screen size, and referring page) are sent with your
+                  submission. See our <Link to="/privacy">Privacy Policy</Link>.
+                </p>
 
                 <div className="form-actions">
                   <button

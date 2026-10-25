@@ -3,6 +3,7 @@ import categoriesData from '../data/categories';
 import tagsData from '../data/tags';
 import { slugify } from '../utils/slugify';
 import { validateBlogSubmission } from '../utils/validation';
+import { collectSubmitterContext } from '../utils/submitterContext';
 
 export const SUBMISSION_ENDPOINT =
   import.meta.env.VITE_SUBMISSION_ENDPOINT || 'https://logs.promptnote.app/subscription';
@@ -71,7 +72,7 @@ export const blogService = {
     return featured;
   },
 
-  async submitCommunityBlog(formData) {
+  async submitCommunityBlog(formData, { formStartedAt } = {}) {
     const validation = validateBlogSubmission(formData, blogsData);
     if (!validation.isValid) {
       return { success: false, errors: validation.errors };
@@ -93,6 +94,11 @@ export const blogService = {
       source: 'blogai-web',
     };
 
+    const payload = {
+      ...submissionRecord,
+      submitter: collectSubmitterContext({ formStartedAt }),
+    };
+
     // The endpoint sends no CORS headers, so this must stay a "simple" request:
     // a text/plain JSON body with mode 'no-cors'. The response is opaque, so a
     // resolved fetch means the request was delivered; only network failures are detectable.
@@ -103,7 +109,7 @@ export const blogService = {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
-        body: JSON.stringify(submissionRecord),
+        body: JSON.stringify(payload),
         signal: controller.signal,
       });
     } catch {

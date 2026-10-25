@@ -84,6 +84,19 @@ describe('Service: blogService.submitCommunityBlog', () => {
     });
   });
 
+  it('includes submitter browser context with the submission', async () => {
+    const fetchMock = vi.fn().mockResolvedValue({ type: 'opaque' });
+    vi.stubGlobal('fetch', fetchMock);
+
+    await blogService.submitCommunityBlog(validForm, { formStartedAt: Date.now() - 42000 });
+
+    const { submitter } = JSON.parse(fetchMock.mock.calls[0][1].body);
+    expect(submitter.userAgent).toBeTruthy();
+    expect(submitter.timeZone).toBeTruthy();
+    expect(submitter.page).toMatch(/^http/);
+    expect(submitter.formDurationSeconds).toBeGreaterThanOrEqual(42);
+  });
+
   it('does not send invalid submissions', async () => {
     const fetchMock = vi.fn();
     vi.stubGlobal('fetch', fetchMock);
