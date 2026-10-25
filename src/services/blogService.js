@@ -1,6 +1,6 @@
-import blogsData from '../data/blogs';
+import blogsData from '../data/blogs.json';
 import categoriesData from '../data/categories';
-import tagsData from '../data/tags';
+import tagsData from '../data/tags.json';
 import { slugify } from '../utils/slugify';
 import { validateBlogSubmission } from '../utils/validation';
 import { collectSubmitterContext } from '../utils/submitterContext';

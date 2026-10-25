@@ -419,7 +419,8 @@ function main() {
     process.exit(1);
   }
 
-  const index = published.map(({ html, ...meta }) => meta);
+  // The index ships in the entry bundle, so the TOC travels with the body chunk instead
+  const index = published.map(({ html, toc, ...meta }) => meta);
   fs.writeFileSync(OUTPUT_PATH, `${JSON.stringify(index, null, 2)}\n`, 'utf-8');
 
   // Rewrite the body files from scratch so unpublished or renamed articles leave nothing behind
@@ -428,7 +429,7 @@ function main() {
   for (const article of published) {
     fs.writeFileSync(
       path.join(CONTENT_DIR, `${article.slug}.json`),
-      `${JSON.stringify({ html: article.html })}\n`,
+      `${JSON.stringify({ html: article.html, toc: article.toc })}\n`,
       'utf-8'
     );
   }

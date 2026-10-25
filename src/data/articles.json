@@ -51,53 +51,6 @@
     "wordCount": 2395,
     "readingTimeMinutes": 11,
     "showToc": true,
-    "toc": [
-      {
-        "id": "where-ai-fits-in-earning-money",
-        "text": "Where AI fits in earning money",
-        "level": 2
-      },
-      {
-        "id": "the-10-tools-at-a-glance",
-        "text": "The 10 tools at a glance",
-        "level": 2
-      },
-      {
-        "id": "the-10-tools",
-        "text": "The 10 tools",
-        "level": 2
-      },
-      {
-        "id": "do-the-subscriptions-pay-for-themselves",
-        "text": "Do the subscriptions pay for themselves?",
-        "level": 2
-      },
-      {
-        "id": "ai-money-making-claims-to-ignore",
-        "text": "AI money-making claims to ignore",
-        "level": 2
-      },
-      {
-        "id": "how-to-start-this-week",
-        "text": "How to start this week",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "related-reading",
-        "text": "Related reading",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "make-money-online-for-beginners",
       "important-llms-explained",
@@ -157,48 +110,6 @@
     "wordCount": 3069,
     "readingTimeMinutes": 14,
     "showToc": true,
-    "toc": [
-      {
-        "id": "comparison-table",
-        "text": "Comparison table",
-        "level": 2
-      },
-      {
-        "id": "percentage-based-methods",
-        "text": "Percentage-based methods",
-        "level": 2
-      },
-      {
-        "id": "detailed-every-dollar-methods",
-        "text": "Detailed, every-dollar methods",
-        "level": 2
-      },
-      {
-        "id": "save-first-methods",
-        "text": "Save-first methods",
-        "level": 2
-      },
-      {
-        "id": "methods-for-irregular-costs-and-irregular-income",
-        "text": "Methods for irregular costs and irregular income",
-        "level": 2
-      },
-      {
-        "id": "how-to-choose-and-start",
-        "text": "How to choose and start",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "money-management-tips",
       "money-management-skills-in-your-20s",
@@ -263,38 +174,6 @@
     "wordCount": 3820,
     "readingTimeMinutes": 17,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-make-a-project-worth-showing",
-        "text": "How to make a project worth showing",
-        "level": 2
-      },
-      {
-        "id": "level-1-spreadsheet-projects-19",
-        "text": "Level 1: spreadsheet projects (1–9)",
-        "level": 2
-      },
-      {
-        "id": "level-2-sql-projects-1017",
-        "text": "Level 2: SQL projects (10–17)",
-        "level": 2
-      },
-      {
-        "id": "level-3-bi-and-python-projects-1825",
-        "text": "Level 3: BI and Python projects (18–25)",
-        "level": 2
-      },
-      {
-        "id": "which-projects-to-do-first",
-        "text": "Which projects to do first",
-        "level": 2
-      },
-      {
-        "id": "sources",
-        "text": "Sources",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-tools",
       "sql-queries-for-data-analysts",
@@ -362,58 +241,6 @@
     "wordCount": 3681,
     "readingTimeMinutes": 17,
     "showToc": true,
-    "toc": [
-      {
-        "id": "set-up-the-example-data",
-        "text": "Set up the example data",
-        "level": 2
-      },
-      {
-        "id": "understand-the-data-13",
-        "text": "Understand the data (1–3)",
-        "level": 2
-      },
-      {
-        "id": "compare-and-relate-46",
-        "text": "Compare and relate (4–6)",
-        "level": 2
-      },
-      {
-        "id": "test-whether-differences-are-real-78",
-        "text": "Test whether differences are real (7–8)",
-        "level": 2
-      },
-      {
-        "id": "analyze-change-over-time-911",
-        "text": "Analyze change over time (9–11)",
-        "level": 2
-      },
-      {
-        "id": "segment-customers-1213",
-        "text": "Segment customers (12–13)",
-        "level": 2
-      },
-      {
-        "id": "find-the-unusual-and-the-important-1415",
-        "text": "Find the unusual and the important (14–15)",
-        "level": 2
-      },
-      {
-        "id": "how-to-choose-a-technique",
-        "text": "How to choose a technique",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-tools",
       "pandas-tips-and-tricks-for-data-analysis",
@@ -477,58 +304,6 @@
     "wordCount": 2971,
     "readingTimeMinutes": 14,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-20-tools-at-a-glance",
-        "text": "The 20 tools at a glance",
-        "level": 2
-      },
-      {
-        "id": "spreadsheets",
-        "text": "Spreadsheets",
-        "level": 2
-      },
-      {
-        "id": "sql-databases-and-engines",
-        "text": "SQL databases and engines",
-        "level": 2
-      },
-      {
-        "id": "programming-languages-and-notebooks",
-        "text": "Programming languages and notebooks",
-        "level": 2
-      },
-      {
-        "id": "business-intelligence-and-dashboards",
-        "text": "Business intelligence and dashboards",
-        "level": 2
-      },
-      {
-        "id": "data-preparation-and-workflow",
-        "text": "Data preparation and workflow",
-        "level": 2
-      },
-      {
-        "id": "what-about-ai-assistants",
-        "text": "What about AI assistants?",
-        "level": 2
-      },
-      {
-        "id": "starter-stacks-by-goal",
-        "text": "Starter stacks by goal",
-        "level": 2
-      },
-      {
-        "id": "how-to-choose-and-what-to-learn-first",
-        "text": "How to choose (and what to learn first)",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-projects-for-beginners",
       "data-analysis-techniques",
@@ -596,73 +371,6 @@
     "wordCount": 2563,
     "readingTimeMinutes": 12,
     "showToc": true,
-    "toc": [
-      {
-        "id": "1-start-from-the-question-then-choose-the-chart",
-        "text": "1. Start from the question, then choose the chart",
-        "level": 2
-      },
-      {
-        "id": "2-prefer-position-and-length-bar-charts-for-comparisons",
-        "text": "2. Prefer position and length: bar charts for comparisons",
-        "level": 2
-      },
-      {
-        "id": "3-use-line-charts-for-change-over-time",
-        "text": "3. Use line charts for change over time",
-        "level": 2
-      },
-      {
-        "id": "4-show-the-distribution-not-just-the-average",
-        "text": "4. Show the distribution, not just the average",
-        "level": 2
-      },
-      {
-        "id": "5-use-scatter-plots-for-relationships",
-        "text": "5. Use scatter plots for relationships",
-        "level": 2
-      },
-      {
-        "id": "6-highlight-what-matters-with-color-and-annotation",
-        "text": "6. Highlight what matters with color and annotation",
-        "level": 2
-      },
-      {
-        "id": "7-remove-clutter-that-does-not-carry-information",
-        "text": "7. Remove clutter that does not carry information",
-        "level": 2
-      },
-      {
-        "id": "8-use-small-multiples-instead-of-one-crowded-chart",
-        "text": "8. Use small multiples instead of one crowded chart",
-        "level": 2
-      },
-      {
-        "id": "9-choose-colors-everyone-can-read",
-        "text": "9. Choose colors everyone can read",
-        "level": 2
-      },
-      {
-        "id": "10-design-dashboards-around-decisions",
-        "text": "10. Design dashboards around decisions",
-        "level": 2
-      },
-      {
-        "id": "a-checklist-before-you-share-a-chart",
-        "text": "A checklist before you share a chart",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-projects-for-beginners",
       "data-analysis-techniques",
@@ -730,43 +438,6 @@
     "wordCount": 4220,
     "readingTimeMinutes": 19,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-25-steps-at-a-glance",
-        "text": "The 25 steps at a glance",
-        "level": 2
-      },
-      {
-        "id": "era-1-statistical-language-models-20012009",
-        "text": "Era 1: statistical language models (2001–2009)",
-        "level": 2
-      },
-      {
-        "id": "era-2-neural-language-models-and-embeddings-20102016",
-        "text": "Era 2: neural language models and embeddings (2010–2016)",
-        "level": 2
-      },
-      {
-        "id": "era-3-transformers-and-pretraining-20172021",
-        "text": "Era 3: Transformers and pretraining (2017–2021)",
-        "level": 2
-      },
-      {
-        "id": "era-4-assistants-reasoning-and-agents-20222026",
-        "text": "Era 4: assistants, reasoning and agents (2022–2026)",
-        "level": 2
-      },
-      {
-        "id": "what-25-years-of-language-models-teach",
-        "text": "What 25 years of language models teach",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "llm-breakthroughs",
       "llm-milestones",
@@ -834,48 +505,6 @@
     "wordCount": 3658,
     "readingTimeMinutes": 17,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-20-models-at-a-glance",
-        "text": "The 20 models at a glance",
-        "level": 2
-      },
-      {
-        "id": "20182019-the-first-pretrained-transformers",
-        "text": "2018–2019: the first pretrained Transformers",
-        "level": 2
-      },
-      {
-        "id": "20202022-scale-code-and-compute-optimal-training",
-        "text": "2020–2022: scale, code and compute-optimal training",
-        "level": 2
-      },
-      {
-        "id": "2023-frontier-models-and-the-open-weight-boom",
-        "text": "2023: frontier models and the open-weight boom",
-        "level": 2
-      },
-      {
-        "id": "20242025-open-frontiers-and-reasoning",
-        "text": "2024–2025: open frontiers and reasoning",
-        "level": 2
-      },
-      {
-        "id": "2026-todays-models",
-        "text": "2026: today's models",
-        "level": 2
-      },
-      {
-        "id": "how-the-models-connect",
-        "text": "How the models connect",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "llm-milestones",
       "open-source-llms",
@@ -947,53 +576,6 @@
     "wordCount": 4671,
     "readingTimeMinutes": 21,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-30-breakthroughs-at-a-glance",
-        "text": "The 30 breakthroughs at a glance",
-        "level": 2
-      },
-      {
-        "id": "foundations-predicting-and-representing-words",
-        "text": "Foundations: predicting and representing words",
-        "level": 2
-      },
-      {
-        "id": "architecture-the-transformer-and-its-refinements",
-        "text": "Architecture: the Transformer and its refinements",
-        "level": 2
-      },
-      {
-        "id": "training-pretraining-scaling-and-data",
-        "text": "Training: pretraining, scaling and data",
-        "level": 2
-      },
-      {
-        "id": "using-and-aligning-the-model",
-        "text": "Using and aligning the model",
-        "level": 2
-      },
-      {
-        "id": "efficiency-training-and-running-models-cheaply",
-        "text": "Efficiency: training and running models cheaply",
-        "level": 2
-      },
-      {
-        "id": "capabilities-knowledge-tools-and-reasoning",
-        "text": "Capabilities: knowledge, tools and reasoning",
-        "level": 2
-      },
-      {
-        "id": "what-the-breakthroughs-have-in-common",
-        "text": "What the breakthroughs have in common",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "history-of-language-models",
       "llm-milestones",
@@ -1061,48 +643,6 @@
     "wordCount": 2964,
     "readingTimeMinutes": 13,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-15-milestones-at-a-glance",
-        "text": "The 15 milestones at a glance",
-        "level": 2
-      },
-      {
-        "id": "20172019-the-foundations",
-        "text": "2017–2019: the foundations",
-        "level": 2
-      },
-      {
-        "id": "20202021-scale-and-prompting",
-        "text": "2020–2021: scale and prompting",
-        "level": 2
-      },
-      {
-        "id": "2022-from-text-predictor-to-assistant",
-        "text": "2022: from text predictor to assistant",
-        "level": 2
-      },
-      {
-        "id": "2023-the-frontier-and-the-open-alternative",
-        "text": "2023: the frontier and the open alternative",
-        "level": 2
-      },
-      {
-        "id": "20242026-context-reasoning-and-agents",
-        "text": "2024–2026: context, reasoning and agents",
-        "level": 2
-      },
-      {
-        "id": "patterns-across-the-milestones",
-        "text": "Patterns across the milestones",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "history-of-language-models",
       "important-llms-explained",
@@ -1162,53 +702,6 @@
     "wordCount": 2072,
     "readingTimeMinutes": 9,
     "showToc": true,
-    "toc": [
-      {
-        "id": "three-questions-before-you-choose",
-        "text": "Three questions before you choose",
-        "level": 2
-      },
-      {
-        "id": "about-0-to-start-ideas-112",
-        "text": "About $0 to start (ideas 1–12)",
-        "level": 2
-      },
-      {
-        "id": "under-50-to-start-ideas-1322",
-        "text": "Under $50 to start (ideas 13–22)",
-        "level": 2
-      },
-      {
-        "id": "around-100-or-more-to-start-ideas-2330",
-        "text": "Around $100 or more to start (ideas 23–30)",
-        "level": 2
-      },
-      {
-        "id": "scams-that-target-people-looking-for-home-based-work",
-        "text": "Scams that target people looking for home-based work",
-        "level": 2
-      },
-      {
-        "id": "keep-more-of-what-you-earn",
-        "text": "Keep more of what you earn",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "related-reading",
-        "text": "Related reading",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "make-money-online-for-beginners",
       "budgeting-methods",
@@ -1268,63 +761,6 @@
     "wordCount": 3208,
     "readingTimeMinutes": 15,
     "showToc": true,
-    "toc": [
-      {
-        "id": "before-you-start-three-things-that-matter-more-than-the-idea",
-        "text": "Before you start: three things that matter more than the idea",
-        "level": 2
-      },
-      {
-        "id": "all-25-at-a-glance",
-        "text": "All 25 at a glance",
-        "level": 2
-      },
-      {
-        "id": "sell-a-skill-freelancing-ways-110",
-        "text": "Sell a skill: freelancing (ways 1–10)",
-        "level": 2
-      },
-      {
-        "id": "trade-time-for-small-payments-ways-1113",
-        "text": "Trade time for small payments (ways 11–13)",
-        "level": 2
-      },
-      {
-        "id": "sell-things-ways-1418",
-        "text": "Sell things (ways 14–18)",
-        "level": 2
-      },
-      {
-        "id": "build-an-audience-ways-1925",
-        "text": "Build an audience (ways 19–25)",
-        "level": 2
-      },
-      {
-        "id": "a-simple-first-30-days-plan",
-        "text": "A simple first-30-days plan",
-        "level": 2
-      },
-      {
-        "id": "red-flags-and-common-mistakes",
-        "text": "Red flags and common mistakes",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "related-reading",
-        "text": "Related reading",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-tools-to-make-money",
       "make-money-from-home",
@@ -1388,78 +824,6 @@
     "wordCount": 2524,
     "readingTimeMinutes": 11,
     "showToc": true,
-    "toc": [
-      {
-        "id": "why-your-20s-matter-so-much",
-        "text": "Why your 20s matter so much",
-        "level": 2
-      },
-      {
-        "id": "1-reading-your-paycheck",
-        "text": "1. Reading your paycheck",
-        "level": 2
-      },
-      {
-        "id": "2-tracking-spending-and-making-a-budget",
-        "text": "2. Tracking spending and making a budget",
-        "level": 2
-      },
-      {
-        "id": "3-building-an-emergency-fund",
-        "text": "3. Building an emergency fund",
-        "level": 2
-      },
-      {
-        "id": "4-building-and-protecting-your-credit",
-        "text": "4. Building and protecting your credit",
-        "level": 2
-      },
-      {
-        "id": "5-managing-debt-including-student-loans",
-        "text": "5. Managing debt, including student loans",
-        "level": 2
-      },
-      {
-        "id": "6-using-your-employers-benefits",
-        "text": "6. Using your employer's benefits",
-        "level": 2
-      },
-      {
-        "id": "7-investing-early-and-simply",
-        "text": "7. Investing early and simply",
-        "level": 2
-      },
-      {
-        "id": "8-growing-your-income",
-        "text": "8. Growing your income",
-        "level": 2
-      },
-      {
-        "id": "9-protecting-yourself-from-big-losses",
-        "text": "9. Protecting yourself from big losses",
-        "level": 2
-      },
-      {
-        "id": "10-planning-big-goals-without-lifestyle-creep",
-        "text": "10. Planning big goals without lifestyle creep",
-        "level": 2
-      },
-      {
-        "id": "a-plan-for-your-20s-step-by-step",
-        "text": "A plan for your 20s, step by step",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "money-management-tips",
       "budgeting-methods",
@@ -1523,63 +887,6 @@
     "wordCount": 2968,
     "readingTimeMinutes": 13,
     "showToc": true,
-    "toc": [
-      {
-        "id": "where-things-stand-in-2026",
-        "text": "Where things stand in 2026",
-        "level": 2
-      },
-      {
-        "id": "know-your-numbers",
-        "text": "Know your numbers",
-        "level": 2
-      },
-      {
-        "id": "build-a-safety-net",
-        "text": "Build a safety net",
-        "level": 2
-      },
-      {
-        "id": "spend-on-purpose",
-        "text": "Spend on purpose",
-        "level": 2
-      },
-      {
-        "id": "handle-debt-well",
-        "text": "Handle debt well",
-        "level": 2
-      },
-      {
-        "id": "save-and-invest-automatically",
-        "text": "Save and invest automatically",
-        "level": 2
-      },
-      {
-        "id": "protect-what-you-build",
-        "text": "Protect what you build",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-to-avoid",
-        "text": "Common mistakes to avoid",
-        "level": 2
-      },
-      {
-        "id": "a-30-day-starter-checklist",
-        "text": "A 30-day starter checklist",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "budgeting-methods",
       "money-management-skills-in-your-20s",
@@ -1647,88 +954,6 @@
     "wordCount": 3205,
     "readingTimeMinutes": 15,
     "showToc": true,
-    "toc": [
-      {
-        "id": "open-source-or-open-weight",
-        "text": "Open source or open weight?",
-        "level": 2
-      },
-      {
-        "id": "where-open-llms-came-from",
-        "text": "Where open LLMs came from",
-        "level": 2
-      },
-      {
-        "id": "the-10-families-at-a-glance",
-        "text": "The 10 families at a glance",
-        "level": 2
-      },
-      {
-        "id": "1-meta-llama-and-now-muse",
-        "text": "1. Meta: Llama, and now Muse",
-        "level": 2
-      },
-      {
-        "id": "2-mistral-ai-mistral-and-mixtral",
-        "text": "2. Mistral AI: Mistral and Mixtral",
-        "level": 2
-      },
-      {
-        "id": "3-alibaba-qwen",
-        "text": "3. Alibaba: Qwen",
-        "level": 2
-      },
-      {
-        "id": "4-deepseek",
-        "text": "4. DeepSeek",
-        "level": 2
-      },
-      {
-        "id": "5-google-deepmind-gemma",
-        "text": "5. Google DeepMind: Gemma",
-        "level": 2
-      },
-      {
-        "id": "6-openai-gpt-oss",
-        "text": "6. OpenAI: gpt-oss",
-        "level": 2
-      },
-      {
-        "id": "7-ai2-olmo-the-fully-open-option",
-        "text": "7. Ai2: OLMo, the fully open option",
-        "level": 2
-      },
-      {
-        "id": "8-moonshot-ai-kimi",
-        "text": "8. Moonshot AI: Kimi",
-        "level": 2
-      },
-      {
-        "id": "9-zai-glm",
-        "text": "9. Z.ai: GLM",
-        "level": 2
-      },
-      {
-        "id": "10-nvidia-nemotron",
-        "text": "10. NVIDIA: Nemotron",
-        "level": 2
-      },
-      {
-        "id": "also-worth-knowing",
-        "text": "Also worth knowing",
-        "level": 2
-      },
-      {
-        "id": "how-to-choose-an-open-model",
-        "text": "How to choose an open model",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "important-llms-explained",
       "llm-milestones",
@@ -1792,48 +1017,6 @@
     "wordCount": 2306,
     "readingTimeMinutes": 10,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-much-money-does-passive-really-take",
-        "text": "How much money does \"passive\" really take?",
-        "level": 2
-      },
-      {
-        "id": "part-1-let-your-money-earn-ideas-113",
-        "text": "Part 1: Let your money earn (ideas 1–13)",
-        "level": 2
-      },
-      {
-        "id": "part-2-build-something-once-earn-from-it-later-ideas-1420",
-        "text": "Part 2: Build something once, earn from it later (ideas 14–20)",
-        "level": 2
-      },
-      {
-        "id": "what-to-be-wary-of",
-        "text": "What to be wary of",
-        "level": 2
-      },
-      {
-        "id": "a-realistic-path",
-        "text": "A realistic path",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "related-reading",
-        "text": "Related reading",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "money-management-skills-in-your-20s",
       "money-management-tips",
@@ -1897,53 +1080,6 @@
     "wordCount": 3063,
     "readingTimeMinutes": 14,
     "showToc": true,
-    "toc": [
-      {
-        "id": "rules-at-a-glance",
-        "text": "Rules at a glance",
-        "level": 2
-      },
-      {
-        "id": "rules-for-cash-flow-and-safety",
-        "text": "Rules for cash flow and safety",
-        "level": 2
-      },
-      {
-        "id": "rules-for-retirement-saving",
-        "text": "Rules for retirement saving",
-        "level": 2
-      },
-      {
-        "id": "rules-for-debt",
-        "text": "Rules for debt",
-        "level": 2
-      },
-      {
-        "id": "rules-for-investing",
-        "text": "Rules for investing",
-        "level": 2
-      },
-      {
-        "id": "a-rule-for-protecting-yourself",
-        "text": "A rule for protecting yourself",
-        "level": 2
-      },
-      {
-        "id": "how-to-use-these-rules-together",
-        "text": "How to use these rules together",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "money-management-tips",
       "budgeting-methods",
@@ -2003,53 +1139,6 @@
     "wordCount": 2109,
     "readingTimeMinutes": 10,
     "showToc": true,
-    "toc": [
-      {
-        "id": "why-people-are-taking-on-side-work",
-        "text": "Why people are taking on side work",
-        "level": 2
-      },
-      {
-        "id": "check-these-before-you-start",
-        "text": "Check these before you start",
-        "level": 2
-      },
-      {
-        "id": "comparison-table",
-        "text": "Comparison table",
-        "level": 2
-      },
-      {
-        "id": "the-15-side-hustles",
-        "text": "The 15 side hustles",
-        "level": 2
-      },
-      {
-        "id": "what-a-22-an-hour-gig-really-pays",
-        "text": "What a \"$22 an hour\" gig really pays",
-        "level": 2
-      },
-      {
-        "id": "how-to-make-a-side-hustle-sustainable",
-        "text": "How to make a side hustle sustainable",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "related-reading",
-        "text": "Related reading",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "make-money-online-for-beginners",
       "ai-tools-to-make-money",
@@ -2113,48 +1202,6 @@
     "wordCount": 2495,
     "readingTimeMinutes": 11,
     "showToc": true,
-    "toc": [
-      {
-        "id": "why-habits-beat-willpower",
-        "text": "Why habits beat willpower",
-        "level": 2
-      },
-      {
-        "id": "daily-habits-16",
-        "text": "Daily habits (1–6)",
-        "level": 2
-      },
-      {
-        "id": "weekly-habits-713",
-        "text": "Weekly habits (7–13)",
-        "level": 2
-      },
-      {
-        "id": "monthly-habits-1422",
-        "text": "Monthly habits (14–22)",
-        "level": 2
-      },
-      {
-        "id": "yearly-habits-2330",
-        "text": "Yearly habits (23–30)",
-        "level": 2
-      },
-      {
-        "id": "how-to-build-these-habits",
-        "text": "How to build these habits",
-        "level": 2
-      },
-      {
-        "id": "faq",
-        "text": "FAQ",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "money-management-tips",
       "budgeting-methods",
@@ -2218,63 +1265,6 @@
     "wordCount": 3411,
     "readingTimeMinutes": 16,
     "showToc": true,
-    "toc": [
-      {
-        "id": "set-up-the-practice-database",
-        "text": "Set up the practice database",
-        "level": 2
-      },
-      {
-        "id": "select-filter-and-sort-16",
-        "text": "Select, filter and sort (1–6)",
-        "level": 2
-      },
-      {
-        "id": "group-and-summarize-78",
-        "text": "Group and summarize (7–8)",
-        "level": 2
-      },
-      {
-        "id": "join-tables-914",
-        "text": "Join tables (9–14)",
-        "level": 2
-      },
-      {
-        "id": "subqueries-and-ctes-1517",
-        "text": "Subqueries and CTEs (15–17)",
-        "level": 2
-      },
-      {
-        "id": "window-functions-1825",
-        "text": "Window functions (18–25)",
-        "level": 2
-      },
-      {
-        "id": "business-analysis-recipes-2628",
-        "text": "Business analysis recipes (26–28)",
-        "level": 2
-      },
-      {
-        "id": "data-quality-checks-2930",
-        "text": "Data-quality checks (29–30)",
-        "level": 2
-      },
-      {
-        "id": "mistakes-that-produce-wrong-numbers",
-        "text": "Mistakes that produce wrong numbers",
-        "level": 2
-      },
-      {
-        "id": "how-to-practice-after-these-30",
-        "text": "How to practice after these 30",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-projects-for-beginners",
       "data-analysis-tools",
@@ -2338,48 +1328,6 @@
     "wordCount": 2533,
     "readingTimeMinutes": 12,
     "showToc": true,
-    "toc": [
-      {
-        "id": "setting-up",
-        "text": "Setting up",
-        "level": 2
-      },
-      {
-        "id": "files-and-folders",
-        "text": "Files and folders",
-        "level": 2
-      },
-      {
-        "id": "spreadsheets-and-reports",
-        "text": "Spreadsheets and reports",
-        "level": 2
-      },
-      {
-        "id": "monitoring-and-data",
-        "text": "Monitoring and data",
-        "level": 2
-      },
-      {
-        "id": "run-scripts-on-a-schedule",
-        "text": "Run scripts on a schedule",
-        "level": 2
-      },
-      {
-        "id": "habits-that-keep-automation-safe-and-useful",
-        "text": "Habits that keep automation safe and useful",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-tools",
       "data-analysis-techniques",
@@ -2444,38 +1392,6 @@
     "wordCount": 3859,
     "readingTimeMinutes": 18,
     "showToc": true,
-    "toc": [
-      {
-        "id": "python-fundamentals-questions-115",
-        "text": "Python fundamentals (questions 1–15)",
-        "level": 2
-      },
-      {
-        "id": "questions-for-experienced-developers-1630",
-        "text": "Questions for experienced developers (16–30)",
-        "level": 2
-      },
-      {
-        "id": "newer-python-features-worth-knowing-in-2026",
-        "text": "Newer Python features worth knowing in 2026",
-        "level": 2
-      },
-      {
-        "id": "how-to-prepare-in-the-last-week",
-        "text": "How to prepare in the last week",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-projects-for-beginners",
       "data-analysis-techniques",
@@ -2543,58 +1459,6 @@
     "wordCount": 2795,
     "readingTimeMinutes": 13,
     "showToc": true,
-    "toc": [
-      {
-        "id": "versions-used-and-how-to-install",
-        "text": "Versions used and how to install",
-        "level": 2
-      },
-      {
-        "id": "load-and-shape-data",
-        "text": "Load and shape data",
-        "level": 2
-      },
-      {
-        "id": "explore-visualize-and-test",
-        "text": "Explore, visualize and test",
-        "level": 2
-      },
-      {
-        "id": "classical-machine-learning",
-        "text": "Classical machine learning",
-        "level": 2
-      },
-      {
-        "id": "deep-learning",
-        "text": "Deep learning",
-        "level": 2
-      },
-      {
-        "id": "track-experiments-and-share-work",
-        "text": "Track experiments and share work",
-        "level": 2
-      },
-      {
-        "id": "which-libraries-to-learn-first",
-        "text": "Which libraries to learn first",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-when-choosing-libraries",
-        "text": "Common mistakes when choosing libraries",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-machine-learning-examples",
       "feature-engineering-techniques",
@@ -2658,43 +1522,6 @@
     "wordCount": 3245,
     "readingTimeMinutes": 15,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-use-this-list",
-        "text": "How to use this list",
-        "level": 2
-      },
-      {
-        "id": "level-1-first-programs-projects-18",
-        "text": "Level 1: first programs (projects 1–8)",
-        "level": 2
-      },
-      {
-        "id": "level-2-data-files-and-classes-projects-917",
-        "text": "Level 2: data, files and classes (projects 9–17)",
-        "level": 2
-      },
-      {
-        "id": "level-3-libraries-apis-and-apps-projects-1825",
-        "text": "Level 3: libraries, APIs and apps (projects 18–25)",
-        "level": 2
-      },
-      {
-        "id": "what-to-do-after-these-projects",
-        "text": "What to do after these projects",
-        "level": 2
-      },
-      {
-        "id": "common-beginner-mistakes",
-        "text": "Common beginner mistakes",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-projects-for-beginners",
       "python-data-science-projects",
@@ -2758,88 +1585,6 @@
     "wordCount": 2620,
     "readingTimeMinutes": 12,
     "showToc": true,
-    "toc": [
-      {
-        "id": "before-you-scrape-is-it-allowed",
-        "text": "Before you scrape: is it allowed?",
-        "level": 2
-      },
-      {
-        "id": "1-check-robotstxt-sitemaps-and-official-apis-first",
-        "text": "1. Check robots.txt, sitemaps and official APIs first",
-        "level": 2
-      },
-      {
-        "id": "2-parse-static-html-with-requests-and-beautiful-soup",
-        "text": "2. Parse static HTML with Requests and Beautiful Soup",
-        "level": 2
-      },
-      {
-        "id": "3-select-precisely-with-css-selectors-and-xpath",
-        "text": "3. Select precisely with CSS selectors and XPath",
-        "level": 2
-      },
-      {
-        "id": "4-read-html-tables-directly-with-pandas",
-        "text": "4. Read HTML tables directly with pandas",
-        "level": 2
-      },
-      {
-        "id": "5-follow-pagination-and-crawl-politely",
-        "text": "5. Follow pagination and crawl politely",
-        "level": 2
-      },
-      {
-        "id": "6-find-the-hidden-json-api-in-the-browsers-network-tab",
-        "text": "6. Find the hidden JSON API in the browser's Network tab",
-        "level": 2
-      },
-      {
-        "id": "7-extract-embedded-json-and-json-ld-from-the-page-source",
-        "text": "7. Extract embedded JSON and JSON-LD from the page source",
-        "level": 2
-      },
-      {
-        "id": "8-make-requests-robust-retries-rate-limits-and-identification",
-        "text": "8. Make requests robust: retries, rate limits and identification",
-        "level": 2
-      },
-      {
-        "id": "9-fetch-many-pages-concurrently-with-asyncio-and-httpx",
-        "text": "9. Fetch many pages concurrently with asyncio and HTTPX",
-        "level": 2
-      },
-      {
-        "id": "10-use-a-headless-browser-for-javascript-only-pages",
-        "text": "10. Use a headless browser for JavaScript-only pages",
-        "level": 2
-      },
-      {
-        "id": "scaling-up-when-to-use-scrapy",
-        "text": "Scaling up: when to use Scrapy",
-        "level": 2
-      },
-      {
-        "id": "clean-store-and-maintain-your-data",
-        "text": "Clean, store and maintain your data",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "data-analysis-techniques",
       "data-analysis-tools",
@@ -2911,43 +1656,6 @@
     "wordCount": 4126,
     "readingTimeMinutes": 19,
     "showToc": true,
-    "toc": [
-      {
-        "id": "healthcare",
-        "text": "Healthcare",
-        "level": 2
-      },
-      {
-        "id": "finance",
-        "text": "Finance",
-        "level": 2
-      },
-      {
-        "id": "education",
-        "text": "Education",
-        "level": 2
-      },
-      {
-        "id": "what-the-evidence-says-across-all-three-fields",
-        "text": "What the evidence says across all three fields",
-        "level": 2
-      },
-      {
-        "id": "questions-to-ask-before-adopting-ai-in-these-fields",
-        "text": "Questions to ask before adopting AI in these fields",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-transforming-industries-examples",
       "machine-learning-applications",
@@ -3019,73 +1727,6 @@
     "wordCount": 5841,
     "readingTimeMinutes": 27,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-ai-shows-up-in-daily-work",
-        "text": "How AI shows up in daily work",
-        "level": 2
-      },
-      {
-        "id": "what-controlled-studies-show-about-productivity",
-        "text": "What controlled studies show about productivity",
-        "level": 2
-      },
-      {
-        "id": "jobs-and-the-labor-market",
-        "text": "Jobs and the labor market",
-        "level": 2
-      },
-      {
-        "id": "hiring-careers-and-hr",
-        "text": "Hiring, careers and HR",
-        "level": 2
-      },
-      {
-        "id": "new-roles-and-skills",
-        "text": "New roles and skills",
-        "level": 2
-      },
-      {
-        "id": "management-monitoring-and-wellbeing",
-        "text": "Management, monitoring and wellbeing",
-        "level": 2
-      },
-      {
-        "id": "rights-contracts-and-bargaining",
-        "text": "Rights, contracts and bargaining",
-        "level": 2
-      },
-      {
-        "id": "physical-work-and-robots",
-        "text": "Physical work and robots",
-        "level": 2
-      },
-      {
-        "id": "what-the-75-examples-add-up-to",
-        "text": "What the 75 examples add up to",
-        "level": 2
-      },
-      {
-        "id": "what-workers-and-employers-can-do-now",
-        "text": "What workers and employers can do now",
-        "level": 2
-      },
-      {
-        "id": "frequently-asked-questions",
-        "text": "Frequently asked questions",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-applications-healthcare-finance-education",
       "ai-in-business-operations-marketing-sales",
@@ -3153,43 +1794,6 @@
     "wordCount": 4186,
     "readingTimeMinutes": 19,
     "showToc": true,
-    "toc": [
-      {
-        "id": "business-operations",
-        "text": "Business operations",
-        "level": 2
-      },
-      {
-        "id": "marketing",
-        "text": "Marketing",
-        "level": 2
-      },
-      {
-        "id": "sales",
-        "text": "Sales",
-        "level": 2
-      },
-      {
-        "id": "patterns-across-the-40-changes",
-        "text": "Patterns across the 40 changes",
-        "level": 2
-      },
-      {
-        "id": "a-checklist-for-adopting-ai-in-a-business-function",
-        "text": "A checklist for adopting AI in a business function",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-transforming-industries-examples",
       "ai-applications-healthcare-finance-education",
@@ -3261,78 +1865,6 @@
     "wordCount": 4102,
     "readingTimeMinutes": 19,
     "showToc": true,
-    "toc": [
-      {
-        "id": "where-ai-adoption-stands-in-2026",
-        "text": "Where AI adoption stands in 2026",
-        "level": 2
-      },
-      {
-        "id": "healthcare-and-life-sciences",
-        "text": "Healthcare and life sciences",
-        "level": 2
-      },
-      {
-        "id": "finance-and-insurance",
-        "text": "Finance and insurance",
-        "level": 2
-      },
-      {
-        "id": "retail-and-commerce",
-        "text": "Retail and commerce",
-        "level": 2
-      },
-      {
-        "id": "manufacturing",
-        "text": "Manufacturing",
-        "level": 2
-      },
-      {
-        "id": "transportation-and-logistics",
-        "text": "Transportation and logistics",
-        "level": 2
-      },
-      {
-        "id": "agriculture-weather-and-energy",
-        "text": "Agriculture, weather and energy",
-        "level": 2
-      },
-      {
-        "id": "software-customer-service-and-security",
-        "text": "Software, customer service and security",
-        "level": 2
-      },
-      {
-        "id": "professional-services-education-and-media",
-        "text": "Professional services, education and media",
-        "level": 2
-      },
-      {
-        "id": "science-and-government",
-        "text": "Science and government",
-        "level": 2
-      },
-      {
-        "id": "what-the-25-examples-have-in-common",
-        "text": "What the 25 examples have in common",
-        "level": 2
-      },
-      {
-        "id": "how-to-evaluate-an-ai-transformed-our-industry-claim",
-        "text": "How to evaluate an \"AI transformed our industry\" claim",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-applications-healthcare-finance-education",
       "machine-learning-applications",
@@ -3404,48 +1936,6 @@
     "wordCount": 5002,
     "readingTimeMinutes": 23,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-choose-a-use-case",
-        "text": "How to choose a use case",
-        "level": 2
-      },
-      {
-        "id": "manufacturing",
-        "text": "Manufacturing",
-        "level": 2
-      },
-      {
-        "id": "retail",
-        "text": "Retail",
-        "level": 2
-      },
-      {
-        "id": "logistics",
-        "text": "Logistics",
-        "level": 2
-      },
-      {
-        "id": "what-the-50-use-cases-have-in-common",
-        "text": "What the 50 use cases have in common",
-        "level": 2
-      },
-      {
-        "id": "a-one-page-plan-for-your-first-ai-use-case",
-        "text": "A one-page plan for your first AI use case",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-applications-healthcare-finance-education",
       "ai-future-of-work-examples",
@@ -3517,78 +2007,6 @@
     "wordCount": 5392,
     "readingTimeMinutes": 25,
     "showToc": true,
-    "toc": [
-      {
-        "id": "number-theory-and-cryptography",
-        "text": "Number theory and cryptography",
-        "level": 2
-      },
-      {
-        "id": "abstract-algebra",
-        "text": "Abstract algebra",
-        "level": 2
-      },
-      {
-        "id": "advanced-linear-algebra",
-        "text": "Advanced linear algebra",
-        "level": 2
-      },
-      {
-        "id": "analysis-and-fourier-methods",
-        "text": "Analysis and Fourier methods",
-        "level": 2
-      },
-      {
-        "id": "complex-analysis",
-        "text": "Complex analysis",
-        "level": 2
-      },
-      {
-        "id": "differential-equations-and-dynamical-systems",
-        "text": "Differential equations and dynamical systems",
-        "level": 2
-      },
-      {
-        "id": "numerical-analysis",
-        "text": "Numerical analysis",
-        "level": 2
-      },
-      {
-        "id": "probability-and-stochastic-processes",
-        "text": "Probability and stochastic processes",
-        "level": 2
-      },
-      {
-        "id": "discrete-mathematics-and-graph-theory",
-        "text": "Discrete mathematics and graph theory",
-        "level": 2
-      },
-      {
-        "id": "logic-and-the-theory-of-computation",
-        "text": "Logic and the theory of computation",
-        "level": 2
-      },
-      {
-        "id": "geometry-and-topology",
-        "text": "Geometry and topology",
-        "level": 2
-      },
-      {
-        "id": "optimization-games-and-foundations",
-        "text": "Optimization, games and foundations",
-        "level": 2
-      },
-      {
-        "id": "how-to-go-further",
-        "text": "How to go further",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "calculus-formulas-theorems-and-examples",
       "linear-algebra-problems-with-solutions",
@@ -3655,63 +2073,6 @@
     "wordCount": 3126,
     "readingTimeMinutes": 14,
     "showToc": true,
-    "toc": [
-      {
-        "id": "limits-and-continuity",
-        "text": "Limits and continuity",
-        "level": 2
-      },
-      {
-        "id": "derivatives",
-        "text": "Derivatives",
-        "level": 2
-      },
-      {
-        "id": "applications-of-derivatives",
-        "text": "Applications of derivatives",
-        "level": 2
-      },
-      {
-        "id": "integrals",
-        "text": "Integrals",
-        "level": 2
-      },
-      {
-        "id": "sequences-and-series",
-        "text": "Sequences and series",
-        "level": 2
-      },
-      {
-        "id": "multivariable-calculus",
-        "text": "Multivariable calculus",
-        "level": 2
-      },
-      {
-        "id": "vector-calculus",
-        "text": "Vector calculus",
-        "level": 2
-      },
-      {
-        "id": "differential-equations",
-        "text": "Differential equations",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "math-formulas-every-student-should-know",
       "advanced-mathematics-concepts-with-applications",
@@ -3784,88 +2145,6 @@
     "wordCount": 6203,
     "readingTimeMinutes": 28,
     "showToc": true,
-    "toc": [
-      {
-        "id": "the-golden-rule-learn-transformations-from-training-data-only",
-        "text": "The golden rule: learn transformations from training data only",
-        "level": 2
-      },
-      {
-        "id": "missing-values",
-        "text": "Missing values",
-        "level": 2
-      },
-      {
-        "id": "scaling-and-numeric-transformations",
-        "text": "Scaling and numeric transformations",
-        "level": 2
-      },
-      {
-        "id": "binning-and-splines",
-        "text": "Binning and splines",
-        "level": 2
-      },
-      {
-        "id": "categorical-encoding",
-        "text": "Categorical encoding",
-        "level": 2
-      },
-      {
-        "id": "interactions-ratios-and-aggregates",
-        "text": "Interactions, ratios and aggregates",
-        "level": 2
-      },
-      {
-        "id": "dates-and-times",
-        "text": "Dates and times",
-        "level": 2
-      },
-      {
-        "id": "text-features",
-        "text": "Text features",
-        "level": 2
-      },
-      {
-        "id": "images-audio-and-sensor-signals",
-        "text": "Images, audio and sensor signals",
-        "level": 2
-      },
-      {
-        "id": "geospatial-features",
-        "text": "Geospatial features",
-        "level": 2
-      },
-      {
-        "id": "feature-selection",
-        "text": "Feature selection",
-        "level": 2
-      },
-      {
-        "id": "dimensionality-reduction-and-learned-features",
-        "text": "Dimensionality reduction and learned features",
-        "level": 2
-      },
-      {
-        "id": "relational-data-leakage-and-feature-management",
-        "text": "Relational data, leakage and feature management",
-        "level": 2
-      },
-      {
-        "id": "a-checklist-for-feature-engineering",
-        "text": "A checklist for feature engineering",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-machine-learning-examples",
       "python-libraries-for-data-science",
@@ -3929,73 +2208,6 @@
     "wordCount": 4640,
     "readingTimeMinutes": 21,
     "showToc": true,
-    "toc": [
-      {
-        "id": "vectors",
-        "text": "Vectors",
-        "level": 2
-      },
-      {
-        "id": "linear-combinations-span-and-independence",
-        "text": "Linear combinations, span and independence",
-        "level": 2
-      },
-      {
-        "id": "matrix-operations",
-        "text": "Matrix operations",
-        "level": 2
-      },
-      {
-        "id": "systems-of-linear-equations",
-        "text": "Systems of linear equations",
-        "level": 2
-      },
-      {
-        "id": "determinants",
-        "text": "Determinants",
-        "level": 2
-      },
-      {
-        "id": "matrix-inverses",
-        "text": "Matrix inverses",
-        "level": 2
-      },
-      {
-        "id": "vector-spaces-and-subspaces",
-        "text": "Vector spaces and subspaces",
-        "level": 2
-      },
-      {
-        "id": "linear-transformations",
-        "text": "Linear transformations",
-        "level": 2
-      },
-      {
-        "id": "eigenvalues-and-eigenvectors",
-        "text": "Eigenvalues and eigenvectors",
-        "level": 2
-      },
-      {
-        "id": "orthogonality-least-squares-and-decompositions",
-        "text": "Orthogonality, least squares and decompositions",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "algebra-problems-with-solutions-for-beginners",
       "linear-algebra-concepts-for-machine-learning",
@@ -4076,93 +2288,6 @@
     "wordCount": 15586,
     "readingTimeMinutes": 71,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-choose-an-algorithm",
-        "text": "How to choose an algorithm",
-        "level": 2
-      },
-      {
-        "id": "linear-and-generalized-linear-models",
-        "text": "Linear and generalized linear models",
-        "level": 2
-      },
-      {
-        "id": "instance-based-probabilistic-and-kernel-methods",
-        "text": "Instance-based, probabilistic and kernel methods",
-        "level": 2
-      },
-      {
-        "id": "decision-trees-and-ensembles",
-        "text": "Decision trees and ensembles",
-        "level": 2
-      },
-      {
-        "id": "clustering",
-        "text": "Clustering",
-        "level": 2
-      },
-      {
-        "id": "dimensionality-reduction-and-representation-learning",
-        "text": "Dimensionality reduction and representation learning",
-        "level": 2
-      },
-      {
-        "id": "anomaly-detection",
-        "text": "Anomaly detection",
-        "level": 2
-      },
-      {
-        "id": "association-rules-and-recommender-systems",
-        "text": "Association rules and recommender systems",
-        "level": 2
-      },
-      {
-        "id": "time-series-and-sequential-models",
-        "text": "Time series and sequential models",
-        "level": 2
-      },
-      {
-        "id": "semi-supervised-learning",
-        "text": "Semi-supervised learning",
-        "level": 2
-      },
-      {
-        "id": "neural-networks-and-deep-learning",
-        "text": "Neural networks and deep learning",
-        "level": 2
-      },
-      {
-        "id": "reinforcement-learning-and-sequential-decision-making",
-        "text": "Reinforcement learning and sequential decision-making",
-        "level": 2
-      },
-      {
-        "id": "uncertainty-and-model-tuning",
-        "text": "Uncertainty and model tuning",
-        "level": 2
-      },
-      {
-        "id": "quick-reference-where-to-start",
-        "text": "Quick reference: where to start",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-when-applying-algorithms",
-        "text": "Common mistakes when applying algorithms",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-machine-learning-examples",
       "llm-breakthroughs",
@@ -4237,98 +2362,6 @@
     "wordCount": 9649,
     "readingTimeMinutes": 44,
     "showToc": true,
-    "toc": [
-      {
-        "id": "what-successful-applications-have-in-common",
-        "text": "What successful applications have in common",
-        "level": 2
-      },
-      {
-        "id": "healthcare-and-life-sciences",
-        "text": "Healthcare and life sciences",
-        "level": 2
-      },
-      {
-        "id": "finance-and-insurance",
-        "text": "Finance and insurance",
-        "level": 2
-      },
-      {
-        "id": "retail-and-e-commerce",
-        "text": "Retail and e-commerce",
-        "level": 2
-      },
-      {
-        "id": "media-and-entertainment",
-        "text": "Media and entertainment",
-        "level": 2
-      },
-      {
-        "id": "transportation-and-logistics",
-        "text": "Transportation and logistics",
-        "level": 2
-      },
-      {
-        "id": "manufacturing-and-industry",
-        "text": "Manufacturing and industry",
-        "level": 2
-      },
-      {
-        "id": "energy-and-utilities",
-        "text": "Energy and utilities",
-        "level": 2
-      },
-      {
-        "id": "agriculture-and-food",
-        "text": "Agriculture and food",
-        "level": 2
-      },
-      {
-        "id": "climate-environment-and-earth-science",
-        "text": "Climate, environment and Earth science",
-        "level": 2
-      },
-      {
-        "id": "science-and-research",
-        "text": "Science and research",
-        "level": 2
-      },
-      {
-        "id": "public-sector-legal-and-security",
-        "text": "Public sector, legal and security",
-        "level": 2
-      },
-      {
-        "id": "education-and-work",
-        "text": "Education and work",
-        "level": 2
-      },
-      {
-        "id": "technology-and-communication",
-        "text": "Technology and communication",
-        "level": 2
-      },
-      {
-        "id": "lessons-from-100-applications",
-        "text": "Lessons from 100 applications",
-        "level": 2
-      },
-      {
-        "id": "how-to-evaluate-a-machine-learning-claim",
-        "text": "How to evaluate a machine learning claim",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "ai-transforming-industries-examples",
       "machine-learning-datasets",
@@ -4399,83 +2432,6 @@
     "wordCount": 9002,
     "readingTimeMinutes": 41,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-choose-a-dataset",
-        "text": "How to choose a dataset",
-        "level": 2
-      },
-      {
-        "id": "where-to-find-datasets",
-        "text": "Where to find datasets",
-        "level": 2
-      },
-      {
-        "id": "tabular-datasets",
-        "text": "Tabular datasets",
-        "level": 2
-      },
-      {
-        "id": "computer-vision-datasets",
-        "text": "Computer vision datasets",
-        "level": 2
-      },
-      {
-        "id": "medical-and-health-datasets",
-        "text": "Medical and health datasets",
-        "level": 2
-      },
-      {
-        "id": "text-and-natural-language-processing-datasets",
-        "text": "Text and natural language processing datasets",
-        "level": 2
-      },
-      {
-        "id": "datasets-for-large-language-models",
-        "text": "Datasets for large language models",
-        "level": 2
-      },
-      {
-        "id": "speech-and-audio-datasets",
-        "text": "Speech and audio datasets",
-        "level": 2
-      },
-      {
-        "id": "time-series-and-forecasting-datasets",
-        "text": "Time series and forecasting datasets",
-        "level": 2
-      },
-      {
-        "id": "recommendation-and-ranking-datasets",
-        "text": "Recommendation and ranking datasets",
-        "level": 2
-      },
-      {
-        "id": "graph-chemistry-and-science-datasets",
-        "text": "Graph, chemistry and science datasets",
-        "level": 2
-      },
-      {
-        "id": "reinforcement-learning-environments-and-datasets",
-        "text": "Reinforcement learning environments and datasets",
-        "level": 2
-      },
-      {
-        "id": "responsible-use-checklist",
-        "text": "Responsible use checklist",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "machine-learning-algorithms-explained",
       "machine-learning-applications",
@@ -4546,53 +2502,6 @@
     "wordCount": 10546,
     "readingTimeMinutes": 48,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-choose-your-next-project",
-        "text": "How to choose your next project",
-        "level": 2
-      },
-      {
-        "id": "the-workflow-every-project-follows",
-        "text": "The workflow every project follows",
-        "level": 2
-      },
-      {
-        "id": "a-starter-template-you-can-reuse",
-        "text": "A starter template you can reuse",
-        "level": 2
-      },
-      {
-        "id": "beginner-projects-130",
-        "text": "Beginner projects (1–30)",
-        "level": 2
-      },
-      {
-        "id": "intermediate-projects-3165",
-        "text": "Intermediate projects (31–65)",
-        "level": 2
-      },
-      {
-        "id": "advanced-projects-66101",
-        "text": "Advanced projects (66–101)",
-        "level": 2
-      },
-      {
-        "id": "mistakes-that-weaken-ml-projects",
-        "text": "Mistakes that weaken ML projects",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "machine-learning-algorithms-explained",
       "python-data-science-projects",
@@ -4664,68 +2573,6 @@
     "wordCount": 5431,
     "readingTimeMinutes": 25,
     "showToc": true,
-    "toc": [
-      {
-        "id": "foundations",
-        "text": "Foundations",
-        "level": 2
-      },
-      {
-        "id": "classical-methods-for-smooth-problems",
-        "text": "Classical methods for smooth problems",
-        "level": 2
-      },
-      {
-        "id": "constrained-optimization",
-        "text": "Constrained optimization",
-        "level": 2
-      },
-      {
-        "id": "linear-and-convex-programming",
-        "text": "Linear and convex programming",
-        "level": 2
-      },
-      {
-        "id": "combinatorial-and-discrete-optimization",
-        "text": "Combinatorial and discrete optimization",
-        "level": 2
-      },
-      {
-        "id": "global-and-derivative-free-optimization",
-        "text": "Global and derivative-free optimization",
-        "level": 2
-      },
-      {
-        "id": "optimization-for-machine-learning-and-ai",
-        "text": "Optimization for machine learning and AI",
-        "level": 2
-      },
-      {
-        "id": "optimization-in-engineering-and-research",
-        "text": "Optimization in engineering and research",
-        "level": 2
-      },
-      {
-        "id": "choosing-a-technique",
-        "text": "Choosing a technique",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "linear-algebra-concepts-for-machine-learning",
       "machine-learning-algorithms-explained",
@@ -4789,73 +2636,6 @@
     "wordCount": 5144,
     "readingTimeMinutes": 23,
     "showToc": true,
-    "toc": [
-      {
-        "id": "probability-foundations",
-        "text": "Probability foundations",
-        "level": 2
-      },
-      {
-        "id": "expectation-and-variance",
-        "text": "Expectation and variance",
-        "level": 2
-      },
-      {
-        "id": "probability-distributions",
-        "text": "Probability distributions",
-        "level": 2
-      },
-      {
-        "id": "limit-theorems-and-sampling",
-        "text": "Limit theorems and sampling",
-        "level": 2
-      },
-      {
-        "id": "estimation",
-        "text": "Estimation",
-        "level": 2
-      },
-      {
-        "id": "statistical-inference-and-experiments",
-        "text": "Statistical inference and experiments",
-        "level": 2
-      },
-      {
-        "id": "information-theory",
-        "text": "Information theory",
-        "level": 2
-      },
-      {
-        "id": "regression-and-modeling",
-        "text": "Regression and modeling",
-        "level": 2
-      },
-      {
-        "id": "evaluating-classifiers-and-predictions",
-        "text": "Evaluating classifiers and predictions",
-        "level": 2
-      },
-      {
-        "id": "probabilistic-machinery-in-modern-machine-learning",
-        "text": "Probabilistic machinery in modern machine learning",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "probability-statistics-real-world-examples",
       "mathematical-optimization-techniques",
@@ -4913,83 +2693,6 @@
     "wordCount": 6097,
     "readingTimeMinutes": 28,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-read-the-numbers",
-        "text": "How to read the numbers",
-        "level": 2
-      },
-      {
-        "id": "organ-meats-meat-and-poultry",
-        "text": "Organ meats, meat and poultry",
-        "level": 2
-      },
-      {
-        "id": "fish-and-seafood",
-        "text": "Fish and seafood",
-        "level": 2
-      },
-      {
-        "id": "eggs-and-dairy",
-        "text": "Eggs and dairy",
-        "level": 2
-      },
-      {
-        "id": "legumes-and-soy",
-        "text": "Legumes and soy",
-        "level": 2
-      },
-      {
-        "id": "nuts-and-seeds",
-        "text": "Nuts and seeds",
-        "level": 2
-      },
-      {
-        "id": "whole-and-enriched-grains",
-        "text": "Whole and enriched grains",
-        "level": 2
-      },
-      {
-        "id": "leafy-greens",
-        "text": "Leafy greens",
-        "level": 2
-      },
-      {
-        "id": "other-vegetables",
-        "text": "Other vegetables",
-        "level": 2
-      },
-      {
-        "id": "fruits",
-        "text": "Fruits",
-        "level": 2
-      },
-      {
-        "id": "fortified-foods-and-other-sources",
-        "text": "Fortified foods and other sources",
-        "level": 2
-      },
-      {
-        "id": "getting-the-most-from-these-foods",
-        "text": "Getting the most from these foods",
-        "level": 2
-      },
-      {
-        "id": "who-may-need-to-pay-extra-attention",
-        "text": "Who may need to pay extra attention",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "healthy-foods-to-eat-every-day",
       "nutrition-tips-for-a-balanced-diet",
@@ -5047,88 +2750,6 @@
     "wordCount": 4373,
     "readingTimeMinutes": 20,
     "showToc": true,
-    "toc": [
-      {
-        "id": "what-a-healthy-day-looks-like",
-        "text": "What a healthy day looks like",
-        "level": 2
-      },
-      {
-        "id": "vegetables",
-        "text": "Vegetables",
-        "level": 2
-      },
-      {
-        "id": "fruits",
-        "text": "Fruits",
-        "level": 2
-      },
-      {
-        "id": "whole-grains",
-        "text": "Whole grains",
-        "level": 2
-      },
-      {
-        "id": "beans-lentils-and-soy",
-        "text": "Beans, lentils and soy",
-        "level": 2
-      },
-      {
-        "id": "nuts-and-seeds",
-        "text": "Nuts and seeds",
-        "level": 2
-      },
-      {
-        "id": "fish-and-seafood",
-        "text": "Fish and seafood",
-        "level": 2
-      },
-      {
-        "id": "eggs-poultry-and-meat",
-        "text": "Eggs, poultry and meat",
-        "level": 2
-      },
-      {
-        "id": "dairy-and-alternatives",
-        "text": "Dairy and alternatives",
-        "level": 2
-      },
-      {
-        "id": "healthy-fats",
-        "text": "Healthy fats",
-        "level": 2
-      },
-      {
-        "id": "herbs-spices-and-flavourings",
-        "text": "Herbs, spices and flavourings",
-        "level": 2
-      },
-      {
-        "id": "fermented-foods",
-        "text": "Fermented foods",
-        "level": 2
-      },
-      {
-        "id": "drinks",
-        "text": "Drinks",
-        "level": 2
-      },
-      {
-        "id": "how-to-eat-more-of-these-foods",
-        "text": "How to eat more of these foods",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "foods-rich-in-vitamins-and-minerals",
       "nutrition-tips-for-a-balanced-diet",
@@ -5186,48 +2807,6 @@
     "wordCount": 3759,
     "readingTimeMinutes": 17,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-these-meals-were-put-together",
-        "text": "How these meals were put together",
-        "level": 2
-      },
-      {
-        "id": "breakfast-ideas",
-        "text": "Breakfast ideas",
-        "level": 2
-      },
-      {
-        "id": "lunch-ideas",
-        "text": "Lunch ideas",
-        "level": 2
-      },
-      {
-        "id": "dinner-ideas",
-        "text": "Dinner ideas",
-        "level": 2
-      },
-      {
-        "id": "meal-prep-tips",
-        "text": "Meal-prep tips",
-        "level": 2
-      },
-      {
-        "id": "food-safety-basics",
-        "text": "Food safety basics",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "healthy-foods-to-eat-every-day",
       "nutrition-tips-for-a-balanced-diet",
@@ -5285,93 +2864,6 @@
     "wordCount": 5872,
     "readingTimeMinutes": 27,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-much-protein-do-you-need",
-        "text": "How much protein do you need?",
-        "level": 2
-      },
-      {
-        "id": "how-to-read-the-protein-density-figure",
-        "text": "How to read the protein density figure",
-        "level": 2
-      },
-      {
-        "id": "poultry",
-        "text": "Poultry",
-        "level": 2
-      },
-      {
-        "id": "red-meat",
-        "text": "Red meat",
-        "level": 2
-      },
-      {
-        "id": "fish",
-        "text": "Fish",
-        "level": 2
-      },
-      {
-        "id": "shellfish",
-        "text": "Shellfish",
-        "level": 2
-      },
-      {
-        "id": "eggs-and-dairy",
-        "text": "Eggs and dairy",
-        "level": 2
-      },
-      {
-        "id": "legumes",
-        "text": "Legumes",
-        "level": 2
-      },
-      {
-        "id": "soy-foods-and-other-plant-proteins",
-        "text": "Soy foods and other plant proteins",
-        "level": 2
-      },
-      {
-        "id": "protein-powders",
-        "text": "Protein powders",
-        "level": 2
-      },
-      {
-        "id": "nuts-and-seeds",
-        "text": "Nuts and seeds",
-        "level": 2
-      },
-      {
-        "id": "grains",
-        "text": "Grains",
-        "level": 2
-      },
-      {
-        "id": "vegetables",
-        "text": "Vegetables",
-        "level": 2
-      },
-      {
-        "id": "two-sample-high-protein-days",
-        "text": "Two sample high-protein days",
-        "level": 2
-      },
-      {
-        "id": "who-should-be-careful",
-        "text": "Who should be careful",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "foods-rich-in-vitamins-and-minerals",
       "healthy-foods-to-eat-every-day",
@@ -5429,78 +2921,6 @@
     "wordCount": 3806,
     "readingTimeMinutes": 17,
     "showToc": true,
-    "toc": [
-      {
-        "id": "build-a-balanced-plate",
-        "text": "Build a balanced plate",
-        "level": 2
-      },
-      {
-        "id": "vegetables-and-fruit",
-        "text": "Vegetables and fruit",
-        "level": 2
-      },
-      {
-        "id": "grains-and-carbohydrates",
-        "text": "Grains and carbohydrates",
-        "level": 2
-      },
-      {
-        "id": "protein",
-        "text": "Protein",
-        "level": 2
-      },
-      {
-        "id": "fats",
-        "text": "Fats",
-        "level": 2
-      },
-      {
-        "id": "sugar",
-        "text": "Sugar",
-        "level": 2
-      },
-      {
-        "id": "salt",
-        "text": "Salt",
-        "level": 2
-      },
-      {
-        "id": "drinks-and-alcohol",
-        "text": "Drinks and alcohol",
-        "level": 2
-      },
-      {
-        "id": "shopping-and-labels",
-        "text": "Shopping and labels",
-        "level": 2
-      },
-      {
-        "id": "cooking-and-eating-at-home",
-        "text": "Cooking and eating at home",
-        "level": 2
-      },
-      {
-        "id": "eating-habits",
-        "text": "Eating habits",
-        "level": 2
-      },
-      {
-        "id": "special-needs-and-life-stages",
-        "text": "Special needs and life stages",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "healthy-foods-to-eat-every-day",
       "foods-rich-in-vitamins-and-minerals",
@@ -5566,68 +2986,6 @@
     "wordCount": 5920,
     "readingTimeMinutes": 27,
     "showToc": true,
-    "toc": [
-      {
-        "id": "in-the-kitchen",
-        "text": "In the kitchen",
-        "level": 2
-      },
-      {
-        "id": "around-the-home",
-        "text": "Around the home",
-        "level": 2
-      },
-      {
-        "id": "phones-computers-and-communication",
-        "text": "Phones, computers and communication",
-        "level": 2
-      },
-      {
-        "id": "getting-around",
-        "text": "Getting around",
-        "level": 2
-      },
-      {
-        "id": "health-and-medicine",
-        "text": "Health and medicine",
-        "level": 2
-      },
-      {
-        "id": "sport-and-play",
-        "text": "Sport and play",
-        "level": 2
-      },
-      {
-        "id": "energy-and-power",
-        "text": "Energy and power",
-        "level": 2
-      },
-      {
-        "id": "weather-and-the-natural-world",
-        "text": "Weather and the natural world",
-        "level": 2
-      },
-      {
-        "id": "buildings-and-structures",
-        "text": "Buildings and structures",
-        "level": 2
-      },
-      {
-        "id": "space-and-satellites",
-        "text": "Space and satellites",
-        "level": 2
-      },
-      {
-        "id": "how-to-spot-physics-around-you",
-        "text": "How to spot physics around you",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "physics-concepts-explained-with-examples",
       "physics-experiments-at-home",
@@ -5685,68 +3043,6 @@
     "wordCount": 5458,
     "readingTimeMinutes": 25,
     "showToc": true,
-    "toc": [
-      {
-        "id": "in-the-kitchen",
-        "text": "In the kitchen",
-        "level": 2
-      },
-      {
-        "id": "cleaning",
-        "text": "Cleaning",
-        "level": 2
-      },
-      {
-        "id": "health-and-medicine",
-        "text": "Health and medicine",
-        "level": 2
-      },
-      {
-        "id": "personal-care",
-        "text": "Personal care",
-        "level": 2
-      },
-      {
-        "id": "materials-around-the-home",
-        "text": "Materials around the home",
-        "level": 2
-      },
-      {
-        "id": "farming-and-food-supply",
-        "text": "Farming and food supply",
-        "level": 2
-      },
-      {
-        "id": "water-and-the-environment",
-        "text": "Water and the environment",
-        "level": 2
-      },
-      {
-        "id": "transport-and-energy",
-        "text": "Transport and energy",
-        "level": 2
-      },
-      {
-        "id": "safety-justice-and-society",
-        "text": "Safety, justice and society",
-        "level": 2
-      },
-      {
-        "id": "how-to-see-the-science-around-you",
-        "text": "How to see the science around you",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "science-facts-that-explain-how-the-world-works",
       "science-projects-for-students",
@@ -5812,73 +3108,6 @@
     "wordCount": 2229,
     "readingTimeMinutes": 10,
     "showToc": true,
-    "toc": [
-      {
-        "id": "creating-arrays",
-        "text": "Creating arrays",
-        "level": 2
-      },
-      {
-        "id": "data-types-and-memory",
-        "text": "Data types and memory",
-        "level": 2
-      },
-      {
-        "id": "indexing-and-slicing",
-        "text": "Indexing and slicing",
-        "level": 2
-      },
-      {
-        "id": "reshaping-and-combining-arrays",
-        "text": "Reshaping and combining arrays",
-        "level": 2
-      },
-      {
-        "id": "broadcasting-and-vectorization",
-        "text": "Broadcasting and vectorization",
-        "level": 2
-      },
-      {
-        "id": "math-aggregation-and-statistics",
-        "text": "Math, aggregation and statistics",
-        "level": 2
-      },
-      {
-        "id": "random-numbers",
-        "text": "Random numbers",
-        "level": 2
-      },
-      {
-        "id": "linear-algebra-essentials",
-        "text": "Linear algebra essentials",
-        "level": 2
-      },
-      {
-        "id": "floating-point-and-numerical-methods",
-        "text": "Floating point and numerical methods",
-        "level": 2
-      },
-      {
-        "id": "input-output-and-performance",
-        "text": "Input, output and performance",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-to-avoid",
-        "text": "Common mistakes to avoid",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-libraries-for-data-science",
       "pandas-tips-and-tricks-for-data-analysis",
@@ -5940,68 +3169,6 @@
     "wordCount": 3091,
     "readingTimeMinutes": 14,
     "showToc": true,
-    "toc": [
-      {
-        "id": "loading-data-the-right-way",
-        "text": "Loading data the right way",
-        "level": 2
-      },
-      {
-        "id": "inspecting-a-new-dataset",
-        "text": "Inspecting a new dataset",
-        "level": 2
-      },
-      {
-        "id": "selecting-and-filtering",
-        "text": "Selecting and filtering",
-        "level": 2
-      },
-      {
-        "id": "cleaning-data",
-        "text": "Cleaning data",
-        "level": 2
-      },
-      {
-        "id": "text-and-categorical-data",
-        "text": "Text and categorical data",
-        "level": 2
-      },
-      {
-        "id": "dates-and-time-series",
-        "text": "Dates and time series",
-        "level": 2
-      },
-      {
-        "id": "grouping-and-aggregation",
-        "text": "Grouping and aggregation",
-        "level": 2
-      },
-      {
-        "id": "reshaping-and-combining",
-        "text": "Reshaping and combining",
-        "level": 2
-      },
-      {
-        "id": "speed-safety-and-pandas-3-habits",
-        "text": "Speed, safety and pandas 3 habits",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-to-avoid",
-        "text": "Common mistakes to avoid",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-data-science-projects",
       "python-libraries-for-data-science",
@@ -6067,73 +3234,6 @@
     "wordCount": 7450,
     "readingTimeMinutes": 34,
     "showToc": true,
-    "toc": [
-      {
-        "id": "measurement-and-motion",
-        "text": "Measurement and motion",
-        "level": 2
-      },
-      {
-        "id": "forces-and-newtons-laws",
-        "text": "Forces and Newton's laws",
-        "level": 2
-      },
-      {
-        "id": "energy-work-and-momentum",
-        "text": "Energy, work and momentum",
-        "level": 2
-      },
-      {
-        "id": "rotation-and-gravity",
-        "text": "Rotation and gravity",
-        "level": 2
-      },
-      {
-        "id": "fluids",
-        "text": "Fluids",
-        "level": 2
-      },
-      {
-        "id": "oscillations-waves-and-sound",
-        "text": "Oscillations, waves and sound",
-        "level": 2
-      },
-      {
-        "id": "heat-and-thermodynamics",
-        "text": "Heat and thermodynamics",
-        "level": 2
-      },
-      {
-        "id": "electricity-and-magnetism",
-        "text": "Electricity and magnetism",
-        "level": 2
-      },
-      {
-        "id": "light-and-optics",
-        "text": "Light and optics",
-        "level": 2
-      },
-      {
-        "id": "modern-physics",
-        "text": "Modern physics",
-        "level": 2
-      },
-      {
-        "id": "how-to-learn-these-concepts-so-they-stick",
-        "text": "How to learn these concepts so they stick",
-        "level": 2
-      },
-      {
-        "id": "common-misconceptions",
-        "text": "Common misconceptions",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "applications-of-physics-in-everyday-life",
       "physics-experiments-at-home",
@@ -6195,63 +3295,6 @@
     "wordCount": 9160,
     "readingTimeMinutes": 42,
     "showToc": true,
-    "toc": [
-      {
-        "id": "safety-first",
-        "text": "Safety first",
-        "level": 2
-      },
-      {
-        "id": "how-to-get-more-out-of-each-experiment",
-        "text": "How to get more out of each experiment",
-        "level": 2
-      },
-      {
-        "id": "forces-and-motion",
-        "text": "Forces and motion",
-        "level": 2
-      },
-      {
-        "id": "air-pressure-and-fluids",
-        "text": "Air pressure and fluids",
-        "level": 2
-      },
-      {
-        "id": "heat-and-energy",
-        "text": "Heat and energy",
-        "level": 2
-      },
-      {
-        "id": "waves-and-sound",
-        "text": "Waves and sound",
-        "level": 2
-      },
-      {
-        "id": "light-and-colour",
-        "text": "Light and colour",
-        "level": 2
-      },
-      {
-        "id": "electricity-and-magnetism",
-        "text": "Electricity and magnetism",
-        "level": 2
-      },
-      {
-        "id": "earth-space-and-smartphone-physics",
-        "text": "Earth, space and smartphone physics",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "physics-projects-for-students",
       "applications-of-physics-in-everyday-life",
@@ -6317,88 +3360,6 @@
     "wordCount": 5188,
     "readingTimeMinutes": 24,
     "showToc": true,
-    "toc": [
-      {
-        "id": "constants-used-in-this-article",
-        "text": "Constants used in this article",
-        "level": 2
-      },
-      {
-        "id": "kinematics",
-        "text": "Kinematics",
-        "level": 2
-      },
-      {
-        "id": "forces-and-momentum",
-        "text": "Forces and momentum",
-        "level": 2
-      },
-      {
-        "id": "work-energy-and-power",
-        "text": "Work, energy and power",
-        "level": 2
-      },
-      {
-        "id": "rotation",
-        "text": "Rotation",
-        "level": 2
-      },
-      {
-        "id": "gravitation-and-orbits",
-        "text": "Gravitation and orbits",
-        "level": 2
-      },
-      {
-        "id": "fluids",
-        "text": "Fluids",
-        "level": 2
-      },
-      {
-        "id": "oscillations-waves-and-sound",
-        "text": "Oscillations, waves and sound",
-        "level": 2
-      },
-      {
-        "id": "heat-and-thermodynamics",
-        "text": "Heat and thermodynamics",
-        "level": 2
-      },
-      {
-        "id": "electricity",
-        "text": "Electricity",
-        "level": 2
-      },
-      {
-        "id": "magnetism-and-induction",
-        "text": "Magnetism and induction",
-        "level": 2
-      },
-      {
-        "id": "optics",
-        "text": "Optics",
-        "level": 2
-      },
-      {
-        "id": "modern-physics",
-        "text": "Modern physics",
-        "level": 2
-      },
-      {
-        "id": "how-to-use-physics-formulas-well",
-        "text": "How to use physics formulas well",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "physics-concepts-explained-with-examples",
       "applications-of-physics-in-everyday-life",
@@ -6464,43 +3425,6 @@
     "wordCount": 7988,
     "readingTimeMinutes": 36,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-plan-a-physics-project",
-        "text": "How to plan a physics project",
-        "level": 2
-      },
-      {
-        "id": "beginner-projects-135",
-        "text": "Beginner projects (1–35)",
-        "level": 2
-      },
-      {
-        "id": "intermediate-projects-3670",
-        "text": "Intermediate projects (36–70)",
-        "level": 2
-      },
-      {
-        "id": "advanced-projects-71101",
-        "text": "Advanced projects (71–101)",
-        "level": 2
-      },
-      {
-        "id": "writing-up-and-presenting-your-project",
-        "text": "Writing up and presenting your project",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "physics-experiments-at-home",
       "applications-of-physics-in-everyday-life",
@@ -6566,43 +3490,6 @@
     "wordCount": 5602,
     "readingTimeMinutes": 25,
     "showToc": true,
-    "toc": [
-      {
-        "id": "what-makes-a-project-portfolio-ready",
-        "text": "What makes a project portfolio-ready",
-        "level": 2
-      },
-      {
-        "id": "beginner-projects-135",
-        "text": "Beginner projects (1–35)",
-        "level": 2
-      },
-      {
-        "id": "intermediate-projects-3670",
-        "text": "Intermediate projects (36–70)",
-        "level": 2
-      },
-      {
-        "id": "advanced-projects-71101",
-        "text": "Advanced projects (71–101)",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-in-data-science-projects",
-        "text": "Common mistakes in data science projects",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-libraries-for-data-science",
       "pandas-tips-and-tricks-for-data-analysis",
@@ -6668,103 +3555,6 @@
     "wordCount": 4461,
     "readingTimeMinutes": 20,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-choose-a-library",
-        "text": "How to choose a library",
-        "level": 2
-      },
-      {
-        "id": "core-arrays-dataframes-and-sql",
-        "text": "Core arrays, dataframes and SQL",
-        "level": 2
-      },
-      {
-        "id": "scaling-and-speed",
-        "text": "Scaling and speed",
-        "level": 2
-      },
-      {
-        "id": "getting-data-in",
-        "text": "Getting data in",
-        "level": 2
-      },
-      {
-        "id": "cleaning-validation-and-profiling",
-        "text": "Cleaning, validation and profiling",
-        "level": 2
-      },
-      {
-        "id": "visualization",
-        "text": "Visualization",
-        "level": 2
-      },
-      {
-        "id": "statistics-and-probabilistic-modeling",
-        "text": "Statistics and probabilistic modeling",
-        "level": 2
-      },
-      {
-        "id": "classical-machine-learning",
-        "text": "Classical machine learning",
-        "level": 2
-      },
-      {
-        "id": "interpretability-fairness-and-uncertainty",
-        "text": "Interpretability, fairness and uncertainty",
-        "level": 2
-      },
-      {
-        "id": "deep-learning",
-        "text": "Deep learning",
-        "level": 2
-      },
-      {
-        "id": "natural-language-processing-and-large-language-models",
-        "text": "Natural language processing and large language models",
-        "level": 2
-      },
-      {
-        "id": "computer-vision-and-audio",
-        "text": "Computer vision and audio",
-        "level": 2
-      },
-      {
-        "id": "time-series-and-forecasting",
-        "text": "Time series and forecasting",
-        "level": 2
-      },
-      {
-        "id": "geospatial-data-and-graphs",
-        "text": "Geospatial data and graphs",
-        "level": 2
-      },
-      {
-        "id": "notebooks-mlops-and-apps",
-        "text": "Notebooks, MLOps and apps",
-        "level": 2
-      },
-      {
-        "id": "starter-stacks-by-role",
-        "text": "Starter stacks by role",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-when-choosing-libraries",
-        "text": "Common mistakes when choosing libraries",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-data-science-projects",
       "python-machine-learning-examples",
@@ -6830,73 +3620,6 @@
     "wordCount": 3968,
     "readingTimeMinutes": 18,
     "showToc": true,
-    "toc": [
-      {
-        "id": "workflow-foundations",
-        "text": "Workflow foundations",
-        "level": 2
-      },
-      {
-        "id": "classification-applications",
-        "text": "Classification applications",
-        "level": 2
-      },
-      {
-        "id": "regression-applications",
-        "text": "Regression applications",
-        "level": 2
-      },
-      {
-        "id": "text-and-language-applications",
-        "text": "Text and language applications",
-        "level": 2
-      },
-      {
-        "id": "clustering-and-segmentation",
-        "text": "Clustering and segmentation",
-        "level": 2
-      },
-      {
-        "id": "dimensionality-reduction-and-model-inspection",
-        "text": "Dimensionality reduction and model inspection",
-        "level": 2
-      },
-      {
-        "id": "anomaly-detection",
-        "text": "Anomaly detection",
-        "level": 2
-      },
-      {
-        "id": "time-series-and-forecasting",
-        "text": "Time series and forecasting",
-        "level": 2
-      },
-      {
-        "id": "recommendations-and-similarity-search",
-        "text": "Recommendations and similarity search",
-        "level": 2
-      },
-      {
-        "id": "neural-networks-streaming-and-production",
-        "text": "Neural networks, streaming and production",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-to-avoid",
-        "text": "Common mistakes to avoid",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "python-libraries-for-machine-learning",
       "feature-engineering-techniques",
@@ -6954,83 +3677,6 @@
     "wordCount": 11438,
     "readingTimeMinutes": 52,
     "showToc": true,
-    "toc": [
-      {
-        "id": "safety-first",
-        "text": "Safety first",
-        "level": 2
-      },
-      {
-        "id": "how-to-turn-an-activity-into-an-experiment",
-        "text": "How to turn an activity into an experiment",
-        "level": 2
-      },
-      {
-        "id": "acids-bases-and-indicators",
-        "text": "Acids, bases and indicators",
-        "level": 2
-      },
-      {
-        "id": "chemical-reactions-and-energy",
-        "text": "Chemical reactions and energy",
-        "level": 2
-      },
-      {
-        "id": "food-chemistry",
-        "text": "Food chemistry",
-        "level": 2
-      },
-      {
-        "id": "crystals-mixtures-and-separations",
-        "text": "Crystals, mixtures and separations",
-        "level": 2
-      },
-      {
-        "id": "plants",
-        "text": "Plants",
-        "level": 2
-      },
-      {
-        "id": "microbes-yeast-and-decomposition",
-        "text": "Microbes, yeast and decomposition",
-        "level": 2
-      },
-      {
-        "id": "the-human-body",
-        "text": "The human body",
-        "level": 2
-      },
-      {
-        "id": "earth-science",
-        "text": "Earth science",
-        "level": 2
-      },
-      {
-        "id": "weather-and-climate",
-        "text": "Weather and climate",
-        "level": 2
-      },
-      {
-        "id": "environmental-science",
-        "text": "Environmental science",
-        "level": 2
-      },
-      {
-        "id": "the-sky",
-        "text": "The sky",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "science-facts-that-explain-how-the-world-works",
       "applications-of-science-in-everyday-life",
@@ -7088,63 +3734,6 @@
     "wordCount": 5680,
     "readingTimeMinutes": 26,
     "showToc": true,
-    "toc": [
-      {
-        "id": "matter-and-atoms",
-        "text": "Matter and atoms",
-        "level": 2
-      },
-      {
-        "id": "chemistry-in-the-everyday-world",
-        "text": "Chemistry in the everyday world",
-        "level": 2
-      },
-      {
-        "id": "energy-and-forces",
-        "text": "Energy and forces",
-        "level": 2
-      },
-      {
-        "id": "life-and-living-things",
-        "text": "Life and living things",
-        "level": 2
-      },
-      {
-        "id": "the-human-body",
-        "text": "The human body",
-        "level": 2
-      },
-      {
-        "id": "earth",
-        "text": "Earth",
-        "level": 2
-      },
-      {
-        "id": "water-weather-and-climate",
-        "text": "Water, weather and climate",
-        "level": 2
-      },
-      {
-        "id": "space",
-        "text": "Space",
-        "level": 2
-      },
-      {
-        "id": "how-science-itself-works",
-        "text": "How science itself works",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "applications-of-science-in-everyday-life",
       "science-experiments-at-home",
@@ -7202,43 +3791,6 @@
     "wordCount": 8409,
     "readingTimeMinutes": 38,
     "showToc": true,
-    "toc": [
-      {
-        "id": "how-to-plan-a-science-project",
-        "text": "How to plan a science project",
-        "level": 2
-      },
-      {
-        "id": "beginner-projects-135",
-        "text": "Beginner projects (1–35)",
-        "level": 2
-      },
-      {
-        "id": "intermediate-projects-3670",
-        "text": "Intermediate projects (36–70)",
-        "level": 2
-      },
-      {
-        "id": "advanced-projects-71101",
-        "text": "Advanced projects (71–101)",
-        "level": 2
-      },
-      {
-        "id": "writing-up-and-presenting-your-project",
-        "text": "Writing up and presenting your project",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "applications-of-science-in-everyday-life",
       "science-facts-that-explain-how-the-world-works",
@@ -7296,53 +3848,6 @@
     "wordCount": 6464,
     "readingTimeMinutes": 29,
     "showToc": true,
-    "toc": [
-      {
-        "id": "ancient-and-early-modern-science-to-1760",
-        "text": "Ancient and early modern science (to 1760)",
-        "level": 2
-      },
-      {
-        "id": "the-chemical-and-industrial-revolutions-17701860",
-        "text": "The chemical and industrial revolutions (1770–1860)",
-        "level": 2
-      },
-      {
-        "id": "medicine-atoms-and-fields-18601900",
-        "text": "Medicine, atoms and fields (1860–1900)",
-        "level": 2
-      },
-      {
-        "id": "the-new-physics-and-the-new-biology-19001945",
-        "text": "The new physics and the new biology (1900–1945)",
-        "level": 2
-      },
-      {
-        "id": "the-postwar-boom-19451980",
-        "text": "The postwar boom (1945–1980)",
-        "level": 2
-      },
-      {
-        "id": "modern-science-1980present",
-        "text": "Modern science (1980–present)",
-        "level": 2
-      },
-      {
-        "id": "what-these-discoveries-have-in-common",
-        "text": "What these discoveries have in common",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "applications-of-science-in-everyday-life",
       "science-facts-that-explain-how-the-world-works",
@@ -7400,73 +3905,6 @@
     "wordCount": 6809,
     "readingTimeMinutes": 31,
     "showToc": true,
-    "toc": [
-      {
-        "id": "algebraic-expressions-problems-115",
-        "text": "Algebraic expressions (problems 1–15)",
-        "level": 2
-      },
-      {
-        "id": "linear-equations-problems-1630",
-        "text": "Linear equations (problems 16–30)",
-        "level": 2
-      },
-      {
-        "id": "linear-inequalities-and-absolute-value-problems-3145",
-        "text": "Linear inequalities and absolute value (problems 31–45)",
-        "level": 2
-      },
-      {
-        "id": "systems-of-equations-problems-4660",
-        "text": "Systems of equations (problems 46–60)",
-        "level": 2
-      },
-      {
-        "id": "exponents-and-scientific-notation-problems-6175",
-        "text": "Exponents and scientific notation (problems 61–75)",
-        "level": 2
-      },
-      {
-        "id": "polynomials-and-factoring-problems-7690",
-        "text": "Polynomials and factoring (problems 76–90)",
-        "level": 2
-      },
-      {
-        "id": "quadratic-equations-problems-91105",
-        "text": "Quadratic equations (problems 91–105)",
-        "level": 2
-      },
-      {
-        "id": "rational-expressions-and-equations-problems-106120",
-        "text": "Rational expressions and equations (problems 106–120)",
-        "level": 2
-      },
-      {
-        "id": "radicals-and-radical-equations-problems-121135",
-        "text": "Radicals and radical equations (problems 121–135)",
-        "level": 2
-      },
-      {
-        "id": "functions-and-word-problems-problems-136150",
-        "text": "Functions and word problems (problems 136–150)",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes-to-watch-for",
-        "text": "Common mistakes to watch for",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "linear-algebra-problems-with-solutions",
       "math-formulas-every-student-should-know",
@@ -7532,88 +3970,6 @@
     "wordCount": 5649,
     "readingTimeMinutes": 26,
     "showToc": true,
-    "toc": [
-      {
-        "id": "vectors-and-vector-spaces",
-        "text": "Vectors and vector spaces",
-        "level": 2
-      },
-      {
-        "id": "norms-and-distances",
-        "text": "Norms and distances",
-        "level": 2
-      },
-      {
-        "id": "dot-products-and-similarity",
-        "text": "Dot products and similarity",
-        "level": 2
-      },
-      {
-        "id": "matrices-as-linear-maps",
-        "text": "Matrices as linear maps",
-        "level": 2
-      },
-      {
-        "id": "systems-of-equations-inverses-and-determinants",
-        "text": "Systems of equations, inverses and determinants",
-        "level": 2
-      },
-      {
-        "id": "rank-and-the-four-fundamental-subspaces",
-        "text": "Rank and the four fundamental subspaces",
-        "level": 2
-      },
-      {
-        "id": "orthogonality-and-projections",
-        "text": "Orthogonality and projections",
-        "level": 2
-      },
-      {
-        "id": "least-squares-and-regression",
-        "text": "Least squares and regression",
-        "level": 2
-      },
-      {
-        "id": "eigenvalues-and-eigenvectors",
-        "text": "Eigenvalues and eigenvectors",
-        "level": 2
-      },
-      {
-        "id": "svd-pca-and-dimensionality-reduction",
-        "text": "SVD, PCA and dimensionality reduction",
-        "level": 2
-      },
-      {
-        "id": "matrix-calculus-for-training-models",
-        "text": "Matrix calculus for training models",
-        "level": 2
-      },
-      {
-        "id": "tensors-and-efficient-computation",
-        "text": "Tensors and efficient computation",
-        "level": 2
-      },
-      {
-        "id": "linear-algebra-inside-modern-ai-models",
-        "text": "Linear algebra inside modern AI models",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "machine-learning-algorithms-explained",
       "mathematical-optimization-techniques",
@@ -7675,78 +4031,6 @@
     "wordCount": 4717,
     "readingTimeMinutes": 21,
     "showToc": true,
-    "toc": [
-      {
-        "id": "arithmetic-and-algebra",
-        "text": "Arithmetic and algebra",
-        "level": 2
-      },
-      {
-        "id": "exponents-and-logarithms",
-        "text": "Exponents and logarithms",
-        "level": 2
-      },
-      {
-        "id": "geometry-2d-shapes",
-        "text": "Geometry: 2D shapes",
-        "level": 2
-      },
-      {
-        "id": "geometry-3d-solids",
-        "text": "Geometry: 3D solids",
-        "level": 2
-      },
-      {
-        "id": "coordinate-geometry",
-        "text": "Coordinate geometry",
-        "level": 2
-      },
-      {
-        "id": "trigonometry",
-        "text": "Trigonometry",
-        "level": 2
-      },
-      {
-        "id": "sequences-and-series",
-        "text": "Sequences and series",
-        "level": 2
-      },
-      {
-        "id": "limits-and-derivatives",
-        "text": "Limits and derivatives",
-        "level": 2
-      },
-      {
-        "id": "integrals",
-        "text": "Integrals",
-        "level": 2
-      },
-      {
-        "id": "probability-and-statistics",
-        "text": "Probability and statistics",
-        "level": 2
-      },
-      {
-        "id": "vectors-and-matrices",
-        "text": "Vectors and matrices",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "calculus-formulas-theorems-and-examples",
       "algebra-problems-with-solutions-for-beginners",
@@ -7804,63 +4088,6 @@
     "wordCount": 8659,
     "readingTimeMinutes": 39,
     "showToc": true,
-    "toc": [
-      {
-        "id": "mental-multiplication-tricks",
-        "text": "Mental multiplication tricks",
-        "level": 2
-      },
-      {
-        "id": "squares-and-roots",
-        "text": "Squares and roots",
-        "level": 2
-      },
-      {
-        "id": "divisibility-rules",
-        "text": "Divisibility rules",
-        "level": 2
-      },
-      {
-        "id": "fractions-decimals-and-percentages",
-        "text": "Fractions, decimals and percentages",
-        "level": 2
-      },
-      {
-        "id": "estimation-and-checking",
-        "text": "Estimation and checking",
-        "level": 2
-      },
-      {
-        "id": "algebra-shortcuts",
-        "text": "Algebra shortcuts",
-        "level": 2
-      },
-      {
-        "id": "geometry-shortcuts",
-        "text": "Geometry shortcuts",
-        "level": 2
-      },
-      {
-        "id": "problem-solving-strategies",
-        "text": "Problem-solving strategies",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "advanced-mathematics-concepts-with-applications",
       "calculus-formulas-theorems-and-examples",
@@ -7918,73 +4145,6 @@
     "wordCount": 6001,
     "readingTimeMinutes": 27,
     "showToc": true,
-    "toc": [
-      {
-        "id": "basic-probability",
-        "text": "Basic probability",
-        "level": 2
-      },
-      {
-        "id": "conditional-probability-and-bayes-theorem",
-        "text": "Conditional probability and Bayes' theorem",
-        "level": 2
-      },
-      {
-        "id": "discrete-probability-distributions",
-        "text": "Discrete probability distributions",
-        "level": 2
-      },
-      {
-        "id": "the-normal-distribution",
-        "text": "The normal distribution",
-        "level": 2
-      },
-      {
-        "id": "expectation-and-variance",
-        "text": "Expectation and variance",
-        "level": 2
-      },
-      {
-        "id": "descriptive-statistics",
-        "text": "Descriptive statistics",
-        "level": 2
-      },
-      {
-        "id": "sampling-and-confidence-intervals",
-        "text": "Sampling and confidence intervals",
-        "level": 2
-      },
-      {
-        "id": "hypothesis-testing-and-ab-tests",
-        "text": "Hypothesis testing and A/B tests",
-        "level": 2
-      },
-      {
-        "id": "correlation-and-regression",
-        "text": "Correlation and regression",
-        "level": 2
-      },
-      {
-        "id": "paradoxes-and-pitfalls",
-        "text": "Paradoxes and pitfalls",
-        "level": 2
-      },
-      {
-        "id": "common-mistakes",
-        "text": "Common mistakes",
-        "level": 2
-      },
-      {
-        "id": "next-steps",
-        "text": "Next steps",
-        "level": 2
-      },
-      {
-        "id": "references",
-        "text": "References",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "probability-and-statistics-concepts-for-data-science",
       "data-analysis-techniques",
@@ -8042,43 +4202,6 @@
     "wordCount": 474,
     "readingTimeMinutes": 2,
     "showToc": true,
-    "toc": [
-      {
-        "id": "start-with-the-problem-not-the-solution",
-        "text": "Start with the problem, not the solution",
-        "level": 2
-      },
-      {
-        "id": "find-the-numbers-that-matter",
-        "text": "Find the numbers that matter",
-        "level": 2
-      },
-      {
-        "id": "separate-the-claim-from-the-evidence",
-        "text": "Separate the claim from the evidence",
-        "level": 2
-      },
-      {
-        "id": "look-for-what-went-wrong",
-        "text": "Look for what went wrong",
-        "level": 2
-      },
-      {
-        "id": "map-it-to-your-own-constraints",
-        "text": "Map it to your own constraints",
-        "level": 2
-      },
-      {
-        "id": "a-quick-worked-example",
-        "text": "A quick worked example",
-        "level": 3
-      },
-      {
-        "id": "further-reading",
-        "text": "Further reading",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "numpy-examples-for-numerical-computing",
       "pandas-tips-and-tricks-for-data-analysis",
@@ -8136,38 +4259,6 @@
     "wordCount": 599,
     "readingTimeMinutes": 3,
     "showToc": true,
-    "toc": [
-      {
-        "id": "what-rss-and-opml-actually-are",
-        "text": "What RSS and OPML actually are",
-        "level": 2
-      },
-      {
-        "id": "step-1-choose-a-feed-reader",
-        "text": "Step 1: Choose a feed reader",
-        "level": 2
-      },
-      {
-        "id": "step-2-import-the-blogai-collection",
-        "text": "Step 2: Import the BlogAI collection",
-        "level": 2
-      },
-      {
-        "id": "step-3-build-a-reading-routine",
-        "text": "Step 3: Build a reading routine",
-        "level": 2
-      },
-      {
-        "id": "troubleshooting-common-feed-problems",
-        "text": "Troubleshooting common feed problems",
-        "level": 2
-      },
-      {
-        "id": "where-to-go-next",
-        "text": "Where to go next",
-        "level": 2
-      }
-    ],
     "relatedArticles": [
       "numpy-examples-for-numerical-computing",
       "pandas-tips-and-tricks-for-data-analysis",

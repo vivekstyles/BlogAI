@@ -29,6 +29,54 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const TEMPLATE_PATH = path.join(DIST_DIR, 'index.html');
+const MANIFEST_PATH = path.join(DIST_DIR, '.vite', 'manifest.json');
+
+// Lazy page module rendered for each route prefix (see src/app/router.jsx)
+const ROUTE_PAGE_MODULES = [
+  ['/articles/', 'src/pages/ArticleDetails.jsx'],
+  ['/articles', 'src/pages/Articles.jsx'],
+  ['/directory', 'src/pages/Directory.jsx'],
+  ['/category/', 'src/pages/Category.jsx'],
+  ['/tag/', 'src/pages/TagPage.jsx'],
+  ['/blog/', 'src/pages/BlogDetails.jsx'],
+  ['/submit', 'src/pages/SubmitBlog.jsx'],
+  ['/about', 'src/pages/About.jsx'],
+  ['/guidelines', 'src/pages/Guidelines.jsx'],
+  ['/privacy', 'src/pages/Privacy.jsx'],
+  ['/404', 'src/pages/NotFound.jsx'],
+];
+
+/**
+ * Builds <link> tags that fetch a route's lazy chunks (and their CSS) in parallel with the
+ * entry bundle, instead of only after it has run. Article routes also preload their body chunk.
+ */
+function buildRoutePreloads(manifest, routePath) {
+  if (!manifest) return '';
+  const route = ROUTE_PAGE_MODULES.find(([prefix]) =>
+    prefix.endsWith('/') ? routePath.startsWith(prefix) : routePath === prefix
+  );
+  if (!route) return '';
+  const roots = [route[1]];
+  if (route[0] === '/articles/') roots.push(`src/data/article-content/${routePath.slice(route[0].length)}.json`);
+
+  const scripts = new Set();
+  const styles = new Set();
+  const visit = (key) => {
+    const chunk = manifest[key];
+    if (!chunk || chunk.isEntry || scripts.has(chunk.file)) return;
+    scripts.add(chunk.file);
+    (chunk.css || []).forEach((css) => styles.add(css));
+    (chunk.imports || []).forEach(visit);
+  };
+  roots.forEach(visit);
+
+  return [
+    // preload, not stylesheet: the CSS must not block first paint of the prerendered HTML.
+    // Vite attaches the stylesheet itself when the chunk loads, now from cache.
+    ...[...styles].map((f) => `    <link rel="preload" as="style" crossorigin href="/${f}">`),
+    ...[...scripts].map((f) => `    <link rel="modulepreload" crossorigin href="/${f}">`),
+  ].join('\n');
+}
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -163,6 +211,8 @@ async function runPrerender() {
   }
 
   const template = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
+  const manifest = fs.existsSync(MANIFEST_PATH) ? JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf-8')) : null;
+  if (!manifest) console.warn('[WARN] No Vite manifest found; routes will not preload their lazy chunks.');
 
   // Load data
   const blogs = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'blogs.json'), 'utf-8'));
@@ -171,8 +221,8 @@ async function runPrerender() {
   // Published articles only: drafts are never written to articles.json
   const articlesPath = path.join(ROOT_DIR, 'src', 'data', 'articles.json');
   const articles = fs.existsSync(articlesPath) ? JSON.parse(fs.readFileSync(articlesPath, 'utf-8')) : [];
-  const articleHtml = (slug) =>
-    JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'article-content', `${slug}.json`), 'utf-8')).html;
+  const articleContent = (slug) =>
+    JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'article-content', `${slug}.json`), 'utf-8'));
 
   const articleCardHtml = (a) => `
               <article class="article-card">
@@ -187,6 +237,9 @@ async function runPrerender() {
   const latestArticleDate = articles.reduce((max, a) => (a.updatedAt > max ? a.updatedAt : max), '');
 
   function writeRouteFile(routePath, htmlContent) {
+    const preloads = buildRoutePreloads(manifest, routePath);
+    if (preloads) htmlContent = htmlContent.replace('</head>', `${preloads}\n  </head>`);
+
     let targetDir;
     let targetFile;
 
@@ -351,8 +404,9 @@ async function runPrerender() {
   for (const a of articles) {
     const relatedArticles = a.relatedArticles.map(slug => articles.find(x => x.slug === slug)).filter(Boolean);
     const relatedBlogs = a.relatedBlogs.map(slug => blogs.find(b => b.slug === slug)).filter(Boolean);
-    const tocHtml = a.showToc && a.toc.length > 0
-      ? `<nav class="article-toc" aria-label="Table of contents"><p class="article-toc-title">On this page</p><ol class="article-toc-list">${a.toc.map(t => `<li class="article-toc-item level-${t.level}"><a href="#${t.id}">${escapeHtml(t.text)}</a></li>`).join('')}</ol></nav>`
+    const { html: bodyHtml, toc } = articleContent(a.slug);
+    const tocHtml = a.showToc && toc.length > 0
+      ? `<nav class="article-toc" aria-label="Table of contents"><p class="article-toc-title">On this page</p><ol class="article-toc-list">${toc.map(t => `<li class="article-toc-item level-${t.level}"><a href="#${t.id}">${escapeHtml(t.text)}</a></li>`).join('')}</ol></nav>`
       : '';
     const updatedHtml = a.updatedAt !== a.publishedAt
       ? ` · Updated <time datetime="${a.updatedAt}">${formatDate(a.updatedAt)}</time>`
@@ -371,7 +425,7 @@ async function runPrerender() {
           </header>
           ${a.image ? `<figure class="article-featured-image"><img src="${escapeHtml(a.image)}" alt="${escapeHtml(a.imageAlt)}" /></figure>` : ''}
           ${tocHtml}
-          <div class="article-content">${articleHtml(a.slug)}</div>
+          <div class="article-content">${bodyHtml}</div>
           ${a.tags.length ? `<footer class="article-footer"><h2>Tags</h2>${a.tags.map(t => `<a href="/tag/${t.slug}">#${escapeHtml(t.name)}</a>`).join(' ')}</footer>` : ''}
         </article>
         <div class="container">
@@ -690,6 +744,9 @@ ${a.categories.map(c => `      <category>${escapeHtml(c.name)}</category>`).join
   if (fs.existsSync(rootOpml)) {
     fs.copyFileSync(rootOpml, path.join(DIST_DIR, 'feed.opml'));
   }
+
+  // The manifest is a build input only; do not publish it with the site
+  fs.rmSync(path.join(DIST_DIR, '.vite'), { recursive: true, force: true });
 
   const pageCount = 8 + articles.length + categories.length + allTags.length + blogs.length;
   console.log(`[SUCCESS] Pre-rendered ${pageCount} static pages and generated a sitemap index with ${sitemapFiles.length} sitemaps and ${sitemapUrls.length} canonical URLs.`);

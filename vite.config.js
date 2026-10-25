@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    // scripts/prerender.js reads the manifest to preload each route's lazy chunks, then deletes it
+    manifest: true,
+  },
   server: {
     port: 3000,
     open: false,

@@ -15,9 +15,11 @@ const Guidelines = lazy(() => import('../pages/Guidelines'));
 const Privacy = lazy(() => import('../pages/Privacy'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
+// The viewport-height minimum keeps the footer below the fold while a page chunk loads,
+// so it does not visibly jump (layout shift) when the page replaces this placeholder.
 function PageLoader() {
   return (
-    <div className="container" style={{ padding: '4rem 1.5rem', textAlign: 'center' }}>
+    <div className="container" style={{ padding: '4rem 1.5rem', textAlign: 'center', minHeight: '100vh' }}>
       <div className="skeleton-card" style={{ height: '300px', maxWidth: '800px', margin: '0 auto' }} />
     </div>
   );

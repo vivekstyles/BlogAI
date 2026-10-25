@@ -1,10 +1,10 @@
 import articlesData from '../data/articles';
-import blogsData from '../data/blogs';
+import blogsData from '../data/blogs.json';
 import { slugify } from '../utils/slugify';
 import { normalizeText } from '../utils/normalizeText';
 
 // Article bodies are split into one chunk per article so listing pages never download them
-const articleContentLoaders = import.meta.glob('../data/article-content/*.json', { import: 'html' });
+const articleContentLoaders = import.meta.glob('../data/article-content/*.json', { import: 'default' });
 
 export const articleService = {
   getAllArticles() {
@@ -18,8 +18,9 @@ export const articleService = {
   },
 
   /**
-   * Loads the compiled HTML body of a published article.
-   * @returns {Promise<string|null>} null when the slug has no published body
+   * Loads the compiled HTML body and table of contents of a published article.
+   * @returns {Promise<{html: string, toc: Array<{id: string, text: string, level: number}>}|null>}
+   *   null when the slug has no published body
    */
   async getArticleContent(slug) {
     const load = articleContentLoaders[`../data/article-content/${slug}.json`];

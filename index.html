@@ -2,14 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1K6E4R7WG"></script>
+    <!-- Google tag (gtag.js): queued now, the library loads after the page has rendered so it
+         does not compete with the app bundle for bandwidth and main-thread time -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-R1K6E4R7WG');
+      window.addEventListener('load', function () {
+        var loadTag = function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R1K6E4R7WG';
+          document.head.appendChild(s);
+        };
+        if ('requestIdleCallback' in window) requestIdleCallback(loadTag, { timeout: 3000 });
+        else setTimeout(loadTag, 1500);
+      });
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BlogAI - Curated Community Blog Directory</title>
@@ -45,13 +55,21 @@
       content="Discover, search, and subscribe to quality blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and personal finance."
     />
 
-    <!-- Google Fonts Inter -->
+    <!-- Google Fonts, loaded without blocking first paint (font-display: swap falls back to system fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

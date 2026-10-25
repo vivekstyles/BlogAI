@@ -18,18 +18,20 @@ export function ArticleDetails() {
   const article = useMemo(() => articleService.getArticleBySlug(articleSlug), [articleSlug]);
   const relatedArticles = useMemo(() => articleService.getRelatedArticles(article), [article]);
   const relatedBlogs = useMemo(() => articleService.getRelatedBlogs(article), [article]);
-  const [content, setContent] = useState({ slug: null, html: null, failed: false });
+  const [content, setContent] = useState({ slug: null, html: null, toc: [], failed: false });
 
   useEffect(() => {
     if (!article) return undefined;
     let cancelled = false;
     articleService
       .getArticleContent(article.slug)
-      .then((html) => {
-        if (!cancelled) setContent({ slug: article.slug, html, failed: html == null });
+      .then((body) => {
+        if (!cancelled) {
+          setContent({ slug: article.slug, html: body?.html ?? null, toc: body?.toc ?? [], failed: body == null });
+        }
       })
       .catch(() => {
-        if (!cancelled) setContent({ slug: article.slug, html: null, failed: true });
+        if (!cancelled) setContent({ slug: article.slug, html: null, toc: [], failed: true });
       });
     return () => {
       cancelled = true;
@@ -58,7 +60,9 @@ export function ArticleDetails() {
   }
 
   const primaryCategory = article.categories[0];
-  const showToc = article.showToc && article.toc.length > 0;
+  // showToc lives in the index so the layout is fixed before the body (and its TOC) arrives
+  const showToc = article.showToc;
+  const toc = content.slug === article.slug ? content.toc : [];
 
   return (
     <div className="article-page">
@@ -108,9 +112,9 @@ export function ArticleDetails() {
             <aside className="article-toc-aside" aria-label="Table of contents">
               <details className="article-toc-mobile">
                 <summary>On this page</summary>
-                <TableOfContents items={article.toc} idPrefix="toc-mobile" />
+                <TableOfContents items={toc} idPrefix="toc-mobile" />
               </details>
-              <TableOfContents items={article.toc} idPrefix="toc-desktop" className="article-toc-desktop" />
+              <TableOfContents items={toc} idPrefix="toc-desktop" className="article-toc-desktop" />
             </aside>
           )}
 
