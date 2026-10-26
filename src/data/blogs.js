@@ -24,6 +24,28 @@ export const blogs = [
     "sourceRow": 5
   },
   {
+    "id": "artificial-intelligence-ai-as-normal-technology",
+    "title": "AI as Normal Technology",
+    "slug": "ai-as-normal-technology",
+    "address": "https://www.normaltech.ai/",
+    "normalizedUrl": "https://www.normaltech.ai",
+    "feed": "https://www.normaltech.ai/feed",
+    "tags": [
+      "ai policy",
+      "ai safety",
+      "llm evaluation",
+      "ai criticism"
+    ],
+    "description": "Arvind Narayanan and Sayash Kapoor, authors of AI Snake Oil, analyze AI capabilities, agent evaluation, and policy without hype or doom.",
+    "author": "Arvind Narayanan and Sayash Kapoor",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 28
+  },
+  {
     "id": "artificial-intelligence-andrej-karpathy-blog",
     "title": "Andrej Karpathy Blog",
     "slug": "andrej-karpathy-blog",
@@ -44,6 +66,50 @@ export const blogs = [
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "artificial-intelligence-apple-machine-learning-research",
+    "title": "Apple Machine Learning Research",
+    "slug": "apple-machine-learning-research",
+    "address": "https://machinelearning.apple.com/",
+    "normalizedUrl": "https://machinelearning.apple.com",
+    "feed": "https://machinelearning.apple.com/rss.xml",
+    "tags": [
+      "machine learning",
+      "ai research",
+      "computer vision",
+      "natural language processing"
+    ],
+    "description": "Apple's research site for papers and technical write-ups on machine learning, computer vision, speech, language models, and on-device inference with MLX.",
+    "author": "Apple",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 22
+  },
+  {
+    "id": "artificial-intelligence-aws-machine-learning-blog",
+    "title": "AWS Machine Learning Blog",
+    "slug": "aws-machine-learning-blog",
+    "address": "https://aws.amazon.com/blogs/machine-learning/",
+    "normalizedUrl": "https://aws.amazon.com/blogs/machine-learning/",
+    "feed": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "tags": [
+      "machine learning",
+      "generative ai",
+      "aws",
+      "mlops"
+    ],
+    "description": "Hands-on guides from Amazon Web Services on building, training, and deploying machine learning and generative AI applications with SageMaker and Bedrock.",
+    "author": "Amazon Web Services",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 21
   },
   {
     "id": "artificial-intelligence-bair-blog",
@@ -69,6 +135,28 @@ export const blogs = [
     "sourceRow": 4
   },
   {
+    "id": "artificial-intelligence-dont-worry-about-the-vase",
+    "title": "Don't Worry About the Vase",
+    "slug": "dont-worry-about-the-vase",
+    "address": "https://thezvi.substack.com/",
+    "normalizedUrl": "https://thezvi.substack.com",
+    "feed": "https://thezvi.substack.com/feed",
+    "tags": [
+      "ai safety",
+      "ai policy",
+      "large language models",
+      "link roundups"
+    ],
+    "description": "Zvi Mowshowitz's detailed weekly roundups of AI news, model releases, and AI safety and policy debates, plus essays on other topics.",
+    "author": "Zvi Mowshowitz",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 29
+  },
+  {
     "id": "artificial-intelligence-eugene-yan",
     "title": "Eugene Yan",
     "slug": "eugene-yan",
@@ -90,6 +178,28 @@ export const blogs = [
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 10
+  },
+  {
+    "id": "artificial-intelligence-exponential-view",
+    "title": "Exponential View",
+    "slug": "exponential-view",
+    "address": "https://www.exponentialview.co/",
+    "normalizedUrl": "https://www.exponentialview.co",
+    "feed": "https://www.exponentialview.co/feed",
+    "tags": [
+      "artificial intelligence",
+      "tech industry",
+      "economics",
+      "energy transition"
+    ],
+    "description": "Azeem Azhar's newsletter on how AI and other exponential technologies are reshaping business, energy, geopolitics, and society.",
+    "author": "Azeem Azhar",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 30
   },
   {
     "id": "artificial-intelligence-google-deepmind-blog",
@@ -226,6 +336,28 @@ export const blogs = [
     "sourceRow": 8
   },
   {
+    "id": "artificial-intelligence-kdnuggets",
+    "title": "KDnuggets",
+    "slug": "kdnuggets",
+    "address": "https://www.kdnuggets.com/",
+    "normalizedUrl": "https://www.kdnuggets.com",
+    "feed": "https://www.kdnuggets.com/feed",
+    "tags": [
+      "data science",
+      "machine learning",
+      "python",
+      "tutorials"
+    ],
+    "description": "Long-running site for data science and machine learning tutorials, Python guides, tool roundups, and career advice for data professionals.",
+    "author": "KDnuggets",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 25
+  },
+  {
     "id": "artificial-intelligence-latent-space",
     "title": "Latent Space",
     "slug": "latent-space",
@@ -315,6 +447,72 @@ export const blogs = [
     "sourceRow": 17
   },
   {
+    "id": "artificial-intelligence-microsoft-research-blog",
+    "title": "Microsoft Research Blog",
+    "slug": "microsoft-research-blog",
+    "address": "https://www.microsoft.com/en-us/research/blog/",
+    "normalizedUrl": "https://www.microsoft.com/en-us/research/blog/",
+    "feed": "https://www.microsoft.com/en-us/research/feed/",
+    "tags": [
+      "ai research",
+      "machine learning",
+      "computer science",
+      "research"
+    ],
+    "description": "Researchers at Microsoft Research write about their work in AI, systems, mathematics, and computing, alongside lab news and academic programs.",
+    "author": "Microsoft Research",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 19
+  },
+  {
+    "id": "artificial-intelligence-mit-technology-review-ai",
+    "title": "MIT Technology Review AI",
+    "slug": "mit-technology-review-ai",
+    "address": "https://www.technologyreview.com/topic/artificial-intelligence/",
+    "normalizedUrl": "https://www.technologyreview.com/topic/artificial-intelligence/",
+    "feed": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+    "tags": [
+      "artificial intelligence",
+      "ai policy",
+      "tech industry",
+      "ethics"
+    ],
+    "description": "MIT Technology Review's artificial intelligence coverage: reporting and analysis on AI companies, research, policy, safety, and societal impact.",
+    "author": "MIT Technology Review",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 26
+  },
+  {
+    "id": "artificial-intelligence-nvidia-technical-blog",
+    "title": "NVIDIA Technical Blog",
+    "slug": "nvidia-technical-blog",
+    "address": "https://developer.nvidia.com/blog/",
+    "normalizedUrl": "https://developer.nvidia.com/blog/",
+    "feed": "https://developer.nvidia.com/blog/feed/",
+    "tags": [
+      "deep learning",
+      "ai infrastructure",
+      "computer hardware",
+      "developer tools"
+    ],
+    "description": "NVIDIA engineers publish tutorials and deep dives on GPU computing, AI model training and inference, robotics simulation, and data center software.",
+    "author": "NVIDIA",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 20
+  },
+  {
     "id": "artificial-intelligence-one-useful-thing",
     "title": "One Useful Thing",
     "slug": "one-useful-thing",
@@ -335,6 +533,50 @@ export const blogs = [
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 13
+  },
+  {
+    "id": "artificial-intelligence-openai-news",
+    "title": "OpenAI News",
+    "slug": "openai-news",
+    "address": "https://openai.com/news/",
+    "normalizedUrl": "https://openai.com/news/",
+    "feed": "https://openai.com/news/rss.xml",
+    "tags": [
+      "large language models",
+      "generative ai",
+      "ai research",
+      "ai safety"
+    ],
+    "description": "OpenAI's official news feed, covering new model releases, research results, safety work, product launches, and how organizations use its models.",
+    "author": "OpenAI",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 18
+  },
+  {
+    "id": "artificial-intelligence-pytorch-blog",
+    "title": "PyTorch Blog",
+    "slug": "pytorch-blog",
+    "address": "https://pytorch.org/blog/",
+    "normalizedUrl": "https://pytorch.org/blog/",
+    "feed": "https://pytorch.org/feed/",
+    "tags": [
+      "pytorch",
+      "deep learning",
+      "open source",
+      "machine learning"
+    ],
+    "description": "News from the PyTorch Foundation and community: framework releases, performance engineering, distributed training, and tools built around PyTorch.",
+    "author": "PyTorch Foundation",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 23
   },
   {
     "id": "artificial-intelligence-simon-willisons-weblog",
@@ -360,6 +602,50 @@ export const blogs = [
     "sourceRow": 3
   },
   {
+    "id": "artificial-intelligence-towards-data-science",
+    "title": "Towards Data Science",
+    "slug": "towards-data-science",
+    "address": "https://towardsdatascience.com/",
+    "normalizedUrl": "https://towardsdatascience.com",
+    "feed": "https://towardsdatascience.com/feed/",
+    "tags": [
+      "data science",
+      "machine learning",
+      "data analysis",
+      "ai engineering"
+    ],
+    "description": "A large publication of practitioner-written articles on data science, machine learning, analytics, and building AI systems in production.",
+    "author": "Towards Data Science",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 24
+  },
+  {
+    "id": "artificial-intelligence-understanding-ai",
+    "title": "Understanding AI",
+    "slug": "understanding-ai",
+    "address": "https://www.understandingai.org/",
+    "normalizedUrl": "https://www.understandingai.org",
+    "feed": "https://www.understandingai.org/feed",
+    "tags": [
+      "large language models",
+      "artificial intelligence",
+      "ai policy",
+      "tech industry"
+    ],
+    "description": "Timothy B. Lee explains how AI systems work and how they are changing the economy and society, with clear analysis of new models and AI companies.",
+    "author": "Timothy B. Lee",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 27
+  },
+  {
     "id": "automobile-ars-technica-cars",
     "title": "Ars Technica Cars",
     "slug": "ars-technica-cars",
@@ -380,6 +666,28 @@ export const blogs = [
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 8
+  },
+  {
+    "id": "automobile-auto-express",
+    "title": "Auto Express",
+    "slug": "auto-express",
+    "address": "https://www.autoexpress.co.uk/",
+    "normalizedUrl": "https://www.autoexpress.co.uk",
+    "feed": "https://www.autoexpress.co.uk/feed/all",
+    "tags": [
+      "car reviews",
+      "new cars",
+      "road tests",
+      "used cars"
+    ],
+    "description": "UK car magazine with new and used car reviews, group tests, buying advice, and motoring news.",
+    "author": "Auto Express",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 21
   },
   {
     "id": "automobile-autoblog",
@@ -404,6 +712,72 @@ export const blogs = [
     "sourceRow": 4
   },
   {
+    "id": "automobile-autocar",
+    "title": "Autocar",
+    "slug": "autocar",
+    "address": "https://www.autocar.co.uk/",
+    "normalizedUrl": "https://www.autocar.co.uk",
+    "feed": "https://www.autocar.co.uk/rss",
+    "tags": [
+      "car reviews",
+      "automotive news",
+      "new cars",
+      "road tests"
+    ],
+    "description": "British car magazine published since 1895, with new car reviews, road tests, first drives, and automotive industry news.",
+    "author": "Autocar",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 15
+  },
+  {
+    "id": "automobile-autocar-india",
+    "title": "Autocar India",
+    "slug": "autocar-india",
+    "address": "https://www.autocarindia.com/",
+    "normalizedUrl": "https://www.autocarindia.com",
+    "feed": "https://www.autocarindia.com/rss/all",
+    "tags": [
+      "car reviews",
+      "new cars",
+      "motorcycles",
+      "automotive news"
+    ],
+    "description": "India's edition of Autocar, reviewing new cars and motorcycles launched in India and covering the Indian automotive industry.",
+    "author": "Autocar India",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 23
+  },
+  {
+    "id": "automobile-autoweek",
+    "title": "Autoweek",
+    "slug": "autoweek",
+    "address": "https://www.autoweek.com/",
+    "normalizedUrl": "https://www.autoweek.com",
+    "feed": "https://www.autoweek.com/rss/all.xml/",
+    "tags": [
+      "car culture",
+      "motorsport",
+      "automotive news",
+      "car reviews"
+    ],
+    "description": "Car news, reviews, and racing coverage for enthusiasts, including NASCAR, Formula 1, IndyCar, and car culture features.",
+    "author": "Autoweek",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 17
+  },
+  {
     "id": "automobile-car-and-driver",
     "title": "Car and Driver",
     "slug": "car-and-driver",
@@ -416,14 +790,36 @@ export const blogs = [
       "automotive news",
       "road tests"
     ],
-    "description": "",
-    "author": "",
+    "description": "Car reviews, road tests and automotive news from Car and Driver magazine.",
+    "author": "Car and Driver",
     "language": "en",
     "status": "active",
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 10
+  },
+  {
+    "id": "automobile-carscoops",
+    "title": "Carscoops",
+    "slug": "carscoops",
+    "address": "https://www.carscoops.com/",
+    "normalizedUrl": "https://www.carscoops.com",
+    "feed": "https://www.carscoops.com/feed/",
+    "tags": [
+      "automotive news",
+      "spy photos",
+      "electric vehicles",
+      "new cars"
+    ],
+    "description": "Automotive news site covering new car reveals, spy shots, recalls, EVs, and industry stories, updated throughout the day.",
+    "author": "Carscoops",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 16
   },
   {
     "id": "automobile-cleantechnica-automotive",
@@ -460,14 +856,36 @@ export const blogs = [
       "clean energy",
       "ev news"
     ],
-    "description": "",
-    "author": "",
+    "description": "News, reviews, and analysis of electric vehicles, e-bikes, and clean energy, with especially close coverage of Tesla.",
+    "author": "Electrek",
     "language": "en",
     "status": "active",
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 11
+  },
+  {
+    "id": "automobile-electrive",
+    "title": "electrive",
+    "slug": "electrive",
+    "address": "https://www.electrive.com/",
+    "normalizedUrl": "https://www.electrive.com",
+    "feed": "https://www.electrive.com/feed/",
+    "tags": [
+      "electric vehicles",
+      "charging infrastructure",
+      "ev news",
+      "batteries"
+    ],
+    "description": "Industry news on electric mobility, covering EV launches, batteries, charging infrastructure, and fleet electrification.",
+    "author": "electrive",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 22
   },
   {
     "id": "automobile-green-car-reports",
@@ -504,8 +922,8 @@ export const blogs = [
       "collector cars",
       "automotive history"
     ],
-    "description": "",
-    "author": "",
+    "description": "Stories on classic and collector cars, car culture and automotive history from Hagerty.",
+    "author": "Hagerty",
     "language": "en",
     "status": "active",
     "category": "Automobile",
@@ -526,8 +944,8 @@ export const blogs = [
       "charging",
       "ev news"
     ],
-    "description": "",
-    "author": "",
+    "description": "Electric vehicle news, reviews, and real-world range tests, plus coverage of charging networks and automakers' EV plans.",
+    "author": "InsideEVs",
     "language": "en",
     "status": "active",
     "category": "Automobile",
@@ -580,6 +998,28 @@ export const blogs = [
     "sourceRow": 9
   },
   {
+    "id": "automobile-motorsportcom",
+    "title": "Motorsport.com",
+    "slug": "motorsportcom",
+    "address": "https://www.motorsport.com/",
+    "normalizedUrl": "https://www.motorsport.com",
+    "feed": "https://www.motorsport.com/rss/all/news/",
+    "tags": [
+      "motorsport",
+      "formula 1",
+      "motogp",
+      "news"
+    ],
+    "description": "Racing news, results, and analysis covering Formula 1, MotoGP, NASCAR, IndyCar, WEC, and other series worldwide.",
+    "author": "Motorsport.com",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 18
+  },
+  {
     "id": "automobile-road-track",
     "title": "Road & Track",
     "slug": "road-track",
@@ -592,8 +1032,8 @@ export const blogs = [
       "performance cars",
       "car reviews"
     ],
-    "description": "",
-    "author": "",
+    "description": "Car culture, motorsport and performance car coverage from Road & Track.",
+    "author": "Road & Track",
     "language": "en",
     "status": "active",
     "category": "Automobile",
@@ -624,6 +1064,28 @@ export const blogs = [
     "sourceRow": 7
   },
   {
+    "id": "automobile-the-autopian",
+    "title": "The Autopian",
+    "slug": "the-autopian",
+    "address": "https://www.theautopian.com/",
+    "normalizedUrl": "https://www.theautopian.com",
+    "feed": "https://www.theautopian.com/feed/",
+    "tags": [
+      "car culture",
+      "automotive history",
+      "car reviews",
+      "transportation"
+    ],
+    "description": "Car culture site from former Jalopnik writers, mixing engineering explainers, automotive history, design critique, and project-car stories.",
+    "author": "The Autopian",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 19
+  },
+  {
     "id": "automobile-the-drive",
     "title": "The Drive",
     "slug": "the-drive",
@@ -644,6 +1106,50 @@ export const blogs = [
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 2
+  },
+  {
+    "id": "automobile-the-race",
+    "title": "The Race",
+    "slug": "the-race",
+    "address": "https://www.the-race.com/",
+    "normalizedUrl": "https://www.the-race.com",
+    "feed": "https://www.the-race.com/rss/",
+    "tags": [
+      "motorsport",
+      "formula 1",
+      "motogp",
+      "podcast"
+    ],
+    "description": "Independent motorsport site with news, technical analysis, and podcasts on Formula 1, MotoGP, IndyCar, and Formula E.",
+    "author": "The Race",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 24
+  },
+  {
+    "id": "automobile-the-truth-about-cars",
+    "title": "The Truth About Cars",
+    "slug": "the-truth-about-cars",
+    "address": "https://www.thetruthaboutcars.com/",
+    "normalizedUrl": "https://www.thetruthaboutcars.com",
+    "feed": "https://www.thetruthaboutcars.com/rss/feed/all",
+    "tags": [
+      "car reviews",
+      "automotive news",
+      "industry",
+      "commentary"
+    ],
+    "description": "Long-running site for candid car reviews, auto industry news and analysis, and daily reader discussion questions.",
+    "author": "The Truth About Cars",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 20
   },
   {
     "id": "engineering-acm-queue",
@@ -690,6 +1196,28 @@ export const blogs = [
     "sourceRow": 13
   },
   {
+    "id": "engineering-all-things-distributed",
+    "title": "All Things Distributed",
+    "slug": "all-things-distributed",
+    "address": "https://www.allthingsdistributed.com/",
+    "normalizedUrl": "https://www.allthingsdistributed.com",
+    "feed": "https://www.allthingsdistributed.com/atom.xml",
+    "tags": [
+      "distributed systems",
+      "aws",
+      "cloud architecture",
+      "scalability"
+    ],
+    "description": "Amazon CTO Werner Vogels writes about building scalable, resilient distributed systems, cloud architecture, and lessons from running AWS.",
+    "author": "Werner Vogels",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 23
+  },
+  {
     "id": "engineering-aws-architecture-blog",
     "title": "AWS Architecture Blog",
     "slug": "aws-architecture-blog",
@@ -732,6 +1260,28 @@ export const blogs = [
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 15
+  },
+  {
+    "id": "engineering-bytebytego",
+    "title": "ByteByteGo",
+    "slug": "bytebytego",
+    "address": "https://blog.bytebytego.com/",
+    "normalizedUrl": "https://blog.bytebytego.com",
+    "feed": "https://blog.bytebytego.com/feed",
+    "tags": [
+      "system design",
+      "distributed systems",
+      "scalability",
+      "architecture"
+    ],
+    "description": "Alex Xu's system design newsletter, explaining how large-scale systems, databases, caching, and AI infrastructure work with clear diagrams.",
+    "author": "Alex Xu",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 18
   },
   {
     "id": "engineering-charitywtf",
@@ -801,6 +1351,28 @@ export const blogs = [
     "sourceRow": 3
   },
   {
+    "id": "engineering-dropbox-tech-blog",
+    "title": "Dropbox Tech Blog",
+    "slug": "dropbox-tech-blog",
+    "address": "https://dropbox.tech/",
+    "normalizedUrl": "https://dropbox.tech",
+    "feed": "https://dropbox.tech/feed",
+    "tags": [
+      "infrastructure",
+      "backend",
+      "security",
+      "machine learning"
+    ],
+    "description": "Dropbox engineers share how they build and run storage infrastructure, developer APIs, security tooling, and AI features at scale.",
+    "author": "Dropbox",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 26
+  },
+  {
     "id": "engineering-engineering-at-meta",
     "title": "Engineering at Meta",
     "slug": "engineering-at-meta",
@@ -868,6 +1440,50 @@ export const blogs = [
     "sourceRow": 9
   },
   {
+    "id": "engineering-infoq",
+    "title": "InfoQ",
+    "slug": "infoq",
+    "address": "https://www.infoq.com/",
+    "normalizedUrl": "https://www.infoq.com",
+    "feed": "https://feed.infoq.com/",
+    "tags": [
+      "software architecture",
+      "software engineering",
+      "devops",
+      "cloud"
+    ],
+    "description": "News, articles, and conference talks on software architecture, cloud, DevOps, Java, and AI engineering, written by practicing engineers.",
+    "author": "InfoQ",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 19
+  },
+  {
+    "id": "engineering-irrational-exuberance",
+    "title": "Irrational Exuberance",
+    "slug": "irrational-exuberance",
+    "address": "https://lethain.com/",
+    "normalizedUrl": "https://lethain.com",
+    "feed": "https://lethain.com/feeds/",
+    "tags": [
+      "engineering management",
+      "careers",
+      "software engineering",
+      "tech industry"
+    ],
+    "description": "Will Larson's essays on engineering leadership, technical strategy, management, and infrastructure, drawn from leading teams at tech companies.",
+    "author": "Will Larson",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 22
+  },
+  {
     "id": "engineering-julia-evans",
     "title": "Julia Evans",
     "slug": "julia-evans",
@@ -889,6 +1505,50 @@ export const blogs = [
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "engineering-kubernetes-blog",
+    "title": "Kubernetes Blog",
+    "slug": "kubernetes-blog",
+    "address": "https://kubernetes.io/blog/",
+    "normalizedUrl": "https://kubernetes.io/blog/",
+    "feed": "https://kubernetes.io/feed.xml",
+    "tags": [
+      "kubernetes",
+      "cloud",
+      "open source",
+      "release notes"
+    ],
+    "description": "The Kubernetes project's official blog, with release announcements, feature deep dives, SIG spotlights, and guidance for cluster operators.",
+    "author": "Kubernetes",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 29
+  },
+  {
+    "id": "engineering-marc-brooker",
+    "title": "Marc Brooker",
+    "slug": "marc-brooker",
+    "address": "https://brooker.co.za/blog/",
+    "normalizedUrl": "https://brooker.co.za/blog/",
+    "feed": "https://brooker.co.za/blog/rss.xml",
+    "tags": [
+      "distributed systems",
+      "databases",
+      "aws",
+      "performance"
+    ],
+    "description": "AWS engineer Marc Brooker writes about distributed systems, databases, reliability, and the performance math behind large-scale cloud services.",
+    "author": "Marc Brooker",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 25
   },
   {
     "id": "engineering-martin-fowler",
@@ -913,6 +1573,28 @@ export const blogs = [
     "sourceRow": 2
   },
   {
+    "id": "engineering-martin-kleppmann",
+    "title": "Martin Kleppmann",
+    "slug": "martin-kleppmann",
+    "address": "https://martin.kleppmann.com/",
+    "normalizedUrl": "https://martin.kleppmann.com",
+    "feed": "https://feeds.feedburner.com/martinkl?format=xml",
+    "tags": [
+      "distributed systems",
+      "databases",
+      "cryptography",
+      "research"
+    ],
+    "description": "Martin Kleppmann, author of Designing Data-Intensive Applications, writes about distributed systems, formal verification, and cryptographic protocols.",
+    "author": "Martin Kleppmann",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 24
+  },
+  {
     "id": "engineering-netflix-techblog",
     "title": "Netflix TechBlog",
     "slug": "netflix-techblog",
@@ -934,6 +1616,72 @@ export const blogs = [
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 4
+  },
+  {
+    "id": "engineering-pinterest-engineering",
+    "title": "Pinterest Engineering",
+    "slug": "pinterest-engineering",
+    "address": "https://medium.com/pinterest-engineering",
+    "normalizedUrl": "https://medium.com/pinterest-engineering",
+    "feed": "https://medium.com/feed/pinterest-engineering",
+    "tags": [
+      "machine learning",
+      "recommender systems",
+      "data engineering",
+      "infrastructure"
+    ],
+    "description": "Pinterest engineers describe the recommendation models, data pipelines, and infrastructure behind the visual discovery platform.",
+    "author": "Pinterest",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 28
+  },
+  {
+    "id": "engineering-shopify-engineering",
+    "title": "Shopify Engineering",
+    "slug": "shopify-engineering",
+    "address": "https://shopify.engineering/",
+    "normalizedUrl": "https://shopify.engineering",
+    "feed": "https://shopify.engineering/blog.atom",
+    "tags": [
+      "backend",
+      "mobile",
+      "scalability",
+      "machine learning"
+    ],
+    "description": "Engineers at Shopify write about scaling commerce infrastructure, Ruby on Rails, mobile development, machine learning, and AI agents.",
+    "author": "Shopify",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 27
+  },
+  {
+    "id": "engineering-software-design-tidy-first",
+    "title": "Software Design: Tidy First?",
+    "slug": "software-design-tidy-first",
+    "address": "https://newsletter.kentbeck.com/",
+    "normalizedUrl": "https://newsletter.kentbeck.com",
+    "feed": "https://newsletter.kentbeck.com/feed",
+    "tags": [
+      "refactoring",
+      "testing",
+      "agile",
+      "software engineering"
+    ],
+    "description": "Kent Beck, known for Extreme Programming and test-driven development, writes about software design, small tidyings, testing, and coding with AI.",
+    "author": "Kent Beck",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 21
   },
   {
     "id": "engineering-spotify-engineering",
@@ -980,6 +1728,29 @@ export const blogs = [
     "sourceRow": 8
   },
   {
+    "id": "engineering-the-new-stack",
+    "title": "The New Stack",
+    "slug": "the-new-stack",
+    "address": "https://thenewstack.io/",
+    "normalizedUrl": "https://thenewstack.io",
+    "feed": "https://thenewstack.io/feed/",
+    "tags": [
+      "kubernetes",
+      "devops",
+      "cloud",
+      "open source",
+      "ai engineering"
+    ],
+    "description": "News and analysis on cloud-native infrastructure, Kubernetes, DevOps, platform engineering, open source, and AI-assisted development.",
+    "author": "The New Stack",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 20
+  },
+  {
     "id": "engineering-uber-engineering",
     "title": "Uber Engineering",
     "slug": "uber-engineering",
@@ -1001,6 +1772,72 @@ export const blogs = [
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "food-and-nutrition-abby-langer-nutrition",
+    "title": "Abby Langer Nutrition",
+    "slug": "abby-langer-nutrition",
+    "address": "https://abbylangernutrition.com/",
+    "normalizedUrl": "https://abbylangernutrition.com",
+    "feed": "https://abbylangernutrition.com/feed/",
+    "tags": [
+      "nutrition science",
+      "healthy eating",
+      "eating habits",
+      "skepticism"
+    ],
+    "description": "Registered dietitian Abby Langer reviews diet trends and supplements and writes evidence-based articles on nutrition and healthy eating.",
+    "author": "Abby Langer",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 24
+  },
+  {
+    "id": "food-and-nutrition-ambitious-kitchen",
+    "title": "Ambitious Kitchen",
+    "slug": "ambitious-kitchen",
+    "address": "https://www.ambitiouskitchen.com/",
+    "normalizedUrl": "https://www.ambitiouskitchen.com",
+    "feed": "https://www.ambitiouskitchen.com/feed/",
+    "tags": [
+      "healthy recipes",
+      "healthy eating",
+      "recipes",
+      "gluten-free"
+    ],
+    "description": "Monique Volz's healthy food blog of wholesome, flavorful recipes, from hearty soups and stews to gluten-free baking and snacks.",
+    "author": "Monique Volz",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 21
+  },
+  {
+    "id": "food-and-nutrition-bon-appetit",
+    "title": "Bon Appétit",
+    "slug": "bon-appetit",
+    "address": "https://www.bonappetit.com/",
+    "normalizedUrl": "https://www.bonappetit.com",
+    "feed": "https://www.bonappetit.com/feed/rss",
+    "tags": [
+      "recipes",
+      "cooking",
+      "seasonal cooking",
+      "culture"
+    ],
+    "description": "The food magazine's site for tested recipes, cooking techniques, ingredient explainers, and restaurant and food culture coverage.",
+    "author": "Bon Appétit",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 17
   },
   {
     "id": "food-and-nutrition-budget-bytes",
@@ -1069,6 +1906,28 @@ export const blogs = [
     "sourceRow": 3
   },
   {
+    "id": "food-and-nutrition-just-one-cookbook",
+    "title": "Just One Cookbook",
+    "slug": "just-one-cookbook",
+    "address": "https://www.justonecookbook.com/",
+    "normalizedUrl": "https://www.justonecookbook.com",
+    "feed": "https://www.justonecookbook.com/feed/",
+    "tags": [
+      "japanese cuisine",
+      "recipes",
+      "home cooking",
+      "cooking"
+    ],
+    "description": "Namiko Hirasawa Chen's Japanese recipes and cooking guides, covering home-style dishes, ramen, rice, and Japanese pantry staples.",
+    "author": "Namiko Hirasawa Chen",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 20
+  },
+  {
     "id": "food-and-nutrition-love-and-lemons",
     "title": "Love and Lemons",
     "slug": "love-and-lemons",
@@ -1113,6 +1972,28 @@ export const blogs = [
     "sourceRow": 7
   },
   {
+    "id": "food-and-nutrition-natashas-kitchen",
+    "title": "Natasha's Kitchen",
+    "slug": "natashas-kitchen",
+    "address": "https://natashaskitchen.com/",
+    "normalizedUrl": "https://natashaskitchen.com",
+    "feed": "https://natashaskitchen.com/feed/",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "desserts",
+      "videos"
+    ],
+    "description": "Natasha Kravchuk's family food blog of tested recipes with step-by-step photos and videos, from comfort food to desserts.",
+    "author": "Natasha Kravchuk",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 19
+  },
+  {
     "id": "food-and-nutrition-nutritionfactsorg",
     "title": "NutritionFacts.org",
     "slug": "nutritionfactsorg",
@@ -1133,6 +2014,50 @@ export const blogs = [
     "categorySlug": "food-and-nutrition",
     "sourceFile": "Food and Nutrition/blogs.csv",
     "sourceRow": 6
+  },
+  {
+    "id": "food-and-nutrition-once-upon-a-chef",
+    "title": "Once Upon a Chef",
+    "slug": "once-upon-a-chef",
+    "address": "https://www.onceuponachef.com/",
+    "normalizedUrl": "https://www.onceuponachef.com",
+    "feed": "https://www.onceuponachef.com/feed",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "baking",
+      "desserts"
+    ],
+    "description": "Jennifer Segal's tested recipes with step-by-step photos, from weeknight dinners and soups to breads, cookies, and holiday dishes.",
+    "author": "Jennifer Segal",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 18
+  },
+  {
+    "id": "food-and-nutrition-pinch-of-yum",
+    "title": "Pinch of Yum",
+    "slug": "pinch-of-yum",
+    "address": "https://pinchofyum.com/",
+    "normalizedUrl": "https://pinchofyum.com",
+    "feed": "https://pinchofyum.com/feed",
+    "tags": [
+      "recipes",
+      "healthy eating",
+      "home cooking",
+      "quick meals"
+    ],
+    "description": "Lindsay Ostrom's food blog of simple, mostly healthy recipes for everyday dinners, soups, salads, and seasonal baking.",
+    "author": "Lindsay Ostrom",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 14
   },
   {
     "id": "food-and-nutrition-precision-nutrition",
@@ -1201,6 +2126,28 @@ export const blogs = [
     "sourceRow": 13
   },
   {
+    "id": "food-and-nutrition-serious-eats",
+    "title": "Serious Eats",
+    "slug": "serious-eats",
+    "address": "https://www.seriouseats.com/",
+    "normalizedUrl": "https://www.seriouseats.com",
+    "feed": "https://feeds-api.dotdashmeredith.com/v1/rss/google/ad57d421-0ff5-41e7-a5da-f2167b6d7f7a",
+    "tags": [
+      "recipes",
+      "cooking",
+      "food science",
+      "baking"
+    ],
+    "description": "Recipes, cooking techniques, and food science explained in depth, plus tested equipment reviews and guides to ingredients.",
+    "author": "Serious Eats",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 15
+  },
+  {
     "id": "food-and-nutrition-smitten-kitchen",
     "title": "Smitten Kitchen",
     "slug": "smitten-kitchen",
@@ -1245,6 +2192,50 @@ export const blogs = [
     "sourceRow": 4
   },
   {
+    "id": "food-and-nutrition-the-kitchn",
+    "title": "The Kitchn",
+    "slug": "the-kitchn",
+    "address": "https://www.thekitchn.com/",
+    "normalizedUrl": "https://www.thekitchn.com",
+    "feed": "https://www.thekitchn.com/main.rss",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "cooking",
+      "meal prep"
+    ],
+    "description": "Daily recipes, cooking tips, kitchen organization ideas, and grocery guides for home cooks.",
+    "author": "The Kitchn",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 16
+  },
+  {
+    "id": "food-and-nutrition-the-mediterranean-dish",
+    "title": "The Mediterranean Dish",
+    "slug": "the-mediterranean-dish",
+    "address": "https://www.themediterraneandish.com/",
+    "normalizedUrl": "https://www.themediterraneandish.com",
+    "feed": "https://www.themediterraneandish.com/feed/",
+    "tags": [
+      "mediterranean diet",
+      "healthy eating",
+      "recipes",
+      "plant-based diet"
+    ],
+    "description": "Suzy Karadsheh's Mediterranean diet recipes built around vegetables, legumes, olive oil, and fish, with dishes from across the region.",
+    "author": "Suzy Karadsheh",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 22
+  },
+  {
     "id": "food-and-nutrition-the-nutrition-source",
     "title": "The Nutrition Source",
     "slug": "the-nutrition-source",
@@ -1265,6 +2256,28 @@ export const blogs = [
     "categorySlug": "food-and-nutrition",
     "sourceFile": "Food and Nutrition/blogs.csv",
     "sourceRow": 2
+  },
+  {
+    "id": "food-and-nutrition-veg-recipes-of-india",
+    "title": "Veg Recipes of India",
+    "slug": "veg-recipes-of-india",
+    "address": "https://www.vegrecipesofindia.com/",
+    "normalizedUrl": "https://www.vegrecipesofindia.com",
+    "feed": "https://www.vegrecipesofindia.com/feed/",
+    "tags": [
+      "indian cuisine",
+      "vegetarian",
+      "recipes",
+      "plant-based diet"
+    ],
+    "description": "Dassana Amit's collection of tested vegetarian Indian recipes, from regional curries and snacks to sweets, with step-by-step photos.",
+    "author": "Dassana Amit",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 23
   },
   {
     "id": "mathematics-3blue1brown-blog",
@@ -1330,6 +2343,28 @@ export const blogs = [
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 10
+  },
+  {
+    "id": "mathematics-combinatorics-and-more",
+    "title": "Combinatorics and more",
+    "slug": "combinatorics-and-more",
+    "address": "https://gilkalai.wordpress.com/",
+    "normalizedUrl": "https://gilkalai.wordpress.com",
+    "feed": "https://gilkalai.wordpress.com/feed/",
+    "tags": [
+      "combinatorics",
+      "geometry",
+      "probability",
+      "mathematics"
+    ],
+    "description": "Gil Kalai's blog on combinatorics, convexity, probability, and related problems, with research news and his Test Your Intuition puzzles.",
+    "author": "Gil Kalai",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 17
   },
   {
     "id": "mathematics-computational-complexity",
@@ -1463,6 +2498,28 @@ export const blogs = [
     "sourceRow": 9
   },
   {
+    "id": "mathematics-math-programming",
+    "title": "Math ∩ Programming",
+    "slug": "math-programming",
+    "address": "https://www.jeremykun.com/",
+    "normalizedUrl": "https://www.jeremykun.com",
+    "feed": "https://www.jeremykun.com/index.xml",
+    "tags": [
+      "cryptography",
+      "algorithms",
+      "programming",
+      "mathematics"
+    ],
+    "description": "Jeremy Kun explains mathematics through code, from cryptography and homomorphic encryption to algorithms, optimization, and machine learning.",
+    "author": "Jeremy Kun",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 22
+  },
+  {
     "id": "mathematics-mathbabe",
     "title": "mathbabe",
     "slug": "mathbabe",
@@ -1483,6 +2540,72 @@ export const blogs = [
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 15
+  },
+  {
+    "id": "mathematics-mathematical-enchantments",
+    "title": "Mathematical Enchantments",
+    "slug": "mathematical-enchantments",
+    "address": "https://mathenchant.wordpress.com/",
+    "normalizedUrl": "https://mathenchant.wordpress.com",
+    "feed": "https://mathenchant.wordpress.com/feed/",
+    "tags": [
+      "popular math",
+      "combinatorics",
+      "puzzles",
+      "number theory"
+    ],
+    "description": "James Propp's monthly essays on surprising ideas in mathematics, from combinatorics and number systems to puzzles and their history.",
+    "author": "James Propp",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 24
+  },
+  {
+    "id": "mathematics-mathworlds-dan-meyer",
+    "title": "Mathworlds (Dan Meyer)",
+    "slug": "mathworlds-dan-meyer",
+    "address": "https://danmeyer.substack.com/",
+    "normalizedUrl": "https://danmeyer.substack.com",
+    "feed": "https://danmeyer.substack.com/feed",
+    "tags": [
+      "math education",
+      "teaching",
+      "education",
+      "ai tools"
+    ],
+    "description": "Math educator Dan Meyer writes about teaching mathematics, classroom technology, and how AI tools are affecting students and teachers.",
+    "author": "Dan Meyer",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 25
+  },
+  {
+    "id": "mathematics-peter-camerons-blog",
+    "title": "Peter Cameron's Blog",
+    "slug": "peter-camerons-blog",
+    "address": "https://cameroncounts.wordpress.com/",
+    "normalizedUrl": "https://cameroncounts.wordpress.com",
+    "feed": "https://cameroncounts.wordpress.com/feed/",
+    "tags": [
+      "combinatorics",
+      "group theory",
+      "academia",
+      "mathematics"
+    ],
+    "description": "Mathematician Peter Cameron writes about combinatorics, group theory, and graph theory, along with academic life and the history of mathematics.",
+    "author": "Peter Cameron",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 20
   },
   {
     "id": "mathematics-quanta-magazine-mathematics",
@@ -1507,6 +2630,50 @@ export const blogs = [
     "sourceRow": 5
   },
   {
+    "id": "mathematics-quomodocumque",
+    "title": "Quomodocumque",
+    "slug": "quomodocumque",
+    "address": "https://quomodocumque.wordpress.com/",
+    "normalizedUrl": "https://quomodocumque.wordpress.com",
+    "feed": "https://quomodocumque.wordpress.com/feed/",
+    "tags": [
+      "number theory",
+      "geometry",
+      "academia",
+      "mathematics"
+    ],
+    "description": "Jordan Ellenberg, author of How Not to Be Wrong, writes about number theory and other mathematics, plus books, baseball, and Madison life.",
+    "author": "Jordan Ellenberg",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 21
+  },
+  {
+    "id": "mathematics-stephen-wolfram-writings",
+    "title": "Stephen Wolfram Writings",
+    "slug": "stephen-wolfram-writings",
+    "address": "https://writings.stephenwolfram.com/",
+    "normalizedUrl": "https://writings.stephenwolfram.com",
+    "feed": "https://writings.stephenwolfram.com/feed/",
+    "tags": [
+      "computing",
+      "complexity",
+      "mathematical physics",
+      "artificial intelligence"
+    ],
+    "description": "Stephen Wolfram's long essays on computation, ruliology, the Wolfram Physics Project, mathematics research, and artificial intelligence.",
+    "author": "Stephen Wolfram",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 26
+  },
+  {
     "id": "mathematics-tanya-khovanovas-math-blog",
     "title": "Tanya Khovanova's Math Blog",
     "slug": "tanya-khovanovas-math-blog",
@@ -1527,6 +2694,50 @@ export const blogs = [
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "mathematics-the-aperiodical",
+    "title": "The Aperiodical",
+    "slug": "the-aperiodical",
+    "address": "https://aperiodical.com/",
+    "normalizedUrl": "https://aperiodical.com",
+    "feed": "https://aperiodical.com/feed/",
+    "tags": [
+      "popular math",
+      "puzzles",
+      "mathematics",
+      "education"
+    ],
+    "description": "A UK maths blog with news, puzzles, events, and the long-running Carnival of Mathematics, written for anyone curious about maths.",
+    "author": "Katie Steckles, Christian Lawson-Perfect and Peter Rowlett",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 19
+  },
+  {
+    "id": "mathematics-the-n-category-cafe",
+    "title": "The n-Category Café",
+    "slug": "the-n-category-cafe",
+    "address": "https://golem.ph.utexas.edu/category/",
+    "normalizedUrl": "https://golem.ph.utexas.edu/category/",
+    "feed": "https://golem.ph.utexas.edu/category/atom10.xml",
+    "tags": [
+      "category theory",
+      "algebra",
+      "mathematical physics",
+      "philosophy of mathematics"
+    ],
+    "description": "A group blog by mathematicians and physicists on category theory, higher algebra, mathematical physics, and the philosophy of mathematics.",
+    "author": "n-Category Café hosts",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 18
   },
   {
     "id": "mathematics-the-polymath-blog",
@@ -1570,6 +2781,28 @@ export const blogs = [
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 2
+  },
+  {
+    "id": "mathematics-windows-on-theory",
+    "title": "Windows on Theory",
+    "slug": "windows-on-theory",
+    "address": "https://windowsontheory.org/",
+    "normalizedUrl": "https://windowsontheory.org",
+    "feed": "https://windowsontheory.org/feed/",
+    "tags": [
+      "theoretical computer science",
+      "complexity theory",
+      "ai research",
+      "academia"
+    ],
+    "description": "Boaz Barak's research blog on theoretical computer science, cryptography, and the theory of AI, including his Harvard course notes.",
+    "author": "Boaz Barak",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 23
   },
   {
     "id": "mathematics-xena-project",
@@ -1704,6 +2937,71 @@ export const blogs = [
     "sourceRow": 14
   },
   {
+    "id": "personal-finance-clark-howard",
+    "title": "Clark Howard",
+    "slug": "clark-howard",
+    "address": "https://clark.com/",
+    "normalizedUrl": "https://clark.com",
+    "feed": "https://clark.com/feed/",
+    "tags": [
+      "saving money",
+      "frugality",
+      "credit cards",
+      "personal finance"
+    ],
+    "description": "Consumer advocate Clark Howard's team shares practical advice on saving money, avoiding scams, credit, travel deals, and retirement.",
+    "author": "Clark Howard",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 18
+  },
+  {
+    "id": "personal-finance-clever-girl-finance",
+    "title": "Clever Girl Finance",
+    "slug": "clever-girl-finance",
+    "address": "https://www.clevergirlfinance.com/",
+    "normalizedUrl": "https://www.clevergirlfinance.com",
+    "feed": "https://www.clevergirlfinance.com/feed/",
+    "tags": [
+      "personal finance",
+      "budgeting",
+      "debt",
+      "investing"
+    ],
+    "description": "Personal finance platform for women with articles, free courses, and survey-based research on budgeting, debt payoff, and investing.",
+    "author": "Clever Girl Finance",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 23
+  },
+  {
+    "id": "personal-finance-doctor-of-credit",
+    "title": "Doctor of Credit",
+    "slug": "doctor-of-credit",
+    "address": "https://www.doctorofcredit.com/",
+    "normalizedUrl": "https://www.doctorofcredit.com",
+    "feed": "https://www.doctorofcredit.com/feed/",
+    "tags": [
+      "credit cards",
+      "banking",
+      "saving money"
+    ],
+    "description": "Daily roundups of bank account bonuses, credit card offers, savings rates, and rewards deals, published without affiliate links.",
+    "author": "Doctor of Credit",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 21
+  },
+  {
     "id": "personal-finance-early-retirement-now",
     "title": "Early Retirement Now",
     "slug": "early-retirement-now",
@@ -1748,6 +3046,28 @@ export const blogs = [
     "sourceRow": 10
   },
   {
+    "id": "personal-finance-freefincal",
+    "title": "freefincal",
+    "slug": "freefincal",
+    "address": "https://freefincal.com/",
+    "normalizedUrl": "https://freefincal.com",
+    "feed": "https://freefincal.com/feed/",
+    "tags": [
+      "investing",
+      "mutual funds",
+      "retirement planning",
+      "indian personal finance"
+    ],
+    "description": "M. Pattabiraman's Indian personal finance site with data-driven analysis of mutual funds, retirement planning, and goal-based investing.",
+    "author": "M. Pattabiraman",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 25
+  },
+  {
     "id": "personal-finance-humbledollar",
     "title": "HumbleDollar",
     "slug": "humbledollar",
@@ -1768,6 +3088,72 @@ export const blogs = [
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 6
+  },
+  {
+    "id": "personal-finance-i-will-teach-you-to-be-rich",
+    "title": "I Will Teach You To Be Rich",
+    "slug": "i-will-teach-you-to-be-rich",
+    "address": "https://www.iwillteachyoutoberich.com/blog/",
+    "normalizedUrl": "https://www.iwillteachyoutoberich.com/blog/",
+    "feed": "https://www.iwillteachyoutoberich.com/feed/",
+    "tags": [
+      "personal finance",
+      "behavioral finance",
+      "money habits",
+      "podcast"
+    ],
+    "description": "Ramit Sethi's personal finance site and podcast, featuring candid conversations with couples about debt, spending, and money habits.",
+    "author": "Ramit Sethi",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 19
+  },
+  {
+    "id": "personal-finance-kiplinger",
+    "title": "Kiplinger",
+    "slug": "kiplinger",
+    "address": "https://www.kiplinger.com/",
+    "normalizedUrl": "https://www.kiplinger.com",
+    "feed": "https://www.kiplinger.com/feeds.xml",
+    "tags": [
+      "investing",
+      "retirement planning",
+      "taxes",
+      "personal finance"
+    ],
+    "description": "Personal finance magazine with advice on investing, retirement, taxes, and saving, along with economic and market forecasts.",
+    "author": "Kiplinger",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 17
+  },
+  {
+    "id": "personal-finance-making-sense-of-cents",
+    "title": "Making Sense of Cents",
+    "slug": "making-sense-of-cents",
+    "address": "https://www.makingsenseofcents.com/",
+    "normalizedUrl": "https://www.makingsenseofcents.com",
+    "feed": "https://www.makingsenseofcents.com/feed",
+    "tags": [
+      "side hustle",
+      "extra income",
+      "saving money",
+      "budgeting"
+    ],
+    "description": "Michelle Schroeder-Gardner writes about side hustles, ways to earn extra income, saving money, and paying off debt.",
+    "author": "Michelle Schroeder-Gardner",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 20
   },
   {
     "id": "personal-finance-monevator",
@@ -1814,6 +3200,28 @@ export const blogs = [
     "sourceRow": 2
   },
   {
+    "id": "personal-finance-nerdwallet",
+    "title": "NerdWallet",
+    "slug": "nerdwallet",
+    "address": "https://www.nerdwallet.com/",
+    "normalizedUrl": "https://www.nerdwallet.com",
+    "feed": "https://www.nerdwallet.com/blog/feed/",
+    "tags": [
+      "credit cards",
+      "banking",
+      "personal finance",
+      "credit score"
+    ],
+    "description": "Consumer finance guides and news comparing credit cards, bank accounts, mortgages, insurance, and investing, plus daily rate updates.",
+    "author": "NerdWallet",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 16
+  },
+  {
     "id": "personal-finance-of-dollars-and-data",
     "title": "Of Dollars And Data",
     "slug": "of-dollars-and-data",
@@ -1834,6 +3242,50 @@ export const blogs = [
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 8
+  },
+  {
+    "id": "personal-finance-physician-on-fire",
+    "title": "Physician on FIRE",
+    "slug": "physician-on-fire",
+    "address": "https://www.physicianonfire.com/",
+    "normalizedUrl": "https://www.physicianonfire.com",
+    "feed": "https://www.physicianonfire.com/feed/",
+    "tags": [
+      "financial independence",
+      "early retirement",
+      "investing",
+      "taxes"
+    ],
+    "description": "Leif Dahleen, a physician who retired early, writes about financial independence, early retirement, taxes, and investing for doctors.",
+    "author": "Leif Dahleen",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 22
+  },
+  {
+    "id": "personal-finance-retirement-researcher",
+    "title": "Retirement Researcher",
+    "slug": "retirement-researcher",
+    "address": "https://retirementresearcher.com/",
+    "normalizedUrl": "https://retirementresearcher.com",
+    "feed": "https://retirementresearcher.com/feed/",
+    "tags": [
+      "retirement planning",
+      "safe withdrawal rates",
+      "retirement",
+      "taxes"
+    ],
+    "description": "Wade Pfau, PhD, CFA, writes about retirement income planning, withdrawal strategies, Roth conversions, and tax-efficient retirement.",
+    "author": "Wade Pfau",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 24
   },
   {
     "id": "personal-finance-the-big-picture",
@@ -1902,6 +3354,28 @@ export const blogs = [
     "sourceRow": 3
   },
   {
+    "id": "physics-astronomy-magazine",
+    "title": "Astronomy Magazine",
+    "slug": "astronomy-magazine",
+    "address": "https://www.astronomy.com/",
+    "normalizedUrl": "https://www.astronomy.com",
+    "feed": "https://www.astronomy.com/feed/",
+    "tags": [
+      "astronomy",
+      "stargazing",
+      "astrophysics",
+      "space"
+    ],
+    "description": "Astronomy magazine's site with observing guides, sky calendars, and news on planets, stars, galaxies, and space missions.",
+    "author": "Astronomy",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 21
+  },
+  {
     "id": "physics-backreaction",
     "title": "Backreaction",
     "slug": "backreaction",
@@ -1922,6 +3396,28 @@ export const blogs = [
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 4
+  },
+  {
+    "id": "physics-centauri-dreams",
+    "title": "Centauri Dreams",
+    "slug": "centauri-dreams",
+    "address": "https://www.centauri-dreams.org/",
+    "normalizedUrl": "https://www.centauri-dreams.org",
+    "feed": "https://www.centauri-dreams.org/feed/",
+    "tags": [
+      "exoplanets",
+      "astrobiology",
+      "space exploration",
+      "astrophysics"
+    ],
+    "description": "Paul Gilster's long-running blog on interstellar exploration, exoplanets, propulsion research, and the search for life beyond Earth.",
+    "author": "Paul Gilster",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 20
   },
   {
     "id": "physics-cocktail-party-physics",
@@ -1990,6 +3486,72 @@ export const blogs = [
     "sourceRow": 14
   },
   {
+    "id": "physics-earthsky",
+    "title": "EarthSky",
+    "slug": "earthsky",
+    "address": "https://earthsky.org/",
+    "normalizedUrl": "https://earthsky.org",
+    "feed": "https://earthsky.org/feed/",
+    "tags": [
+      "astronomy",
+      "stargazing",
+      "space",
+      "earth science"
+    ],
+    "description": "Daily guides to night-sky events, moon phases, and meteor showers, plus news on astronomy, space missions, and Earth science.",
+    "author": "EarthSky",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 19
+  },
+  {
+    "id": "physics-esa-space-science",
+    "title": "ESA Space Science",
+    "slug": "esa-space-science",
+    "address": "https://www.esa.int/Science_Exploration/Space_Science",
+    "normalizedUrl": "https://www.esa.int/Science_Exploration/Space_Science",
+    "feed": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+    "tags": [
+      "space exploration",
+      "planetary science",
+      "exoplanets",
+      "astronomy"
+    ],
+    "description": "The European Space Agency's news on its science missions, from planetary probes to space telescopes studying stars, galaxies, and comets.",
+    "author": "European Space Agency",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 23
+  },
+  {
+    "id": "physics-in-the-dark",
+    "title": "In the Dark",
+    "slug": "in-the-dark",
+    "address": "https://telescoper.blog/",
+    "normalizedUrl": "https://telescoper.blog",
+    "feed": "https://telescoper.blog/feed/",
+    "tags": [
+      "cosmology",
+      "astrophysics",
+      "academia",
+      "open science"
+    ],
+    "description": "Cosmologist Peter Coles blogs about astrophysics, academic publishing, and the Open Journal of Astrophysics, mixed with music and culture.",
+    "author": "Peter Coles",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 17
+  },
+  {
     "id": "physics-nanoscale-views",
     "title": "nanoscale views",
     "slug": "nanoscale-views",
@@ -2056,6 +3618,28 @@ export const blogs = [
     "sourceRow": 7
   },
   {
+    "id": "physics-physics-forums-insights",
+    "title": "Physics Forums Insights",
+    "slug": "physics-forums-insights",
+    "address": "https://www.physicsforums.com/insights/",
+    "normalizedUrl": "https://www.physicsforums.com/insights/",
+    "feed": "https://www.physicsforums.com/insights/feed/",
+    "tags": [
+      "physics",
+      "mathematics",
+      "tutorials",
+      "history of science"
+    ],
+    "description": "The Physics Forums blog, where experienced members write explainers and essays on physics, mathematics, engineering, and the history of science.",
+    "author": "Physics Forums",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 16
+  },
+  {
     "id": "physics-physics-world",
     "title": "Physics World",
     "slug": "physics-world",
@@ -2101,6 +3685,28 @@ export const blogs = [
     "sourceRow": 2
   },
   {
+    "id": "physics-quantum-frontiers",
+    "title": "Quantum Frontiers",
+    "slug": "quantum-frontiers",
+    "address": "https://quantumfrontiers.com/",
+    "normalizedUrl": "https://quantumfrontiers.com",
+    "feed": "https://quantumfrontiers.com/feed/",
+    "tags": [
+      "quantum computing",
+      "quantum physics",
+      "quantum mechanics",
+      "academia"
+    ],
+    "description": "The blog of Caltech's Institute for Quantum Information and Matter, where researchers write about quantum computing, physics, and academic life.",
+    "author": "Caltech IQIM",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 18
+  },
+  {
     "id": "physics-shtetl-optimized",
     "title": "Shtetl-Optimized",
     "slug": "shtetl-optimized",
@@ -2123,6 +3729,28 @@ export const blogs = [
     "sourceRow": 3
   },
   {
+    "id": "physics-spacecom",
+    "title": "Space.com",
+    "slug": "spacecom",
+    "address": "https://www.space.com/",
+    "normalizedUrl": "https://www.space.com",
+    "feed": "https://www.space.com/feeds.xml",
+    "tags": [
+      "space exploration",
+      "astronomy",
+      "space",
+      "science news"
+    ],
+    "description": "Space and astronomy news covering NASA and commercial launches, missions, skywatching events, and new discoveries about the universe.",
+    "author": "Space.com",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 15
+  },
+  {
     "id": "physics-starts-with-a-bang",
     "title": "Starts With A Bang",
     "slug": "starts-with-a-bang",
@@ -2143,6 +3771,50 @@ export const blogs = [
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "physics-the-planetary-society",
+    "title": "The Planetary Society",
+    "slug": "the-planetary-society",
+    "address": "https://www.planetary.org/articles",
+    "normalizedUrl": "https://www.planetary.org/articles",
+    "feed": "https://www.planetary.org/rss/articles",
+    "tags": [
+      "planetary science",
+      "space exploration",
+      "astrobiology",
+      "space policy"
+    ],
+    "description": "Articles from the nonprofit space advocacy group co-founded by Carl Sagan, on planetary missions, the search for life, and space policy.",
+    "author": "The Planetary Society",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 22
+  },
+  {
+    "id": "physics-the-quantum-insider",
+    "title": "The Quantum Insider",
+    "slug": "the-quantum-insider",
+    "address": "https://thequantuminsider.com/",
+    "normalizedUrl": "https://thequantuminsider.com",
+    "feed": "https://thequantuminsider.com/feed/",
+    "tags": [
+      "quantum computing",
+      "quantum",
+      "tech industry",
+      "news"
+    ],
+    "description": "Industry news and market analysis on quantum computing, sensing, and communication companies, funding rounds, and research partnerships.",
+    "author": "The Quantum Insider",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 24
   },
   {
     "id": "physics-triton-station",
@@ -2189,6 +3861,52 @@ export const blogs = [
     "sourceRow": 10
   },
   {
+    "id": "programming-and-technology-bleepingcomputer",
+    "title": "BleepingComputer",
+    "slug": "bleepingcomputer",
+    "address": "https://www.bleepingcomputer.com/",
+    "normalizedUrl": "https://www.bleepingcomputer.com",
+    "feed": "https://www.bleepingcomputer.com/feed/",
+    "tags": [
+      "cybersecurity",
+      "malware",
+      "data breaches",
+      "vulnerabilities",
+      "tech news"
+    ],
+    "description": "Cybersecurity news site covering ransomware, malware, data breaches, and software vulnerabilities, along with technology how-to guides.",
+    "author": "BleepingComputer",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 28
+  },
+  {
+    "id": "programming-and-technology-chrome-for-developers-blog",
+    "title": "Chrome for Developers Blog",
+    "slug": "chrome-for-developers-blog",
+    "address": "https://developer.chrome.com/blog",
+    "normalizedUrl": "https://developer.chrome.com/blog",
+    "feed": "https://developer.chrome.com/static/blog/feed.xml",
+    "tags": [
+      "web development",
+      "web performance",
+      "javascript",
+      "developer tools",
+      "release notes"
+    ],
+    "description": "The Chrome team's developer blog on new web platform features, Chrome releases, DevTools, extensions, WebGPU, and web performance.",
+    "author": "Google Chrome team",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 22
+  },
+  {
     "id": "programming-and-technology-coding-horror",
     "title": "Coding Horror",
     "slug": "coding-horror",
@@ -2208,6 +3926,28 @@ export const blogs = [
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 10
+  },
+  {
+    "id": "programming-and-technology-css-tricks",
+    "title": "CSS-Tricks",
+    "slug": "css-tricks",
+    "address": "https://css-tricks.com/",
+    "normalizedUrl": "https://css-tricks.com",
+    "feed": "https://css-tricks.com/feed/",
+    "tags": [
+      "css",
+      "frontend",
+      "web design",
+      "web development"
+    ],
+    "description": "A long-running front-end learning site with tutorials and reference guides on CSS, HTML, and the newest web platform features.",
+    "author": "CSS-Tricks",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 21
   },
   {
     "id": "programming-and-technology-dan-luu",
@@ -2252,6 +3992,96 @@ export const blogs = [
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 19
+  },
+  {
+    "id": "programming-and-technology-freecodecamp-news",
+    "title": "freeCodeCamp News",
+    "slug": "freecodecamp-news",
+    "address": "https://www.freecodecamp.org/news/",
+    "normalizedUrl": "https://www.freecodecamp.org/news/",
+    "feed": "https://www.freecodecamp.org/news/rss/",
+    "tags": [
+      "tutorials",
+      "web development",
+      "javascript",
+      "python",
+      "learn to code"
+    ],
+    "description": "Thousands of free programming tutorials from the freeCodeCamp community on web development, Python, JavaScript, DevOps, security, and AI.",
+    "author": "freeCodeCamp",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 20
+  },
+  {
+    "id": "programming-and-technology-hackaday",
+    "title": "Hackaday",
+    "slug": "hackaday",
+    "address": "https://hackaday.com/",
+    "normalizedUrl": "https://hackaday.com",
+    "feed": "https://hackaday.com/blog/feed/",
+    "tags": [
+      "electronics",
+      "diy",
+      "computer hardware",
+      "open source"
+    ],
+    "description": "Daily stories about hardware hacks, electronics, DIY builds, retrocomputing, and open-source projects from makers around the world.",
+    "author": "Hackaday",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 25
+  },
+  {
+    "id": "programming-and-technology-ieee-spectrum",
+    "title": "IEEE Spectrum",
+    "slug": "ieee-spectrum",
+    "address": "https://spectrum.ieee.org/",
+    "normalizedUrl": "https://spectrum.ieee.org",
+    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
+    "tags": [
+      "electronics",
+      "robotics",
+      "technology",
+      "computing"
+    ],
+    "description": "IEEE's flagship magazine covering engineering and technology news, including semiconductors, robotics, AI, energy, and computing.",
+    "author": "IEEE",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 32
+  },
+  {
+    "id": "programming-and-technology-jeff-geerling",
+    "title": "Jeff Geerling",
+    "slug": "jeff-geerling",
+    "address": "https://www.jeffgeerling.com/",
+    "normalizedUrl": "https://www.jeffgeerling.com",
+    "feed": "https://www.jeffgeerling.com/blog.xml",
+    "tags": [
+      "raspberry pi",
+      "computer hardware",
+      "linux",
+      "open source",
+      "devops"
+    ],
+    "description": "Jeff Geerling's blog on Raspberry Pi and single-board computers, homelab hardware, Linux, Ansible automation, and open-source projects.",
+    "author": "Jeff Geerling",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 31
   },
   {
     "id": "programming-and-technology-joho-no-todai-english",
@@ -2320,6 +4150,28 @@ export const blogs = [
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 17
+  },
+  {
+    "id": "programming-and-technology-lwnnet",
+    "title": "LWN.net",
+    "slug": "lwnnet",
+    "address": "https://lwn.net/",
+    "normalizedUrl": "https://lwn.net",
+    "feed": "https://lwn.net/headlines/rss",
+    "tags": [
+      "linux",
+      "open source",
+      "security",
+      "news"
+    ],
+    "description": "Reader-supported news and in-depth reporting on the Linux kernel, free software development, distributions, and open-source security.",
+    "author": "LWN.net",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 27
   },
   {
     "id": "programming-and-technology-ned-batchelder",
@@ -2499,6 +4351,28 @@ export const blogs = [
     "sourceRow": 14
   },
   {
+    "id": "programming-and-technology-stratechery",
+    "title": "Stratechery",
+    "slug": "stratechery",
+    "address": "https://stratechery.com/",
+    "normalizedUrl": "https://stratechery.com",
+    "feed": "https://stratechery.com/feed/",
+    "tags": [
+      "tech industry",
+      "technology",
+      "commentary",
+      "economics"
+    ],
+    "description": "Ben Thompson's analysis of the business, strategy, and impact of technology companies, with free weekly articles and subscriber updates.",
+    "author": "Ben Thompson",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 26
+  },
+  {
     "id": "programming-and-technology-tall-snarky-canadian",
     "title": "Tall Snarky Canadian",
     "slug": "tall-snarky-canadian",
@@ -2519,6 +4393,28 @@ export const blogs = [
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "programming-and-technology-techcrunch",
+    "title": "TechCrunch",
+    "slug": "techcrunch",
+    "address": "https://techcrunch.com/",
+    "normalizedUrl": "https://techcrunch.com",
+    "feed": "https://techcrunch.com/feed/",
+    "tags": [
+      "startups",
+      "tech industry",
+      "tech news",
+      "ai"
+    ],
+    "description": "News on startups, venture capital, Big Tech, and AI companies, reporting on the business of technology since 2005.",
+    "author": "TechCrunch",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 29
   },
   {
     "id": "programming-and-technology-the-go-blog",
@@ -2543,6 +4439,28 @@ export const blogs = [
     "sourceRow": 16
   },
   {
+    "id": "programming-and-technology-the-old-new-thing",
+    "title": "The Old New Thing",
+    "slug": "the-old-new-thing",
+    "address": "https://devblogs.microsoft.com/oldnewthing/",
+    "normalizedUrl": "https://devblogs.microsoft.com/oldnewthing/",
+    "feed": "https://devblogs.microsoft.com/oldnewthing/feed/",
+    "tags": [
+      "windows",
+      "programming",
+      "debugging",
+      "software development"
+    ],
+    "description": "Raymond Chen's long-running Microsoft blog on Windows internals, Win32 and COM programming, debugging puzzles, and the history of Windows design.",
+    "author": "Raymond Chen",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 24
+  },
+  {
     "id": "programming-and-technology-the-pragmatic-engineer",
     "title": "The Pragmatic Engineer",
     "slug": "the-pragmatic-engineer",
@@ -2563,6 +4481,28 @@ export const blogs = [
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 8
+  },
+  {
+    "id": "programming-and-technology-the-verge",
+    "title": "The Verge",
+    "slug": "the-verge",
+    "address": "https://www.theverge.com/",
+    "normalizedUrl": "https://www.theverge.com",
+    "feed": "https://www.theverge.com/rss/index.xml",
+    "tags": [
+      "tech news",
+      "reviews",
+      "technology",
+      "culture"
+    ],
+    "description": "Technology news, product reviews, and features on consumer electronics, AI, science, and internet culture, published since 2011.",
+    "author": "The Verge",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 30
   },
   {
     "id": "programming-and-technology-trey-hunner",
@@ -2587,6 +4527,28 @@ export const blogs = [
     "sourceRow": 6
   },
   {
+    "id": "programming-and-technology-troy-hunt",
+    "title": "Troy Hunt",
+    "slug": "troy-hunt",
+    "address": "https://www.troyhunt.com/",
+    "normalizedUrl": "https://www.troyhunt.com",
+    "feed": "https://www.troyhunt.com/rss/",
+    "tags": [
+      "security",
+      "data breaches",
+      "privacy",
+      "cybersecurity"
+    ],
+    "description": "Security researcher Troy Hunt, creator of Have I Been Pwned, writes about data breaches, web security, and privacy, plus weekly video updates.",
+    "author": "Troy Hunt",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 23
+  },
+  {
     "id": "science-ars-technica-science",
     "title": "Ars Technica Science",
     "slug": "ars-technica-science",
@@ -2607,6 +4569,50 @@ export const blogs = [
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "science-carbon-brief",
+    "title": "Carbon Brief",
+    "slug": "carbon-brief",
+    "address": "https://www.carbonbrief.org/",
+    "normalizedUrl": "https://www.carbonbrief.org",
+    "feed": "https://www.carbonbrief.org/feed",
+    "tags": [
+      "climate",
+      "energy transition",
+      "environmental science",
+      "sustainability"
+    ],
+    "description": "UK-based site explaining climate science, energy, and climate policy through data-driven articles, charts, and expert Q&As.",
+    "author": "Carbon Brief",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 23
+  },
+  {
+    "id": "science-ground-truths",
+    "title": "Ground Truths",
+    "slug": "ground-truths",
+    "address": "https://erictopol.substack.com/",
+    "normalizedUrl": "https://erictopol.substack.com",
+    "feed": "https://erictopol.substack.com/feed",
+    "tags": [
+      "medicine",
+      "biomedicine",
+      "public health",
+      "evidence-based medicine"
+    ],
+    "description": "Cardiologist and scientist Eric Topol reviews new biomedical research on aging, genomics, AI in medicine, and clinical trials.",
+    "author": "Eric Topol",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 24
   },
   {
     "id": "science-in-the-pipeline-derek-lowe",
@@ -2653,6 +4659,29 @@ export const blogs = [
     "sourceRow": 14
   },
   {
+    "id": "science-live-science",
+    "title": "Live Science",
+    "slug": "live-science",
+    "address": "https://www.livescience.com/",
+    "normalizedUrl": "https://www.livescience.com",
+    "feed": "https://www.livescience.com/feeds.xml",
+    "tags": [
+      "science news",
+      "archaeology",
+      "biology",
+      "space",
+      "health"
+    ],
+    "description": "Daily science news and explainers on archaeology, animals, health, space, and the human body, written for curious general readers.",
+    "author": "Live Science",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 17
+  },
+  {
     "id": "science-mind-the-brain",
     "title": "Mind the Brain",
     "slug": "mind-the-brain",
@@ -2695,6 +4724,28 @@ export const blogs = [
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 6
+  },
+  {
+    "id": "science-nautilus",
+    "title": "Nautilus",
+    "slug": "nautilus",
+    "address": "https://nautil.us/",
+    "normalizedUrl": "https://nautil.us",
+    "feed": "https://nautil.us/feed",
+    "tags": [
+      "science communication",
+      "philosophy of science",
+      "biology",
+      "culture"
+    ],
+    "description": "A science magazine of narrative essays and features connecting research in biology, physics, and the mind to culture and philosophy.",
+    "author": "Nautilus",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 19
   },
   {
     "id": "science-neuroskeptic",
@@ -2785,6 +4836,28 @@ export const blogs = [
     "sourceRow": 7
   },
   {
+    "id": "science-popular-science",
+    "title": "Popular Science",
+    "slug": "popular-science",
+    "address": "https://www.popsci.com/",
+    "normalizedUrl": "https://www.popsci.com",
+    "feed": "https://www.popsci.com/feed/",
+    "tags": [
+      "general science",
+      "technology",
+      "environment",
+      "diy"
+    ],
+    "description": "Science and technology stories since 1872, from animal behavior and climate to space, gadgets, and do-it-yourself projects.",
+    "author": "Popular Science",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 20
+  },
+  {
     "id": "science-quanta-magazine",
     "title": "Quanta Magazine",
     "slug": "quanta-magazine",
@@ -2829,6 +4902,29 @@ export const blogs = [
     "sourceRow": 9
   },
   {
+    "id": "science-science-news",
+    "title": "Science News",
+    "slug": "science-news",
+    "address": "https://www.sciencenews.org/",
+    "normalizedUrl": "https://www.sciencenews.org",
+    "feed": "https://www.sciencenews.org/feed",
+    "tags": [
+      "science news",
+      "biology",
+      "space",
+      "health",
+      "science journalism"
+    ],
+    "description": "Nonprofit news magazine published since 1921, reporting on discoveries across life sciences, physics, space, health, and the environment.",
+    "author": "Society for Science",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 16
+  },
+  {
     "id": "science-science-based-medicine",
     "title": "Science-Based Medicine",
     "slug": "science-based-medicine",
@@ -2871,6 +4967,117 @@ export const blogs = [
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 12
+  },
+  {
+    "id": "science-sciencedaily",
+    "title": "ScienceDaily",
+    "slug": "sciencedaily",
+    "address": "https://www.sciencedaily.com/",
+    "normalizedUrl": "https://www.sciencedaily.com",
+    "feed": "https://www.sciencedaily.com/rss/all.xml",
+    "tags": [
+      "science news",
+      "research",
+      "biology",
+      "environment"
+    ],
+    "description": "Research news drawn from university and institute press releases across health, the physical sciences, environment, and technology.",
+    "author": "ScienceDaily",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 18
+  },
+  {
+    "id": "science-scientific-american",
+    "title": "Scientific American",
+    "slug": "scientific-american",
+    "address": "https://www.scientificamerican.com/",
+    "normalizedUrl": "https://www.scientificamerican.com",
+    "feed": "https://www.scientificamerican.com/platform/syndication/rss/",
+    "tags": [
+      "science news",
+      "general science",
+      "health",
+      "technology"
+    ],
+    "description": "Founded in 1845, Scientific American explains advances in science, health, technology, and the environment for a general audience.",
+    "author": "Scientific American",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 15
+  },
+  {
+    "id": "science-smithsonian-science-nature",
+    "title": "Smithsonian Science & Nature",
+    "slug": "smithsonian-science-nature",
+    "address": "https://www.smithsonianmag.com/category/science-nature/",
+    "normalizedUrl": "https://www.smithsonianmag.com/category/science-nature/",
+    "feed": "https://www.smithsonianmag.com/rss/science-nature/",
+    "tags": [
+      "biology",
+      "environment",
+      "paleontology",
+      "archaeology",
+      "earth science"
+    ],
+    "description": "Smithsonian Magazine's science section, with features on wildlife, conservation, paleontology, archaeology, and the natural world.",
+    "author": "Smithsonian Magazine",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 21
+  },
+  {
+    "id": "science-stat-news",
+    "title": "STAT News",
+    "slug": "stat-news",
+    "address": "https://www.statnews.com/",
+    "normalizedUrl": "https://www.statnews.com",
+    "feed": "https://www.statnews.com/feed/",
+    "tags": [
+      "medicine",
+      "biotechnology",
+      "pharma",
+      "public health"
+    ],
+    "description": "Health and medicine journalism covering biotech, pharmaceuticals, health policy, and life sciences research, with some subscriber-only analysis.",
+    "author": "STAT",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 22
+  },
+  {
+    "id": "science-your-local-epidemiologist",
+    "title": "Your Local Epidemiologist",
+    "slug": "your-local-epidemiologist",
+    "address": "https://yourlocalepidemiologist.substack.com/",
+    "normalizedUrl": "https://yourlocalepidemiologist.substack.com",
+    "feed": "https://yourlocalepidemiologist.substack.com/feed",
+    "tags": [
+      "public health",
+      "epidemiology",
+      "health",
+      "science communication"
+    ],
+    "description": "Epidemiologist Katelyn Jetelina translates public health research on outbreaks, vaccines, and everyday health risks into plain language.",
+    "author": "Katelyn Jetelina",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 25
   }
 ];
 

@@ -14,6 +14,7 @@ import Articles from '../pages/Articles';
 import ArticleDetails from '../pages/ArticleDetails';
 import Directory from '../pages/Directory';
 import NotFound from '../pages/NotFound';
+import { blogService } from '../services/blogService';
 
 describe('Routing & Page Integrations', () => {
   it('renders Home page with directory hero and categories', () => {
@@ -39,7 +40,13 @@ describe('Routing & Page Integrations', () => {
     );
 
     expect(screen.getByRole('heading', { level: 1, name: /engineering blogs/i })).toBeInTheDocument();
-    expect(screen.getAllByText('Martin Fowler')[0]).toBeInTheDocument();
+    // The first page lists the category in title order; derive the expected card from the data
+    // so the test keeps passing as blogs are added
+    const [firstTitle] = blogService
+      .getBlogsByCategory('engineering')
+      .map((b) => b.title)
+      .sort((a, b) => a.localeCompare(b));
+    expect(screen.getAllByText(firstTitle)[0]).toBeInTheDocument();
   });
 
   it('renders 404 state when navigating to invalid category', () => {

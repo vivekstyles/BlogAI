@@ -3,60 +3,282 @@ export const tags = [
   {
     "name": "machine learning",
     "slug": "machine-learning",
-    "count": 11,
-    "blogCount": 11
-  },
-  {
-    "name": "investing",
-    "slug": "investing",
-    "count": 8,
-    "blogCount": 8
-  },
-  {
-    "name": "python",
-    "slug": "python",
-    "count": 8,
-    "blogCount": 8
-  },
-  {
-    "name": "ai research",
-    "slug": "ai-research",
-    "count": 7,
-    "blogCount": 7
+    "count": 20,
+    "blogCount": 20
   },
   {
     "name": "recipes",
     "slug": "recipes",
-    "count": 7,
-    "blogCount": 7
+    "count": 17,
+    "blogCount": 17
   },
   {
-    "name": "deep learning",
-    "slug": "deep-learning",
-    "count": 6,
-    "blogCount": 6
-  },
-  {
-    "name": "large language models",
-    "slug": "large-language-models",
-    "count": 6,
-    "blogCount": 6
+    "name": "investing",
+    "slug": "investing",
+    "count": 12,
+    "blogCount": 12
   },
   {
     "name": "open source",
     "slug": "open-source",
+    "count": 12,
+    "blogCount": 12
+  },
+  {
+    "name": "ai research",
+    "slug": "ai-research",
+    "count": 11,
+    "blogCount": 11
+  },
+  {
+    "name": "tech industry",
+    "slug": "tech-industry",
+    "count": 11,
+    "blogCount": 11
+  },
+  {
+    "name": "python",
+    "slug": "python",
+    "count": 10,
+    "blogCount": 10
+  },
+  {
+    "name": "biology",
+    "slug": "biology",
+    "count": 9,
+    "blogCount": 9
+  },
+  {
+    "name": "car reviews",
+    "slug": "car-reviews",
+    "count": 9,
+    "blogCount": 9
+  },
+  {
+    "name": "large language models",
+    "slug": "large-language-models",
+    "count": 9,
+    "blogCount": 9
+  },
+  {
+    "name": "personal finance",
+    "slug": "personal-finance",
+    "count": 9,
+    "blogCount": 9
+  },
+  {
+    "name": "academia",
+    "slug": "academia",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "cooking",
+    "slug": "cooking",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "deep learning",
+    "slug": "deep-learning",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "health",
+    "slug": "health",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "healthy eating",
+    "slug": "healthy-eating",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "mathematics",
+    "slug": "mathematics",
+    "count": 8,
+    "blogCount": 8
+  },
+  {
+    "name": "ai policy",
+    "slug": "ai-policy",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "combinatorics",
+    "slug": "combinatorics",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "distributed systems",
+    "slug": "distributed-systems",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "home cooking",
+    "slug": "home-cooking",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "infrastructure",
+    "slug": "infrastructure",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "science news",
+    "slug": "science-news",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "space",
+    "slug": "space",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "technology",
+    "slug": "technology",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "web development",
+    "slug": "web-development",
+    "count": 7,
+    "blogCount": 7
+  },
+  {
+    "name": "astronomy",
+    "slug": "astronomy",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "automotive news",
+    "slug": "automotive-news",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "electric vehicles",
+    "slug": "electric-vehicles",
     "count": 6,
     "blogCount": 6
   },
   {
     "name": "financial independence",
     "slug": "financial-independence",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "motorsport",
+    "slug": "motorsport",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "programming",
+    "slug": "programming",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "retirement planning",
+    "slug": "retirement-planning",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "saving money",
+    "slug": "saving-money",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "security",
+    "slug": "security",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "software engineering",
+    "slug": "software-engineering",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "space exploration",
+    "slug": "space-exploration",
+    "count": 6,
+    "blogCount": 6
+  },
+  {
+    "name": "artificial intelligence",
+    "slug": "artificial-intelligence",
     "count": 5,
     "blogCount": 5
   },
   {
-    "name": "infrastructure",
-    "slug": "infrastructure",
+    "name": "astrophysics",
+    "slug": "astrophysics",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "baking",
+    "slug": "baking",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "budgeting",
+    "slug": "budgeting",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "car culture",
+    "slug": "car-culture",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "computer hardware",
+    "slug": "computer-hardware",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "cosmology",
+    "slug": "cosmology",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "devops",
+    "slug": "devops",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "education",
+    "slug": "education",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "linux",
+    "slug": "linux",
     "count": 5,
     "blogCount": 5
   },
@@ -67,110 +289,218 @@ export const tags = [
     "blogCount": 5
   },
   {
-    "name": "biology",
-    "slug": "biology",
+    "name": "new cars",
+    "slug": "new-cars",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "news",
+    "slug": "news",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "number theory",
+    "slug": "number-theory",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "public health",
+    "slug": "public-health",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "release notes",
+    "slug": "release-notes",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "scalability",
+    "slug": "scalability",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "tutorials",
+    "slug": "tutorials",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "ai safety",
+    "slug": "ai-safety",
     "count": 4,
     "blogCount": 4
   },
   {
-    "name": "combinatorics",
-    "slug": "combinatorics",
+    "name": "aws",
+    "slug": "aws",
     "count": 4,
     "blogCount": 4
   },
   {
-    "name": "cooking",
-    "slug": "cooking",
+    "name": "backend",
+    "slug": "backend",
     "count": 4,
     "blogCount": 4
-  },
-  {
-    "name": "cosmology",
-    "slug": "cosmology",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "electric vehicles",
-    "slug": "electric-vehicles",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "health",
-    "slug": "health",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "healthy eating",
-    "slug": "healthy-eating",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "personal finance",
-    "slug": "personal-finance",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "programming",
-    "slug": "programming",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "tech industry",
-    "slug": "tech-industry",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "web development",
-    "slug": "web-development",
-    "count": 4,
-    "blogCount": 4
-  },
-  {
-    "name": "academia",
-    "slug": "academia",
-    "count": 3,
-    "blogCount": 3
-  },
-  {
-    "name": "ai policy",
-    "slug": "ai-policy",
-    "count": 3,
-    "blogCount": 3
-  },
-  {
-    "name": "baking",
-    "slug": "baking",
-    "count": 3,
-    "blogCount": 3
   },
   {
     "name": "behavioral finance",
     "slug": "behavioral-finance",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "cloud",
+    "slug": "cloud",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "culture",
+    "slug": "culture",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "cybersecurity",
+    "slug": "cybersecurity",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "data science",
+    "slug": "data-science",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "developer tools",
+    "slug": "developer-tools",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "environment",
+    "slug": "environment",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "generative ai",
+    "slug": "generative-ai",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "geometry",
+    "slug": "geometry",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "javascript",
+    "slug": "javascript",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "performance",
+    "slug": "performance",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "plant-based diet",
+    "slug": "plant-based-diet",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "research",
+    "slug": "research",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "skepticism",
+    "slug": "skepticism",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "software development",
+    "slug": "software-development",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "taxes",
+    "slug": "taxes",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "tech news",
+    "slug": "tech-news",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
+    "name": "ai",
+    "slug": "ai",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "budgeting",
-    "slug": "budgeting",
+    "name": "ai engineering",
+    "slug": "ai-engineering",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "car culture",
-    "slug": "car-culture",
+    "name": "ai tools",
+    "slug": "ai-tools",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "car reviews",
-    "slug": "car-reviews",
+    "name": "algorithms",
+    "slug": "algorithms",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "climate",
+    "slug": "climate",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "commentary",
+    "slug": "commentary",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "complexity",
+    "slug": "complexity",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "computer vision",
+    "slug": "computer-vision",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "computing",
+    "slug": "computing",
     "count": 3,
     "blogCount": 3
   },
@@ -181,20 +511,86 @@ export const tags = [
     "blogCount": 3
   },
   {
-    "name": "distributed systems",
-    "slug": "distributed-systems",
+    "name": "credit cards",
+    "slug": "credit-cards",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "education",
-    "slug": "education",
+    "name": "cryptography",
+    "slug": "cryptography",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "linux",
-    "slug": "linux",
+    "name": "css",
+    "slug": "css",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "data engineering",
+    "slug": "data-engineering",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "desserts",
+    "slug": "desserts",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "early retirement",
+    "slug": "early-retirement",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "earth science",
+    "slug": "earth-science",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "economics",
+    "slug": "economics",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "energy transition",
+    "slug": "energy-transition",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "engineering management",
+    "slug": "engineering-management",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "ev news",
+    "slug": "ev-news",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "frontend",
+    "slug": "frontend",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "general science",
+    "slug": "general-science",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "llm evaluation",
+    "slug": "llm-evaluation",
     "count": 3,
     "blogCount": 3
   },
@@ -205,20 +601,62 @@ export const tags = [
     "blogCount": 3
   },
   {
-    "name": "motorsport",
-    "slug": "motorsport",
+    "name": "mathematical physics",
+    "slug": "mathematical-physics",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "number theory",
-    "slug": "number-theory",
+    "name": "medicine",
+    "slug": "medicine",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "performance",
-    "slug": "performance",
+    "name": "mobile",
+    "slug": "mobile",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "nutrition science",
+    "slug": "nutrition-science",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "open science",
+    "slug": "open-science",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "philosophy of mathematics",
+    "slug": "philosophy-of-mathematics",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "physics",
+    "slug": "physics",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "podcast",
+    "slug": "podcast",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "popular math",
+    "slug": "popular-math",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "privacy",
+    "slug": "privacy",
     "count": 3,
     "blogCount": 3
   },
@@ -229,68 +667,80 @@ export const tags = [
     "blogCount": 3
   },
   {
+    "name": "puzzles",
+    "slug": "puzzles",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "quantum computing",
+    "slug": "quantum-computing",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
     "name": "reinforcement learning",
     "slug": "reinforcement-learning",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "release notes",
-    "slug": "release-notes",
+    "name": "retirement",
+    "slug": "retirement",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "retirement planning",
-    "slug": "retirement-planning",
+    "name": "reviews",
+    "slug": "reviews",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "saving money",
-    "slug": "saving-money",
+    "name": "road tests",
+    "slug": "road-tests",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "security",
-    "slug": "security",
+    "name": "science communication",
+    "slug": "science-communication",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "skepticism",
-    "slug": "skepticism",
+    "name": "testing",
+    "slug": "testing",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "software development",
-    "slug": "software-development",
+    "name": "theoretical computer science",
+    "slug": "theoretical-computer-science",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "software engineering",
-    "slug": "software-engineering",
+    "name": "vegetarian",
+    "slug": "vegetarian",
     "count": 3,
     "blogCount": 3
   },
   {
-    "name": "ai",
-    "slug": "ai",
+    "name": "agile",
+    "slug": "agile",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "ai tools",
-    "slug": "ai-tools",
+    "name": "ai criticism",
+    "slug": "ai-criticism",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "algorithms",
-    "slug": "algorithms",
+    "name": "ai infrastructure",
+    "slug": "ai-infrastructure",
     "count": 2,
     "blogCount": 2
   },
@@ -301,20 +751,50 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "astronomy",
-    "slug": "astronomy",
+    "name": "archaeology",
+    "slug": "archaeology",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "astrophysics",
-    "slug": "astrophysics",
+    "name": "architecture",
+    "slug": "architecture",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "backend",
-    "slug": "backend",
+    "name": "astrobiology",
+    "slug": "astrobiology",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "automotive history",
+    "slug": "automotive-history",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "banking",
+    "slug": "banking",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "batteries",
+    "slug": "batteries",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "biomedicine",
+    "slug": "biomedicine",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "biotechnology",
+    "slug": "biotechnology",
     "count": 2,
     "blogCount": 2
   },
@@ -325,8 +805,26 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "climate",
-    "slug": "climate",
+    "name": "careers",
+    "slug": "careers",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "category theory",
+    "slug": "category-theory",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "charging infrastructure",
+    "slug": "charging-infrastructure",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "cloud architecture",
+    "slug": "cloud-architecture",
     "count": 2,
     "blogCount": 2
   },
@@ -337,20 +835,14 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "complexity",
-    "slug": "complexity",
+    "name": "complexity theory",
+    "slug": "complexity-theory",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "computer hardware",
-    "slug": "computer-hardware",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "computer vision",
-    "slug": "computer-vision",
+    "name": "computer science",
+    "slug": "computer-science",
     "count": 2,
     "blogCount": 2
   },
@@ -361,56 +853,68 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "css",
-    "slug": "css",
+    "name": "data analysis",
+    "slug": "data-analysis",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "cybersecurity",
-    "slug": "cybersecurity",
+    "name": "data breaches",
+    "slug": "data-breaches",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "data engineering",
-    "slug": "data-engineering",
+    "name": "databases",
+    "slug": "databases",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "data science",
-    "slug": "data-science",
+    "name": "debugging",
+    "slug": "debugging",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "developer tools",
-    "slug": "developer-tools",
+    "name": "diy",
+    "slug": "diy",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "devops",
-    "slug": "devops",
+    "name": "eating habits",
+    "slug": "eating-habits",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "early retirement",
-    "slug": "early-retirement",
+    "name": "electronics",
+    "slug": "electronics",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "engineering management",
-    "slug": "engineering-management",
+    "name": "environmental science",
+    "slug": "environmental-science",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "ev news",
-    "slug": "ev-news",
+    "name": "ethics",
+    "slug": "ethics",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "evidence-based medicine",
+    "slug": "evidence-based-medicine",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "exoplanets",
+    "slug": "exoplanets",
     "count": 2,
     "blogCount": 2
   },
@@ -421,20 +925,14 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "frontend",
-    "slug": "frontend",
+    "name": "formula 1",
+    "slug": "formula-1",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "generative ai",
-    "slug": "generative-ai",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "geometry",
-    "slug": "geometry",
+    "name": "frugality",
+    "slug": "frugality",
     "count": 2,
     "blogCount": 2
   },
@@ -445,14 +943,26 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "home cooking",
-    "slug": "home-cooking",
+    "name": "gluten-free",
+    "slug": "gluten-free",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "javascript",
-    "slug": "javascript",
+    "name": "history of science",
+    "slug": "history-of-science",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "industry",
+    "slug": "industry",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "kubernetes",
+    "slug": "kubernetes",
     "count": 2,
     "blogCount": 2
   },
@@ -463,8 +973,8 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "llm evaluation",
-    "slug": "llm-evaluation",
+    "name": "link roundups",
+    "slug": "link-roundups",
     "count": 2,
     "blogCount": 2
   },
@@ -475,8 +985,8 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "mathematics",
-    "slug": "mathematics",
+    "name": "meal prep",
+    "slug": "meal-prep",
     "count": 2,
     "blogCount": 2
   },
@@ -487,8 +997,14 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "mlops",
+    "slug": "mlops",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "motogp",
+    "slug": "motogp",
     "count": 2,
     "blogCount": 2
   },
@@ -499,20 +1015,14 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "natural language processing",
+    "slug": "natural-language-processing",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "networking",
     "slug": "networking",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "news",
-    "slug": "news",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "nutrition science",
-    "slug": "nutrition-science",
     "count": 2,
     "blogCount": 2
   },
@@ -523,14 +1033,14 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "open science",
-    "slug": "open-science",
+    "name": "packaging",
+    "slug": "packaging",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "packaging",
-    "slug": "packaging",
+    "name": "paleontology",
+    "slug": "paleontology",
     "count": 2,
     "blogCount": 2
   },
@@ -547,32 +1057,26 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "philosophy of mathematics",
-    "slug": "philosophy-of-mathematics",
+    "name": "pharma",
+    "slug": "pharma",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "physics",
-    "slug": "physics",
+    "name": "philosophy of science",
+    "slug": "philosophy-of-science",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "plant-based diet",
-    "slug": "plant-based-diet",
+    "name": "planetary science",
+    "slug": "planetary-science",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "privacy",
-    "slug": "privacy",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "public health",
-    "slug": "public-health",
+    "name": "probability",
+    "slug": "probability",
     "count": 2,
     "blogCount": 2
   },
@@ -583,44 +1087,92 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "pytorch",
+    "slug": "pytorch",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "quantum",
+    "slug": "quantum",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "quantum mechanics",
+    "slug": "quantum-mechanics",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "quantum physics",
+    "slug": "quantum-physics",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "quick meals",
+    "slug": "quick-meals",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "react",
     "slug": "react",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "retirement",
-    "slug": "retirement",
+    "name": "recommender systems",
+    "slug": "recommender-systems",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "reviews",
-    "slug": "reviews",
+    "name": "refactoring",
+    "slug": "refactoring",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "scalability",
-    "slug": "scalability",
+    "name": "robotics",
+    "slug": "robotics",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "science news",
-    "slug": "science-news",
+    "name": "safe withdrawal rates",
+    "slug": "safe-withdrawal-rates",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "space",
-    "slug": "space",
+    "name": "science journalism",
+    "slug": "science-journalism",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "space exploration",
-    "slug": "space-exploration",
+    "name": "seasonal cooking",
+    "slug": "seasonal-cooking",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "software architecture",
+    "slug": "software-architecture",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "spy photos",
+    "slug": "spy-photos",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "stargazing",
+    "slug": "stargazing",
     "count": 2,
     "blogCount": 2
   },
@@ -631,14 +1183,26 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "sustainability",
+    "slug": "sustainability",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "system design",
+    "slug": "system-design",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "systems",
     "slug": "systems",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "technology",
-    "slug": "technology",
+    "name": "teaching",
+    "slug": "teaching",
     "count": 2,
     "blogCount": 2
   },
@@ -649,32 +1213,32 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "testing",
-    "slug": "testing",
+    "name": "transportation",
+    "slug": "transportation",
     "count": 2,
     "blogCount": 2
   },
   {
-    "name": "theoretical computer science",
-    "slug": "theoretical-computer-science",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "tutorials",
-    "slug": "tutorials",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "vegetarian",
-    "slug": "vegetarian",
+    "name": "videos",
+    "slug": "videos",
     "count": 2,
     "blogCount": 2
   },
   {
     "name": "visual math",
     "slug": "visual-math",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "web design",
+    "slug": "web-design",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "web performance",
+    "slug": "web-performance",
     "count": 2,
     "blogCount": 2
   },
@@ -691,32 +1255,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "agile",
-    "slug": "agile",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "ai criticism",
-    "slug": "ai-criticism",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "ai engineering",
-    "slug": "ai-engineering",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "ai infrastructure",
-    "slug": "ai-infrastructure",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "ai safety",
-    "slug": "ai-safety",
+    "name": "algebra",
+    "slug": "algebra",
     "count": 1,
     "blogCount": 1
   },
@@ -745,18 +1285,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "architecture",
-    "slug": "architecture",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "artificial intelligence",
-    "slug": "artificial-intelligence",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "atomic physics",
     "slug": "atomic-physics",
     "count": 1,
@@ -775,50 +1303,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "automotive history",
-    "slug": "automotive-history",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "automotive news",
-    "slug": "automotive-news",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "autonomous vehicles",
     "slug": "autonomous-vehicles",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "aws",
-    "slug": "aws",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "batteries",
-    "slug": "batteries",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "big data",
     "slug": "big-data",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "biomedicine",
-    "slug": "biomedicine",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "biotechnology",
-    "slug": "biotechnology",
     "count": 1,
     "blogCount": 1
   },
@@ -847,18 +1339,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "careers",
-    "slug": "careers",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "category theory",
-    "slug": "category-theory",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "cern",
     "slug": "cern",
     "count": 1,
@@ -867,12 +1347,6 @@ export const tags = [
   {
     "name": "charging",
     "slug": "charging",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "charging infrastructure",
-    "slug": "charging-infrastructure",
     "count": 1,
     "blogCount": 1
   },
@@ -901,18 +1375,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "cloud",
-    "slug": "cloud",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "cloud architecture",
-    "slug": "cloud-architecture",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "collaborative research",
     "slug": "collaborative-research",
     "count": 1,
@@ -925,32 +1387,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "commentary",
-    "slug": "commentary",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "community",
     "slug": "community",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "complexity theory",
-    "slug": "complexity-theory",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "computer science",
-    "slug": "computer-science",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "computing",
-    "slug": "computing",
     "count": 1,
     "blogCount": 1
   },
@@ -967,14 +1405,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "cryptography",
-    "slug": "cryptography",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "culture",
-    "slug": "culture",
+    "name": "credit score",
+    "slug": "credit-score",
     "count": 1,
     "blogCount": 1
   },
@@ -997,14 +1429,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "data analysis",
-    "slug": "data-analysis",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "debugging",
-    "slug": "debugging",
+    "name": "debt",
+    "slug": "debt",
     "count": 1,
     "blogCount": 1
   },
@@ -1017,12 +1443,6 @@ export const tags = [
   {
     "name": "design patterns",
     "slug": "design-patterns",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "desserts",
-    "slug": "desserts",
     "count": 1,
     "blogCount": 1
   },
@@ -1063,26 +1483,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "earth science",
-    "slug": "earth-science",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "eating habits",
-    "slug": "eating-habits",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "ebpf",
     "slug": "ebpf",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "economics",
-    "slug": "economics",
     "count": 1,
     "blogCount": 1
   },
@@ -1099,26 +1501,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "energy transition",
-    "slug": "energy-transition",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "environment",
-    "slug": "environment",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "environmental science",
-    "slug": "environmental-science",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "ethics",
-    "slug": "ethics",
+    "name": "epidemiology",
+    "slug": "epidemiology",
     "count": 1,
     "blogCount": 1
   },
@@ -1141,8 +1525,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "evidence-based medicine",
-    "slug": "evidence-based-medicine",
+    "name": "extra income",
+    "slug": "extra-income",
     "count": 1,
     "blogCount": 1
   },
@@ -1159,6 +1543,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "food science",
+    "slug": "food-science",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "formalization",
     "slug": "formalization",
     "count": 1,
@@ -1167,12 +1557,6 @@ export const tags = [
   {
     "name": "foundations",
     "slug": "foundations",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "frugality",
-    "slug": "frugality",
     "count": 1,
     "blogCount": 1
   },
@@ -1195,12 +1579,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "general science",
-    "slug": "general-science",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "global development",
     "slug": "global-development",
     "count": 1,
@@ -1213,26 +1591,26 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "gluten-free",
-    "slug": "gluten-free",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "go",
     "slug": "go",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "higgs boson",
-    "slug": "higgs-boson",
+    "name": "group theory",
+    "slug": "group-theory",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "history of science",
-    "slug": "history-of-science",
+    "name": "healthy recipes",
+    "slug": "healthy-recipes",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "higgs boson",
+    "slug": "higgs-boson",
     "count": 1,
     "blogCount": 1
   },
@@ -1261,8 +1639,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "industry",
-    "slug": "industry",
+    "name": "indian cuisine",
+    "slug": "indian-cuisine",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "indian personal finance",
+    "slug": "indian-personal-finance",
     "count": 1,
     "blogCount": 1
   },
@@ -1297,8 +1681,20 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "japanese cuisine",
+    "slug": "japanese-cuisine",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "lean",
     "slug": "lean",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "learn to code",
+    "slug": "learn-to-code",
     "count": 1,
     "blogCount": 1
   },
@@ -1315,14 +1711,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "link roundups",
-    "slug": "link-roundups",
+    "name": "low-cost investing",
+    "slug": "low-cost-investing",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "low-cost investing",
-    "slug": "low-cost-investing",
+    "name": "malware",
+    "slug": "malware",
     "count": 1,
     "blogCount": 1
   },
@@ -1345,14 +1741,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "mathematical physics",
-    "slug": "mathematical-physics",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "meal prep",
-    "slug": "meal-prep",
+    "name": "math education",
+    "slug": "math-education",
     "count": 1,
     "blogCount": 1
   },
@@ -1363,8 +1753,8 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "medicine",
-    "slug": "medicine",
+    "name": "mediterranean diet",
+    "slug": "mediterranean-diet",
     "count": 1,
     "blogCount": 1
   },
@@ -1381,26 +1771,32 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "mlops",
-    "slug": "mlops",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "modified gravity",
     "slug": "modified-gravity",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "nanoscience",
-    "slug": "nanoscience",
+    "name": "money habits",
+    "slug": "money-habits",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "natural language processing",
-    "slug": "natural-language-processing",
+    "name": "motorcycles",
+    "slug": "motorcycles",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "mutual funds",
+    "slug": "mutual-funds",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "nanoscience",
+    "slug": "nanoscience",
     "count": 1,
     "blogCount": 1
   },
@@ -1425,12 +1821,6 @@ export const tags = [
   {
     "name": "neuroscience",
     "slug": "neuroscience",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "new cars",
-    "slug": "new-cars",
     "count": 1,
     "blogCount": 1
   },
@@ -1465,12 +1855,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "paleontology",
-    "slug": "paleontology",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "passive investing",
     "slug": "passive-investing",
     "count": 1,
@@ -1489,44 +1873,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "pharma",
-    "slug": "pharma",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "philosophy of science",
-    "slug": "philosophy-of-science",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "photography",
     "slug": "photography",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "podcast",
-    "slug": "podcast",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "popular math",
-    "slug": "popular-math",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "popular physics",
     "slug": "popular-physics",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "probability",
-    "slug": "probability",
     "count": 1,
     "blogCount": 1
   },
@@ -1567,50 +1921,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "puzzles",
-    "slug": "puzzles",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "pytorch",
-    "slug": "pytorch",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "quantum",
-    "slug": "quantum",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "quantum computing",
-    "slug": "quantum-computing",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "quantum gravity",
     "slug": "quantum-gravity",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "quantum mechanics",
-    "slug": "quantum-mechanics",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "quantum physics",
-    "slug": "quantum-physics",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "quick meals",
-    "slug": "quick-meals",
+    "name": "raspberry pi",
+    "slug": "raspberry-pi",
     "count": 1,
     "blogCount": 1
   },
@@ -1623,18 +1941,6 @@ export const tags = [
   {
     "name": "real estate investing",
     "slug": "real-estate-investing",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "recommender systems",
-    "slug": "recommender-systems",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "refactoring",
-    "slug": "refactoring",
     "count": 1,
     "blogCount": 1
   },
@@ -1663,38 +1969,14 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "research",
-    "slug": "research",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "research reviews",
     "slug": "research-reviews",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "road tests",
-    "slug": "road-tests",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "robotics",
-    "slug": "robotics",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "rust",
     "slug": "rust",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "safe withdrawal rates",
-    "slug": "safe-withdrawal-rates",
     "count": 1,
     "blogCount": 1
   },
@@ -1717,18 +1999,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "science communication",
-    "slug": "science-communication",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "science journalism",
-    "slug": "science-journalism",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "scientific integrity",
     "slug": "scientific-integrity",
     "count": 1,
@@ -1737,12 +2007,6 @@ export const tags = [
   {
     "name": "scientific policy",
     "slug": "scientific-policy",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "seasonal cooking",
-    "slug": "seasonal-cooking",
     "count": 1,
     "blogCount": 1
   },
@@ -1759,26 +2023,26 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "side hustle",
+    "slug": "side-hustle",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "society",
     "slug": "society",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "software architecture",
-    "slug": "software-architecture",
+    "name": "space policy",
+    "slug": "space-policy",
     "count": 1,
     "blogCount": 1
   },
   {
     "name": "sports nutrition",
     "slug": "sports-nutrition",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "spy photos",
-    "slug": "spy-photos",
     "count": 1,
     "blogCount": 1
   },
@@ -1791,6 +2055,12 @@ export const tags = [
   {
     "name": "standard model",
     "slug": "standard-model",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "startups",
+    "slug": "startups",
     "count": 1,
     "blogCount": 1
   },
@@ -1819,36 +2089,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "sustainability",
-    "slug": "sustainability",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "system design",
-    "slug": "system-design",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "taxes",
-    "slug": "taxes",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "teaching",
-    "slug": "teaching",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "tech news",
-    "slug": "tech-news",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "theoretical physics",
     "slug": "theoretical-physics",
     "count": 1,
@@ -1873,12 +2113,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "transportation",
-    "slug": "transportation",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "tuning",
     "slug": "tuning",
     "count": 1,
@@ -1891,32 +2125,32 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "used cars",
+    "slug": "used-cars",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "ux",
     "slug": "ux",
     "count": 1,
     "blogCount": 1
   },
   {
-    "name": "videos",
-    "slug": "videos",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "web design",
-    "slug": "web-design",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "web performance",
-    "slug": "web-performance",
+    "name": "vulnerabilities",
+    "slug": "vulnerabilities",
     "count": 1,
     "blogCount": 1
   },
   {
     "name": "whole foods",
     "slug": "whole-foods",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "windows",
+    "slug": "windows",
     "count": 1,
     "blogCount": 1
   },

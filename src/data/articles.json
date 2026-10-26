@@ -51,9 +51,9 @@
       "data-analysis-tools"
     ],
     "relatedBlogs": [
+      "bleepingcomputer",
       "krebs-on-security",
-      "schneier-on-security",
-      "coding-horror"
+      "schneier-on-security"
     ]
   },
   {
@@ -115,8 +115,8 @@
     ],
     "relatedBlogs": [
       "simon-willisons-weblog",
-      "hamels-blog",
-      "one-useful-thing"
+      "aws-machine-learning-blog",
+      "hamels-blog"
     ]
   },
   {
@@ -173,9 +173,9 @@
       "personal-finance-rules"
     ],
     "relatedBlogs": [
+      "clever-girl-finance",
       "afford-anything",
-      "budgets-are-sexy",
-      "the-college-investor"
+      "budgets-are-sexy"
     ]
   },
   {
@@ -238,8 +238,8 @@
     ],
     "relatedBlogs": [
       "of-dollars-and-data",
-      "coding-horror",
-      "dan-luu"
+      "towards-data-science",
+      "bleepingcomputer"
     ]
   },
   {
@@ -304,9 +304,9 @@
       "numpy-examples-for-numerical-computing"
     ],
     "relatedBlogs": [
+      "freecodecamp-news",
       "john-d-cook",
-      "ned-batchelder",
-      "python-insider"
+      "ned-batchelder"
     ]
   },
   {
@@ -367,9 +367,9 @@
       "sql-queries-for-data-analysts"
     ],
     "relatedBlogs": [
+      "freecodecamp-news",
       "ned-batchelder",
-      "python-insider",
-      "python-software-foundation-news"
+      "python-insider"
     ]
   },
   {
@@ -435,8 +435,8 @@
     ],
     "relatedBlogs": [
       "of-dollars-and-data",
-      "coding-horror",
-      "dan-luu"
+      "towards-data-science",
+      "bleepingcomputer"
     ]
   },
   {
@@ -568,9 +568,9 @@
       "history-of-language-models"
     ],
     "relatedBlogs": [
+      "openai-news",
       "simon-willisons-weblog",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "ahead-of-ai"
     ]
   },
   {
@@ -706,9 +706,9 @@
       "llm-breakthroughs"
     ],
     "relatedBlogs": [
+      "openai-news",
       "simon-willisons-weblog",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "ahead-of-ai"
     ]
   },
   {
@@ -767,7 +767,7 @@
     "relatedBlogs": [
       "abnormal-returns",
       "budgets-are-sexy",
-      "humbledollar"
+      "clark-howard"
     ]
   },
   {
@@ -826,7 +826,7 @@
     "relatedBlogs": [
       "abnormal-returns",
       "budgets-are-sexy",
-      "humbledollar"
+      "clark-howard"
     ]
   },
   {
@@ -888,8 +888,8 @@
     ],
     "relatedBlogs": [
       "the-college-investor",
-      "abnormal-returns",
-      "budgets-are-sexy"
+      "clever-girl-finance",
+      "abnormal-returns"
     ]
   },
   {
@@ -950,9 +950,9 @@
       "personal-finance-rules"
     ],
     "relatedBlogs": [
+      "clever-girl-finance",
       "the-college-investor",
-      "abnormal-returns",
-      "afford-anything"
+      "abnormal-returns"
     ]
   },
   {
@@ -1017,9 +1017,9 @@
       "history-of-language-models"
     ],
     "relatedBlogs": [
+      "openai-news",
       "simon-willisons-weblog",
-      "ahead-of-ai",
-      "andrej-karpathy-blog"
+      "ahead-of-ai"
     ]
   },
   {
@@ -1081,8 +1081,8 @@
     ],
     "relatedBlogs": [
       "abnormal-returns",
-      "financial-samurai",
-      "humbledollar"
+      "clever-girl-finance",
+      "financial-samurai"
     ]
   },
   {
@@ -1144,8 +1144,8 @@
     ],
     "relatedBlogs": [
       "humbledollar",
-      "a-wealth-of-common-sense",
-      "abnormal-returns"
+      "clever-girl-finance",
+      "kiplinger"
     ]
   },
   {
@@ -1202,9 +1202,9 @@
       "budgeting-methods"
     ],
     "relatedBlogs": [
+      "making-sense-of-cents",
       "abnormal-returns",
-      "budgets-are-sexy",
-      "humbledollar"
+      "budgets-are-sexy"
     ]
   },
   {
@@ -1266,8 +1266,8 @@
     ],
     "relatedBlogs": [
       "afford-anything",
-      "the-college-investor",
-      "abnormal-returns"
+      "clever-girl-finance",
+      "the-college-investor"
     ]
   },
   {
@@ -1328,9 +1328,9 @@
       "data-analysis-techniques"
     ],
     "relatedBlogs": [
-      "of-dollars-and-data",
-      "coding-horror",
-      "dan-luu"
+      "marc-brooker",
+      "martin-kleppmann",
+      "of-dollars-and-data"
     ]
   },
   {
@@ -1391,9 +1391,9 @@
       "python-interview-questions"
     ],
     "relatedBlogs": [
+      "freecodecamp-news",
       "ned-batchelder",
-      "python-insider",
-      "python-software-foundation-news"
+      "python-insider"
     ]
   },
   {
@@ -1522,9 +1522,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "kdnuggets",
       "ahead-of-ai",
-      "machine-learning-mastery",
-      "real-python"
+      "machine-learning-mastery"
     ]
   },
   {
@@ -1585,9 +1585,9 @@
       "python-interview-questions"
     ],
     "relatedBlogs": [
+      "freecodecamp-news",
       "trey-hunner",
-      "coding-horror",
-      "dan-luu"
+      "coding-horror"
     ]
   },
   {
@@ -1648,9 +1648,9 @@
       "python-automation-scripts"
     ],
     "relatedBlogs": [
+      "freecodecamp-news",
       "ned-batchelder",
-      "python-insider",
-      "python-software-foundation-news"
+      "python-insider"
     ]
   },
   {
@@ -1720,8 +1720,8 @@
     ],
     "relatedBlogs": [
       "one-useful-thing",
-      "simon-willisons-weblog",
-      "joho-no-todai-english"
+      "aws-machine-learning-blog",
+      "exponential-view"
     ]
   },
   {
@@ -1790,9 +1790,9 @@
       "ai-transforming-industries-examples"
     ],
     "relatedBlogs": [
-      "joho-no-todai-english",
-      "acm-queue",
-      "ahead-of-ai"
+      "exponential-view",
+      "mit-technology-review-ai",
+      "understanding-ai"
     ]
   },
   {
@@ -1857,9 +1857,9 @@
       "ai-future-of-work-examples"
     ],
     "relatedBlogs": [
-      "one-useful-thing",
-      "simon-willisons-weblog",
-      "joho-no-todai-english"
+      "aws-machine-learning-blog",
+      "exponential-view",
+      "mit-technology-review-ai"
     ]
   },
   {
@@ -1928,9 +1928,9 @@
       "ai-in-business-operations-marketing-sales"
     ],
     "relatedBlogs": [
-      "one-useful-thing",
-      "simon-willisons-weblog",
-      "autoblog"
+      "aws-machine-learning-blog",
+      "exponential-view",
+      "mit-technology-review-ai"
     ]
   },
   {
@@ -2000,8 +2000,8 @@
     ],
     "relatedBlogs": [
       "bair-blog",
-      "joho-no-todai-english",
-      "acm-queue"
+      "exponential-view",
+      "mit-technology-review-ai"
     ]
   },
   {
@@ -2070,9 +2070,9 @@
       "mathematical-optimization-techniques"
     ],
     "relatedBlogs": [
-      "john-d-cook",
-      "mathbabe",
-      "quanta-magazine"
+      "math-programming",
+      "combinatorics-and-more",
+      "john-d-cook"
     ]
   },
   {
@@ -2138,7 +2138,7 @@
     "relatedBlogs": [
       "3blue1brown-blog",
       "betterexplained",
-      "mathbabe"
+      "combinatorics-and-more"
     ]
   },
   {
@@ -2208,9 +2208,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "kdnuggets",
       "machine-learning-mastery",
-      "real-python",
-      "ahead-of-ai"
+      "towards-data-science"
     ]
   },
   {
@@ -2273,7 +2273,7 @@
     "relatedBlogs": [
       "3blue1brown-blog",
       "betterexplained",
-      "mathbabe"
+      "combinatorics-and-more"
     ]
   },
   {
@@ -2353,7 +2353,7 @@
     "relatedBlogs": [
       "ahead-of-ai",
       "machine-learning-mastery",
-      "andrej-karpathy-blog"
+      "pytorch-blog"
     ]
   },
   {
@@ -2425,9 +2425,9 @@
       "python-machine-learning-examples"
     ],
     "relatedBlogs": [
-      "ahead-of-ai",
-      "airbnb-tech-blog",
-      "andrej-karpathy-blog"
+      "kdnuggets",
+      "towards-data-science",
+      "ahead-of-ai"
     ]
   },
   {
@@ -2637,8 +2637,8 @@
     ],
     "relatedBlogs": [
       "airbnb-tech-blog",
-      "mathbabe",
-      "spotify-engineering"
+      "combinatorics-and-more",
+      "dropbox-tech-blog"
     ]
   },
   {
@@ -2699,9 +2699,9 @@
       "linear-algebra-concepts-for-machine-learning"
     ],
     "relatedBlogs": [
+      "combinatorics-and-more",
       "john-d-cook",
-      "mathbabe",
-      "ahead-of-ai"
+      "mathbabe"
     ]
   },
   {
@@ -2756,9 +2756,9 @@
       "healthy-meal-ideas"
     ],
     "relatedBlogs": [
-      "love-and-lemons",
-      "nutritionfactsorg",
-      "precision-nutrition"
+      "abby-langer-nutrition",
+      "ambitious-kitchen",
+      "love-and-lemons"
     ]
   },
   {
@@ -2813,9 +2813,9 @@
       "healthy-meal-ideas"
     ],
     "relatedBlogs": [
-      "cookie-and-kate",
-      "love-and-lemons",
-      "nutritionfactsorg"
+      "abby-langer-nutrition",
+      "ambitious-kitchen",
+      "cookie-and-kate"
     ]
   },
   {
@@ -2870,9 +2870,9 @@
       "foods-rich-in-vitamins-and-minerals"
     ],
     "relatedBlogs": [
+      "ambitious-kitchen",
       "budget-bytes",
-      "cookie-and-kate",
-      "food-politics"
+      "the-kitchn"
     ]
   },
   {
@@ -2928,8 +2928,8 @@
     ],
     "relatedBlogs": [
       "stronger-by-science",
-      "budget-bytes",
-      "cookie-and-kate"
+      "abby-langer-nutrition",
+      "ambitious-kitchen"
     ]
   },
   {
@@ -2985,8 +2985,8 @@
     ],
     "relatedBlogs": [
       "the-nutrition-source",
-      "love-and-lemons",
-      "nutritionfactsorg"
+      "abby-langer-nutrition",
+      "ambitious-kitchen"
     ]
   },
   {
@@ -3050,8 +3050,8 @@
     ],
     "relatedBlogs": [
       "new-scientist",
-      "quanta-magazine",
-      "shtetl-optimized"
+      "physics-forums-insights",
+      "popular-science"
     ]
   },
   {
@@ -3106,9 +3106,9 @@
       "scientific-discoveries-that-changed-the-world"
     ],
     "relatedBlogs": [
+      "live-science",
       "new-scientist",
-      "sciencealert",
-      "ars-technica-science"
+      "science-news"
     ]
   },
   {
@@ -3172,8 +3172,8 @@
     ],
     "relatedBlogs": [
       "real-python",
-      "mathbabe",
-      "ned-batchelder"
+      "kdnuggets",
+      "freecodecamp-news"
     ]
   },
   {
@@ -3233,8 +3233,8 @@
     ],
     "relatedBlogs": [
       "real-python",
-      "ned-batchelder",
-      "python-insider"
+      "kdnuggets",
+      "towards-data-science"
     ]
   },
   {
@@ -3297,9 +3297,9 @@
       "physics-projects-for-students"
     ],
     "relatedBlogs": [
+      "physics-forums-insights",
       "quanta-magazine",
-      "shtetl-optimized",
-      "ars-technica-science"
+      "shtetl-optimized"
     ]
   },
   {
@@ -3358,9 +3358,9 @@
       "physics-concepts-explained-with-examples"
     ],
     "relatedBlogs": [
+      "physics-forums-insights",
       "quanta-magazine",
-      "shtetl-optimized",
-      "ars-technica-science"
+      "shtetl-optimized"
     ]
   },
   {
@@ -3423,9 +3423,9 @@
       "physics-experiments-at-home"
     ],
     "relatedBlogs": [
+      "physics-forums-insights",
       "shtetl-optimized",
-      "quanta-magazine",
-      "3blue1brown-blog"
+      "quanta-magazine"
     ]
   },
   {
@@ -3488,9 +3488,9 @@
       "physics-concepts-explained-with-examples"
     ],
     "relatedBlogs": [
+      "physics-forums-insights",
       "quanta-magazine",
-      "shtetl-optimized",
-      "of-dollars-and-data"
+      "shtetl-optimized"
     ]
   },
   {
@@ -3553,9 +3553,9 @@
       "python-machine-learning-examples"
     ],
     "relatedBlogs": [
+      "kdnuggets",
       "real-python",
-      "machine-learning-mastery",
-      "airbnb-tech-blog"
+      "machine-learning-mastery"
     ]
   },
   {
@@ -3618,9 +3618,9 @@
       "feature-engineering-techniques"
     ],
     "relatedBlogs": [
+      "kdnuggets",
       "real-python",
-      "machine-learning-mastery",
-      "airbnb-tech-blog"
+      "machine-learning-mastery"
     ]
   },
   {
@@ -3683,9 +3683,9 @@
       "machine-learning-algorithms-explained"
     ],
     "relatedBlogs": [
+      "kdnuggets",
       "machine-learning-mastery",
-      "real-python",
-      "ahead-of-ai"
+      "real-python"
     ]
   },
   {
@@ -3740,9 +3740,9 @@
       "physics-experiments-at-home"
     ],
     "relatedBlogs": [
+      "smithsonian-science-nature",
       "ars-technica-science",
-      "knowable-magazine",
-      "physorg-spotlight"
+      "knowable-magazine"
     ]
   },
   {
@@ -3797,9 +3797,9 @@
       "science-projects-for-students"
     ],
     "relatedBlogs": [
-      "ars-technica-science",
-      "knowable-magazine",
-      "physorg-spotlight"
+      "smithsonian-science-nature",
+      "earthsky",
+      "ars-technica-science"
     ]
   },
   {
@@ -3855,8 +3855,8 @@
     ],
     "relatedBlogs": [
       "ars-technica-science",
-      "knowable-magazine",
-      "quanta-magazine"
+      "carbon-brief",
+      "knowable-magazine"
     ]
   },
   {
@@ -3913,7 +3913,7 @@
     "relatedBlogs": [
       "ars-technica-science",
       "knowable-magazine",
-      "quanta-magazine"
+      "live-science"
     ]
   },
   {
@@ -3968,9 +3968,9 @@
       "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
-      "mathbabe",
-      "quanta-magazine",
-      "3blue1brown-blog"
+      "combinatorics-and-more",
+      "math-programming",
+      "mathbabe"
     ]
   },
   {
@@ -4094,9 +4094,9 @@
       "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
-      "3blue1brown-blog",
-      "betterexplained",
-      "math-with-bad-drawings"
+      "combinatorics-and-more",
+      "quomodocumque",
+      "3blue1brown-blog"
     ]
   },
   {
@@ -4151,9 +4151,9 @@
       "linear-algebra-problems-with-solutions"
     ],
     "relatedBlogs": [
+      "quomodocumque",
       "betterexplained",
-      "mathbabe",
-      "quanta-magazine-mathematics"
+      "combinatorics-and-more"
     ]
   },
   {
@@ -4208,9 +4208,9 @@
       "advanced-mathematics-concepts-with-applications"
     ],
     "relatedBlogs": [
+      "combinatorics-and-more",
       "john-d-cook",
-      "mathbabe",
-      "netflix-techblog"
+      "mathbabe"
     ]
   },
   {
@@ -4265,9 +4265,9 @@
       "python-data-science-projects"
     ],
     "relatedBlogs": [
-      "high-scalability",
-      "netflix-techblog",
-      "acm-queue"
+      "bytebytego",
+      "all-things-distributed",
+      "high-scalability"
     ]
   },
   {
@@ -4322,9 +4322,9 @@
       "python-data-science-projects"
     ],
     "relatedBlogs": [
+      "chrome-for-developers-blog",
       "github-engineering",
-      "stripe-engineering",
-      "acm-queue"
+      "stripe-engineering"
     ]
   }
 ]

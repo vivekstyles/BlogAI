@@ -4,23 +4,23 @@ export const categories = [
     "name": "Artificial Intelligence",
     "slug": "artificial-intelligence",
     "description": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
-    "count": 16,
+    "count": 29,
     "popularTags": [
       "agents",
       "ai criticism",
       "ai engineering",
+      "ai infrastructure",
       "ai policy",
       "ai research",
       "ai safety",
-      "ai tools",
-      "applied ml"
+      "ai tools"
     ]
   },
   {
     "name": "Automobile",
     "slug": "automobile",
     "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
-    "count": 13,
+    "count": 23,
     "popularTags": [
       "auto shows",
       "automotive",
@@ -36,87 +36,87 @@ export const categories = [
     "name": "Engineering",
     "slug": "engineering",
     "description": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
-    "count": 16,
+    "count": 28,
     "popularTags": [
       "agile",
       "ai",
+      "ai engineering",
       "ai infrastructure",
       "api",
       "architecture",
       "aws",
-      "backend",
-      "big data"
+      "backend"
     ]
   },
   {
     "name": "Food and Nutrition",
     "slug": "food-and-nutrition",
     "description": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes.",
-    "count": 12,
+    "count": 23,
     "popularTags": [
       "baking",
       "body composition",
       "bread",
       "budget cooking",
       "cooking",
+      "culture",
       "desserts",
-      "dietary guidelines",
-      "eating habits"
+      "dietary guidelines"
     ]
   },
   {
     "name": "Mathematics",
     "slug": "mathematics",
     "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
-    "count": 15,
+    "count": 25,
     "popularTags": [
       "academia",
+      "ai research",
+      "ai tools",
+      "algebra",
       "algorithms",
       "analysis",
       "applied mathematics",
-      "calculus",
-      "category theory",
-      "collaborative research",
-      "combinatorics"
+      "artificial intelligence"
     ]
   },
   {
     "name": "Personal Finance",
     "slug": "personal-finance",
     "description": "Budgeting, saving, debt, investing, retirement planning, and the everyday habits that build financial stability.",
-    "count": 14,
+    "count": 24,
     "popularTags": [
+      "banking",
       "behavioral finance",
       "bogleheads",
       "budgeting",
+      "credit cards",
+      "credit score",
       "data analysis",
-      "early retirement",
-      "economics",
-      "financial independence",
-      "financial planning"
+      "debt"
     ]
   },
   {
     "name": "Physics",
     "slug": "physics",
     "description": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
-    "count": 13,
+    "count": 23,
     "popularTags": [
       "academia",
       "acoustics",
+      "astrobiology",
       "astronomy",
       "astrophysics",
       "atomic physics",
       "cern",
-      "chemistry",
-      "complexity"
+      "chemistry"
     ]
   },
   {
     "name": "Programming and Technology",
     "slug": "programming-and-technology",
     "description": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
-    "count": 18,
+    "count": 31,
     "popularTags": [
       "ai",
       "apple",
@@ -125,23 +125,23 @@ export const categories = [
       "commentary",
       "community",
       "computer hardware",
-      "coverage"
+      "computing"
     ]
   },
   {
     "name": "Science",
     "slug": "science",
     "description": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
-    "count": 13,
+    "count": 24,
     "popularTags": [
+      "archaeology",
       "biology",
       "biomedicine",
       "biotechnology",
       "climate",
       "cognitive science",
-      "data",
-      "drug discovery",
-      "earth science"
+      "culture",
+      "data"
     ]
   }
 ];

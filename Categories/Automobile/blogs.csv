@@ -1,4 +1,4 @@
-Title,Address,RSS feed,Tags
+Title,Address,RSS feed,Tags,Description,Author,Language,Website status
 The Drive,https://www.thedrive.com/,https://www.thedrive.com/feed,"automotive;car reviews;motorsport;technology"
 Jalopnik,https://jalopnik.com/,https://jalopnik.com/rss,"car culture;transportation;reviews;electric vehicles"
 Autoblog,https://www.autoblog.com/,https://www.autoblog.com/rss.xml,"news;reviews;industry;hybrid"
@@ -8,7 +8,17 @@ Speedhunters,https://www.speedhunters.com/,http://www.speedhunters.com/feed/,"tu
 Ars Technica Cars,https://arstechnica.com/cars/,https://feeds.arstechnica.com/arstechnica/cars,"autonomous vehicles;infotainment;ev technology;safety"
 Motor1,https://www.motor1.com/,https://www.motor1.com/rss/news/all/,"supercars;spy photos;auto shows;concept cars"
 Car and Driver,https://www.caranddriver.com/,https://www.caranddriver.com/rss/all.xml/,car reviews;new cars;automotive news;road tests,"Car reviews, road tests and automotive news from Car and Driver magazine.",Car and Driver,en,active
-Electrek,https://electrek.co/,https://electrek.co/feed/,electric vehicles;tesla;clean energy;ev news,"News on electric vehicles, electric transport and clean energy.",Electrek,en,active
-InsideEVs,https://insideevs.com/,https://insideevs.com/rss/news/all/,electric vehicles;ev reviews;charging;ev news,"Electric vehicle news, reviews and charging coverage.",InsideEVs,en,active
+Electrek,https://electrek.co/,https://electrek.co/feed/,electric vehicles;tesla;clean energy;ev news,"News, reviews, and analysis of electric vehicles, e-bikes, and clean energy, with especially close coverage of Tesla.",Electrek,en,active
+InsideEVs,https://insideevs.com/,https://insideevs.com/rss/news/all/,electric vehicles;ev reviews;charging;ev news,"Electric vehicle news, reviews, and real-world range tests, plus coverage of charging networks and automakers' EV plans.",InsideEVs,en,active
 Road & Track,https://www.roadandtrack.com/,https://www.roadandtrack.com/rss/all.xml/,car culture;motorsport;performance cars;car reviews,"Car culture, motorsport and performance car coverage from Road & Track.",Road & Track,en,active
 Hagerty Media,https://www.hagerty.com/media/,https://www.hagerty.com/media/feed/,classic cars;car culture;collector cars;automotive history,"Stories on classic and collector cars, car culture and automotive history from Hagerty.",Hagerty,en,active
+Autocar,https://www.autocar.co.uk/,https://www.autocar.co.uk/rss,car reviews;automotive news;new cars;road tests,"British car magazine published since 1895, with new car reviews, road tests, first drives, and automotive industry news.",Autocar,en,active
+Carscoops,https://www.carscoops.com/,https://www.carscoops.com/feed/,automotive news;spy photos;electric vehicles;new cars,"Automotive news site covering new car reveals, spy shots, recalls, EVs, and industry stories, updated throughout the day.",Carscoops,en,active
+Autoweek,https://www.autoweek.com/,https://www.autoweek.com/rss/all.xml/,car culture;motorsport;automotive news;car reviews,"Car news, reviews, and racing coverage for enthusiasts, including NASCAR, Formula 1, IndyCar, and car culture features.",Autoweek,en,active
+Motorsport.com,https://www.motorsport.com/,https://www.motorsport.com/rss/all/news/,motorsport;formula 1;motogp;news,"Racing news, results, and analysis covering Formula 1, MotoGP, NASCAR, IndyCar, WEC, and other series worldwide.",Motorsport.com,en,active
+The Autopian,https://www.theautopian.com/,https://www.theautopian.com/feed/,car culture;automotive history;car reviews;transportation,"Car culture site from former Jalopnik writers, mixing engineering explainers, automotive history, design critique, and project-car stories.",The Autopian,en,active
+The Truth About Cars,https://www.thetruthaboutcars.com/,https://www.thetruthaboutcars.com/rss/feed/all,car reviews;automotive news;industry;commentary,"Long-running site for candid car reviews, auto industry news and analysis, and daily reader discussion questions.",The Truth About Cars,en,active
+Auto Express,https://www.autoexpress.co.uk/,https://www.autoexpress.co.uk/feed/all,car reviews;new cars;road tests;used cars,"UK car magazine with new and used car reviews, group tests, buying advice, and motoring news.",Auto Express,en,active
+electrive,https://www.electrive.com/,https://www.electrive.com/feed/,electric vehicles;charging infrastructure;ev news;batteries,"Industry news on electric mobility, covering EV launches, batteries, charging infrastructure, and fleet electrification.",electrive,en,active
+Autocar India,https://www.autocarindia.com/,https://www.autocarindia.com/rss/all,car reviews;new cars;motorcycles;automotive news,"India's edition of Autocar, reviewing new cars and motorcycles launched in India and covering the Indian automotive industry.",Autocar India,en,active
+The Race,https://www.the-race.com/,https://www.the-race.com/rss/,motorsport;formula 1;motogp;podcast,"Independent motorsport site with news, technical analysis, and podcasts on Formula 1, MotoGP, IndyCar, and Formula E.",The Race,en,active
