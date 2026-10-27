@@ -1,12 +1,12 @@
 Title,Address,RSS feed,Tags,Description,Author,Language,Website status
-The Drive,https://www.thedrive.com/,https://www.thedrive.com/feed,"automotive;car reviews;motorsport;technology"
-Jalopnik,https://jalopnik.com/,https://jalopnik.com/rss,"car culture;transportation;reviews;electric vehicles"
+The Drive,https://www.thedrive.com/,https://www.thedrive.com/feed,"automotive;car reviews;motorsport;technology","Car news, model reveals, and first-drive reviews, plus car culture features, tool and gear tests, and motorsport coverage.",The Drive,en,active
+Jalopnik,https://www.jalopnik.com/,https://www.jalopnik.com/feed/,"car culture;transportation;reviews;electric vehicles","Opinionated coverage of car culture and the auto industry, with news, buying guides, used-car price debates, and stories about anything with an engine.",Jalopnik,en,active
 Autoblog,https://www.autoblog.com/,https://www.autoblog.com/rss.xml,"news;reviews;industry;hybrid"
 Green Car Reports,https://www.greencarreports.com/,https://www.greencarreports.com/rss/news,"electric vehicles;clean tech;sustainability;batteries"
-CleanTechnica Automotive,https://cleantechnica.com/category/clean-transportation/,https://cleantechnica.com/feed/,"ev;energy transition;charging infrastructure;tesla"
-Speedhunters,https://www.speedhunters.com/,http://www.speedhunters.com/feed/,"tuning;drifting;motorsport;photography"
-Ars Technica Cars,https://arstechnica.com/cars/,https://feeds.arstechnica.com/arstechnica/cars,"autonomous vehicles;infotainment;ev technology;safety"
-Motor1,https://www.motor1.com/,https://www.motor1.com/rss/news/all/,"supercars;spy photos;auto shows;concept cars"
+CleanTechnica Automotive,https://cleantechnica.com/category/clean-transport-2/,https://cleantechnica.com/category/clean-transport-2/feed/,"ev;energy transition;charging infrastructure;tesla","CleanTechnica's clean transport section on electric cars, buses, and trucks, EV makers worldwide, robotaxis, charging, batteries, and emissions policy.",CleanTechnica,en,active
+Speedhunters,https://www.speedhunters.com/,http://www.speedhunters.com/feed/,"tuning;drifting;motorsport;photography",,Speedhunters,en,inactive
+Ars Technica Cars,https://arstechnica.com/cars/,https://feeds.arstechnica.com/arstechnica/cars,"autonomous vehicles;infotainment;ev technology;safety","Ars Technica's cars section, covering electric vehicles, self-driving technology, new car reviews, the auto business, and Formula 1.",Ars Technica,en,active
+Motor1,https://www.motor1.com/,https://www.motor1.com/rss/news/all/,"supercars;spy photos;auto shows;concept cars","Automotive news site with new model reveals, spy shots, car reviews, buying tips, and owner stories for car buyers, owners, and enthusiasts.",Motor1,en,active
 Car and Driver,https://www.caranddriver.com/,https://www.caranddriver.com/rss/all.xml/,car reviews;new cars;automotive news;road tests,"Car reviews, road tests and automotive news from Car and Driver magazine.",Car and Driver,en,active
 Electrek,https://electrek.co/,https://electrek.co/feed/,electric vehicles;tesla;clean energy;ev news,"News, reviews, and analysis of electric vehicles, e-bikes, and clean energy, with especially close coverage of Tesla.",Electrek,en,active
 InsideEVs,https://insideevs.com/,https://insideevs.com/rss/news/all/,electric vehicles;ev reviews;charging;ev news,"Electric vehicle news, reviews, and real-world range tests, plus coverage of charging networks and automakers' EV plans.",InsideEVs,en,active

@@ -46,13 +46,13 @@
       <outline type="rss" text="Autoweek" title="Autoweek" xmlUrl="https://www.autoweek.com/rss/all.xml/" htmlUrl="https://www.autoweek.com/" category="Automobile" />
       <outline type="rss" text="Car and Driver" title="Car and Driver" xmlUrl="https://www.caranddriver.com/rss/all.xml/" htmlUrl="https://www.caranddriver.com/" category="Automobile" />
       <outline type="rss" text="Carscoops" title="Carscoops" xmlUrl="https://www.carscoops.com/feed/" htmlUrl="https://www.carscoops.com/" category="Automobile" />
-      <outline type="rss" text="CleanTechnica Automotive" title="CleanTechnica Automotive" xmlUrl="https://cleantechnica.com/feed/" htmlUrl="https://cleantechnica.com/category/clean-transportation/" category="Automobile" />
+      <outline type="rss" text="CleanTechnica Automotive" title="CleanTechnica Automotive" xmlUrl="https://cleantechnica.com/category/clean-transport-2/feed/" htmlUrl="https://cleantechnica.com/category/clean-transport-2/" category="Automobile" />
       <outline type="rss" text="Electrek" title="Electrek" xmlUrl="https://electrek.co/feed/" htmlUrl="https://electrek.co/" category="Automobile" />
       <outline type="rss" text="electrive" title="electrive" xmlUrl="https://www.electrive.com/feed/" htmlUrl="https://www.electrive.com/" category="Automobile" />
       <outline type="rss" text="Green Car Reports" title="Green Car Reports" xmlUrl="https://www.greencarreports.com/rss/news" htmlUrl="https://www.greencarreports.com/" category="Automobile" />
       <outline type="rss" text="Hagerty Media" title="Hagerty Media" xmlUrl="https://www.hagerty.com/media/feed/" htmlUrl="https://www.hagerty.com/media/" category="Automobile" />
       <outline type="rss" text="InsideEVs" title="InsideEVs" xmlUrl="https://insideevs.com/rss/news/all/" htmlUrl="https://insideevs.com/" category="Automobile" />
-      <outline type="rss" text="Jalopnik" title="Jalopnik" xmlUrl="https://jalopnik.com/rss" htmlUrl="https://jalopnik.com/" category="Automobile" />
+      <outline type="rss" text="Jalopnik" title="Jalopnik" xmlUrl="https://www.jalopnik.com/feed/" htmlUrl="https://www.jalopnik.com/" category="Automobile" />
       <outline type="rss" text="Motor1" title="Motor1" xmlUrl="https://www.motor1.com/rss/news/all/" htmlUrl="https://www.motor1.com/" category="Automobile" />
       <outline type="rss" text="Motorsport.com" title="Motorsport.com" xmlUrl="https://www.motorsport.com/rss/all/news/" htmlUrl="https://www.motorsport.com/" category="Automobile" />
       <outline type="rss" text="Road &amp; Track" title="Road &amp; Track" xmlUrl="https://www.roadandtrack.com/rss/all.xml/" htmlUrl="https://www.roadandtrack.com/" category="Automobile" />
