@@ -56,7 +56,6 @@
       <outline type="rss" text="Motor1" title="Motor1" xmlUrl="https://www.motor1.com/rss/news/all/" htmlUrl="https://www.motor1.com/" category="Automobile" />
       <outline type="rss" text="Motorsport.com" title="Motorsport.com" xmlUrl="https://www.motorsport.com/rss/all/news/" htmlUrl="https://www.motorsport.com/" category="Automobile" />
       <outline type="rss" text="Road &amp; Track" title="Road &amp; Track" xmlUrl="https://www.roadandtrack.com/rss/all.xml/" htmlUrl="https://www.roadandtrack.com/" category="Automobile" />
-      <outline type="rss" text="Speedhunters" title="Speedhunters" xmlUrl="http://www.speedhunters.com/feed/" htmlUrl="https://www.speedhunters.com/" category="Automobile" />
       <outline type="rss" text="The Autopian" title="The Autopian" xmlUrl="https://www.theautopian.com/feed/" htmlUrl="https://www.theautopian.com/" category="Automobile" />
       <outline type="rss" text="The Drive" title="The Drive" xmlUrl="https://www.thedrive.com/feed" htmlUrl="https://www.thedrive.com/" category="Automobile" />
       <outline type="rss" text="The Race" title="The Race" xmlUrl="https://www.the-race.com/rss/" htmlUrl="https://www.the-race.com/" category="Automobile" />

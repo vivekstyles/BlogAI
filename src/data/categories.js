@@ -20,7 +20,7 @@ export const categories = [
     "name": "Automobile",
     "slug": "automobile",
     "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
-    "count": 23,
+    "count": 22,
     "popularTags": [
       "auto shows",
       "automotive",

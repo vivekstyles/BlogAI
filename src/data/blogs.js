@@ -665,7 +665,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 8
+    "sourceRow": 7
   },
   {
     "id": "automobile-auto-express",
@@ -687,7 +687,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 21
+    "sourceRow": 20
   },
   {
     "id": "automobile-autoblog",
@@ -731,7 +731,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 15
+    "sourceRow": 14
   },
   {
     "id": "automobile-autocar-india",
@@ -753,7 +753,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 23
+    "sourceRow": 22
   },
   {
     "id": "automobile-autoweek",
@@ -775,7 +775,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 17
+    "sourceRow": 16
   },
   {
     "id": "automobile-car-and-driver",
@@ -797,7 +797,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 10
+    "sourceRow": 9
   },
   {
     "id": "automobile-carscoops",
@@ -819,7 +819,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 16
+    "sourceRow": 15
   },
   {
     "id": "automobile-cleantechnica-automotive",
@@ -863,7 +863,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 11
+    "sourceRow": 10
   },
   {
     "id": "automobile-electrive",
@@ -885,7 +885,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 22
+    "sourceRow": 21
   },
   {
     "id": "automobile-green-car-reports",
@@ -929,7 +929,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 14
+    "sourceRow": 13
   },
   {
     "id": "automobile-insideevs",
@@ -951,7 +951,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 12
+    "sourceRow": 11
   },
   {
     "id": "automobile-jalopnik",
@@ -995,7 +995,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 9
+    "sourceRow": 8
   },
   {
     "id": "automobile-motorsportcom",
@@ -1017,7 +1017,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 18
+    "sourceRow": 17
   },
   {
     "id": "automobile-road-track",
@@ -1039,29 +1039,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 13
-  },
-  {
-    "id": "automobile-speedhunters",
-    "title": "Speedhunters",
-    "slug": "speedhunters",
-    "address": "https://www.speedhunters.com/",
-    "normalizedUrl": "https://www.speedhunters.com",
-    "feed": "http://www.speedhunters.com/feed/",
-    "tags": [
-      "tuning",
-      "drifting",
-      "motorsport",
-      "photography"
-    ],
-    "description": "",
-    "author": "Speedhunters",
-    "language": "en",
-    "status": "inactive",
-    "category": "Automobile",
-    "categorySlug": "automobile",
-    "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 7
+    "sourceRow": 12
   },
   {
     "id": "automobile-the-autopian",
@@ -1083,7 +1061,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 19
+    "sourceRow": 18
   },
   {
     "id": "automobile-the-drive",
@@ -1127,7 +1105,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 24
+    "sourceRow": 23
   },
   {
     "id": "automobile-the-truth-about-cars",
@@ -1149,7 +1127,7 @@ export const blogs = [
     "category": "Automobile",
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
-    "sourceRow": 20
+    "sourceRow": 19
   },
   {
     "id": "engineering-acm-queue",

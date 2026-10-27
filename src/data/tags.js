@@ -181,12 +181,6 @@ export const tags = [
     "blogCount": 6
   },
   {
-    "name": "motorsport",
-    "slug": "motorsport",
-    "count": 6,
-    "blogCount": 6
-  },
-  {
     "name": "programming",
     "slug": "programming",
     "count": 6,
@@ -285,6 +279,12 @@ export const tags = [
   {
     "name": "llms",
     "slug": "llms",
+    "count": 5,
+    "blogCount": 5
+  },
+  {
+    "name": "motorsport",
+    "slug": "motorsport",
     "count": 5,
     "blogCount": 5
   },
@@ -1471,12 +1471,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "drifting",
-    "slug": "drifting",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "drug discovery",
     "slug": "drug-discovery",
     "count": 1,
@@ -1873,12 +1867,6 @@ export const tags = [
     "blogCount": 1
   },
   {
-    "name": "photography",
-    "slug": "photography",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
     "name": "popular physics",
     "slug": "popular-physics",
     "count": 1,
@@ -2109,12 +2097,6 @@ export const tags = [
   {
     "name": "transformers",
     "slug": "transformers",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "tuning",
-    "slug": "tuning",
     "count": 1,
     "blogCount": 1
   },
