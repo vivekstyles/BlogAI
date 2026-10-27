@@ -2431,6 +2431,28 @@
     "sourceRow": 16
   },
   {
+    "id": "mathematics-joecmath-blog",
+    "title": "JoeCMath Blog",
+    "slug": "joecmath-blog",
+    "address": "https://joecmath.com/blog/",
+    "normalizedUrl": "https://joecmath.com/blog/",
+    "feed": "https://joecmath.com/feed.xml",
+    "tags": [
+      "algebra",
+      "calculus",
+      "linear algebra",
+      "math education"
+    ],
+    "description": "JoeCMath is a high school and college math blog featuring clear definitions, step-by-step explanations, worked examples, and companion video tutorials.",
+    "author": "JoeCMath",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 27
+  },
+  {
     "id": "mathematics-john-d-cook",
     "title": "John D. Cook",
     "slug": "john-d-cook",

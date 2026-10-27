@@ -68,7 +68,7 @@ export const categories = [
     "name": "Mathematics",
     "slug": "mathematics",
     "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
-    "count": 25,
+    "count": 26,
     "popularTags": [
       "academia",
       "ai research",

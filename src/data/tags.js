@@ -475,6 +475,12 @@ export const tags = [
     "blogCount": 3
   },
   {
+    "name": "calculus",
+    "slug": "calculus",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
     "name": "climate",
     "slug": "climate",
     "count": 3,
@@ -585,6 +591,12 @@ export const tags = [
   {
     "name": "general science",
     "slug": "general-science",
+    "count": 3,
+    "blogCount": 3
+  },
+  {
+    "name": "linear algebra",
+    "slug": "linear-algebra",
     "count": 3,
     "blogCount": 3
   },
@@ -745,6 +757,12 @@ export const tags = [
     "blogCount": 2
   },
   {
+    "name": "algebra",
+    "slug": "algebra",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
     "name": "analysis",
     "slug": "analysis",
     "count": 2,
@@ -795,12 +813,6 @@ export const tags = [
   {
     "name": "biotechnology",
     "slug": "biotechnology",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
-    "name": "calculus",
-    "slug": "calculus",
     "count": 2,
     "blogCount": 2
   },
@@ -967,12 +979,6 @@ export const tags = [
     "blogCount": 2
   },
   {
-    "name": "linear algebra",
-    "slug": "linear-algebra",
-    "count": 2,
-    "blogCount": 2
-  },
-  {
     "name": "link roundups",
     "slug": "link-roundups",
     "count": 2,
@@ -981,6 +987,12 @@ export const tags = [
   {
     "name": "markets",
     "slug": "markets",
+    "count": 2,
+    "blogCount": 2
+  },
+  {
+    "name": "math education",
+    "slug": "math-education",
     "count": 2,
     "blogCount": 2
   },
@@ -1251,12 +1263,6 @@ export const tags = [
   {
     "name": "agents",
     "slug": "agents",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "algebra",
-    "slug": "algebra",
     "count": 1,
     "blogCount": 1
   },
@@ -1731,12 +1737,6 @@ export const tags = [
   {
     "name": "math competitions",
     "slug": "math-competitions",
-    "count": 1,
-    "blogCount": 1
-  },
-  {
-    "name": "math education",
-    "slug": "math-education",
     "count": 1,
     "blogCount": 1
   },

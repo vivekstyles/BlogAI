@@ -125,6 +125,7 @@
       <outline type="rss" text="Gowers's Weblog" title="Gowers's Weblog" xmlUrl="https://gowers.wordpress.com/feed/" htmlUrl="https://gowers.wordpress.com/" category="Mathematics" />
       <outline type="rss" text="Gödel's Lost Letter and P=NP" title="Gödel's Lost Letter and P=NP" xmlUrl="https://rjlipton.wordpress.com/feed/" htmlUrl="https://rjlipton.wordpress.com/" category="Mathematics" />
       <outline type="rss" text="Infinitely More (Joel David Hamkins)" title="Infinitely More (Joel David Hamkins)" xmlUrl="https://www.infinitelymore.xyz/feed" htmlUrl="https://www.infinitelymore.xyz/" category="Mathematics" />
+      <outline type="rss" text="JoeCMath Blog" title="JoeCMath Blog" xmlUrl="https://joecmath.com/feed.xml" htmlUrl="https://joecmath.com/blog/" category="Mathematics" />
       <outline type="rss" text="John D. Cook" title="John D. Cook" xmlUrl="https://www.johndcook.com/blog/feed/" htmlUrl="https://www.johndcook.com/blog/" category="Mathematics" />
       <outline type="rss" text="Math with Bad Drawings" title="Math with Bad Drawings" xmlUrl="https://mathwithbaddrawings.com/feed/" htmlUrl="https://mathwithbaddrawings.com/" category="Mathematics" />
       <outline type="rss" text="Math ∩ Programming" title="Math ∩ Programming" xmlUrl="https://www.jeremykun.com/index.xml" htmlUrl="https://www.jeremykun.com/" category="Mathematics" />
