@@ -1,5 +1,290 @@
 [
   {
+    "slug": "basic-economic-principles",
+    "title": "15 Basic Economic Principles Everyone Should Understand",
+    "seoTitle": "15 Basic Economic Principles Everyone Should Understand",
+    "description": "15 economic principles, from scarcity and opportunity cost to incentives, trade, productivity and inflation, with real examples and where each has limits.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "economics",
+        "slug": "economics"
+      },
+      {
+        "name": "economic principles",
+        "slug": "economic-principles"
+      },
+      {
+        "name": "microeconomics",
+        "slug": "microeconomics"
+      },
+      {
+        "name": "macroeconomics",
+        "slug": "macroeconomics"
+      },
+      {
+        "name": "decision making",
+        "slug": "decision-making"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/basic-economic-principles",
+    "isCanonicalLocal": true,
+    "wordCount": 3437,
+    "readingTimeMinutes": 16,
+    "showToc": true,
+    "relatedArticles": [
+      "economic-concepts-for-beginners",
+      "economic-indicators-explained",
+      "supply-and-demand-examples"
+    ],
+    "relatedBlogs": [
+      "the-big-picture",
+      "exponential-view",
+      "stratechery"
+    ]
+  },
+  {
+    "slug": "economic-concepts-for-beginners",
+    "title": "30 Economic Concepts Every Beginner Should Know in 2026",
+    "seoTitle": "30 Economic Concepts Every Beginner Should Know (2026)",
+    "description": "30 economic concepts for beginners, from elasticity and interest rates to recessions, tariffs, stagflation and AI, with simple definitions and 2026 examples.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "economics",
+        "slug": "economics"
+      },
+      {
+        "name": "economic concepts",
+        "slug": "economic-concepts"
+      },
+      {
+        "name": "macroeconomics",
+        "slug": "macroeconomics"
+      },
+      {
+        "name": "microeconomics",
+        "slug": "microeconomics"
+      },
+      {
+        "name": "interest rates",
+        "slug": "interest-rates"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/economic-concepts-for-beginners",
+    "isCanonicalLocal": true,
+    "wordCount": 3731,
+    "readingTimeMinutes": 17,
+    "showToc": true,
+    "relatedArticles": [
+      "basic-economic-principles",
+      "economic-indicators-explained",
+      "how-inflation-affects-daily-life"
+    ],
+    "relatedBlogs": [
+      "the-big-picture",
+      "exponential-view",
+      "stratechery"
+    ]
+  },
+  {
+    "slug": "economic-indicators-explained",
+    "title": "25 Economic Indicators That Help Explain the Global Economy",
+    "seoTitle": "25 Economic Indicators That Explain the Global Economy",
+    "description": "25 economic indicators explained, from GDP, CPI and jobs data to PMIs, the yield curve, oil and trade: what each measures, how to read it, 2026 readings.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "economics",
+        "slug": "economics"
+      },
+      {
+        "name": "economic indicators",
+        "slug": "economic-indicators"
+      },
+      {
+        "name": "macroeconomics",
+        "slug": "macroeconomics"
+      },
+      {
+        "name": "inflation",
+        "slug": "inflation"
+      },
+      {
+        "name": "interest rates",
+        "slug": "interest-rates"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/economic-indicators-explained",
+    "isCanonicalLocal": true,
+    "wordCount": 4064,
+    "readingTimeMinutes": 18,
+    "showToc": true,
+    "relatedArticles": [
+      "economic-concepts-for-beginners",
+      "how-inflation-affects-daily-life",
+      "basic-economic-principles"
+    ],
+    "relatedBlogs": [
+      "the-big-picture",
+      "exponential-view",
+      "stratechery"
+    ]
+  },
+  {
+    "slug": "how-inflation-affects-daily-life",
+    "title": "10 Ways Inflation Affects Your Daily Life and Purchasing Power",
+    "seoTitle": "10 Ways Inflation Affects Your Daily Life (2026)",
+    "description": "How inflation affects your groceries, gas, paycheck, savings, loans, rent and retirement, with 2026 U.S. data and steps to protect your purchasing power.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "economics",
+        "slug": "economics"
+      },
+      {
+        "name": "inflation",
+        "slug": "inflation"
+      },
+      {
+        "name": "personal finance",
+        "slug": "personal-finance"
+      },
+      {
+        "name": "saving money",
+        "slug": "saving-money"
+      },
+      {
+        "name": "interest rates",
+        "slug": "interest-rates"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/how-inflation-affects-daily-life",
+    "isCanonicalLocal": true,
+    "wordCount": 2512,
+    "readingTimeMinutes": 11,
+    "showToc": true,
+    "relatedArticles": [
+      "economic-indicators-explained",
+      "economic-concepts-for-beginners",
+      "supply-and-demand-examples"
+    ],
+    "relatedBlogs": [
+      "clark-howard",
+      "abnormal-returns",
+      "afford-anything"
+    ]
+  },
+  {
+    "slug": "supply-and-demand-examples",
+    "title": "20 Real-World Examples of Supply and Demand in Everyday Life",
+    "seoTitle": "20 Real-World Examples of Supply and Demand (2026)",
+    "description": "20 real examples of supply and demand, from 2026 gas prices and egg shortages to surge pricing, concert tickets, RAM chips and rent, in plain language.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-01",
+    "updatedAt": "2026-11-01",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Personal Finance",
+        "slug": "personal-finance"
+      }
+    ],
+    "tags": [
+      {
+        "name": "economics",
+        "slug": "economics"
+      },
+      {
+        "name": "supply and demand",
+        "slug": "supply-and-demand"
+      },
+      {
+        "name": "prices",
+        "slug": "prices"
+      },
+      {
+        "name": "microeconomics",
+        "slug": "microeconomics"
+      },
+      {
+        "name": "inflation",
+        "slug": "inflation"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/supply-and-demand-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 3000,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "relatedArticles": [
+      "basic-economic-principles",
+      "economic-concepts-for-beginners",
+      "economic-indicators-explained"
+    ],
+    "relatedBlogs": [
+      "the-big-picture",
+      "exponential-view",
+      "stratechery"
+    ]
+  },
+  {
     "slug": "php2shell-php-vulnerabilities",
     "title": "PHP2Shell Explained: Critical PHP Security Vulnerabilities, CVEs, and How to Fix Them (2026)",
     "seoTitle": "PHP2Shell Explained: CVEs, Affected Versions and Fixes",
@@ -761,8 +1046,8 @@
     "showToc": true,
     "relatedArticles": [
       "make-money-online-for-beginners",
-      "budgeting-methods",
-      "money-management-skills-in-your-20s"
+      "how-inflation-affects-daily-life",
+      "budgeting-methods"
     ],
     "relatedBlogs": [
       "abnormal-returns",
@@ -1198,8 +1483,8 @@
     "showToc": true,
     "relatedArticles": [
       "make-money-online-for-beginners",
-      "ai-tools-to-make-money",
-      "budgeting-methods"
+      "how-inflation-affects-daily-life",
+      "ai-tools-to-make-money"
     ],
     "relatedBlogs": [
       "making-sense-of-cents",

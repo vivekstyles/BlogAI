@@ -74,6 +74,11 @@
 | `/articles/read-engineering-blog-posts-critically` | how to read engineering blogs | evaluating architecture case studies | how to evaluate a system design blog post | Informational | Software engineers |
 | `/articles/follow-technical-blogs-with-rss` | follow blogs with RSS | import OPML, RSS reader for developers | how to import an OPML file; what is OPML | Informational / how-to | Developers |
 | `/articles/php2shell-php-vulnerabilities` | PHP2Shell | CVE-2026-109618, CVE-2026-109619, PHP security vulnerability 2026, PHP RCE fix | which PHP versions are affected by PHP2Shell; is disabling session.upload_progress enough; does PHP2Shell affect WordPress | Informational / how-to (news-driven) | Server administrators, PHP developers, site owners |
+| `/articles/basic-economic-principles` | basic economic principles | principles of economics, Mankiw ten principles, economics for beginners | what are the basic principles of economics; what is opportunity cost; are economic principles always true | Informational | Students and general readers new to economics |
+| `/articles/supply-and-demand-examples` | supply and demand examples | real-life examples of supply and demand, law of supply and demand, dynamic pricing | what is a simple example of supply and demand; why do prices rise fast and fall slowly | Informational | Students, general readers |
+| `/articles/how-inflation-affects-daily-life` | how inflation affects daily life | purchasing power, effects of inflation, inflation 2026, real wages | who is hurt most by inflation; will prices go back down; does inflation help borrowers | Informational | U.S. households and savers |
+| `/articles/economic-indicators-explained` | economic indicators | key economic indicators, leading and lagging indicators, GDP CPI unemployment | which indicators predict a recession; most important economic indicators; where to find economic data | Informational | General readers, beginner investors, students |
+| `/articles/economic-concepts-for-beginners` | economic concepts for beginners | economics glossary, basic economics terms, stagflation, tariffs explained | difference between monetary and fiscal policy; what economic concepts matter in 2026 | Informational | Beginners |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
 | `/category/mathematics` | mathematics blogs | math articles and blogs | best math blogs to follow | Commercial-investigation | Math learners |
 | `/category/engineering` etc. | `<category> blogs` | — | best `<category>` blogs | Commercial-investigation | — |
@@ -176,6 +181,14 @@ No consolidation, redirect or unpublishing is recommended.
 - **Added 2026-10-25:** new Personal Finance category with eight directory blogs and five articles: 25 money management tips for 2026, 15 personal finance rules, 20 budgeting methods, 30 smart money habits and 10 money skills for your 20s. All cross-link to each other and to `/category/personal-finance`, with 5 SVG figures from `scripts/diagrams/make_finance_diagrams.py`.
 - **YMYL:** money is a "your money or your life" topic, so accuracy matters more than usual. U.S. figures (2026 IRS limits, card APR from G.19, CPI, SHED, SPIVA, FTC fraud data) are dated in the text; recheck them when the sources update (IRS limits each November, G.19 monthly, SHED each May, SPIVA twice a year) and bump `updatedAt` only when content changes. Consider a named, qualified reviewer (for example a CFP) before promoting these pages.
 - **Gaps:** country-specific guides (India: EPF, PPF, NPS; UK: ISAs and pensions) and a debt payoff calculator as a link asset. Confirm demand in GSC first.
+
+### Cluster L — Economics basics (Personal Finance category)
+
+- **Added 2026-11-01:** five articles: 15 basic economic principles, 20 supply and demand examples, 10 ways inflation affects daily life, 25 economic indicators, and 30 economic concepts for beginners. All cross-link to each other and to the Cluster I personal finance articles.
+- **Overlap control:** the principles article owns foundations (scarcity, opportunity cost, incentives, comparative advantage, supply and demand); the concepts article is a glossary that explicitly skips those and links back. The indicators article owns GDP/CPI/jobs measurement; the others link to it rather than re-explaining.
+- **Category:** filed under Personal Finance with an `economics` tag because there is no Economics category. If the cluster grows, consider an Economics category once enough directory blogs exist to make its category page useful.
+- **Freshness:** heavy use of dated 2026 data (CPI, jobs, GDP, PCE, Fed rate, mortgage rate, EIA oil and gas, IMF WEO, WTO, FAO, SSA COLA). Recheck monthly while the 2026 energy shock lasts; bump `updatedAt` only when content changes.
+- **Gaps:** country-specific inflation guides (India, UK) and an explainer on how central banks set rates. Confirm demand in GSC first.
 
 ### Cluster K — Web security (Programming and Technology category)
 

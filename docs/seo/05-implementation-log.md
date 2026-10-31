@@ -36,6 +36,14 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Economics basics articles (2026-11-01)
+
+Five published articles in Personal Finance, all `publishedAt` 2026-11-01: `/articles/basic-economic-principles`, `/articles/supply-and-demand-examples`, `/articles/how-inflation-affects-daily-life`, `/articles/economic-indicators-explained`, `/articles/economic-concepts-for-beginners`. No existing URLs changed.
+
+- **Sources read directly:** BLS CPI, Employment Situation and Real Earnings (September 2026), BLS Beyond the Numbers on shrinkflation, BEA GDP (Q3 2026 advance) and PCE pages, the Fed's 28 October 2026 FOMC statement, rate history, G.19 and inflation-target FAQ, FRED MORTGAGE30US, EIA gasoline prices and STEO (6 October 2026), the IMF October 2026 WEO landing page, FAO Food Price Index, Uber's surge pricing page, and The Poultry Site's summary of USDA's May 2026 egg outlook.
+- **From search results or secondary reports, not opened directly:** WTO October 2026 trade figures (WTO news release located by search), ISM September 2026 PMI (trade press), SSA 2027 COLA (SSA blog located by search; ssa.gov/cola returned 403), TrendForce DRAM figures, NAHB multifamily completions, WGC central bank gold, CMA Ticketmaster outcome, FIFA dynamic pricing (ESPN), cocoa (Anadolu), Manheim 2021, IMF Fiscal Monitor April 2026, UK carrier bag data, and the San Francisco rent control study. Figures that could not be pinned to a primary source (gold spot records, the November 2026 I bond rate, 2027 IRS tax brackets) were left out.
+- **Recheck:** monthly CPI/jobs/PCE releases, the next FOMC meeting (December 2026), EIA STEO (10 November 2026) and mortgage rates.
+
 ### PHP2Shell article (2026-10-26)
 
 One published article, `/articles/php2shell-php-vulnerabilities`, in Programming and Technology, `publishedAt` 2026-10-26. No existing URLs changed.
