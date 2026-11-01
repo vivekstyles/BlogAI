@@ -44,3 +44,21 @@ export function buildArticleBreadcrumbSchema(article) {
     `/articles/${article.slug}`
   );
 }
+
+export function buildFaqSchema(article) {
+  if (!article.faqs || !Array.isArray(article.faqs) || article.faqs.length === 0) {
+    return null;
+  }
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: article.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+}

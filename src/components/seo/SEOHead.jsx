@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import JsonLd from './JsonLd';
-import { SITE_URL, formatPageTitle, INDEXABLE_ROBOTS } from '../../utils/seo';
+import { SITE_URL, formatPageTitle, INDEXABLE_ROBOTS, DEFAULT_OG_IMAGE } from '../../utils/seo';
 
 const DEFAULT_DESC =
   'Discover, search, and subscribe to quality blogs on AI, programming, engineering, math, physics, science, automotive tech, nutrition, and personal finance.';
@@ -20,7 +20,7 @@ export function SEOHead({
   const canonicalUrl =
     canonicalUrlOverride ||
     `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
-  const imageUrl = image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : '';
+  const resolvedImage = image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : DEFAULT_OG_IMAGE;
   const articleKey = article ? JSON.stringify(article) : '';
 
   useEffect(() => {
@@ -50,8 +50,8 @@ export function SEOHead({
     setMeta('og:url', canonicalUrl, true);
     setMeta('og:type', type, true);
 
-    // Twitter: the large card needs an image to show anything useful
-    setMeta('twitter:card', imageUrl ? 'summary_large_image' : 'summary');
+    // Twitter Card
+    setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
 
@@ -59,10 +59,10 @@ export function SEOHead({
       document.querySelectorAll(selector).forEach((el) => el.remove());
     };
 
-    // Featured image
-    if (imageUrl) {
-      setMeta('og:image', imageUrl, true);
-      setMeta('twitter:image', imageUrl);
+    // Social image
+    if (resolvedImage) {
+      setMeta('og:image', resolvedImage, true);
+      setMeta('twitter:image', resolvedImage);
     } else {
       removeMeta('meta[property="og:image"], meta[name="twitter:image"]');
     }
@@ -92,7 +92,7 @@ export function SEOHead({
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', canonicalUrl);
-  }, [fullTitle, description, canonicalUrl, type, robots, imageUrl, articleKey]);
+  }, [fullTitle, description, canonicalUrl, type, robots, resolvedImage, articleKey]);
 
   if (!jsonLd) return null;
   const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];

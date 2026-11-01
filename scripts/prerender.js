@@ -8,11 +8,12 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { buildArticleSchema, buildArticleBreadcrumbSchema } from '../src/utils/articleSchema.js';
+import { buildArticleSchema, buildArticleBreadcrumbSchema, buildFaqSchema } from '../src/utils/articleSchema.js';
 import { formatDate } from '../src/utils/formatDate.js';
 import { slugify } from '../src/utils/slugify.js';
 import {
   SITE_URL,
+  DEFAULT_OG_IMAGE,
   formatPageTitle,
   buildTagMeta,
   buildCategoryTitle,
@@ -144,10 +145,11 @@ function buildHtml({
     `<meta property="og:type" content="${escapeHtml(ogType)}" />`
   );
 
-  // Optional image and article metadata
+  // Social image and article metadata
   const headMeta = [...extraMeta];
-  if (image) {
-    const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+  const ogImage = image || DEFAULT_OG_IMAGE;
+  if (ogImage) {
+    const imageUrl = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
     headMeta.push({ property: 'og:image', content: imageUrl }, { name: 'twitter:image', content: imageUrl });
   }
   const metaTags = headMeta
@@ -161,10 +163,10 @@ function buildHtml({
     html = html.replace('</head>', `${metaTags.join('\n')}\n</head>`);
   }
 
-  // Replace Twitter tags; the large card needs an image to show anything useful
+  // Replace Twitter tags: using summary_large_image now that an image is always guaranteed
   html = html.replace(
     /<meta\s+name=["']twitter:card["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
-    `<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}" />`
+    `<meta name="twitter:card" content="summary_large_image" />`
   );
   html = html.replace(
     /<meta\s+name=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
@@ -449,7 +451,11 @@ async function runPrerender() {
         { property: 'article:section', content: a.categories[0]?.name },
         ...a.tags.map(t => ({ property: 'article:tag', content: t.name })),
       ],
-      jsonLd: [buildArticleSchema(a), buildArticleBreadcrumbSchema(a)],
+      jsonLd: [
+        buildArticleSchema(a),
+        buildArticleBreadcrumbSchema(a),
+        ...(a.faqs?.length ? [buildFaqSchema(a)] : []),
+      ].filter(Boolean),
       bodyContent: articleBody,
     }));
     // Articles first published elsewhere keep their external canonical and stay out of the sitemap
@@ -568,9 +574,26 @@ async function runPrerender() {
   // 4. Individual Blog Details (/blog/:blogSlug)
   for (const b of blogs) {
     const blogMeta = buildBlogMeta(b);
+    const relatedArticles = articles
+      .filter((a) => a.categories.some((c) => c.slug === b.categorySlug))
+      .slice(0, 3);
+    const otherCategoryBlogs = blogs
+      .filter((other) => other.categorySlug === b.categorySlug && other.slug !== b.slug)
+      .slice(0, 3);
+
     const blogBody = `
       <header class="site-header">
-        <div class="container"><a href="/" class="site-logo"><span class="logo-title">BlogAI</span></a></div>
+        <div class="container header-container">
+          <a href="/" class="site-logo">
+            <span class="logo-title">BlogAI</span>
+            <span class="logo-tag">Directory</span>
+          </a>
+          <nav aria-label="Main navigation">
+            <a href="/articles">Articles</a>
+            <a href="/directory">Blog Directory</a>
+            <a href="/submit">Submit a Blog</a>
+          </nav>
+        </div>
       </header>
       <main id="main-content">
         <div class="container">
@@ -587,9 +610,21 @@ async function runPrerender() {
             </div>
             <div>
               <strong>Tags:</strong>
-              ${b.tags.map(tagText => `<a href="/tag/${tagText.toLowerCase().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-')}">#${escapeHtml(tagText)}</a>`).join(' ')}
+              ${b.tags.map((tagText) => `<a href="/tag/${slugify(tagText)}">#${escapeHtml(tagText)}</a>`).join(' ')}
             </div>
           </article>
+          ${relatedArticles.length ? `
+          <section>
+            <h2>Related Articles in ${escapeHtml(b.category)}</h2>
+            <div class="article-grid">${relatedArticles.map(articleCardHtml).join('')}</div>
+          </section>` : ''}
+          ${otherCategoryBlogs.length ? `
+          <section>
+            <h2>Similar ${escapeHtml(b.category)} Blogs</h2>
+            <ul>
+              ${otherCategoryBlogs.map((o) => `<li><a href="/blog/${o.slug}">${escapeHtml(o.title)}</a> - ${escapeHtml(o.description || `Curated ${o.category} publication.`)}</li>`).join('')}
+            </ul>
+          </section>` : ''}
         </div>
       </main>
     `;

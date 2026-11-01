@@ -1,0 +1,23 @@
+# BlogAI - Technical Articles & Curated Blog Directory
+
+> Discover high-signal technical blogs and read original, in-depth articles across AI, machine learning, software engineering, mathematics, physics, science, automotive tech, nutrition, and personal finance.
+
+## Core Sections
+
+- [Original Articles](https://blogai.space/articles): In-depth technical guides, tutorials, and deep-dives on artificial intelligence, mathematics, programming, and economics.
+- [Community Blog Directory](https://blogai.space/directory): Curated directory of quality independent blogs and newsletters.
+- [Categories](https://blogai.space/): Topic-specific hubs for exploring articles and blogs.
+- [RSS Feed](https://blogai.space/feed.xml): First-party article syndication feed.
+- [OPML Bundle](https://blogai.space/feed.opml): One-click subscription package of independent blog RSS feeds.
+
+## Topics Covered
+
+- [Artificial Intelligence](https://blogai.space/category/artificial-intelligence): Large language models, deep learning, AI tools, machine learning engineering, and prompt design.
+- [Programming and Technology](https://blogai.space/category/programming-and-technology): Python, data analysis, automation, security vulnerabilities (PHP2Shell), and software development.
+- [Mathematics](https://blogai.space/category/mathematics): Linear algebra, calculus, optimization, probability and statistics.
+- [Personal Finance](https://blogai.space/category/personal-finance): Budgeting methods, economic principles, passive income, and money management.
+- [Physics](https://blogai.space/category/physics): Everyday applications of physics, formulas, and experimental science.
+- [Science](https://blogai.space/category/science): Scientific discoveries, research methodologies, and experiments.
+- [Food and Nutrition](https://blogai.space/category/food-and-nutrition): Evidence-based nutrition, high-protein foods, and dietary science.
+- [Automobile](https://blogai.space/category/automobile): Automotive engineering, vehicle technologies, and mechanical systems.
+- [Engineering](https://blogai.space/category/engineering): Electrical, structural, mechanical, and systems engineering.

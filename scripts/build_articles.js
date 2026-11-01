@@ -301,6 +301,24 @@ export function compileArticle({ fileName, source, categories }) {
   const contentImages = [...new Set([...html.matchAll(/<img\s[^>]*src="(\/[^"]+)"/g)].map((m) => m[1]))];
   const showToc = typeof data.toc === 'boolean' ? data.toc : headings.length >= 3;
 
+  // Extract FAQs if present under ## FAQ or ## Frequently asked questions
+  const faqMatch = /\n##\s+(?:FAQ|Frequently Asked Questions)[\r\n]+([\s\S]*?)(?=\n##\s|$)/i.exec('\n' + body);
+  const faqs = [];
+  if (faqMatch) {
+    const section = '\n' + faqMatch[1].trim() + '\n';
+    const qaRegex = /\n###\s+([^\n]+)[\r\n]+([\s\S]*?)(?=\n###|\n##|$)/g;
+    let m;
+    while ((m = qaRegex.exec(section)) !== null) {
+      const question = m[1].trim();
+      const answer = m[2]
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/[*_`#]/g, '')
+        .replace(/\r?\n+/g, ' ')
+        .trim();
+      if (question && answer) faqs.push({ question, answer });
+    }
+  }
+
   return {
     errors,
     article: {
@@ -324,6 +342,7 @@ export function compileArticle({ fileName, source, categories }) {
       readingTimeMinutes: Math.max(1, Math.round(wordCount / WORDS_PER_MINUTE)),
       showToc,
       toc: headings,
+      faqs,
       html,
     },
   };

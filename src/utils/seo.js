@@ -15,6 +15,7 @@ export const SITE_DESCRIPTION =
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 // Square raster logo: Google needs at least 112x112 in a Google Images format (not SVG)
 export const LOGO_URL = `${SITE_URL}/icon-512.png`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/icon-512.png`;
 
 /** Publisher node for article markup, pointing at the home page Organization. */
 export function buildPublisherSchema() {
@@ -144,9 +145,16 @@ export function isBlogIndexable(blog) {
 }
 
 export function buildBlogMeta(blog) {
+  let title = `${blog.title} - ${blog.category} Blog`;
+  if (title.length > TITLE_MAX_LENGTH) {
+    title = `${blog.title} - ${blog.category}`;
+  }
+  if (title.length > TITLE_MAX_LENGTH) {
+    title = blog.title.length <= TITLE_MAX_LENGTH ? blog.title : `${blog.title.slice(0, TITLE_MAX_LENGTH - 3)}...`;
+  }
   return {
     robots: isBlogIndexable(blog) ? INDEXABLE_ROBOTS : NOINDEX_ROBOTS,
-    title: `${blog.title} - ${blog.category} Blog`,
+    title,
     description:
       blog.description ||
       `Explore ${blog.title}, a curated independent blog in ${blog.category} covering ${(blog.tags || []).join(', ')}.`,

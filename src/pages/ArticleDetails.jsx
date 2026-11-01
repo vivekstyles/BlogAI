@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { AlertCircle, ArrowLeft, Compass } from 'lucide-react';
 import { articleService } from '../services/articleService';
-import { buildArticleSchema, buildArticleBreadcrumbSchema } from '../utils/articleSchema';
+import { buildArticleSchema, buildArticleBreadcrumbSchema, buildFaqSchema } from '../utils/articleSchema';
 import SEOHead from '../components/seo/SEOHead';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
 import ArticleMeta from '../components/articles/ArticleMeta';
@@ -79,7 +79,11 @@ export function ArticleDetails() {
           section: primaryCategory?.name,
           tags: article.tags.map((t) => t.name),
         }}
-        jsonLd={[buildArticleSchema(article), buildArticleBreadcrumbSchema(article)]}
+        jsonLd={[
+          buildArticleSchema(article),
+          buildArticleBreadcrumbSchema(article),
+          ...(article.faqs?.length ? [buildFaqSchema(article)] : []),
+        ].filter(Boolean)}
       />
 
       <div className="container">

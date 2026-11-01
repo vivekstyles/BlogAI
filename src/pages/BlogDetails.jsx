@@ -13,6 +13,7 @@ import {
   Check,
 } from 'lucide-react';
 import { blogService } from '../services/blogService';
+import { articleService } from '../services/articleService';
 import { extractDomain } from '../utils/normalizeText';
 import SEOHead from '../components/seo/SEOHead';
 import { SITE_URL, buildBlogMeta, buildBreadcrumbSchema } from '../utils/seo';
@@ -20,6 +21,7 @@ import Breadcrumbs from '../components/layout/Breadcrumbs';
 import TagChip from '../components/tags/TagChip';
 import FeedLink from '../components/blogs/FeedLink';
 import BlogCard from '../components/blogs/BlogCard';
+import ArticleCard from '../components/articles/ArticleCard';
 import './BlogDetails.css';
 
 export function BlogDetails() {
@@ -36,6 +38,11 @@ export function BlogDetails() {
       .getBlogsByCategory(blog.categorySlug)
       .filter((b) => b.slug !== blog.slug)
       .slice(0, 3);
+  }, [blog]);
+
+  const relatedArticles = useMemo(() => {
+    if (!blog) return [];
+    return articleService.getArticlesByCategory(blog.categorySlug).slice(0, 3);
   }, [blog]);
 
   if (!blog) {
@@ -195,6 +202,20 @@ export function BlogDetails() {
             <div className="related-grid">
               {relatedBlogs.map((rb) => (
                 <BlogCard key={rb.id} blog={rb} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Recommended Articles in this Category */}
+        {relatedArticles.length > 0 && (
+          <section className="related-articles-section" aria-labelledby="related-articles-heading" style={{ marginTop: '2.5rem' }}>
+            <h2 id="related-articles-heading" className="related-heading">
+              Recommended Reading in {blog.category}
+            </h2>
+            <div className="article-grid three-up">
+              {relatedArticles.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
               ))}
             </div>
           </section>
