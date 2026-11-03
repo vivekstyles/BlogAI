@@ -1,5 +1,163 @@
 [
   {
+    "slug": "advanced-prompt-engineering-techniques",
+    "title": "10 Advanced Prompt Engineering Techniques for Large Language Models",
+    "seoTitle": "10 Advanced Prompt Engineering Techniques for LLMs",
+    "description": "10 advanced prompt engineering techniques for LLM apps, including self-consistency, ReAct, structured outputs, context engineering and evals, with code.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "prompt engineering",
+        "slug": "prompt-engineering"
+      },
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "ai agents",
+        "slug": "ai-agents"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "python",
+        "slug": "python"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/advanced-prompt-engineering-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 3016,
+    "readingTimeMinutes": 14,
+    "showToc": true,
+    "faqs": [
+      {
+        "question": "Are advanced prompting techniques still needed with reasoning models?",
+        "answer": "Some less than before. Explicit chain-of-thought adds little on reasoning models. Techniques that bring in information or checks the model cannot produce alone (tools, retrieval, code execution, schema validation, independent verification and evaluation sets) remain valuable."
+      },
+      {
+        "question": "What is the difference between prompt engineering and context engineering?",
+        "answer": "Prompt engineering focuses on writing the instructions. Context engineering covers everything that enters the model's context window at each step: instructions, tool definitions, retrieved documents, conversation history, memory and examples (Anthropic, 2025)."
+      },
+      {
+        "question": "Should I fine-tune instead of using advanced prompts?",
+        "answer": "Try prompting, retrieval and evaluation first: they are faster to change and do not require training data. Fine-tuning becomes worth considering when you have a stable task, many high-quality examples and a measured gap that prompting cannot close."
+      }
+    ],
+    "relatedArticles": [
+      "ai-prompts-for-developers",
+      "prompt-engineering-techniques",
+      "chatgpt-prompt-tips-for-beginners"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "openai-news",
+      "ahead-of-ai"
+    ]
+  },
+  {
+    "slug": "ai-prompts-for-developers",
+    "title": "20 Powerful AI Prompts for Developers to Write Better Code",
+    "seoTitle": "20 AI Prompts for Developers to Write Better Code",
+    "description": "20 copy-ready AI prompts for developers, covering planning, debugging, tests, code review, refactoring, SQL, regex, security and coding agent rules.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      },
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      }
+    ],
+    "tags": [
+      {
+        "name": "prompt engineering",
+        "slug": "prompt-engineering"
+      },
+      {
+        "name": "developer tools",
+        "slug": "developer-tools"
+      },
+      {
+        "name": "programming",
+        "slug": "programming"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai agents",
+        "slug": "ai-agents"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/ai-prompts-for-developers",
+    "isCanonicalLocal": true,
+    "wordCount": 1709,
+    "readingTimeMinutes": 8,
+    "showToc": true,
+    "faqs": [
+      {
+        "question": "Which AI model is best for coding?",
+        "answer": "It changes every few months and depends on the task, language and tool. Rather than relying on leaderboards, try two or three assistants on a handful of real tasks from your own codebase and compare the diffs you would actually merge."
+      },
+      {
+        "question": "Should I use a chat assistant or a coding agent?",
+        "answer": "Chat is good for explanations, small functions and reviewing snippets. Agents that can read the repository, run commands and tests are better for multi-file changes, but need clearer instructions, a rules file and careful review of their diffs."
+      },
+      {
+        "question": "Do I still need to learn to code if AI writes code?",
+        "answer": "Yes. You need to specify the problem, judge whether the output is correct and secure, and debug it when it is not. All of the prompts above assume you can read the code that comes back. Our Python projects for beginners is a good place to build that foundation."
+      }
+    ],
+    "relatedArticles": [
+      "advanced-prompt-engineering-techniques",
+      "chatgpt-prompt-tips-for-beginners",
+      "prompt-engineering-techniques"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "stack-overflow-blog",
+      "aws-machine-learning-blog"
+    ]
+  },
+  {
     "slug": "arduino-iot-projects",
     "title": "15 Arduino IoT Projects with Source Code for Students",
     "seoTitle": "15 Arduino IoT Projects with Source Code (2026)",
@@ -63,6 +221,89 @@
       "hackaday",
       "ieee-spectrum",
       "acm-queue"
+    ]
+  },
+  {
+    "slug": "chatgpt-prompt-tips-for-beginners",
+    "title": "15 ChatGPT Prompt Engineering Tips for Beginners in 2026",
+    "seoTitle": "15 ChatGPT Prompt Tips for Beginners (2026)",
+    "description": "15 beginner ChatGPT prompting tips for 2026, from writing a clear first prompt to custom instructions, projects, memory, search and checking answers.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "prompt engineering",
+        "slug": "prompt-engineering"
+      },
+      {
+        "name": "chatgpt",
+        "slug": "chatgpt"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai tools",
+        "slug": "ai-tools"
+      },
+      {
+        "name": "productivity",
+        "slug": "productivity"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/chatgpt-prompt-tips-for-beginners",
+    "isCanonicalLocal": true,
+    "wordCount": 2144,
+    "readingTimeMinutes": 10,
+    "showToc": true,
+    "faqs": [
+      {
+        "question": "What is the best prompt format for ChatGPT?",
+        "answer": "There is no single best format. A reliable pattern is: the goal in one sentence, the context and your material, the format you want, and any limits. For longer prompts, separate sections with headings or labels so ChatGPT can tell your instructions apart from pasted text."
+      },
+      {
+        "question": "How long should a ChatGPT prompt be?",
+        "answer": "As long as it needs to be to remove guessing, and no longer. A one-line request is fine for simple tasks. A prompt for a report or a plan may be several paragraphs, mostly made up of context and source material."
+      },
+      {
+        "question": "Why does ChatGPT give different answers to the same prompt?",
+        "answer": "The model generates text with some randomness, and memory, custom instructions and earlier messages in the chat also affect the answer. If you need consistency, give a precise format and an example, and start from a clean chat."
+      },
+      {
+        "question": "Is it safe to put personal information into ChatGPT?",
+        "answer": "Treat it like any online service. Avoid sharing passwords, government ID numbers, financial account details and other people's private information, review your memory and data control settings, and follow your workplace rules for work data."
+      }
+    ],
+    "relatedArticles": [
+      "prompt-engineering-techniques",
+      "prompt-engineering-examples",
+      "advanced-prompt-engineering-techniques"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "aws-machine-learning-blog",
+      "hamels-blog"
     ]
   },
   {
@@ -269,6 +510,168 @@
       "hackaday",
       "ieee-spectrum",
       "jeff-geerling"
+    ]
+  },
+  {
+    "slug": "prompt-engineering-examples",
+    "title": "30 Real-World Prompt Engineering Examples for Business and Productivity",
+    "seoTitle": "30 Prompt Engineering Examples for Business and Productivity",
+    "description": "30 real-world prompt examples for email, meetings, marketing, sales, support, HR, finance and strategy, each with a reusable template and what to check.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "prompt engineering",
+        "slug": "prompt-engineering"
+      },
+      {
+        "name": "productivity",
+        "slug": "productivity"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "chatgpt",
+        "slug": "chatgpt"
+      },
+      {
+        "name": "business operations",
+        "slug": "business-operations"
+      },
+      {
+        "name": "marketing",
+        "slug": "marketing"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/prompt-engineering-examples",
+    "isCanonicalLocal": true,
+    "wordCount": 1365,
+    "readingTimeMinutes": 6,
+    "showToc": true,
+    "faqs": [
+      {
+        "question": "Which business tasks are AI prompts best for?",
+        "answer": "Drafting, rewriting, summarizing, extracting structure from messy notes, brainstorming and preparing for conversations. These are tasks where you can quickly judge the result. Be more careful with tasks that depend on facts, calculations or judgment the assistant cannot verify."
+      },
+      {
+        "question": "How do I get AI to write in my company's voice?",
+        "answer": "Paste two or three real examples of your best writing and ask it to match their tone, length and structure. Examples work better than adjectives like \"professional but friendly\". In ChatGPT, you can save the examples in project instructions or files so every chat uses them; see our ChatGPT tips for beginners."
+      },
+      {
+        "question": "Can I paste confidential business data into AI tools?",
+        "answer": "Only into tools your organization has approved for that data, under the agreed terms. Consumer accounts may have different data handling from business plans, so check with your IT or legal team."
+      }
+    ],
+    "relatedArticles": [
+      "chatgpt-prompt-tips-for-beginners",
+      "prompt-engineering-techniques",
+      "advanced-prompt-engineering-techniques"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "aws-machine-learning-blog",
+      "one-useful-thing"
+    ]
+  },
+  {
+    "slug": "prompt-engineering-techniques",
+    "title": "25 Best Prompt Engineering Techniques to Get Better AI Responses",
+    "seoTitle": "25 Prompt Engineering Techniques for Better AI Responses",
+    "description": "25 prompt engineering techniques that work with ChatGPT, Claude and Gemini, from clear instructions and examples to reasoning, self-checks and testing.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "prompt engineering",
+        "slug": "prompt-engineering"
+      },
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "chatgpt",
+        "slug": "chatgpt"
+      },
+      {
+        "name": "ai tools",
+        "slug": "ai-tools"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/prompt-engineering-techniques",
+    "isCanonicalLocal": true,
+    "wordCount": 3399,
+    "readingTimeMinutes": 15,
+    "showToc": true,
+    "faqs": [
+      {
+        "question": "What is prompt engineering?",
+        "answer": "Prompt engineering is the practice of designing the instructions, context and examples you give an AI model so that it produces useful, reliable output. It ranges from writing a clearer chat message to designing and testing the system prompts that run inside software products."
+      },
+      {
+        "question": "Which prompt engineering technique matters most?",
+        "answer": "Being clear and specific about the goal, audience, context and format. A systematic survey of prompting research found few-shot examples and chain-of-thought to be the most widely used techniques (Schulhoff et al., 2024), but both build on a clear instruction."
+      },
+      {
+        "question": "Do these techniques work the same on every model?",
+        "answer": "Mostly, but not exactly. Clear instructions, context, examples and structure help across models. Reasoning-related techniques differ: step-by-step prompts help non-reasoning models more than reasoning models, and some features, such as prefilling the answer, are model-specific. Check the vendor's prompting guide and test."
+      },
+      {
+        "question": "Is prompt engineering still useful as models improve?",
+        "answer": "Yes, though its focus is shifting. Models need fewer tricks, but they still cannot read your mind about goals, audience or facts they were never given. Anthropic describes the next step as context engineering: choosing everything that goes into the model's context, not just the wording of the instructions (Anthropic, 2025)."
+      }
+    ],
+    "relatedArticles": [
+      "chatgpt-prompt-tips-for-beginners",
+      "advanced-prompt-engineering-techniques",
+      "llm-milestones"
+    ],
+    "relatedBlogs": [
+      "simon-willisons-weblog",
+      "hamels-blog",
+      "openai-news"
     ]
   },
   {
@@ -769,9 +1172,9 @@
       }
     ],
     "relatedArticles": [
-      "arduino-iot-projects",
-      "esp32-iot-projects",
-      "iot-project-ideas-for-final-year-students"
+      "advanced-prompt-engineering-techniques",
+      "ai-prompts-for-developers",
+      "arduino-iot-projects"
     ],
     "relatedBlogs": [
       "bleepingcomputer",
@@ -850,9 +1253,9 @@
       }
     ],
     "relatedArticles": [
-      "make-money-online-for-beginners",
-      "important-llms-explained",
-      "llm-milestones"
+      "chatgpt-prompt-tips-for-beginners",
+      "prompt-engineering-techniques",
+      "make-money-online-for-beginners"
     ],
     "relatedBlogs": [
       "simon-willisons-weblog",
@@ -1326,7 +1729,7 @@
     "relatedArticles": [
       "llm-milestones",
       "open-source-llms",
-      "history-of-language-models"
+      "advanced-prompt-engineering-techniques"
     ],
     "relatedBlogs": [
       "openai-news",
@@ -1464,9 +1867,9 @@
     "showToc": true,
     "faqs": [],
     "relatedArticles": [
+      "prompt-engineering-techniques",
       "history-of-language-models",
-      "important-llms-explained",
-      "llm-breakthroughs"
+      "important-llms-explained"
     ],
     "relatedBlogs": [
       "openai-news",
@@ -1841,8 +2244,8 @@
     "faqs": [],
     "relatedArticles": [
       "important-llms-explained",
-      "llm-milestones",
-      "history-of-language-models"
+      "advanced-prompt-engineering-techniques",
+      "prompt-engineering-techniques"
     ],
     "relatedBlogs": [
       "openai-news",
@@ -2281,8 +2684,8 @@
     "faqs": [],
     "relatedArticles": [
       "data-analysis-tools",
-      "data-analysis-techniques",
-      "python-interview-questions"
+      "advanced-prompt-engineering-techniques",
+      "chatgpt-prompt-tips-for-beginners"
     ],
     "relatedBlogs": [
       "freecodecamp-news",
@@ -2346,8 +2749,8 @@
     "faqs": [],
     "relatedArticles": [
       "python-projects-for-beginners",
-      "data-analysis-techniques",
-      "data-analysis-tools"
+      "advanced-prompt-engineering-techniques",
+      "ai-prompts-for-developers"
     ],
     "relatedBlogs": [
       "trey-hunner",
@@ -2541,9 +2944,9 @@
     "showToc": true,
     "faqs": [],
     "relatedArticles": [
+      "advanced-prompt-engineering-techniques",
       "data-analysis-techniques",
-      "data-analysis-tools",
-      "python-automation-scripts"
+      "data-analysis-tools"
     ],
     "relatedBlogs": [
       "freecodecamp-news",
@@ -2768,7 +3171,7 @@
     "relatedArticles": [
       "ai-transforming-industries-examples",
       "ai-applications-healthcare-finance-education",
-      "ai-future-of-work-examples"
+      "prompt-engineering-examples"
     ],
     "relatedBlogs": [
       "aws-machine-learning-blog",

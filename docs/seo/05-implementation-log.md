@@ -36,6 +36,15 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### Prompt engineering articles (2026-11-03)
+
+Five published articles in Artificial Intelligence and Programming and Technology, all `publishedAt` 2026-11-03: `/articles/prompt-engineering-techniques`, `/articles/chatgpt-prompt-tips-for-beginners`, `/articles/ai-prompts-for-developers`, `/articles/advanced-prompt-engineering-techniques`, `/articles/prompt-engineering-examples`. No existing URLs changed. New tag `prompt-engineering` (5 articles).
+
+- **Sources read directly:** Anthropic "Prompting best practices" (queries at end up to 30% better on long multi-document inputs; 3–5 examples; prefill unsupported on newer models; soften aggressive wording), Anthropic "Effective context engineering for AI agents" (29 September 2025), OpenAI "Prompt engineering" guide (developer vs user messages, reasoning vs GPT models, snapshot pinning, caching order, prompts in code) and archived GPT-5 prompting guide, Google AI Studio "Prompt design strategies", OWASP LLM01:2025, PCWorld on GPT-5.5 guidance (29 April 2026), NBER w31161 abstract (14% / 34%), and arXiv abstracts for all 27 cited arXiv papers (titles, IDs and quoted numbers checked via the arXiv API).
+- **From search results, not opened directly:** ChatGPT Projects availability on Free and Temporary Chat FAQ behaviour (help.openai.com returns 403 to scripts), Stack Overflow 2025 survey AI figures (84% use or plan to use; 46% distrust vs 33% trust), Dell'Acqua et al. 12.2% / 25.1% (SSRN returns 403). Unverified figures were left out: ChatGPT character and file limits, the BCG quality figure and the size of the outside-frontier drop.
+- **Code:** the Python sketches and JSON schema in the advanced article were syntax-checked; they call a placeholder `complete()` and were not run against a live API.
+- **Recheck:** vendor prompting guides and ChatGPT help pages quarterly.
+
 ### IoT projects articles (2026-11-03)
 
 Five published articles in Engineering and Programming and Technology, all `publishedAt` 2026-11-03: `/articles/iot-projects-for-beginners`, `/articles/arduino-iot-projects`, `/articles/raspberry-pi-smart-home-projects`, `/articles/esp32-iot-projects`, `/articles/iot-project-ideas-for-final-year-students`. No existing URLs changed.
