@@ -1,5 +1,343 @@
 [
   {
+    "slug": "arduino-iot-projects",
+    "title": "15 Arduino IoT Projects with Source Code for Students",
+    "seoTitle": "15 Arduino IoT Projects with Source Code (2026)",
+    "description": "15 Arduino IoT projects with full source code for ESP32 and UNO R4 WiFi: web servers, MQTT, ThingSpeak, Telegram alerts, ESP-NOW, deep sleep and OTA.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "iot",
+        "slug": "iot"
+      },
+      {
+        "name": "arduino",
+        "slug": "arduino"
+      },
+      {
+        "name": "esp32",
+        "slug": "esp32"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "source code",
+        "slug": "source-code"
+      },
+      {
+        "name": "electronics",
+        "slug": "electronics"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/arduino-iot-projects",
+    "isCanonicalLocal": true,
+    "wordCount": 2884,
+    "readingTimeMinutes": 13,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "iot-projects-for-beginners",
+      "esp32-iot-projects",
+      "iot-project-ideas-for-final-year-students"
+    ],
+    "relatedBlogs": [
+      "hackaday",
+      "ieee-spectrum",
+      "acm-queue"
+    ]
+  },
+  {
+    "slug": "esp32-iot-projects",
+    "title": "10 Real-World IoT Projects Using ESP32 and Sensors",
+    "seoTitle": "10 Real-World ESP32 IoT Projects with Sensors",
+    "description": "10 real-world ESP32 projects with sensors, from air quality and freezer alarms to mmWave presence and LoRa, with configs, calibration and power budgets.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "iot",
+        "slug": "iot"
+      },
+      {
+        "name": "esp32",
+        "slug": "esp32"
+      },
+      {
+        "name": "sensors",
+        "slug": "sensors"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "esphome",
+        "slug": "esphome"
+      },
+      {
+        "name": "electronics",
+        "slug": "electronics"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/esp32-iot-projects",
+    "isCanonicalLocal": true,
+    "wordCount": 2869,
+    "readingTimeMinutes": 13,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "arduino-iot-projects",
+      "iot-projects-for-beginners",
+      "iot-project-ideas-for-final-year-students"
+    ],
+    "relatedBlogs": [
+      "hackaday",
+      "ieee-spectrum",
+      "acm-queue"
+    ]
+  },
+  {
+    "slug": "iot-project-ideas-for-final-year-students",
+    "title": "30 Innovative IoT Project Ideas for Final-Year Engineering Students",
+    "seoTitle": "30 IoT Project Ideas for Final-Year Engineering Students",
+    "description": "30 IoT final-year project ideas in agriculture, health, energy, cities, industry and security, each with a research angle and a way to evaluate it.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "iot",
+        "slug": "iot"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "engineering students",
+        "slug": "engineering-students"
+      },
+      {
+        "name": "final year project",
+        "slug": "final-year-project"
+      },
+      {
+        "name": "esp32",
+        "slug": "esp32"
+      },
+      {
+        "name": "raspberry pi",
+        "slug": "raspberry-pi"
+      },
+      {
+        "name": "edge ai",
+        "slug": "edge-ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/iot-project-ideas-for-final-year-students",
+    "isCanonicalLocal": true,
+    "wordCount": 3586,
+    "readingTimeMinutes": 16,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "iot-projects-for-beginners",
+      "arduino-iot-projects",
+      "esp32-iot-projects"
+    ],
+    "relatedBlogs": [
+      "jeff-geerling",
+      "acm-queue",
+      "airbnb-tech-blog"
+    ]
+  },
+  {
+    "slug": "iot-projects-for-beginners",
+    "title": "25 Best IoT Projects for Beginners to Build in 2026",
+    "seoTitle": "25 IoT Projects for Beginners to Build in 2026",
+    "description": "25 beginner IoT projects in three levels, from a Wi-Fi LED to a Matter sensor, with the board, parts and skills for each, plus common beginner mistakes.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "iot",
+        "slug": "iot"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "beginners",
+        "slug": "beginners"
+      },
+      {
+        "name": "esp32",
+        "slug": "esp32"
+      },
+      {
+        "name": "arduino",
+        "slug": "arduino"
+      },
+      {
+        "name": "raspberry pi",
+        "slug": "raspberry-pi"
+      },
+      {
+        "name": "electronics",
+        "slug": "electronics"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/iot-projects-for-beginners",
+    "isCanonicalLocal": true,
+    "wordCount": 3375,
+    "readingTimeMinutes": 15,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "arduino-iot-projects",
+      "esp32-iot-projects",
+      "iot-project-ideas-for-final-year-students"
+    ],
+    "relatedBlogs": [
+      "hackaday",
+      "ieee-spectrum",
+      "jeff-geerling"
+    ]
+  },
+  {
+    "slug": "raspberry-pi-smart-home-projects",
+    "title": "20 Raspberry Pi IoT Projects for Smart Home Automation",
+    "seoTitle": "20 Raspberry Pi Smart Home Automation Projects",
+    "description": "20 Raspberry Pi smart home projects, from a Home Assistant hub and MQTT broker to Frigate cameras, local voice and energy dashboards, with safety notes.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-03",
+    "updatedAt": "2026-11-03",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Engineering",
+        "slug": "engineering"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "iot",
+        "slug": "iot"
+      },
+      {
+        "name": "raspberry pi",
+        "slug": "raspberry-pi"
+      },
+      {
+        "name": "smart home",
+        "slug": "smart-home"
+      },
+      {
+        "name": "home automation",
+        "slug": "home-automation"
+      },
+      {
+        "name": "projects",
+        "slug": "projects"
+      },
+      {
+        "name": "home assistant",
+        "slug": "home-assistant"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/raspberry-pi-smart-home-projects",
+    "isCanonicalLocal": true,
+    "wordCount": 3563,
+    "readingTimeMinutes": 16,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "iot-project-ideas-for-final-year-students",
+      "iot-projects-for-beginners",
+      "arduino-iot-projects"
+    ],
+    "relatedBlogs": [
+      "jeff-geerling",
+      "acm-queue",
+      "airbnb-tech-blog"
+    ]
+  },
+  {
     "slug": "basic-economic-principles",
     "title": "15 Basic Economic Principles Everyone Should Understand",
     "seoTitle": "15 Basic Economic Principles Everyone Should Understand",
@@ -431,9 +769,9 @@
       }
     ],
     "relatedArticles": [
-      "data-analysis-projects-for-beginners",
-      "data-analysis-techniques",
-      "data-analysis-tools"
+      "arduino-iot-projects",
+      "esp32-iot-projects",
+      "iot-project-ideas-for-final-year-students"
     ],
     "relatedBlogs": [
       "bleepingcomputer",
@@ -2141,7 +2479,7 @@
     "relatedArticles": [
       "data-analysis-projects-for-beginners",
       "python-data-science-projects",
-      "python-interview-questions"
+      "iot-projects-for-beginners"
     ],
     "relatedBlogs": [
       "freecodecamp-news",
@@ -4874,9 +5212,9 @@
     "showToc": true,
     "faqs": [],
     "relatedArticles": [
-      "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis",
-      "python-data-science-projects"
+      "arduino-iot-projects",
+      "esp32-iot-projects",
+      "iot-project-ideas-for-final-year-students"
     ],
     "relatedBlogs": [
       "bytebytego",
@@ -4932,9 +5270,9 @@
     "showToc": true,
     "faqs": [],
     "relatedArticles": [
-      "numpy-examples-for-numerical-computing",
-      "pandas-tips-and-tricks-for-data-analysis",
-      "python-data-science-projects"
+      "arduino-iot-projects",
+      "esp32-iot-projects",
+      "iot-project-ideas-for-final-year-students"
     ],
     "relatedBlogs": [
       "chrome-for-developers-blog",

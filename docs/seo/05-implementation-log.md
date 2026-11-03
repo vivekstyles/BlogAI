@@ -36,6 +36,16 @@ No URLs changed. No articles were deleted, merged, redirected or unpublished. Al
 
 Fault injection, run once: a noindexed URL, a future `lastmod`, a robots-blocked URL, a URL with no page, and a slashless/slash file mismatch were added to `dist/`. The validator reported all 7 resulting errors.
 
+### IoT projects articles (2026-11-03)
+
+Five published articles in Engineering and Programming and Technology, all `publishedAt` 2026-11-03: `/articles/iot-projects-for-beginners`, `/articles/arduino-iot-projects`, `/articles/raspberry-pi-smart-home-projects`, `/articles/esp32-iot-projects`, `/articles/iot-project-ideas-for-final-year-students`. No existing URLs changed.
+
+- **Sources read directly:** Arduino Cloud plans page (free plan: 2 Things, 5 variables, 1 day retention, 25 compilations; Maker $72/year), Raspberry Pi "More memory-driven price rises" (2 February 2026) and Raspberry Pi 5 product page (16 GB at $305), Home Assistant Raspberry Pi installation page (Pi 5 or 4, 2 GB+, A2 32 GB card), Espressif ESP-IDF ADC oneshot docs (ADC2 shared with Wi-Fi).
+- **From search results or secondary reports, not opened directly:** ThingSpeak free licence limits (official licence FAQ via search), Blynk free plan, Pico 2 W $7 launch, Qualcomm/Arduino UNO Q, ESP32-C5/C6 features, Matter 1.5 (20 November 2025), Home Assistant 2026.10 and the Home Assistant Link rename (official blog via search), Frigate with Hailo on Pi 5, gpiozero and RPi.GPIO on the Pi 5, Raspberry Pi OS Trixie, FoodSafety.gov refrigerator and freezer temperatures (FDA consumer page now 404). Figures that could not be pinned down (current Pi 5 prices for 2/4/8 GB, latest Arduino IDE version, Cyber Trust Mark status) were left out.
+- **Links:** all external links were checked with curl on 2026-11-03; raspberrypi.com product page, mdpi.com and foodsafety.gov return 403 to scripts but load in a browser.
+- **Code:** see Cluster M notes. Sketches were not compiled.
+- **Recheck:** Raspberry Pi pricing, free-tier limits of Arduino Cloud, ThingSpeak and Blynk, and Home Assistant monthly releases.
+
 ### Economics basics articles (2026-11-01)
 
 Five published articles in Personal Finance, all `publishedAt` 2026-11-01: `/articles/basic-economic-principles`, `/articles/supply-and-demand-examples`, `/articles/how-inflation-affects-daily-life`, `/articles/economic-indicators-explained`, `/articles/economic-concepts-for-beginners`. No existing URLs changed.
