@@ -120,11 +120,11 @@ function buildHtml({
     `<meta name="description" content="${escapeHtml(description)}" />`
   );
 
-  // Replace Canonical Link
-  html = html.replace(
-    /<link\s+rel=["']canonical["']\s+href=["'][\s\S]*?["']\s*\/?>/i,
-    `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`
-  );
+  // Replace Canonical Link. Pages without a URL of their own (404.html) get no canonical or og:url
+  const canonicalPattern = /\s*<link\s+rel=["']canonical["']\s+href=["'][\s\S]*?["']\s*\/?>/i;
+  html = canonicalUrl
+    ? html.replace(canonicalPattern, `\n    <link rel="canonical" href="${escapeHtml(canonicalUrl)}" />`)
+    : html.replace(canonicalPattern, '');
 
   // Replace Open Graph tags
   html = html.replace(
@@ -135,24 +135,30 @@ function buildHtml({
     /<meta\s+property=["']og:description["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
     `<meta property="og:description" content="${escapeHtml(description)}" />`
   );
-  html = html.replace(
-    /<meta\s+property=["']og:url["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
-    `<meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`
-  );
+  const ogUrlPattern = /\s*<meta\s+property=["']og:url["']\s+content=["'][\s\S]*?["']\s*\/?>/i;
+  html = canonicalUrl
+    ? html.replace(ogUrlPattern, `\n    <meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`)
+    : html.replace(ogUrlPattern, '');
 
   html = html.replace(
     /<meta\s+property=["']og:type["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
     `<meta property="og:type" content="${escapeHtml(ogType)}" />`
   );
 
-  // Social image and article metadata
-  const headMeta = [...extraMeta];
+  // Social image: replace the shell's tags in place so each page has exactly one of each
   const ogImage = image || DEFAULT_OG_IMAGE;
-  if (ogImage) {
-    const imageUrl = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
-    headMeta.push({ property: 'og:image', content: imageUrl }, { name: 'twitter:image', content: imageUrl });
-  }
-  const metaTags = headMeta
+  const imageUrl = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
+  html = html.replace(
+    /<meta\s+property=["']og:image["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
+    `<meta property="og:image" content="${escapeHtml(imageUrl)}" />`
+  );
+  html = html.replace(
+    /<meta\s+name=["']twitter:image["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
+    `<meta name="twitter:image" content="${escapeHtml(imageUrl)}" />`
+  );
+
+  // Article metadata
+  const metaTags = extraMeta
     .filter((m) => m.content)
     .map((m) =>
       m.property
@@ -163,10 +169,10 @@ function buildHtml({
     html = html.replace('</head>', `${metaTags.join('\n')}\n</head>`);
   }
 
-  // Replace Twitter tags: using summary_large_image now that an image is always guaranteed
+  // Replace Twitter tags: the default image is the square logo, which only suits the small card
   html = html.replace(
     /<meta\s+name=["']twitter:card["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
-    `<meta name="twitter:card" content="summary_large_image" />`
+    `<meta name="twitter:card" content="${image ? 'summary_large_image' : 'summary'}" />`
   );
   html = html.replace(
     /<meta\s+name=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i,
@@ -709,7 +715,7 @@ async function runPrerender() {
     template,
     title: '404 - Page Not Found',
     description: 'The requested page could not be found.',
-    canonicalUrl: `${SITE_URL}/404`,
+    canonicalUrl: '',
     robots: 'noindex, nofollow',
     bodyContent: `<main id="main-content"><div class="container"><h1>404 - Page Not Found</h1><p>The page you requested does not exist.</p><a href="/">Return Home</a></div></main>`,
   });

@@ -17,9 +17,12 @@ export function SEOHead({
   article = null,
 }) {
   const fullTitle = formatPageTitle(title);
+  // canonicalPath={null}: the page has no URL of its own (not-found states), so no canonical
   const canonicalUrl =
     canonicalUrlOverride ||
-    `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
+    (canonicalPath === null
+      ? ''
+      : `${SITE_URL}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`);
   const resolvedImage = image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : DEFAULT_OG_IMAGE;
   const articleKey = article ? JSON.stringify(article) : '';
 
@@ -47,11 +50,13 @@ export function SEOHead({
     // OpenGraph
     setMeta('og:title', fullTitle, true);
     setMeta('og:description', description, true);
-    setMeta('og:url', canonicalUrl, true);
+    if (canonicalUrl) setMeta('og:url', canonicalUrl, true);
+    else document.querySelectorAll('meta[property="og:url"]').forEach((el) => el.remove());
     setMeta('og:type', type, true);
 
     // Twitter Card
-    setMeta('twitter:card', 'summary_large_image');
+    // The default image is the square logo, which only suits the small card
+    setMeta('twitter:card', image ? 'summary_large_image' : 'summary');
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
 
@@ -85,6 +90,10 @@ export function SEOHead({
     }
 
     // Canonical link
+    if (!canonicalUrl) {
+      removeMeta('link[rel="canonical"]');
+      return;
+    }
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
@@ -92,7 +101,7 @@ export function SEOHead({
       document.head.appendChild(canonicalLink);
     }
     canonicalLink.setAttribute('href', canonicalUrl);
-  }, [fullTitle, description, canonicalUrl, type, robots, resolvedImage, articleKey]);
+  }, [fullTitle, description, canonicalUrl, type, robots, image, resolvedImage, articleKey]);
 
   if (!jsonLd) return null;
   const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];

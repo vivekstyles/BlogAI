@@ -6,7 +6,8 @@ Validates the generated dist/ folder.
 Errors (exit code 1):
 - Missing or duplicate <title>, meta description, or canonical URL on indexable pages
 - Canonical URLs that are not absolute production URLs
-- Missing Open Graph tags (og:title, og:description, og:url)
+- Missing Open Graph tags (og:title, og:description, og:url); duplicate og:image, twitter:image or twitter:card tags
+- A canonical URL on the 404 page
 - Invalid JSON-LD, or BlogPosting markup without headline, datePublished, or author
 - Accidental noindex on indexable pages; missing noindex on the 404 page
 - Prerendered pages without exactly one <h1>
@@ -145,7 +146,11 @@ def main():
         # 3. Canonical URL validation
         canon_match = re.search(r'<link\s+rel=["\']canonical["\']\s+href=["\'](.*?)["\']\s*/?>', content, re.IGNORECASE)
         canon = canon_match.group(1).strip() if canon_match else ""
-        if not canon:
+        if is_404:
+            # The 404 page has no URL of its own; a canonical would point Google at a page that does not exist
+            if canon:
+                errors.append(f"[{rel_path}] 404 page must not declare a canonical URL ('{canon}').")
+        elif not canon:
             errors.append(f"[{rel_path}] Missing or empty <link rel=\"canonical\">.")
         else:
             if not canon.startswith(SITE_URL):
@@ -157,9 +162,13 @@ def main():
                     seen_canonicals[canon] = rel_path
 
         # 4. Open Graph validation
-        for og_prop in ["og:title", "og:description", "og:url"]:
+        for og_prop in ["og:title", "og:description"] + ([] if is_404 else ["og:url"]):
             if f'property="{og_prop}"' not in content and f"property='{og_prop}'" not in content:
                 errors.append(f"[{rel_path}] Missing Open Graph property '{og_prop}'.")
+        # Repeated social tags leave the choice of value to each consumer
+        for social_tag in ['property="og:image"', 'name="twitter:image"', 'name="twitter:card"', 'property="og:url"']:
+            if content.count(social_tag) > 1:
+                errors.append(f"[{rel_path}] Duplicate {social_tag} meta tag.")
 
         # 5. Robots directive
         if is_404:

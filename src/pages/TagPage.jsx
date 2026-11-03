@@ -50,6 +50,7 @@ export function TagPage() {
           title="Tag Not Found"
           description="The requested tag does not exist in the BlogAI Directory."
           robots="noindex, follow"
+          canonicalPath={null}
         />
         <div className="empty-tag-card">
           <AlertCircle size={40} className="not-found-icon" />

@@ -11,6 +11,7 @@ export function NotFound() {
         title="404 - Page Not Found"
         description="The page you requested could not be found on BlogAI Directory."
         robots="noindex, nofollow"
+        canonicalPath={null}
       />
 
       <div className="container notfound-container">

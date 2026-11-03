@@ -52,6 +52,7 @@ export function BlogDetails() {
           title="Blog Not Found"
           description="The requested publication does not exist in the BlogAI Directory."
           robots="noindex, follow"
+          canonicalPath={null}
         />
         <div className="empty-blog-card">
           <AlertCircle size={40} className="not-found-icon" />

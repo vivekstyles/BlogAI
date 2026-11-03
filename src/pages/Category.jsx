@@ -60,6 +60,7 @@ export function Category() {
           title="Category Not Found"
           description="The requested category could not be found in the BlogAI Directory."
           robots="noindex, follow"
+          canonicalPath={null}
         />
         <div className="empty-category-card">
           <AlertCircle size={40} className="not-found-icon" />

@@ -45,6 +45,7 @@ export function ArticleDetails() {
           title="Article Not Found"
           description="The requested article could not be found on BlogAI."
           robots="noindex, follow"
+          canonicalPath={null}
         />
         <div className="article-not-found-card">
           <AlertCircle size={40} className="not-found-icon" aria-hidden="true" />

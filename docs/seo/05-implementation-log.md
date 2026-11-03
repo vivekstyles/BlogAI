@@ -331,6 +331,21 @@ Five new published articles, forming a physics cluster (Physics and Science cate
 - The experiments and projects articles state that the activities were not run for the article, and mark adult-supervision and qualified-supervision items.
 - External links checked by script on 2026-10-17. Moved pages were replaced (DOE LED page, FDA pulse oximeter communication, NRC smoke detector fact sheet, NASA Glenn lift page). Exploratorium, IOP Spark, publisher DOIs and the CDC block automated requests; they were checked in a browser or by their identifiers. STScI/MAST was unreachable from the test network, so the TESS project links to NASA's mission page instead.
 
+### Google Search Central docs review (2026-11-03)
+
+Checked the site against Google's SEO starter guide and the Article, site-name and Organization structured data docs. Most items were already in place (unique titles and descriptions, self-canonicals, sitemap index in robots.txt, real 404 status codes, 308 from `www` and `http`, BlogPosting, BreadcrumbList, WebSite site-name and Organization logo markup, raster favicons). These gaps were fixed:
+
+| Gap | Fix | Files |
+|---|---|---|
+| Every prerendered page had two `og:image` and two `twitter:image` tags (shell copy plus an injected copy) | Prerender replaces the shell's tags in place | `scripts/prerender.js` |
+| `twitter:card` was `summary_large_image` on every page, but the only image is the square 512px logo (P2-3 had regressed) | `summary` unless the page has its own image | `scripts/prerender.js`, `src/components/seo/SEOHead.jsx`, `index.html` |
+| `404.html` declared a canonical of `/404`, a URL that returns 404; client-side not-found states set the canonical to the home page | Not-found pages declare no canonical or `og:url` (`canonicalPath={null}`) | `scripts/prerender.js`, `SEOHead.jsx`, `NotFound.jsx`, `ArticleDetails.jsx`, `BlogDetails.jsx`, `Category.jsx`, `TagPage.jsx` |
+| Validator required a canonical on the 404 page | Now requires none on 404, and fails on duplicate `og:image`, `twitter:image`, `twitter:card` or `og:url` tags | `scripts/validate_seo.py` |
+
+Validation: `npm run ci` (78 tests passed, 845 pages, 595 sitemap URLs, `validate_seo.py` passed). In `vite preview`, client navigation to a missing article and a missing route removes the canonical and `og:url`, and the next real page restores them.
+
+Not changed, needs the owner: Search Console verification (token placeholder in `index.html`), a real 1200×630 social image (P2-4), a named author with a profile URL (P1-7). The privacy page says the site does not use Google Analytics, but `index.html` loads GA4 (`G-R1K6E4R7WG`). One of them has to change.
+
 ### Artificial Intelligence category (2026-10-20)
 
 New category `/category/artificial-intelligence` (in `sitemap-categories.xml`, lastmod 2026-10-20).
