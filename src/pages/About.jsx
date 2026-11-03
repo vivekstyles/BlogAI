@@ -61,10 +61,11 @@ export function About() {
             <div className="principles-grid">
               <div className="principle-card">
                 <ShieldCheck size={24} className="principle-icon" />
-                <h3>Zero Tracking &amp; No Ads</h3>
+                <h3>No Ads or Paid Placements</h3>
                 <p>
-                  No invasive trackers, advertising networks, or sponsored pay-to-play placements.
-                  The directory serves readers and authors only.
+                  No advertising networks or sponsored pay-to-play placements. We use Google
+                  Analytics only to see which pages people read; the{' '}
+                  <a href="/privacy">privacy policy</a> explains what it collects.
                 </p>
               </div>
 

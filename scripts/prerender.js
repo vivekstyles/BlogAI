@@ -703,9 +703,10 @@ async function runPrerender() {
   const privacyHtml = buildHtml({
     template,
     title: 'Privacy Policy',
-    description: 'Privacy policy for BlogAI Directory: zero tracking, no cookies, and no personal data collection.',
+    description:
+      "BlogAI's privacy policy: what Google Analytics and Google Fonts receive when you browse, and what the blog submission form collects.",
     canonicalUrl: `${SITE_URL}/privacy`,
-    bodyContent: `<main id="main-content"><div class="container"><h1>Privacy Policy</h1><p>Zero tracking, no analytics cookies, no personal data resale.</p></div></main>`,
+    bodyContent: `<main id="main-content"><div class="container"><h1>Privacy Policy</h1><p>What BlogAI collects when you read articles, browse the directory, or submit a blog.</p><h2>Analytics (Google Analytics)</h2><p>We use Google Analytics 4, which sets first-party cookies and receives the pages you view, the referring page, browser and device details, and an approximate location. You can block it with the Google Analytics opt-out browser add-on or a content blocker.</p><h2>Fonts</h2><p>Fonts are loaded from Google Fonts, which receives your IP address and browser details.</p><h2>Community Blog Submissions</h2><p>Details you enter in the submission form, plus basic technical details from your browser, are used only to review submissions and are never published or shared with third parties.</p></div></main>`,
   });
   writeRouteFile('/privacy', privacyHtml);
   sitemapUrls.push({ section: 'pages', loc: `${SITE_URL}/privacy` });

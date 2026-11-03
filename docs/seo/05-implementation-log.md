@@ -344,7 +344,7 @@ Checked the site against Google's SEO starter guide and the Article, site-name a
 
 Validation: `npm run ci` (78 tests passed, 845 pages, 595 sitemap URLs, `validate_seo.py` passed). In `vite preview`, client navigation to a missing article and a missing route removes the canonical and `og:url`, and the next real page restores them.
 
-Not changed, needs the owner: Search Console verification (token placeholder in `index.html`), a real 1200×630 social image (P2-4), a named author with a profile URL (P1-7). The privacy page says the site does not use Google Analytics, but `index.html` loads GA4 (`G-R1K6E4R7WG`). One of them has to change.
+Not changed, needs the owner: Search Console verification (token placeholder in `index.html`), a real 1200×630 social image (P2-4), a named author with a profile URL (P1-7). The privacy page said the site does not use Google Analytics, but `index.html` loads GA4 (`G-R1K6E4R7WG`). Fixed the same day: `/privacy` now describes Google Analytics (cookies, data sent, opt-out) and Google Fonts, and the About page no longer claims zero tracking.
 
 ### Artificial Intelligence category (2026-10-20)
 

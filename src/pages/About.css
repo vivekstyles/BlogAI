@@ -84,3 +84,17 @@
   text-decoration: underline;
   font-weight: 600;
 }
+
+.principle-card a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-surface);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.principle-card a:hover,
+.principle-card a:focus-visible {
+  color: var(--brand-primary-hover);
+  text-decoration-color: currentColor;
+}
