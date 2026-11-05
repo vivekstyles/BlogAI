@@ -12,11 +12,12 @@
     "build:data": "node scripts/run_build_data.js",
     "build:articles": "node scripts/build_articles.js",
     "validate:seo": "python scripts/validate_seo.py",
+    "test:seo-rules": "python scripts/test_validate_seo.py",
     "check:live": "python scripts/check_live_seo.py",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "ci": "npm run lint:csv && npm run build:data && npm run build:articles && npm test && npm run build && npm run validate:seo"
+    "ci": "npm run lint:csv && npm run build:data && npm run build:articles && npm test && npm run build && npm run validate:seo && npm run test:seo-rules"
   },
   "dependencies": {
     "katex": "^0.18.11",

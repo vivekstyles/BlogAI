@@ -7,6 +7,7 @@ import BlogCard from '../components/blogs/BlogCard';
 import TagChip from '../components/tags/TagChip';
 import CategoryNav from '../components/categories/CategoryNav';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import SEOHead from '../components/seo/SEOHead';
 
 describe('Component: SearchBar', () => {
   it('renders input with value and handles change events', () => {
@@ -138,5 +139,21 @@ describe('Component: Breadcrumbs', () => {
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Engineering')).toBeInTheDocument();
     expect(screen.getByText('Martin Fowler')).toBeInTheDocument();
+  });
+});
+
+// Google Search rule G2.2: not-found states declare no canonical or og:url
+describe('Component: SEOHead canonical', () => {
+  it('sets the canonical and og:url for a normal page', () => {
+    render(<SEOHead title="About" canonicalPath="/about" />);
+    expect(document.querySelector('link[rel="canonical"]').getAttribute('href')).toBe('https://blogai.space/about');
+    expect(document.querySelector('meta[property="og:url"]').getAttribute('content')).toBe('https://blogai.space/about');
+  });
+
+  it('removes the canonical and og:url when canonicalPath is null', () => {
+    render(<SEOHead title="About" canonicalPath="/about" />);
+    render(<SEOHead title="Not Found" robots="noindex, follow" canonicalPath={null} />);
+    expect(document.querySelector('link[rel="canonical"]')).toBeNull();
+    expect(document.querySelector('meta[property="og:url"]')).toBeNull();
   });
 });

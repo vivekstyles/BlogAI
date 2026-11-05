@@ -41,13 +41,18 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 OPENER = urllib.request.build_opener(NoRedirect)
 
 
-def fetch(url: str) -> Tuple[int, dict, bytes]:
+def fetch(url: str, attempts: int = 2) -> Tuple[int, dict, bytes]:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with OPENER.open(req, timeout=20) as resp:
-            return resp.status, dict(resp.headers), resp.read()
-    except urllib.error.HTTPError as e:
-        return e.code, dict(e.headers), e.read() if e.fp else b""
+    for attempt in range(attempts):
+        try:
+            with OPENER.open(req, timeout=20) as resp:
+                return resp.status, dict(resp.headers), resp.read()
+        except urllib.error.HTTPError as e:
+            return e.code, dict(e.headers), e.read() if e.fp else b""
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            # Large pages fetched in parallel occasionally time out; one retry separates that from a real outage
+            if attempt == attempts - 1:
+                raise
 
 
 def check_page(base: str, loc: str, robots: RobotsRules) -> List[str]:

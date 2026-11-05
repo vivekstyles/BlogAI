@@ -20,6 +20,14 @@ Errors (exit code 1):
 - BreadcrumbList with fewer than two items, wrong positions, or non-absolute item URLs
 - feed.xml missing, invalid, or linking to articles outside the sitemaps
 - Image sitemap entries pointing at missing files; missing raster favicon or logo files
+- Pages without <html lang> or a mobile viewport meta tag; "undefined"/"null" leaking into titles
+  or descriptions
+- twitter:card summary_large_image without a page image of its own (the default is the square logo)
+- More than one JSON-LD block of the same @type on a page
+- Home page without WebSite (name, url) and Organization (logo) markup
+- BlogPosting whose image is the site logo, an Organization author without url, or dateModified
+  before datePublished
+- robots.txt blocking the CSS or JS files that pages load
 
 Warnings (reported, do not fail the build):
 - Titles longer than 60 characters, descriptions outside 70-160 characters
@@ -27,6 +35,7 @@ Warnings (reported, do not fail the build):
 - Article pages without any contextual link to another article
 """
 
+import argparse
 import json
 import re
 import sys
@@ -36,6 +45,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from sitemap_utils import SITE_URL, RobotsRules, parse_sitemap, url_path
+LOGO_URL = f"{SITE_URL}/icon-512.png"
 TITLE_MAX = 60
 DESC_MIN, DESC_MAX = 70, 160
 
@@ -70,8 +80,11 @@ def main():
     if hasattr(sys.stderr, "reconfigure"):
         sys.stderr.reconfigure(encoding="utf-8")
 
+    parser = argparse.ArgumentParser(description="Validate SEO rules on a production build.")
+    parser.add_argument("--dist", help="Build directory to check (default: dist/)")
+    args = parser.parse_args()
     root_dir = Path(__file__).resolve().parent.parent
-    dist_dir = root_dir / "dist"
+    dist_dir = Path(args.dist).resolve() if args.dist else root_dir / "dist"
 
     print("Running production SEO audit on dist/...")
 
@@ -87,6 +100,7 @@ def main():
     # site path -> {"indexable": bool, "canonical": str}
     pages: Dict[str, Dict] = {}
     page_html: Dict[str, str] = {}
+    render_assets = set()
     total_pages = 0
 
     html_files = sorted(dist_dir.glob("**/*.html"))
@@ -232,9 +246,55 @@ def main():
             if article_body and "href=\"/articles/" not in article_body.group(1):
                 warnings.append(f"[{rel_path}] Article body has no contextual link to another article.")
 
+        # 10. Language and mobile viewport (Google indexes the mobile rendering)
+        if not re.search(r'<html\s[^>]*lang="[a-z]', content, re.IGNORECASE):
+            errors.append(f"[{rel_path}] <html> has no lang attribute.")
+        if not meta_content(content, "name", "viewport"):
+            errors.append(f"[{rel_path}] Missing <meta name=\"viewport\">.")
+        for label, value in (("Title", title_match.group(1) if title_match else ""), ("Description", desc or "")):
+            if re.search(r"\b(undefined|null|NaN)\b", value):
+                errors.append(f"[{rel_path}] {label} contains a placeholder value: '{value.strip()}'")
+
+        # 11. twitter:card must match the image: the default image is the square logo
+        card = meta_content(content, "name", "twitter:card")
+        og_image = meta_content(content, "property", "og:image")
+        if card == "summary_large_image" and (not og_image or og_image == LOGO_URL):
+            errors.append(f"[{rel_path}] twitter:card is summary_large_image but the only image is the logo.")
+
+        # 12. One JSON-LD block per @type, and Google's site-name and article rules
+        ld_by_type: Dict[str, List[dict]] = {}
+        for ld_text in json_ld_matches:
+            try:
+                data = json.loads(ld_text.strip())
+            except Exception:
+                continue
+            ld_by_type.setdefault(str(data.get("@type")), []).append(data)
+        for ld_type, blocks in ld_by_type.items():
+            if len(blocks) > 1:
+                errors.append(f"[{rel_path}] {len(blocks)} JSON-LD blocks of @type {ld_type} (expected one).")
+        if rel_path == "index.html":
+            website = (ld_by_type.get("WebSite") or [{}])[0]
+            if not website.get("name") or website.get("url") != f"{SITE_URL}/":
+                errors.append(f"[{rel_path}] Home page needs WebSite JSON-LD with name and url {SITE_URL}/.")
+            organization = (ld_by_type.get("Organization") or [{}])[0]
+            if not organization.get("logo"):
+                errors.append(f"[{rel_path}] Home page needs Organization JSON-LD with a logo.")
+        for post in ld_by_type.get("BlogPosting", []):
+            images = post.get("image") or []
+            if LOGO_URL in (images if isinstance(images, list) else [images]):
+                errors.append(f"[{rel_path}] BlogPosting image must show the article, not the site logo.")
+            author = post.get("author") or {}
+            if author.get("@type") == "Organization" and not author.get("url"):
+                errors.append(f"[{rel_path}] Organization author needs a url.")
+            published, modified = str(post.get("datePublished", "")), str(post.get("dateModified", ""))
+            if modified and published and modified < published:
+                errors.append(f"[{rel_path}] dateModified {modified} is earlier than datePublished {published}.")
+
+        render_assets.update(re.findall(r'(?:src|href)="(/assets/[^"]+\.(?:js|css))"', content))
+
         pages[route] = {"indexable": not is_noindex, "canonical": canon, "file": rel_path}
 
-    # 10. robots.txt
+    # 13. robots.txt
     robots_rules = RobotsRules("")
     robots_file = dist_dir / "robots.txt"
     if not robots_file.exists():
@@ -243,8 +303,12 @@ def main():
         robots_rules = RobotsRules(robots_file.read_text(encoding="utf-8"))
         if f"{SITE_URL}/sitemap.xml" not in robots_rules.sitemaps:
             errors.append(f"robots.txt does not declare Sitemap: {SITE_URL}/sitemap.xml")
+        # Google renders pages like a browser, so it must be able to fetch their CSS and JS
+        for asset in sorted(render_assets):
+            if not robots_rules.is_allowed(asset):
+                errors.append(f"robots.txt blocks {asset}, which pages need to render.")
 
-    # 11. Sitemap index, child sitemaps, and consistency with the generated pages
+    # 14. Sitemap index, child sitemaps, and consistency with the generated pages
     sitemap_locs: List[str] = []
     sitemap_file = dist_dir / "sitemap.xml"
     if not sitemap_file.exists():
@@ -290,7 +354,7 @@ def main():
         if page["indexable"] and page["canonical"] == expected and expected not in listed:
             warnings.append(f"[{page['file']}] Indexable, self-canonical page is missing from the sitemaps.")
 
-    # 12. Feed OPML validation
+    # 15. Feed OPML validation
     opml_file = dist_dir / "feed.opml"
     if not opml_file.exists():
         errors.append("feed.opml missing in dist directory.")
@@ -300,7 +364,7 @@ def main():
         except Exception as e:
             errors.append(f"feed.opml is not valid XML: {e}")
 
-    # 13. Article RSS feed: valid XML, and every item links to a page listed in the sitemaps
+    # 16. Article RSS feed: valid XML, and every item links to a page listed in the sitemaps
     feed_file = dist_dir / "feed.xml"
     if not feed_file.exists():
         errors.append("feed.xml missing in dist directory.")
@@ -312,7 +376,7 @@ def main():
         except ET.ParseError as e:
             errors.append(f"feed.xml is not valid XML: {e}")
 
-    # 14. Image sitemap entries must point at files that exist
+    # 17. Image sitemap entries must point at files that exist
     image_ns = "{http://www.google.com/schemas/sitemap-image/1.1}"
     for sitemap_file in sorted(dist_dir.glob("sitemap-*.xml")):
         for image_loc in ET.parse(sitemap_file).getroot().iter(f"{image_ns}loc"):
@@ -320,7 +384,7 @@ def main():
             if src.startswith(SITE_URL + "/") and not (dist_dir / unescape(src[len(SITE_URL) + 1:])).is_file():
                 errors.append(f"{sitemap_file.name}: image {src} does not exist in dist.")
 
-    # 15. Favicon and logo in raster formats Google Search accepts (SVG is not one of them)
+    # 18. Favicon and logo in raster formats Google Search accepts (SVG is not one of them)
     for icon in ("favicon.ico", "favicon-96x96.png", "apple-touch-icon.png", "icon-512.png"):
         if not (dist_dir / icon).is_file():
             errors.append(f"{icon} missing in dist directory.")

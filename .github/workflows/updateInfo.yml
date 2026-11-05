@@ -62,6 +62,9 @@ jobs:
       - name: Validate SEO metadata, canonicals, and sitemap
         run: python scripts/validate_seo.py
 
+      - name: Check the SEO validator catches every Google Search rule
+        run: python scripts/test_validate_seo.py
+
   # Check of the live site on blogai.space: every sitemap URL must answer 200 without a redirect,
   # be indexable and self-canonical. Runs daily and on manual runs, because Vercel deploys outside
   # this workflow. Enable it by setting the repository variable SITE_LIVE to "true"
