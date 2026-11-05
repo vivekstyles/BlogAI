@@ -1,5 +1,71 @@
 [
   {
+    "slug": "artemis-ii-sls-ionosphere-hole",
+    "title": "Did NASA's SLS Rocket Punch a Hole in the Upper Atmosphere? What the Artemis II Study Found",
+    "seoTitle": "Did Artemis II's SLS Rocket Punch a Hole in the Ionosphere?",
+    "description": "A new study links Artemis II to three ionospheric disturbances. The SLS liftoff caused the weakest. Here is what was measured and what it means for GPS.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-06",
+    "updatedAt": "2026-11-06",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Science",
+        "slug": "science"
+      },
+      {
+        "name": "Physics",
+        "slug": "physics"
+      }
+    ],
+    "tags": [
+      {
+        "name": "artemis ii",
+        "slug": "artemis-ii"
+      },
+      {
+        "name": "nasa",
+        "slug": "nasa"
+      },
+      {
+        "name": "space launch system",
+        "slug": "space-launch-system"
+      },
+      {
+        "name": "ionosphere",
+        "slug": "ionosphere"
+      },
+      {
+        "name": "gps",
+        "slug": "gps"
+      },
+      {
+        "name": "space weather",
+        "slug": "space-weather"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/artemis-ii-sls-ionosphere-hole",
+    "isCanonicalLocal": true,
+    "wordCount": 2221,
+    "readingTimeMinutes": 10,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "applications-of-physics-in-everyday-life",
+      "physics-concepts-explained-with-examples",
+      "physics-experiments-at-home"
+    ],
+    "relatedBlogs": [
+      "ars-technica-science",
+      "astronomy-magazine",
+      "backreaction"
+    ]
+  },
+  {
     "slug": "advanced-prompt-engineering-techniques",
     "title": "10 Advanced Prompt Engineering Techniques for Large Language Models",
     "seoTitle": "10 Advanced Prompt Engineering Techniques for LLMs",

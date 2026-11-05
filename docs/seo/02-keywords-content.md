@@ -89,6 +89,7 @@
 | `/articles/ai-prompts-for-developers` | AI prompts for developers | ChatGPT prompts for coding, AI code review prompt, debugging prompt, AGENTS.md | which AI is best for coding; chat assistant vs coding agent; how to use AI code safely | Informational / how-to | Software developers |
 | `/articles/advanced-prompt-engineering-techniques` | advanced prompt engineering techniques | self-consistency, ReAct prompting, tree of thoughts, structured outputs, context engineering, prompt injection | are advanced prompts needed with reasoning models; prompt vs context engineering; prompting vs fine-tuning | Informational | LLM application developers |
 | `/articles/prompt-engineering-examples` | prompt engineering examples | AI prompts for business, ChatGPT prompts for productivity, prompts for marketing, sales and HR | which business tasks suit AI; how to match company voice; can I paste confidential data | Informational / how-to | Knowledge workers, small business owners |
+| `/articles/artemis-ii-sls-ionosphere-hole` | SLS rocket ionosphere hole | Artemis II ionosphere, rocket launch GPS disruption, ionospheric hole, ICPS apogee raise burn | did Artemis II create a hole in the atmosphere; does a rocket launch affect GPS; what is an ionosphere hole | Informational (news explainer) | General science readers, space enthusiasts |
 | `/directory` | technical blog directory | engineering blogs list, independent tech blogs | best engineering blogs to follow | Navigational / commercial-investigation | Developers, researchers |
 | `/category/mathematics` | mathematics blogs | math articles and blogs | best math blogs to follow | Commercial-investigation | Math learners |
 | `/category/engineering` etc. | `<category> blogs` | — | best `<category>` blogs | Commercial-investigation | — |
@@ -198,6 +199,12 @@ No consolidation, redirect or unpublishing is recommended.
 - **Overlap control:** the techniques article owns the general, model-agnostic technique reference and the research behind it; the ChatGPT article owns the app (custom instructions, projects, memory, temporary chat, search, data controls) and keeps API detail out; the developers article owns copy-ready coding prompts; the advanced article owns multi-call and API patterns (self-consistency, ReAct, PAL, RAG grounding, structured outputs, context engineering, optimization, evals, prompt injection) with code; the business article owns workplace templates. Each links to the others instead of repeating.
 - **Freshness:** vendor prompting guides (Anthropic, OpenAI, Google), ChatGPT features and plan limits, model names and reasoning-effort settings change every few months. The articles deliberately avoid naming current model versions. Recheck the vendor guides and ChatGPT help pages quarterly; bump `updatedAt` only when content changes.
 - **Gaps:** a prompt evaluation tutorial with code, a system prompt design guide and a prompt injection explainer. Confirm demand in GSC first.
+
+### Cluster O — Space science explainers (Science and Physics categories)
+
+- **Added 2026-11-06:** one article, `/articles/artemis-ii-sls-ionosphere-hole`, explaining the NCKU preprint on three ionospheric disturbances during Artemis II and correcting viral claims (liftoff was the weakest event; no GPS outage reported; Starship comparison not in the paper). Links to the physics applications and science facts articles.
+- **Freshness:** the source is a preprint. Recheck when the peer-reviewed version appears in Geophysical Research Letters and when the authors publish the planned depletion study; update figures and `updatedAt` only if they change.
+- **Gaps:** a general explainer on space weather and GPS, and on rocket launches and the atmosphere. Confirm demand in GSC first.
 
 ### Cluster M — IoT projects (Engineering and Programming and Technology categories)
 

@@ -45,6 +45,15 @@ Five published articles in Artificial Intelligence and Programming and Technolog
 - **Code:** the Python sketches and JSON schema in the advanced article were syntax-checked; they call a placeholder `complete()` and were not run against a live API.
 - **Recheck:** vendor prompting guides and ChatGPT help pages quarterly.
 
+### Artemis II ionosphere article (2026-11-06)
+
+One published article in Science and Physics, `publishedAt` 2026-11-06: `/articles/artemis-ii-sls-ionosphere-hole`. No existing URLs changed.
+
+- **Sources read directly:** full text of the Choi, Lin et al. preprint (PDF hosted on spaceweather.com, titled "Rare multiple ionospheric disturbances…"; the ESSOAr record title reads "Rare reoccurring…"), NASA Artemis II mission page and SLS page, NOAA SWPC ionosphere and TEC pages, Newsweek coverage, Ars Technica via an RNTF repost (FORMOSAT-5 hole).
+- **Not verified:** Quartz and Washington Times coverage (403). The "10 times Starship" and "several metres of GPS error" claims in coverage do not appear in the preprint text and are flagged as such in the article. The 0.16 m per TECU L1 delay is calculated from the standard first-order formula, not quoted.
+- **Links:** checked with curl on 2026-11-06. doi.org for the preprint returned 404, so the ESSOAr URL is used; ESSOAr, Wiley (doi.org/10.1002/2017SW001738) and Ars Technica refuse scripted requests (403/405) and were not rechecked.
+- **Recheck:** peer-reviewed publication status of the preprint.
+
 ### IoT projects articles (2026-11-03)
 
 Five published articles in Engineering and Programming and Technology, all `publishedAt` 2026-11-03: `/articles/iot-projects-for-beginners`, `/articles/arduino-iot-projects`, `/articles/raspberry-pi-smart-home-projects`, `/articles/esp32-iot-projects`, `/articles/iot-project-ideas-for-final-year-students`. No existing URLs changed.
