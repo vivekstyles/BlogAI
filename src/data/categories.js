@@ -4,7 +4,7 @@ export const categories = [
     "name": "Artificial Intelligence",
     "slug": "artificial-intelligence",
     "description": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
-    "count": 29,
+    "count": 35,
     "popularTags": [
       "agents",
       "ai criticism",
@@ -20,7 +20,7 @@ export const categories = [
     "name": "Automobile",
     "slug": "automobile",
     "description": "Automotive engineering, electric mobility, vehicle technology, road tests, and car culture.",
-    "count": 22,
+    "count": 26,
     "popularTags": [
       "auto shows",
       "automotive",
@@ -36,7 +36,7 @@ export const categories = [
     "name": "Engineering",
     "slug": "engineering",
     "description": "Software engineering architectures, distributed systems, reliability, backend infrastructure, and developer craft.",
-    "count": 28,
+    "count": 34,
     "popularTags": [
       "agile",
       "ai",
@@ -52,7 +52,7 @@ export const categories = [
     "name": "Food and Nutrition",
     "slug": "food-and-nutrition",
     "description": "Nutrition science, healthy eating, sports nutrition, food policy, and everyday recipes.",
-    "count": 23,
+    "count": 29,
     "popularTags": [
       "baking",
       "body composition",
@@ -68,7 +68,7 @@ export const categories = [
     "name": "Mathematics",
     "slug": "mathematics",
     "description": "Pure and applied mathematics, combinatorics, analysis, theoretical foundations, and mathematical expositions.",
-    "count": 26,
+    "count": 30,
     "popularTags": [
       "academia",
       "ai research",
@@ -84,7 +84,7 @@ export const categories = [
     "name": "Personal Finance",
     "slug": "personal-finance",
     "description": "Budgeting, saving, debt, investing, retirement planning, and the everyday habits that build financial stability.",
-    "count": 24,
+    "count": 31,
     "popularTags": [
       "banking",
       "behavioral finance",
@@ -100,7 +100,7 @@ export const categories = [
     "name": "Physics",
     "slug": "physics",
     "description": "Theoretical cosmology, quantum foundations, particle physics, astrophysics, and modern physical inquiry.",
-    "count": 23,
+    "count": 29,
     "popularTags": [
       "academia",
       "acoustics",
@@ -116,23 +116,23 @@ export const categories = [
     "name": "Programming and Technology",
     "slug": "programming-and-technology",
     "description": "Programming languages, software development, Python, developer tools, and how technology is built and used.",
-    "count": 31,
+    "count": 37,
     "popularTags": [
       "ai",
       "apple",
       "artificial intelligence",
+      "backend",
       "careers",
       "commentary",
       "community",
-      "computer hardware",
-      "computing"
+      "computer hardware"
     ]
   },
   {
     "name": "Science",
     "slug": "science",
     "description": "Interdisciplinary scientific discovery, chemical biology, neuroscience, peer review, and research methodology.",
-    "count": 24,
+    "count": 29,
     "popularTags": [
       "archaeology",
       "biology",

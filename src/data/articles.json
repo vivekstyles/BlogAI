@@ -75,7 +75,7 @@
     "relatedBlogs": [
       "simon-willisons-weblog",
       "openai-news",
-      "ahead-of-ai"
+      "philipp-schmid"
     ]
   },
   {
@@ -152,9 +152,9 @@
       "prompt-engineering-techniques"
     ],
     "relatedBlogs": [
+      "mitchell-hashimoto",
       "simon-willisons-weblog",
-      "stack-overflow-blog",
-      "aws-machine-learning-blog"
+      "stack-overflow-blog"
     ]
   },
   {
@@ -303,7 +303,7 @@
     "relatedBlogs": [
       "simon-willisons-weblog",
       "aws-machine-learning-blog",
-      "hamels-blog"
+      "fastai"
     ]
   },
   {
@@ -1028,8 +1028,8 @@
     ],
     "relatedBlogs": [
       "clark-howard",
-      "abnormal-returns",
-      "afford-anything"
+      "money-under-30",
+      "abnormal-returns"
     ]
   },
   {
@@ -1260,7 +1260,7 @@
     "relatedBlogs": [
       "simon-willisons-weblog",
       "aws-machine-learning-blog",
-      "hamels-blog"
+      "fastai"
     ]
   },
   {
@@ -1332,8 +1332,8 @@
     ],
     "relatedBlogs": [
       "clever-girl-finance",
-      "afford-anything",
-      "budgets-are-sexy"
+      "money-under-30",
+      "afford-anything"
     ]
   },
   {
@@ -1464,9 +1464,9 @@
       "numpy-examples-for-numerical-computing"
     ],
     "relatedBlogs": [
+      "eli-bendersky",
       "freecodecamp-news",
-      "john-d-cook",
-      "ned-batchelder"
+      "john-d-cook"
     ]
   },
   {
@@ -1528,9 +1528,9 @@
       "sql-queries-for-data-analysts"
     ],
     "relatedBlogs": [
+      "eli-bendersky",
       "freecodecamp-news",
-      "ned-batchelder",
-      "python-insider"
+      "ned-batchelder"
     ]
   },
   {
@@ -1733,8 +1733,8 @@
     ],
     "relatedBlogs": [
       "openai-news",
-      "simon-willisons-weblog",
-      "ahead-of-ai"
+      "philipp-schmid",
+      "simon-willisons-weblog"
     ]
   },
   {
@@ -1873,8 +1873,8 @@
     ],
     "relatedBlogs": [
       "openai-news",
-      "simon-willisons-weblog",
-      "ahead-of-ai"
+      "philipp-schmid",
+      "simon-willisons-weblog"
     ]
   },
   {
@@ -2181,8 +2181,8 @@
     ],
     "relatedBlogs": [
       "clever-girl-finance",
-      "the-college-investor",
-      "abnormal-returns"
+      "money-under-30",
+      "the-college-investor"
     ]
   },
   {
@@ -2249,8 +2249,8 @@
     ],
     "relatedBlogs": [
       "openai-news",
-      "simon-willisons-weblog",
-      "ahead-of-ai"
+      "philipp-schmid",
+      "simon-willisons-weblog"
     ]
   },
   {
@@ -2562,7 +2562,7 @@
     "relatedBlogs": [
       "afford-anything",
       "clever-girl-finance",
-      "the-college-investor"
+      "money-under-30"
     ]
   },
   {
@@ -2626,7 +2626,7 @@
     "relatedBlogs": [
       "marc-brooker",
       "martin-kleppmann",
-      "of-dollars-and-data"
+      "metadata-murat-demirbas"
     ]
   },
   {
@@ -2688,9 +2688,9 @@
       "chatgpt-prompt-tips-for-beginners"
     ],
     "relatedBlogs": [
+      "eli-bendersky",
       "freecodecamp-news",
-      "ned-batchelder",
-      "python-insider"
+      "ned-batchelder"
     ]
   },
   {
@@ -2949,9 +2949,9 @@
       "data-analysis-tools"
     ],
     "relatedBlogs": [
+      "eli-bendersky",
       "freecodecamp-news",
-      "ned-batchelder",
-      "python-insider"
+      "ned-batchelder"
     ]
   },
   {
@@ -3022,8 +3022,8 @@
     ],
     "relatedBlogs": [
       "one-useful-thing",
-      "aws-machine-learning-blog",
-      "exponential-view"
+      "the-algorithmic-bridge",
+      "aws-machine-learning-blog"
     ]
   },
   {
@@ -4144,9 +4144,9 @@
       "healthy-meal-ideas"
     ],
     "relatedBlogs": [
+      "101-cookbooks",
       "abby-langer-nutrition",
-      "ambitious-kitchen",
-      "cookie-and-kate"
+      "ambitious-kitchen"
     ]
   },
   {
@@ -4202,9 +4202,9 @@
       "foods-rich-in-vitamins-and-minerals"
     ],
     "relatedBlogs": [
-      "ambitious-kitchen",
-      "budget-bytes",
-      "the-kitchn"
+      "downshiftology",
+      "101-cookbooks",
+      "ambitious-kitchen"
     ]
   },
   {
@@ -4261,8 +4261,8 @@
     ],
     "relatedBlogs": [
       "stronger-by-science",
-      "abby-langer-nutrition",
-      "ambitious-kitchen"
+      "101-cookbooks",
+      "abby-langer-nutrition"
     ]
   },
   {
@@ -4384,9 +4384,9 @@
       "physics-projects-for-students"
     ],
     "relatedBlogs": [
-      "new-scientist",
-      "physics-forums-insights",
-      "popular-science"
+      "berkeley-lab-news-center",
+      "fermilab-news",
+      "new-scientist"
     ]
   },
   {
@@ -4443,8 +4443,8 @@
     ],
     "relatedBlogs": [
       "live-science",
-      "new-scientist",
-      "science-news"
+      "mongabay",
+      "new-scientist"
     ]
   },
   {
@@ -4510,7 +4510,7 @@
     "relatedBlogs": [
       "real-python",
       "kdnuggets",
-      "freecodecamp-news"
+      "eli-bendersky"
     ]
   },
   {
@@ -4636,9 +4636,9 @@
       "physics-projects-for-students"
     ],
     "relatedBlogs": [
-      "physics-forums-insights",
-      "quanta-magazine",
-      "shtetl-optimized"
+      "berkeley-lab-news-center",
+      "fermilab-news",
+      "physics-forums-insights"
     ]
   },
   {
@@ -4698,9 +4698,9 @@
       "physics-concepts-explained-with-examples"
     ],
     "relatedBlogs": [
-      "physics-forums-insights",
-      "quanta-magazine",
-      "shtetl-optimized"
+      "berkeley-lab-news-center",
+      "fermilab-news",
+      "physics-forums-insights"
     ]
   },
   {
@@ -4764,9 +4764,9 @@
       "physics-experiments-at-home"
     ],
     "relatedBlogs": [
-      "physics-forums-insights",
-      "shtetl-optimized",
-      "quanta-magazine"
+      "berkeley-lab-news-center",
+      "fermilab-news",
+      "physics-forums-insights"
     ]
   },
   {
@@ -4830,9 +4830,9 @@
       "physics-concepts-explained-with-examples"
     ],
     "relatedBlogs": [
-      "physics-forums-insights",
-      "quanta-magazine",
-      "shtetl-optimized"
+      "berkeley-lab-news-center",
+      "fermilab-news",
+      "physics-forums-insights"
     ]
   },
   {
@@ -5088,7 +5088,7 @@
     "relatedBlogs": [
       "smithsonian-science-nature",
       "ars-technica-science",
-      "knowable-magazine"
+      "eos"
     ]
   },
   {
@@ -5204,7 +5204,7 @@
     "relatedBlogs": [
       "ars-technica-science",
       "carbon-brief",
-      "knowable-magazine"
+      "eos"
     ]
   },
   {
@@ -5680,7 +5680,7 @@
     "relatedBlogs": [
       "chrome-for-developers-blog",
       "github-engineering",
-      "stripe-engineering"
+      "mitchell-hashimoto"
     ]
   }
 ]

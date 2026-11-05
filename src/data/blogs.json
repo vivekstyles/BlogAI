@@ -23,6 +23,27 @@
     "sourceRow": 5
   },
   {
+    "id": "artificial-intelligence-ai-alignment-forum",
+    "title": "AI Alignment Forum",
+    "slug": "ai-alignment-forum",
+    "address": "https://www.alignmentforum.org/",
+    "normalizedUrl": "https://www.alignmentforum.org",
+    "feed": "https://www.alignmentforum.org/feed.xml",
+    "tags": [
+      "ai safety",
+      "ai research",
+      "agents"
+    ],
+    "description": "Community blog for technical AI alignment research, with posts on model evaluations, agent theory, and misalignment risks.",
+    "author": "AI Alignment Forum community",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 33
+  },
+  {
     "id": "artificial-intelligence-ai-as-normal-technology",
     "title": "AI as Normal Technology",
     "slug": "ai-as-normal-technology",
@@ -201,6 +222,28 @@
     "sourceRow": 30
   },
   {
+    "id": "artificial-intelligence-fastai",
+    "title": "fast.ai",
+    "slug": "fastai",
+    "address": "https://www.fast.ai/",
+    "normalizedUrl": "https://www.fast.ai",
+    "feed": "https://www.fast.ai/index.xml",
+    "tags": [
+      "deep learning",
+      "machine learning",
+      "ai tools",
+      "education"
+    ],
+    "description": "Essays from the fast.ai team on practical deep learning, AI tools, and how AI is changing coding, learning, and education.",
+    "author": "fast.ai",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 31
+  },
+  {
     "id": "artificial-intelligence-google-deepmind-blog",
     "title": "Google DeepMind Blog",
     "slug": "google-deepmind-blog",
@@ -243,6 +286,28 @@
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "artificial-intelligence-gradient-flow",
+    "title": "Gradient Flow",
+    "slug": "gradient-flow",
+    "address": "https://gradientflow.com/",
+    "normalizedUrl": "https://gradientflow.com",
+    "feed": "https://gradientflow.com/feed/",
+    "tags": [
+      "ai engineering",
+      "agents",
+      "ai policy",
+      "data engineering"
+    ],
+    "description": "Ben Lorica's analysis of data, machine learning, and AI, covering agent building, model evaluation, and AI business trends.",
+    "author": "Ben Lorica",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 34
   },
   {
     "id": "artificial-intelligence-hamels-blog",
@@ -355,6 +420,28 @@
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 25
+  },
+  {
+    "id": "artificial-intelligence-last-week-in-ai",
+    "title": "Last Week in AI",
+    "slug": "last-week-in-ai",
+    "address": "https://lastweekin.ai/",
+    "normalizedUrl": "https://lastweekin.ai",
+    "feed": "https://lastweekin.ai/feed",
+    "tags": [
+      "ai research",
+      "large language models",
+      "ai policy",
+      "podcast"
+    ],
+    "description": "Weekly text and audio summaries of the most notable AI news, with editorials on new models, research, and AI policy.",
+    "author": "Last Week in AI",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 32
   },
   {
     "id": "artificial-intelligence-latent-space",
@@ -556,6 +643,28 @@
     "sourceRow": 18
   },
   {
+    "id": "artificial-intelligence-philipp-schmid",
+    "title": "Philipp Schmid",
+    "slug": "philipp-schmid",
+    "address": "https://www.philschmid.de/",
+    "normalizedUrl": "https://www.philschmid.de",
+    "feed": "https://www.philschmid.de/rss",
+    "tags": [
+      "large language models",
+      "agents",
+      "ai engineering",
+      "generative ai"
+    ],
+    "description": "Philipp Schmid's hands-on guides to building with LLMs and AI agents, including Gemini APIs, tool use, and model deployment.",
+    "author": "Philipp Schmid",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 36
+  },
+  {
     "id": "artificial-intelligence-pytorch-blog",
     "title": "PyTorch Blog",
     "slug": "pytorch-blog",
@@ -599,6 +708,28 @@
     "categorySlug": "artificial-intelligence",
     "sourceFile": "Artificial Intelligence/blogs.csv",
     "sourceRow": 3
+  },
+  {
+    "id": "artificial-intelligence-the-algorithmic-bridge",
+    "title": "The Algorithmic Bridge",
+    "slug": "the-algorithmic-bridge",
+    "address": "https://www.thealgorithmicbridge.com/",
+    "normalizedUrl": "https://www.thealgorithmicbridge.com",
+    "feed": "https://www.thealgorithmicbridge.com/feed",
+    "tags": [
+      "ai criticism",
+      "generative ai",
+      "ai policy",
+      "education"
+    ],
+    "description": "Alberto Romero's essays on AI and the people it affects, from industry hype and bubble talk to AI's role in work and school.",
+    "author": "Alberto Romero",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 35
   },
   {
     "id": "artificial-intelligence-towards-data-science",
@@ -797,6 +928,48 @@
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 9
+  },
+  {
+    "id": "automobile-carbuzz",
+    "title": "CarBuzz",
+    "slug": "carbuzz",
+    "address": "https://carbuzz.com/",
+    "normalizedUrl": "https://carbuzz.com",
+    "feed": "https://carbuzz.com/feed/",
+    "tags": [
+      "automotive news",
+      "car reviews",
+      "new cars"
+    ],
+    "description": "Daily automotive news, new-model reviews, car buying advice, and features on everything from family SUVs to SEMA builds.",
+    "author": "CarBuzz",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 24
+  },
+  {
+    "id": "automobile-carexpert",
+    "title": "CarExpert",
+    "slug": "carexpert",
+    "address": "https://www.carexpert.com.au/",
+    "normalizedUrl": "https://www.carexpert.com.au",
+    "feed": "https://www.carexpert.com.au/rss",
+    "tags": [
+      "car reviews",
+      "new cars",
+      "electric vehicles"
+    ],
+    "description": "Independent Australian car reviews, prices, and specs, with news, quick drives, and comparisons to help buyers choose a new car.",
+    "author": "CarExpert",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 27
   },
   {
     "id": "automobile-carscoops",
@@ -1039,6 +1212,49 @@
     "categorySlug": "automobile",
     "sourceFile": "Automobile/blogs.csv",
     "sourceRow": 12
+  },
+  {
+    "id": "automobile-rushlane",
+    "title": "Rushlane",
+    "slug": "rushlane",
+    "address": "https://www.rushlane.com/",
+    "normalizedUrl": "https://www.rushlane.com",
+    "feed": "https://www.rushlane.com/feed",
+    "tags": [
+      "automotive news",
+      "motorcycles",
+      "spy photos",
+      "new cars"
+    ],
+    "description": "Indian auto news site with daily car, motorcycle, and scooter news, launch prices, spy shots, and expert reviews.",
+    "author": "Rushlane",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 26
+  },
+  {
+    "id": "automobile-teslarati",
+    "title": "Teslarati",
+    "slug": "teslarati",
+    "address": "https://www.teslarati.com/",
+    "normalizedUrl": "https://www.teslarati.com",
+    "feed": "https://www.teslarati.com/feed/",
+    "tags": [
+      "tesla",
+      "electric vehicles",
+      "ev news"
+    ],
+    "description": "News, rumors, and reviews on Tesla, SpaceX, and the premium EV market, including production, charging, and sales updates.",
+    "author": "Teslarati",
+    "language": "en",
+    "status": "active",
+    "category": "Automobile",
+    "categorySlug": "automobile",
+    "sourceFile": "Automobile/blogs.csv",
+    "sourceRow": 25
   },
   {
     "id": "automobile-the-autopian",
@@ -1372,6 +1588,28 @@
     "sourceRow": 12
   },
   {
+    "id": "engineering-engineering-at-slack",
+    "title": "Engineering at Slack",
+    "slug": "engineering-at-slack",
+    "address": "https://slack.engineering/",
+    "normalizedUrl": "https://slack.engineering",
+    "feed": "https://slack.engineering/feed/",
+    "tags": [
+      "infrastructure",
+      "cloud architecture",
+      "testing",
+      "distributed systems"
+    ],
+    "description": "Slack engineers explain how they build and run Slack, from EC2 platforms and multi-cloud AI to end-to-end testing and data systems.",
+    "author": "Slack engineers",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 30
+  },
+  {
     "id": "engineering-github-engineering",
     "title": "GitHub Engineering",
     "slug": "github-engineering",
@@ -1393,6 +1631,28 @@
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 11
+  },
+  {
+    "id": "engineering-grab-tech",
+    "title": "Grab Tech",
+    "slug": "grab-tech",
+    "address": "https://engineering.grab.com/",
+    "normalizedUrl": "https://engineering.grab.com",
+    "feed": "https://engineering.grab.com/feed.xml",
+    "tags": [
+      "data engineering",
+      "machine learning",
+      "mobile",
+      "scalability"
+    ],
+    "description": "Grab's engineering team on building its Southeast Asian super-app, covering app stability, data mesh, ML, and personalization.",
+    "author": "Grab engineering team",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 31
   },
   {
     "id": "engineering-high-scalability",
@@ -1572,6 +1832,28 @@
     "sourceRow": 24
   },
   {
+    "id": "engineering-metadata-murat-demirbas",
+    "title": "Metadata (Murat Demirbas)",
+    "slug": "metadata-murat-demirbas",
+    "address": "https://muratbuffalo.blogspot.com/",
+    "normalizedUrl": "https://muratbuffalo.blogspot.com",
+    "feed": "https://muratbuffalo.blogspot.com/feeds/posts/default",
+    "tags": [
+      "distributed systems",
+      "databases",
+      "research",
+      "computer science"
+    ],
+    "description": "Murat Demirbas reviews distributed systems papers and conferences, covering databases, TLA+ formal methods, and consensus.",
+    "author": "Murat Demirbas",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 35
+  },
+  {
     "id": "engineering-netflix-techblog",
     "title": "Netflix TechBlog",
     "slug": "netflix-techblog",
@@ -1705,6 +1987,49 @@
     "sourceRow": 8
   },
   {
+    "id": "engineering-tailscale-blog",
+    "title": "Tailscale Blog",
+    "slug": "tailscale-blog",
+    "address": "https://tailscale.com/blog",
+    "normalizedUrl": "https://tailscale.com/blog",
+    "feed": "https://tailscale.com/blog/index.xml",
+    "tags": [
+      "networking",
+      "security",
+      "infrastructure"
+    ],
+    "description": "Posts from the Tailscale team on VPN networking, secure remote access, SSH, and routing, plus security findings and company news.",
+    "author": "Tailscale team",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 34
+  },
+  {
+    "id": "engineering-the-fly-blog",
+    "title": "The Fly Blog",
+    "slug": "the-fly-blog",
+    "address": "https://fly.io/blog/",
+    "normalizedUrl": "https://fly.io/blog/",
+    "feed": "https://fly.io/blog/feed.xml",
+    "tags": [
+      "infrastructure",
+      "cloud",
+      "databases",
+      "developer tools"
+    ],
+    "description": "News and deep dives from Fly.io on running apps close to users, SQLite and Litestream, MCP servers, and sandboxes for agents.",
+    "author": "Fly.io team",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 33
+  },
+  {
     "id": "engineering-the-new-stack",
     "title": "The New Stack",
     "slug": "the-new-stack",
@@ -1749,6 +2074,49 @@
     "categorySlug": "engineering",
     "sourceFile": "Engineering/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "engineering-zalando-engineering-blog",
+    "title": "Zalando Engineering Blog",
+    "slug": "zalando-engineering-blog",
+    "address": "https://engineering.zalando.com/",
+    "normalizedUrl": "https://engineering.zalando.com",
+    "feed": "https://engineering.zalando.com/atom.xml",
+    "tags": [
+      "backend",
+      "machine learning",
+      "distributed systems",
+      "data engineering"
+    ],
+    "description": "Engineers at European fashion retailer Zalando on resilient backend systems, ML pipelines, experimentation, and AI agents.",
+    "author": "Zalando engineers",
+    "language": "en",
+    "status": "active",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "sourceFile": "Engineering/blogs.csv",
+    "sourceRow": 32
+  },
+  {
+    "id": "food-and-nutrition-101-cookbooks",
+    "title": "101 Cookbooks",
+    "slug": "101-cookbooks",
+    "address": "https://www.101cookbooks.com/",
+    "normalizedUrl": "https://www.101cookbooks.com",
+    "feed": "https://www.101cookbooks.com/feed",
+    "tags": [
+      "vegetarian",
+      "whole foods",
+      "healthy recipes"
+    ],
+    "description": "Heidi Swanson's whole-foods cooking site with hundreds of vegetarian and vegan recipes for everyday meals and the odd treat.",
+    "author": "Heidi Swanson",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 28
   },
   {
     "id": "food-and-nutrition-abby-langer-nutrition",
@@ -1861,6 +2229,48 @@
     "sourceRow": 11
   },
   {
+    "id": "food-and-nutrition-david-lebovitz",
+    "title": "David Lebovitz",
+    "slug": "david-lebovitz",
+    "address": "https://www.davidlebovitz.com/",
+    "normalizedUrl": "https://www.davidlebovitz.com",
+    "feed": "https://www.davidlebovitz.com/feed/",
+    "tags": [
+      "baking",
+      "desserts",
+      "recipes"
+    ],
+    "description": "Cookbook author and pastry chef David Lebovitz shares sweet and savory recipes for home cooks and stories of life in Paris.",
+    "author": "David Lebovitz",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 27
+  },
+  {
+    "id": "food-and-nutrition-downshiftology",
+    "title": "Downshiftology",
+    "slug": "downshiftology",
+    "address": "https://downshiftology.com/",
+    "normalizedUrl": "https://downshiftology.com",
+    "feed": "https://downshiftology.com/feed/",
+    "tags": [
+      "healthy recipes",
+      "whole foods",
+      "meal prep"
+    ],
+    "description": "Lisa Bryan's real-food recipes and healthy living tips, plus monthly what-to-cook guides and travel itineraries.",
+    "author": "Lisa Bryan",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 26
+  },
+  {
     "id": "food-and-nutrition-food-politics",
     "title": "Food Politics",
     "slug": "food-politics",
@@ -1881,6 +2291,48 @@
     "categorySlug": "food-and-nutrition",
     "sourceFile": "Food and Nutrition/blogs.csv",
     "sourceRow": 3
+  },
+  {
+    "id": "food-and-nutrition-gimme-some-oven",
+    "title": "Gimme Some Oven",
+    "slug": "gimme-some-oven",
+    "address": "https://www.gimmesomeoven.com/",
+    "normalizedUrl": "https://www.gimmesomeoven.com",
+    "feed": "https://www.gimmesomeoven.com/feed/",
+    "tags": [
+      "recipes",
+      "home cooking",
+      "quick meals"
+    ],
+    "description": "Ali Martin's easy recipes for everyday life, from weeknight dinners and quick breakfasts to holiday sides and desserts.",
+    "author": "Ali Martin",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 25
+  },
+  {
+    "id": "food-and-nutrition-hebbars-kitchen",
+    "title": "Hebbar's Kitchen",
+    "slug": "hebbars-kitchen",
+    "address": "https://hebbarskitchen.com/",
+    "normalizedUrl": "https://hebbarskitchen.com",
+    "feed": "https://hebbarskitchen.com/feed/",
+    "tags": [
+      "indian cuisine",
+      "vegetarian",
+      "recipes"
+    ],
+    "description": "Vegetarian Indian recipes with step-by-step photos and videos, from curries and parathas to snacks, sweets, and breakfasts.",
+    "author": "Hebbar's Kitchen",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 29
   },
   {
     "id": "food-and-nutrition-just-one-cookbook",
@@ -2057,6 +2509,27 @@
     "categorySlug": "food-and-nutrition",
     "sourceFile": "Food and Nutrition/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "food-and-nutrition-rainbow-plant-life",
+    "title": "Rainbow Plant Life",
+    "slug": "rainbow-plant-life",
+    "address": "https://rainbowplantlife.com/",
+    "normalizedUrl": "https://rainbowplantlife.com",
+    "feed": "https://rainbowplantlife.com/feed/",
+    "tags": [
+      "plant-based diet",
+      "recipes",
+      "home cooking"
+    ],
+    "description": "Nisha Vora's flavorful vegan recipes for vegans and non-vegans alike, from soups and roasted vegetables to holiday dishes.",
+    "author": "Nisha Vora",
+    "language": "en",
+    "status": "active",
+    "category": "Food and Nutrition",
+    "categorySlug": "food-and-nutrition",
+    "sourceFile": "Food and Nutrition/blogs.csv",
+    "sourceRow": 30
   },
   {
     "id": "food-and-nutrition-recipetin-eats",
@@ -2322,6 +2795,27 @@
     "sourceRow": 10
   },
   {
+    "id": "mathematics-chalkdust",
+    "title": "Chalkdust",
+    "slug": "chalkdust",
+    "address": "https://chalkdustmagazine.com/",
+    "normalizedUrl": "https://chalkdustmagazine.com",
+    "feed": "https://chalkdustmagazine.com/feed/",
+    "tags": [
+      "popular math",
+      "puzzles",
+      "math education"
+    ],
+    "description": "A magazine for the mathematically curious, with articles, puzzles, interviews, comics, and an annual dissertation prize.",
+    "author": "Chalkdust",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 28
+  },
+  {
     "id": "mathematics-combinatorics-and-more",
     "title": "Combinatorics and more",
     "slug": "combinatorics-and-more",
@@ -2585,6 +3079,28 @@
     "sourceRow": 25
   },
   {
+    "id": "mathematics-matt-bakers-math-blog",
+    "title": "Matt Baker's Math Blog",
+    "slug": "matt-bakers-math-blog",
+    "address": "https://mattbaker.blog/",
+    "normalizedUrl": "https://mattbaker.blog",
+    "feed": "https://mattbaker.blog/feed/",
+    "tags": [
+      "number theory",
+      "geometry",
+      "puzzles",
+      "math education"
+    ],
+    "description": "Matt Baker's thoughts on number theory, graphs, tropical geometry, p-adics, puzzles, pedagogy, and AI in math research.",
+    "author": "Matt Baker",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 30
+  },
+  {
     "id": "mathematics-peter-camerons-blog",
     "title": "Peter Cameron's Blog",
     "slug": "peter-camerons-blog",
@@ -2695,6 +3211,27 @@
     "sourceRow": 7
   },
   {
+    "id": "mathematics-thatsmaths",
+    "title": "ThatsMaths",
+    "slug": "thatsmaths",
+    "address": "https://thatsmaths.com/",
+    "normalizedUrl": "https://thatsmaths.com",
+    "feed": "https://thatsmaths.com/feed/",
+    "tags": [
+      "popular math",
+      "applied mathematics",
+      "history of science"
+    ],
+    "description": "Short essays on mathematics in everyday life, history, and science, from the physics of rainbows to weather and architecture.",
+    "author": "Peter Lynch",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 29
+  },
+  {
     "id": "mathematics-the-aperiodical",
     "title": "The Aperiodical",
     "slug": "the-aperiodical",
@@ -2758,6 +3295,28 @@
     "categorySlug": "mathematics",
     "sourceFile": "Mathematics/blogs.csv",
     "sourceRow": 3
+  },
+  {
+    "id": "mathematics-the-universe-of-discourse",
+    "title": "The Universe of Discourse",
+    "slug": "the-universe-of-discourse",
+    "address": "https://blog.plover.com/",
+    "normalizedUrl": "https://blog.plover.com",
+    "feed": "https://blog.plover.com/index.atom",
+    "tags": [
+      "mathematics",
+      "programming",
+      "logic",
+      "git"
+    ],
+    "description": "Mark Dominus's eclectic blog on mathematics, logic, programming, and Git, with notes on ordinals, L-systems, and more.",
+    "author": "Mark Dominus",
+    "language": "en",
+    "status": "active",
+    "category": "Mathematics",
+    "categorySlug": "mathematics",
+    "sourceFile": "Mathematics/blogs.csv",
+    "sourceRow": 31
   },
   {
     "id": "mathematics-whats-new-terence-tao",
@@ -2890,6 +3449,28 @@
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "personal-finance-basunivesh",
+    "title": "BasuNivesh",
+    "slug": "basunivesh",
+    "address": "https://www.basunivesh.com/",
+    "normalizedUrl": "https://www.basunivesh.com",
+    "feed": "https://www.basunivesh.com/feed/",
+    "tags": [
+      "indian personal finance",
+      "mutual funds",
+      "taxes",
+      "financial planning"
+    ],
+    "description": "A fee-only financial planner's blog on Indian personal finance, covering mutual funds, EPF rules, REITs, and tax saving.",
+    "author": "BasuNivesh",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 32
   },
   {
     "id": "personal-finance-bogleheads-blog",
@@ -3111,6 +3692,27 @@
     "sourceRow": 19
   },
   {
+    "id": "personal-finance-jason-zweig",
+    "title": "Jason Zweig",
+    "slug": "jason-zweig",
+    "address": "https://jasonzweig.com/",
+    "normalizedUrl": "https://jasonzweig.com",
+    "feed": "https://jasonzweig.com/feed/",
+    "tags": [
+      "investing",
+      "behavioral finance",
+      "markets"
+    ],
+    "description": "Wall Street Journal columnist Jason Zweig on behavioral finance, market risk, luck, and the discipline of intelligent investing.",
+    "author": "Jason Zweig",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 30
+  },
+  {
     "id": "personal-finance-kiplinger",
     "title": "Kiplinger",
     "slug": "kiplinger",
@@ -3155,6 +3757,28 @@
     "sourceRow": 20
   },
   {
+    "id": "personal-finance-meaningful-money",
+    "title": "Meaningful Money",
+    "slug": "meaningful-money",
+    "address": "https://meaningfulmoney.tv/",
+    "normalizedUrl": "https://meaningfulmoney.tv",
+    "feed": "https://meaningfulmoney.tv/feed/",
+    "tags": [
+      "uk personal finance",
+      "investing",
+      "podcast",
+      "financial planning"
+    ],
+    "description": "Pete Matthew's UK personal finance podcast and blog, with listener question episodes, budget reactions, and investing guidance.",
+    "author": "Pete Matthew",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 31
+  },
+  {
     "id": "personal-finance-monevator",
     "title": "Monevator",
     "slug": "monevator",
@@ -3175,6 +3799,28 @@
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 7
+  },
+  {
+    "id": "personal-finance-money-under-30",
+    "title": "Money Under 30",
+    "slug": "money-under-30",
+    "address": "https://www.moneyunder30.com/",
+    "normalizedUrl": "https://www.moneyunder30.com",
+    "feed": "https://www.moneyunder30.com/feed/",
+    "tags": [
+      "budgeting",
+      "credit cards",
+      "saving money",
+      "personal finance"
+    ],
+    "description": "Personal finance guidance for young adults on banking, budgeting, savings bonds, buy now pay later, and job decisions.",
+    "author": "Money Under 30",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 27
   },
   {
     "id": "personal-finance-mr-money-mustache",
@@ -3287,6 +3933,28 @@
     "sourceRow": 24
   },
   {
+    "id": "personal-finance-root-of-good",
+    "title": "Root of Good",
+    "slug": "root-of-good",
+    "address": "https://rootofgood.com/",
+    "normalizedUrl": "https://rootofgood.com",
+    "feed": "https://rootofgood.com/feed/",
+    "tags": [
+      "early retirement",
+      "financial independence",
+      "frugality",
+      "retirement"
+    ],
+    "description": "Justin's early retirement blog since retiring at 33 in 2013, with regular updates on spending, travel, and family life on FIRE.",
+    "author": "Justin",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 26
+  },
+  {
     "id": "personal-finance-the-big-picture",
     "title": "The Big Picture",
     "slug": "the-big-picture",
@@ -3331,6 +3999,28 @@
     "sourceRow": 11
   },
   {
+    "id": "personal-finance-the-military-wallet",
+    "title": "The Military Wallet",
+    "slug": "the-military-wallet",
+    "address": "https://themilitarywallet.com/",
+    "normalizedUrl": "https://themilitarywallet.com",
+    "feed": "https://themilitarywallet.com/feed/",
+    "tags": [
+      "personal finance",
+      "credit cards",
+      "retirement planning",
+      "investing"
+    ],
+    "description": "Personal finance for service members, veterans, and their families, covering VA benefits, military pay, credit cards, and investing.",
+    "author": "The Military Wallet",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 28
+  },
+  {
     "id": "personal-finance-the-white-coat-investor",
     "title": "The White Coat Investor",
     "slug": "the-white-coat-investor",
@@ -3351,6 +4041,28 @@
     "categorySlug": "personal-finance",
     "sourceFile": "Personal Finance/blogs.csv",
     "sourceRow": 3
+  },
+  {
+    "id": "personal-finance-wallet-hacks",
+    "title": "Wallet Hacks",
+    "slug": "wallet-hacks",
+    "address": "https://wallethacks.com/",
+    "normalizedUrl": "https://wallethacks.com",
+    "feed": "https://wallethacks.com/feed/",
+    "tags": [
+      "banking",
+      "saving money",
+      "credit cards",
+      "investing"
+    ],
+    "description": "Jim Wang shares the money tactics he uses himself, from interest-paying checking and brokerage bonuses to travel insurance.",
+    "author": "Jim Wang",
+    "language": "en",
+    "status": "active",
+    "category": "Personal Finance",
+    "categorySlug": "personal-finance",
+    "sourceFile": "Personal Finance/blogs.csv",
+    "sourceRow": 29
   },
   {
     "id": "physics-astronomy-magazine",
@@ -3395,6 +4107,28 @@
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 4
+  },
+  {
+    "id": "physics-berkeley-lab-news-center",
+    "title": "Berkeley Lab News Center",
+    "slug": "berkeley-lab-news-center",
+    "address": "https://newscenter.lbl.gov/",
+    "normalizedUrl": "https://newscenter.lbl.gov",
+    "feed": "https://newscenter.lbl.gov/feed/",
+    "tags": [
+      "research",
+      "materials",
+      "nanoscience",
+      "physics"
+    ],
+    "description": "Research news from Lawrence Berkeley National Laboratory on materials, particle accelerators, energy, microscopy, and computing.",
+    "author": "Berkeley Lab",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 26
   },
   {
     "id": "physics-centauri-dreams",
@@ -3527,6 +4261,50 @@
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 23
+  },
+  {
+    "id": "physics-eso-news",
+    "title": "ESO News",
+    "slug": "eso-news",
+    "address": "https://www.eso.org/public/news/",
+    "normalizedUrl": "https://www.eso.org/public/news/",
+    "feed": "https://www.eso.org/public/news/feed/",
+    "tags": [
+      "astronomy",
+      "astrophysics",
+      "exoplanets",
+      "space"
+    ],
+    "description": "Press releases from the European Southern Observatory on discoveries made with its telescopes, from exoplanets to black holes.",
+    "author": "European Southern Observatory",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 27
+  },
+  {
+    "id": "physics-fermilab-news",
+    "title": "Fermilab News",
+    "slug": "fermilab-news",
+    "address": "https://news.fnal.gov/",
+    "normalizedUrl": "https://news.fnal.gov",
+    "feed": "https://news.fnal.gov/feed/",
+    "tags": [
+      "particle physics",
+      "research",
+      "quantum",
+      "physics"
+    ],
+    "description": "News from the US Fermilab national laboratory on neutrino experiments, particle physics, dark matter searches, and quantum tech.",
+    "author": "Fermilab",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 25
   },
   {
     "id": "physics-in-the-dark",
@@ -3684,6 +4462,27 @@
     "sourceRow": 2
   },
   {
+    "id": "physics-quantum-computing-report",
+    "title": "Quantum Computing Report",
+    "slug": "quantum-computing-report",
+    "address": "https://quantumcomputingreport.com/",
+    "normalizedUrl": "https://quantumcomputingreport.com",
+    "feed": "https://quantumcomputingreport.com/feed/",
+    "tags": [
+      "quantum computing",
+      "quantum",
+      "industry"
+    ],
+    "description": "Market analysis and news on quantum computing hardware, software, and companies, plus research results from labs worldwide.",
+    "author": "Quantum Computing Report",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 30
+  },
+  {
     "id": "physics-quantum-frontiers",
     "title": "Quantum Frontiers",
     "slug": "quantum-frontiers",
@@ -3748,6 +4547,49 @@
     "categorySlug": "physics",
     "sourceFile": "Physics/blogs.csv",
     "sourceRow": 15
+  },
+  {
+    "id": "physics-spaceflight-now",
+    "title": "Spaceflight Now",
+    "slug": "spaceflight-now",
+    "address": "https://spaceflightnow.com/",
+    "normalizedUrl": "https://spaceflightnow.com",
+    "feed": "https://spaceflightnow.com/feed/",
+    "tags": [
+      "space exploration",
+      "space",
+      "news"
+    ],
+    "description": "Rocket launch coverage, mission reports, and a launch schedule following SpaceX, NASA, and other spaceflight programs.",
+    "author": "Spaceflight Now",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 29
+  },
+  {
+    "id": "physics-spacenews",
+    "title": "SpaceNews",
+    "slug": "spacenews",
+    "address": "https://spacenews.com/",
+    "normalizedUrl": "https://spacenews.com",
+    "feed": "https://spacenews.com/feed/",
+    "tags": [
+      "space policy",
+      "space exploration",
+      "industry",
+      "space"
+    ],
+    "description": "News and analysis on the business and politics of space, covering launch companies, satellites, space agencies, and defense.",
+    "author": "SpaceNews",
+    "language": "en",
+    "status": "active",
+    "category": "Physics",
+    "categorySlug": "physics",
+    "sourceFile": "Physics/blogs.csv",
+    "sourceRow": 28
   },
   {
     "id": "physics-starts-with-a-bang",
@@ -3993,6 +4835,28 @@
     "sourceRow": 19
   },
   {
+    "id": "programming-and-technology-eli-bendersky",
+    "title": "Eli Bendersky",
+    "slug": "eli-bendersky",
+    "address": "https://eli.thegreenplace.net/",
+    "normalizedUrl": "https://eli.thegreenplace.net",
+    "feed": "https://eli.thegreenplace.net/feeds/all.atom.xml",
+    "tags": [
+      "programming languages",
+      "go",
+      "python",
+      "mathematics"
+    ],
+    "description": "Eli Bendersky's detailed notes on programming languages, compilers, Go, Python, and the math behind computing techniques.",
+    "author": "Eli Bendersky",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 35
+  },
+  {
     "id": "programming-and-technology-freecodecamp-news",
     "title": "freeCodeCamp News",
     "slug": "freecodecamp-news",
@@ -4058,6 +4922,28 @@
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 32
+  },
+  {
+    "id": "programming-and-technology-jake-archibald",
+    "title": "Jake Archibald",
+    "slug": "jake-archibald",
+    "address": "https://jakearchibald.com/",
+    "normalizedUrl": "https://jakearchibald.com",
+    "feed": "https://jakearchibald.com/posts.rss",
+    "tags": [
+      "javascript",
+      "css",
+      "web performance",
+      "frontend"
+    ],
+    "description": "Jake Archibald's in-depth posts on web platform features, from CSS and image formats to accessibility and loading performance.",
+    "author": "Jake Archibald",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 34
   },
   {
     "id": "programming-and-technology-jeff-geerling",
@@ -4129,6 +5015,28 @@
     "sourceRow": 11
   },
   {
+    "id": "programming-and-technology-kent-c-dodds",
+    "title": "Kent C. Dodds",
+    "slug": "kent-c-dodds",
+    "address": "https://kentcdodds.com/blog",
+    "normalizedUrl": "https://kentcdodds.com/blog",
+    "feed": "https://kentcdodds.com/blog/rss.xml",
+    "tags": [
+      "javascript",
+      "react",
+      "testing",
+      "web development"
+    ],
+    "description": "Kent C. Dodds writes about JavaScript, TypeScript, React, and testing, plus product engineering and building with AI tools.",
+    "author": "Kent C. Dodds",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 33
+  },
+  {
     "id": "programming-and-technology-krebs-on-security",
     "title": "Krebs on Security",
     "slug": "krebs-on-security",
@@ -4173,6 +5081,28 @@
     "sourceRow": 27
   },
   {
+    "id": "programming-and-technology-mitchell-hashimoto",
+    "title": "Mitchell Hashimoto",
+    "slug": "mitchell-hashimoto",
+    "address": "https://mitchellh.com/",
+    "normalizedUrl": "https://mitchellh.com",
+    "feed": "https://mitchellh.com/feed.xml",
+    "tags": [
+      "developer tools",
+      "open source",
+      "performance",
+      "programming"
+    ],
+    "description": "Mitchell Hashimoto, creator of the Ghostty terminal, writes on systems programming, terminals, Zig, SIMD, and open source.",
+    "author": "Mitchell Hashimoto",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 36
+  },
+  {
     "id": "programming-and-technology-ned-batchelder",
     "title": "Ned Batchelder",
     "slug": "ned-batchelder",
@@ -4193,6 +5123,28 @@
     "categorySlug": "programming-and-technology",
     "sourceFile": "Programming and Technology/blogs.csv",
     "sourceRow": 5
+  },
+  {
+    "id": "programming-and-technology-nodejs-blog",
+    "title": "Node.js Blog",
+    "slug": "nodejs-blog",
+    "address": "https://nodejs.org/en/blog",
+    "normalizedUrl": "https://nodejs.org/en/blog",
+    "feed": "https://nodejs.org/en/feed/blog.xml",
+    "tags": [
+      "javascript",
+      "release notes",
+      "backend",
+      "security"
+    ],
+    "description": "Official Node.js announcements and release notes, covering LTS and current releases, V8 engine changes, and security releases.",
+    "author": "Node.js project",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 38
   },
   {
     "id": "programming-and-technology-python-insider",
@@ -4548,6 +5500,28 @@
     "sourceRow": 23
   },
   {
+    "id": "programming-and-technology-typescript-blog",
+    "title": "TypeScript Blog",
+    "slug": "typescript-blog",
+    "address": "https://devblogs.microsoft.com/typescript/",
+    "normalizedUrl": "https://devblogs.microsoft.com/typescript/",
+    "feed": "https://devblogs.microsoft.com/typescript/feed/",
+    "tags": [
+      "javascript",
+      "release notes",
+      "programming languages",
+      "developer tools"
+    ],
+    "description": "The official TypeScript team blog with release announcements, beta and RC notes, and details of new language features.",
+    "author": "TypeScript team",
+    "language": "en",
+    "status": "active",
+    "category": "Programming and Technology",
+    "categorySlug": "programming-and-technology",
+    "sourceFile": "Programming and Technology/blogs.csv",
+    "sourceRow": 37
+  },
+  {
     "id": "science-ars-technica-science",
     "title": "Ars Technica Science",
     "slug": "ars-technica-science",
@@ -4590,6 +5564,50 @@
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 23
+  },
+  {
+    "id": "science-eos",
+    "title": "Eos",
+    "slug": "eos",
+    "address": "https://eos.org/",
+    "normalizedUrl": "https://eos.org",
+    "feed": "https://eos.org/feed",
+    "tags": [
+      "earth science",
+      "climate",
+      "environmental science",
+      "science news"
+    ],
+    "description": "AGU's science news site covering Earth and space science, climate, and natural hazards, written by journalists and scientists.",
+    "author": "AGU",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 27
+  },
+  {
+    "id": "science-futurity",
+    "title": "Futurity",
+    "slug": "futurity",
+    "address": "https://www.futurity.org/",
+    "normalizedUrl": "https://www.futurity.org",
+    "feed": "https://www.futurity.org/feed/",
+    "tags": [
+      "science news",
+      "health",
+      "research",
+      "general science"
+    ],
+    "description": "Research news from top universities, summarizing new studies in health, environment, social science, and technology.",
+    "author": "Futurity",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 29
   },
   {
     "id": "science-ground-truths",
@@ -4701,6 +5719,28 @@
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 8
+  },
+  {
+    "id": "science-mongabay",
+    "title": "Mongabay",
+    "slug": "mongabay",
+    "address": "https://news.mongabay.com/",
+    "normalizedUrl": "https://news.mongabay.com",
+    "feed": "https://news.mongabay.com/feed/",
+    "tags": [
+      "environment",
+      "climate",
+      "biology",
+      "sustainability"
+    ],
+    "description": "Conservation and environmental science news on forests, wildlife, Indigenous communities, and climate from around the world.",
+    "author": "Mongabay",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 30
   },
   {
     "id": "science-nature-news-comment",
@@ -5055,6 +6095,50 @@
     "categorySlug": "science",
     "sourceFile": "Science/blogs.csv",
     "sourceRow": 22
+  },
+  {
+    "id": "science-the-transmitter",
+    "title": "The Transmitter",
+    "slug": "the-transmitter",
+    "address": "https://www.thetransmitter.org/",
+    "normalizedUrl": "https://www.thetransmitter.org",
+    "feed": "https://www.thetransmitter.org/feed/",
+    "tags": [
+      "neuroscience",
+      "research",
+      "science news",
+      "biology"
+    ],
+    "description": "News, analysis, and essays for neuroscientists on brain research, from neural circuits and brain evolution to new tools.",
+    "author": "The Transmitter",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 28
+  },
+  {
+    "id": "science-undark",
+    "title": "Undark",
+    "slug": "undark",
+    "address": "https://undark.org/",
+    "normalizedUrl": "https://undark.org",
+    "feed": "https://undark.org/feed/",
+    "tags": [
+      "science journalism",
+      "public health",
+      "environment",
+      "society"
+    ],
+    "description": "Nonprofit, editorially independent magazine on the intersection of science and society, with features, interviews, and reviews.",
+    "author": "Undark Magazine",
+    "language": "en",
+    "status": "active",
+    "category": "Science",
+    "categorySlug": "science",
+    "sourceFile": "Science/blogs.csv",
+    "sourceRow": 26
   },
   {
     "id": "science-your-local-epidemiologist",
