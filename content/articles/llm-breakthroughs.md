@@ -94,7 +94,7 @@ $$
 
 **Perplexity** is $e^{\mathcal{L}}$ (or $2^{\mathcal{L}}$ with base-2 logs): roughly the number of equally likely choices the model is "torn between" at each step. Lower is better. The connection between prediction and information comes from Shannon's work on the entropy of English ([Shannon, 1951](https://doi.org/10.1002/j.1538-7305.1951.tb01366.x)).
 
-**Where it is used today:** every LLM is pretrained by minimizing exactly this loss, and scaling laws (16, 17) are written in terms of it.
+**Where it is used today:** every LLM is pretrained by minimizing exactly this loss, and scaling laws (16, 17) are written in terms of it. Perplexity is also an evaluation metric, with limits covered in our guide to [LLM evaluation metrics](/articles/llm-evaluation-metrics).
 
 ### 3. Neural language models
 

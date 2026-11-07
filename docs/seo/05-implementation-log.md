@@ -45,6 +45,17 @@ Five published articles in Artificial Intelligence and Programming and Technolog
 - **Code:** the Python sketches and JSON schema in the advanced article were syntax-checked; they call a placeholder `complete()` and were not run against a live API.
 - **Recheck:** vendor prompting guides and ChatGPT help pages quarterly.
 
+### LLM evaluation metrics article (2026-11-07)
+
+One published article in Artificial Intelligence and Programming and Technology, `publishedAt` 2026-11-07: `/articles/llm-evaluation-metrics`. No existing URLs changed. Two contextual backlinks added: `llm-breakthroughs` (perplexity entry) and `advanced-prompt-engineering-techniques` (evaluation-set section). Existing tag `llm evaluation` reused; no new tags.
+
+- **Sources read via research (report in `reports/`, notes in `research_notes/`):** primary papers (Codex/HumanEval, BLEU, ROUGE, METEOR, chrF, BERTScore, The Pile, Guo et al. and Nixon et al. on calibration, Ragas, FActScore, SelfCheckGPT, SimpleQA and SimpleQA Verified, MT-Bench judge study, G-Eval, PoLL, length-controlled AlpacaEval, The Leaderboard Illusion and Arena's response, tau2-bench, HarmBench, StrongREJECT, OR-Bench, BBQ, Miller's error bars, Sclar et al. on prompt format, MMLU-Redux, RULER, HLE and HLE-Verified, Terminal-Bench 2.0, LiveBench, LiveCodeBench); library source and docs (lm-evaluation-harness `metrics.py` and release notes, lighteval metric list, SacreBLEU, SQuAD v2.0 script, bert_score, Ragas, DeepEval, TruLens docs); Vectara hallucination leaderboard; METR Time Horizon 1.1; NVIDIA NIM metrics; ARC Prize; OpenAI deprecations page; Perspective API; tool repositories and PyPI pages listed in the article's tooling table.
+- **Secondary or not verified at the primary source (flagged in the article):** the Stanford AI Index 2026 findings (CloudTweaks summary; primary report not retrieved), SWE-bench Pro mis-grading audit (aiweekly), SWE-bench Pro vendor vs standard-harness scores (systems-analysis.ru), OSWorld human-baseline claims (buildmvpfast), the 61.4% HLE top score (Artificial Analysis via Wikipedia), the MRR textbook formula, FActScore's length penalty and default knowledge source, p95/p99 latency and cost-per-task conventions, and vendor kappa thresholds (koji.so). Whether the Promptfoo acquisition has closed is unconfirmed. The withdrawn preprint arXiv 2606.19544 from the notes is not cited.
+- **Worked examples:** our arithmetic on the cited formulas, rechecked by hand; not quoted from the sources. The Codex figures are kept apart: pass@100 = 72.31% (Table 1) and 70.2% solved with 100 samples (abstract).
+- **Pipeline section:** the individual practices are cited; combining them into a CI plus production setup is labeled as our synthesis. No primary vendor guidance on golden sets, CI gates or online A/B testing was retrieved.
+- **Links:** external links come from the research report and were not rechecked with curl in this pass.
+- **Recheck:** OpenAI hosted Evals after its 30 November 2026 shutdown, ARC Prize 2026 results (4 December 2026), Perspective API after 31 December 2026, Ragas maintenance status, the Vectara leaderboard and METR time-horizon updates, and whether a 2026 study re-measures LLM-judge biases on frontier judges.
+
 ### Artemis II ionosphere article (2026-11-06)
 
 One published article in Science and Physics, `publishedAt` 2026-11-06: `/articles/artemis-ii-sls-ionosphere-hole`. No existing URLs changed.

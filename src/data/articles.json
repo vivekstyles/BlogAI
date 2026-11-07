@@ -1,5 +1,71 @@
 [
   {
+    "slug": "llm-evaluation-metrics",
+    "title": "25 Essential LLM Evaluation Metrics and Techniques: A Complete Guide to Measuring AI Model Performance in 2026",
+    "seoTitle": "25 LLM Evaluation Metrics and Techniques: 2026 Guide",
+    "description": "How to measure an LLM in 2026, from perplexity, BLEU and pass@k to RAG faithfulness, LLM-as-a-judge, agent reliability and error bars, with worked examples.",
+    "author": "BlogAI Editors",
+    "authorType": "Organization",
+    "publishedAt": "2026-11-07",
+    "updatedAt": "2026-11-07",
+    "status": "published",
+    "categories": [
+      {
+        "name": "Artificial Intelligence",
+        "slug": "artificial-intelligence"
+      },
+      {
+        "name": "Programming and Technology",
+        "slug": "programming-and-technology"
+      }
+    ],
+    "tags": [
+      {
+        "name": "llm evaluation",
+        "slug": "llm-evaluation"
+      },
+      {
+        "name": "large language models",
+        "slug": "large-language-models"
+      },
+      {
+        "name": "machine learning",
+        "slug": "machine-learning"
+      },
+      {
+        "name": "ai safety",
+        "slug": "ai-safety"
+      },
+      {
+        "name": "generative ai",
+        "slug": "generative-ai"
+      },
+      {
+        "name": "ai",
+        "slug": "ai"
+      }
+    ],
+    "image": "",
+    "imageAlt": "",
+    "contentImages": [],
+    "canonicalUrl": "https://blogai.space/articles/llm-evaluation-metrics",
+    "isCanonicalLocal": true,
+    "wordCount": 7996,
+    "readingTimeMinutes": 36,
+    "showToc": true,
+    "faqs": [],
+    "relatedArticles": [
+      "advanced-prompt-engineering-techniques",
+      "prompt-engineering-techniques",
+      "important-llms-explained"
+    ],
+    "relatedBlogs": [
+      "openai-news",
+      "ahead-of-ai",
+      "ai-as-normal-technology"
+    ]
+  },
+  {
     "slug": "artemis-ii-sls-ionosphere-hole",
     "title": "Did NASA's SLS Rocket Punch a Hole in the Upper Atmosphere? What the Artemis II Study Found",
     "seoTitle": "Did Artemis II's SLS Rocket Punch a Hole in the Ionosphere?",
@@ -116,7 +182,7 @@
     "contentImages": [],
     "canonicalUrl": "https://blogai.space/articles/advanced-prompt-engineering-techniques",
     "isCanonicalLocal": true,
-    "wordCount": 3016,
+    "wordCount": 3044,
     "readingTimeMinutes": 14,
     "showToc": true,
     "faqs": [
@@ -136,7 +202,7 @@
     "relatedArticles": [
       "ai-prompts-for-developers",
       "prompt-engineering-techniques",
-      "chatgpt-prompt-tips-for-beginners"
+      "llm-evaluation-metrics"
     ],
     "relatedBlogs": [
       "simon-willisons-weblog",
@@ -1238,9 +1304,9 @@
       }
     ],
     "relatedArticles": [
+      "llm-evaluation-metrics",
       "advanced-prompt-engineering-techniques",
-      "ai-prompts-for-developers",
-      "arduino-iot-projects"
+      "ai-prompts-for-developers"
     ],
     "relatedBlogs": [
       "bleepingcomputer",
@@ -1795,7 +1861,7 @@
     "relatedArticles": [
       "llm-milestones",
       "open-source-llms",
-      "advanced-prompt-engineering-techniques"
+      "llm-evaluation-metrics"
     ],
     "relatedBlogs": [
       "openai-news",
@@ -1860,14 +1926,14 @@
     ],
     "canonicalUrl": "https://blogai.space/articles/llm-breakthroughs",
     "isCanonicalLocal": true,
-    "wordCount": 4671,
+    "wordCount": 4687,
     "readingTimeMinutes": 21,
     "showToc": true,
     "faqs": [],
     "relatedArticles": [
       "history-of-language-models",
-      "llm-milestones",
-      "machine-learning-algorithms-explained"
+      "llm-evaluation-metrics",
+      "llm-milestones"
     ],
     "relatedBlogs": [
       "ahead-of-ai",
@@ -2310,8 +2376,8 @@
     "faqs": [],
     "relatedArticles": [
       "important-llms-explained",
-      "advanced-prompt-engineering-techniques",
-      "prompt-engineering-techniques"
+      "llm-evaluation-metrics",
+      "advanced-prompt-engineering-techniques"
     ],
     "relatedBlogs": [
       "openai-news",

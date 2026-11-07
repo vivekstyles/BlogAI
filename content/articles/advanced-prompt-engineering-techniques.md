@@ -250,6 +250,8 @@ All of these need the same foundation: an **evaluation set**. Prompts are fragil
 4. Pin production to a specific model snapshot, as OpenAI recommends, and upgrade deliberately ([OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering)).
 5. Keep prompts in version control with the code that builds them; OpenAI now recommends this over storing prompts as separate platform objects ([OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering)).
 
+For how pass criteria such as exact match, judge scores and faithfulness are computed, and where each one breaks, see our guide to [LLM evaluation metrics and techniques](/articles/llm-evaluation-metrics).
+
 ## Security: advanced prompts need advanced defences
 
 Every technique that feeds external text into a prompt (retrieval, tools, web pages, emails) creates a path for **prompt injection**: instructions hidden in data that the model then follows. Researchers demonstrated indirect prompt injection against real LLM-integrated applications, including data theft and manipulated tool calls ([Greshake et al., 2023](https://arxiv.org/abs/2302.12173)), and OWASP lists prompt injection as the top risk for LLM applications ([OWASP, LLM01:2025](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)).
