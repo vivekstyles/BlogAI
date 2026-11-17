@@ -266,3 +266,12 @@ An SEO task is complete only when:
 - Remaining risks and external dependencies are disclosed.
 
 The overall objective is to build a technically accessible, useful, trustworthy, and maintainable website whose content can earn relevant organic search visibility over time.
+
+## 18. Community Blog Directory RSS Syndication & Outbound Linking
+
+1. Display up to 5 latest articles from each external blog's RSS feed exclusively on its individual publication page (`/blog/:slug`).
+2. Prerender all syndicated RSS articles directly into the static HTML at build time so search engine crawlers encounter fresh, relevant, keyword-rich content.
+3. Every outbound article link must append standard UTM attribution query parameters: `?utm_source=blogai.space&utm_medium=directory`.
+4. Outbound links must specify `target="_blank"` and `rel="noopener noreferrer"`.
+5. Feeds must be synchronized via `scripts/sync_feeds.py` into a resilient build cache (`src/data/blog_articles.json`) to prevent build-time network failures from breaking static generation.
+6. Display publication dates (`<time datetime="...">`), article descriptions/snippets, and RSS category tags to maximize contextual relevance and semantic clarity for users and search engines.

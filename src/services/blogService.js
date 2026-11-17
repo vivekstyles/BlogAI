@@ -1,6 +1,7 @@
 import blogsData from '../data/blogs.json';
 import categoriesData from '../data/categories';
 import tagsData from '../data/tags.json';
+import blogArticlesData from '../data/blog_articles.json';
 import { slugify } from '../utils/slugify';
 import { validateBlogSubmission } from '../utils/validation';
 import { collectSubmitterContext } from '../utils/submitterContext';
@@ -70,6 +71,13 @@ export const blogService = {
       if (featured.length >= limit) break;
     }
     return featured;
+  },
+
+  getArticlesForBlog(blogSlug) {
+    if (!blogSlug) return [];
+    const targetSlug = blogSlug.toLowerCase();
+    const entry = blogArticlesData[targetSlug];
+    return entry && Array.isArray(entry.articles) ? entry.articles : [];
   },
 
   async submitCommunityBlog(formData, { formStartedAt } = {}) {

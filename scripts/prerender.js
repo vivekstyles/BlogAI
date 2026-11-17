@@ -226,6 +226,8 @@ async function runPrerender() {
   const blogs = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'blogs.json'), 'utf-8'));
   const categories = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'categories.json'), 'utf-8'));
   const tags = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'src', 'data', 'tags.json'), 'utf-8'));
+  const blogArticlesPath = path.join(ROOT_DIR, 'src', 'data', 'blog_articles.json');
+  const blogArticles = fs.existsSync(blogArticlesPath) ? JSON.parse(fs.readFileSync(blogArticlesPath, 'utf-8')) : {};
   // Published articles only: drafts are never written to articles.json
   const articlesPath = path.join(ROOT_DIR, 'src', 'data', 'articles.json');
   const articles = fs.existsSync(articlesPath) ? JSON.parse(fs.readFileSync(articlesPath, 'utf-8')) : [];
@@ -586,6 +588,24 @@ async function runPrerender() {
     const otherCategoryBlogs = blogs
       .filter((other) => other.categorySlug === b.categorySlug && other.slug !== b.slug)
       .slice(0, 3);
+    const blogRss = blogArticles[b.slug];
+    const rssList = blogRss && Array.isArray(blogRss.articles) ? blogRss.articles.slice(0, 5) : [];
+    const rssHtml = rssList.length > 0 ? `
+          <section class="blog-rss-section">
+            <h2>Latest from ${escapeHtml(b.title)}</h2>
+            <div class="blog-rss-list">
+              ${rssList.map((item) => `
+                <article class="blog-rss-card">
+                  <h3>
+                    <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a>
+                  </h3>
+                  ${item.date ? `<time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>` : ''}
+                  ${item.description ? `<p>${escapeHtml(item.description)}</p>` : ''}
+                  ${item.categories && item.categories.length ? `<div class="rss-card-tags">${item.categories.map((c) => `<span>#${escapeHtml(c)}</span>`).join(' ')}</div>` : ''}
+                </article>
+              `).join('')}
+            </div>
+          </section>` : '';
 
     const blogBody = `
       <header class="site-header">
@@ -619,6 +639,7 @@ async function runPrerender() {
               ${b.tags.map((tagText) => `<a href="/tag/${slugify(tagText)}">#${escapeHtml(tagText)}</a>`).join(' ')}
             </div>
           </article>
+          ${rssHtml}
           ${relatedArticles.length ? `
           <section>
             <h2>Related Articles in ${escapeHtml(b.category)}</h2>

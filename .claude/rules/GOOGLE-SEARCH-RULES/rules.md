@@ -100,6 +100,8 @@ Rules for the agent:
 |---|---|---|
 | G7.1 | Directory listings are vetted by the owner before publishing, so their links stay followed. If unvetted user-submitted links are ever published, mark them `rel="ugc"` (or `nofollow`). | Manual |
 | G7.2 | Paid or sponsored links, if any are ever added, carry `rel="sponsored"`. | Manual |
+| G7.3 | Outbound links to external blog RSS articles carry `target="_blank"`, `rel="noopener noreferrer"`, and standard UTM attribution query parameters (`?utm_source=blogai.space&utm_medium=directory`). | Auto |
+| G7.4 | Individual blog directory pages (`/blog/:slug`) prerender up to 5 latest articles from the publication's RSS feed into static HTML to provide substantive, fresh content for search engine crawlers. | Auto |
 
 ## 8. Owner actions (outside the codebase)
 

@@ -279,6 +279,15 @@ The automated pipeline (`scripts/build_data.py`):
 7. Generates `feed.opml` in standard OPML 2.0 XML with category outlines.
 8. Writes machine-readable `scripts/validation_report.json`.
 
+### RSS Article Syndication & Outbound Tracking
+
+The pipeline includes an asynchronous feed synchronizer (`scripts/sync_feeds.py`):
+* Run with `npm run sync:feeds`.
+* Concurrently fetches and parses RSS/Atom XML feeds for all active directory blogs.
+* Extracts up to 5 latest articles per publication, including title, publication date, description excerpt, and category tags.
+* Appends standard UTM attribution parameters (`?utm_source=blogai.space&utm_medium=directory`) to all outbound article links.
+* Caches results deterministically in `src/data/blog_articles.json` and `blog_articles.js`, which are prerendered into static HTML by `scripts/prerender.js` for enhanced search engine indexing and freshness.
+
 ---
 
 ## Testing & Quality Assurance

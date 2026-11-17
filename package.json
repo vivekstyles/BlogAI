@@ -9,6 +9,7 @@
     "build:client": "vite build",
     "preview": "vite preview",
     "lint:csv": "python scripts/linter.py",
+    "sync:feeds": "python scripts/sync_feeds.py",
     "build:data": "node scripts/run_build_data.js",
     "build:articles": "node scripts/build_articles.js",
     "validate:seo": "python scripts/validate_seo.py",

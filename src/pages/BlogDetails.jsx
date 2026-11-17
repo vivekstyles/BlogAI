@@ -45,6 +45,11 @@ export function BlogDetails() {
     return articleService.getArticlesByCategory(blog.categorySlug).slice(0, 3);
   }, [blog]);
 
+  const rssArticles = useMemo(() => {
+    if (!blog) return [];
+    return blogService.getArticlesForBlog(blog.slug);
+  }, [blog]);
+
   if (!blog) {
     return (
       <div className="container blog-not-found">
@@ -171,6 +176,56 @@ export function BlogDetails() {
                   ))}
                 </div>
               </div>
+            )}
+
+            {/* Latest RSS Articles */}
+            {rssArticles.length > 0 && (
+              <section className="blog-rss-section" aria-labelledby="rss-articles-heading">
+                <div className="blog-rss-header">
+                  <h2 id="rss-articles-heading" className="body-heading">Latest from {blog.title}</h2>
+                  <span className="rss-badge">From RSS Feed</span>
+                </div>
+                <p className="rss-section-subtitle">
+                  Recent articles syndicated directly from the publication&apos;s feed.
+                </p>
+                <div className="blog-rss-list">
+                  {rssArticles.slice(0, 5).map((article, idx) => (
+                    <article key={idx} className="blog-rss-card">
+                      <div className="rss-card-top">
+                        <h3 className="rss-card-title">
+                          <a
+                            href={article.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rss-card-link"
+                            aria-label={`${article.title} (opens in a new tab)`}
+                          >
+                            <span>{article.title}</span>
+                            <ExternalLink size={14} aria-hidden="true" />
+                          </a>
+                        </h3>
+                        {article.date && (
+                          <time dateTime={article.date} className="rss-card-date">
+                            {article.date}
+                          </time>
+                        )}
+                      </div>
+                      {article.description && (
+                        <p className="rss-card-desc">{article.description}</p>
+                      )}
+                      {article.categories && article.categories.length > 0 && (
+                        <div className="rss-card-tags">
+                          {article.categories.map((cat, cIdx) => (
+                            <span key={cIdx} className="rss-card-tag">
+                              #{cat}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              </section>
             )}
 
             {/* Actions Bar */}

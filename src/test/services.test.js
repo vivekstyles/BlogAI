@@ -44,6 +44,20 @@ describe('Service: blogService', () => {
     expect(reactBlogs.length).toBeGreaterThan(0);
     expect(reactBlogs.some((b) => b.slug === 'dan-abramov-overreacted')).toBe(true);
   });
+
+  it('retrieves syndicated RSS articles for a blog', () => {
+    const articles = blogService.getArticlesForBlog('ailoot-ai-guides-to-ai-models-and-api-integration');
+    expect(Array.isArray(articles)).toBe(true);
+    if (articles.length > 0) {
+      expect(articles[0].link).toContain('utm_source=blogai.space');
+      expect(articles[0].link).toContain('utm_medium=directory');
+      expect(articles.length).toBeLessThanOrEqual(5);
+    }
+  });
+
+  it('returns empty array when blog slug has no synced articles', () => {
+    expect(blogService.getArticlesForBlog('nonexistent-blog')).toEqual([]);
+  });
 });
 
 describe('Service: blogService.submitCommunityBlog', () => {
