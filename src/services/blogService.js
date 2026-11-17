@@ -80,6 +80,58 @@ export const blogService = {
     return entry && Array.isArray(entry.articles) ? entry.articles : [];
   },
 
+  /**
+   * Subscribes an email address to the newsletter.
+   * Re-uses the same submission endpoint as blog submissions; the payload
+   * carries `type: 'newsletter_subscription'` so the backend can route it.
+   */
+  async submitNewsletter(formData, { formStartedAt } = {}) {
+    const email = (formData.email || '').trim();
+    const name = (formData.name || '').trim();
+
+    if (!email) {
+      return { success: false, errors: { email: 'Email address is required.' } };
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return { success: false, errors: { email: 'Please enter a valid email address.' } };
+    }
+
+    const payload = {
+      type: 'newsletter_subscription',
+      email,
+      name: name || '',
+      subscribedAt: new Date().toISOString(),
+      source: 'blogai-web',
+      submitter: collectSubmitterContext({ formStartedAt }),
+    };
+
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), SUBMISSION_TIMEOUT_MS);
+    try {
+      await fetch(SUBMISSION_ENDPOINT, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+      });
+    } catch {
+      return {
+        success: false,
+        errors: {
+          _general: 'We could not subscribe you right now. Please check your connection and try again.',
+        },
+      };
+    } finally {
+      clearTimeout(timeoutId);
+    }
+
+    return {
+      success: true,
+      message: 'You have been successfully subscribed to the newsletter.',
+    };
+  },
+
   async submitCommunityBlog(formData, { formStartedAt } = {}) {
     const validation = validateBlogSubmission(formData, blogsData);
     if (!validation.isValid) {

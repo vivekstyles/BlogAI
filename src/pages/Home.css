@@ -190,3 +190,19 @@
 .section-more-link:hover {
   color: var(--brand-primary-hover);
 }
+
+/* ─── Newsletter section ───────────────────────────────────────────────────── */
+
+.newsletter-section {
+  padding: 4rem 0;
+  background-color: var(--bg-primary);
+}
+
+.newsletter-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}

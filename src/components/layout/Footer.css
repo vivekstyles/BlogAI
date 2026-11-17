@@ -98,3 +98,14 @@
   align-items: center;
   gap: 0.25rem;
 }
+
+/* ─── Newsletter strip inside footer brand column ─────────────────────────── */
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}

@@ -319,9 +319,10 @@ export function SubmitBlog() {
                 </div>
 
                 <p className="field-hint">
-                  To help us review submissions and block spam, basic browser details (such as
-                  browser, language, time zone, screen size, and referring page) are sent with your
-                  submission. See our <Link to="/privacy">Privacy Policy</Link>.
+                  To help us review submissions and block spam, extended browser details (browser,
+                  language, time zone, screen size, hardware concurrency, network type, referring
+                  page, and more) are sent with your submission. See our{' '}
+                  <Link to="/privacy">Privacy Policy</Link>.
                 </p>
 
                 <div className="form-actions">

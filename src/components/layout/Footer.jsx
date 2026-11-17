@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Rss, Compass, Heart, ExternalLink } from 'lucide-react';
 import categoriesData from '../../data/categories';
+import NewsletterSubscribe from '../newsletter/NewsletterSubscribe';
 import './Footer.css';
 
 export function Footer() {
@@ -28,6 +29,12 @@ export function Footer() {
                 <Rss size={15} />
                 <span>Export OPML Feeds</span>
               </a>
+            </div>
+            {/* Newsletter inline widget */}
+            <div className="footer-newsletter">
+              <h4 className="footer-heading">Newsletter</h4>
+              <p className="footer-text-sm">New articles &amp; curated picks, straight to your inbox.</p>
+              <NewsletterSubscribe variant="inline" />
             </div>
           </div>
 

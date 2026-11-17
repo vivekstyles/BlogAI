@@ -8,6 +8,7 @@ import { buildHomeSchema } from '../utils/seo';
 import CategoryCard from '../components/categories/CategoryCard';
 import BlogCard from '../components/blogs/BlogCard';
 import ArticleCard from '../components/articles/ArticleCard';
+import NewsletterSubscribe from '../components/newsletter/NewsletterSubscribe';
 import './Home.css';
 
 const DIRECTORY_PARAMS = ['q', 'category', 'tag', 'sort'];
@@ -144,6 +145,15 @@ export function Home() {
           </div>
         </section>
       )}
+
+      {/* Newsletter subscription */}
+      <section className="newsletter-section" aria-labelledby="newsletter-heading">
+        <div className="container">
+          <div className="newsletter-card">
+            <NewsletterSubscribe variant="section" />
+          </div>
+        </div>
+      </section>
 
       {/* Community Contribution CTA */}
       <section className="submission-cta-section" aria-labelledby="cta-heading">
