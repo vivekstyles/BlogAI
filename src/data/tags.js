@@ -31,6 +31,12 @@ export const tags = [
     "blogCount": 13
   },
   {
+    "name": "large language models",
+    "slug": "large-language-models",
+    "count": 12,
+    "blogCount": 12
+  },
+  {
     "name": "biology",
     "slug": "biology",
     "count": 11,
@@ -39,12 +45,6 @@ export const tags = [
   {
     "name": "car reviews",
     "slug": "car-reviews",
-    "count": 11,
-    "blogCount": 11
-  },
-  {
-    "name": "large language models",
-    "slug": "large-language-models",
     "count": 11,
     "blogCount": 11
   },
@@ -571,6 +571,12 @@ export const tags = [
     "blogCount": 4
   },
   {
+    "name": "llm evaluation",
+    "slug": "llm-evaluation",
+    "count": 4,
+    "blogCount": 4
+  },
+  {
     "name": "logic",
     "slug": "logic",
     "count": 4,
@@ -759,12 +765,6 @@ export const tags = [
   {
     "name": "linear algebra",
     "slug": "linear-algebra",
-    "count": 3,
-    "blogCount": 3
-  },
-  {
-    "name": "llm evaluation",
-    "slug": "llm-evaluation",
     "count": 3,
     "blogCount": 3
   },
@@ -1351,6 +1351,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "ai apis",
+    "slug": "ai-apis",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "api",
     "slug": "api",
     "count": 1,
@@ -1809,6 +1815,12 @@ export const tags = [
   {
     "name": "microservices",
     "slug": "microservices",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "model routing",
+    "slug": "model-routing",
     "count": 1,
     "blogCount": 1
   },

@@ -67,6 +67,28 @@ export const blogs = [
     "sourceRow": 28
   },
   {
+    "id": "artificial-intelligence-ailoot-ai-guides-to-ai-models-and-api-integration",
+    "title": "Ailoot AI — Guides to AI models and API integration",
+    "slug": "ailoot-ai-guides-to-ai-models-and-api-integration",
+    "address": "https://ailoot.ai/blog/en/",
+    "normalizedUrl": "https://ailoot.ai/blog/en/",
+    "feed": "https://ailoot.ai/blog/en/index.xml",
+    "tags": [
+      "large language models",
+      "model routing",
+      "ai apis",
+      "llm evaluation"
+    ],
+    "description": "Technical guides to AI models and API integration, including language model routing, evaluation, model selection and practical use cases.",
+    "author": "Ailoot AI",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 37
+  },
+  {
     "id": "artificial-intelligence-andrej-karpathy-blog",
     "title": "Andrej Karpathy Blog",
     "slug": "andrej-karpathy-blog",

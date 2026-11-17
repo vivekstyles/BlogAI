@@ -10,6 +10,7 @@
       <outline type="rss" text="Ahead of AI" title="Ahead of AI" xmlUrl="https://magazine.sebastianraschka.com/feed" htmlUrl="https://magazine.sebastianraschka.com/" category="Artificial Intelligence" />
       <outline type="rss" text="AI Alignment Forum" title="AI Alignment Forum" xmlUrl="https://www.alignmentforum.org/feed.xml" htmlUrl="https://www.alignmentforum.org/" category="Artificial Intelligence" />
       <outline type="rss" text="AI as Normal Technology" title="AI as Normal Technology" xmlUrl="https://www.normaltech.ai/feed" htmlUrl="https://www.normaltech.ai/" category="Artificial Intelligence" />
+      <outline type="rss" text="Ailoot AI — Guides to AI models and API integration" title="Ailoot AI — Guides to AI models and API integration" xmlUrl="https://ailoot.ai/blog/en/index.xml" htmlUrl="https://ailoot.ai/blog/en/" category="Artificial Intelligence" />
       <outline type="rss" text="Andrej Karpathy Blog" title="Andrej Karpathy Blog" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/" category="Artificial Intelligence" />
       <outline type="rss" text="Apple Machine Learning Research" title="Apple Machine Learning Research" xmlUrl="https://machinelearning.apple.com/rss.xml" htmlUrl="https://machinelearning.apple.com/" category="Artificial Intelligence" />
       <outline type="rss" text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/" category="Artificial Intelligence" />
