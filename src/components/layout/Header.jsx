@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Sun, Moon, Menu, X, PlusCircle, Compass } from 'lucide-react';
+import { Sun, Moon, Menu, X, PlusCircle, Compass, Bell } from 'lucide-react';
 import Navigation from './Navigation';
+import NewsletterSubscribe from '../newsletter/NewsletterSubscribe';
 import categoriesData from '../../data/categories';
 import { articleService } from '../../services/articleService';
 import './Header.css';
@@ -15,6 +16,8 @@ const navCategories = categoriesData.map((cat) => ({
 export function Header() {
   const [isDark, setIsDark] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [subscribeOpen, setSubscribeOpen] = useState(false);
+  const subscribeRef = useRef(null);
 
   useEffect(() => {
     // Dark is the default theme; light is applied only when explicitly saved
@@ -27,6 +30,23 @@ export function Header() {
       document.documentElement.removeAttribute('data-theme');
     }
   }, []);
+
+  // Close subscribe popover on outside click / Escape
+  useEffect(() => {
+    if (!subscribeOpen) return;
+    const handleKey = (e) => { if (e.key === 'Escape') setSubscribeOpen(false); };
+    const handleClick = (e) => {
+      if (subscribeRef.current && !subscribeRef.current.contains(e.target)) {
+        setSubscribeOpen(false);
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    document.addEventListener('mousedown', handleClick);
+    return () => {
+      document.removeEventListener('keydown', handleKey);
+      document.removeEventListener('mousedown', handleClick);
+    };
+  }, [subscribeOpen]);
 
   const toggleTheme = () => {
     const nextTheme = !isDark;
@@ -74,6 +94,43 @@ export function Header() {
             {isDark ? <Sun size={19} /> : <Moon size={19} />}
           </button>
 
+          {/* Subscribe popover — desktop only */}
+          <div className="subscribe-popover-wrap desktop-only" ref={subscribeRef}>
+            <button
+              type="button"
+              className={`btn btn-sm subscribe-trigger-btn ${subscribeOpen ? 'subscribe-trigger-btn--active' : ''}`}
+              onClick={() => setSubscribeOpen((o) => !o)}
+              aria-expanded={subscribeOpen}
+              aria-haspopup="dialog"
+              aria-label="Subscribe to newsletter"
+            >
+              <Bell size={15} aria-hidden="true" />
+              <span>Subscribe</span>
+            </button>
+
+            {subscribeOpen && (
+              <div
+                className="subscribe-popover"
+                role="dialog"
+                aria-modal="false"
+                aria-label="Newsletter subscription"
+              >
+                <div className="subscribe-popover-header">
+                  <span className="subscribe-popover-title">Newsletter</span>
+                  <button
+                    type="button"
+                    className="subscribe-popover-close"
+                    onClick={() => setSubscribeOpen(false)}
+                    aria-label="Close newsletter panel"
+                  >
+                    <X size={16} />
+                  </button>
+                </div>
+                <NewsletterSubscribe variant="inline" />
+              </div>
+            )}
+          </div>
+
           <Link to="/submit" className="btn btn-primary btn-sm desktop-only submit-btn">
             <PlusCircle size={16} />
             <span>Submit Blog</span>
@@ -109,6 +166,10 @@ export function Header() {
                 <PlusCircle size={18} />
                 <span>Submit a Blog</span>
               </Link>
+              <div className="mobile-drawer-newsletter">
+                <p className="mobile-drawer-newsletter-label">Newsletter</p>
+                <NewsletterSubscribe variant="inline" />
+              </div>
             </div>
           </div>
         </div>

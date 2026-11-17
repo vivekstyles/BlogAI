@@ -202,11 +202,110 @@
 /* Tablet: the full nav does not fit beside the logo and actions, keep the drawer */
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-nav-desktop.desktop-only,
-  .submit-btn.desktop-only {
+  .submit-btn.desktop-only,
+  .subscribe-popover-wrap.desktop-only {
     display: none;
   }
 
   .mobile-menu-btn.mobile-only {
     display: inline-flex;
   }
+}
+
+/* ─── Subscribe popover ───────────────────────────────────────────────────── */
+
+.subscribe-popover-wrap {
+  position: relative;
+}
+
+.subscribe-trigger-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface);
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.subscribe-trigger-btn:hover,
+.subscribe-trigger-btn--active {
+  background-color: var(--brand-surface);
+  color: var(--brand-primary);
+  border-color: var(--brand-border);
+}
+
+.subscribe-popover {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  width: 320px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 1.25rem;
+  z-index: 300;
+  /* Slide-down entrance */
+  animation: popover-in 0.15s ease;
+}
+
+@keyframes popover-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.subscribe-popover-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.subscribe-popover-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.subscribe-popover-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  color: var(--text-tertiary);
+  transition: all var(--transition-fast);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe-popover-close:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+/* ─── Mobile drawer newsletter ────────────────────────────────────────────── */
+
+.mobile-drawer-newsletter {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.mobile-drawer-newsletter-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.75rem;
 }
