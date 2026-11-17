@@ -378,6 +378,28 @@ export const blogs = [
     "sourceRow": 12
   },
   {
+    "id": "artificial-intelligence-ia-du-jour",
+    "title": "IA du Jour",
+    "slug": "ia-du-jour",
+    "address": "https://iadujour.fr/en/",
+    "normalizedUrl": "https://iadujour.fr/en/",
+    "feed": "https://iadujour.fr/actualites/feed.xml",
+    "tags": [
+      "applied ai",
+      "small businesses",
+      "ai agents",
+      "france"
+    ],
+    "description": "IA du Jour documents how French organisations use AI at work and publishes prompts that freelancers and small teams can adapt.",
+    "author": "IA du Jour",
+    "language": "en",
+    "status": "active",
+    "category": "Artificial Intelligence",
+    "categorySlug": "artificial-intelligence",
+    "sourceFile": "Artificial Intelligence/blogs.csv",
+    "sourceRow": 38
+  },
+  {
     "id": "artificial-intelligence-import-ai",
     "title": "Import AI",
     "slug": "import-ai",

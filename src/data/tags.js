@@ -1351,6 +1351,12 @@ export const tags = [
     "blogCount": 1
   },
   {
+    "name": "ai agents",
+    "slug": "ai-agents",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
     "name": "ai apis",
     "slug": "ai-apis",
     "count": 1,
@@ -1365,6 +1371,12 @@ export const tags = [
   {
     "name": "apple",
     "slug": "apple",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "applied ai",
+    "slug": "applied-ai",
     "count": 1,
     "blogCount": 1
   },
@@ -1641,6 +1653,12 @@ export const tags = [
   {
     "name": "foundations",
     "slug": "foundations",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "france",
+    "slug": "france",
     "count": 1,
     "blogCount": 1
   },
@@ -2049,6 +2067,12 @@ export const tags = [
   {
     "name": "side hustle",
     "slug": "side-hustle",
+    "count": 1,
+    "blogCount": 1
+  },
+  {
+    "name": "small businesses",
+    "slug": "small-businesses",
     "count": 1,
     "blogCount": 1
   },

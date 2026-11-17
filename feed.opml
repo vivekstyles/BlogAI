@@ -24,6 +24,7 @@
       <outline type="rss" text="Gradient Flow" title="Gradient Flow" xmlUrl="https://gradientflow.com/feed/" htmlUrl="https://gradientflow.com/" category="Artificial Intelligence" />
       <outline type="rss" text="Hamel's Blog" title="Hamel's Blog" xmlUrl="https://hamel.dev/index.xml" htmlUrl="https://hamel.dev/" category="Artificial Intelligence" />
       <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog" category="Artificial Intelligence" />
+      <outline type="rss" text="IA du Jour" title="IA du Jour" xmlUrl="https://iadujour.fr/actualites/feed.xml" htmlUrl="https://iadujour.fr/en/" category="Artificial Intelligence" />
       <outline type="rss" text="Import AI" title="Import AI" xmlUrl="https://importai.substack.com/feed" htmlUrl="https://importai.substack.com/" category="Artificial Intelligence" />
       <outline type="rss" text="Interconnects" title="Interconnects" xmlUrl="https://www.interconnects.ai/feed" htmlUrl="https://www.interconnects.ai/" category="Artificial Intelligence" />
       <outline type="rss" text="KDnuggets" title="KDnuggets" xmlUrl="https://www.kdnuggets.com/feed" htmlUrl="https://www.kdnuggets.com/" category="Artificial Intelligence" />

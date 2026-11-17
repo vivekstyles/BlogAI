@@ -4,16 +4,16 @@ export const categories = [
     "name": "Artificial Intelligence",
     "slug": "artificial-intelligence",
     "description": "Machine learning, large language models, AI research, and how AI is applied in industry and work.",
-    "count": 36,
+    "count": 37,
     "popularTags": [
       "agents",
+      "ai agents",
       "ai apis",
       "ai criticism",
       "ai engineering",
       "ai infrastructure",
       "ai policy",
-      "ai research",
-      "ai safety"
+      "ai research"
     ]
   },
   {
