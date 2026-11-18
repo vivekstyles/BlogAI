@@ -22,6 +22,7 @@ import TagChip from '../components/tags/TagChip';
 import FeedLink from '../components/blogs/FeedLink';
 import BlogCard from '../components/blogs/BlogCard';
 import ArticleCard from '../components/articles/ArticleCard';
+import { useAnalytics, EVENTS } from '../analytics/posthog';
 import './BlogDetails.css';
 
 export function BlogDetails() {
@@ -49,6 +50,8 @@ export function BlogDetails() {
     if (!blog) return [];
     return blogService.getArticlesForBlog(blog.slug);
   }, [blog]);
+
+  const { capture } = useAnalytics();
 
   if (!blog) {
     return (
@@ -236,6 +239,14 @@ export function BlogDetails() {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
                 aria-label={`Visit ${blog.title} official website (opens in a new tab)`}
+                onClick={() =>
+                  capture(EVENTS.BLOG_VISIT_CLICKED, {
+                    blog_slug: blog.slug,
+                    blog_title: blog.title,
+                    blog_category: blog.category,
+                    blog_url: blog.address,
+                  })
+                }
               >
                 <Globe size={18} />
                 <span>Visit Official Website</span>
@@ -243,7 +254,17 @@ export function BlogDetails() {
               </a>
 
               {blog.feed && (
-                <FeedLink feedUrl={blog.feed} title={blog.title} size="large" />
+                <span
+                  onClick={() =>
+                    capture(EVENTS.BLOG_FEED_CLICKED, {
+                      blog_slug: blog.slug,
+                      blog_title: blog.title,
+                      feed_url: blog.feed,
+                    })
+                  }
+                >
+                  <FeedLink feedUrl={blog.feed} title={blog.title} size="large" />
+                </span>
               )}
             </div>
           </div>

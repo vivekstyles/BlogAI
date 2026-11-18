@@ -12,6 +12,7 @@ import { blogService } from '../services/blogService';
 import categoriesData from '../data/categories';
 import SEOHead from '../components/seo/SEOHead';
 import Breadcrumbs from '../components/layout/Breadcrumbs';
+import { useAnalytics, EVENTS } from '../analytics/posthog';
 import './SubmitBlog.css';
 
 export function SubmitBlog() {
@@ -32,10 +33,14 @@ export function SubmitBlog() {
 
   // Set on the first edit so the submission records how long the form took to fill.
   const formStartedAt = useRef(null);
+  const { capture } = useAnalytics();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (formStartedAt.current === null) formStartedAt.current = Date.now();
+    if (formStartedAt.current === null) {
+      formStartedAt.current = Date.now();
+      capture(EVENTS.SUBMIT_FORM_STARTED);
+    }
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: null }));
@@ -48,11 +53,23 @@ export function SubmitBlog() {
     setIsSubmitting(true);
     setErrors({});
 
+    const timeToFillMs = formStartedAt.current ? Date.now() - formStartedAt.current : null;
+    capture(EVENTS.SUBMIT_FORM_ATTEMPTED, {
+      has_feed: Boolean(formData.feed),
+      category: formData.category,
+      time_to_fill_ms: timeToFillMs,
+    });
+
     const result = await blogService.submitCommunityBlog(formData, {
       formStartedAt: formStartedAt.current,
     });
 
     if (result.success) {
+      capture(EVENTS.SUBMIT_FORM_SUCCEEDED, {
+        category: formData.category,
+        has_feed: Boolean(formData.feed),
+        time_to_fill_ms: timeToFillMs,
+      });
       formStartedAt.current = null;
       setSubmissionSuccess(result.submission);
       setFormData({
@@ -66,6 +83,9 @@ export function SubmitBlog() {
         email: '',
       });
     } else {
+      capture(EVENTS.SUBMIT_FORM_FAILED, {
+        error_fields: Object.keys(result.errors || {}),
+      });
       setErrors(result.errors || {});
     }
 

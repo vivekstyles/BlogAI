@@ -21,8 +21,10 @@
     "ci": "npm run lint:csv && npm run build:data && npm run build:articles && npm test && npm run build && npm run validate:seo && npm run test:seo-rules"
   },
   "dependencies": {
+    "@posthog/react": "^1.11.3",
     "katex": "^0.18.11",
     "lucide-react": "^1.16.0",
+    "posthog-js": "^1.451.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0"

@@ -11,6 +11,7 @@ import TableOfContents from '../components/articles/TableOfContents';
 import RelatedArticles from '../components/articles/RelatedArticles';
 import BlogCard from '../components/blogs/BlogCard';
 import TagChip from '../components/tags/TagChip';
+import { useAnalytics, EVENTS } from '../analytics/posthog';
 import './ArticleDetails.css';
 
 export function ArticleDetails() {
@@ -19,6 +20,7 @@ export function ArticleDetails() {
   const relatedArticles = useMemo(() => articleService.getRelatedArticles(article), [article]);
   const relatedBlogs = useMemo(() => articleService.getRelatedBlogs(article), [article]);
   const [content, setContent] = useState({ slug: null, html: null, toc: [], failed: false });
+  const { capture } = useAnalytics();
 
   useEffect(() => {
     if (!article) return undefined;
@@ -27,11 +29,25 @@ export function ArticleDetails() {
       .getArticleContent(article.slug)
       .then((body) => {
         if (!cancelled) {
-          setContent({ slug: article.slug, html: body?.html ?? null, toc: body?.toc ?? [], failed: body == null });
+          const failed = body == null;
+          setContent({ slug: article.slug, html: body?.html ?? null, toc: body?.toc ?? [], failed });
+          if (!failed) {
+            capture(EVENTS.ARTICLE_VIEWED, {
+              article_slug: article.slug,
+              article_title: article.title,
+              article_categories: article.categories.map((c) => c.name),
+              article_tags: article.tags.map((t) => t.name),
+            });
+          } else {
+            capture(EVENTS.ARTICLE_CONTENT_LOAD_FAILED, { article_slug: article.slug });
+          }
         }
       })
       .catch(() => {
-        if (!cancelled) setContent({ slug: article.slug, html: null, toc: [], failed: true });
+        if (!cancelled) {
+          setContent({ slug: article.slug, html: null, toc: [], failed: true });
+          capture(EVENTS.ARTICLE_CONTENT_LOAD_FAILED, { article_slug: article.slug });
+        }
       });
     return () => {
       cancelled = true;

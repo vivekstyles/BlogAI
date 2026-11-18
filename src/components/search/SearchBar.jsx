@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
+import { useAnalytics, EVENTS } from '../../analytics/posthog';
 import './SearchBar.css';
 
 /**
@@ -16,6 +17,9 @@ export function SearchBar({
   className = '',
 }) {
   const inputRef = useRef(null);
+  const { capture } = useAnalytics();
+  // Debounce timer ref — fires search_performed 600 ms after the user stops typing.
+  const searchDebounceRef = useRef(null);
 
   useEffect(() => {
     // Keyboard shortcut: pressing '/' focuses the search bar if not typing in an input
@@ -34,7 +38,24 @@ export function SearchBar({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  // Fire a debounced search event whenever `value` changes.
+  useEffect(() => {
+    if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
+    if (!value) return;
+    searchDebounceRef.current = setTimeout(() => {
+      capture(EVENTS.SEARCH_PERFORMED, {
+        query: value,
+        query_length: value.length,
+      });
+    }, 600);
+    return () => {
+      if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
+    };
+  }, [value]);
+
   const handleClear = () => {
+    if (searchDebounceRef.current) clearTimeout(searchDebounceRef.current);
+    capture(EVENTS.SEARCH_CLEARED);
     if (onClear) {
       onClear();
     } else if (onChange) {

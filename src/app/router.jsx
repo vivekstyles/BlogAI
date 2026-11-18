@@ -1,5 +1,6 @@
-import React, { lazy, Suspense } from 'react';
-import { Routes, Route, ScrollRestoration } from 'react-router-dom';
+import React, { lazy, Suspense, useEffect } from 'react';
+import { Routes, Route, ScrollRestoration, useLocation } from 'react-router-dom';
+import { usePostHog } from '@posthog/react';
 import Home from '../pages/Home';
 
 // Code-splitting for non-home pages to keep initial bundle small
@@ -25,9 +26,29 @@ function PageLoader() {
   );
 }
 
+/**
+ * Fires a PostHog $pageview event on every client-side route change.
+ * PostHog's React integration does not auto-capture SPA navigations,
+ * so we do it manually here with the canonical URL.
+ */
+function PageViewTracker() {
+  const location = useLocation();
+  const posthog = usePostHog();
+
+  useEffect(() => {
+    if (!posthog) return;
+    posthog.capture('$pageview', {
+      $current_url: window.location.href,
+    });
+  }, [location.pathname, location.search, posthog]);
+
+  return null;
+}
+
 export function AppRouter() {
   return (
     <Suspense fallback={<PageLoader />}>
+      <PageViewTracker />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles" element={<Articles />} />
