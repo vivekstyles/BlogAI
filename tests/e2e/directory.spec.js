@@ -9,7 +9,7 @@ test.describe('BlogAI Directory E2E Flow', () => {
     await expect(page.locator('h1')).toContainText('Discover Great Technical & Scientific Blogs');
 
     // Search for 'Martin Fowler'
-    const searchInput = page.getByRole('searchbox');
+    const searchInput = page.getByRole('searchbox'); 
     await searchInput.fill('Martin Fowler');
     await expect(page.locator('text=Showing 1 of')).toBeVisible();
     await expect(page.locator('.blog-card h3')).toContainText('Martin Fowler');
