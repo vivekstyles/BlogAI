@@ -65,7 +65,7 @@ export function About() {
                 <p>
                   No advertising networks or sponsored pay-to-play placements. We use Google
                   Analytics only to see which pages people read; the{' '}
-                  <a href="/privacy">privacy policy</a> explains what it collects.
+                  <Link to="/privacy">privacy policy</Link> explains what it collects.
                 </p>
               </div>
 
